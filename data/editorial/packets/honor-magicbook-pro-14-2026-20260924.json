@@ -1,0 +1,295 @@
+{
+  "schemaVersion": 1,
+  "status": "HOLD",
+  "publishable": false,
+  "contentId": "st-hw-honor-magicbook-pro-14-2026-portable-workstation",
+  "productId": "honor-magicbook-pro-14-2026",
+  "jobId": "hw-f3f1b446ce9fcd20c8e8",
+  "variantId": null,
+  "region": "NL target; global manufacturer evidence only",
+  "canonicalOwner": "starlight.technology",
+  "readerJob": "Decide whether this laptop belongs on a portable creator shortlist, separating unplugged work from mains-powered workloads.",
+  "decision": "Do not recommend a Dutch purchase yet. Resolve a saleable local SKU before ranking configurations or attaching offers.",
+  "wrongPurchaseConditions": [
+    "Expecting advertised peak power on battery.",
+    "Assuming every configuration has the highest advertised CPU or memory speed.",
+    "Buying for sustained rendering, local AI or audio production without exact-configuration workload evidence.",
+    "Importing without checking keyboard, charger, warranty and regional service."
+  ],
+  "evidenceLevel": "manufacturer-source; no hands-on testing",
+  "configuration": {
+    "family": "HONOR MagicBook Pro 14 2026",
+    "cpuOptions": [
+      "Intel Core Ultra 5 338H",
+      "Intel Core Ultra X9 388H"
+    ],
+    "localSku": null,
+    "ramCapacity": null,
+    "ssdCapacity": null,
+    "keyboard": null,
+    "warranty": null,
+    "availability": "not-established-for-NL"
+  },
+  "sources": [
+    {
+      "id": "honor-overview-20260924",
+      "url": "https://www.honor.com/global/laptops/honor-magicbook-pro-14-2026/",
+      "publisher": "HONOR",
+      "publishedAt": null,
+      "retrievedAt": "2026-09-24T06:50:01Z",
+      "sourceType": "official-global-product-page",
+      "claimIds": [
+        "h1",
+        "h2",
+        "h3",
+        "h4"
+      ],
+      "freshnessTrigger": "Exact configuration change, publication, or 30 days; availability always recheck.",
+      "note": "No publication date exposed. Not evidence of a new September launch."
+    },
+    {
+      "id": "honor-spec-20260924",
+      "url": "https://www.honor.com/global/laptops/honor-magicbook-pro-14-2026/spec/",
+      "publisher": "HONOR",
+      "publishedAt": null,
+      "retrievedAt": "2026-09-24T06:50:01Z",
+      "sourceType": "official-specification-page",
+      "claimIds": [],
+      "freshnessTrigger": "Retry when rendered specification values become accessible.",
+      "note": "Text response exposes headings without CPU/RAM/storage values. Do not fill these from another generation."
+    },
+    {
+      "id": "honor-benelux-20260924",
+      "url": "https://www.honor.com/benelux/laptops/",
+      "requestedUrl": "https://www.honor.com/nl/laptops/",
+      "publisher": "HONOR",
+      "publishedAt": null,
+      "retrievedAt": "2026-09-24T06:50:01Z",
+      "sourceType": "official-regional-directory",
+      "claimIds": [
+        "h5"
+      ],
+      "freshnessTrigger": "Regional listing or publication.",
+      "note": "Cached extraction reported crawled two weeks ago; absence does not prove unavailability."
+    },
+    {
+      "id": "honor-terms-20260924",
+      "url": "https://www.honor.com/global/terms-of-use/",
+      "publisher": "HONOR",
+      "publishedAt": null,
+      "retrievedAt": "2026-09-24T06:50:01Z",
+      "sourceType": "official-website-terms",
+      "claimIds": [
+        "h6"
+      ],
+      "freshnessTrigger": "Every asset/placement and terms change."
+    }
+  ],
+  "claims": [
+    {
+      "id": "h1",
+      "text": "HONOR lists Ultra 5 338H and Ultra X9 388H processor options; the exact configuration matters.",
+      "sourceIds": [
+        "honor-overview-20260924"
+      ],
+      "type": "manufacturer-statement",
+      "asOf": "2026-09-24T06:50:01Z",
+      "expiresAt": null,
+      "allowedWording": "Use the attributed text above; no independent verification or broader availability implication.",
+      "reviewerVerdict": "pending-independent-review"
+    },
+    {
+      "id": "h2",
+      "text": "HONOR's approximately 80W system-power claim requires the X9 model, enabled High-Performance Mode and external power.",
+      "sourceIds": [
+        "honor-overview-20260924"
+      ],
+      "type": "manufacturer-statement",
+      "asOf": "2026-09-24T06:50:01Z",
+      "expiresAt": null,
+      "allowedWording": "Use the attributed text above; no independent verification or broader availability implication.",
+      "reviewerVerdict": "pending-independent-review"
+    },
+    {
+      "id": "h3",
+      "text": "HONOR advertises up to 16.7 hours from lab office-use testing, not our measured creator workload.",
+      "sourceIds": [
+        "honor-overview-20260924"
+      ],
+      "type": "manufacturer-statement",
+      "asOf": "2026-09-24T06:50:01Z",
+      "expiresAt": null,
+      "allowedWording": "Use the attributed text above; no independent verification or broader availability implication.",
+      "reviewerVerdict": "pending-independent-review"
+    },
+    {
+      "id": "h4",
+      "text": "HONOR lists Thunderbolt 4 and two M.2 2280 SSD slots.",
+      "sourceIds": [
+        "honor-overview-20260924"
+      ],
+      "type": "manufacturer-statement",
+      "asOf": "2026-09-24T06:50:01Z",
+      "expiresAt": null,
+      "allowedWording": "Use the attributed text above; no independent verification or broader availability implication.",
+      "reviewerVerdict": "pending-independent-review"
+    },
+    {
+      "id": "h5",
+      "text": "The retrieved Benelux laptop directory lists MagicBook 16 2026, not this Pro 14 model; Dutch availability remains unverified.",
+      "sourceIds": [
+        "honor-benelux-20260924"
+      ],
+      "type": "source-observation",
+      "asOf": "2026-09-24T06:50:01Z",
+      "expiresAt": null,
+      "allowedWording": "Use the attributed text above; no independent verification or broader availability implication.",
+      "reviewerVerdict": "pending-independent-review"
+    },
+    {
+      "id": "h6",
+      "text": "HONOR's copyright section calls for prior written permission for copying and commercial reuse; no applicable image permission receipt was found.",
+      "sourceIds": [
+        "honor-terms-20260924"
+      ],
+      "type": "manufacturer-statement",
+      "asOf": "2026-09-24T06:50:01Z",
+      "expiresAt": null,
+      "allowedWording": "Use the attributed text above; no independent verification or broader availability implication.",
+      "reviewerVerdict": "pending-independent-review"
+    }
+  ],
+  "comparisons": [],
+  "originalContribution": {
+    "status": "research-synthesis-only",
+    "artifact": "Configuration and power-state decision matrix",
+    "rows": [
+      {
+        "decision": "Work away from outlets",
+        "requiredEvidence": "Exact SKU; repeatable battery workload and export test",
+        "currentVerdict": "unproven"
+      },
+      {
+        "decision": "Sustained desk workload",
+        "requiredEvidence": "Same SKU, power mode, app/project and thermal measurements",
+        "currentVerdict": "unproven"
+      },
+      {
+        "decision": "Buy in NL",
+        "requiredEvidence": "Official local SKU, keyboard, service and offer confirmation",
+        "currentVerdict": "HOLD"
+      }
+    ]
+  },
+  "uncertainty": [
+    "Exact local RAM/SSD/CPU combination and orderable SKU.",
+    "Creator workload performance, sustained noise and battery results.",
+    "Rendered specification values unavailable in text.",
+    "No approved photo/video rights receipt."
+  ],
+  "media": {
+    "tier": "EXPLAINER",
+    "packetId": null,
+    "assets": [],
+    "productionReady": false,
+    "rightsStatus": "HOLD",
+    "assignments": [
+      {
+        "id": "honor-configuration-power-matrix",
+        "role": "inline-decision-figure",
+        "method": "Original deterministic table/diagram from accepted claims; no generated device image.",
+        "status": "brief-only"
+      },
+      {
+        "id": "honor-product-and-ports",
+        "role": "product-evidence",
+        "method": "Own exact-device photograph or explicitly licensed manufacturer asset.",
+        "status": "HOLD-permission-and-variant"
+      },
+      {
+        "id": "honor-workload-video",
+        "role": "optional-workflow-evidence",
+        "method": "Own clean-account recording; retain device/app/test settings. External manufacturer video only after exact official embed and permissions are verified; no download/rehost.",
+        "status": "not-commissioned"
+      },
+      {
+        "id": "honor-decision-og",
+        "role": "social-preview",
+        "method": "Typography and approved decision figure; no production within this reservation.",
+        "status": "brief-only"
+      }
+    ],
+    "creditRequirements": "Record creator/rights owner, exact source and written scope, channels/territory/expiry, then caption, alt text, checksum and immutable asset/version IDs. Credit is not permission.",
+    "placementRule": "Image enlargement, source credit and shopping CTA remain separate."
+  },
+  "affiliate": {
+    "fitReason": "A future exact-SKU buying decision may justify a local offer; this unresolved shortlist does not.",
+    "status": "no-relevant-approved-route-established",
+    "programId": null,
+    "issuedUrl": null,
+    "region": "NL",
+    "checkedAt": "2026-09-24T06:50:01Z",
+    "ledgerCheck": "Canonical affiliate operating ledger read; no HONOR or relevant hardware retailer route found. Private rows not copied.",
+    "fallback": "https://www.honor.com/global/laptops/honor-magicbook-pro-14-2026/",
+    "disclosure": null
+  },
+  "price": {
+    "amount": null,
+    "currency": null,
+    "verifiedAt": null,
+    "note": "No price or stock assertion."
+  },
+  "inventory": {
+    "checkedAt": "2026-09-24T06:50:01Z",
+    "starlightMain": "6bd41ea998a95cece354514743061a68ed479b39",
+    "frankxMain": "80e5e94da4a1ac77d0f87863072c398abf4aca6e",
+    "overlap": "Existing creator-laptop-vs-desktop comparison owns the generic form-factor decision; this packet only owns exact-model suitability.",
+    "suggestedInternalPath": "/compare/creator-laptop-vs-desktop",
+    "canonicalUrl": null,
+    "checks": [
+      "Both repositories' open PRs checked; no competing MagicBook brief found.",
+      "FrankX complete filename tree and content index checked; no exact-model match.",
+      "Starlight typed content reviewed.",
+      "Existing Content OS Pieces queried for MagicBook/laptop, portable/hardware/creator studio titles and MagicBook body; no matches."
+    ],
+    "limitation": "Targeted inventory checks, not an exhaustive semantic duplicate audit. No Content OS write or new dashboard."
+  },
+  "frankxAdaptation": {
+    "needed": false,
+    "distinctReaderJob": null,
+    "firstPartyEvidence": null,
+    "reason": "No original creator/founder workflow evidence."
+  },
+  "budget": {
+    "reservedInputTokens": 6000,
+    "reservedOutputTokens": 2000,
+    "additionalReservedTokens": 0,
+    "reservedAt": "2026-09-16T22:00:00Z",
+    "actualInputTokens": null,
+    "actualOutputTokens": null,
+    "actualCost": null,
+    "paidApiCalls": 0,
+    "imageGenerationCalls": 0,
+    "note": "Planning reservation only; actual usage unknown. Full article/media needs separate scoped budget."
+  },
+  "reviews": {
+    "facts": "pending-independent-review",
+    "rights": "HOLD",
+    "readerValue": "pending-independent-review",
+    "visual": "pending-production",
+    "mobile": null,
+    "desktop": null
+  },
+  "publication": {
+    "pr": "https://github.com/frankxai/starlight-technology/pull/21",
+    "liveUrl": null,
+    "publishedAt": null,
+    "authorization": null
+  },
+  "nextEvidence": "An official NL/Benelux saleable SKU with CPU, RAM, SSD, keyboard and warranty; then exact-device workload evidence and a permission-safe visual.",
+  "measurement": {
+    "acceptedArticles": 0,
+    "day28": null,
+    "expansion": "not-eligible"
+  }
+}

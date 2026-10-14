@@ -1,0 +1,325 @@
+{
+  "schemaVersion": 1,
+  "status": "HOLD",
+  "publishable": false,
+  "contentId": "st-hw-lenovo-googlebook-15-nl-cloud-first-creator-decision",
+  "productId": "lenovo-googlebook-15",
+  "jobId": "hw-994deff273639b4fb27d",
+  "variantId": "lenovo-googlebook-15-nl-family-unresolved-202610",
+  "region": "Netherlands",
+  "canonicalOwner": "starlight.technology",
+  "readerJob": "Decide whether a Netherlands-based cloud-first creator should wait for or consider Lenovo Googlebook 15, and which regional, application and evidence gaps make it the wrong purchase.",
+  "decision": "Do not recommend purchase in the Netherlands yet. Lenovo has a Dutch family page, but the retrieved page does not establish an orderable Dutch model code, configuration, price, stock or support package. Reconsider only after an exact NL SKU is available and the creator's required applications are verified on Googlebook OS.",
+  "wrongPurchaseConditions": [
+    "A required editing, music, development or AI application depends on Windows, macOS, CUDA, a local plug-in or a peripheral driver that has not been verified on Googlebook OS.",
+    "The buyer assumes the globally announced 16/32 GB memory and 256/512 GB storage combinations are all orderable in the Netherlands.",
+    "The buyer counts the twelve-month Google AI Pro promotion as Dutch value even though Lenovo's launch footnote does not list the Netherlands among eligible countries.",
+    "The buyer treats Lenovo's up-to-12.5-hour internal battery claim as measured creator-workload endurance.",
+    "The buyer needs an immediately orderable Dutch SKU, known keyboard, warranty and return route rather than a family page with incomplete purchasing data.",
+    "The buyer assumes Lenovo's creator positioning is independent evidence of local editing, audio, coding or AI performance."
+  ],
+  "evidenceLevel": "manufacturer-source; no hands-on testing",
+  "configuration": {
+    "family": "Lenovo Googlebook 15 / GB 15IPH12",
+    "announcedProcessor": "Intel Core Ultra 5 325",
+    "announcedMemoryOptionsGb": [16, 32],
+    "announcedStorageOptionsGb": [256, 512],
+    "operatingSystem": "Googlebook OS",
+    "announcedDisplay": "15.3-inch 2880x1800 OLED touchscreen, 120 Hz, 100% DCI-P3, 500 nits",
+    "announcedPorts": [
+      "2x Thunderbolt 4",
+      "1x USB 3.2 Type-A",
+      "1x HDMI 2.0",
+      "1x audio combo jack"
+    ],
+    "announcedWeight": "starting at 1.29 kg",
+    "nlOrderableModelSku": null,
+    "nlMemoryStorageConfiguration": null,
+    "nlKeyboardLayout": null,
+    "nlWarranty": null,
+    "nlCurrentPrice": null,
+    "nlCurrentStock": null
+  },
+  "sources": [
+    {
+      "id": "lenovo-storyhub-googlebook-20260928",
+      "url": "https://news.lenovo.com/pressroom/press-releases/first-googlebook-premium-ai-experiences-sleek-lightweight-design/",
+      "publisher": "Lenovo StoryHub",
+      "publishedAt": "2026-09-28",
+      "retrievedAt": "2026-10-12T06:57:39Z",
+      "sourceType": "official-global-announcement",
+      "claimIds": ["l1", "l2", "l3", "l4", "l5", "l6", "l7"],
+      "freshnessTrigger": "Regional model, availability, specification, offer or support change."
+    },
+    {
+      "id": "lenovo-nl-googlebook-family-20261012",
+      "url": "https://www.lenovo.com/nl/nl/p/laptops/googlebook/googlebook-series/lenovo-googlebook-15/len101o0001",
+      "publisher": "Lenovo Nederland",
+      "publishedAt": null,
+      "retrievedAt": "2026-10-12T06:57:39Z",
+      "sourceType": "official-regional-product-family-page",
+      "claimIds": ["l8"],
+      "freshnessTrigger": "Recheck before any Dutch buying recommendation and when a model, price or stock state appears."
+    },
+    {
+      "id": "lenovo-psref-83w60000us-20261012",
+      "url": "https://psref.lenovo.com/Detail/Lenovo_GB_15IPH12?M=83W60000US",
+      "publisher": "Lenovo Product Specifications Reference",
+      "publishedAt": null,
+      "retrievedAt": "2026-10-12T06:57:39Z",
+      "sourceType": "official-specification-page",
+      "claimIds": ["l9"],
+      "freshnessTrigger": "Exact Dutch model-code discovery or PSREF extraction recovery.",
+      "note": "The page returned zero extracted text in this run; no specification watermark advanced."
+    },
+    {
+      "id": "lenovo-terms-20261012",
+      "url": "https://www.lenovo.com/us/en/legal/",
+      "publisher": "Lenovo",
+      "publishedAt": "2020-10-20",
+      "retrievedAt": "2026-10-12T06:57:39Z",
+      "sourceType": "official-site-terms",
+      "claimIds": ["l10"],
+      "freshnessTrigger": "Each proposed asset or change to applicable terms.",
+      "note": "This US terms page is evidence that no reuse licence was established in the checked path, not a legal conclusion about every Lenovo press asset."
+    }
+  ],
+  "claims": [
+    {
+      "id": "l1",
+      "text": "Lenovo dates its Googlebook 15 announcement September 28, 2026 and describes it as Lenovo's first Googlebook.",
+      "sourceIds": ["lenovo-storyhub-googlebook-20260928"],
+      "type": "manufacturer-statement",
+      "asOf": "2026-10-12T06:57:39Z",
+      "expiresAt": null,
+      "allowedWording": "Attribute the product identity and date to Lenovo.",
+      "reviewerVerdict": "pending-independent-review"
+    },
+    {
+      "id": "l2",
+      "text": "Lenovo's announcement lists Intel Core Ultra 5 325, 16 or 32 GB LPDDR5x memory, 256 or 512 GB SSD storage and Googlebook OS for the family.",
+      "sourceIds": ["lenovo-storyhub-googlebook-20260928"],
+      "type": "manufacturer-statement",
+      "asOf": "2026-10-12T06:57:39Z",
+      "expiresAt": null,
+      "allowedWording": "Call these globally announced family options, not confirmed Dutch combinations.",
+      "reviewerVerdict": "pending-independent-review"
+    },
+    {
+      "id": "l3",
+      "text": "Lenovo lists a 15.3-inch 2880x1800 OLED touchscreen at up to 120 Hz, starting weight of 1.29 kg, two Thunderbolt 4 ports, USB-A, HDMI 2.0 and an audio jack.",
+      "sourceIds": ["lenovo-storyhub-googlebook-20260928"],
+      "type": "manufacturer-statement",
+      "asOf": "2026-10-12T06:57:39Z",
+      "expiresAt": null,
+      "allowedWording": "Attribute specifications to Lenovo and recheck the exact NL model.",
+      "reviewerVerdict": "pending-independent-review"
+    },
+    {
+      "id": "l4",
+      "text": "Lenovo's up-to-12.5-hour battery figure is based on internal testing under stated conditions and is not a measured creator workload.",
+      "sourceIds": ["lenovo-storyhub-googlebook-20260928"],
+      "type": "manufacturer-statement",
+      "asOf": "2026-10-12T06:57:39Z",
+      "expiresAt": null,
+      "allowedWording": "Keep the internal-test attribution and do not convert it into expected real-world endurance.",
+      "reviewerVerdict": "pending-independent-review"
+    },
+    {
+      "id": "l5",
+      "text": "Lenovo says Gemini Intelligence, Magic Pointer and Rambler availability varies by country, language, age, connectivity and compatibility.",
+      "sourceIds": ["lenovo-storyhub-googlebook-20260928"],
+      "type": "manufacturer-statement",
+      "asOf": "2026-10-12T06:57:39Z",
+      "expiresAt": null,
+      "allowedWording": "Describe the features as Lenovo claims with the availability conditions visible.",
+      "reviewerVerdict": "pending-independent-review"
+    },
+    {
+      "id": "l6",
+      "text": "Lenovo's launch footnote for the twelve-month Google AI Pro offer lists eight eligible countries and does not list the Netherlands.",
+      "sourceIds": ["lenovo-storyhub-googlebook-20260928"],
+      "type": "source-observation",
+      "asOf": "2026-10-12T06:57:39Z",
+      "expiresAt": "2027-03-31T23:59:00-07:00",
+      "allowedWording": "Say the Netherlands is absent from Lenovo's checked launch-footnote list; do not infer permanent ineligibility.",
+      "reviewerVerdict": "pending-independent-review"
+    },
+    {
+      "id": "l7",
+      "text": "Lenovo announces United States availability from October 4, 2026 and a starting price of $1,099.99, with geography, tax, configuration and availability caveats.",
+      "sourceIds": ["lenovo-storyhub-googlebook-20260928"],
+      "type": "manufacturer-statement",
+      "asOf": "2026-10-12T06:57:39Z",
+      "expiresAt": null,
+      "allowedWording": "Use only as dated US launch context; do not quote it as a Dutch price or offer.",
+      "reviewerVerdict": "pending-independent-review"
+    },
+    {
+      "id": "l8",
+      "text": "Lenovo has a Netherlands Googlebook 15 family page, but the retrieved page did not expose an exact model code, orderable configuration, product price or complete regional specification set.",
+      "sourceIds": ["lenovo-nl-googlebook-family-20261012"],
+      "type": "source-observation",
+      "asOf": "2026-10-12T06:57:39Z",
+      "expiresAt": "2026-10-19T06:57:39Z",
+      "allowedWording": "Describe only the retrieved-page limitation; recheck live state before publication.",
+      "reviewerVerdict": "pending-independent-review"
+    },
+    {
+      "id": "l9",
+      "text": "The checked PSREF detail page returned no extracted text, so it did not verify a Dutch SKU or supersede the announcement specifications.",
+      "sourceIds": ["lenovo-psref-83w60000us-20261012"],
+      "type": "source-failure",
+      "asOf": "2026-10-12T06:57:39Z",
+      "expiresAt": null,
+      "allowedWording": "Keep this as an internal evidence limitation, not a claim that PSREF contains no data.",
+      "reviewerVerdict": "pending-independent-review"
+    },
+    {
+      "id": "l10",
+      "text": "The checked Lenovo terms do not establish permission for these sites to republish product images, marks or other Lenovo website content.",
+      "sourceIds": ["lenovo-terms-20261012"],
+      "type": "rights-observation",
+      "asOf": "2026-10-12T06:57:39Z",
+      "expiresAt": null,
+      "allowedWording": "State only that no permission receipt was established; do not present this as legal advice.",
+      "reviewerVerdict": "pending-independent-review"
+    }
+  ],
+  "comparisons": [],
+  "originalContribution": {
+    "status": "research-synthesis-only",
+    "artifact": "NL cloud-first creator suitability and release-gate matrix",
+    "rows": [
+      {
+        "readerNeed": "Browser, cloud documents, calls and Android continuity",
+        "tentativeFit": "plausible after exact NL model verification",
+        "qualification": "Manufacturer feature set; no hands-on workflow test."
+      },
+      {
+        "readerNeed": "Adobe, DAW, coding, local AI or specialist plug-ins",
+        "tentativeFit": "unproven",
+        "qualification": "Verify every required application, browser capability, Linux/container path, driver and peripheral before purchase."
+      },
+      {
+        "readerNeed": "Immediate Dutch purchase",
+        "tentativeFit": "HOLD",
+        "qualification": "No exact orderable NL SKU, price, stock, keyboard or warranty was established."
+      },
+      {
+        "readerNeed": "Included Google AI Pro value",
+        "tentativeFit": "not established for NL",
+        "qualification": "The Netherlands is absent from Lenovo's checked launch-footnote country list."
+      }
+    ]
+  },
+  "uncertainty": [
+    "Exact Dutch model code, CPU/RAM/SSD combination, keyboard, warranty, stock, price and return route.",
+    "Googlebook OS support for the reader's exact creative, development and local-AI applications, plug-ins and peripherals.",
+    "Independent workload, battery, thermals, audio, display and sustained-performance measurements.",
+    "Current Netherlands eligibility for each Gemini feature, Android integration and the Google AI Pro offer.",
+    "Written per-asset commercial image permission or an original exact-device capture."
+  ],
+  "media": {
+    "tier": "EXPLAINER",
+    "packetId": null,
+    "assets": [],
+    "productionReady": false,
+    "rightsStatus": "HOLD",
+    "assignments": [
+      {
+        "id": "googlebook-nl-release-matrix",
+        "role": "inline-decision-figure",
+        "method": "Original deterministic matrix separating announced family facts, NL verification, OS compatibility checks and purchase gates.",
+        "status": "brief-only"
+      },
+      {
+        "id": "googlebook-exact-nl-device-hero",
+        "role": "product-evidence",
+        "method": "Own photograph of the exact NL SKU or an individually licensed Lenovo press asset with a placement receipt.",
+        "status": "HOLD-permission-and-SKU"
+      },
+      {
+        "id": "googlebook-workflow-capture",
+        "role": "workflow-evidence",
+        "method": "Own clean-account screen recording showing the exact browser/cloud/Android workflow, versions and limitations; no simulated product UI.",
+        "status": "not-commissioned"
+      },
+      {
+        "id": "googlebook-os-boundary-diagram",
+        "role": "compatibility-explainer",
+        "method": "Original diagram separating verified web/PWA/Android/Linux paths from unverified native desktop dependencies.",
+        "status": "brief-only"
+      }
+    ],
+    "creditRequirements": "Register asset, version and rendition IDs; record source, creator, rights owner, written scope, territory, channels, expiry, credit, checksum, dimensions, alt text and approval actor. Credit alone is not permission.",
+    "placementRule": "Image enlargement, source credit and shopping CTA remain separate. Only approved immutable renditions may resolve in production."
+  },
+  "affiliate": {
+    "fitReason": "A future exact-SKU comparison may justify a Dutch issued offer after availability and application fit are verified.",
+    "status": "no-approved-offer",
+    "programId": null,
+    "issuedUrl": null,
+    "region": "NL",
+    "checkedAt": "2026-10-12T06:57:39Z",
+    "ledgerCheck": "The repository approved-offer ledger is empty. No referral was invented or enrolled.",
+    "fallback": "https://www.lenovo.com/nl/nl/p/laptops/googlebook/googlebook-series/lenovo-googlebook-15/len101o0001",
+    "disclosure": null
+  },
+  "price": {
+    "amount": null,
+    "currency": null,
+    "verifiedAt": null,
+    "note": "The source contains dated US launch context only. No Dutch price, stock or merchant offer is asserted."
+  },
+  "inventory": {
+    "checkedAt": "2026-10-12T06:57:39Z",
+    "overlap": "Starlight owns the market-wide buying decision. Existing creator-laptop packets cover different exact products; FrankX PR #978 concerns a broader AI compute guide, not this model or reader decision.",
+    "canonicalUrl": null,
+    "checks": [
+      "Starlight repository content and open PRs checked; no Googlebook 15 record or exact-model proposal found.",
+      "FrankX open PRs checked; no exact Googlebook 15 proposal found.",
+      "Refresh the canonical Content OS before authoring; this packet does not create an article URL."
+    ],
+    "limitation": "Targeted repository and open-PR inventory, not a complete semantic Content OS review."
+  },
+  "frankxAdaptation": {
+    "needed": false,
+    "distinctReaderJob": null,
+    "firstPartyEvidence": null,
+    "reason": "No original Frank creator workflow measurement or exact device evidence exists to justify separate prose."
+  },
+  "budget": {
+    "reservedInputTokens": 6000,
+    "reservedOutputTokens": 2000,
+    "additionalReservedTokens": 8000,
+    "reservedAt": "2026-10-12T06:57:39Z",
+    "actualInputTokens": null,
+    "actualOutputTokens": null,
+    "actualCost": null,
+    "paidApiCalls": 0,
+    "imageGenerationCalls": 0,
+    "note": "Planning reservation only; actual provider usage and money are unknown. Full article and flagship media need a separate budget."
+  },
+  "reviews": {
+    "facts": "pending-independent-review",
+    "rights": "HOLD",
+    "readerValue": "pending-independent-review",
+    "visual": "pending-production",
+    "mobile": null,
+    "desktop": null
+  },
+  "publication": {
+    "pr": "https://github.com/frankxai/starlight-technology/pull/25",
+    "preview": null,
+    "liveUrl": null,
+    "publishedAt": null,
+    "authorization": null
+  },
+  "nextEvidence": "An orderable Dutch model code with configuration, keyboard, warranty, price and stock; an application-by-application Googlebook OS verification; exact-device workload evidence; and an original or individually permitted visual.",
+  "measurement": {
+    "acceptedArticles": 0,
+    "day28": null,
+    "expansion": "not-eligible"
+  }
+}

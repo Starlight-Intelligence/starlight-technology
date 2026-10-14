@@ -1,0 +1,162 @@
+{
+  "schemaVersion": 1,
+  "asOf": "2026-09-17T06:26:47Z",
+  "selected": [],
+  "deferred": [],
+  "rejected": [],
+  "pending": [
+    "hw-f3f1b446ce9fcd20c8e8",
+    "hw-64e0b6cfa5a038fe0151"
+  ],
+  "budget": {
+    "reservedThisRun": 0,
+    "reservedThisMonth": 24000,
+    "monthLimit": 240000,
+    "modelCalls": 0,
+    "paidApiCalls": 0,
+    "actualModelTokens": 0
+  },
+  "nextState": {
+    "schemaVersion": 1,
+    "months": {
+      "2026-09": {
+        "reservedTokens": 24000
+      }
+    },
+    "jobs": [
+      {
+        "id": "hw-f3f1b446ce9fcd20c8e8",
+        "key": "honor-magicbook-pro-14-2026:portable-creator-workstation",
+        "eventIds": [
+          "87889f236b4553382c53ca98139569721fe12bcd38b8b23b78cc56f101a1b24c"
+        ],
+        "status": "reserved",
+        "reservedAt": "2026-09-16T22:00:00Z",
+        "period": "2026-09",
+        "reservedTokens": 8000,
+        "productId": "honor-magicbook-pro-14-2026",
+        "intentId": "portable-creator-workstation",
+        "category": "laptops",
+        "action": "commission-research",
+        "canonicalUrl": null,
+        "owner": "starlight.technology",
+        "frankxTreatment": "Only commission a separate creator workflow with original evidence and a distinct reader job",
+        "readerDecision": "Which exact configuration and region should enter our creator laptop comparison, and what evidence is missing?",
+        "sources": [
+          {
+            "sourceId": "honor",
+            "url": "https://www.honor.com/global/laptops/honor-magicbook-pro-14-2026/",
+            "checkedAt": "2026-09-16T22:00:00Z",
+            "summary": "HONOR has a global product page for MagicBook Pro 14 2026. Verify local configuration and independent workload evidence before comparing it with other creator laptops.",
+            "facts": [
+              "HONOR publishes a global product page named MagicBook Pro 14 2026."
+            ]
+          }
+        ],
+        "commercial": "Evaluate fit; resolve enrolled partner from the canonical affiliate ledger; otherwise use an ordinary link",
+        "media": "Source real product images; quarantine until usage rights and credits are recorded; add a decision diagram when useful",
+        "gates": [
+          "full-source-fact-check",
+          "rights-and-credit",
+          "distinct-reader-value",
+          "independent-review",
+          "desktop-and-mobile-preview",
+          "publication-authority"
+        ],
+        "evidenceLevel": "manufacturer-source; no hands-on testing claimed",
+        "publishable": false
+      },
+      {
+        "id": "hw-64e0b6cfa5a038fe0151",
+        "key": "samsung-galaxy-book6-14:portable-creator-workstation",
+        "eventIds": [
+          "03f5f3c8f0bd3dbc6b583f78860b1d36fe6fac0216958c3d2b5c3f5db25ad179"
+        ],
+        "status": "reserved",
+        "reservedAt": "2026-09-16T22:00:00Z",
+        "period": "2026-09",
+        "reservedTokens": 8000,
+        "productId": "samsung-galaxy-book6-14",
+        "intentId": "portable-creator-workstation",
+        "category": "laptops",
+        "action": "commission-research",
+        "canonicalUrl": null,
+        "owner": "starlight.technology",
+        "frankxTreatment": "Only commission a separate creator workflow with original evidence and a distinct reader job",
+        "readerDecision": "Is this configuration sufficient for a portable creator workflow, and what external equipment would still be required?",
+        "sources": [
+          {
+            "sourceId": "samsung",
+            "url": "https://news.samsung.com/global/samsung-expands-the-galaxy-book6-lineup-making-galaxy-book-more-accessible",
+            "checkedAt": "2026-09-16T22:00:00Z",
+            "summary": "Samsung describes an additional 14-inch Galaxy Book6 configuration. Commission a decision brief around workload, ports and regional configuration, with manufacturer performance claims clearly attributed.",
+            "facts": [
+              "Samsung dates the expansion announcement September 1, 2026.",
+              "The announcement describes a 14-inch Galaxy Book6 model."
+            ]
+          }
+        ],
+        "commercial": "Evaluate fit; resolve enrolled partner from the canonical affiliate ledger; otherwise use an ordinary link",
+        "media": "Source real product images; quarantine until usage rights and credits are recorded; add a decision diagram when useful",
+        "gates": [
+          "full-source-fact-check",
+          "rights-and-credit",
+          "distinct-reader-value",
+          "independent-review",
+          "desktop-and-mobile-preview",
+          "publication-authority"
+        ],
+        "evidenceLevel": "manufacturer-source; no hands-on testing claimed",
+        "publishable": false
+      },
+      {
+        "id": "hw-502e439896c9d0098b72",
+        "key": "samsung-one-ui-9:creator-update-decision",
+        "eventIds": [
+          "afc7b636549f200dcde3b523e1ea373770acf0cc8e0f596ad3dab6866dfe1ba9"
+        ],
+        "status": "held",
+        "reservedAt": "2026-09-16T22:00:00Z",
+        "period": "2026-09",
+        "reservedTokens": 8000,
+        "productId": "samsung-one-ui-9",
+        "intentId": "creator-update-decision",
+        "category": "phones",
+        "action": "commission-research",
+        "canonicalUrl": null,
+        "owner": "starlight.technology",
+        "frankxTreatment": "Only commission a separate creator workflow with original evidence and a distinct reader job",
+        "readerDecision": "Should a creator update an existing phone, and which workflow changes can be demonstrated on their exact device?",
+        "sources": [
+          {
+            "sourceId": "samsung",
+            "url": "https://news.samsung.com/global/samsung-begins-official-rollout-of-one-ui-9-bringing-the-latest-galaxy-experiences-to-more-devices",
+            "checkedAt": "2026-09-16T22:00:00Z",
+            "summary": "Samsung announces a wider One UI 9 rollout. Research which creator-facing changes are available for each device and region before recommending an upgrade.",
+            "facts": [
+              "Samsung dates this announcement September 16, 2026.",
+              "The release describes video reframing and voice-recording summary features with eligibility caveats."
+            ]
+          }
+        ],
+        "commercial": "Evaluate fit; resolve enrolled partner from the canonical affiliate ledger; otherwise use an ordinary link",
+        "media": "Source real product images; quarantine until usage rights and credits are recorded; add a decision diagram when useful",
+        "gates": [
+          "full-source-fact-check",
+          "rights-and-credit",
+          "distinct-reader-value",
+          "independent-review",
+          "desktop-and-mobile-preview",
+          "publication-authority"
+        ],
+        "evidenceLevel": "manufacturer-source; no hands-on testing claimed",
+        "publishable": false,
+        "researchPacket": "data/editorial/packets/samsung-one-ui-9-20260917.json",
+        "heldAt": "2026-09-17T06:26:47Z",
+        "holdReason": "Research brief delivered. Exact regional device eligibility and usable visual rights remain unresolved; independent review and publication authority pending.",
+        "releaseCondition": "Evidence for a specific local model/build and original or licensed visuals; reconcile Content OS before authoring."
+      }
+    ],
+    "note": "Bootstrap once. Every subsequent run must read nextState from the newest saved plan bundle. Never reset this file to renew a budget."
+  }
+}

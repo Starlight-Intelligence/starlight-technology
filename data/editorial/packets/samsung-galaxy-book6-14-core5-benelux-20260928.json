@@ -1,0 +1,387 @@
+{
+  "schemaVersion": 1,
+  "status": "HOLD",
+  "publishable": false,
+  "contentId": "st-hw-samsung-galaxy-book6-14-core5-benelux-creator-decision",
+  "productId": "samsung-galaxy-book6-14",
+  "jobId": "hw-64e0b6cfa5a038fe0151",
+  "variantId": "galaxy-book6-14-core5-16gb-512gb-benelux-202609",
+  "region": "NL/Benelux",
+  "canonicalOwner": "starlight.technology",
+  "readerJob": "Decide whether the newly announced 14-inch Core 5 Galaxy Book6 suits a portable creator workflow and which equipment or evidence is still needed.",
+  "decision": "Shortlist the announced 16 GB/512 GB configuration for light writing, calls and connected-phone workflows only. Do not recommend purchase, sustained editing or local AI until an exact Dutch orderable SKU and independent workload evidence are checked.",
+  "wrongPurchaseConditions": [
+    "Confusing the September Core 5 expansion with the February Core Ultra 5 Galaxy Book6 14, or importing global Core 3, color and price options into the Dutch offer.",
+    "Treating Samsung's up-to-25-hour battery figure as tested creator-workload endurance.",
+    "Choosing 8 GB for memory-heavy multitasking without testing the exact workload.",
+    "Assuming USB4, Thunderbolt, external SSD speed, calibrated display quality or sustained rendering performance from the published port and display list.",
+    "Planning a 4K external monitor above 30 Hz through the stated HDMI 1.4 output."
+  ],
+  "evidenceLevel": "manufacturer-source; no hands-on testing",
+  "configuration": {
+    "family": "Samsung Galaxy Book6 14-inch Core 5 expansion announced 2026-09-01",
+    "announcedBeneluxOptions": [
+      {
+        "cpu": "Intel Core 5",
+        "ramGb": 8,
+        "ssdGb": 256,
+        "historicalRecommendedLaunchPriceEur": 849
+      },
+      {
+        "cpu": "Intel Core 5",
+        "ramGb": 8,
+        "ssdGb": 512,
+        "historicalRecommendedLaunchPriceEur": 999
+      },
+      {
+        "cpu": "Intel Core 5",
+        "ramGb": 16,
+        "ssdGb": 512,
+        "historicalRecommendedLaunchPriceEur": 1199
+      }
+    ],
+    "selectedConfiguration": "Core 5 / 16 GB / 512 GB / Gray",
+    "orderableModelSku": null,
+    "keyboardLayout": null,
+    "warranty": null,
+    "currentStock": null
+  },
+  "sources": [
+    {
+      "id": "samsung-nl-expansion-20260901",
+      "url": "https://news.samsung.com/nl/samsung-breidt-galaxy-book6-serie-uit-met-toegankelijker-model",
+      "publisher": "Samsung Newsroom Nederland",
+      "publishedAt": "2026-09-01",
+      "retrievedAt": "2026-09-28T06:45:58Z",
+      "sourceType": "official-regional-announcement",
+      "claimIds": [
+        "s1",
+        "s2",
+        "s3",
+        "s4",
+        "s5",
+        "s6",
+        "s7"
+      ],
+      "freshnessTrigger": "Recheck exact SKU, stock and prices before any buying recommendation; specifications upon model change."
+    },
+    {
+      "id": "samsung-global-expansion-20260901",
+      "url": "https://news.samsung.com/global/samsung-expands-the-galaxy-book6-lineup-making-galaxy-book-more-accessible",
+      "publisher": "Samsung Newsroom Global",
+      "publishedAt": "2026-09-01",
+      "retrievedAt": "2026-09-28T06:45:58Z",
+      "sourceType": "official-global-announcement",
+      "claimIds": [
+        "s8"
+      ],
+      "freshnessTrigger": "Regional variant or specification change.",
+      "note": "Global Core 3 and Violet Silver options are not evidence of a Dutch offer."
+    },
+    {
+      "id": "samsung-nl-earlier-20260217",
+      "url": "https://news.samsung.com/nl/galaxy-book6-lanceert-in-europa-met-drie-nieuwe-modellen-snelle-prestaties-en-een-fris-ontwerp",
+      "publisher": "Samsung Newsroom Nederland",
+      "publishedAt": "2026-02-17",
+      "retrievedAt": "2026-09-28T06:45:58Z",
+      "sourceType": "official-regional-announcement",
+      "claimIds": [
+        "s9"
+      ],
+      "freshnessTrigger": "Recheck when matching a retailer or support SKU."
+    },
+    {
+      "id": "samsung-newsroom-terms-20260928",
+      "url": "https://news.samsung.com/global/terms",
+      "publisher": "Samsung",
+      "publishedAt": null,
+      "retrievedAt": "2026-09-28T06:45:58Z",
+      "sourceType": "official-terms",
+      "claimIds": [
+        "s10"
+      ],
+      "freshnessTrigger": "Every asset or terms change."
+    },
+    {
+      "id": "samsung-media-library-20260928",
+      "url": "https://news.samsung.com/medialibrary/global",
+      "publisher": "Samsung",
+      "publishedAt": null,
+      "retrievedAt": "2026-09-28T06:45:58Z",
+      "sourceType": "official-media-portal",
+      "claimIds": [
+        "s11"
+      ],
+      "freshnessTrigger": "Each asset and planned placement."
+    }
+  ],
+  "claims": [
+    {
+      "id": "s1",
+      "text": "Samsung's 1 September Dutch announcement says the new Galaxy Book6 model is available in Benelux.",
+      "sourceIds": [
+        "samsung-nl-expansion-20260901"
+      ],
+      "type": "manufacturer-statement",
+      "asOf": "2026-09-28T06:45:58Z",
+      "expiresAt": null,
+      "allowedWording": "Attribute manufacturer figures and conditions; distinguish direct source statements, comparisons and editorial inferences.",
+      "reviewerVerdict": "pending-independent-review"
+    },
+    {
+      "id": "s2",
+      "text": "The Dutch announcement lists three 14-inch Intel Core 5 configurations: 8 GB/256 GB, 8 GB/512 GB and 16 GB/512 GB.",
+      "sourceIds": [
+        "samsung-nl-expansion-20260901"
+      ],
+      "type": "manufacturer-statement",
+      "asOf": "2026-09-28T06:45:58Z",
+      "expiresAt": null,
+      "allowedWording": "Attribute manufacturer figures and conditions; distinguish direct source statements, comparisons and editorial inferences.",
+      "reviewerVerdict": "pending-independent-review"
+    },
+    {
+      "id": "s3",
+      "text": "Its €849, €999 and €1,199 figures are recommended launch prices for those configurations, not verified current sale prices.",
+      "sourceIds": [
+        "samsung-nl-expansion-20260901"
+      ],
+      "type": "manufacturer-statement",
+      "asOf": "2026-09-28T06:45:58Z",
+      "expiresAt": null,
+      "allowedWording": "Attribute manufacturer figures and conditions; distinguish direct source statements, comparisons and editorial inferences.",
+      "reviewerVerdict": "pending-independent-review"
+    },
+    {
+      "id": "s4",
+      "text": "Samsung lists Gray for the Dutch model, an approximately 1.35 kg weight and a 14-inch IPS WUXGA 1920×1200 display rated at 350 nits.",
+      "sourceIds": [
+        "samsung-nl-expansion-20260901"
+      ],
+      "type": "manufacturer-statement",
+      "asOf": "2026-09-28T06:45:58Z",
+      "expiresAt": null,
+      "allowedWording": "Attribute manufacturer figures and conditions; distinguish direct source statements, comparisons and editorial inferences.",
+      "reviewerVerdict": "pending-independent-review"
+    },
+    {
+      "id": "s5",
+      "text": "Samsung lists two USB-C ports, one USB-A, HDMI 1.4 with 4K at 30 Hz support and a headset jack; USB-C protocol or data speed is not specified here.",
+      "sourceIds": [
+        "samsung-nl-expansion-20260901"
+      ],
+      "type": "manufacturer-statement",
+      "asOf": "2026-09-28T06:45:58Z",
+      "expiresAt": null,
+      "allowedWording": "Attribute manufacturer figures and conditions; distinguish direct source statements, comparisons and editorial inferences.",
+      "reviewerVerdict": "pending-independent-review"
+    },
+    {
+      "id": "s6",
+      "text": "Samsung advertises up to 25 hours of battery life and a 61.2 Wh battery; this is not an independently measured creator workload.",
+      "sourceIds": [
+        "samsung-nl-expansion-20260901"
+      ],
+      "type": "manufacturer-statement",
+      "asOf": "2026-09-28T06:45:58Z",
+      "expiresAt": null,
+      "allowedWording": "Attribute manufacturer figures and conditions; distinguish direct source statements, comparisons and editorial inferences.",
+      "reviewerVerdict": "pending-independent-review"
+    },
+    {
+      "id": "s7",
+      "text": "Samsung lists Intel graphics, up to 15 TOPS NPU and software sharing/AI features with footnoted conditions; no creator-app performance was tested.",
+      "sourceIds": [
+        "samsung-nl-expansion-20260901"
+      ],
+      "type": "manufacturer-statement",
+      "asOf": "2026-09-28T06:45:58Z",
+      "expiresAt": null,
+      "allowedWording": "Attribute manufacturer figures and conditions; distinguish direct source statements, comparisons and editorial inferences.",
+      "reviewerVerdict": "pending-independent-review"
+    },
+    {
+      "id": "s8",
+      "text": "The global expansion lists Core 3 and Violet Silver options and market-dependent availability; these options are not listed in the Dutch expansion.",
+      "sourceIds": [
+        "samsung-global-expansion-20260901",
+        "samsung-nl-expansion-20260901"
+      ],
+      "type": "source-comparison",
+      "asOf": "2026-09-28T06:45:58Z",
+      "expiresAt": null,
+      "allowedWording": "Attribute manufacturer figures and conditions; distinguish direct source statements, comparisons and editorial inferences.",
+      "reviewerVerdict": "pending-independent-review"
+    },
+    {
+      "id": "s9",
+      "text": "Samsung's separate 17 February Dutch Galaxy Book6 announcement lists a Core Ultra 5 14-inch configuration; it must not be conflated with the September Core 5 expansion.",
+      "sourceIds": [
+        "samsung-nl-earlier-20260217",
+        "samsung-nl-expansion-20260901"
+      ],
+      "type": "source-comparison",
+      "asOf": "2026-09-28T06:45:58Z",
+      "expiresAt": null,
+      "allowedWording": "Attribute manufacturer figures and conditions; distinguish direct source statements, comparisons and editorial inferences.",
+      "reviewerVerdict": "pending-independent-review"
+    },
+    {
+      "id": "s10",
+      "text": "Newsroom site terms do not establish permission to copy product images for a commercial affiliate article.",
+      "sourceIds": [
+        "samsung-newsroom-terms-20260928"
+      ],
+      "type": "rights-observation",
+      "asOf": "2026-09-28T06:45:58Z",
+      "expiresAt": null,
+      "allowedWording": "Attribute manufacturer figures and conditions; distinguish direct source statements, comparisons and editorial inferences.",
+      "reviewerVerdict": "pending-independent-review"
+    },
+    {
+      "id": "s11",
+      "text": "The media portal describes Samsung-owned assets for media publishing; permission for each proposed commercial placement remains unconfirmed.",
+      "sourceIds": [
+        "samsung-media-library-20260928"
+      ],
+      "type": "rights-observation",
+      "asOf": "2026-09-28T06:45:58Z",
+      "expiresAt": null,
+      "allowedWording": "Attribute manufacturer figures and conditions; distinguish direct source statements, comparisons and editorial inferences.",
+      "reviewerVerdict": "pending-independent-review"
+    }
+  ],
+  "comparisons": [],
+  "originalContribution": {
+    "status": "research-synthesis-only",
+    "artifact": "Benelux configuration and creator-workflow decision matrix",
+    "rows": [
+      {
+        "readerNeed": "Writing, calls, browser and phone transfer",
+        "tentativeFit": "16 GB/512 GB is the more defensible shortlist",
+        "qualification": "Editorial inference from capacity, not a hands-on endorsement."
+      },
+      {
+        "readerNeed": "Sustained editing or local AI",
+        "tentativeFit": "unproven",
+        "qualification": "Test exact SKU, application, plugged/unplugged performance and noise first."
+      },
+      {
+        "readerNeed": "4K external monitor above 30 Hz",
+        "tentativeFit": "not established through listed HDMI",
+        "qualification": "Check USB-C display capability and intended dock/monitor combination."
+      },
+      {
+        "readerNeed": "Fast external SSD",
+        "tentativeFit": "unproven",
+        "qualification": "Verify USB-C protocol and speed for the exact SKU."
+      }
+    ]
+  },
+  "uncertainty": [
+    "Exact Dutch orderable model code, keyboard layout, warranty and current stock.",
+    "USB-C protocol, display-out and external-storage speed for this exact configuration.",
+    "Repeatable creator workload, battery, noise and screen color measurements.",
+    "Written per-asset commercial image permission or an original exact-device capture."
+  ],
+  "media": {
+    "tier": "EXPLAINER",
+    "packetId": null,
+    "assets": [],
+    "productionReady": false,
+    "rightsStatus": "HOLD",
+    "assignments": [
+      {
+        "id": "book6-variant-matrix",
+        "role": "inline-decision-figure",
+        "method": "Original deterministic table from cited Benelux configurations; label the February Ultra 5 as separate.",
+        "status": "brief-only"
+      },
+      {
+        "id": "book6-exact-device-hero",
+        "role": "product-evidence",
+        "method": "Own photograph of exact Core 5 Gray SKU, or individually licensed Samsung asset with placement receipt.",
+        "status": "HOLD-permission-and-SKU"
+      },
+      {
+        "id": "book6-ports-workflow",
+        "role": "workflow-evidence",
+        "method": "Own port and monitor/SSD setup capture; record exact device, cable, dock and test settings.",
+        "status": "not-commissioned"
+      },
+      {
+        "id": "book6-video",
+        "role": "optional-video",
+        "method": "Own clean-account workload recording; external video only through verified official embed and rights.",
+        "status": "not-commissioned"
+      }
+    ],
+    "creditRequirements": "Record rights owner, exact asset/source, written scope, territory, expiry, caption, alt text, checksum and immutable asset ID. Credit alone is not permission.",
+    "placementRule": "Image enlargement, source credit and shopping CTA remain separate."
+  },
+  "affiliate": {
+    "fitReason": "An exact-SKU purchase comparison may justify a region-appropriate offer after verification.",
+    "status": "no-relevant-approved-route-established",
+    "programId": null,
+    "issuedUrl": null,
+    "region": "NL",
+    "checkedAt": "2026-09-24T06:50:01Z",
+    "ledgerCheck": "Prior cycle checked the canonical ledger and found no approved hardware route; do not invent a referral. Recheck before any offer.",
+    "fallback": "https://news.samsung.com/nl/samsung-breidt-galaxy-book6-serie-uit-met-toegankelijker-model",
+    "disclosure": null
+  },
+  "price": {
+    "amount": null,
+    "currency": null,
+    "verifiedAt": null,
+    "note": "Only dated recommended launch prices in the source. No current price or stock assertion."
+  },
+  "inventory": {
+    "checkedAt": "2026-09-28T06:45:58Z",
+    "overlap": "Existing Starlight creator laptop versus desktop content owns generic form-factor choice; this packet owns the exact Galaxy Book6 variant decision.",
+    "canonicalUrl": null,
+    "checks": [
+      "Existing Starlight and FrankX URLs/open PRs checked; no competing exact-model article proposal.",
+      "Content OS check from prior research cycle remains read-only; refresh before authoring."
+    ],
+    "limitation": "Targeted inventory, not full semantic review."
+  },
+  "frankxAdaptation": {
+    "needed": false,
+    "distinctReaderJob": null,
+    "firstPartyEvidence": null,
+    "reason": "No original creator/founder workflow measurement to justify separate prose."
+  },
+  "budget": {
+    "reservedInputTokens": 6000,
+    "reservedOutputTokens": 2000,
+    "additionalReservedTokens": 0,
+    "reservedAt": "2026-09-16T22:00:00Z",
+    "actualInputTokens": null,
+    "actualOutputTokens": null,
+    "actualCost": null,
+    "paidApiCalls": 0,
+    "imageGenerationCalls": 0,
+    "note": "Planning reservation only; actual usage unknown. Full article and flagship media require a separate scoped budget."
+  },
+  "reviews": {
+    "facts": "pending-independent-review",
+    "rights": "HOLD",
+    "readerValue": "pending-independent-review",
+    "visual": "pending-production",
+    "mobile": null,
+    "desktop": null
+  },
+  "publication": {
+    "pr": "https://github.com/frankxai/starlight-technology/pull/21",
+    "liveUrl": null,
+    "publishedAt": null,
+    "authorization": null
+  },
+  "nextEvidence": "Exact NL orderable Core 5/16 GB/512 GB SKU and USB-C/support details, plus exact-device creator testing and permission-safe imagery.",
+  "measurement": {
+    "acceptedArticles": 0,
+    "day28": null,
+    "expansion": "not-eligible"
+  }
+}

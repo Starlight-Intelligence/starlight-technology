@@ -1,0 +1,134 @@
+{
+  "schemaVersion": 1,
+  "contentId": "st-hw-one-ui-9-creator-update-decision",
+  "jobId": "hw-502e439896c9d0098b72",
+  "status": "HOLD",
+  "packetStage": "research-brief-delivered; not an article or publication approval",
+  "productId": "samsung-one-ui-9",
+  "variantId": null,
+  "variantScope": "Galaxy S26, S26+ and S26 Ultra are named in the global release; Dutch SKU/carrier/build eligibility has not been established.",
+  "region": "Global announcement with Netherlands-specific verification boundary",
+  "canonicalOwner": "starlight.technology",
+  "readerJob": "Determine whether an existing phone can support a useful creator workflow before considering replacement hardware.",
+  "wrongPurchaseConditions": [
+    "Buying a phone solely because an OS announcement names creator features, without checking the exact model, region, carrier and build.",
+    "Treating manufacturer demonstrations as measured editing quality or time saved.",
+    "Depending on subject tracking for footage where there is no usable subject or where account requirements cannot be met."
+  ],
+  "evidenceLevel": "source-backed manufacturer statements; no owned-device test",
+  "checkedOn": "2026-09-17",
+  "sources": [
+    {
+      "id": "samsung-global-rollout-20260916",
+      "url": "https://news.samsung.com/global/samsung-begins-official-rollout-of-one-ui-9-bringing-the-latest-galaxy-experiences-to-more-devices",
+      "publisher": "Samsung",
+      "publishedAt": "2026-09-16",
+      "retrievedAt": "2026-09-17",
+      "sourceType": "manufacturer announcement",
+      "sectionsRead": ["Release date and opening", "Capture and personalization features", "Recording features", "Footnotes 1 and 2"],
+      "freshnessTrigger": "Reopen at publication; recheck each region/model claim on support or rollout changes"
+    },
+    {
+      "id": "samsung-nl-one-ui",
+      "url": "https://www.samsung.com/nl/one-ui/",
+      "publisher": "Samsung Netherlands",
+      "publishedAt": null,
+      "retrievedAt": "2026-09-17",
+      "sourceType": "regional manufacturer product page",
+      "sectionsRead": ["One UI 9 introduction", "My FanCam", "Access instructions", "General feature caveats", "Footnotes 1 and 2"],
+      "freshnessTrigger": "Reopen at publication; this page does not establish a Dutch S26 SKU rollout date"
+    },
+    {
+      "id": "samsung-newsroom-terms",
+      "url": "https://news.samsung.com/global/terms",
+      "publisher": "Samsung",
+      "publishedAt": null,
+      "retrievedAt": "2026-09-17",
+      "sourceType": "publisher usage terms",
+      "sectionsRead": ["General Use and Restrictions"],
+      "freshnessTrigger": "Recheck before every proposed asset use; obtain applicable asset-specific permission"
+    }
+  ],
+  "claims": [
+    {
+      "id": "c1",
+      "text": "Samsung's September 16 announcement says the wider rollout starts with Galaxy S26, S26+ and S26 Ultra.",
+      "type": "manufacturer_claim",
+      "sourceIds": ["samsung-global-rollout-20260916"],
+      "asOf": "2026-09-16",
+      "allowedWording": "Attribute to Samsung; do not convert this into confirmed local device availability.",
+      "reviewerVerdict": "pending independent review"
+    },
+    {
+      "id": "c2",
+      "text": "Samsung describes My FanCam as reframing recorded footage around a selected person; its footnote requires a Samsung Account and warns that suitability and results vary.",
+      "type": "manufacturer_claim",
+      "sourceIds": ["samsung-global-rollout-20260916", "samsung-nl-one-ui"],
+      "asOf": "2026-09-17",
+      "allowedWording": "Describe an advertised capability, not a tested performance result.",
+      "reviewerVerdict": "pending independent review"
+    },
+    {
+      "id": "c3",
+      "text": "Samsung describes more structured summaries in Voice Recorder.",
+      "type": "manufacturer_claim",
+      "sourceIds": ["samsung-global-rollout-20260916"],
+      "asOf": "2026-09-17",
+      "allowedWording": "Do not assert transcription accuracy, supported Dutch usage or time savings without further evidence.",
+      "reviewerVerdict": "pending independent review"
+    },
+    {
+      "id": "c4",
+      "text": "The Dutch One UI page warns that features differ by device, country, region, software version and carrier; its launch footnote names the foldables and a gradual expansion.",
+      "type": "manufacturer_claim",
+      "sourceIds": ["samsung-nl-one-ui"],
+      "asOf": "2026-09-17",
+      "allowedWording": "Regional marketing presence is not proof that an exact Dutch handset has received an update.",
+      "reviewerVerdict": "pending independent review"
+    }
+  ],
+  "originalContribution": "Commission a device-eligibility decision table and one reproducible capture-to-edit test; neither artifact has been produced or measured yet.",
+  "decisionModel": {
+    "eligibleExistingPhone": "Verify the installed build and feature presence before commissioning a demonstration.",
+    "availabilityUnknown": "Link to official information and retain the uncertainty; no upgrade verdict.",
+    "replacementPurchase": "Requires an independently justified hardware constraint and exact variant comparison; the software announcement alone is insufficient.",
+    "alternatives": ["Retain the current capture/edit workflow", "Use an existing editor already available to the reader"],
+    "completeSystemCost": "No price claim. Future testing must record device, storage, account/network requirements and any paid editing services separately."
+  },
+  "media": {
+    "tier": "EXPLAINER",
+    "assets": [],
+    "rightsStatus": "HOLD: no commercial image reuse permission established",
+    "termsFinding": "The newsroom terms limit the stated copying/downloading permission to personal, informational, non-commercial use. No asset-specific permission for these sites was obtained.",
+    "rightsEvidenceUrl": "https://news.samsung.com/global/terms",
+    "assignments": [
+      {"role": "orientation/decision figure", "method": "Original deterministic diagram", "brief": "Device and region check, installed build, feature presence, repeatable workflow test; label unresolved branches.", "status": "not produced"},
+      {"role": "product evidence", "method": "Authorized clean-device capture or specifically licensed press asset", "brief": "Record model code, software build, region and capture date. Use owned/consented footage. Remove personal information.", "status": "blocked on eligible device or permission"},
+      {"role": "OG/social", "method": "Original live typography and approved diagram adaptation", "brief": "No generated handset UI, no implied product test, no unapproved manufacturer image.", "status": "not produced"}
+    ],
+    "productionReady": false
+  },
+  "affiliate": {
+    "fitReason": "This is an existing-device software decision, not a justified purchase recommendation.",
+    "programId": null,
+    "issuedUrl": null,
+    "status": "no-commercial-link-selected",
+    "checkedAt": "2026-09-17",
+    "ledgerEvidence": "FrankX repository AI-tool catalog inspected as a routing reference; it is not evidence of a Samsung hardware partnership. No hardware enrollment or commercial ledger approval asserted.",
+    "fallback": "Ordinary official-source links; do not insert an unrelated paid editor to manufacture monetization."
+  },
+  "price": {"amount": null, "currency": null, "merchant": null, "verifiedAt": null, "status": "omitted"},
+  "frankxAdaptation": {"needed": false, "reason": "A separate creator workflow needs first-party capture and a demonstrated result. No duplicate launch article commissioned."},
+  "inventoryCheck": {
+    "starlightBase": "6bd41ea998a95cece354514743061a68ed479b39",
+    "frankxBase": "da13a0450bdff3249292f01b48cc8946b67d52a4",
+    "result": "No One UI/Galaxy/Samsung-named article path in the inspected FrankX tree, and no matching Starlight content entry or open PR title.",
+    "limitation": "Filename/title and Starlight content check only; Content OS semantic inventory remains unresolved. No new public URL assigned."
+  },
+  "budget": {"reservationId": "hw-502e439896c9d0098b72", "reservedInputTokens": 6000, "reservedOutputTokens": 2000, "additionalReservedTokens": 0, "actualInputTokens": null, "actualOutputTokens": null, "paidApiCalls": 0, "imageGenerationCalls": 0, "humanMinutes": null},
+  "reviews": {"facts": "producer source check complete; independent review pending", "rights": "permission not established", "readerValue": "decision brief proposed", "independentReviewer": null, "mobile": "not applicable: no rendered article", "desktop": "not applicable: no rendered article"},
+  "releaseConditions": ["Exact regional model/build eligibility evidence", "Original or appropriately licensed final visuals", "Canonical Content OS overlap check", "Independent review and publication authority"],
+  "nextReportingAssignment": "Obtain one eligible device's exact model/build/region and a clean before/after workflow capture. Do not purchase a device or solicit anyone in this task.",
+  "publication": {"publishable": false, "liveUrl": null, "authorization": null, "publishedAt": null},
+  "measurement": {"day7": null, "day28": null, "day90": null, "revenue": null}
+}
