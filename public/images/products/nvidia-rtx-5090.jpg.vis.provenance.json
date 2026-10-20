@@ -1,0 +1,36 @@
+{
+  "$schema": "https://frankx.ai/schemas/vis-provenance-sidecar.schema.json",
+  "asset_id": "starlight-technology-shop-nvidia-rtx-5090",
+  "created_at": "2026-10-20T10:41:03.152Z",
+  "brand": "starlight-technology",
+  "agent": {
+    "coding_agent": "claude-code (Opus 5.5)",
+    "session_ref": "e5c0bffd-6009-43af-a270-86e032c5f1b3",
+    "branch": "agent/claude/liquid-surface"
+  },
+  "model": "none (licensed photograph)",
+  "provider": "Wikimedia Commons / PantheraLeo1359531",
+  "seed": null,
+  "prompt": "Reuse a Creative Commons photograph of the exact product model from Wikimedia Commons with author, licence and source credit beside the image. No generation, retouching or background removal.",
+  "source_url": "https://commons.wikimedia.org/wiki/File:Palit_GeForce_RTX_5090_Gamerock_20250530_HOF4166_RAW-Export.png",
+  "download_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Palit_GeForce_RTX_5090_Gamerock_20250530_HOF4166_RAW-Export.png/1920px-Palit_GeForce_RTX_5090_Gamerock_20250530_HOF4166_RAW-Export.png",
+  "source_sha256": "3e71c49dac0d8d63cbede247c2fb952caa663de7596956eac957db5efed27e2a",
+  "sha256": "795d8f4ff444cf2a835e668009258ad69e7719d96f12908b42e583b228e33c3a",
+  "rights_status": "licensed-third-party",
+  "rights": {
+    "author": "PantheraLeo1359531",
+    "license": "CC BY 4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "changes": "Resized to 1600 px; transparent background filled with the page colour (#0b0f0d); re-encoded as JPEG.",
+    "endorsement": false
+  },
+  "dimensions": {
+    "width": 1600,
+    "height": 1098
+  },
+  "schema_validation": {
+    "status": "not-validated",
+    "reason": "Referenced public schema not fetched in this session; fields follow the estate sidecar shape."
+  },
+  "title": "Palit GeForce RTX 5090 Gamerock 20250530 HOF4166 RAW-Export"
+}

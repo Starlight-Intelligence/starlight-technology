@@ -1,0 +1,36 @@
+{
+  "$schema": "https://frankx.ai/schemas/vis-provenance-sidecar.schema.json",
+  "asset_id": "starlight-technology-shop-elgato-stream-deck-plus",
+  "created_at": "2026-10-20T10:41:03.152Z",
+  "brand": "starlight-technology",
+  "agent": {
+    "coding_agent": "claude-code (Opus 5.5)",
+    "session_ref": "e5c0bffd-6009-43af-a270-86e032c5f1b3",
+    "branch": "agent/claude/liquid-surface"
+  },
+  "model": "none (licensed photograph)",
+  "provider": "Wikimedia Commons / TaurusEmerald",
+  "seed": null,
+  "prompt": "Reuse a Creative Commons photograph of the exact product model from Wikimedia Commons with author, licence and source credit beside the image. No generation, retouching or background removal.",
+  "source_url": "https://commons.wikimedia.org/wiki/File:Elgato_Stream_Deck_%2B.jpg",
+  "download_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Elgato_Stream_Deck_%2B.jpg/1920px-Elgato_Stream_Deck_%2B.jpg",
+  "source_sha256": "f248ac39a8fb33935eb02a0b91073288619dddaed19e56c3323a684e525ae228",
+  "sha256": "aea93fc4f2a02ad38b5954153fc105368808ebdb995ae6a874ebdbb6ce5a2ec9",
+  "rights_status": "licensed-third-party",
+  "rights": {
+    "author": "TaurusEmerald",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "changes": "Resized from 1920 px to 1600 px and re-encoded; no other edits.",
+    "endorsement": false
+  },
+  "dimensions": {
+    "width": 1600,
+    "height": 1521
+  },
+  "schema_validation": {
+    "status": "not-validated",
+    "reason": "Referenced public schema not fetched in this session; fields follow the estate sidecar shape."
+  },
+  "title": "Elgato Stream Deck +"
+}

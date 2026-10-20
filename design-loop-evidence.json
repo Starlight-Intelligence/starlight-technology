@@ -1,100 +1,152 @@
 {
-  "feature": "Starlight Studio Shop",
-  "branch": "feat/affiliate-shop-20261007",
-  "verifiedCodeCommit": "2c1fb76782c26637b4be770a182b04b7b23a0314",
-  "previewDeployment": "dpl_7yEJhooQvBNfW6ULv7espGSN6MBa",
-  "previewUrl": "https://starlight-technology-5ig68inqb-starlight-intelligence.vercel.app",
-  "verifiedAt": "2026-10-07T21:23:15.873425+00:00",
+  "feature": "Shop product pages: exact product photography with a liquid-surface decision panel",
+  "branch": "agent/claude/liquid-surface",
+  "author": "Claude Code (Opus 5.5), side session e5c0bffd of local_59d994d1",
+  "verifiedCodeCommit": "6196a82fab203b1633498d883fea743343943701",
+  "verifiedAt": "2026-10-20T10:47:53.916Z",
   "routes": [
-    "/",
-    "/shop",
+    "/shop/nvidia-dgx-spark",
+    "/shop/apple-mac-studio",
     "/shop/minisforum-ms-s1-max",
-    "/partners",
-    "/disclosure"
+    "/shop/nvidia-rtx-5090",
+    "/shop/samsung-990-pro-2tb",
+    "/shop/elgato-stream-deck-plus"
   ],
+  "tasteDirective": "TASTE-20261006-PRODUCT-FIRST-REJECTION-01A101B1: authentic exact-model imagery in the first viewport, short heading, the chosen system beside a concise configuration, real alternatives.",
   "verification": {
-    "toolchain": "passed",
     "lint": "passed",
     "typecheck": "passed",
-    "tests": "35 passed across 5 files; 11 editorial planner tests passed",
-    "build": "passed; 38 prerendered routes plus request-rendered shop and product decisions",
-    "ci": "GitHub verify and Vercel Preview Comments succeeded on verifiedCodeCommit; Vercel READY",
-    "desktop": "Inspected rendered shop hero, category/search controls, studio shortlists, three-component board and product decision at 1349px browser viewport.",
-    "mobile": "Inspected a 390 x 844 iframe viewport (375px content width after scrollbar). Menu closes after route changes; catalogue stacks; comparison scrolls inside its container; document clientWidth and scrollWidth both 375px.",
-    "interactions": [
-      "Storage + Samsung search returned 1 of 8; unmatched search exposed Reset filters",
-      "Creator studio shortlist returned 3 of 8",
-      "Three selected products disabled a fourth selection; clear comparison reset the board",
-      "Compare selected anchor settled 100px below the sticky header on mobile",
-      "Mobile Menu -> Partners changed route and removed the open attribute"
-    ],
-    "metadata": "MINISFORUM canonical resolves to production product route; official destination matches the exact 64 GB source SKU.",
-    "accessibility": "Semantic headings and table scopes, labelled search, pressed filter/selection states, status counts, skip link, focus styles and reduced-motion support inspected.",
-    "commerceBoundary": "Empty approvals. All eight destinations are ordinary manufacturer links with no commission. No live price, inventory, hands-on benchmark or vendor appointment claimed."
+    "tests": "40 passed across 6 files (adds shop photo, configuration and alternatives contracts)",
+    "build": "passed",
+    "screenshots": "docs/evidence/liquid-surface: before (production) and after at 375x812, 768x1024, 1440x900 for DGX Spark, Mac Studio, 990 PRO 2 TB (4 TB photo notice) and MS-S1 MAX (no-photo case); Mac Studio under contrast:more, forced-colors and reduced-motion. Headless Chromium via Playwright against the local dev server.",
+    "firstViewport": "Photo visible 215px at 375 (16:10), 544px at 768, 556-588px at 1440; before: no product image at any width. Pictured-variant notices (Mac 2022, 990 PRO 4 TB, Palit board) sit inside the decision panel above the action.",
+    "primaryAction": "Primary action top: 481-594px at 1440x900 (before 775px); 644-762px at 375x812, fully inside the first viewport (before 2099-2210px).",
+    "contrast": "Panel tint rgb(8 11 10 / .88) over pure white: #f1f4ec 13.3:1, #b9c0b4 7.9:1, #c8f36b 11.6:1 (WCAG relative luminance, computed).",
+    "emulation": "contrast:more -> panel and header rgb(11,14,15), backdrop-filter none; forced-colors -> panel Canvas, no filter.",
+    "overflow": "scrollWidth equals clientWidth at 375, 768 and 1440.",
+    "configuration": "Panel shows manufacturer-listed configuration rows per product, copied from each product sourceUrl on 2026-10-20. Mac Studio names one of Apple standard configurations (M5 Max 18/40-core, 64 GB, 1 TB) as the pick; DGX Spark labels the 128 GB NVIDIA model and notes 64 GB is OEM-only. Variant photos are excluded from Open Graph and Product structured data.",
+    "selectNotes": "DGX Spark and Mac Studio panels tell the buyer which variant to choose at the destination, above the action.",
+    "computedStyle": "At 6196a82, on the Vercel preview and on a local next build && next start: .liquid-surface computes backdrop-filter blur(22px) saturate(1.4) with rgba(8, 11, 10, 0.88); under prefers-contrast: more the panel computes none on rgb(11, 14, 15) and the header computes none. backdrop-filter is declared unprefixed only.",
+    "ci": "GitHub verify, Vercel and Vercel Preview Comments succeeded on 6196a82."
   },
+  "crossProviderReview": "Codex (--profile review), prompted as a buyer who declined. FAIL d2b4638 (4 P1/3 P2), FAIL 8e4ea47 (2 P1/4 P2), FAIL 9010d1d (1 P1/1 P2), PASS bc872ad (1 P2 fixed in ecc398d), PASS 6196a82 (1 P2: this record named the wrong commit; fixed in the commit that follows). All findings fixed, none declined.",
   "designReview": {
-    "reviewer": "Implementation self-review informed by browser screenshots and interaction checks",
+    "reviewer": "Maker self-score after four cross-provider rounds; Codex verdict PASS",
     "decisionObject": 5,
     "hierarchy": 5,
     "craft": 4,
-    "responsive": 5,
-    "accessibility": 4,
-    "restraint": 4,
-    "total": 27,
+    "responsive": 4,
+    "accessibility": 5,
+    "restraint": 5,
+    "total": 28,
     "scale": 30
   },
   "knownLimitations": [
-    "Publisher approval and programme-issued attribution URLs are still required to activate commissions.",
-    "Category drawings are schematics, not model-accurate product photographs.",
-    "No hardware checkout, inventory feed, supplier integration or reseller appointment is active.",
-    "The preview-only mobile QA harness is removed in the evidence commit; its screenshots and DOM observations describe the unchanged production UI code."
+    "Three products (MS-S1 MAX, DXP4800 Plus, PodMic USB) have no licensed exact-model photograph and keep the schematic with a solid panel.",
+    "Mac Studio photo is a 2022 unit; 990 PRO photo is the 4 TB capacity; RTX 5090 photo is a Palit partner board. Captions say so.",
+    "The /shop listing and home page cards still use schematics.",
+    "Screenshots were taken against the local dev server, not a Vercel preview."
   ],
   "previousRelease": {
-    "feature": "Starlight Infrastructure Partnership OS",
-    "branch": "feat/infrastructure-exchange-20260831",
-    "verifiedCodeCommit": "40893bb41fa6841740b4d3211e9aca6c75a7afbb",
-    "previewDeployment": "dpl_EzEgQkHPGkzjubteYaDy2KdiPuus",
-    "previewUrl": "https://starlight-technology-juo1zh9hd-starlight-intelligence.vercel.app",
-    "verifiedAt": "2026-08-31T01:30:00Z",
+    "feature": "Starlight Studio Shop",
+    "branch": "feat/affiliate-shop-20261007",
+    "verifiedCodeCommit": "2c1fb76782c26637b4be770a182b04b7b23a0314",
+    "previewDeployment": "dpl_7yEJhooQvBNfW6ULv7espGSN6MBa",
+    "previewUrl": "https://starlight-technology-5ig68inqb-starlight-intelligence.vercel.app",
+    "verifiedAt": "2026-10-07T21:23:15.873425+00:00",
     "routes": [
-      "/infrastructure",
-      "/infrastructure/compose",
-      "/infrastructure/system",
-      "/infrastructure/contracts",
-      "/infrastructure/operator",
-      "/infrastructure/workspace",
-      "/api/infrastructure/manifest",
-      "/checkout/infrastructure-blueprint",
-      "/pricing"
+      "/",
+      "/shop",
+      "/shop/minisforum-ms-s1-max",
+      "/partners",
+      "/disclosure"
     ],
     "verification": {
+      "toolchain": "passed",
       "lint": "passed",
       "typecheck": "passed",
-      "tests": "13 passed across 3 files",
-      "build": "38 routes generated",
-      "renderedHtml": "All listed routes returned HTTP 200 during exact-head preview validation; representative metadata and content were inspected.",
-      "canonicalMetadata": "Infrastructure routes, pricing and checkout expose route-specific canonical metadata.",
-      "responsive": "Responsive source was inspected at the declared 1180px, 860px and 560px breakpoints. No remote screenshot-capable browser was available in this release toolchain.",
-      "accessibility": "Semantic headings, skip link, form labels, aria-live output, focus-visible handling and reduced-motion handling are present.",
-      "commerceBoundary": "B2B checkout is invoice-led and contract-first until a reviewed payment URL is configured. It does not imply hardware, finance or production authority."
+      "tests": "35 passed across 5 files; 11 editorial planner tests passed",
+      "build": "passed; 38 prerendered routes plus request-rendered shop and product decisions",
+      "ci": "GitHub verify and Vercel Preview Comments succeeded on verifiedCodeCommit; Vercel READY",
+      "desktop": "Inspected rendered shop hero, category/search controls, studio shortlists, three-component board and product decision at 1349px browser viewport.",
+      "mobile": "Inspected a 390 x 844 iframe viewport (375px content width after scrollbar). Menu closes after route changes; catalogue stacks; comparison scrolls inside its container; document clientWidth and scrollWidth both 375px.",
+      "interactions": [
+        "Storage + Samsung search returned 1 of 8; unmatched search exposed Reset filters",
+        "Creator studio shortlist returned 3 of 8",
+        "Three selected products disabled a fourth selection; clear comparison reset the board",
+        "Compare selected anchor settled 100px below the sticky header on mobile",
+        "Mobile Menu -> Partners changed route and removed the open attribute"
+      ],
+      "metadata": "MINISFORUM canonical resolves to production product route; official destination matches the exact 64 GB source SKU.",
+      "accessibility": "Semantic headings and table scopes, labelled search, pressed filter/selection states, status counts, skip link, focus styles and reduced-motion support inspected.",
+      "commerceBoundary": "Empty approvals. All eight destinations are ordinary manufacturer links with no commission. No live price, inventory, hands-on benchmark or vendor appointment claimed."
     },
     "designReview": {
+      "reviewer": "Implementation self-review informed by browser screenshots and interaction checks",
       "decisionObject": 5,
       "hierarchy": 5,
-      "craft": 5,
-      "responsiveSource": 4,
-      "accessibility": 5,
+      "craft": 4,
+      "responsive": 5,
+      "accessibility": 4,
       "restraint": 4,
-      "total": 28,
+      "total": 27,
       "scale": 30
     },
     "knownLimitations": [
-      "The reference workspace uses explicitly labelled sample data, not client telemetry.",
-      "NEXT_PUBLIC_POLAR_INFRASTRUCTURE_BLUEPRINT_URL is not configured; checkout uses an invoice-led engagement intake.",
-      "No client operational database, ERP connector credentials, energy telemetry, bank facility or production agent tenant is provisioned in this public reference release.",
-      "The public contract structures are issue maps and decision frameworks, not executable legal, tax, credit, insurance or energy-market advice.",
-      "Vercel preview deployments are noindex; production-domain indexing is verified separately after merge.",
-      "No remote screenshot-capable browser was available; rendered HTML, metadata, responsive source and build output were inspected."
-    ]
-  }
+      "Publisher approval and programme-issued attribution URLs are still required to activate commissions.",
+      "Category drawings are schematics, not model-accurate product photographs.",
+      "No hardware checkout, inventory feed, supplier integration or reseller appointment is active.",
+      "The preview-only mobile QA harness is removed in the evidence commit; its screenshots and DOM observations describe the unchanged production UI code."
+    ],
+    "previousRelease": {
+      "feature": "Starlight Infrastructure Partnership OS",
+      "branch": "feat/infrastructure-exchange-20260831",
+      "verifiedCodeCommit": "40893bb41fa6841740b4d3211e9aca6c75a7afbb",
+      "previewDeployment": "dpl_EzEgQkHPGkzjubteYaDy2KdiPuus",
+      "previewUrl": "https://starlight-technology-juo1zh9hd-starlight-intelligence.vercel.app",
+      "verifiedAt": "2026-08-31T01:30:00Z",
+      "routes": [
+        "/infrastructure",
+        "/infrastructure/compose",
+        "/infrastructure/system",
+        "/infrastructure/contracts",
+        "/infrastructure/operator",
+        "/infrastructure/workspace",
+        "/api/infrastructure/manifest",
+        "/checkout/infrastructure-blueprint",
+        "/pricing"
+      ],
+      "verification": {
+        "lint": "passed",
+        "typecheck": "passed",
+        "tests": "13 passed across 3 files",
+        "build": "38 routes generated",
+        "renderedHtml": "All listed routes returned HTTP 200 during exact-head preview validation; representative metadata and content were inspected.",
+        "canonicalMetadata": "Infrastructure routes, pricing and checkout expose route-specific canonical metadata.",
+        "responsive": "Responsive source was inspected at the declared 1180px, 860px and 560px breakpoints. No remote screenshot-capable browser was available in this release toolchain.",
+        "accessibility": "Semantic headings, skip link, form labels, aria-live output, focus-visible handling and reduced-motion handling are present.",
+        "commerceBoundary": "B2B checkout is invoice-led and contract-first until a reviewed payment URL is configured. It does not imply hardware, finance or production authority."
+      },
+      "designReview": {
+        "decisionObject": 5,
+        "hierarchy": 5,
+        "craft": 5,
+        "responsiveSource": 4,
+        "accessibility": 5,
+        "restraint": 4,
+        "total": 28,
+        "scale": 30
+      },
+      "knownLimitations": [
+        "The reference workspace uses explicitly labelled sample data, not client telemetry.",
+        "NEXT_PUBLIC_POLAR_INFRASTRUCTURE_BLUEPRINT_URL is not configured; checkout uses an invoice-led engagement intake.",
+        "No client operational database, ERP connector credentials, energy telemetry, bank facility or production agent tenant is provisioned in this public reference release.",
+        "The public contract structures are issue maps and decision frameworks, not executable legal, tax, credit, insurance or energy-market advice.",
+        "Vercel preview deployments are noindex; production-domain indexing is verified separately after merge.",
+        "No remote screenshot-capable browser was available; rendered HTML, metadata, responsive source and build output were inspected."
+      ]
+    }
+  },
+  "pullRequest": "https://github.com/frankxai/starlight-technology/pull/50",
+  "previewDeployment": "https://starlight-technology-etqt7v3et-starlight-intelligence.vercel.app"
 }

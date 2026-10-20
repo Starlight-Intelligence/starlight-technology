@@ -1,0 +1,36 @@
+{
+  "$schema": "https://frankx.ai/schemas/vis-provenance-sidecar.schema.json",
+  "asset_id": "starlight-technology-shop-samsung-990-pro-2tb",
+  "created_at": "2026-10-20T10:41:03.152Z",
+  "brand": "starlight-technology",
+  "agent": {
+    "coding_agent": "claude-code (Opus 5.5)",
+    "session_ref": "e5c0bffd-6009-43af-a270-86e032c5f1b3",
+    "branch": "agent/claude/liquid-surface"
+  },
+  "model": "none (licensed photograph)",
+  "provider": "Wikimedia Commons / Dinkun Chen",
+  "seed": null,
+  "prompt": "Reuse a Creative Commons photograph of the exact product model from Wikimedia Commons with author, licence and source credit beside the image. No generation, retouching or background removal.",
+  "source_url": "https://commons.wikimedia.org/wiki/File:SAMSUNG_M.2_NVMe_SSD_990_PRO_4TB.jpg",
+  "download_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/SAMSUNG_M.2_NVMe_SSD_990_PRO_4TB.jpg/1920px-SAMSUNG_M.2_NVMe_SSD_990_PRO_4TB.jpg",
+  "source_sha256": "37d806b31351ea266aa209450c8d14dfec8b63136238b827dd39345141cc5fda",
+  "sha256": "c351f3fd355c8ec0c02a0141790cbaedc4eb616375e485b724300afbbb9b0ebb",
+  "rights_status": "licensed-third-party",
+  "rights": {
+    "author": "Dinkun Chen",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "changes": "Resized from 1920 px to 1600 px and re-encoded; no other edits.",
+    "endorsement": false
+  },
+  "dimensions": {
+    "width": 1600,
+    "height": 1076
+  },
+  "schema_validation": {
+    "status": "not-validated",
+    "reason": "Referenced public schema not fetched in this session; fields follow the estate sidecar shape."
+  },
+  "title": "SAMSUNG M.2 NVMe SSD 990 PRO 4TB"
+}
