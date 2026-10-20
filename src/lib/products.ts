@@ -12,6 +12,8 @@ export interface ProductSku {
   cta: string;
   featured?: boolean;
   checkoutEnvKey?: string;
+  // Waitlist-first (starlight AGENTS.md §5c): payment opens only for a SKU with a release-gate PASS receipt.
+  gatePassed?: boolean;
   productPath: string;
 }
 
@@ -119,9 +121,11 @@ export const allProducts = [...saasTiers, ...digitalProducts, ...serviceProducts
 export function getProduct(id: string) { return allProducts.find((p) => p.id === id); }
 export function checkoutHref(sku: ProductSku): string {
   if (sku.billing === "free") return sku.productPath;
-  if (sku.checkoutEnvKey) {
-    const url = process.env[sku.checkoutEnvKey];
-    if (url?.startsWith("http")) return url;
-  }
-  return `/checkout/${sku.id}`;
+  return paymentUrl(sku) ?? `/checkout/${sku.id}`;
+}
+
+export function paymentUrl(sku: ProductSku): string | undefined {
+  if (!sku.gatePassed || !sku.checkoutEnvKey) return undefined;
+  const url = process.env[sku.checkoutEnvKey];
+  return url?.startsWith("http") ? url : undefined;
 }
