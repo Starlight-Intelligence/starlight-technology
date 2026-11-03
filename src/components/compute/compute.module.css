@@ -75,10 +75,32 @@
 .notes { max-width: 760px; margin: 22px 0 0; color: var(--muted); font-size: .88rem; }
 .notes a { color: var(--paper); }
 
+.planner { display: flex; flex-direction: column; gap: 22px; }
+.presetRow { display: flex; flex-wrap: wrap; gap: 8px; }
+.presetButton { padding: 8px 14px; border: 1px solid var(--line-bright); background: var(--ink); color: var(--muted); font-size: .82rem; cursor: pointer; }
+.presetButton:hover { color: var(--paper); border-color: var(--signal); }
+.presetButtonActive { color: var(--ink); background: var(--signal); border-color: var(--signal); }
+.plannerGrid { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 200px), 1fr)); gap: 14px 20px; }
+.plannerField { display: flex; flex-direction: column; gap: 6px; min-width: 0; }
+.plannerField span { color: var(--muted); font: 700 .68rem/1.2 ui-monospace, "Cascadia Code", monospace; letter-spacing: .06em; text-transform: uppercase; }
+.plannerField input, .plannerField select { width: 100%; padding: 8px 10px; background: var(--ink-2); border: 1px solid var(--line-bright); color: var(--paper); font-size: .95rem; }
+.plannerField input:focus-visible, .plannerField select:focus-visible { outline: 2px solid var(--signal); outline-offset: 1px; }
+.plannerFieldset { margin: 0; padding: 16px; border: 1px solid var(--line-bright); }
+.plannerFieldset legend { padding: 0 6px; color: var(--cyan); font: 800 .68rem/1.2 ui-monospace, "Cascadia Code", monospace; letter-spacing: .08em; text-transform: uppercase; }
+.checkboxGrid { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 220px), 1fr)); gap: 10px 20px; margin-top: 10px; }
+.plannerCheck { display: flex; align-items: center; gap: 8px; min-width: 0; font-size: .88rem; }
+.plannerCheck input { width: 16px; height: 16px; flex-shrink: 0; }
+.plannerResults { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 260px), 1fr)); gap: 1px; background: var(--line); border: 1px solid var(--line-bright); }
+.resultCard { display: flex; flex-direction: column; gap: 6px; padding: 18px 20px; background: var(--ink); min-width: 0; }
+.resultBig { margin: 0; font-size: 1.6rem; font-weight: 700; letter-spacing: -.03em; font-variant-numeric: tabular-nums; }
+.resultSub { margin: 0; color: var(--muted); font-size: .82rem; }
+
 @media (max-width: 760px) {
   .rung { grid-template-columns: minmax(0, 1fr) minmax(0, 9.5rem); }
   .rung .trackCell { grid-column: 1 / -1; order: 3; }
   .price strong { font-size: 1.05rem; }
   .brand { padding: 20px; }
+  .plannerGrid, .checkboxGrid { grid-template-columns: 1fr; }
+  .presetButton { flex: 1 1 100%; text-align: left; }
 }
 

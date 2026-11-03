@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import styles from "@/components/compute/compute.module.css";
 import { BrandCards, CapacityTable, CompanyTable, EvidencePanel, ExpansionNotes, PriceLadder } from "@/components/compute/compute-sections";
+import { StackPlanner } from "@/components/compute/stack-planner";
 import { researchDate } from "@/lib/compute";
 
 export const metadata: Metadata = {
@@ -32,6 +33,14 @@ export default function ComputePage() {
           <p>Machines with 64 GB or more, grouped by memory size and cheapest first within each group. A bar is the cheapest EUR price read from a page. Tax status is stated where the page states it.</p>
         </div>
         <PriceLadder />
+      </section>
+
+      <section className={styles.block} aria-labelledby="planner">
+        <div className={styles.blockHead}>
+          <h2 id="planner">Stack planner</h2>
+          <p>Set the workload for one node and get a low-to-high memory estimate, which standard class it fits, and whether it needs splitting across two machines. Every number carries its basis; none of it is a benchmark.</p>
+        </div>
+        <StackPlanner />
       </section>
 
       <section className={styles.block} aria-labelledby="capacity">
