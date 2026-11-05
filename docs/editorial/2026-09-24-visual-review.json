@@ -1,0 +1,26 @@
+{
+  "feature": "Comparison decision graphic and approved media slot",
+  "status": "draft_review",
+  "previewUrl": "https://starlight-technology-5cmpk15qn-starlight-intelligence.vercel.app/compare/rtx-5080-vs-5090-local-ai",
+  "reviewedAt": "2026-09-24",
+  "desktop": {
+    "observed": "1363px hosted preview: the decision graphic is visible at the bottom of the first viewport, and both option paths have clear headings, fit, limitation and wrong-purchase text. No product image renders because the manifest is empty.",
+    "result": "passed"
+  },
+  "mobile": {
+    "observed": "The CSS 620px breakpoint stacks the heading, option paths and caption; this was inspected in source and production build only.",
+    "result": "pending_device_inspection"
+  },
+  "score": {
+    "decisionObject": 5,
+    "hierarchy": 5,
+    "craft": 4,
+    "responsiveSource": 4,
+    "accessibility": 5,
+    "restraint": 5,
+    "provisionalTotal": 28,
+    "scale": 30,
+    "gatePassed": false
+  },
+  "nextGate": "Independently inspect the updated preview on a narrow mobile viewport, then score and approve the exact commit. The desktop observation predates the neutral option-label copy fix."
+}

@@ -40,3 +40,10 @@ Important visual changes require `design-loop-evidence.json`, desktop/mobile ins
 - Verify locally before triggering Vercel.
 - One deploy path: Vercel native Git integration after project connection.
 - Do not merge or promote production without verified gates.
+
+## Media governance
+
+- Apply `$govern-media-fabric` for images, diagrams, videos, covers and article media; read `docs/editorial/MEDIA-HANDOFF.md` before adding a product visual.
+- Content references semantic placement keys; production components resolve only approved immutable renditions from `data/media/approved-placements.json`. Do not hardcode provider URLs or put a metadata service in the image request path.
+- Store private masters and approved public renditions in the existing Vercel Blob fabric when provisioned, review packages in Drive, approval metadata in the shared control plane, and source policy in Git. Keep unlicensed manufacturer images quarantined.
+- Preserve asset/version/rendition IDs, permission, credit, checksum, expiry, alt text and rollback. A source link or affiliate agreement alone does not grant image rights.

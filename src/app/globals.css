@@ -94,6 +94,9 @@ button, select { font: inherit; }
 .article { max-width: 980px; padding-block: 38px 120px; }
 .article-nav { display: flex; gap: 22px; margin-bottom: 86px; color: var(--muted); font-size: .8rem; }
 .article-header { padding-bottom: 70px; border-bottom: 1px solid var(--line-bright); }
+.article--comparison .article-nav { margin-bottom: 38px; }
+.article--comparison .article-header { padding-bottom: 28px; }
+.article--comparison .decision-graphic { margin-top: 28px; }
 .article-header h1 { max-width: 15ch; }
 .article-summary { max-width: 760px; margin: 2rem 0; color: var(--muted); font-size: clamp(1.1rem, 2vw, 1.42rem); }
 .evidence-bar { display: flex; align-items: center; flex-wrap: wrap; gap: 10px; width: max-content; max-width: 100%; padding: .55rem .75rem; border: 1px solid var(--line); color: var(--muted); font-size: .72rem; }
@@ -119,6 +122,25 @@ button, select { font: inherit; }
 .option-grid dl div { padding: 16px 0; border-top: 1px solid var(--line); }
 .option-grid dt { color: var(--signal); font-size: .68rem; font-weight: 800; letter-spacing: .12em; text-transform: uppercase; }
 .option-grid dd { margin: .35rem 0 0; color: var(--muted); }
+.decision-graphic { margin: 52px 0 80px; border: 1px solid var(--line-bright); background: #0b1110; }
+.decision-graphic-heading { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.7fr); column-gap: 36px; align-items: end; padding: clamp(24px, 4vw, 42px); }
+.decision-graphic-heading .eyebrow { grid-column: 1 / -1; }
+.decision-graphic-heading h2 { max-width: 12ch; margin: 0; font-size: clamp(2rem, 4.8vw, 3.8rem); line-height: .98; letter-spacing: -.055em; }
+.decision-graphic-heading > p:last-child { max-width: 46ch; margin: 0; color: var(--muted); }
+.decision-graphic-paths { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); border-top: 1px solid var(--line-bright); }
+.decision-graphic-path { min-width: 0; padding: clamp(24px, 3.4vw, 36px); border-left: 3px solid var(--signal); }
+.decision-graphic-path + .decision-graphic-path { border-left: 1px solid var(--line-bright); box-shadow: inset 3px 0 0 var(--cyan); }
+.decision-graphic-index { color: var(--signal); font: 750 .68rem ui-monospace, monospace; letter-spacing: .09em; }
+.decision-graphic-path + .decision-graphic-path .decision-graphic-index { color: var(--cyan); }
+.decision-graphic-path h3 { min-height: 2.4em; margin: 25px 0 30px; font-size: clamp(1.5rem, 2.6vw, 2.3rem); line-height: 1.12; letter-spacing: -.04em; }
+.decision-graphic-path dl { margin: 0; }
+.decision-graphic-path dl div { padding: 18px 0; border-top: 1px solid var(--line); }
+.decision-graphic-path dt { color: var(--muted); font: 750 .66rem ui-monospace, monospace; letter-spacing: .08em; text-transform: uppercase; }
+.decision-graphic-path dd { max-width: 36ch; margin: 8px 0 0; line-height: 1.4; }
+.decision-graphic figcaption { padding: 14px clamp(24px, 3.4vw, 36px); border-top: 1px solid var(--line); color: var(--muted); font-size: .75rem; }
+.approved-media-figure { margin: 56px 0; }
+.approved-media-figure img { display: block; max-width: 100%; height: auto; }
+.approved-media-figure figcaption { display: flex; justify-content: space-between; gap: 16px; padding: 12px 0; color: var(--muted); font-size: .8rem; }
 .article-section { max-width: 760px; margin: 74px 0; }
 .article-section h2, .article-sources h2 { margin: 0 0 1.2rem; font-size: clamp(1.8rem, 4vw, 3.3rem); line-height: 1.04; letter-spacing: -.045em; }
 .article-section p, .article-section li { color: #c4c9c0; font-size: 1.06rem; }
@@ -169,6 +191,11 @@ button, select { font: inherit; }
   .page-header h1, .article-header h1 { font-size: clamp(2.8rem, 14vw, 4.2rem); }
   .article-nav { margin-bottom: 55px; }
   .fit-grid, .option-grid, .method-states { grid-template-columns: 1fr; }
+  .decision-graphic-heading, .decision-graphic-paths { grid-template-columns: 1fr; }
+  .decision-graphic-heading { gap: 18px; }
+  .decision-graphic-path h3 { min-height: 0; }
+  .decision-graphic-path + .decision-graphic-path { border-top: 1px solid var(--line-bright); border-left: 3px solid var(--cyan); box-shadow: none; }
+  .approved-media-figure figcaption { flex-direction: column; gap: 4px; }
   .option-grid > article + article { border-left: 0; border-top: 1px solid var(--line-bright); }
   .source-list li { flex-direction: column; gap: 5px; }
   .article-sources { padding: 24px; }
