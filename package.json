@@ -12,7 +12,7 @@
     "start": "next start",
     "lint": "eslint .",
     "typecheck": "tsc --noEmit",
-    "test": "vitest run",
+    "test": "vitest run && node --test scripts/webmcp.test.mjs",
     "verify:toolchain": "node scripts/verify-toolchain.mjs",
     "verify": "pnpm verify:toolchain && pnpm lint && pnpm typecheck && pnpm test && pnpm build"
   },

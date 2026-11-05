@@ -1,13 +1,29 @@
 "use client";
 
 import Link from "next/link";
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
+import { flushSync } from "react-dom";
+import { createFinderTools } from "@/lib/finder-webmcp";
+import { registerWebTools, type ModelContext } from "@/lib/webmcp.mjs";
 import { recommendBuild, type FinderInput } from "@/lib/decision-model";
 
 export function RigFinder() {
   const [input, setInput] = useState<FinderInput>({ workload: "local-ai", budget: "3000", priority: "balance" });
+  const currentInput = useRef(input);
+  useEffect(() => {
+    const context = (document as Document & { modelContext?: ModelContext }).modelContext;
+    const registration = registerWebTools(context, createFinderTools(
+      () => currentInput.current,
+      (next) => flushSync(() => { currentInput.current = next; setInput(next); }),
+    ), { onError: () => console.warn("System finder browser tools are unavailable.") });
+    return registration.stop;
+  }, []);
   const result = useMemo(() => recommendBuild(input), [input]);
-  const update = <K extends keyof FinderInput>(key: K, value: FinderInput[K]) => setInput((current) => ({ ...current, [key]: value }));
+  const update = <K extends keyof FinderInput>(key: K, value: FinderInput[K]) => {
+    const next = { ...currentInput.current, [key]: value };
+    currentInput.current = next;
+    setInput(next);
+  };
 
   return <section className="finder" aria-labelledby="finder-title">
     <div className="finder-head"><span>01 / DECISION STARTER</span><span>Rules-based · no generated prices</span></div>
