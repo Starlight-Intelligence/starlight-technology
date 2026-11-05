@@ -1,42 +1,62 @@
 {
-  "feature": "Compute atlas: sourced mini-PC and local-AI compute records, generated graph, /compute page, /api/compute/graph",
-  "branch": "agent/claude/compute-fleet-intel",
-  "baseRevision": "4588a24",
+  "feature": "Compute atlas: interactive stack planner on /compute, per-step CI timeouts, PR overlap check",
+  "branch": "agent/cloud/compute-planner-widget",
+  "baseBranch": "agent/claude/compute-fleet-intel",
+  "baseRevision": "8f81da5",
   "status": "DRAFT_NOT_LIVE",
   "scope": [
-    "/compute",
-    "/api/compute/graph"
+    "/compute (stack planner section)",
+    ".github/workflows/ci.yml (per-step timeouts)"
   ],
   "researchDate": "2026-10-05",
   "checks": {
     "typecheck": "passed",
-    "lint": "passed (0 warnings after removing one unused variable)",
-    "vitest": "26 passed across 5 files, including a parity test between src/lib/compute.ts and scripts/compute/lib.mjs",
-    "computeDataTests": "37 passed (node --test scripts/compute/compute.test.mjs); each validator rule is proven to fail on bad input, including the batch-2 gates for reviews, company fundamentals, verification items and legal-text claims; hash is line-ending independent",
+    "lint": "passed, 0 errors (1 pre-existing unused-var warning in render-more.mjs, unrelated to this change)",
+    "vitest": "32 passed across 6 files (6 new: stack-planner widget tested against the same hand-computed totals as scripts/compute/compute.test.mjs for all four scenarios)",
+    "computeDataTests": "39 passed (node --test scripts/compute/compute.test.mjs), including the existing planner parity test",
     "generatedFilesDrift": "node scripts/compute/build.mjs --check passed",
-    "editorialPlannerTests": "11 passed (unchanged)",
-    "build": "passed on CI (GitHub verify job) and on the Vercel preview deployment. Not run locally: pp preflight held the build workload (RAM 3-5 GB free, 8 GB required).",
-    "browserLayout": "Desktop inspected on the Vercel preview (about 1100 px wide). A 390 px iframe pass found a 609 px document in a 375 px viewport, caused by visually hidden labels leaking past the table scroll wrapper; fixed with a positioned, focusable scroll region. Also fixed from the review: ladder grouped by memory class, long names and dates wrapping, hero too tall. After the fixes a script measure showed the first ladder row at 660 px in a 975 px viewport. The post-fix 390 px re-measure and screenshots are pending: the browser renderer stalled under RAM pressure and browser checks were stopped.",
-    "independentReview": "Codex (a different provider) reviewed b7586a3 read-only on 2026-10-05: verdict CHANGES REQUESTED, 1 blocker and 13 major or minor findings. Fixed in 201b92a: per-price sources and host matching, tax-basis headline, claim relabelling, edge provenance, blueprint scoping, VAT-aware affiliate maths, visible evidence labels. A second Codex review of batch 2 (dbf7c60, 2026-10-05) returned CHANGES REQUESTED (1 blocker, 8 major, 1 minor); fixes landed in the commit after dbf7c60: EU-entity wording, consumer-only legal wording, eGPU and cluster claims split by setup, comparison-site prices relabelled listing, validator checks for host boundaries, VAT-ID source, outlet match, machine mapping, consensus sources and full-profile substance. Not yet re-reviewed after those fixes."
+    "build": "passed locally (pnpm build, Next 16 Turbopack, 40 routes) in 58s"
+  },
+  "ciInvestigation": {
+    "symptom": "verify job on head 54300b4 hit the single 15-minute job timeout with no step producing log output; earlier heads on the same branch had passed.",
+    "localRepro": "Ran pnpm install --frozen-lockfile, verify:toolchain, lint (27s cold), typecheck, vitest, node --test scripts/compute/compute.test.mjs, build.mjs --check and pnpm build individually on this exact head: all passed in well under a minute each, no infinite loop or hang reproduced in any script.",
+    "conclusion": "No code-level hang found. The job had one shared 15-minute budget across 9 steps with no per-step limit, so a single slow or stuck step (most likely a flaky pnpm install against the npm registry on the runner) could silently consume the whole budget and leave zero step logs. Fixed by giving each step its own timeout-minutes (install 5, toolchain 2, lint 3, typecheck 3, test 3, editorial planner 2, compute verify 2, build 5) so a future hang fails fast and points at the exact step, instead of raising the job timeout without evidence."
+  },
+  "overlapCheck": {
+    "method": "gh pr view --json files for PRs #23, #24, #25; git diff --name-only against main on this branch.",
+    "pr23": "Visual comparisons and approval-gated editorial media (agent/codex/hardware-visual-20260924, draft, based on agent/codex/hardware-research-20260917). Touches AGENTS.md, src/app/compare/[slug], src/components/approved-media-figure.tsx, src/components/decision-graphic.tsx, src/lib/approved-media.ts, src/app/globals.css, next.config.ts. No overlap with any data/compute, scripts/compute, src/components/compute or src/app/compute path.",
+    "pr24": "Technology Atlas: visual decision workspace (feat/technology-atlas-20260928, draft, based on main). Touches src/app/page.tsx, src/app/shop/**, src/lib/technology*.ts, src/components/technology-atlas.tsx, README.md, src/app/globals.css. No overlap with the compute surfaces.",
+    "pr25": "Reconcile hardware research and Lenovo Googlebook packet (agent/codex/hardware-research-reconcile-20261001, ready for review, based on main). Touches only data/editorial/** and docs/editorial/**. No overlap.",
+    "conclusion": "No file-level or record-level overlap between this branch and PRs #23, #24 or #25. All three can land independently of this one and of each other in either order; the only shared file across #23 and #24 is src/app/globals.css, which does not touch this branch. Posted as a comment on PR #35 (the compute atlas branch this builds on); none merged by this session.",
+    "noMergePerformed": true
   },
   "designScore": null,
+  "designReviewStatus": "NOT_MEASURED_THIS_SESSION",
   "productionEligible": false,
-  "publicationState": "Page is noindex and unlinked: header and sitemap are untouched because open PRs #22 and #24 edit them. API route is read-only static JSON.",
+  "publicationState": "Page remains noindex and unlinked (robots: index: false, follow: false in src/app/compute/page.tsx). Header and sitemap untouched.",
+  "browserLayout": {
+    "attempted": true,
+    "result": "HELD by the machine gate: `pp preflight --workload browser-qa` returned HOLD (RAM 3.7-4.2 GB free against an 8 GB requirement, CPU over the browser-qa ceiling, 7-9 other dev-server processes active on the machine). Per the estate's machine-performance contract, a hard RAM block is not bypassed and other sessions' processes were not killed to clear it.",
+    "staticAudit390and375px": [
+      "Hero, status list and section heads use clamp()/flex-wrap and already ship at 390/375 px elsewhere on this page; unchanged by this PR.",
+      "Stack planner form (.plannerGrid, .checkboxGrid) collapses to a single column under the existing 760 px breakpoint; number/select inputs are width:100% inside their field, no fixed pixel widths.",
+      "Preset buttons (.presetRow) wrap via flex-wrap and go full-width at <=760 px via the existing media query addition.",
+      "Result cards (.plannerResults) use minmax(min(100%,260px),1fr), so each card is capped to the viewport width and stacks on a phone; no fixed width exceeds the container.",
+      "Both new tables (fit-by-class, line-by-line memory) reuse the existing .tableWrap pattern: overflow-x: auto on a focusable region with role=\"region\", min-width: 620px on the inner table. The table itself scrolls sideways inside that bounded container; the page body does not acquire horizontal scroll from it.",
+      "No row introduces unwrapped long text: result-card prose is plain paragraphs with no nowrap or fixed width, so it wraps at any viewport."
+    ]
+  },
   "dataPolicy": {
-    "prices": "Headline prices are page-read only, dated, with merchant, region and tax status. Reported, forum, derived and snippet prices are held back from headline views.",
-    "amazon": "Amazon prices are never stored (validator rule).",
-    "affiliate": "No affiliate links. Programs recorded as research only; applying is an owner action."
+    "prices": "The planner's cheapest-machine lookups reuse headlinePrice()/taxLabel() from src/lib/compute.ts: page-read only, dated, tax status shown. No new price records added.",
+    "amazon": "No new price records added; existing validator rule unchanged.",
+    "affiliate": "No affiliate links added."
   },
   "knownLimitations": [
     "Research only. No machine was tested hands-on.",
-    "Buyer region NL/EU is an assumption.",
-    "No independent NL merchant prices: Tweakers, Coolblue, Proshop, Alternate and Geizhals returned 403 to fetches; Firecrawl had no credits.",
-    "Windows GPU-memory cap on 128 GB Strix Halo machines is unconfirmed from a primary source.",
-    "Customs, VAT and CE/WEEE statements rest partly on search summaries rather than Douane, TARIC or EUR-Lex pages.",
-    "Used-market prices for NL were not retrieved.",
-    "The page has not been inspected on a real phone, and the post-fix 390 px render has not been re-measured.",
-    "Browser checks stopped after two renderer stalls under RAM pressure; resume them when memory allows."
+    "The required design score (>= 26/30) could not be produced this session: no screenshot-capable browser could be launched under the machine's RAM hold. Rendered-source audit at 390/375 px is recorded above in place of a live screenshot.",
+    "GPU-candidate machine suggestions (data/compute/research.json gpu-nodes) are not surfaced in the widget, to keep the client bundle to typed, already-shipped JSON (machines.json, workload-model.json, workloads.json, scenarios.json) with no new fetch of the larger research.json file.",
+    "Independent (different-provider) critique of the widget has not run yet; this is the first local pass."
   ],
-  "nextAction": "Re-measure the preview at 390 px and on a real phone when RAM allows; get an independent critique; close the NL merchant price gap with a browser session.",
-  "rollback": "Revert this isolated PR."
+  "nextAction": "Re-run pp preflight --workload browser-qa once RAM clears, take real 390 px and 375 px screenshots of /compute#planner on the Vercel preview, and score the design loop for real before this leaves draft. Get an independent (different-provider) review of the widget and its data wiring.",
+  "rollback": "Revert this isolated PR; it only adds a new section and component to /compute plus CI step timeouts, and does not touch data validated elsewhere."
 }
