@@ -1,0 +1,294 @@
+{
+  "schemaVersion": 1,
+  "asOf": "2026-10-19T06:15:53Z",
+  "selected": [],
+  "deferred": [],
+  "rejected": [],
+  "pending": [],
+  "budget": {
+    "reservedThisRun": 0,
+    "reservedThisMonth": 8000,
+    "monthLimit": 240000,
+    "modelCalls": 0,
+    "paidApiCalls": 0,
+    "actualModelTokens": 0
+  },
+  "nextState": {
+    "schemaVersion": 1,
+    "months": {
+      "2026-09": {
+        "reservedTokens": 24000
+      },
+      "2026-10": {
+        "reservedTokens": 8000
+      }
+    },
+    "jobs": [
+      {
+        "id": "hw-f3f1b446ce9fcd20c8e8",
+        "key": "honor-magicbook-pro-14-2026:portable-creator-workstation",
+        "eventIds": [
+          "87889f236b4553382c53ca98139569721fe12bcd38b8b23b78cc56f101a1b24c"
+        ],
+        "status": "held",
+        "reservedAt": "2026-09-16T22:00:00Z",
+        "period": "2026-09",
+        "reservedTokens": 8000,
+        "productId": "honor-magicbook-pro-14-2026",
+        "intentId": "portable-creator-workstation",
+        "category": "laptops",
+        "action": "commission-research",
+        "canonicalUrl": null,
+        "owner": "starlight.technology",
+        "frankxTreatment": "Only commission a separate creator workflow with original evidence and a distinct reader job",
+        "readerDecision": "Which exact configuration and region should enter our creator laptop comparison, and what evidence is missing?",
+        "sources": [
+          {
+            "sourceId": "honor",
+            "url": "https://www.honor.com/global/laptops/honor-magicbook-pro-14-2026/",
+            "checkedAt": "2026-09-16T22:00:00Z",
+            "summary": "HONOR has a global product page for MagicBook Pro 14 2026. Verify local configuration and independent workload evidence before comparing it with other creator laptops.",
+            "facts": [
+              "HONOR publishes a global product page named MagicBook Pro 14 2026."
+            ]
+          }
+        ],
+        "commercial": "Evaluate fit; resolve enrolled partner from the canonical affiliate ledger; otherwise use an ordinary link",
+        "media": "Source real product images; quarantine until usage rights and credits are recorded; add a decision diagram when useful",
+        "gates": [
+          "full-source-fact-check",
+          "rights-and-credit",
+          "distinct-reader-value",
+          "independent-review",
+          "desktop-and-mobile-preview",
+          "publication-authority"
+        ],
+        "evidenceLevel": "manufacturer-source; no hands-on testing claimed",
+        "publishable": false,
+        "heldAt": "2026-09-24T06:50:01Z",
+        "researchPacket": "data/editorial/packets/honor-magicbook-pro-14-2026-20260924.json",
+        "holdReason": "Research brief delivered; exact NL SKU, workload evidence and visual permission unresolved.",
+        "releaseCondition": "An official NL/Benelux saleable SKU with CPU, RAM, SSD, keyboard and warranty; then exact-device workload evidence and a permission-safe visual."
+      },
+      {
+        "id": "hw-64e0b6cfa5a038fe0151",
+        "key": "samsung-galaxy-book6-14:portable-creator-workstation",
+        "eventIds": [
+          "03f5f3c8f0bd3dbc6b583f78860b1d36fe6fac0216958c3d2b5c3f5db25ad179"
+        ],
+        "status": "held",
+        "reservedAt": "2026-09-16T22:00:00Z",
+        "period": "2026-09",
+        "reservedTokens": 8000,
+        "productId": "samsung-galaxy-book6-14",
+        "intentId": "portable-creator-workstation",
+        "category": "laptops",
+        "action": "commission-research",
+        "canonicalUrl": null,
+        "owner": "starlight.technology",
+        "frankxTreatment": "Only commission a separate creator workflow with original evidence and a distinct reader job",
+        "readerDecision": "Is this configuration sufficient for a portable creator workflow, and what external equipment would still be required?",
+        "sources": [
+          {
+            "sourceId": "samsung",
+            "url": "https://news.samsung.com/global/samsung-expands-the-galaxy-book6-lineup-making-galaxy-book-more-accessible",
+            "checkedAt": "2026-09-16T22:00:00Z",
+            "summary": "Samsung describes an additional 14-inch Galaxy Book6 configuration. Commission a decision brief around workload, ports and regional configuration, with manufacturer performance claims clearly attributed.",
+            "facts": [
+              "Samsung dates the expansion announcement September 1, 2026.",
+              "The announcement describes a 14-inch Galaxy Book6 model."
+            ]
+          }
+        ],
+        "commercial": "Evaluate fit; resolve enrolled partner from the canonical affiliate ledger; otherwise use an ordinary link",
+        "media": "Source real product images; quarantine until usage rights and credits are recorded; add a decision diagram when useful",
+        "gates": [
+          "full-source-fact-check",
+          "rights-and-credit",
+          "distinct-reader-value",
+          "independent-review",
+          "desktop-and-mobile-preview",
+          "publication-authority"
+        ],
+        "evidenceLevel": "manufacturer-source; no hands-on testing claimed",
+        "publishable": false,
+        "heldAt": "2026-09-28T06:45:58Z",
+        "researchPacket": "data/editorial/packets/samsung-galaxy-book6-14-core5-benelux-20260928.json",
+        "holdReason": "Research brief delivered. Exact NL saleable SKU, creator workload evidence and image permission unresolved.",
+        "releaseCondition": "Exact NL orderable Core 5/16 GB/512 GB SKU and USB-C/support details, plus exact-device creator testing and permission-safe imagery."
+      },
+      {
+        "id": "hw-502e439896c9d0098b72",
+        "key": "samsung-one-ui-9:creator-update-decision",
+        "eventIds": [
+          "afc7b636549f200dcde3b523e1ea373770acf0cc8e0f596ad3dab6866dfe1ba9"
+        ],
+        "status": "held",
+        "reservedAt": "2026-09-16T22:00:00Z",
+        "period": "2026-09",
+        "reservedTokens": 8000,
+        "productId": "samsung-one-ui-9",
+        "intentId": "creator-update-decision",
+        "category": "phones",
+        "action": "commission-research",
+        "canonicalUrl": null,
+        "owner": "starlight.technology",
+        "frankxTreatment": "Only commission a separate creator workflow with original evidence and a distinct reader job",
+        "readerDecision": "Should a creator update an existing phone, and which workflow changes can be demonstrated on their exact device?",
+        "sources": [
+          {
+            "sourceId": "samsung",
+            "url": "https://news.samsung.com/global/samsung-begins-official-rollout-of-one-ui-9-bringing-the-latest-galaxy-experiences-to-more-devices",
+            "checkedAt": "2026-09-16T22:00:00Z",
+            "summary": "Samsung announces a wider One UI 9 rollout. Research which creator-facing changes are available for each device and region before recommending an upgrade.",
+            "facts": [
+              "Samsung dates this announcement September 16, 2026.",
+              "The release describes video reframing and voice-recording summary features with eligibility caveats."
+            ]
+          }
+        ],
+        "commercial": "Evaluate fit; resolve enrolled partner from the canonical affiliate ledger; otherwise use an ordinary link",
+        "media": "Source real product images; quarantine until usage rights and credits are recorded; add a decision diagram when useful",
+        "gates": [
+          "full-source-fact-check",
+          "rights-and-credit",
+          "distinct-reader-value",
+          "independent-review",
+          "desktop-and-mobile-preview",
+          "publication-authority"
+        ],
+        "evidenceLevel": "manufacturer-source; no hands-on testing claimed",
+        "publishable": false,
+        "researchPacket": "data/editorial/packets/samsung-one-ui-9-20260917.json",
+        "heldAt": "2026-09-17T06:26:47Z",
+        "holdReason": "Research brief delivered. Exact regional device eligibility and usable visual rights remain unresolved; independent review and publication authority pending.",
+        "releaseCondition": "Evidence for a specific local model/build and original or licensed visuals; reconcile Content OS before authoring."
+      },
+      {
+        "id": "hw-994deff273639b4fb27d",
+        "key": "lenovo-googlebook-15:cloud-first-creator-laptop",
+        "eventIds": [
+          "15fe70b27e970df152e7e908b075938e4feb816dceb7d6c2e607c8d0258d2204",
+          "e31870162f76764bff0a1f5d3520fbd4d9ae9a569eee06ff66409b98f8d992cb"
+        ],
+        "status": "held",
+        "reservedAt": "2026-10-12T06:57:39Z",
+        "period": "2026-10",
+        "reservedTokens": 8000,
+        "productId": "lenovo-googlebook-15",
+        "intentId": "cloud-first-creator-laptop",
+        "category": "laptops",
+        "action": "commission-research",
+        "canonicalUrl": null,
+        "owner": "starlight.technology",
+        "frankxTreatment": "Only commission a separate creator workflow with original evidence and a distinct reader job",
+        "readerDecision": "Should a Netherlands-based cloud-first creator wait for or consider Lenovo Googlebook 15, and which desktop-app, regional-model and evidence gaps make it the wrong purchase?",
+        "sources": [
+          {
+            "sourceId": "lenovo",
+            "url": "https://news.lenovo.com/pressroom/press-releases/first-googlebook-premium-ai-experiences-sleek-lightweight-design/",
+            "checkedAt": "2026-10-12T06:57:39Z",
+            "summary": "Lenovo announced its first Googlebook 15. Research the globally announced family, Googlebook OS workflow boundary and wrong-purchase conditions before recommending it to creators.",
+            "facts": [
+              "Lenovo dates the announcement September 28, 2026.",
+              "Lenovo lists Intel Core Ultra 5 325, 16 or 32 GB memory, 256 or 512 GB storage, and Googlebook OS.",
+              "Lenovo states United States availability from October 4, 2026."
+            ]
+          },
+          {
+            "sourceId": "lenovo",
+            "url": "https://www.lenovo.com/nl/nl/p/laptops/googlebook/googlebook-series/lenovo-googlebook-15/len101o0001",
+            "checkedAt": "2026-10-12T06:57:39Z",
+            "summary": "Lenovo's Netherlands Googlebook 15 family page was present but did not expose an orderable Dutch model. Verify the exact NL SKU, configuration and offer before making a buying recommendation.",
+            "facts": [
+              "Lenovo publishes a Netherlands Googlebook 15 family page.",
+              "The retrieved Netherlands page did not expose an exact orderable model code, configuration, price or stock."
+            ]
+          }
+        ],
+        "commercial": "Evaluate fit; resolve enrolled partner from the canonical affiliate ledger; otherwise use an ordinary link",
+        "media": "Source real product images; quarantine until usage rights and credits are recorded; add a decision diagram when useful",
+        "gates": [
+          "full-source-fact-check",
+          "rights-and-credit",
+          "distinct-reader-value",
+          "independent-review",
+          "desktop-and-mobile-preview",
+          "publication-authority"
+        ],
+        "evidenceLevel": "manufacturer-source; no hands-on testing claimed",
+        "publishable": false,
+        "heldAt": "2026-10-12T06:57:39Z",
+        "researchPacket": "data/editorial/packets/lenovo-googlebook-15-nl-20261012.json",
+        "holdReason": "Research brief delivered. Exact Dutch saleable SKU, Googlebook OS application fit, workload evidence and image permission remain unresolved.",
+        "releaseCondition": "An orderable Dutch model code with configuration, keyboard, warranty, price and stock; application-by-application Googlebook OS verification; exact-device workload evidence; and an original or individually permitted visual."
+      }
+    ],
+    "note": "Bootstrap once. Every subsequent run must read nextState from the newest saved plan bundle. Never reset this file to renew a budget."
+  },
+  "normalizedIntake": {
+    "schemaVersion": 1,
+    "inventory": [],
+    "inventoryStatus": "Registry-only maintenance run. Historical product signals are represented in durable jobs and were not resubmitted after their observation window expired.",
+    "signals": []
+  },
+  "sourceFailures": [
+    {
+      "url": "https://www.honor.com/global/laptops/honor-magicbook-pro-14-2026/spec/",
+      "kind": "partial-text-extraction",
+      "checkedAt": "2026-09-24T06:50:01Z",
+      "detail": "Specification headings loaded without values; no complete-spec watermark advanced."
+    },
+    {
+      "url": "https://psref.lenovo.com/Detail/Lenovo_GB_15IPH12?M=83W60000US",
+      "kind": "empty-text-extraction",
+      "checkedAt": "2026-10-12T06:57:39Z",
+      "detail": "Official PSREF detail returned zero extracted text; no specification watermark advanced."
+    }
+  ],
+  "research": {
+    "jobId": null,
+    "status": "source-registry-revalidated-no-commission",
+    "packet": null,
+    "rounds": 1,
+    "uniqueSourcePages": 5,
+    "newReservations": 0,
+    "actualModelTokens": null,
+    "actualCost": null,
+    "plannerBudgetScope": "budget.modelCalls and budget.actualModelTokens describe the deterministic planner only.",
+    "sourceObservations": [
+      {
+        "id": "apple-newsroom-directory-20261019",
+        "url": "https://www.apple.com/newsroom/",
+        "checkedAt": "2026-10-19T06:15:53Z",
+        "status": "observed-limited-text-extraction"
+      },
+      {
+        "id": "samsung-global-directory-20261019",
+        "url": "https://news.samsung.com/global/",
+        "checkedAt": "2026-10-19T06:15:53Z",
+        "status": "observed"
+      },
+      {
+        "id": "google-pixel-directory-20261019",
+        "url": "https://blog.google/products-and-platforms/devices/pixel/",
+        "checkedAt": "2026-10-19T06:15:53Z",
+        "status": "observed"
+      },
+      {
+        "id": "lenovo-storyhub-directory-20261019",
+        "url": "https://news.lenovo.com/",
+        "checkedAt": "2026-10-19T06:15:53Z",
+        "status": "observed"
+      },
+      {
+        "id": "honor-global-news-directory-20261019",
+        "url": "https://www.honor.com/global/news/",
+        "checkedAt": "2026-10-19T06:15:53Z",
+        "status": "observed"
+      }
+    ],
+    "sourceDelta": "All five configured official manufacturer directories opened on 19 October 2026. This directory-only pass did not establish a new exact regional buyer decision or image licence.",
+    "nextJob": null
+  }
+}

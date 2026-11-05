@@ -1,0 +1,404 @@
+{
+  "schemaVersion": 1,
+  "asOf": "2026-10-26T07:45:28Z",
+  "selected": [
+    "hw-66cf56a6ba8748e9096e"
+  ],
+  "deferred": [],
+  "rejected": [],
+  "pending": [],
+  "budget": {
+    "reservedThisRun": 8000,
+    "reservedThisMonth": 16000,
+    "monthLimit": 240000,
+    "modelCalls": 0,
+    "paidApiCalls": 0,
+    "actualModelTokens": 0
+  },
+  "nextState": {
+    "schemaVersion": 1,
+    "months": {
+      "2026-09": {
+        "reservedTokens": 24000
+      },
+      "2026-10": {
+        "reservedTokens": 16000
+      }
+    },
+    "jobs": [
+      {
+        "id": "hw-f3f1b446ce9fcd20c8e8",
+        "key": "honor-magicbook-pro-14-2026:portable-creator-workstation",
+        "eventIds": [
+          "87889f236b4553382c53ca98139569721fe12bcd38b8b23b78cc56f101a1b24c"
+        ],
+        "status": "held",
+        "reservedAt": "2026-09-16T22:00:00Z",
+        "period": "2026-09",
+        "reservedTokens": 8000,
+        "productId": "honor-magicbook-pro-14-2026",
+        "intentId": "portable-creator-workstation",
+        "category": "laptops",
+        "action": "commission-research",
+        "canonicalUrl": null,
+        "owner": "starlight.technology",
+        "frankxTreatment": "Only commission a separate creator workflow with original evidence and a distinct reader job",
+        "readerDecision": "Which exact configuration and region should enter our creator laptop comparison, and what evidence is missing?",
+        "sources": [
+          {
+            "sourceId": "honor",
+            "url": "https://www.honor.com/global/laptops/honor-magicbook-pro-14-2026/",
+            "checkedAt": "2026-09-16T22:00:00Z",
+            "summary": "HONOR has a global product page for MagicBook Pro 14 2026. Verify local configuration and independent workload evidence before comparing it with other creator laptops.",
+            "facts": [
+              "HONOR publishes a global product page named MagicBook Pro 14 2026."
+            ]
+          }
+        ],
+        "commercial": "Evaluate fit; resolve enrolled partner from the canonical affiliate ledger; otherwise use an ordinary link",
+        "media": "Source real product images; quarantine until usage rights and credits are recorded; add a decision diagram when useful",
+        "gates": [
+          "full-source-fact-check",
+          "rights-and-credit",
+          "distinct-reader-value",
+          "independent-review",
+          "desktop-and-mobile-preview",
+          "publication-authority"
+        ],
+        "evidenceLevel": "manufacturer-source; no hands-on testing claimed",
+        "publishable": false,
+        "heldAt": "2026-09-24T06:50:01Z",
+        "researchPacket": "data/editorial/packets/honor-magicbook-pro-14-2026-20260924.json",
+        "holdReason": "Research brief delivered; exact NL SKU, workload evidence and visual permission unresolved.",
+        "releaseCondition": "An official NL/Benelux saleable SKU with CPU, RAM, SSD, keyboard and warranty; then exact-device workload evidence and a permission-safe visual."
+      },
+      {
+        "id": "hw-64e0b6cfa5a038fe0151",
+        "key": "samsung-galaxy-book6-14:portable-creator-workstation",
+        "eventIds": [
+          "03f5f3c8f0bd3dbc6b583f78860b1d36fe6fac0216958c3d2b5c3f5db25ad179"
+        ],
+        "status": "held",
+        "reservedAt": "2026-09-16T22:00:00Z",
+        "period": "2026-09",
+        "reservedTokens": 8000,
+        "productId": "samsung-galaxy-book6-14",
+        "intentId": "portable-creator-workstation",
+        "category": "laptops",
+        "action": "commission-research",
+        "canonicalUrl": null,
+        "owner": "starlight.technology",
+        "frankxTreatment": "Only commission a separate creator workflow with original evidence and a distinct reader job",
+        "readerDecision": "Is this configuration sufficient for a portable creator workflow, and what external equipment would still be required?",
+        "sources": [
+          {
+            "sourceId": "samsung",
+            "url": "https://news.samsung.com/global/samsung-expands-the-galaxy-book6-lineup-making-galaxy-book-more-accessible",
+            "checkedAt": "2026-09-16T22:00:00Z",
+            "summary": "Samsung describes an additional 14-inch Galaxy Book6 configuration. Commission a decision brief around workload, ports and regional configuration, with manufacturer performance claims clearly attributed.",
+            "facts": [
+              "Samsung dates the expansion announcement September 1, 2026.",
+              "The announcement describes a 14-inch Galaxy Book6 model."
+            ]
+          }
+        ],
+        "commercial": "Evaluate fit; resolve enrolled partner from the canonical affiliate ledger; otherwise use an ordinary link",
+        "media": "Source real product images; quarantine until usage rights and credits are recorded; add a decision diagram when useful",
+        "gates": [
+          "full-source-fact-check",
+          "rights-and-credit",
+          "distinct-reader-value",
+          "independent-review",
+          "desktop-and-mobile-preview",
+          "publication-authority"
+        ],
+        "evidenceLevel": "manufacturer-source; no hands-on testing claimed",
+        "publishable": false,
+        "heldAt": "2026-09-28T06:45:58Z",
+        "researchPacket": "data/editorial/packets/samsung-galaxy-book6-14-core5-benelux-20260928.json",
+        "holdReason": "Research brief delivered. Exact NL saleable SKU, creator workload evidence and image permission unresolved.",
+        "releaseCondition": "Exact NL orderable Core 5/16 GB/512 GB SKU and USB-C/support details, plus exact-device creator testing and permission-safe imagery."
+      },
+      {
+        "id": "hw-502e439896c9d0098b72",
+        "key": "samsung-one-ui-9:creator-update-decision",
+        "eventIds": [
+          "afc7b636549f200dcde3b523e1ea373770acf0cc8e0f596ad3dab6866dfe1ba9"
+        ],
+        "status": "held",
+        "reservedAt": "2026-09-16T22:00:00Z",
+        "period": "2026-09",
+        "reservedTokens": 8000,
+        "productId": "samsung-one-ui-9",
+        "intentId": "creator-update-decision",
+        "category": "phones",
+        "action": "commission-research",
+        "canonicalUrl": null,
+        "owner": "starlight.technology",
+        "frankxTreatment": "Only commission a separate creator workflow with original evidence and a distinct reader job",
+        "readerDecision": "Should a creator update an existing phone, and which workflow changes can be demonstrated on their exact device?",
+        "sources": [
+          {
+            "sourceId": "samsung",
+            "url": "https://news.samsung.com/global/samsung-begins-official-rollout-of-one-ui-9-bringing-the-latest-galaxy-experiences-to-more-devices",
+            "checkedAt": "2026-09-16T22:00:00Z",
+            "summary": "Samsung announces a wider One UI 9 rollout. Research which creator-facing changes are available for each device and region before recommending an upgrade.",
+            "facts": [
+              "Samsung dates this announcement September 16, 2026.",
+              "The release describes video reframing and voice-recording summary features with eligibility caveats."
+            ]
+          }
+        ],
+        "commercial": "Evaluate fit; resolve enrolled partner from the canonical affiliate ledger; otherwise use an ordinary link",
+        "media": "Source real product images; quarantine until usage rights and credits are recorded; add a decision diagram when useful",
+        "gates": [
+          "full-source-fact-check",
+          "rights-and-credit",
+          "distinct-reader-value",
+          "independent-review",
+          "desktop-and-mobile-preview",
+          "publication-authority"
+        ],
+        "evidenceLevel": "manufacturer-source; no hands-on testing claimed",
+        "publishable": false,
+        "researchPacket": "data/editorial/packets/samsung-one-ui-9-20260917.json",
+        "heldAt": "2026-09-17T06:26:47Z",
+        "holdReason": "Research brief delivered. Exact regional device eligibility and usable visual rights remain unresolved; independent review and publication authority pending.",
+        "releaseCondition": "Evidence for a specific local model/build and original or licensed visuals; reconcile Content OS before authoring."
+      },
+      {
+        "id": "hw-994deff273639b4fb27d",
+        "key": "lenovo-googlebook-15:cloud-first-creator-laptop",
+        "eventIds": [
+          "15fe70b27e970df152e7e908b075938e4feb816dceb7d6c2e607c8d0258d2204",
+          "e31870162f76764bff0a1f5d3520fbd4d9ae9a569eee06ff66409b98f8d992cb"
+        ],
+        "status": "held",
+        "reservedAt": "2026-10-12T06:57:39Z",
+        "period": "2026-10",
+        "reservedTokens": 8000,
+        "productId": "lenovo-googlebook-15",
+        "intentId": "cloud-first-creator-laptop",
+        "category": "laptops",
+        "action": "commission-research",
+        "canonicalUrl": null,
+        "owner": "starlight.technology",
+        "frankxTreatment": "Only commission a separate creator workflow with original evidence and a distinct reader job",
+        "readerDecision": "Should a Netherlands-based cloud-first creator wait for or consider Lenovo Googlebook 15, and which desktop-app, regional-model and evidence gaps make it the wrong purchase?",
+        "sources": [
+          {
+            "sourceId": "lenovo",
+            "url": "https://news.lenovo.com/pressroom/press-releases/first-googlebook-premium-ai-experiences-sleek-lightweight-design/",
+            "checkedAt": "2026-10-12T06:57:39Z",
+            "summary": "Lenovo announced its first Googlebook 15. Research the globally announced family, Googlebook OS workflow boundary and wrong-purchase conditions before recommending it to creators.",
+            "facts": [
+              "Lenovo dates the announcement September 28, 2026.",
+              "Lenovo lists Intel Core Ultra 5 325, 16 or 32 GB memory, 256 or 512 GB storage, and Googlebook OS.",
+              "Lenovo states United States availability from October 4, 2026."
+            ]
+          },
+          {
+            "sourceId": "lenovo",
+            "url": "https://www.lenovo.com/nl/nl/p/laptops/googlebook/googlebook-series/lenovo-googlebook-15/len101o0001",
+            "checkedAt": "2026-10-12T06:57:39Z",
+            "summary": "Lenovo's Netherlands Googlebook 15 family page was present but did not expose an orderable Dutch model. Verify the exact NL SKU, configuration and offer before making a buying recommendation.",
+            "facts": [
+              "Lenovo publishes a Netherlands Googlebook 15 family page.",
+              "The retrieved Netherlands page did not expose an exact orderable model code, configuration, price or stock."
+            ]
+          }
+        ],
+        "commercial": "Evaluate fit; resolve enrolled partner from the canonical affiliate ledger; otherwise use an ordinary link",
+        "media": "Source real product images; quarantine until usage rights and credits are recorded; add a decision diagram when useful",
+        "gates": [
+          "full-source-fact-check",
+          "rights-and-credit",
+          "distinct-reader-value",
+          "independent-review",
+          "desktop-and-mobile-preview",
+          "publication-authority"
+        ],
+        "evidenceLevel": "manufacturer-source; no hands-on testing claimed",
+        "publishable": false,
+        "heldAt": "2026-10-12T06:57:39Z",
+        "researchPacket": "data/editorial/packets/lenovo-googlebook-15-nl-20261012.json",
+        "holdReason": "Research brief delivered. Exact Dutch saleable SKU, Googlebook OS application fit, workload evidence and image permission remain unresolved.",
+        "releaseCondition": "An orderable Dutch model code with configuration, keyboard, warranty, price and stock; application-by-application Googlebook OS verification; exact-device workload evidence; and an original or individually permitted visual."
+      },
+      {
+        "id": "hw-66cf56a6ba8748e9096e",
+        "key": "apple-iphone-duo:foldable-creator-phone-decision",
+        "eventIds": [
+          "049cda0b724b2f0e69ee15c8d20d13f609e862570bede92e5b15419b62dd4eba",
+          "ef60d6a0a18a699eb8d8d7c6e8c8fa8ffa6d85851a1f6861e6bdb90c9de0b863"
+        ],
+        "status": "held",
+        "reservedAt": "2026-10-26T07:45:28Z",
+        "period": "2026-10",
+        "reservedTokens": 8000,
+        "productId": "apple-iphone-duo",
+        "intentId": "foldable-creator-phone-decision",
+        "category": "phones",
+        "action": "commission-research",
+        "canonicalUrl": null,
+        "owner": "starlight.technology",
+        "frankxTreatment": "Only commission a separate creator workflow with original evidence and a distinct reader job",
+        "readerDecision": "Should a Netherlands-based creator buy iPhone Duo for capture, review and two-app mobile work, or is its price, weight, camera set and unverified workflow value a reason to choose a conventional phone or tablet?",
+        "sources": [
+          {
+            "sourceId": "apple",
+            "url": "https://www.apple.com/newsroom/2026/10/open-up-to-new-possibilities-with-iphone-duo/",
+            "checkedAt": "2026-10-26T07:45:28Z",
+            "summary": "Apple launched its first foldable iPhone and positions the larger inner display, Split View and flexible poses for multitasking and capture workflows. Research whether the exact Dutch model earns its premium for creators and when a conventional phone or tablet is the better purchase.",
+            "facts": [
+              "Apple dates the product announcement October 15, 2026 and opened pre-orders October 16.",
+              "Apple says iPhone Duo reached stores on October 23, 2026.",
+              "Apple identifies A20 Pro, a foldable inner display and iOS 27 Split View as family features."
+            ]
+          },
+          {
+            "sourceId": "apple",
+            "url": "https://www.apple.com/nl/shop/buy-iphone/iphone-duo",
+            "checkedAt": "2026-10-26T07:45:28Z",
+            "summary": "Apple Netherlands lists orderable iPhone Duo configurations. Preserve the exact Dutch storage and model evidence, treat prices as short-lived observations, and require firsthand workflow and durability evidence before making a buying recommendation.",
+            "facts": [
+              "Apple Netherlands lists 256 GB, 512 GB, 1 TB and 2 TB configurations in two colours.",
+              "On October 26, 2026, the Apple Netherlands page showed the 256 GB configuration at EUR 2,339 including VAT.",
+              "Apple Netherlands identifies the regional hardware as model A3720 and specifies dual eSIM without a physical SIM slot."
+            ]
+          }
+        ],
+        "commercial": "Evaluate fit; resolve enrolled partner from the canonical affiliate ledger; otherwise use an ordinary link",
+        "media": "Source real product images; quarantine until usage rights and credits are recorded; add a decision diagram when useful",
+        "gates": [
+          "full-source-fact-check",
+          "rights-and-credit",
+          "distinct-reader-value",
+          "independent-review",
+          "desktop-and-mobile-preview",
+          "publication-authority"
+        ],
+        "evidenceLevel": "manufacturer-source; no hands-on testing claimed",
+        "publishable": false,
+        "heldAt": "2026-10-26T07:45:28Z",
+        "researchPacket": "data/editorial/packets/apple-iphone-duo-nl-20261026.json",
+        "holdReason": "Research brief delivered. Exact-device creator workflow, independent durability and battery evidence, comparison value and visual permission remain unresolved.",
+        "releaseCondition": "An exact A3720 capture-to-publish and two-app workflow test, durability/carry observations, a conventional-phone-plus-tablet comparison, current app-layout verification, and an original or individually permitted product visual."
+      }
+    ],
+    "note": "Bootstrap once. Every subsequent run must read nextState from the newest saved plan bundle. Never reset this file to renew a budget."
+  },
+  "normalizedIntake": {
+    "schemaVersion": 1,
+    "inventory": [],
+    "inventoryStatus": "Targeted Starlight and FrankX repository and open-PR checks found no iPhone Duo URL or exact-product proposal. Refresh the canonical Content OS before authoring; an empty inventory is not publication authority.",
+    "signals": [
+      {
+        "sourceId": "apple",
+        "productId": "apple-iphone-duo",
+        "intentId": "foldable-creator-phone-decision",
+        "category": "phones",
+        "kind": "launch",
+        "url": "https://www.apple.com/newsroom/2026/10/open-up-to-new-possibilities-with-iphone-duo/",
+        "checkedAt": "2026-10-26T07:45:28Z",
+        "summary": "Apple launched its first foldable iPhone and positions the larger inner display, Split View and flexible poses for multitasking and capture workflows. Research whether the exact Dutch model earns its premium for creators and when a conventional phone or tablet is the better purchase.",
+        "facts": [
+          "Apple dates the product announcement October 15, 2026 and opened pre-orders October 16.",
+          "Apple says iPhone Duo reached stores on October 23, 2026.",
+          "Apple identifies A20 Pro, a foldable inner display and iOS 27 Split View as family features."
+        ],
+        "readerDecision": "Should a Netherlands-based creator buy iPhone Duo for capture, review and two-app mobile work, or is its price, weight, camera set and unverified workflow value a reason to choose a conventional phone or tablet?"
+      },
+      {
+        "sourceId": "apple",
+        "productId": "apple-iphone-duo",
+        "intentId": "foldable-creator-phone-decision",
+        "category": "phones",
+        "kind": "refresh",
+        "url": "https://www.apple.com/nl/shop/buy-iphone/iphone-duo",
+        "checkedAt": "2026-10-26T07:45:28Z",
+        "summary": "Apple Netherlands lists orderable iPhone Duo configurations. Preserve the exact Dutch storage and model evidence, treat prices as short-lived observations, and require firsthand workflow and durability evidence before making a buying recommendation.",
+        "facts": [
+          "Apple Netherlands lists 256 GB, 512 GB, 1 TB and 2 TB configurations in two colours.",
+          "On October 26, 2026, the Apple Netherlands page showed the 256 GB configuration at EUR 2,339 including VAT.",
+          "Apple Netherlands identifies the regional hardware as model A3720 and specifies dual eSIM without a physical SIM slot."
+        ],
+        "readerDecision": "Should a Netherlands-based creator buy iPhone Duo for capture, review and two-app mobile work, or is its price, weight, camera set and unverified workflow value a reason to choose a conventional phone or tablet?"
+      }
+    ]
+  },
+  "sourceFailures": [
+    {
+      "url": "https://www.honor.com/global/laptops/honor-magicbook-pro-14-2026/spec/",
+      "kind": "partial-text-extraction",
+      "checkedAt": "2026-09-24T06:50:01Z",
+      "detail": "Specification headings loaded without values; no complete-spec watermark advanced."
+    },
+    {
+      "url": "https://psref.lenovo.com/Detail/Lenovo_GB_15IPH12?M=83W60000US",
+      "kind": "empty-text-extraction",
+      "checkedAt": "2026-10-12T06:57:39Z",
+      "detail": "Official PSREF detail returned zero extracted text; no specification watermark advanced."
+    }
+  ],
+  "research": {
+    "jobId": "hw-66cf56a6ba8748e9096e",
+    "status": "packet-complete-held",
+    "packet": "data/editorial/packets/apple-iphone-duo-nl-20261026.json",
+    "rounds": 2,
+    "uniqueSourcePages": 10,
+    "newReservations": 8000,
+    "actualModelTokens": null,
+    "actualCost": null,
+    "plannerBudgetScope": "budget.modelCalls and budget.actualModelTokens describe the deterministic planner only.",
+    "sourceObservations": [
+      {
+        "id": "apple-newsroom-iphone-duo-launch-20261026",
+        "url": "https://www.apple.com/newsroom/2026/10/open-up-to-new-possibilities-with-iphone-duo/",
+        "checkedAt": "2026-10-26T07:45:28Z",
+        "status": "new-launch-qualified",
+        "finding": "Apple dates the launch October 15, opened pre-orders October 16 and positions A20 Pro, the foldable inner display and iOS 27 for multitasking."
+      },
+      {
+        "id": "apple-newsroom-iphone-duo-apps-20261026",
+        "url": "https://www.apple.com/newsroom/2026/10/developers-bring-incredible-new-app-experiences-to-iphone-duo/",
+        "checkedAt": "2026-10-26T07:45:28Z",
+        "status": "creator-workflow-lead",
+        "finding": "Apple names Split View and several productivity/creative application layouts, while noting that some updates are still rolling out; exact versions and firsthand value remain unverified."
+      },
+      {
+        "id": "apple-nl-iphone-duo-specs-20261026",
+        "url": "https://www.apple.com/nl/iphone-duo/specs/",
+        "checkedAt": "2026-10-26T07:45:28Z",
+        "status": "exact-regional-specification-verified",
+        "finding": "Apple Netherlands identifies model A3720, the display sizes, 254 gram weight, camera set, USB-C capabilities and dual-eSIM-only design."
+      },
+      {
+        "id": "apple-nl-iphone-duo-store-20261026",
+        "url": "https://www.apple.com/nl/shop/buy-iphone/iphone-duo",
+        "checkedAt": "2026-10-26T07:45:28Z",
+        "status": "orderable-regional-variants-observed",
+        "finding": "Apple Netherlands lists 256 GB, 512 GB, 1 TB and 2 TB configurations; the 256 GB price observed was EUR 2,339 including VAT and expires from editorial use after 24 hours without recheck."
+      },
+      {
+        "id": "apple-newsroom-iphone-duo-media-20261026",
+        "url": "https://www.apple.com/newsroom/2026/10/iphone-duo-arrives-at-apple-store-locations-worldwide/",
+        "checkedAt": "2026-10-26T07:45:28Z",
+        "status": "media-discovered-rights-hold",
+        "finding": "The official page offers downloadable launch media, but no per-asset commercial reuse permission receipt was established; no media was copied."
+      },
+      {
+        "id": "samsung-lenovo-honor-held-recheck-20261026",
+        "url": "https://www.honor.com/benelux/laptops/",
+        "checkedAt": "2026-10-26T07:45:28Z",
+        "status": "no-held-release-condition-cleared",
+        "finding": "Samsung, Lenovo and HONOR regional checks did not clear the previously recorded exact-SKU, firsthand-evidence or rights conditions."
+      }
+    ],
+    "sourceDelta": "iPhone Duo is a new, exact Dutch phone signal with enough regional specification and price evidence for a bounded packet. It remains HOLD because manufacturer sources do not establish creator-workflow value, durability, battery behaviour or reusable image rights.",
+    "mediaDecision": "No image or video was copied, generated, assigned or approved. A six-role flagship assignment is recorded, with Apple launch media quarantined until permission and independent visual review.",
+    "affiliateDecision": "The approved-offer ledger is empty. No referral was invented; the ordinary Apple Netherlands store URL is the fallback.",
+    "repositoryDelta": "PR #44 remains open, draft and mergeable with no rejecting review. Current main was merged before the write. PR #59 proposes deleting the documented planner, but its exact head has unresolved P1/P2 review findings and no accepted replacement, so it was not treated as superseding the workflow.",
+    "nextJob": null
+  }
+}

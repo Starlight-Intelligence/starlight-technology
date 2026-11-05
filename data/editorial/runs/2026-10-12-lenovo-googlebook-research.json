@@ -168,7 +168,8 @@
         "id": "hw-994deff273639b4fb27d",
         "key": "lenovo-googlebook-15:cloud-first-creator-laptop",
         "eventIds": [
-          "a0239fa9ca45a52511182819af5fc40ff58fa165092170685d39a094b8de58e2"
+          "15fe70b27e970df152e7e908b075938e4feb816dceb7d6c2e607c8d0258d2204",
+          "e31870162f76764bff0a1f5d3520fbd4d9ae9a569eee06ff66409b98f8d992cb"
         ],
         "status": "held",
         "reservedAt": "2026-10-12T06:57:39Z",
@@ -187,11 +188,21 @@
             "sourceId": "lenovo",
             "url": "https://news.lenovo.com/pressroom/press-releases/first-googlebook-premium-ai-experiences-sleek-lightweight-design/",
             "checkedAt": "2026-10-12T06:57:39Z",
-            "summary": "Lenovo announced its first Googlebook 15, while its Netherlands product family page exposes no orderable model. Research the exact NL variant, Googlebook OS workflow boundary and wrong-purchase conditions before recommending it to creators.",
+            "summary": "Lenovo announced its first Googlebook 15. Research the globally announced family, Googlebook OS workflow boundary and wrong-purchase conditions before recommending it to creators.",
             "facts": [
               "Lenovo dates the announcement September 28, 2026.",
               "Lenovo lists Intel Core Ultra 5 325, 16 or 32 GB memory, 256 or 512 GB storage, and Googlebook OS.",
-              "Lenovo states United States availability from October 4, 2026; the Netherlands family page does not expose an orderable model in retrieved text."
+              "Lenovo states United States availability from October 4, 2026."
+            ]
+          },
+          {
+            "sourceId": "lenovo",
+            "url": "https://www.lenovo.com/nl/nl/p/laptops/googlebook/googlebook-series/lenovo-googlebook-15/len101o0001",
+            "checkedAt": "2026-10-12T06:57:39Z",
+            "summary": "Lenovo's Netherlands Googlebook 15 family page was present but did not expose an orderable Dutch model. Verify the exact NL SKU, configuration and offer before making a buying recommendation.",
+            "facts": [
+              "Lenovo publishes a Netherlands Googlebook 15 family page.",
+              "The retrieved Netherlands page did not expose an exact orderable model code, configuration, price or stock."
             ]
           }
         ],
@@ -274,11 +285,26 @@
         "kind": "launch",
         "url": "https://news.lenovo.com/pressroom/press-releases/first-googlebook-premium-ai-experiences-sleek-lightweight-design/",
         "checkedAt": "2026-10-12T06:57:39Z",
-        "summary": "Lenovo announced its first Googlebook 15, while its Netherlands product family page exposes no orderable model. Research the exact NL variant, Googlebook OS workflow boundary and wrong-purchase conditions before recommending it to creators.",
+        "summary": "Lenovo announced its first Googlebook 15. Research the globally announced family, Googlebook OS workflow boundary and wrong-purchase conditions before recommending it to creators.",
         "facts": [
           "Lenovo dates the announcement September 28, 2026.",
           "Lenovo lists Intel Core Ultra 5 325, 16 or 32 GB memory, 256 or 512 GB storage, and Googlebook OS.",
-          "Lenovo states United States availability from October 4, 2026; the Netherlands family page does not expose an orderable model in retrieved text."
+          "Lenovo states United States availability from October 4, 2026."
+        ],
+        "readerDecision": "Should a Netherlands-based cloud-first creator wait for or consider Lenovo Googlebook 15, and which desktop-app, regional-model and evidence gaps make it the wrong purchase?"
+      },
+      {
+        "sourceId": "lenovo",
+        "productId": "lenovo-googlebook-15",
+        "intentId": "cloud-first-creator-laptop",
+        "category": "laptops",
+        "kind": "refresh",
+        "url": "https://www.lenovo.com/nl/nl/p/laptops/googlebook/googlebook-series/lenovo-googlebook-15/len101o0001",
+        "checkedAt": "2026-10-12T06:57:39Z",
+        "summary": "Lenovo's Netherlands Googlebook 15 family page was present but did not expose an orderable Dutch model. Verify the exact NL SKU, configuration and offer before making a buying recommendation.",
+        "facts": [
+          "Lenovo publishes a Netherlands Googlebook 15 family page.",
+          "The retrieved Netherlands page did not expose an exact orderable model code, configuration, price or stock."
         ],
         "readerDecision": "Should a Netherlands-based cloud-first creator wait for or consider Lenovo Googlebook 15, and which desktop-app, regional-model and evidence gaps make it the wrong purchase?"
       }

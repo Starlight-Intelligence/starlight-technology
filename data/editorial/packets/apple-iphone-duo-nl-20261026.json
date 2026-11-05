@@ -1,0 +1,376 @@
+{
+  "schemaVersion": 1,
+  "status": "HOLD",
+  "publishable": false,
+  "contentId": "st-hw-apple-iphone-duo-nl-foldable-creator-decision",
+  "productId": "apple-iphone-duo",
+  "jobId": "hw-66cf56a6ba8748e9096e",
+  "variantId": "apple-iphone-duo-a3720-nl-256gb-202610",
+  "region": "Netherlands",
+  "canonicalOwner": "starlight.technology",
+  "readerJob": "Decide whether a Netherlands-based creator should pay for iPhone Duo to gain a foldable review and two-app workspace, and identify when its price, weight, camera set or untested workflow value makes a conventional phone or tablet the better purchase.",
+  "decision": "Do not issue a buying recommendation yet. Apple Netherlands establishes an orderable A3720 family and exact 256 GB entry price, but manufacturer specifications and launch demonstrations do not establish creator-workflow speed, hinge durability, thermal behaviour, battery life under capture-and-publish work, or whether the foldable canvas replaces another carried device.",
+  "wrongPurchaseConditions": [
+    "The buyer expects the 7.6-inch inner display alone to replace a tablet or laptop without testing the exact editing, review, file-transfer and publishing workflow.",
+    "The buyer needs an ultrawide or dedicated telephoto camera rather than the documented 48 MP main camera and 2x crop option.",
+    "The buyer treats Apple's up-to battery figures as independent capture, editing or hotspot endurance.",
+    "The buyer needs a physical SIM slot; the Dutch A3720 specification is dual eSIM only.",
+    "The buyer is uncomfortable carrying a 254 gram phone or an 11.3 mm folded device.",
+    "The buyer assumes every app shown or named by Apple already has a complete foldable layout in the Netherlands.",
+    "The buyer cannot justify the dated EUR 2,339 entry price against a conventional iPhone plus an existing tablet or monitor."
+  ],
+  "evidenceLevel": "official manufacturer launch, Dutch specification and Dutch store observations; no hands-on testing",
+  "configuration": {
+    "model": "A3720",
+    "storageGb": 256,
+    "colours": ["Sterrenwit", "Nachthemel"],
+    "operatingSystem": "iOS 27",
+    "processor": "A20 Pro",
+    "memoryGb": null,
+    "innerDisplay": "7.6-inch foldable OLED, 1878 x 2670, up to 120 Hz",
+    "outerDisplay": "5.4-inch OLED, 1398 x 2034, up to 120 Hz",
+    "openDimensionsMm": "164.6 x 117.8 x 5.2",
+    "foldedDimensionsMm": "84.1 x 117.8 x 11.3",
+    "weightGrams": 254,
+    "rearCamera": "48 MP Fusion main camera with 12 MP 2x optical-quality crop option",
+    "connector": "USB-C with DisplayPort and USB 3 up to 10 Gb/s",
+    "sim": "Dual eSIM; no physical SIM",
+    "storageOptionsGb": [256, 512, 1000, 2000]
+  },
+  "sources": [
+    {
+      "id": "apple-newsroom-iphone-duo-launch-20261015",
+      "url": "https://www.apple.com/newsroom/2026/10/open-up-to-new-possibilities-with-iphone-duo/",
+      "publisher": "Apple Newsroom",
+      "publishedAt": "2026-10-15",
+      "retrievedAt": "2026-10-26T07:45:28Z",
+      "sourceType": "official-launch-update",
+      "claimIds": ["a1", "a2", "a3"],
+      "freshnessTrigger": "Product, availability, operating-system or support change."
+    },
+    {
+      "id": "apple-newsroom-iphone-duo-apps-20261022",
+      "url": "https://www.apple.com/newsroom/2026/10/developers-bring-incredible-new-app-experiences-to-iphone-duo/",
+      "publisher": "Apple Newsroom",
+      "publishedAt": "2026-10-22",
+      "retrievedAt": "2026-10-26T07:45:28Z",
+      "sourceType": "official-developer-ecosystem-update",
+      "claimIds": ["a4", "a5"],
+      "freshnessTrigger": "Exact application version, regional release or app-layout change."
+    },
+    {
+      "id": "apple-nl-iphone-duo-specs-20261026",
+      "url": "https://www.apple.com/nl/iphone-duo/specs/",
+      "publisher": "Apple Nederland",
+      "publishedAt": null,
+      "retrievedAt": "2026-10-26T07:45:28Z",
+      "sourceType": "official-regional-specification",
+      "claimIds": ["a6", "a7", "a8", "a9", "a10"],
+      "freshnessTrigger": "Exact model, specification, support or footnote change."
+    },
+    {
+      "id": "apple-nl-iphone-duo-store-20261026",
+      "url": "https://www.apple.com/nl/shop/buy-iphone/iphone-duo",
+      "publisher": "Apple Nederland",
+      "publishedAt": null,
+      "retrievedAt": "2026-10-26T07:45:28Z",
+      "sourceType": "official-regional-store",
+      "claimIds": ["a11", "a12"],
+      "freshnessTrigger": "Recheck price and orderability at release; omit if not freshly verified."
+    },
+    {
+      "id": "apple-newsroom-iphone-duo-photos-20261023",
+      "url": "https://www.apple.com/newsroom/2026/10/iphone-duo-arrives-at-apple-store-locations-worldwide/",
+      "publisher": "Apple Newsroom",
+      "publishedAt": "2026-10-23",
+      "retrievedAt": "2026-10-26T07:45:28Z",
+      "sourceType": "official-launch-photos-page",
+      "claimIds": ["a13"],
+      "freshnessTrigger": "Each proposed asset and applicable media-use permission."
+    }
+  ],
+  "claims": [
+    {
+      "id": "a1",
+      "text": "Apple dates the iPhone Duo announcement October 15, 2026 and says pre-orders began October 16.",
+      "sourceIds": ["apple-newsroom-iphone-duo-launch-20261015"],
+      "type": "manufacturer-statement",
+      "asOf": "2026-10-26T07:45:28Z",
+      "expiresAt": null,
+      "allowedWording": "Attribute the date and availability wording to Apple.",
+      "reviewerVerdict": "pending-independent-review"
+    },
+    {
+      "id": "a2",
+      "text": "Apple describes iPhone Duo as its first foldable iPhone, powered by A20 Pro and iOS 27.",
+      "sourceIds": ["apple-newsroom-iphone-duo-launch-20261015"],
+      "type": "manufacturer-statement",
+      "asOf": "2026-10-26T07:45:28Z",
+      "expiresAt": null,
+      "allowedWording": "Keep Apple attribution and do not convert the positioning into an independent verdict.",
+      "reviewerVerdict": "pending-independent-review"
+    },
+    {
+      "id": "a3",
+      "text": "Apple says the inner display is 50 percent larger than iPhone 18 Pro Max and positions the device for content, gaming and multitasking.",
+      "sourceIds": ["apple-newsroom-iphone-duo-launch-20261015"],
+      "type": "manufacturer-statement",
+      "asOf": "2026-10-26T07:45:28Z",
+      "expiresAt": null,
+      "allowedWording": "Present as Apple's positioning, not measured creator value.",
+      "reviewerVerdict": "pending-independent-review"
+    },
+    {
+      "id": "a4",
+      "text": "Apple says iOS 27 adds Split View for two apps side by side on iPhone Duo.",
+      "sourceIds": ["apple-newsroom-iphone-duo-apps-20261022"],
+      "type": "manufacturer-statement",
+      "asOf": "2026-10-26T07:45:28Z",
+      "expiresAt": null,
+      "allowedWording": "Name the feature without claiming it improves a workflow that has not been tested.",
+      "reviewerVerdict": "pending-independent-review"
+    },
+    {
+      "id": "a5",
+      "text": "Apple names Word, Outlook, Zoom, Slack, Fantastical, Notewise, Things and Bear among applications using or preparing layouts for the larger display, with some updates described as still rolling out.",
+      "sourceIds": ["apple-newsroom-iphone-duo-apps-20261022"],
+      "type": "manufacturer-statement",
+      "asOf": "2026-10-26T07:45:28Z",
+      "expiresAt": "2026-11-02T07:45:28Z",
+      "allowedWording": "Verify the exact app version and Dutch availability before calling a layout available.",
+      "reviewerVerdict": "pending-independent-review"
+    },
+    {
+      "id": "a6",
+      "text": "Apple Netherlands specifies a 7.6-inch 1878 x 2670 inner display and a 5.4-inch 1398 x 2034 outer display, both with adaptive refresh up to 120 Hz.",
+      "sourceIds": ["apple-nl-iphone-duo-specs-20261026"],
+      "type": "manufacturer-specification",
+      "asOf": "2026-10-26T07:45:28Z",
+      "expiresAt": null,
+      "allowedWording": "Use for model A3720 only and preserve manufacturer attribution.",
+      "reviewerVerdict": "pending-independent-review"
+    },
+    {
+      "id": "a7",
+      "text": "Apple Netherlands lists 254 grams, 5.2 mm depth when open and 11.3 mm depth when folded.",
+      "sourceIds": ["apple-nl-iphone-duo-specs-20261026"],
+      "type": "manufacturer-specification",
+      "asOf": "2026-10-26T07:45:28Z",
+      "expiresAt": null,
+      "allowedWording": "Treat comfort and pocketability as untested until firsthand evidence exists.",
+      "reviewerVerdict": "pending-independent-review"
+    },
+    {
+      "id": "a8",
+      "text": "Apple Netherlands lists a 48 MP Fusion main camera and a 12 MP 2x optical-quality crop option; the checked specification does not list an ultrawide or dedicated telephoto camera.",
+      "sourceIds": ["apple-nl-iphone-duo-specs-20261026"],
+      "type": "source-observation",
+      "asOf": "2026-10-26T07:45:28Z",
+      "expiresAt": null,
+      "allowedWording": "Describe the documented camera set without asserting image quality.",
+      "reviewerVerdict": "pending-independent-review"
+    },
+    {
+      "id": "a9",
+      "text": "Apple Netherlands specifies USB-C with DisplayPort and USB 3 transfer up to 10 Gb/s.",
+      "sourceIds": ["apple-nl-iphone-duo-specs-20261026"],
+      "type": "manufacturer-specification",
+      "asOf": "2026-10-26T07:45:28Z",
+      "expiresAt": null,
+      "allowedWording": "Do not infer accessory compatibility or sustained transfer performance.",
+      "reviewerVerdict": "pending-independent-review"
+    },
+    {
+      "id": "a10",
+      "text": "Apple Netherlands identifies model A3720 as dual eSIM and not compatible with physical SIM cards.",
+      "sourceIds": ["apple-nl-iphone-duo-specs-20261026"],
+      "type": "manufacturer-specification",
+      "asOf": "2026-10-26T07:45:28Z",
+      "expiresAt": null,
+      "allowedWording": "Verify the reader's carrier eSIM support separately.",
+      "reviewerVerdict": "pending-independent-review"
+    },
+    {
+      "id": "a11",
+      "text": "Apple Netherlands lists orderable 256 GB, 512 GB, 1 TB and 2 TB iPhone Duo configurations in Sterrenwit and Nachthemel.",
+      "sourceIds": ["apple-nl-iphone-duo-store-20261026"],
+      "type": "source-observation",
+      "asOf": "2026-10-26T07:45:28Z",
+      "expiresAt": "2026-10-27T07:45:28Z",
+      "allowedWording": "Recheck live orderability before publication.",
+      "reviewerVerdict": "pending-independent-review"
+    },
+    {
+      "id": "a12",
+      "text": "On October 26, 2026, Apple Netherlands displayed EUR 2,339 including VAT for the 256 GB configuration.",
+      "sourceIds": ["apple-nl-iphone-duo-store-20261026"],
+      "type": "dated-manufacturer-price",
+      "asOf": "2026-10-26T07:45:28Z",
+      "expiresAt": "2026-10-27T07:45:28Z",
+      "allowedWording": "Use only with the date, configuration, currency and manufacturer-store context; otherwise omit.",
+      "reviewerVerdict": "pending-independent-review"
+    },
+    {
+      "id": "a13",
+      "text": "Apple's October 23 photos page offers downloadable media but the checked workflow did not establish a commercial republication licence for either site.",
+      "sourceIds": ["apple-newsroom-iphone-duo-photos-20261023"],
+      "type": "rights-observation",
+      "asOf": "2026-10-26T07:45:28Z",
+      "expiresAt": null,
+      "allowedWording": "Keep media quarantined until a per-asset permission receipt is recorded; download availability alone is not approval.",
+      "reviewerVerdict": "pending-independent-review"
+    }
+  ],
+  "comparisons": [],
+  "originalContribution": {
+    "status": "research-synthesis-only",
+    "artifact": "Foldable-workspace substitution matrix",
+    "rows": [
+      {
+        "readerNeed": "Two-app mobile review and communication",
+        "tentativeFit": "plausible",
+        "qualification": "Split View and named app layouts are manufacturer evidence; complete workflow remains untested."
+      },
+      {
+        "readerNeed": "Capture versatility",
+        "tentativeFit": "conditional",
+        "qualification": "The documented camera set lacks an ultrawide or dedicated telephoto; image quality is untested."
+      },
+      {
+        "readerNeed": "Replace a second device",
+        "tentativeFit": "unproven",
+        "qualification": "Requires a complete carry, edit, review, export and publish test against a conventional phone plus tablet."
+      },
+      {
+        "readerNeed": "Value at Dutch entry price",
+        "tentativeFit": "HOLD",
+        "qualification": "The dated EUR 2,339 price is verified, but incremental workflow value and durability are not."
+      }
+    ]
+  },
+  "uncertainty": [
+    "Independent hinge-cycle, drop, scratch, repairability and long-term display evidence for the exact A3720 generation.",
+    "Battery, thermal and sustained-performance behaviour during capture, editing, hotspot, upload and two-app work.",
+    "Exact Dutch app versions and foldable layouts for the reader's workflow.",
+    "Camera quality, stabilization, audio and transfer performance compared with a conventional flagship phone.",
+    "Whether the larger canvas removes a second device from the reader's actual carry.",
+    "Written commercial reuse permission for an exact Apple product image or an original exact-device photograph."
+  ],
+  "media": {
+    "tier": "FLAGSHIP",
+    "packetId": null,
+    "assets": [],
+    "productionReady": false,
+    "rightsStatus": "HOLD",
+    "assignments": [
+      {
+        "id": "iphone-duo-exact-nl-hero",
+        "role": "product-evidence",
+        "method": "Own photograph of model A3720 or an individually permitted Apple asset with a recorded placement receipt.",
+        "status": "HOLD-permission-or-device"
+      },
+      {
+        "id": "iphone-duo-substitution-matrix",
+        "role": "first-viewport-decision-object",
+        "method": "Original deterministic matrix comparing iPhone Duo with a conventional phone and phone-plus-tablet carry for named tasks.",
+        "status": "brief-only"
+      },
+      {
+        "id": "iphone-duo-workflow-capture",
+        "role": "workflow-evidence",
+        "method": "Own clean-account screen recording of capture, Split View review, file transfer and publish on the exact hardware and app versions.",
+        "status": "not-commissioned"
+      },
+      {
+        "id": "iphone-duo-camera-boundary",
+        "role": "comparison-figure",
+        "method": "Original sourced diagram distinguishing the documented main-camera/2x set from missing ultrawide and dedicated telephoto roles.",
+        "status": "brief-only"
+      },
+      {
+        "id": "iphone-duo-hinge-and-carry-evidence",
+        "role": "physical-evidence",
+        "method": "Own close-up photographs and measured carry notes for hinge, crease, folded thickness and one-handed use after a declared test period.",
+        "status": "not-commissioned"
+      },
+      {
+        "id": "iphone-duo-og-mobile-renditions",
+        "role": "distribution",
+        "method": "Derive approved OG and mobile-native crops from the registered product master plus the original decision object.",
+        "status": "blocked-on-approved-master"
+      }
+    ],
+    "creditRequirements": "Register asset, version and rendition IDs; record source, creator, rights owner, written scope, territory, channels, expiry, credit, checksum, dimensions, alt text and approval actor. A newsroom download button or credit line is not a reuse licence.",
+    "placementRule": "Article content references semantic placements, not provider URLs. Keep image enlargement, source credit and shopping CTA separate; production resolves only approved immutable renditions."
+  },
+  "affiliate": {
+    "fitReason": "A high-intent Dutch buying decision could justify a referral only after the verdict is independently supported and an exact approved regional destination exists.",
+    "status": "no-approved-offer",
+    "programId": null,
+    "issuedUrl": null,
+    "region": "NL",
+    "checkedAt": "2026-10-26T07:45:28Z",
+    "ledgerCheck": "data/commerce/approved-offers.json is empty. No Apple or retailer referral was invented or enrolled.",
+    "fallback": "https://www.apple.com/nl/shop/buy-iphone/iphone-duo",
+    "disclosure": null
+  },
+  "price": {
+    "amount": 2339,
+    "currency": "EUR",
+    "configuration": "256 GB",
+    "merchant": "Apple Netherlands",
+    "verifiedAt": "2026-10-26T07:45:28Z",
+    "validUntil": "2026-10-27T07:45:28Z",
+    "note": "Dated manufacturer-store observation including VAT; recheck at release and omit after expiry. This is not an affiliate offer."
+  },
+  "budget": {
+    "reservedInputTokens": 6000,
+    "reservedOutputTokens": 2000,
+    "additionalReservedTokens": 8000,
+    "reservedAt": "2026-10-26T07:45:28Z",
+    "actualInputTokens": null,
+    "actualOutputTokens": null,
+    "actualCost": null,
+    "paidApiCalls": 0,
+    "imageGenerationCalls": 0,
+    "note": "Planning reservation only; actual provider usage and monetary cost are unknown. Full article and flagship media require a separate budget."
+  },
+  "inventory": {
+    "checkedAt": "2026-10-26T07:45:28Z",
+    "overlap": "No iPhone Duo URL, exact-product code record or open proposal was found in the Starlight repository or the checked FrankX repositories. Starlight owns this market-wide buying decision.",
+    "canonicalUrl": null,
+    "checks": [
+      "Starlight content and open PRs checked; no iPhone Duo record or exact-product proposal found.",
+      "FrankX default-branch code and open PRs checked in frankxai/frankxai and frankxai/frankx-website; no exact iPhone Duo proposal found.",
+      "Refresh the canonical Content OS before authoring; this packet does not create an article URL."
+    ],
+    "limitation": "Targeted repository and open-PR inventory, not a complete semantic Content OS review."
+  },
+  "reviews": {
+    "facts": "pending-independent-review",
+    "rights": "HOLD",
+    "readerValue": "pending-firsthand-evidence",
+    "visual": "pending-production",
+    "mobile": null,
+    "desktop": null
+  },
+  "publication": {
+    "pr": "https://github.com/frankxai/starlight-technology/pull/44",
+    "preview": null,
+    "liveUrl": null,
+    "publishedAt": null,
+    "authorization": null
+  },
+  "measurement": {
+    "acceptedArticles": 0,
+    "day28": null,
+    "expansion": "not-eligible"
+  },
+  "nextEvidence": "An exact A3720 hands-on capture-to-publish and two-app workflow test, durability/carry observations, a conventional-phone-plus-tablet comparison, current app-layout verification, and an original or individually permitted product visual.",
+  "frankxAdaptation": {
+    "needed": false,
+    "distinctReaderJob": null,
+    "firstPartyEvidence": null,
+    "reason": "No original Frank creator workflow on the exact device exists to justify separate FrankX prose."
+  }
+}

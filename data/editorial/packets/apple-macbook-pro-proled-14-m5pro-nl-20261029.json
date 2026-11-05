@@ -1,0 +1,454 @@
+{
+  "schemaVersion": 1,
+  "status": "HOLD",
+  "publishable": false,
+  "contentId": "st-hw-apple-macbook-pro-proled-14-m5pro-nl-decision",
+  "productId": "apple-macbook-pro-proled-xdr",
+  "jobId": "hw-85af5b27d3bf11d300c2",
+  "variantId": "apple-macbook-pro-proled-14-m5pro-15c16c-24gb-1tb-standard-nl-202610",
+  "region": "Netherlands",
+  "canonicalOwner": "starlight.technology",
+  "readerJob": "Decide whether a Netherlands-based creator should pay for the 14-inch MacBook Pro with PROLED XDR and M5 Pro for its touch tandem-OLED display, port set and pro workflow ceiling, or choose the lower-priced 14-inch M6 model or retain an existing system.",
+  "decision": "Do not issue a buying recommendation yet. Apple establishes an orderable Dutch 14-inch M5 Pro configuration and a material price premium over the new 14-inch M6 family, but manufacturer specifications and demonstrations do not establish sustained creator performance, touch-workflow value, display accuracy after field use, thermal behaviour, battery endurance or whether this exact configuration is better than the reader's current system.",
+  "wrongPurchaseConditions": [
+    "The buyer expects Touch alone to improve Final Cut Pro, Logic Pro, Pixelmator Pro or another workflow without testing the exact application version and input method.",
+    "The buyer does not need the PROLED display, Thunderbolt 5, SDXC slot or multi-display ceiling and can meet the workload with the lower-priced 14-inch M6 model.",
+    "The buyer needs more than 24 GB unified memory or 1 TB storage and assumes the observed base configuration is upgradeable after purchase.",
+    "The buyer treats Apple's family-level 'up to 24 hours' language as the exact 14-inch M5 Pro result; Apple's detailed specification states up to 22 hours of video streaming and 14 hours of wireless web.",
+    "The buyer needs independently verified sustained rendering, local-model, noise or thermal performance rather than manufacturer positioning.",
+    "The buyer's essential tools, peripherals or collaboration environment require Windows, CUDA or another platform-specific capability.",
+    "The buyer cannot justify the dated EUR 1,020 starting-price difference versus the 14-inch M6 family without a named workflow that uses the premium hardware."
+  ],
+  "evidenceLevel": "official Apple Netherlands launch, product, store and global specification evidence; no hands-on testing",
+  "configuration": {
+    "product": "MacBook Pro with PROLED XDR display",
+    "size": "14-inch",
+    "colour": "Space Black",
+    "glass": "standard",
+    "processor": "Apple M5 Pro",
+    "cpu": "15-core",
+    "gpu": "16-core",
+    "memoryGb": 24,
+    "storageGb": 1000,
+    "display": "14.2-inch 3024 x 1986 tandem OLED, 254 ppi, 10–120 Hz, Multi-Touch",
+    "brightness": "up to 1000 nits sustained full-screen; up to 2000 nits peak under Apple-specified conditions",
+    "colourGamuts": [
+      "P3",
+      "Adobe RGB"
+    ],
+    "ports": [
+      "3x Thunderbolt 5 (USB-C)",
+      "HDMI",
+      "SDXC",
+      "MagSafe 3",
+      "3.5 mm headphone"
+    ],
+    "wireless": [
+      "Wi-Fi 7",
+      "Bluetooth 6"
+    ],
+    "weightKg": 1.38,
+    "batteryWh": 72.6,
+    "manufacturerBatteryClaims": "up to 22 hours video streaming; up to 14 hours wireless web",
+    "availability": "pre-order observed; Apple states availability from 2026-11-06"
+  },
+  "sources": [
+    {
+      "id": "apple-nl-newsroom-macbook-pro-proled-20261028",
+      "url": "https://www.apple.com/nl/newsroom/2026/10/apple-unveils-groundbreaking-macbook-pro-with-proled-xdr-display/",
+      "publisher": "Apple Nederland Newsroom",
+      "publishedAt": "2026-10-28",
+      "retrievedAt": "2026-10-29T07:47:00Z",
+      "sourceType": "official-regional-launch",
+      "claimIds": [
+        "m1",
+        "m2",
+        "m8",
+        "m9",
+        "m10"
+      ],
+      "freshnessTrigger": "Availability, price, configuration, operating-system or support change."
+    },
+    {
+      "id": "apple-nl-macbook-pro-proled-product-20261029",
+      "url": "https://www.apple.com/nl/macbook-pro/proled-xdr-display/",
+      "publisher": "Apple Nederland",
+      "publishedAt": null,
+      "retrievedAt": "2026-10-29T07:47:00Z",
+      "sourceType": "official-regional-product-page",
+      "claimIds": [
+        "m4",
+        "m7"
+      ],
+      "freshnessTrigger": "Product comparison, specification, feature or footnote change."
+    },
+    {
+      "id": "apple-global-macbook-pro-proled-specs-20261029",
+      "url": "https://www.apple.com/macbook-pro/proled-xdr-display/specs/",
+      "publisher": "Apple",
+      "publishedAt": null,
+      "retrievedAt": "2026-10-29T07:47:00Z",
+      "sourceType": "official-technical-specification",
+      "claimIds": [
+        "m3",
+        "m4",
+        "m5",
+        "m6",
+        "m7"
+      ],
+      "freshnessTrigger": "Exact configuration, technical specification, support or footnote change."
+    },
+    {
+      "id": "apple-nl-newsroom-macbook-pro-m6-20261027",
+      "url": "https://www.apple.com/nl/newsroom/2026/10/apple-introduces-the-new-14-inch-macbook-pro-with-m6/",
+      "publisher": "Apple Nederland Newsroom",
+      "publishedAt": "2026-10-27",
+      "retrievedAt": "2026-10-29T07:47:00Z",
+      "sourceType": "official-regional-alternative-launch",
+      "claimIds": [
+        "m9"
+      ],
+      "freshnessTrigger": "Availability, price, configuration or product-family change."
+    },
+    {
+      "id": "apple-nl-macbook-pro-store-20261029",
+      "url": "https://www.apple.com/nl/shop/buy-mac/macbook-pro",
+      "publisher": "Apple Nederland Store",
+      "publishedAt": null,
+      "retrievedAt": "2026-10-29T07:47:00Z",
+      "sourceType": "official-regional-store",
+      "claimIds": [
+        "m3",
+        "m11"
+      ],
+      "freshnessTrigger": "Recheck orderability and exact configuration at release; do not infer a price not shown for the specific card."
+    },
+    {
+      "id": "apple-site-terms-20261029",
+      "url": "https://www.apple.com/legal/internet-services/terms/site.html",
+      "publisher": "Apple",
+      "publishedAt": null,
+      "retrievedAt": "2026-10-29T07:47:00Z",
+      "sourceType": "official-site-terms",
+      "claimIds": [
+        "m12"
+      ],
+      "freshnessTrigger": "Terms change or written permission receipt for a proposed asset."
+    }
+  ],
+  "claims": [
+    {
+      "id": "m1",
+      "text": "Apple Netherlands dates the PROLED XDR MacBook Pro announcement October 28, 2026, says orders opened that day and states availability begins November 6.",
+      "type": "manufacturer-statement",
+      "sourceIds": [
+        "apple-nl-newsroom-macbook-pro-proled-20261028"
+      ],
+      "asOf": "2026-10-29T07:47:00Z",
+      "expiresAt": "2026-11-06T23:59:59Z",
+      "allowedWording": "Attribute the dates to Apple and recheck release availability before publication.",
+      "reviewerVerdict": "pending-independent-review"
+    },
+    {
+      "id": "m2",
+      "text": "Apple Netherlands lists the 14-inch PROLED XDR MacBook Pro with M5 Pro from EUR 3,349 including VAT.",
+      "type": "dated-manufacturer-price",
+      "sourceIds": [
+        "apple-nl-newsroom-macbook-pro-proled-20261028"
+      ],
+      "asOf": "2026-10-29T07:47:00Z",
+      "expiresAt": "2026-10-30T07:47:00Z",
+      "allowedWording": "Use only with date, region, family and starting-price context; otherwise omit.",
+      "reviewerVerdict": "pending-independent-review"
+    },
+    {
+      "id": "m3",
+      "text": "The Dutch store lists a 14-inch Space Black, standard-glass M5 Pro configuration with a 15-core CPU, 16-core GPU, 24 GB unified memory and 1 TB storage.",
+      "type": "source-observation",
+      "sourceIds": [
+        "apple-nl-macbook-pro-store-20261029",
+        "apple-global-macbook-pro-proled-specs-20261029"
+      ],
+      "asOf": "2026-10-29T07:47:00Z",
+      "expiresAt": "2026-10-30T07:47:00Z",
+      "allowedWording": "Name the complete observed Dutch configuration; recheck orderability before publication.",
+      "reviewerVerdict": "pending-independent-review"
+    },
+    {
+      "id": "m4",
+      "text": "Apple specifies a 14.2-inch 3024-by-1986 tandem OLED display with 10–120 Hz refresh, Multi-Touch, P3 and Adobe RGB gamuts, up to 1000 nits sustained full-screen and up to 2000 nits peak under specified conditions.",
+      "type": "manufacturer-specification",
+      "sourceIds": [
+        "apple-global-macbook-pro-proled-specs-20261029",
+        "apple-nl-macbook-pro-proled-product-20261029"
+      ],
+      "asOf": "2026-10-29T07:47:00Z",
+      "expiresAt": null,
+      "allowedWording": "Preserve Apple attribution and the brightness conditions; do not call display accuracy independently verified.",
+      "reviewerVerdict": "pending-independent-review"
+    },
+    {
+      "id": "m5",
+      "text": "For the 14-inch M5 Pro model, Apple specifies up to 22 hours of video streaming, up to 14 hours of wireless web and a 72.6 Wh battery.",
+      "type": "manufacturer-specification",
+      "sourceIds": [
+        "apple-global-macbook-pro-proled-specs-20261029"
+      ],
+      "asOf": "2026-10-29T07:47:00Z",
+      "expiresAt": null,
+      "allowedWording": "Use Apple's exact test categories; do not convert them into creator-workflow endurance.",
+      "reviewerVerdict": "pending-independent-review"
+    },
+    {
+      "id": "m6",
+      "text": "Apple specifies three Thunderbolt 5 ports, HDMI, SDXC, MagSafe 3 and a headphone jack; M5 Pro supports up to three external displays under Apple's documented combinations.",
+      "type": "manufacturer-specification",
+      "sourceIds": [
+        "apple-global-macbook-pro-proled-specs-20261029"
+      ],
+      "asOf": "2026-10-29T07:47:00Z",
+      "expiresAt": null,
+      "allowedWording": "Do not infer compatibility with an untested dock, display or peripheral.",
+      "reviewerVerdict": "pending-independent-review"
+    },
+    {
+      "id": "m7",
+      "text": "Apple lists the 14-inch M5 Pro model at 1.38 kg and 1.50 cm thick.",
+      "type": "manufacturer-specification",
+      "sourceIds": [
+        "apple-global-macbook-pro-proled-specs-20261029",
+        "apple-nl-macbook-pro-proled-product-20261029"
+      ],
+      "asOf": "2026-10-29T07:47:00Z",
+      "expiresAt": null,
+      "allowedWording": "Treat portability and comfort as untested until firsthand carry evidence exists.",
+      "reviewerVerdict": "pending-independent-review"
+    },
+    {
+      "id": "m8",
+      "text": "Apple demonstrates Touch uses in Pixelmator Pro, Logic Pro and Final Cut Pro, but those demonstrations do not establish faster or better results for an independent creator workflow.",
+      "type": "manufacturer-statement",
+      "sourceIds": [
+        "apple-nl-newsroom-macbook-pro-proled-20261028"
+      ],
+      "asOf": "2026-10-29T07:47:00Z",
+      "expiresAt": "2026-11-29T07:47:00Z",
+      "allowedWording": "Name the demonstrated uses as Apple's examples; require exact-version testing for a verdict.",
+      "reviewerVerdict": "pending-independent-review"
+    },
+    {
+      "id": "m9",
+      "text": "Apple Netherlands lists the new 14-inch M6 MacBook Pro family from EUR 2,329, making its dated starting price EUR 1,020 lower than the 14-inch M5 Pro PROLED family.",
+      "type": "derived-price-comparison",
+      "sourceIds": [
+        "apple-nl-newsroom-macbook-pro-m6-20261027",
+        "apple-nl-newsroom-macbook-pro-proled-20261028"
+      ],
+      "asOf": "2026-10-29T07:47:00Z",
+      "expiresAt": "2026-10-30T07:47:00Z",
+      "allowedWording": "Label this as arithmetic on two dated Apple family starting prices, not an exact like-for-like configuration comparison.",
+      "reviewerVerdict": "pending-independent-review"
+    },
+    {
+      "id": "m10",
+      "text": "Apple positions M5 Pro for complex creative and AI workloads, including multiple 8K ProRes streams, but no independent benchmark was collected.",
+      "type": "manufacturer-statement",
+      "sourceIds": [
+        "apple-nl-newsroom-macbook-pro-proled-20261028"
+      ],
+      "asOf": "2026-10-29T07:47:00Z",
+      "expiresAt": null,
+      "allowedWording": "Keep the Apple attribution and do not state workload suitability as an independent result.",
+      "reviewerVerdict": "pending-independent-review"
+    },
+    {
+      "id": "m11",
+      "text": "The Dutch store page lists the exact 14-inch M5 Pro configuration alongside 14-inch M6 options with 16 GB, 24 GB or 32 GB memory and 1 TB storage.",
+      "type": "source-observation",
+      "sourceIds": [
+        "apple-nl-macbook-pro-store-20261029"
+      ],
+      "asOf": "2026-10-29T07:47:00Z",
+      "expiresAt": "2026-10-30T07:47:00Z",
+      "allowedWording": "Use only as a dated configuration observation; verify all compared configurations at publication.",
+      "reviewerVerdict": "pending-independent-review"
+    },
+    {
+      "id": "m12",
+      "text": "Apple's site terms do not grant commercial republication of site photographs or graphics without express prior written consent.",
+      "type": "rights-observation",
+      "sourceIds": [
+        "apple-site-terms-20261029"
+      ],
+      "asOf": "2026-10-29T07:47:00Z",
+      "expiresAt": null,
+      "allowedWording": "Keep Apple imagery quarantined unless a separate per-asset permission receipt is recorded; a source credit is not permission.",
+      "reviewerVerdict": "pending-independent-review"
+    }
+  ],
+  "comparisons": [
+    {
+      "alternative": "14-inch MacBook Pro with M6",
+      "status": "official-family-alternative-not-yet-like-for-like",
+      "evidence": "Apple Netherlands states a EUR 2,329 family starting price and the Dutch store lists 16 GB, 24 GB and 32 GB / 1 TB configurations.",
+      "decisionBoundary": "Prefer the M6 path when the reader does not demonstrate value from PROLED Touch, Thunderbolt 5, SDXC or the M5 Pro workflow ceiling; exact configuration and workload testing remain required."
+    },
+    {
+      "alternative": "Keep the current laptop",
+      "status": "requires-first-party-inventory",
+      "evidence": "No reader-specific current-system, workload or bottleneck evidence was supplied.",
+      "decisionBoundary": "Do not recommend replacing a system that already meets the named workload and delivery deadlines."
+    }
+  ],
+  "originalContribution": {
+    "status": "research-synthesis-only",
+    "artifact": "Premium qualification matrix",
+    "rows": [
+      {
+        "premiumDriver": "PROLED XDR display",
+        "evidenceNeeded": "Measured colour workflow, glare, outdoor use and calibration behaviour",
+        "currentVerdict": "manufacturer-specified; value unproven"
+      },
+      {
+        "premiumDriver": "Touch",
+        "evidenceNeeded": "Timed exact-version Final Cut Pro, Logic Pro or Pixelmator workflow against keyboard, trackpad and tablet alternatives",
+        "currentVerdict": "manufacturer-demonstrated; productivity unproven"
+      },
+      {
+        "premiumDriver": "M5 Pro and ports",
+        "evidenceNeeded": "Sustained workload, dock/peripheral and external-display test on the exact configuration",
+        "currentVerdict": "specification fit plausible; performance unverified"
+      },
+      {
+        "premiumDriver": "Lower weight",
+        "evidenceNeeded": "Declared carry and travel test against the reader's current system",
+        "currentVerdict": "1.38 kg specified; comfort unverified"
+      }
+    ]
+  },
+  "uncertainty": [
+    "No exact-device sustained render, export, local-model, noise, thermal or battery test.",
+    "No independent measurement of display accuracy, touch ergonomics, glare, pixel wear or durability.",
+    "No exact like-for-like M6 versus M5 Pro configuration and workload comparison.",
+    "Orderability and all prices expire from editorial use after 24 hours without recheck.",
+    "No reusable product image permission, owned photograph or independent visual review.",
+    "No Content OS reconciliation beyond targeted repository and open-PR checks."
+  ],
+  "media": {
+    "tier": "FLAGSHIP",
+    "packetId": null,
+    "assets": [],
+    "productionReady": false,
+    "rightsStatus": "HOLD",
+    "assignments": [
+      {
+        "id": "macbook-pro-proled-exact-nl-hero",
+        "role": "product-evidence",
+        "method": "Own photograph of the exact 14-inch M5 Pro configuration or an individually permitted Apple asset with a recorded placement receipt.",
+        "status": "HOLD-permission-or-device"
+      },
+      {
+        "id": "macbook-pro-proled-premium-matrix",
+        "role": "first-viewport-decision-object",
+        "method": "Original deterministic matrix mapping display, Touch, ports and compute premiums to the evidence a reader must have before paying.",
+        "status": "brief-only"
+      },
+      {
+        "id": "macbook-pro-proled-touch-workflow",
+        "role": "workflow-evidence",
+        "method": "Own clean-project screen recording and overhead capture of one exact-version Touch workflow compared with keyboard, trackpad and tablet input.",
+        "status": "not-commissioned"
+      },
+      {
+        "id": "macbook-pro-proled-port-map",
+        "role": "exact-architecture",
+        "method": "Original sourced port and external-display diagram for the selected M5 Pro configuration.",
+        "status": "brief-only"
+      },
+      {
+        "id": "macbook-pro-proled-m6-comparison",
+        "role": "decision-comparison",
+        "method": "Original like-for-like configuration and workload table after both exact Dutch variants are reverified.",
+        "status": "blocked-on-exact-comparison"
+      },
+      {
+        "id": "macbook-pro-proled-og-mobile-renditions",
+        "role": "distribution",
+        "method": "Derive approved OG and mobile-native crops from the registered product master plus the original decision matrix.",
+        "status": "blocked-on-approved-master"
+      }
+    ],
+    "creditRequirements": "Register asset, version and rendition IDs; record source, creator, rights owner, written scope, territory, channels, expiry, credit, checksum, dimensions, alt text and approval actor. Apple site availability, a newsroom page or a credit line is not a commercial reuse licence.",
+    "placementRule": "Article content references semantic placements, not provider URLs. Keep image enlargement, source credit and shopping CTA separate; production resolves only approved immutable renditions."
+  },
+  "affiliate": {
+    "fitReason": "A high-intent Dutch laptop decision could justify a referral only after the verdict is independently supported and an exact approved regional destination exists.",
+    "status": "no-approved-offer",
+    "programId": null,
+    "issuedUrl": null,
+    "region": "NL",
+    "checkedAt": "2026-10-29T07:47:00Z",
+    "ledgerCheck": "data/commerce/approved-offers.json is empty. No Apple or retailer referral was invented or enrolled.",
+    "fallback": "https://www.apple.com/nl/shop/buy-mac/macbook-pro",
+    "disclosure": null
+  },
+  "price": {
+    "amount": 3349,
+    "currency": "EUR",
+    "configuration": "14-inch PROLED XDR MacBook Pro with M5 Pro family starting price; exact observed 24 GB / 1 TB store card was not independently priced in the retrieved text",
+    "merchant": "Apple Netherlands",
+    "verifiedAt": "2026-10-29T07:47:00Z",
+    "validUntil": "2026-10-30T07:47:00Z",
+    "note": "Dated manufacturer starting-price observation including VAT; recheck before publication and omit after expiry. This is not an affiliate offer."
+  },
+  "budget": {
+    "reservedInputTokens": 6000,
+    "reservedOutputTokens": 2000,
+    "additionalReservedTokens": 8000,
+    "reservedAt": "2026-10-29T07:47:00Z",
+    "actualInputTokens": null,
+    "actualOutputTokens": null,
+    "actualCost": null,
+    "paidApiCalls": 0,
+    "imageGenerationCalls": 0,
+    "note": "Planning reservation only; actual provider usage and monetary cost are unknown. Full article and flagship media require a separate budget."
+  },
+  "inventory": {
+    "starlightRepositoryMatches": 0,
+    "starlightOpenPrMatches": 0,
+    "frankxRepositoryMatches": 0,
+    "frankxOpenPrMatches": 0,
+    "checkedAt": "2026-10-29T07:47:00Z",
+    "note": "Targeted exact-product checks only; reconcile the canonical Content OS before authoring."
+  },
+  "reviews": {
+    "facts": "pending-independent-review",
+    "rights": "HOLD",
+    "readerValue": "pending-firsthand-evidence",
+    "visual": "pending-production",
+    "mobile": null,
+    "desktop": null
+  },
+  "publication": {
+    "pr": "https://github.com/frankxai/starlight-technology/pull/44",
+    "preview": null,
+    "liveUrl": null,
+    "publishedAt": null,
+    "authorization": null
+  },
+  "measurement": {
+    "day7": null,
+    "day28": null,
+    "day90": null,
+    "revenue": null,
+    "outboundClicks": null,
+    "corrections": null
+  },
+  "nextEvidence": "Exact-device Touch and sustained creator-workflow testing plus a like-for-like 14-inch M6 comparison and an owned or individually permitted product visual.",
+  "frankxAdaptation": {
+    "needed": false,
+    "distinctReaderJob": null,
+    "firstPartyEvidence": null,
+    "reason": "No original Frank workflow on the exact device exists to justify separate FrankX prose."
+  }
+}

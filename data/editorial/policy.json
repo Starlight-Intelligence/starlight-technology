@@ -43,8 +43,8 @@
         "audio"
       ],
       "status": "verified-directory",
-      "checkedAt": "2026-09-16T22:00:00Z",
-      "notes": "Directory opens; latest entries were not exposed in the text response. Use product pages for claims.",
+      "checkedAt": "2026-10-19T06:15:53Z",
+      "notes": "Directory opened on 19 October 2026; article listings were not exposed in the checked text response. Use exact product pages for claims.",
       "imageRights": "unreviewed-per-asset",
       "automatedFetchEnabled": false
     },
@@ -64,8 +64,8 @@
         "audio"
       ],
       "status": "verified-directory",
-      "checkedAt": "2026-09-16T22:00:00Z",
-      "notes": "Media library discovered at https://news.samsung.com/medialibrary/global ; exact asset permission remains a separate check.",
+      "checkedAt": "2026-10-19T06:15:53Z",
+      "notes": "Directory opened on 19 October 2026 and exposed dated entries plus an RSS link. Feed enablement and exact media permission remain separate checks.",
       "imageRights": "unreviewed-per-asset",
       "automatedFetchEnabled": false
     },
@@ -84,8 +84,8 @@
         "audio"
       ],
       "status": "verified-directory",
-      "checkedAt": "2026-09-16T22:00:00Z",
-      "notes": "Primary manufacturer announcements; support and specifications establish feature limits.",
+      "checkedAt": "2026-10-19T06:15:53Z",
+      "notes": "Pixel directory opened on 19 October 2026 and exposed product navigation plus an RSS link. Exact support and specification pages establish feature limits.",
       "imageRights": "unreviewed-per-asset",
       "automatedFetchEnabled": false
     },
@@ -105,8 +105,8 @@
         "compute"
       ],
       "status": "verified-directory",
-      "checkedAt": "2026-09-16T22:00:00Z",
-      "notes": "Root directory opens. The /pressroom/ path was unavailable; do not silently retry it as a confirmed feed.",
+      "checkedAt": "2026-10-19T06:15:53Z",
+      "notes": "StoryHub root opened on 19 October 2026 with Pressroom navigation and dated entries. No feed or unattended-fetch permission was established.",
       "imageRights": "unreviewed-per-asset",
       "automatedFetchEnabled": false
     },
@@ -124,8 +124,8 @@
         "audio"
       ],
       "status": "verified-directory",
-      "checkedAt": "2026-09-16T22:00:00Z",
-      "notes": "Product pages and regional variants require individual verification.",
+      "checkedAt": "2026-10-19T06:15:53Z",
+      "notes": "Global news directory opened on 19 October 2026 and exposed current product navigation. Product pages and regional variants still require individual verification.",
       "imageRights": "unreviewed-per-asset",
       "automatedFetchEnabled": false
     }
