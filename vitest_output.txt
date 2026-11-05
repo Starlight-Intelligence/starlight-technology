@@ -1,0 +1,18 @@
+
+> starlight-technology@0.1.0 test /app
+> vitest run
+
+
+[1m[30m[46m RUN [49m[39m[22m [36mv5.0.3 [39m[90m/app[39m
+
+ [32m✓[39m src/lib/products.test.ts [2m([22m[2m8 tests[22m[2m)[22m[32m 9[2mms[22m[39m
+ [32m✓[39m src/lib/content.test.ts [2m([22m[2m4 tests[22m[2m)[22m[32m 10[2mms[22m[39m
+ [32m✓[39m src/lib/shop-offers.test.ts [2m([22m[2m20 tests[22m[2m)[22m[32m 12[2mms[22m[39m
+ [32m✓[39m src/lib/infrastructure.test.ts [2m([22m[2m6 tests[22m[2m)[22m[32m 8[2mms[22m[39m
+ [32m✓[39m src/lib/decision-model.test.ts [2m([22m[2m3 tests[22m[2m)[22m[32m 5[2mms[22m[39m
+ [32m✓[39m src/lib/editorial-media.test.ts [2m([22m[2m2 tests[22m[2m)[22m[32m 7[2mms[22m[39m
+
+[2m Test Files [22m [1m[32m6 passed[39m[22m[90m (6)[39m
+[2m      Tests [22m [1m[32m43 passed[39m[22m[90m (43)[39m
+[2m   Start at [22m 00:55:59
+[2m   Duration [22m 526ms[2m (transform 63%, import 21%, tests 10%, worker 7%)[22m
