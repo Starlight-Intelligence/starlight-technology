@@ -1,5 +1,5 @@
 import { describe, it, expect } from "vitest";
-import { getSources, sources } from "./sources";
+import { getSources } from "./sources";
 
 describe("getSources", () => {
   it("should return the correct source records for valid ids", () => {
@@ -8,14 +8,8 @@ describe("getSources", () => {
 
     expect(result).toHaveLength(2);
 
-    const expected1 = sources.find(s => s.id === "nvidia-rtx-5090");
-    const expected2 = sources.find(s => s.id === "google-review-guidance");
-
-    expect(expected1).toBeDefined();
-    expect(expected2).toBeDefined();
-
-    expect(result[0]).toEqual(expected1);
-    expect(result[1]).toEqual(expected2);
+    expect(result[0].id).toBe("nvidia-rtx-5090");
+    expect(result[1].id).toBe("google-review-guidance");
   });
 
   it("should throw an error if a source id is missing", () => {

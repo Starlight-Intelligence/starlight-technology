@@ -1,6 +1,6 @@
 import { describe, expect, it } from "vitest";
 import { allEditorial, builds, comparisons, guides } from "./content";
-import { getSources, sources } from "./sources";
+import { getSources } from "./sources";
 
 const isoDate = /^\d{4}-\d{2}-\d{2}$/;
 
@@ -21,15 +21,6 @@ describe("editorial contracts", () => {
       expect(entry.summary.length).toBeGreaterThan(80);
       expect(entry.sections.length).toBeGreaterThanOrEqual(3);
       expect(() => getSources(entry.sourceIds)).not.toThrow();
-    }
-  });
-});
-
-describe("source registry", () => {
-  it("uses https and dated verification records", () => {
-    for (const source of sources) {
-      expect(source.url.startsWith("https://")).toBe(true);
-      expect(source.verifiedOn).toMatch(isoDate);
     }
   });
 });

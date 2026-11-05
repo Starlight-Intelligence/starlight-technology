@@ -1,6 +1,6 @@
 import type { SourceRecord } from "./types";
 
-export const sources: SourceRecord[] = [
+const sources: SourceRecord[] = [
   { id: "nvidia-rtx-5090", title: "GeForce RTX 5090", publisher: "NVIDIA", url: "https://www.nvidia.com/nl-nl/geforce/graphics-cards/50-series/rtx-5090/", verifiedOn: "2026-07-19", primary: true },
   { id: "nvidia-rtx-5080", title: "GeForce RTX 5080", publisher: "NVIDIA", url: "https://www.nvidia.com/nl-nl/geforce/graphics-cards/50-series/rtx-5080/", verifiedOn: "2026-07-19", primary: true },
   { id: "google-review-guidance", title: "Write high quality reviews", publisher: "Google Search Central", url: "https://developers.google.com/search/docs/specialty/ecommerce/write-high-quality-reviews", verifiedOn: "2026-07-19", primary: true },
