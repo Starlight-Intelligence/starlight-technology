@@ -1,0 +1,864 @@
+{
+  "osChoice": [
+    {
+      "os": "windows11",
+      "supportsAlwaysOnAgentNode": "Yes with work: OpenSSH Server is an optional feature with auto-start and a firewall rule (s08). Update restarts follow active hours (default 8-17, max 18h range); the 'no auto-restart with logged on users' policy is documented as not working as described, and several restart policies are legacy and not applicable to Windows 11 (s09). An unattended 20-session agent box will reboot on Microsoft's schedule unless policy or compliance deadlines are used. Home vs Pro policy availability not verified (OPEN).",
+      "supportsStrixHaloLlm": "Yes. Lemonade supports Windows 11 with vulkan/rocm/flm/ryzenai-llm backends and gfx1151 (s02). AMD Variable Graphics Memory reportedly lets 96GB of 128GB act as VRAM on Windows (s06; AMD blog s07 not opened). NPU via FastFlowLM works on Windows (s03).",
+      "knownLimits": [
+        "Windows GPU memory cap reported as 96GB of 128GB via VGM, versus roughly 124GB GTT on Linux with kernel params (s01, s06; secondary sources)",
+        "WSL2 VM defaults to 50% of host RAM and NAT networking; set .wslconfig memory/networkingMode explicitly (s10)",
+        "Linux-first community tooling: strix-halo-toolboxes and llm-tracker benchmarks are Linux only (s01, s05); no Windows-vs-Linux benchmark found, so any speed gap is a GAP",
+        "Forced update reboots kill long agent sessions unless sessions run under a supervisor that restarts them (inference from s09)"
+      ],
+      "sourceIds": [
+        "stack-s02",
+        "stack-s03",
+        "stack-s06",
+        "stack-s08",
+        "stack-s09",
+        "stack-s10"
+      ]
+    },
+    {
+      "os": "ubuntu",
+      "supportsAlwaysOnAgentNode": "Likely yes (standard sshd/systemd; inference, no page opened). Lemonade supports Ubuntu 24.04+ (s02).",
+      "supportsStrixHaloLlm": "Best-documented path: Vulkan and ROCm toolboxes, GTT about 124GB via kernel params, community benchmarks (s01, s05). Lemonade and FastFlowLM both Linux-capable (s02, s03).",
+      "knownLimits": [
+        "Vulkan beat ROCm/HIP on most llama-bench tests in May 2025 (s05) and RADV Vulkan is called faster in a March 2026 blog (s06); HIP+WMMA+FA reached 60 t/s on a 30B MoE in July 2025 (s05): backend choice is model-dependent, re-benchmark",
+        "A forum thread (search result, not opened) reports ROCm seeing only half of unified memory in some setups",
+        "llm-tracker calls NPU use exploratory (s05) while FastFlowLM claims Linux support (s03)",
+        "Windows-only apps do not run natively (inference)"
+      ],
+      "sourceIds": [
+        "stack-s01",
+        "stack-s02",
+        "stack-s03",
+        "stack-s05",
+        "stack-s06"
+      ]
+    },
+    {
+      "os": "macos",
+      "supportsAlwaysOnAgentNode": "Not researched this pass (GAP). Lemonade lists macOS with a metal backend (s02).",
+      "supportsStrixHaloLlm": "Not applicable: Strix Halo is x86 AMD. Mac as alternative platform (Apple unified memory, prices, bandwidth) not researched (GAP).",
+      "knownLimits": [
+        "No Mac mini/Studio spec or price pages opened (GAP)"
+      ],
+      "sourceIds": [
+        "stack-s02"
+      ]
+    },
+    {
+      "os": "windows-server",
+      "supportsAlwaysOnAgentNode": "Not researched; MS Learn suggests Configure Automatic Updates option 7 (notify to install, notify to reboot) for server devices (s09).",
+      "supportsStrixHaloLlm": "Not verified (GAP).",
+      "knownLimits": [
+        "Licence price for NL not verified (GAP)",
+        "OpenSSH Server installed by default from Windows Server 2025 (s08)"
+      ],
+      "sourceIds": [
+        "stack-s08",
+        "stack-s09"
+      ]
+    }
+  ],
+  "llmRuntimes": [
+    {
+      "name": "llama.cpp",
+      "platforms": [
+        "Windows",
+        "Linux",
+        "macOS (metal)"
+      ],
+      "strixHaloSupport": "Vulkan and ROCm/HIP both work; Vulkan faster on most llama-bench tests (s05, s06); HIP+WMMA+FA competitive on a 30B MoE (60.29 t/s, s05).",
+      "appleSupport": "Metal via Lemonade metal backend (s02)",
+      "openaiCompatibleApi": true,
+      "sourceIds": [
+        "stack-s02",
+        "stack-s05",
+        "stack-s06"
+      ]
+    },
+    {
+      "name": "Lemonade",
+      "platforms": [
+        "Windows 11",
+        "Ubuntu 24.04+",
+        "Fedora 43+",
+        "Debian Trixie+",
+        "Arch",
+        "macOS",
+        "Docker"
+      ],
+      "strixHaloSupport": "Yes: gfx1151 listed; backends vulkan, rocm, flm (XDNA2 NPU), ryzenai-llm (NPU on Windows).",
+      "appleSupport": "metal backend on macOS",
+      "openaiCompatibleApi": true,
+      "sourceIds": [
+        "stack-s02"
+      ]
+    },
+    {
+      "name": "FastFlowLM",
+      "platforms": [
+        "Windows",
+        "Linux"
+      ],
+      "strixHaloSupport": "Runs on XDNA2 NPUs in Strix, Strix Halo, Kraken, Gorgon Point.",
+      "appleSupport": "None",
+      "openaiCompatibleApi": true,
+      "sourceIds": [
+        "stack-s03"
+      ]
+    },
+    {
+      "name": "Ollama",
+      "platforms": [],
+      "strixHaloSupport": "GAP",
+      "appleSupport": "GAP",
+      "openaiCompatibleApi": null,
+      "sourceIds": []
+    },
+    {
+      "name": "LM Studio",
+      "platforms": [
+        "Windows"
+      ],
+      "strixHaloSupport": "AMD blog snippet says Vulkan llama.cpp with LM Studio on Windows up to 128B parameters (s07, not opened).",
+      "appleSupport": "GAP",
+      "openaiCompatibleApi": null,
+      "sourceIds": [
+        "stack-s07"
+      ]
+    },
+    {
+      "name": "vLLM",
+      "platforms": [
+        "Linux"
+      ],
+      "strixHaloSupport": "strix-halo-toolboxes ships vLLM toolboxes with RCCL patches for clustering (s01).",
+      "appleSupport": "GAP",
+      "openaiCompatibleApi": null,
+      "sourceIds": [
+        "stack-s01"
+      ]
+    },
+    {
+      "name": "MLX",
+      "platforms": [
+        "macOS"
+      ],
+      "strixHaloSupport": "None",
+      "appleSupport": "Apple only; not researched (GAP)",
+      "openaiCompatibleApi": null,
+      "sourceIds": []
+    }
+  ],
+  "fleetSoftware": [
+    {
+      "layer": "networking",
+      "options": [
+        {
+          "name": "Tailscale",
+          "cost": "Personal free (up to 6 users, unlimited devices); Standard USD 8/user/mo; Premium USD 18/user/mo",
+          "windowsOk": true,
+          "notes": "Seat-based; tagged resources 50 free then USD 1 each. Windows client not verified on a page.",
+          "sourceIds": [
+            "stack-s04"
+          ]
+        },
+        {
+          "name": "Cloudflare Tunnel",
+          "cost": "GAP",
+          "windowsOk": null,
+          "notes": "Not opened.",
+          "sourceIds": []
+        }
+      ],
+      "recommendation": "Tailscale free tier for a solo founder. Cloudflare Tunnel unverified."
+    },
+    {
+      "layer": "remote-access",
+      "options": [
+        {
+          "name": "OpenSSH Server (Windows built-in)",
+          "cost": "free, optional feature",
+          "windowsOk": true,
+          "notes": "Auto start plus firewall rule at install; default shell is cmd.",
+          "sourceIds": [
+            "stack-s08"
+          ]
+        },
+        {
+          "name": "Sunshine/Moonlight, Parsec, RDP",
+          "cost": "GAP",
+          "windowsOk": null,
+          "notes": "Not opened. For update restarts only active RDP sessions count as signed-in (s09).",
+          "sourceIds": [
+            "stack-s09"
+          ]
+        }
+      ],
+      "recommendation": "SSH over Tailscale for agent sessions; remote desktop choice unverified."
+    },
+    {
+      "layer": "virtualisation",
+      "options": [
+        {
+          "name": "WSL2",
+          "cost": "free",
+          "windowsOk": true,
+          "notes": "Defaults: 50% RAM, 25% swap, NAT; mirrored networking and systemd supported on Win11; vmIdleTimeout 60s can stop the VM when idle (inference: long agent jobs need keepalive or higher timeout).",
+          "sourceIds": [
+            "stack-s10"
+          ]
+        },
+        {
+          "name": "Proxmox",
+          "cost": "GAP",
+          "windowsOk": false,
+          "notes": "Not opened.",
+          "sourceIds": []
+        }
+      ],
+      "recommendation": "WSL2 with explicit .wslconfig on Windows. Proxmox unverified for Strix Halo."
+    },
+    {
+      "layer": "containers",
+      "options": [
+        {
+          "name": "Podman / Docker",
+          "cost": "GAP",
+          "windowsOk": true,
+          "notes": "No page opened.",
+          "sourceIds": []
+        }
+      ],
+      "recommendation": "GAP"
+    },
+    {
+      "layer": "monitoring",
+      "options": [
+        {
+          "name": "Uptime Kuma, Grafana, Prometheus, Beszel",
+          "cost": "GAP",
+          "windowsOk": null,
+          "notes": "No pages opened; no claim made.",
+          "sourceIds": []
+        }
+      ],
+      "recommendation": "GAP: needs a dedicated pass."
+    },
+    {
+      "layer": "backup",
+      "options": [
+        {
+          "name": "restic, Kopia",
+          "cost": "GAP",
+          "windowsOk": null,
+          "notes": "Not opened.",
+          "sourceIds": []
+        }
+      ],
+      "recommendation": "GAP"
+    },
+    {
+      "layer": "secrets",
+      "options": [
+        {
+          "name": "Infisical, 1Password CLI",
+          "cost": "GAP",
+          "windowsOk": null,
+          "notes": "Not opened.",
+          "sourceIds": []
+        }
+      ],
+      "recommendation": "GAP"
+    },
+    {
+      "layer": "orchestration",
+      "options": [
+        {
+          "name": "Lemonade as single local inference endpoint",
+          "cost": "free, open source",
+          "windowsOk": true,
+          "notes": "See llmRuntimes.",
+          "sourceIds": [
+            "stack-s02"
+          ]
+        }
+      ],
+      "recommendation": "Lemonade for the local lane; process supervision not researched."
+    }
+  ],
+  "peripherals": [
+    {
+      "category": "ups",
+      "options": [
+        {
+          "model": "APC Back-UPS BX1600MI",
+          "specs": "1600VA/900W line-interactive, 6x C13, 10.3 kg",
+          "priceEur": 220,
+          "merchant": "dectdirect.nl (incl VAT; 181.82 excl)",
+          "url": "https://www.dectdirect.nl/de/back-ups-bx1600mi-1600va-900w.html",
+          "observedAt": "2026-10-05",
+          "windowsMacNotes": "USB shutdown-agent support not verified"
+        }
+      ],
+      "recommendation": "Only one UPS price verified. Search snippets cited other prices (BX1600MI EUR 207.25, CyberPower CP1600EPFCLCD EUR 352 in Germany) but pages were not opened, so not counted."
+    },
+    {
+      "category": "monitor",
+      "options": [
+        {
+          "model": "Dell UltraSharp U2725QE",
+          "specs": "27 in 4K 3840x2160, Thunderbolt hub, USB-C PD, KVM (monitors.com page)",
+          "priceEur": null,
+          "merchant": "monitors.com NL page shows USD 699.99 (MSRP 838.80), out of stock",
+          "url": "https://www.monitors.com/nl/products/dell-u2725qe",
+          "observedAt": "2026-10-05",
+          "windowsMacNotes": "Built-in KVM suits one monitor shared by laptop and mini PC"
+        }
+      ],
+      "recommendation": "EUR price not verified. 27-32 inch 4K USB-C and ultrawide options are a GAP."
+    },
+    {
+      "category": "dock",
+      "options": [
+        {
+          "model": "CalDigit TS4",
+          "specs": "Thunderbolt 4 dock",
+          "priceEur": null,
+          "merchant": "Proshop.nl page returned 403; search snippet said EUR 359.59 excl VAT, not verified",
+          "url": "https://www.proshop.nl/Docking-station/CalDigit-TS4-Thunderbolt-Station-4-with-07m-Thunderbolt-Cable/3295819",
+          "observedAt": "2026-10-05",
+          "windowsMacNotes": "not verified"
+        }
+      ],
+      "recommendation": "GAP: prices unverified."
+    },
+    {
+      "category": "portable-screen",
+      "options": [],
+      "recommendation": "GAP"
+    },
+    {
+      "category": "touch-display",
+      "options": [],
+      "recommendation": "GAP"
+    },
+    {
+      "category": "kvm",
+      "options": [],
+      "recommendation": "GAP"
+    },
+    {
+      "category": "network-switch",
+      "options": [],
+      "recommendation": "GAP"
+    },
+    {
+      "category": "nas",
+      "options": [],
+      "recommendation": "GAP"
+    },
+    {
+      "category": "keyboard-trackpad",
+      "options": [],
+      "recommendation": "GAP"
+    }
+  ],
+  "gpuLaterPhase": [
+    {
+      "workload": "image-gen",
+      "software": [
+        "ComfyUI",
+        "FLUX.1-dev",
+        "SD 3.5 Large",
+        "Qwen-Image"
+      ],
+      "minVramGb": 16,
+      "candidateGpus": [
+        {
+          "name": "RTX 5070 Ti (VRAM not page-verified)",
+          "vramGb": null,
+          "priceEur": 1181,
+          "merchant": "not named on aggregator page",
+          "observedAt": "2026-10-05",
+          "url": "https://gpupricehistory.com/nl/rtx-5070-ti"
+        },
+        {
+          "name": "RTX 5080 (VRAM not page-verified)",
+          "vramGb": null,
+          "priceEur": 1649,
+          "merchant": "not named",
+          "observedAt": "2026-10-03",
+          "url": "https://gpupricehistory.com/nl/rtx-5080"
+        },
+        {
+          "name": "Arc Pro B60",
+          "vramGb": 24,
+          "priceEur": 799,
+          "merchant": "Amazon.nl",
+          "observedAt": "2026-10-03",
+          "url": "https://gpuprix.com/netherlands/gpus/arc-pro-b60"
+        }
+      ],
+      "cloudAlternative": {
+        "provider": "RunPod community",
+        "priceNote": "4090 24GB USD 0.34/hr, 5090 32GB USD 0.69/hr (2026-09-27)",
+        "sourceIds": [
+          "stack-s11"
+        ]
+      },
+      "verdict": "FLUX.1-dev needs 33.9GiB unoptimised but sub-16GB with quantisation and offload (s22), so 16-24GB cards work with tradeoffs. Arc Pro B60 under CUDA-centric ComfyUI nodes not verified (GAP).",
+      "sourceIds": [
+        "stack-s22",
+        "stack-s17",
+        "stack-s16",
+        "stack-s21",
+        "stack-s11"
+      ]
+    },
+    {
+      "workload": "video-gen",
+      "software": [
+        "ComfyUI",
+        "Wan 2.2",
+        "HunyuanVideo 1.5",
+        "LTX-2.x"
+      ],
+      "minVramGb": 24,
+      "candidateGpus": [
+        {
+          "name": "RTX 5090 32GB",
+          "vramGb": 32,
+          "priceEur": 5499,
+          "merchant": "not named (Gigabyte GAMING OC White, aggregator)",
+          "observedAt": "2026-10-03",
+          "url": "https://gpupricehistory.com/nl/rtx-5090"
+        },
+        {
+          "name": "RTX 4090 24GB new",
+          "vramGb": 24,
+          "priceEur": 3790,
+          "merchant": "not named; used market not checked",
+          "observedAt": "2026-09-28",
+          "url": "https://gpupricehistory.com/nl/rtx-4090"
+        },
+        {
+          "name": "RTX PRO 6000 Blackwell 96GB",
+          "vramGb": 96,
+          "priceEur": 19999,
+          "merchant": "PNY via Alternate.nl",
+          "observedAt": "2026-10-03",
+          "url": "https://gpuprix.com/netherlands/gpus/rtx-pro-6000-blackwell"
+        }
+      ],
+      "cloudAlternative": {
+        "provider": "RunPod / Modal / Lambda",
+        "priceNote": "RunPod RTX PRO 6000 96GB USD 1.69-2.09/hr; Modal RTX PRO 6000 about USD 3.03/hr; Lambda H100 PCIe USD 3.29/hr, A100 80GB USD 2.79/hr",
+        "sourceIds": [
+          "stack-s11",
+          "stack-s12",
+          "stack-s13"
+        ]
+      },
+      "verdict": "Wan2.2 A14B needs 80GB+, TI2V-5B 24GB with offload, HunyuanVideo 1.5 14GB with offload (s22). Large Wan runs belong in the cloud; a 5090 at EUR 5,499 covers small or offloaded video.",
+      "sourceIds": [
+        "stack-s22",
+        "stack-s15",
+        "stack-s18",
+        "stack-s19"
+      ]
+    },
+    {
+      "workload": "lora-training",
+      "software": [
+        "not researched"
+      ],
+      "minVramGb": null,
+      "candidateGpus": [],
+      "cloudAlternative": {
+        "provider": "RunPod 5090",
+        "priceNote": "USD 0.69-0.99/hr",
+        "sourceIds": [
+          "stack-s11"
+        ]
+      },
+      "verdict": "Only an LTX-2.5 training figure found (80GB recommended, 32GB INT8 low-VRAM, s22). Flux/SDXL LoRA VRAM is a GAP.",
+      "sourceIds": [
+        "stack-s22"
+      ]
+    },
+    {
+      "workload": "local-llm-big",
+      "software": [
+        "llama.cpp",
+        "Lemonade"
+      ],
+      "minVramGb": null,
+      "candidateGpus": [
+        {
+          "name": "Radeon AI PRO R9700 32GB",
+          "vramGb": 32,
+          "priceEur": 1876,
+          "merchant": "not named",
+          "observedAt": "2026-10-05",
+          "url": "https://gpuprix.com/netherlands/gpus/radeon-ai-pro-r9700"
+        }
+      ],
+      "cloudAlternative": {
+        "provider": "RunPod community A100 80GB",
+        "priceNote": "USD 1.19/hr",
+        "sourceIds": [
+          "stack-s11"
+        ]
+      },
+      "verdict": "Strix Halo 128GB reportedly gives 8-12 t/s on 70B dense Q4 and 60-86 t/s on a 30B MoE (s05, s06; secondary), so a discrete GPU is not needed for the local LLM lane. eGPU/OCuLink options not researched (GAP).",
+      "sourceIds": [
+        "stack-s05",
+        "stack-s06",
+        "stack-s20"
+      ]
+    }
+  ],
+  "gapItems": [
+    {
+      "id": "remote-access",
+      "area": "remote-access",
+      "finding": "Tailscale free Personal plan allows up to 6 users and unlimited user devices, enough for a solo founder. OpenSSH Server is a Windows 11 Feature on Demand with an auto-created TCP 22 firewall rule. Cloudflare Tunnel is outbound-only and cloudflared has Windows exe/MSI but does not auto-update on Windows. Windows Home cannot host incoming Remote Desktop, Pro can.",
+      "options": [
+        {
+          "name": "Tailscale (free Personal)",
+          "costNote": "$0 up to 6 users; Standard $8/user/mo",
+          "windowsOk": true,
+          "macOk": null,
+          "linuxOk": null,
+          "caveat": "Platform support not read on the pricing page; verify per OS."
+        },
+        {
+          "name": "Cloudflare Tunnel + Access",
+          "costNote": "Free-plan user limit not verified from a Cloudflare page",
+          "windowsOk": true,
+          "macOk": null,
+          "linuxOk": null,
+          "caveat": "Manual cloudflared updates on Windows; Windows service install steps not on pages opened."
+        },
+        {
+          "name": "OpenSSH Server (Windows)",
+          "costNote": "Included in Windows",
+          "windowsOk": true,
+          "macOk": null,
+          "linuxOk": null,
+          "caveat": "Expose only over a private overlay, not the public internet."
+        },
+        {
+          "name": "Remote Desktop host",
+          "costNote": "Needs Pro or higher",
+          "windowsOk": true,
+          "macOk": null,
+          "linuxOk": null,
+          "caveat": "Home cannot be an RDP host."
+        }
+      ],
+      "recommendation": "Tailscale on every node plus OpenSSH for agent shells; use Cloudflare Tunnel only for public webhooks (Postiz callbacks) if needed. Buy Pro if RDP is wanted.",
+      "evidence": "documented",
+      "sourceIds": [
+        "stack-s04",
+        "gaps-s02",
+        "gaps-s03",
+        "stack-s08",
+        "gaps-s16",
+        "gaps-s39"
+      ]
+    },
+    {
+      "id": "monitoring",
+      "area": "monitoring",
+      "finding": "All four are free/open: Uptime Kuma (MIT, Windows non-Docker supported), Beszel (MIT, Windows agent via WinGet/Scoop+NSSM), Netdata (agent GPLv3+, Windows supported), windows_exporter (MIT, MSI service, port 9182) for Prometheus/Grafana.",
+      "options": [
+        {
+          "name": "Uptime Kuma",
+          "costNote": "MIT, free",
+          "windowsOk": true,
+          "macOk": null,
+          "linuxOk": true,
+          "caveat": "Black-box uptime checks only, not host metrics; needs Node >=20.4 or Docker."
+        },
+        {
+          "name": "Beszel",
+          "costNote": "MIT, free",
+          "windowsOk": true,
+          "macOk": true,
+          "linuxOk": true,
+          "caveat": "Hub is Docker/binary; Windows agent via script that installs Scoop/WinGet and NSSM."
+        },
+        {
+          "name": "Netdata",
+          "costNote": "Agent GPLv3+; UI proprietary free; cloud tiers exist",
+          "windowsOk": true,
+          "macOk": true,
+          "linuxOk": true,
+          "caveat": "Vendor claims ~5% CPU and 150MiB RAM by default."
+        },
+        {
+          "name": "windows_exporter + Prometheus/Grafana",
+          "costNote": "MIT",
+          "windowsOk": true,
+          "macOk": false,
+          "linuxOk": false,
+          "caveat": "Needs Prometheus and Grafana run elsewhere; more ops."
+        }
+      ],
+      "recommendation": "Uptime Kuma for service checks plus Beszel for per-node CPU/RAM/disk/GPU. Skip Prometheus until there are more than a few nodes.",
+      "evidence": "documented",
+      "sourceIds": [
+        "gaps-s05",
+        "gaps-s06",
+        "gaps-s07",
+        "gaps-s08",
+        "gaps-s09"
+      ]
+    },
+    {
+      "id": "backup",
+      "area": "backup",
+      "finding": "restic (BSD-2) runs on Linux/macOS/Windows with B2/S3/SFTP/rclone backends. Kopia has CLI and GUI, client-side AES-256/ChaCha20 and dedup. B2 is $6.95/TB/mo with free egress up to 3x stored data. Windows File History was not researched.",
+      "options": [
+        {
+          "name": "restic + B2",
+          "costNote": "restic free; B2 $6.95/TB/mo",
+          "windowsOk": true,
+          "macOk": true,
+          "linuxOk": true,
+          "caveat": "Scheduling on Windows needs Task Scheduler; no built-in GUI."
+        },
+        {
+          "name": "Kopia + B2",
+          "costNote": "B2 $6.95/TB/mo",
+          "windowsOk": null,
+          "macOk": null,
+          "linuxOk": null,
+          "caveat": "Features page gives no OS list or licence; verify on repo."
+        }
+      ],
+      "recommendation": "restic to B2 for repos, config and Postiz/Langfuse DB dumps; exclude node_modules and model files. Test a restore.",
+      "evidence": "documented",
+      "sourceIds": [
+        "gaps-s10",
+        "gaps-s11",
+        "gaps-s12"
+      ]
+    },
+    {
+      "id": "secrets",
+      "area": "secrets",
+      "finding": "Infisical is MIT and free to self-host; hosted free tier is 5 identities, 3 environments. 1Password service accounts give CLI auth not tied to a person, up to 100 per org. Windows Credential Manager was not researched.",
+      "options": [
+        {
+          "name": "Infisical",
+          "costNote": "Free 5 identities; Pro $20/identity/mo yearly",
+          "windowsOk": null,
+          "macOk": null,
+          "linuxOk": null,
+          "caveat": "OS support of CLI not verified."
+        },
+        {
+          "name": "1Password service accounts",
+          "costNote": "Plan eligibility and price not on page",
+          "windowsOk": null,
+          "macOk": null,
+          "linuxOk": null,
+          "caveat": "Requires a 1Password plan that offers them."
+        }
+      ],
+      "recommendation": "Infisical free hosted for agent environments, or 1Password service accounts if already paying; avoid .env files on nodes.",
+      "evidence": "documented",
+      "sourceIds": [
+        "gaps-s13",
+        "gaps-s14"
+      ]
+    },
+    {
+      "id": "virtualisation-containers",
+      "area": "virtualisation",
+      "finding": "Hyper-V is in Windows 11 Pro/Enterprise/Education, not named for Home. WSL2 runs a Linux kernel in a lightweight VM and is open source. Docker Desktop is free for companies under 250 employees AND under $10M revenue; paid Pro is $9-11/user/mo. Podman Desktop is free open source. Proxmox VE is AGPL; subscription is optional.",
+      "options": [
+        {
+          "name": "WSL2 + Docker Desktop",
+          "costNote": "Free under 250 employees and <$10M revenue",
+          "windowsOk": true,
+          "macOk": true,
+          "linuxOk": false,
+          "caveat": "Docker Desktop terms apply to Windows/macOS."
+        },
+        {
+          "name": "Podman Desktop",
+          "costNote": "Free, open source",
+          "windowsOk": true,
+          "macOk": true,
+          "linuxOk": true,
+          "caveat": "Windows backend not stated on page."
+        },
+        {
+          "name": "Proxmox VE",
+          "costNote": "AGPL; Community subscription EUR120/socket/yr",
+          "windowsOk": false,
+          "macOk": false,
+          "linuxOk": true,
+          "caveat": "Replaces the OS; Debian-based bare-metal install."
+        },
+        {
+          "name": "Hyper-V",
+          "costNote": "Included in Pro+",
+          "windowsOk": true,
+          "macOk": false,
+          "linuxOk": false,
+          "caveat": "Not available on Home per Microsoft's edition list."
+        }
+      ],
+      "recommendation": "WSL2 plus Docker Desktop (free at this size) or Podman Desktop for Postiz/Langfuse. Skip Proxmox unless a node is dedicated to VMs.",
+      "evidence": "documented",
+      "sourceIds": [
+        "gaps-s15",
+        "gaps-s17",
+        "gaps-s18",
+        "gaps-s19",
+        "gaps-s20",
+        "gaps-s21"
+      ]
+    },
+    {
+      "id": "windows-licence",
+      "area": "windows-licence",
+      "finding": "Microsoft price pages timed out (two attempts) and the compare page 404'd, so no Microsoft-stated EUR price for Home or Pro is verified. Verified Pro differences: Hyper-V and incoming Remote Desktop hosting; Home lacks RDP hosting.",
+      "options": [
+        {
+          "name": "Windows 11 Pro",
+          "costNote": "Price not verified from Microsoft",
+          "windowsOk": true,
+          "macOk": null,
+          "linuxOk": null,
+          "caveat": "A search summary quoted EUR259 for NL; unopened and secondary, so not used as a claim."
+        }
+      ],
+      "recommendation": "Treat Pro as required for headless nodes (RDP host, Hyper-V); check the Microsoft Store NL price manually before purchasing.",
+      "evidence": "documented",
+      "sourceIds": [
+        "gaps-s15",
+        "gaps-s16",
+        "gaps-s38"
+      ]
+    },
+    {
+      "id": "mac-os-option",
+      "area": "mac-os-option",
+      "finding": "Desktop Mac Energy settings can restart after power interruption and prevent sleep with display off. launchd LaunchDaemons run regardless of login (LaunchAgents need a logged-in user), KeepAlive keeps jobs running. Remote Login gives SSH. MLX is MIT with a unified memory model. Screen Sharing page covers Mac-to-Mac only; headless behaviour unverified.",
+      "options": [
+        {
+          "name": "Mac mini/Studio always-on node",
+          "costNote": "Hardware prices covered elsewhere",
+          "windowsOk": null,
+          "macOk": true,
+          "linuxOk": null,
+          "caveat": "Headless Screen Sharing from Windows not verified; use SSH and Beszel/Tailscale."
+        }
+      ],
+      "recommendation": "Viable for agent sessions and MLX inference; run services as LaunchDaemons, enable power-failure restart and no-sleep, manage over SSH.",
+      "evidence": "documented",
+      "sourceIds": [
+        "gaps-s22",
+        "gaps-s23",
+        "gaps-s24",
+        "gaps-s26",
+        "gaps-s27"
+      ]
+    },
+    {
+      "id": "egpu-oculink",
+      "area": "egpu-oculink",
+      "finding": "GMKtec documents USB4 as 40 Gbps and OCuLink as PCIe Gen4 x4 on NucBox K8 Plus, K11, K12 and M7 Ultra (also USB4). It states no aggregate OCuLink Gbps figure. Vendor page, not PCI-SIG/OCuLink-SIG spec.",
+      "options": [
+        {
+          "name": "OCuLink eGPU",
+          "costNote": "Dock cost not researched",
+          "windowsOk": null,
+          "macOk": null,
+          "linuxOk": null,
+          "caveat": "K12 needs power-off connection; K8 Plus/K11 non-hot-swappable."
+        },
+        {
+          "name": "USB4 eGPU",
+          "costNote": "n/a",
+          "windowsOk": null,
+          "macOk": null,
+          "linuxOk": null,
+          "caveat": "40 Gbps per vendor; Minisforum/Beelink spec pages not opened."
+        }
+      ],
+      "recommendation": "If a discrete GPU is wanted, pick an OCuLink model; confirm hot-plug limits per model.",
+      "evidence": "documented",
+      "sourceIds": [
+        "gaps-s30"
+      ]
+    },
+    {
+      "id": "lora-vram",
+      "area": "lora-vram",
+      "finding": "Official docs give few VRAM figures. Wan2.2 TI2V-5B needs at least 24GB, A14B at least 80GB (single GPU, offload flags reduce). HunyuanVideo needs 60GB for 720p129f, 45GB for 540p129f, 80GB recommended, Linux NVIDIA CUDA. FLUX.1-dev is 12B BF16 non-commercial; SDXL card gives no VRAM number; LTX-Video gives no total VRAM table (CUDA 12.2 tested). Diffusers LoRA guide gives no SDXL/Flux figure.",
+      "options": [],
+      "recommendation": "A 128GB Strix Halo covers capacity on paper for Wan/Hunyuan, but HunyuanVideo and LTX docs target NVIDIA CUDA; treat ROCm/Vulkan support as unverified and test before relying on it.",
+      "evidence": "documented",
+      "sourceIds": [
+        "gaps-s32",
+        "gaps-s33",
+        "gaps-s34",
+        "gaps-s35",
+        "gaps-s36",
+        "gaps-s37"
+      ]
+    },
+    {
+      "id": "windows-mac-sync",
+      "area": "windows-mac-sync",
+      "finding": "Sunshine (GPL-3.0) hosts on Windows 11+, Linux, macOS 14.2+; Moonlight clients exist for Windows, macOS, Linux, mobile. Universal Control is Apple-only: one Mac plus up to two other Mac/iPad, same Apple Account. Parsec page returned 403; Microsoft Remote Desktop client and SMB were not researched.",
+      "options": [
+        {
+          "name": "Sunshine + Moonlight",
+          "costNote": "Free; GPL-3.0 host",
+          "windowsOk": true,
+          "macOk": true,
+          "linuxOk": true,
+          "caveat": "Designed for game streaming."
+        },
+        {
+          "name": "Universal Control",
+          "costNote": "n/a",
+          "windowsOk": false,
+          "macOk": true,
+          "linuxOk": false,
+          "caveat": "No Windows support."
+        }
+      ],
+      "recommendation": "Use Tailscale + SSH for agents, Moonlight for occasional GUI; a software KVM is needed for a shared keyboard (not researched).",
+      "evidence": "documented",
+      "sourceIds": [
+        "gaps-s25",
+        "gaps-s28",
+        "gaps-s29"
+      ]
+    },
+    {
+      "id": "windows-gpu-memory-limit",
+      "area": "windows-gpu-memory-limit",
+      "finding": "Linux side is documented: AMD ROCm docs say default GTT is about 50% of RAM, raisable via TTM pages_limit, with a 100GB example on a 125.65GB system. The Windows 96GB cap is NOT confirmed from a primary page: the AMD blog fetch timed out twice; only a secondary search summary mentions 96GB VGM on Windows (Adrenalin 25.8.1). A 124GB Linux figure is also not on the ROCm page.",
+      "options": [],
+      "recommendation": "Assume ~96GB Windows and ~100GB+ Linux as unconfirmed; run the local-LLM box on Linux if memory ceiling matters, and measure.",
+      "evidence": "inferred",
+      "sourceIds": [
+        "gaps-s31",
+        "stack-s07"
+      ]
+    }
+  ]
+}

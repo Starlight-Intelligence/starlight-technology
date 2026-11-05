@@ -1,0 +1,33 @@
+{
+  "scenarios": [
+    {
+      "id": "s1-agents-one-node",
+      "name": "One node for a swarm of agents",
+      "description": "20 background agent sessions with headless browsers and two concurrent builds, a model gateway and monitoring. No local model.",
+      "agentSessions": 20, "headlessBrowsers": 10, "linuxDesktops": 0, "windowsVms": 0, "concurrentBuilds": 2,
+      "langfuse": "none", "litellm": true, "monitoring": true, "odooUsers": 0, "ragMillionChunks": 0, "localModel": null, "gpuJobs": []
+    },
+    {
+      "id": "s2-businesses-desktops-local-model",
+      "name": "Six businesses with their own desktops and an always-on local model",
+      "description": "Six workspaces (3 agent sessions, a headless browser and a Linux desktop container each), two Windows VMs, Langfuse on the same node, a gateway, 1M RAG chunks and a 30-35B local mixture-of-experts model.",
+      "agentSessions": 18, "headlessBrowsers": 6, "linuxDesktops": 6, "windowsVms": 2, "concurrentBuilds": 2,
+      "langfuse": "same-node", "litellm": true, "monitoring": true, "odooUsers": 0, "ragMillionChunks": 1, "localModel": "local-moe-30b-q4", "gpuJobs": []
+    },
+    {
+      "id": "s3-plus-erp-and-70b",
+      "name": "Add a business ERP and a 70B model",
+      "description": "Scenario 2 with 24 agent sessions, an Odoo instance for 15 users, 3M RAG chunks and a 70B dense local model.",
+      "agentSessions": 24, "headlessBrowsers": 8, "linuxDesktops": 6, "windowsVms": 2, "concurrentBuilds": 2,
+      "langfuse": "same-node", "litellm": true, "monitoring": true, "odooUsers": 15, "ragMillionChunks": 3, "localModel": "local-dense-70b-q4", "gpuJobs": []
+    },
+    {
+      "id": "s4-plus-media-and-finetune-gpu",
+      "name": "Add image, video and fine-tuning work on a GPU node",
+      "description": "Scenario 3 plus local image generation, 5B video generation and a 32B QLoRA fine-tune queued on a separate GPU node.",
+      "agentSessions": 24, "headlessBrowsers": 8, "linuxDesktops": 6, "windowsVms": 2, "concurrentBuilds": 2,
+      "langfuse": "same-node", "litellm": true, "monitoring": true, "odooUsers": 15, "ragMillionChunks": 3, "localModel": "local-dense-70b-q4",
+      "gpuJobs": ["qwen-image-fp8", "wan22-ti2v-5b", "qlora-32b"]
+    }
+  ]
+}

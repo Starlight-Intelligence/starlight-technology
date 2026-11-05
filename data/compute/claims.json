@@ -1,0 +1,944 @@
+[
+  {
+    "id": "gmktec-c01",
+    "text": "EVO-X2, EVO-X3 and EVO-X1 Pro use soldered memory and cannot be RAM-upgraded.",
+    "type": "manufacturer-assertion",
+    "sourceIds": [
+      "gmktec-s01",
+      "gmktec-s02",
+      "gmktec-s03"
+    ],
+    "asOf": "2026-10-05"
+  },
+  {
+    "id": "gmktec-c02",
+    "text": "EVO-X3 (128GB, EUR 3,499.99 on the EU store) uses the same Ryzen AI Max+ 395 as the EVO-X2 and adds OCuLink and a larger triple-fan chassis. The EU EVO-X2 listing extracted was the 64GB model at EUR 1,999.99, so the two prices are for different memory sizes.",
+    "type": "market-data",
+    "sourceIds": [
+      "gmktec-s08",
+      "gmktec-s10",
+      "gmktec-s09"
+    ],
+    "asOf": "2026-10-05"
+  },
+  {
+    "id": "gmktec-c03",
+    "text": "EVO-X2 draws 8-14W idle and 147-160W under 70B Q6_K inference, with 41-43 dBA at the test position.",
+    "type": "independent-measurement",
+    "sourceIds": [
+      "gmktec-s18"
+    ],
+    "asOf": "2026-10-05"
+  },
+  {
+    "id": "gmktec-c04",
+    "text": "Dense 70B on EVO-X2 runs at single-digit tokens/s (3.7-3.8 at Q6_K); 30B-class MoE Q4 reaches about 86 t/s peak on Vulkan under Linux.",
+    "type": "independent-measurement",
+    "sourceIds": [
+      "gmktec-s18",
+      "gmktec-s20"
+    ],
+    "asOf": "2026-10-05"
+  },
+  {
+    "id": "gmktec-c05",
+    "text": "EU store: 2-year warranty, 7-day return, 15% restocking fee on non-defective returns, customer pays return shipping; shorter than the EU 14-day withdrawal right and needs legal check.",
+    "type": "manufacturer-assertion",
+    "sourceIds": [
+      "gmktec-s15",
+      "gmktec-s16"
+    ],
+    "asOf": "2026-10-05"
+  },
+  {
+    "id": "gmktec-c06",
+    "text": "EU orders ship primarily from Bremen, Germany; Shenzhen is a fallback and may incur customs duties.",
+    "type": "manufacturer-assertion",
+    "sourceIds": [
+      "gmktec-s17"
+    ],
+    "asOf": "2026-10-05"
+  },
+  {
+    "id": "gmktec-c07",
+    "text": "EVO-X2 128GB/2TB retail prices in Austria (EUR 3,999 incl. 19% VAT) and Estonia (EUR 4,450.20 incl. 24% VAT) differ by country, VAT rate and merchant from the official EU 64GB list of EUR 1,999.99, so they cannot be compared directly; no official EU 128GB price was extracted.",
+    "type": "inference",
+    "sourceIds": [
+      "gmktec-s25",
+      "gmktec-s26",
+      "gmktec-s09",
+      "gmktec-s01"
+    ],
+    "asOf": "2026-10-05"
+  },
+  {
+    "id": "gmktec-c08",
+    "text": "Among GMKtec lines seen, only NucBox K11/K8 Plus/M-series appear to take SO-DIMM DDR5; Intel K13/K17/T2 and AMD EVO lines are soldered.",
+    "type": "inference",
+    "sourceIds": [
+      "gmktec-s06",
+      "gmktec-s11",
+      "gmktec-s12",
+      "gmktec-s13",
+      "gmktec-s14"
+    ],
+    "asOf": "2026-10-05"
+  },
+  {
+    "id": "minisforum-c01",
+    "text": "MS-S1 MAX has an internal 320W PSU, 6-heatpipe dual-fan cooling, 2x 10GbE and a PCIe 4.0 x16 slot that runs at x4.",
+    "type": "manufacturer-assertion",
+    "sourceIds": [
+      "minisforum-s04",
+      "minisforum-s05"
+    ],
+    "asOf": "2026-10-05"
+  },
+  {
+    "id": "minisforum-c02",
+    "text": "ServeTheHome measured the MS-S1 MAX at about 10 W idle in Windows, 5-6 W without a desktop, and a peak of about 200-220 W in synthetic testing.",
+    "type": "independent-measurement",
+    "sourceIds": [
+      "minisforum-s06"
+    ],
+    "asOf": "2026-10-05"
+  },
+  {
+    "id": "minisforum-c03",
+    "text": "Reported speeds for 128GB LPDDR5X-8000 (256 GB/s) systems mix Minisforum and Framework tests and runtimes: 70B dense Q4 about 5 tok/s, 30-35B mixture-of-experts 43-66 tok/s, 120B-class mixture-of-experts roughly 19-31 tok/s. Framework results are not Minisforum measurements.",
+    "type": "community-report",
+    "sourceIds": [
+      "minisforum-s08",
+      "minisforum-s09",
+      "minisforum-s10"
+    ],
+    "asOf": "2026-10-05"
+  },
+  {
+    "id": "minisforum-c04",
+    "text": "Minisforum EU list price for MS-S1 MAX 128GB is EUR 3,999.00 against EUR 4,999.00 regular, well above the USD figures from launch-era coverage; memory price inflation is a likely cause but unverified.",
+    "type": "inference",
+    "sourceIds": [
+      "minisforum-s01",
+      "minisforum-s10"
+    ],
+    "asOf": "2026-10-05"
+  },
+  {
+    "id": "minisforum-c05",
+    "text": "Affiliate program pays 2% via AWIN, with a 7 or 30 day cookie (page conflicts).",
+    "type": "manufacturer-assertion",
+    "sourceIds": [
+      "minisforum-s11"
+    ],
+    "asOf": "2026-10-05"
+  },
+  {
+    "id": "minisforum-c06",
+    "text": "Standard warranty is 24 months; the 36-month promotion ended 2026-07-31.",
+    "type": "manufacturer-assertion",
+    "sourceIds": [
+      "minisforum-s12"
+    ],
+    "asOf": "2026-10-05"
+  },
+  {
+    "id": "minisforum-c07",
+    "text": "Two MS-S1 MAX units clustered run a 235B Q4 model at 10.87 tok/s; the interconnect is not specified in the material read.",
+    "type": "manufacturer-assertion",
+    "sourceIds": [
+      "minisforum-s18"
+    ],
+    "asOf": "2026-10-05"
+  },
+  {
+    "id": "minisforum-c08",
+    "text": "For 20+ concurrent CLI agent sessions, CPU cores and RAM matter more than GPU; AI X1 Pro (12C, SO-DIMM up to 96-128GB) is a cheaper agent node than a Strix Halo box, but no concurrency benchmark was found.",
+    "type": "inference",
+    "sourceIds": [
+      "minisforum-s14",
+      "minisforum-s15"
+    ],
+    "asOf": "2026-10-05"
+  },
+  {
+    "id": "landscape-c01",
+    "text": "Strix Halo (Max+ 395) is 256-bit LPDDR5X-8000, 256 GB/s theoretical; measured real-world about 212-215 GB/s.",
+    "type": "independent-measurement",
+    "sourceIds": [
+      "minisforum-s10",
+      "landscape-s21"
+    ],
+    "asOf": "2026-10-05"
+  },
+  {
+    "id": "landscape-c02",
+    "text": "DGX Spark (GB10) has 128GB and 273 GB/s, ships DGX OS (Linux).",
+    "type": "manufacturer-assertion",
+    "sourceIds": [
+      "landscape-s12"
+    ],
+    "asOf": "2026-10-05"
+  },
+  {
+    "id": "landscape-c03",
+    "text": "DGX Spark measured on llama.cpp: gpt-oss-120b MXFP4 tg ~60 t/s, pp ~1956 t/s; Spark is much faster than Strix Halo at prompt processing, comparable token generation at short context.",
+    "type": "independent-measurement",
+    "sourceIds": [
+      "landscape-s19",
+      "landscape-s22"
+    ],
+    "asOf": "2026-10-05"
+  },
+  {
+    "id": "landscape-c04",
+    "text": "Strix Halo guidance: about 70 t/s on a 30B-A3B MoE and about 5 t/s on 70B dense. The occasional-70B need is slow on every 256-273 GB/s box.",
+    "type": "independent-measurement",
+    "sourceIds": [
+      "minisforum-s10"
+    ],
+    "asOf": "2026-10-05"
+  },
+  {
+    "id": "landscape-c05",
+    "text": "Apple Mac Studio M5 Max 460/614 GB/s (max 128GB); M5 Ultra 1.2 TB/s (96GB base, 512GB max); Mac mini M5 Pro 307 GB/s max 64GB; M6 153-170 GB/s max 32GB.",
+    "type": "manufacturer-assertion",
+    "sourceIds": [
+      "landscape-s01",
+      "landscape-s02"
+    ],
+    "asOf": "2026-10-05"
+  },
+  {
+    "id": "landscape-c06",
+    "text": "Apple NL prices: Mac Studio M5 Max EUR 3,029 (32c GPU/36GB) and 3,689 (40c); M5 Ultra EUR 6,649 and 8,079; Mac mini EUR 1,069 (M6) and 2,019 (M5 Pro), +1,100 for 64GB.",
+    "type": "market-data",
+    "sourceIds": [
+      "landscape-s04",
+      "landscape-s05",
+      "landscape-s06"
+    ],
+    "asOf": "2026-10-05"
+  },
+  {
+    "id": "landscape-c07",
+    "text": "Apple raised Mac mini prices by 300-350 EUR versus the M4 generation.",
+    "type": "market-data",
+    "sourceIds": [
+      "landscape-s05"
+    ],
+    "asOf": "2026-10-05"
+  },
+  {
+    "id": "landscape-c08",
+    "text": "Framework Desktop 128GB: USD 1,999 to 2,459 on 13 Jan 2026; NL DIY now EUR 3,889 and out of stock.",
+    "type": "market-data",
+    "sourceIds": [
+      "landscape-s07",
+      "landscape-s09"
+    ],
+    "asOf": "2026-10-05"
+  },
+  {
+    "id": "landscape-c09",
+    "text": "Corsair AI Workstation 300 128GB: USD 1,999.99 at launch to 2,699.99 from, 3,399.99 max.",
+    "type": "market-data",
+    "sourceIds": [
+      "landscape-s16"
+    ],
+    "asOf": "2026-10-05"
+  },
+  {
+    "id": "landscape-c10",
+    "text": "DGX Spark rose USD 3,999 to 4,699 in Feb 2026; OEM GB10 boxes USD 5,400-8,200 in Sept 2026 with stock-outs; one EU report EUR 3,680 ex VAT for GX10 1TB.",
+    "type": "market-data",
+    "sourceIds": [
+      "landscape-s13",
+      "landscape-s14"
+    ],
+    "asOf": "2026-10-05"
+  },
+  {
+    "id": "landscape-c11",
+    "text": "US list prices of 128GB-class machines rose in 2026: Framework Desktop USD 1,999 to 2,459 (+23%), Corsair AI Workstation 300 USD 1,999.99 to 2,699.99 (+35%), DGX Spark USD 3,999 to 4,699 (+17.5%). These are matched-product US list prices; no cause is established here.",
+    "type": "market-data",
+    "sourceIds": [
+      "landscape-s07",
+      "landscape-s09",
+      "landscape-s16"
+    ],
+    "asOf": "2026-10-05"
+  },
+  {
+    "id": "landscape-c12",
+    "text": "TrendForce expects 4Q26 conventional DRAM +10-15% QoQ and NAND +15-20% QoQ, supply tight into 2027.",
+    "type": "market-data",
+    "sourceIds": [
+      "landscape-s26"
+    ],
+    "asOf": "2026-10-05"
+  },
+  {
+    "id": "landscape-c13",
+    "text": "DDR5-6400 128GB kit went from USD 329 low to USD 3,399 (18 Aug 2026).",
+    "type": "market-data",
+    "sourceIds": [
+      "landscape-s27"
+    ],
+    "asOf": "2026-10-05"
+  },
+  {
+    "id": "landscape-c14",
+    "text": "RTX 5090 EU street above EUR 5,000, 32GB; RTX PRO 6000 96GB EUR 15,490 lowest; R9700 32GB EUR 1,545.",
+    "type": "market-data",
+    "sourceIds": [
+      "landscape-s23",
+      "landscape-s24",
+      "landscape-s25"
+    ],
+    "asOf": "2026-10-05"
+  },
+  {
+    "id": "landscape-c15",
+    "text": "Medusa Halo (Ryzen AI Max 500) RUMOR: LPDDR6, 256-bit about 460 GB/s, Zen 6/RDNA 5, 2027-2028; AMD has not confirmed.",
+    "type": "inference",
+    "sourceIds": [
+      "landscape-s29"
+    ],
+    "asOf": "2026-10-05"
+  },
+  {
+    "id": "landscape-c16",
+    "text": "Strix Halo software: Vulkan via llama.cpp/LM Studio recommended on Windows and Linux; ROCm immature; Linux needs kernel 6.15+. A Windows 96GB VGM cap on 128GB machines and Linux GTT tuning appeared only in search snippets and are unverified.",
+    "type": "community-report",
+    "sourceIds": [
+      "landscape-s21",
+      "minisforum-s10"
+    ],
+    "asOf": "2026-10-05"
+  },
+  {
+    "id": "landscape-c17",
+    "text": "Framework 192GB (Max+ PRO 495, 273 GB/s) allows up to 160GB to iGPU; ships Fedora, Windows 11 supported; ships Nov 2026.",
+    "type": "manufacturer-assertion",
+    "sourceIds": [
+      "landscape-s10",
+      "landscape-s11"
+    ],
+    "asOf": "2026-10-05"
+  },
+  {
+    "id": "landscape-c18",
+    "text": "Apple GPU wired memory limit can be raised via sysctl iogpu.wired_limit_mb.",
+    "type": "independent-measurement",
+    "sourceIds": [
+      "landscape-s28"
+    ],
+    "asOf": "2026-10-05"
+  },
+  {
+    "id": "landscape-c19",
+    "text": "Dense 405B on M5 Ultra gets about 2.9 t/s; bandwidth decides speed, capacity decides what loads.",
+    "type": "independent-measurement",
+    "sourceIds": [
+      "landscape-s28"
+    ],
+    "asOf": "2026-10-05"
+  },
+  {
+    "id": "landscape-c20",
+    "text": "HP Z2 Mini G1a 128GB/1TB EUR 3,215 ex VAT / 3,890.15 incl VAT at a Dutch reseller (ships when available).",
+    "type": "market-data",
+    "sourceIds": [
+      "landscape-s15"
+    ],
+    "asOf": "2026-10-05"
+  },
+  {
+    "id": "supply-c01",
+    "text": "A community wiki (no counting method stated) estimates about 90% of Chinese Strix Halo PCs, including GMKtec, Bosgame, FEVM, Corsair and NIMO, use the Sixunited platform. Its hardware page lists the GMKtec EVO-X2 with the Sixunited AXB35-02 board.",
+    "type": "community-report",
+    "sourceIds": [
+      "supply-s01",
+      "supply-s02"
+    ],
+    "asOf": "2026-10-05"
+  },
+  {
+    "id": "supply-c02",
+    "text": "Framework NL mainboard prices incl. VAT: 385/32GB EUR 1,079; 395/64GB EUR 1,859; 395/128GB EUR 3,539.",
+    "type": "market-data",
+    "sourceIds": [
+      "supply-s04"
+    ],
+    "asOf": "2026-10-05"
+  },
+  {
+    "id": "supply-c03",
+    "text": "Framework 128GB desktop rose from USD 1,999 launch to USD 2,459 on 12 Jan 2026 due to the RAM crisis; Framework said it would cut prices when the market calms.",
+    "type": "market-data",
+    "sourceIds": [
+      "supply-s03",
+      "supply-s06"
+    ],
+    "asOf": "2026-01-12"
+  },
+  {
+    "id": "supply-c04",
+    "text": "Bosgame EU listed M5 395 128GB/2TB at EUR 2,439.95 on 24 Jun 2026 (was 2,875.95).",
+    "type": "market-data",
+    "sourceIds": [
+      "supply-s08"
+    ],
+    "asOf": "2026-06-24"
+  },
+  {
+    "id": "supply-c05",
+    "text": "Framework Desktop uses a semi-custom FSP 400W Flex ATX PSU and a Cooler Master and Noctua thermal system.",
+    "type": "manufacturer-assertion",
+    "sourceIds": [
+      "supply-s03"
+    ],
+    "asOf": "2026-10-05"
+  },
+  {
+    "id": "supply-c06",
+    "text": "EU EUR 3 duty per item category applies on parcels up to EUR 150 from 1 July 2026 until 1 July 2028; it does not cover a 128GB mini PC priced in the thousands.",
+    "type": "market-data",
+    "sourceIds": [
+      "supply-s11",
+      "supply-s12"
+    ],
+    "asOf": "2026-10-05"
+  },
+  {
+    "id": "supply-c07",
+    "text": "EU consumers have a 2-year minimum legal guarantee from the seller; a shorter brand warranty (for example 12 months) does not replace it for consumer sales.",
+    "type": "manufacturer-assertion",
+    "sourceIds": [
+      "supply-s15",
+      "supply-s26"
+    ],
+    "asOf": "2026-10-05"
+  },
+  {
+    "id": "supply-c08",
+    "text": "A single-unit Alibaba price for a Strix Halo 128GB machine (snippet USD 3,027-3,107) is not below EU retail, so direct sourcing gives no price edge for one unit.",
+    "type": "inference",
+    "sourceIds": [
+      "supply-s24",
+      "gmktec-s21",
+      "supply-s08"
+    ],
+    "asOf": "2026-10-05"
+  },
+  {
+    "id": "supply-c09",
+    "text": "Minisforum MS-S1 Max uses an internal Lite-On 320W PSU and soldered 128GB LPDDR5X; review sample shipped with a 2TB Kingston QLC SSD.",
+    "type": "independent-measurement",
+    "sourceIds": [
+      "supply-s09"
+    ],
+    "asOf": "2026-10-05"
+  },
+  {
+    "id": "stack-c01",
+    "text": "Lemonade runs on Windows 11, Ubuntu, Fedora, Debian, Arch, macOS and Docker, with Vulkan, ROCm and NPU (flm, ryzenai-llm) backends, gfx1151 listed, and an OpenAI-compatible endpoint.",
+    "type": "manufacturer-assertion",
+    "sourceIds": [
+      "stack-s02"
+    ],
+    "asOf": "2026-10-05"
+  },
+  {
+    "id": "stack-c02",
+    "text": "FastFlowLM supports XDNA2 NPUs on Windows and Linux with an OpenAI-compatible server and free commercial use of its kernels.",
+    "type": "manufacturer-assertion",
+    "sourceIds": [
+      "stack-s03"
+    ],
+    "asOf": "2026-10-05"
+  },
+  {
+    "id": "stack-c03",
+    "text": "On Strix Halo Linux, Vulkan was faster than HIP/ROCm on llama-bench (May 2025), while HIP+WMMA+FlashAttention reached 60.29 t/s on a 30B MoE (July 2025). Backend choice is model-dependent.",
+    "type": "independent-measurement",
+    "sourceIds": [
+      "stack-s05"
+    ],
+    "asOf": "2026-10-05"
+  },
+  {
+    "id": "stack-c04",
+    "text": "Linux can address about 124GB of 128GB as GPU memory via amdgpu.gttsize and ttm.pages_limit; Windows is reported capped at 96GB via Variable Graphics Memory. The Windows figure comes from a secondary blog and an unopened AMD search snippet.",
+    "type": "inference",
+    "sourceIds": [
+      "stack-s01",
+      "stack-s06",
+      "stack-s07"
+    ],
+    "asOf": "2026-10-05"
+  },
+  {
+    "id": "stack-c05",
+    "text": "Windows 11 restarts after updates outside active hours (default 8-17); Microsoft says the 'no auto-restart with logged on users' policy does not work as described and many restart policies are legacy for Windows 11. Agent sessions need a supervisor that survives reboots.",
+    "type": "manufacturer-assertion",
+    "sourceIds": [
+      "stack-s09"
+    ],
+    "asOf": "2026-10-05"
+  },
+  {
+    "id": "stack-c06",
+    "text": "WSL2 defaults to 50% of host RAM, NAT networking and a 60s VM idle timeout.",
+    "type": "manufacturer-assertion",
+    "sourceIds": [
+      "stack-s10"
+    ],
+    "asOf": "2026-10-05"
+  },
+  {
+    "id": "stack-c07",
+    "text": "Tailscale Personal is free for up to 6 users with unlimited devices; paid tiers are USD 8 and 18 per user per month.",
+    "type": "manufacturer-assertion",
+    "sourceIds": [
+      "stack-s04"
+    ],
+    "asOf": "2026-10-05"
+  },
+  {
+    "id": "stack-c08",
+    "text": "Netherlands new-card prices around 2026-10-03: RTX 5090 from EUR 5,499; RTX 5080 from 1,649; RTX 5070 Ti from 1,181; RTX PRO 6000 Blackwell 19,999; Radeon AI PRO R9700 1,876; Arc Pro B60 799. RTX 4090 new listings 3,790-3,990 (2026-09-28).",
+    "type": "market-data",
+    "sourceIds": [
+      "stack-s15",
+      "stack-s16",
+      "stack-s17",
+      "stack-s18",
+      "stack-s19",
+      "stack-s20",
+      "stack-s21"
+    ],
+    "asOf": "2026-10-05"
+  },
+  {
+    "id": "stack-c09",
+    "text": "Cloud GPU hourly (USD): RunPod 5090 0.69-0.99, 4090 0.34-0.74, RTX PRO 6000 1.69-2.09, A100 80GB 1.19-1.59, H100 PCIe 1.99-2.89; Lambda H100 PCIe 3.29; Modal H100 about 3.95; Vast 5090 from about 0.47.",
+    "type": "market-data",
+    "sourceIds": [
+      "stack-s11",
+      "stack-s12",
+      "stack-s13",
+      "stack-s23"
+    ],
+    "asOf": "2026-10-05"
+  },
+  {
+    "id": "stack-c10",
+    "text": "Break-even arithmetic (mine, USD/EUR parity ignored): a EUR 5,499 RTX 5090 equals about 5,555 secure-cloud hours at 0.99 or about 7,970 community hours at 0.69; at 8 h/day that is roughly 1.9 to 2.7 years of daily use before power and host costs. Buying wins only if the GPU runs most days for 2+ years or privacy/latency matters; otherwise rent.",
+    "type": "inference",
+    "sourceIds": [
+      "stack-s11",
+      "stack-s15"
+    ],
+    "asOf": "2026-10-05"
+  },
+  {
+    "id": "stack-c11",
+    "text": "Strix Halo 128GB reportedly gives 8-12 t/s on 70B dense Q4 and 60-86 t/s on a 30B MoE (secondary sources, 2025-2026).",
+    "type": "independent-measurement",
+    "sourceIds": [
+      "stack-s05",
+      "stack-s06"
+    ],
+    "asOf": "2026-10-05"
+  },
+  {
+    "id": "stack-c12",
+    "text": "APC Back-UPS BX1600MI (1600VA/900W) costs EUR 220 incl VAT at dectdirect.nl.",
+    "type": "market-data",
+    "sourceIds": [
+      "stack-s24"
+    ],
+    "asOf": "2026-10-05"
+  },
+  {
+    "id": "partners-c1",
+    "text": "Minisforum pays 2% commission with a 30-day cookie, on Awin, Impact and Webgains; DE programme excludes VAT and postage and closes PPC.",
+    "type": "manufacturer-assertion",
+    "sourceIds": [
+      "partners-s04",
+      "partners-s05"
+    ],
+    "asOf": "2026-10-05"
+  },
+  {
+    "id": "partners-c2",
+    "text": "Apple's current affiliate programme (Performance Partners via Partnerize) covers digital content and subscriptions only, with 30-day cookie and 60-90 day payment.",
+    "type": "manufacturer-assertion",
+    "sourceIds": [
+      "partners-s11",
+      "partners-s12"
+    ],
+    "asOf": "2026-10-05"
+  },
+  {
+    "id": "partners-c3",
+    "text": "Minisforum accepts B2B wholesale applications from 10 units with 3-year extended warranty; Beelink offers ODM/OEM and positions as system integrator.",
+    "type": "manufacturer-assertion",
+    "sourceIds": [
+      "partners-s20",
+      "partners-s21"
+    ],
+    "asOf": "2026-10-05"
+  },
+  {
+    "id": "partners-c4",
+    "text": "Amazon fee schedule reads for amazon.nl and amazon.de disagree on electronics (6% vs 5%); verify inside an approved account.",
+    "type": "inference",
+    "sourceIds": [
+      "partners-s07",
+      "partners-s08"
+    ],
+    "asOf": "2026-10-05"
+  },
+  {
+    "id": "partners-c5",
+    "text": "Awin does not accept #affiliate or #partner as disclosure; #Ad is required.",
+    "type": "manufacturer-assertion",
+    "sourceIds": [
+      "partners-s17"
+    ],
+    "asOf": "2026-10-05"
+  },
+  {
+    "id": "partners-c6",
+    "text": "Awin (34.8%) is the leading affiliate network in the Netherlands, ahead of Impact (13.2%).",
+    "type": "market-data",
+    "sourceIds": [
+      "partners-s24"
+    ],
+    "asOf": "2026-10-05"
+  },
+  {
+    "id": "partners-c7",
+    "text": "Framework says the Desktop runs 300B-class models at 4-bit quantisation.",
+    "type": "manufacturer-assertion",
+    "sourceIds": [
+      "landscape-s08"
+    ],
+    "asOf": "2026-10-05"
+  },
+  {
+    "id": "stackgaps-c01",
+    "text": "Tailscale Personal plan is free with up to 6 users and unlimited user devices; Standard is $8 and Premium $18 per user per month.",
+    "type": "manufacturer-assertion",
+    "sourceIds": [
+      "stack-s04"
+    ],
+    "asOf": "2026-10-05"
+  },
+  {
+    "id": "stackgaps-c02",
+    "text": "cloudflared on Windows does not auto-update; exe and MSI are provided.",
+    "type": "manufacturer-assertion",
+    "sourceIds": [
+      "gaps-s03"
+    ],
+    "asOf": "2026-10-05"
+  },
+  {
+    "id": "stackgaps-c03",
+    "text": "Windows 11 Home cannot host incoming Remote Desktop; Pro, Enterprise, Education can.",
+    "type": "manufacturer-assertion",
+    "sourceIds": [
+      "gaps-s16"
+    ],
+    "asOf": "2026-10-05"
+  },
+  {
+    "id": "stackgaps-c04",
+    "text": "Hyper-V on Windows 11 is included in Pro, Enterprise and Education.",
+    "type": "manufacturer-assertion",
+    "sourceIds": [
+      "gaps-s15"
+    ],
+    "asOf": "2026-10-05"
+  },
+  {
+    "id": "stackgaps-c05",
+    "text": "Docker Desktop is free for businesses with fewer than 250 employees and less than $10M annual revenue.",
+    "type": "manufacturer-assertion",
+    "sourceIds": [
+      "gaps-s19"
+    ],
+    "asOf": "2026-10-05"
+  },
+  {
+    "id": "stackgaps-c06",
+    "text": "Backblaze B2 is $6.95/TB/month with free egress up to 3x stored data, then $0.01/GB.",
+    "type": "market-data",
+    "sourceIds": [
+      "gaps-s12"
+    ],
+    "asOf": "2026-10-05"
+  },
+  {
+    "id": "stackgaps-c07",
+    "text": "Infisical free tier is 5 identities and 3 environments; Pro is $20 per identity per month billed yearly.",
+    "type": "market-data",
+    "sourceIds": [
+      "gaps-s13"
+    ],
+    "asOf": "2026-10-05"
+  },
+  {
+    "id": "stackgaps-c08",
+    "text": "Proxmox VE is AGPL; Community subscription is EUR120 per CPU socket per year.",
+    "type": "market-data",
+    "sourceIds": [
+      "gaps-s21"
+    ],
+    "asOf": "2026-10-05"
+  },
+  {
+    "id": "stackgaps-c09",
+    "text": "Wan2.2 TI2V-5B needs at least 24GB VRAM and A14B at least 80GB on a single GPU.",
+    "type": "manufacturer-assertion",
+    "sourceIds": [
+      "gaps-s34"
+    ],
+    "asOf": "2026-10-05"
+  },
+  {
+    "id": "stackgaps-c10",
+    "text": "HunyuanVideo needs 60GB (720p, 129 frames) or 45GB (540p) minimum, 80GB recommended, on Linux with NVIDIA CUDA.",
+    "type": "manufacturer-assertion",
+    "sourceIds": [
+      "gaps-s35"
+    ],
+    "asOf": "2026-10-05"
+  },
+  {
+    "id": "stackgaps-c11",
+    "text": "GMKtec lists OCuLink PCIe Gen4 x4 on K8 Plus, K11, K12, M7 Ultra and USB4 at 40 Gbps.",
+    "type": "manufacturer-assertion",
+    "sourceIds": [
+      "gaps-s30"
+    ],
+    "asOf": "2026-10-05"
+  },
+  {
+    "id": "stackgaps-c12",
+    "text": "On Linux the default GTT limit is about 50% of RAM and can be raised via TTM pages_limit.",
+    "type": "manufacturer-assertion",
+    "sourceIds": [
+      "gaps-s31"
+    ],
+    "asOf": "2026-10-05"
+  },
+  {
+    "id": "stackgaps-c13",
+    "text": "The Windows 96GB GPU memory cap versus Linux ~124GB is not confirmed by a primary page.",
+    "type": "inference",
+    "sourceIds": [
+      "gaps-s31",
+      "stack-s07"
+    ],
+    "asOf": "2026-10-05"
+  },
+  {
+    "id": "stackgaps-c14",
+    "text": "Universal Control supports one Mac plus up to two other Mac or iPad devices on the same Apple Account.",
+    "type": "manufacturer-assertion",
+    "sourceIds": [
+      "gaps-s25"
+    ],
+    "asOf": "2026-10-05"
+  },
+  {
+    "id": "minisforum-c02b",
+    "text": "A search digest of Notebookcheck's MS-S1 Max reviews reports 9-12 W idle, about 120 W under AI inference and 43 dBA under load (page not opened).",
+    "type": "community-report",
+    "sourceIds": [
+      "minisforum-s07"
+    ],
+    "asOf": "2026-10-05"
+  },
+  {
+    "id": "vl-c01",
+    "text": "The 2026 Combined Nomenclature (Implementing Regulation 2025/1926) shows 'Free' in the conventional duty column for CN 8471 30 00, 41 00, 49 00 and 50 00. Live TARIC measures for Chinese origin were not retrievable.",
+    "type": "legal-text",
+    "sourceIds": [
+      "vl-s01",
+      "vl-s31",
+      "vl-s32"
+    ],
+    "asOf": "2026-10-05"
+  },
+  {
+    "id": "vl-c02",
+    "text": "Douane says Dutch import VAT is usually 21%; the Belastingdienst article 23 permit lets an entrepreneur defer import VAT to the next VAT return.",
+    "type": "legal-text",
+    "sourceIds": [
+      "vl-s04",
+      "vl-s05",
+      "vl-s06"
+    ],
+    "asOf": "2026-10-05"
+  },
+  {
+    "id": "vl-c03",
+    "text": "Council Regulation 2026/382 Article 2 sets a EUR 3 duty per item for consignments with an intrinsic value up to EUR 150, from 1 July 2026 to 1 July 2028.",
+    "type": "legal-text",
+    "sourceIds": [
+      "vl-s02",
+      "vl-s03",
+      "vl-s04"
+    ],
+    "asOf": "2026-10-05"
+  },
+  {
+    "id": "vl-c04",
+    "text": "Directive 2011/83/EU gives a consumer 14 days to withdraw from a distance contract, defines a consumer as acting outside trade or business, and bars waiver; Your Europe says the rules do not apply when selling to other businesses.",
+    "type": "legal-text",
+    "sourceIds": [
+      "vl-s07",
+      "vl-s08",
+      "vl-s09"
+    ],
+    "asOf": "2026-10-05"
+  },
+  {
+    "id": "vl-c05",
+    "text": "GMKtec's German shipping policy says: 'Um die Zollkosten zu reduzieren, deklarieren wir in der Regel einen niedrigeren Warenwert' (to reduce customs costs we generally declare a lower goods value), for shipments from China; it describes shipping from the German warehouse as avoiding extra EU taxes.",
+    "type": "manufacturer-assertion",
+    "sourceIds": [
+      "vl-s27",
+      "vl-s28"
+    ],
+    "asOf": "2026-10-05"
+  },
+  {
+    "id": "vl-c06",
+    "text": "GMKtec's FAQ states a 60-calendar-day return window from shipment and a 15% restocking fee on non-fault returns; the warranty is stated as two years (German page). Other GMKtec pages in the research stated 7 days and 1 year, so its own terms conflict.",
+    "type": "manufacturer-assertion",
+    "sourceIds": [
+      "vl-s29",
+      "vl-s30",
+      "gmktec-s15",
+      "gmktec-s16"
+    ],
+    "asOf": "2026-10-05"
+  },
+  {
+    "id": "vt-c01",
+    "text": "AMD states Variable Graphics Memory allows up to 96 GB of GPU memory on a 128GB Ryzen AI Max+ 395 under Windows (Adrenalin 25.8.1+); seen as a search excerpt and a secondary article. Open LM Studio and llama.cpp issues report Vulkan loads failing or stalling near 64 GB with 96 GB set.",
+    "type": "manufacturer-assertion",
+    "sourceIds": [
+      "stack-s07",
+      "vt-s02",
+      "vt-s17",
+      "vt-s18"
+    ],
+    "asOf": "2026-10-05"
+  },
+  {
+    "id": "vt-c02",
+    "text": "Microsoft Learn: Windows 11 Home cannot install the Hyper-V role and cannot host incoming Remote Desktop connections; BitLocker enablement is listed for Pro, Enterprise and Education.",
+    "type": "manufacturer-assertion",
+    "sourceIds": [
+      "vt-s05",
+      "gaps-s16",
+      "vt-s07",
+      "stack-s09"
+    ],
+    "asOf": "2026-10-05"
+  },
+  {
+    "id": "vt-c03",
+    "text": "Microsoft Store NL lists Windows 11 Home at EUR 145.00 and Pro at EUR 259.00 (USB, Dutch); the pages do not state VAT.",
+    "type": "market-data",
+    "sourceIds": [
+      "pn-s01",
+      "pn-s02"
+    ],
+    "asOf": "2026-10-05"
+  },
+  {
+    "id": "vt-c04",
+    "text": "Minisforum's product page lists two USB4 v2 ports at 80 Gbps (rear) and two USB4 ports at 40 Gbps (front), two 10GbE ports, a PCIe x16 slot running at PCIe 4.0 x4 and a built-in 320 W PSU.",
+    "type": "manufacturer-assertion",
+    "sourceIds": [
+      "ex-s01"
+    ],
+    "asOf": "2026-10-05"
+  },
+  {
+    "id": "rv-c01",
+    "text": "Notebookcheck's review of the 64GB EVO-X2 says its iGPU can take up to 48 GB and leave 16 GB for the system. ServeTheHome's 70B Q6_K test needed over 50 GB of GPU memory on the 128GB unit. No independent LLM speed test of the 64GB EVO-X2 was found.",
+    "type": "community-report",
+    "sourceIds": [
+      "rv-s02",
+      "gmktec-s19"
+    ],
+    "asOf": "2026-10-05"
+  },
+  {
+    "id": "rv-c02",
+    "text": "Reported EVO-X2 noise under load ranges from 41-43 dBA (ServeTheHome, 128GB) to about 50 dBA (a snippet of a 3DTested review) and 'annoying' at high TDP (Wccftech); the conflict is unresolved.",
+    "type": "community-report",
+    "sourceIds": [
+      "gmktec-s19",
+      "rv-s03",
+      "rv-s05"
+    ],
+    "asOf": "2026-10-05"
+  },
+  {
+    "id": "ex-c01a",
+    "text": "OCuLink is PCIe 4.0 x4 (about 8 GB/s theoretical). A gaming-test comparison (Guru3D citing Try Some Tech) measured about 6.7 GB/s over OCuLink and about 5.8 GB/s over Thunderbolt 5; this is gaming data, not AI inference.",
+    "type": "community-report",
+    "sourceIds": [
+      "ex-s20"
+    ],
+    "asOf": "2026-10-05"
+  },
+  {
+    "id": "ex-c01b",
+    "text": "One reported setup (MindStudio blog, secondary): an RTX 5080 16GB over OCuLink on a Strix Halo mini PC, Vulkan in LM Studio, ran about 3 times the iGPU on models that fit in 16GB and 1.6 tok/s when the model exceeded VRAM. The post states no model names or test conditions beyond that.",
+    "type": "community-report",
+    "sourceIds": [
+      "ex-s14"
+    ],
+    "asOf": "2026-10-05"
+  },
+  {
+    "id": "ex-c01c",
+    "text": "The same blog reports an RTX Pro 6000 96GB over OCuLink at 69 tok/s on a 32B dense model and 121 tok/s on a 122B mixture-of-experts model, and 37-38 tok/s when the 122B model was split across the GPU and the iGPU, which it attributes to the OCuLink link.",
+    "type": "community-report",
+    "sourceIds": [
+      "ex-s14"
+    ],
+    "asOf": "2026-10-05"
+  },
+  {
+    "id": "ex-c01d",
+    "text": "Level1Techs forum reports on Windows 11 Pro with a Strix Halo iGPU plus a dGPU describe instability and 35-40% slowdowns, LM Studio 0.3.16 missing the iGPU when a dGPU was present, and an improvement after capping iGPU VRAM at 512MB in the BIOS. These are forum reports.",
+    "type": "community-report",
+    "sourceIds": [
+      "ex-s03"
+    ],
+    "asOf": "2026-10-05"
+  },
+  {
+    "id": "ex-c02",
+    "text": "In the reported runs, two-node llama.cpp RPC over direct USB4 (about 9.4 Gbps, Linux) gave 15.35 tok/s on MiniMax-M2.5-REAP-139B and 12.6 tok/s on Qwen3.5-397B (owner benchmarks), against single-node results of 42.7 tok/s on an 80B-A3B and 86.1 tok/s on a 30B-A3B model. A four-node Framework test over 5GbE by Jeff Geerling reached about 8.25 tok/s on DeepSeek R1 Q2_K_M, the same as one node, and its author recommends scaling vertically; the method is described as experimental, with segfaults on some quants. These runs differ in model, quantisation and setup, so they do not establish a general rule.",
+    "type": "community-report",
+    "sourceIds": [
+      "rv-s23",
+      "ex-s11"
+    ],
+    "asOf": "2026-10-05"
+  }
+]

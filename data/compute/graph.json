@@ -1,0 +1,3348 @@
+{
+  "schemaVersion": 1,
+  "dataHash": "f20e609e8e0d0a9d",
+  "nodeCount": 95,
+  "edgeCount": 299,
+  "nodes": [
+    {
+      "id": "brand:gmktec",
+      "type": "brand",
+      "label": "GMKtec",
+      "kind": "maker"
+    },
+    {
+      "id": "brand:minisforum",
+      "type": "brand",
+      "label": "Minisforum",
+      "kind": "maker"
+    },
+    {
+      "id": "brand:framework",
+      "type": "brand",
+      "label": "Framework",
+      "kind": "maker"
+    },
+    {
+      "id": "brand:bosgame",
+      "type": "brand",
+      "label": "Bosgame",
+      "kind": "maker"
+    },
+    {
+      "id": "brand:beelink",
+      "type": "brand",
+      "label": "Beelink",
+      "kind": "maker"
+    },
+    {
+      "id": "brand:hp",
+      "type": "brand",
+      "label": "HP",
+      "kind": "oem"
+    },
+    {
+      "id": "brand:corsair",
+      "type": "brand",
+      "label": "Corsair",
+      "kind": "brand-on-platform"
+    },
+    {
+      "id": "brand:amd",
+      "type": "brand",
+      "label": "AMD",
+      "kind": "silicon-vendor"
+    },
+    {
+      "id": "brand:nvidia",
+      "type": "brand",
+      "label": "NVIDIA",
+      "kind": "silicon-vendor"
+    },
+    {
+      "id": "brand:asus",
+      "type": "brand",
+      "label": "ASUS",
+      "kind": "oem"
+    },
+    {
+      "id": "brand:apple",
+      "type": "brand",
+      "label": "Apple",
+      "kind": "vertical"
+    },
+    {
+      "id": "machine:gmktec-evo-x2-128",
+      "type": "machine",
+      "label": "EVO-X2 128GB/2TB (Ryzen AI Max+ 395)",
+      "kind": "system",
+      "memoryGb": 128
+    },
+    {
+      "id": "machine:gmktec-evo-x2-64",
+      "type": "machine",
+      "label": "EVO-X2 64GB/1TB",
+      "kind": "system",
+      "memoryGb": 64
+    },
+    {
+      "id": "machine:gmktec-evo-x3-128",
+      "type": "machine",
+      "label": "EVO-X3 128GB/2TB or 4TB",
+      "kind": "system",
+      "memoryGb": 128
+    },
+    {
+      "id": "machine:gmktec-evo-x5-pro-192",
+      "type": "machine",
+      "label": "EVO-X5 Pro 192GB (Ryzen AI Max+ PRO 495)",
+      "kind": "system",
+      "memoryGb": 192
+    },
+    {
+      "id": "machine:gmktec-evo-x1-pro-64",
+      "type": "machine",
+      "label": "EVO-X1 Pro 64GB/1TB (Ryzen AI 9 HX 470)",
+      "kind": "system",
+      "memoryGb": 64
+    },
+    {
+      "id": "machine:gmktec-evo-t2-64",
+      "type": "machine",
+      "label": "EVO-T2 64GB (Core Ultra X7 358H / X9 388H)",
+      "kind": "system",
+      "memoryGb": 64
+    },
+    {
+      "id": "machine:gmktec-k13-16",
+      "type": "machine",
+      "label": "NucBox K13 16GB (Core Ultra 7 256V)",
+      "kind": "system",
+      "memoryGb": 16
+    },
+    {
+      "id": "machine:gmktec-k17-plus-32",
+      "type": "machine",
+      "label": "NucBox K17 / K17 Plus 32GB (Core Ultra 5 226V / 7 258V)",
+      "kind": "system",
+      "memoryGb": 32
+    },
+    {
+      "id": "machine:gmktec-k11-64",
+      "type": "machine",
+      "label": "NucBox K11 (Ryzen 9 8945HS), barebone / 32GB / 64GB variants",
+      "kind": "system",
+      "memoryGb": null
+    },
+    {
+      "id": "machine:minisforum-ms-s1-max-128",
+      "type": "machine",
+      "label": "MS-S1 MAX 128GB (Ryzen AI Max+ 395, 2TB SSD)",
+      "kind": "system",
+      "memoryGb": 128
+    },
+    {
+      "id": "machine:minisforum-ms-s1-max-64",
+      "type": "machine",
+      "label": "MS-S1 MAX 64GB (Local AI Pilot Edition)",
+      "kind": "system",
+      "memoryGb": 64
+    },
+    {
+      "id": "machine:minisforum-ms-s1-max-p495",
+      "type": "machine",
+      "label": "MS-S1 MAX-P495 (Ryzen AI Max+ Pro 495, 192GB)",
+      "kind": "system",
+      "memoryGb": 192
+    },
+    {
+      "id": "machine:minisforum-bd395i-max",
+      "type": "machine",
+      "label": "BD395i MAX (mini-ITX board, Ryzen AI Max+ 395)",
+      "kind": "system",
+      "memoryGb": 128
+    },
+    {
+      "id": "machine:minisforum-ai-x1-pro-370",
+      "type": "machine",
+      "label": "AI X1 Pro-370 (Ryzen AI 9 HX 370)",
+      "kind": "system",
+      "memoryGb": null
+    },
+    {
+      "id": "machine:minisforum-ms-a2",
+      "type": "machine",
+      "label": "MS-A2 Workstation (Ryzen 9 9955HX)",
+      "kind": "system",
+      "memoryGb": null
+    },
+    {
+      "id": "machine:framework-desktop-395-128",
+      "type": "machine",
+      "label": "Desktop DIY Max+ 395 128GB",
+      "kind": "system",
+      "memoryGb": 128
+    },
+    {
+      "id": "machine:framework-desktop-395-64",
+      "type": "machine",
+      "label": "Desktop DIY Max+ 395 64GB",
+      "kind": "system",
+      "memoryGb": 64
+    },
+    {
+      "id": "machine:framework-desktop-385-32",
+      "type": "machine",
+      "label": "Desktop DIY Max 385 32GB",
+      "kind": "system",
+      "memoryGb": 32
+    },
+    {
+      "id": "machine:framework-desktop-495-192",
+      "type": "machine",
+      "label": "Desktop Max+ PRO 495 192GB",
+      "kind": "system",
+      "memoryGb": 192
+    },
+    {
+      "id": "machine:hp-z2-mini-g1a-128",
+      "type": "machine",
+      "label": "Z2 Mini G1a Ryzen AI Max+ PRO 395 128GB/1TB",
+      "kind": "system",
+      "memoryGb": 128
+    },
+    {
+      "id": "machine:corsair-ai-workstation-300",
+      "type": "machine",
+      "label": "AI Workstation 300 (395, 128GB)",
+      "kind": "system",
+      "memoryGb": 128
+    },
+    {
+      "id": "machine:amd-ryzen-ai-halo",
+      "type": "machine",
+      "label": "Ryzen AI Halo mini PC",
+      "kind": "system",
+      "memoryGb": 128
+    },
+    {
+      "id": "machine:beelink-gtr9-pro",
+      "type": "machine",
+      "label": "GTR9 Pro",
+      "kind": "system",
+      "memoryGb": 128
+    },
+    {
+      "id": "machine:bosgame-m5",
+      "type": "machine",
+      "label": "M5 AI Mini",
+      "kind": "system",
+      "memoryGb": 128
+    },
+    {
+      "id": "machine:nvidia-dgx-spark",
+      "type": "machine",
+      "label": "DGX Spark Founders Edition",
+      "kind": "system",
+      "memoryGb": 128
+    },
+    {
+      "id": "machine:asus-ascent-gx10",
+      "type": "machine",
+      "label": "Ascent GX10 1TB",
+      "kind": "system",
+      "memoryGb": 128
+    },
+    {
+      "id": "machine:apple-mac-mini-m5pro-64",
+      "type": "machine",
+      "label": "Mac mini M5 Pro 64GB",
+      "kind": "system",
+      "memoryGb": 64
+    },
+    {
+      "id": "machine:apple-mac-studio-m5max-64",
+      "type": "machine",
+      "label": "Mac Studio M5 Max 18c/40c GPU 64GB",
+      "kind": "system",
+      "memoryGb": 64
+    },
+    {
+      "id": "machine:apple-mac-studio-m5ultra-96",
+      "type": "machine",
+      "label": "Mac Studio M5 Ultra 30c/64c GPU 96GB",
+      "kind": "system",
+      "memoryGb": 96
+    },
+    {
+      "id": "machine:rtx-5090",
+      "type": "machine",
+      "label": "GeForce RTX 5090",
+      "kind": "gpu",
+      "memoryGb": 32
+    },
+    {
+      "id": "machine:rtx-pro-6000",
+      "type": "machine",
+      "label": "RTX PRO 6000 Blackwell",
+      "kind": "gpu",
+      "memoryGb": 96
+    },
+    {
+      "id": "machine:radeon-ai-pro-r9700",
+      "type": "machine",
+      "label": "Radeon AI PRO R9700",
+      "kind": "gpu",
+      "memoryGb": 32
+    },
+    {
+      "id": "machine:framework-board-385-32",
+      "type": "machine",
+      "label": "Framework Desktop Mainboard, Ryzen AI Max 385, 32GB",
+      "kind": "board",
+      "memoryGb": 32
+    },
+    {
+      "id": "machine:framework-board-395-64",
+      "type": "machine",
+      "label": "Framework Desktop Mainboard, Ryzen AI Max+ 395, 64GB",
+      "kind": "board",
+      "memoryGb": 64
+    },
+    {
+      "id": "machine:framework-board-395-128",
+      "type": "machine",
+      "label": "Framework Desktop Mainboard, Ryzen AI Max+ 395, 128GB",
+      "kind": "board",
+      "memoryGb": 128
+    },
+    {
+      "id": "silicon:amd-max-plus-395",
+      "type": "silicon",
+      "label": "AMD Ryzen AI Max+ 395 (Strix Halo)",
+      "bandwidthGBs": 256
+    },
+    {
+      "id": "silicon:amd-max-plus-pro-495",
+      "type": "silicon",
+      "label": "AMD Ryzen AI Max+ PRO 495",
+      "bandwidthGBs": 273
+    },
+    {
+      "id": "silicon:amd-max-385",
+      "type": "silicon",
+      "label": "AMD Ryzen AI Max 385",
+      "bandwidthGBs": null
+    },
+    {
+      "id": "silicon:amd-ai9-hx-470",
+      "type": "silicon",
+      "label": "AMD Ryzen AI 9 HX 470",
+      "bandwidthGBs": null
+    },
+    {
+      "id": "silicon:amd-ai9-hx-370",
+      "type": "silicon",
+      "label": "AMD Ryzen AI 9 HX 370",
+      "bandwidthGBs": null
+    },
+    {
+      "id": "silicon:amd-r9-8945hs",
+      "type": "silicon",
+      "label": "AMD Ryzen 9 8945HS",
+      "bandwidthGBs": null
+    },
+    {
+      "id": "silicon:amd-r9-9955hx",
+      "type": "silicon",
+      "label": "AMD Ryzen 9 9955HX",
+      "bandwidthGBs": null
+    },
+    {
+      "id": "silicon:intel-core-ultra-x-s3",
+      "type": "silicon",
+      "label": "Intel Core Ultra X7/X9 (series 3, Panther Lake)",
+      "bandwidthGBs": null
+    },
+    {
+      "id": "silicon:intel-core-ultra-200v",
+      "type": "silicon",
+      "label": "Intel Core Ultra 200V (Lunar Lake)",
+      "bandwidthGBs": null
+    },
+    {
+      "id": "silicon:nvidia-gb10",
+      "type": "silicon",
+      "label": "NVIDIA GB10 Grace Blackwell",
+      "bandwidthGBs": 273
+    },
+    {
+      "id": "silicon:apple-m5-pro",
+      "type": "silicon",
+      "label": "Apple M5 Pro",
+      "bandwidthGBs": 307
+    },
+    {
+      "id": "silicon:apple-m5-max",
+      "type": "silicon",
+      "label": "Apple M5 Max",
+      "bandwidthGBs": 614
+    },
+    {
+      "id": "silicon:apple-m5-ultra",
+      "type": "silicon",
+      "label": "Apple M5 Ultra",
+      "bandwidthGBs": 1200
+    },
+    {
+      "id": "silicon:nvidia-gb202",
+      "type": "silicon",
+      "label": "NVIDIA GB202 (RTX 5090 / RTX PRO 6000)",
+      "bandwidthGBs": null
+    },
+    {
+      "id": "silicon:amd-navi48",
+      "type": "silicon",
+      "label": "AMD Navi 48 (Radeon AI PRO R9700)",
+      "bandwidthGBs": 644.6
+    },
+    {
+      "id": "supplier:sixunited",
+      "type": "supplier",
+      "label": "Sixunited",
+      "role": "board-and-chassis-platform"
+    },
+    {
+      "id": "supplier:huntkey",
+      "type": "supplier",
+      "label": "Huntkey",
+      "role": "psu"
+    },
+    {
+      "id": "supplier:lite-on",
+      "type": "supplier",
+      "label": "Lite-On",
+      "role": "psu"
+    },
+    {
+      "id": "supplier:fsp",
+      "type": "supplier",
+      "label": "FSP Group",
+      "role": "psu"
+    },
+    {
+      "id": "supplier:cooler-master",
+      "type": "supplier",
+      "label": "Cooler Master",
+      "role": "cooling"
+    },
+    {
+      "id": "supplier:noctua",
+      "type": "supplier",
+      "label": "Noctua",
+      "role": "cooling"
+    },
+    {
+      "id": "supplier:kingston",
+      "type": "supplier",
+      "label": "Kingston",
+      "role": "ssd"
+    },
+    {
+      "id": "supplier:tsmc",
+      "type": "supplier",
+      "label": "TSMC",
+      "role": "soc-fab"
+    },
+    {
+      "id": "supplier:dram-vendors",
+      "type": "supplier",
+      "label": "LPDDR5X vendors (unnamed)",
+      "role": "memory"
+    },
+    {
+      "id": "channel:gmktec-eu-store",
+      "type": "channel",
+      "label": "GMKtec EU store (de.gmktec.com)",
+      "channelType": "brand-direct"
+    },
+    {
+      "id": "channel:gmktec-us-store",
+      "type": "channel",
+      "label": "GMKtec US store (gmktec.com)",
+      "channelType": "brand-direct"
+    },
+    {
+      "id": "channel:geizhals-at",
+      "type": "channel",
+      "label": "Geizhals.at / Galaxus.at",
+      "channelType": "retailer"
+    },
+    {
+      "id": "channel:datafox-ee",
+      "type": "channel",
+      "label": "datafox.ee",
+      "channelType": "retailer"
+    },
+    {
+      "id": "channel:minisforum-eu-store",
+      "type": "channel",
+      "label": "Minisforum EU store (minisforumpc.eu)",
+      "channelType": "brand-direct"
+    },
+    {
+      "id": "channel:minisforum-wholesale",
+      "type": "channel",
+      "label": "Minisforum corporate/bulk programme",
+      "channelType": "wholesale"
+    },
+    {
+      "id": "channel:framework-nl-store",
+      "type": "channel",
+      "label": "Framework NL store",
+      "channelType": "brand-direct"
+    },
+    {
+      "id": "channel:bosgame-eu-store",
+      "type": "channel",
+      "label": "Bosgame EU store",
+      "channelType": "brand-direct"
+    },
+    {
+      "id": "channel:beelink-store",
+      "type": "channel",
+      "label": "Beelink store",
+      "channelType": "brand-direct"
+    },
+    {
+      "id": "channel:bechtle-arp-nl",
+      "type": "channel",
+      "label": "Bechtle / ARP Netherlands",
+      "channelType": "b2b-reseller"
+    },
+    {
+      "id": "channel:apple-nl-store",
+      "type": "channel",
+      "label": "Apple NL store",
+      "channelType": "brand-direct"
+    },
+    {
+      "id": "channel:alibaba",
+      "type": "channel",
+      "label": "Alibaba.com / AliExpress",
+      "channelType": "marketplace"
+    },
+    {
+      "id": "channel:refurbed-nl",
+      "type": "channel",
+      "label": "refurbed.nl",
+      "channelType": "refurb"
+    },
+    {
+      "id": "channel:apple-refurb-nl",
+      "type": "channel",
+      "label": "Apple Refurbished NL",
+      "channelType": "refurb"
+    },
+    {
+      "id": "channel:used-private",
+      "type": "channel",
+      "label": "Marktplaats / eBay.nl / Tweakers V&A / Back Market NL",
+      "channelType": "used"
+    },
+    {
+      "id": "os:windows",
+      "type": "os",
+      "label": "windows"
+    },
+    {
+      "id": "os:linux",
+      "type": "os",
+      "label": "linux"
+    },
+    {
+      "id": "os:macos",
+      "type": "os",
+      "label": "macos"
+    },
+    {
+      "id": "workload:agent-node-10",
+      "type": "workload",
+      "label": "10 concurrent agent + headless-browser sessions",
+      "kind": "always-on"
+    },
+    {
+      "id": "workload:agent-node-20",
+      "type": "workload",
+      "label": "20 concurrent agent + headless-browser sessions",
+      "kind": "always-on"
+    },
+    {
+      "id": "workload:local-moe-30b-q4",
+      "type": "workload",
+      "label": "Local 30-35B mixture-of-experts at Q4",
+      "kind": "local-llm"
+    },
+    {
+      "id": "workload:local-dense-70b-q4",
+      "type": "workload",
+      "label": "Local 70B dense at Q4",
+      "kind": "local-llm"
+    },
+    {
+      "id": "workload:local-moe-120b",
+      "type": "workload",
+      "label": "Local 120B-class mixture-of-experts",
+      "kind": "local-llm"
+    },
+    {
+      "id": "workload:image-gen",
+      "type": "workload",
+      "label": "Local image generation (Flux, SDXL)",
+      "kind": "gpu-later"
+    },
+    {
+      "id": "workload:video-gen",
+      "type": "workload",
+      "label": "Local video generation (Wan, HunyuanVideo, LTX)",
+      "kind": "gpu-later"
+    }
+  ],
+  "edges": [
+    {
+      "from": "machine:gmktec-evo-x2-128",
+      "to": "brand:gmktec",
+      "rel": "made-by",
+      "evidence": "documented",
+      "sourceIds": [
+        "gmktec-s01",
+        "gmktec-s09",
+        "gmktec-s18",
+        "gmktec-s19",
+        "gmktec-s20",
+        "gmktec-s21",
+        "gmktec-s25",
+        "gmktec-s26",
+        "pn-s04",
+        "gm-s06"
+      ]
+    },
+    {
+      "from": "machine:gmktec-evo-x2-128",
+      "to": "silicon:amd-max-plus-395",
+      "rel": "uses",
+      "evidence": "documented",
+      "sourceIds": [
+        "gmktec-s01",
+        "gmktec-s09",
+        "gmktec-s18",
+        "gmktec-s19",
+        "gmktec-s20",
+        "gmktec-s21",
+        "gmktec-s25",
+        "gmktec-s26",
+        "pn-s04",
+        "gm-s06"
+      ]
+    },
+    {
+      "from": "machine:gmktec-evo-x2-128",
+      "to": "os:windows",
+      "rel": "runs",
+      "evidence": "inferred",
+      "sourceIds": []
+    },
+    {
+      "from": "machine:gmktec-evo-x2-128",
+      "to": "os:linux",
+      "rel": "runs",
+      "evidence": "inferred",
+      "sourceIds": []
+    },
+    {
+      "from": "machine:gmktec-evo-x2-128",
+      "to": "workload:agent-node-10",
+      "rel": "fits-capacity",
+      "evidence": "inferred",
+      "sourceIds": []
+    },
+    {
+      "from": "machine:gmktec-evo-x2-128",
+      "to": "workload:agent-node-20",
+      "rel": "fits-capacity",
+      "evidence": "inferred",
+      "sourceIds": []
+    },
+    {
+      "from": "machine:gmktec-evo-x2-128",
+      "to": "workload:local-moe-30b-q4",
+      "rel": "fits-capacity",
+      "evidence": "inferred",
+      "sourceIds": [
+        "gmktec-s20",
+        "minisforum-s08",
+        "minisforum-s09"
+      ]
+    },
+    {
+      "from": "machine:gmktec-evo-x2-128",
+      "to": "workload:local-dense-70b-q4",
+      "rel": "fits-capacity",
+      "evidence": "inferred",
+      "sourceIds": [
+        "gmktec-s18",
+        "minisforum-s09",
+        "minisforum-s10"
+      ]
+    },
+    {
+      "from": "machine:gmktec-evo-x2-128",
+      "to": "workload:local-moe-120b",
+      "rel": "fits-capacity",
+      "evidence": "inferred",
+      "sourceIds": [
+        "minisforum-s08",
+        "landscape-s19"
+      ]
+    },
+    {
+      "from": "machine:gmktec-evo-x2-64",
+      "to": "brand:gmktec",
+      "rel": "made-by",
+      "evidence": "documented",
+      "sourceIds": [
+        "gmktec-s01",
+        "gmktec-s09",
+        "pn-s04",
+        "rv-s02",
+        "gm-s06"
+      ]
+    },
+    {
+      "from": "machine:gmktec-evo-x2-64",
+      "to": "silicon:amd-max-plus-395",
+      "rel": "uses",
+      "evidence": "documented",
+      "sourceIds": [
+        "gmktec-s01",
+        "gmktec-s09",
+        "pn-s04",
+        "rv-s02",
+        "gm-s06"
+      ]
+    },
+    {
+      "from": "machine:gmktec-evo-x2-64",
+      "to": "os:windows",
+      "rel": "runs",
+      "evidence": "inferred",
+      "sourceIds": []
+    },
+    {
+      "from": "machine:gmktec-evo-x2-64",
+      "to": "os:linux",
+      "rel": "runs",
+      "evidence": "inferred",
+      "sourceIds": []
+    },
+    {
+      "from": "machine:gmktec-evo-x2-64",
+      "to": "workload:agent-node-10",
+      "rel": "fits-capacity",
+      "evidence": "inferred",
+      "sourceIds": []
+    },
+    {
+      "from": "machine:gmktec-evo-x2-64",
+      "to": "workload:agent-node-20",
+      "rel": "fits-capacity",
+      "evidence": "inferred",
+      "sourceIds": []
+    },
+    {
+      "from": "machine:gmktec-evo-x2-64",
+      "to": "workload:local-moe-30b-q4",
+      "rel": "fits-capacity",
+      "evidence": "inferred",
+      "sourceIds": [
+        "gmktec-s20",
+        "minisforum-s08",
+        "minisforum-s09"
+      ]
+    },
+    {
+      "from": "machine:gmktec-evo-x3-128",
+      "to": "brand:gmktec",
+      "rel": "made-by",
+      "evidence": "documented",
+      "sourceIds": [
+        "gmktec-s02",
+        "gmktec-s10",
+        "gmktec-s23",
+        "gmktec-s24",
+        "gmktec-s30"
+      ]
+    },
+    {
+      "from": "machine:gmktec-evo-x3-128",
+      "to": "silicon:amd-max-plus-395",
+      "rel": "uses",
+      "evidence": "documented",
+      "sourceIds": [
+        "gmktec-s02",
+        "gmktec-s10",
+        "gmktec-s23",
+        "gmktec-s24",
+        "gmktec-s30"
+      ]
+    },
+    {
+      "from": "machine:gmktec-evo-x3-128",
+      "to": "os:windows",
+      "rel": "runs",
+      "evidence": "inferred",
+      "sourceIds": []
+    },
+    {
+      "from": "machine:gmktec-evo-x3-128",
+      "to": "os:linux",
+      "rel": "runs",
+      "evidence": "inferred",
+      "sourceIds": []
+    },
+    {
+      "from": "machine:gmktec-evo-x3-128",
+      "to": "workload:agent-node-10",
+      "rel": "fits-capacity",
+      "evidence": "inferred",
+      "sourceIds": []
+    },
+    {
+      "from": "machine:gmktec-evo-x3-128",
+      "to": "workload:agent-node-20",
+      "rel": "fits-capacity",
+      "evidence": "inferred",
+      "sourceIds": []
+    },
+    {
+      "from": "machine:gmktec-evo-x3-128",
+      "to": "workload:local-moe-30b-q4",
+      "rel": "fits-capacity",
+      "evidence": "inferred",
+      "sourceIds": [
+        "gmktec-s20",
+        "minisforum-s08",
+        "minisforum-s09"
+      ]
+    },
+    {
+      "from": "machine:gmktec-evo-x3-128",
+      "to": "workload:local-dense-70b-q4",
+      "rel": "fits-capacity",
+      "evidence": "inferred",
+      "sourceIds": [
+        "gmktec-s18",
+        "minisforum-s09",
+        "minisforum-s10"
+      ]
+    },
+    {
+      "from": "machine:gmktec-evo-x3-128",
+      "to": "workload:local-moe-120b",
+      "rel": "fits-capacity",
+      "evidence": "inferred",
+      "sourceIds": [
+        "minisforum-s08",
+        "landscape-s19"
+      ]
+    },
+    {
+      "from": "machine:gmktec-evo-x5-pro-192",
+      "to": "brand:gmktec",
+      "rel": "made-by",
+      "evidence": "documented",
+      "sourceIds": [
+        "gmktec-s05",
+        "gmktec-s21"
+      ]
+    },
+    {
+      "from": "machine:gmktec-evo-x5-pro-192",
+      "to": "silicon:amd-max-plus-pro-495",
+      "rel": "uses",
+      "evidence": "documented",
+      "sourceIds": [
+        "gmktec-s05",
+        "gmktec-s21"
+      ]
+    },
+    {
+      "from": "machine:gmktec-evo-x5-pro-192",
+      "to": "os:windows",
+      "rel": "runs",
+      "evidence": "inferred",
+      "sourceIds": []
+    },
+    {
+      "from": "machine:gmktec-evo-x5-pro-192",
+      "to": "os:linux",
+      "rel": "runs",
+      "evidence": "inferred",
+      "sourceIds": []
+    },
+    {
+      "from": "machine:gmktec-evo-x5-pro-192",
+      "to": "workload:agent-node-10",
+      "rel": "fits-capacity",
+      "evidence": "inferred",
+      "sourceIds": []
+    },
+    {
+      "from": "machine:gmktec-evo-x5-pro-192",
+      "to": "workload:agent-node-20",
+      "rel": "fits-capacity",
+      "evidence": "inferred",
+      "sourceIds": []
+    },
+    {
+      "from": "machine:gmktec-evo-x5-pro-192",
+      "to": "workload:local-moe-30b-q4",
+      "rel": "fits-capacity",
+      "evidence": "inferred",
+      "sourceIds": [
+        "gmktec-s20",
+        "minisforum-s08",
+        "minisforum-s09"
+      ]
+    },
+    {
+      "from": "machine:gmktec-evo-x5-pro-192",
+      "to": "workload:local-dense-70b-q4",
+      "rel": "fits-capacity",
+      "evidence": "inferred",
+      "sourceIds": [
+        "gmktec-s18",
+        "minisforum-s09",
+        "minisforum-s10"
+      ]
+    },
+    {
+      "from": "machine:gmktec-evo-x5-pro-192",
+      "to": "workload:local-moe-120b",
+      "rel": "fits-capacity",
+      "evidence": "inferred",
+      "sourceIds": [
+        "minisforum-s08",
+        "landscape-s19"
+      ]
+    },
+    {
+      "from": "machine:gmktec-evo-x1-pro-64",
+      "to": "brand:gmktec",
+      "rel": "made-by",
+      "evidence": "documented",
+      "sourceIds": [
+        "gmktec-s03",
+        "gmktec-s08"
+      ]
+    },
+    {
+      "from": "machine:gmktec-evo-x1-pro-64",
+      "to": "silicon:amd-ai9-hx-470",
+      "rel": "uses",
+      "evidence": "documented",
+      "sourceIds": [
+        "gmktec-s03",
+        "gmktec-s08"
+      ]
+    },
+    {
+      "from": "machine:gmktec-evo-x1-pro-64",
+      "to": "os:windows",
+      "rel": "runs",
+      "evidence": "inferred",
+      "sourceIds": []
+    },
+    {
+      "from": "machine:gmktec-evo-x1-pro-64",
+      "to": "os:linux",
+      "rel": "runs",
+      "evidence": "inferred",
+      "sourceIds": []
+    },
+    {
+      "from": "machine:gmktec-evo-x1-pro-64",
+      "to": "workload:agent-node-10",
+      "rel": "fits-capacity",
+      "evidence": "inferred",
+      "sourceIds": []
+    },
+    {
+      "from": "machine:gmktec-evo-x1-pro-64",
+      "to": "workload:agent-node-20",
+      "rel": "fits-capacity",
+      "evidence": "inferred",
+      "sourceIds": []
+    },
+    {
+      "from": "machine:gmktec-evo-x1-pro-64",
+      "to": "workload:local-moe-30b-q4",
+      "rel": "fits-capacity",
+      "evidence": "inferred",
+      "sourceIds": [
+        "gmktec-s20",
+        "minisforum-s08",
+        "minisforum-s09"
+      ]
+    },
+    {
+      "from": "machine:gmktec-evo-t2-64",
+      "to": "brand:gmktec",
+      "rel": "made-by",
+      "evidence": "documented",
+      "sourceIds": [
+        "gmktec-s04",
+        "gmktec-s12"
+      ]
+    },
+    {
+      "from": "machine:gmktec-evo-t2-64",
+      "to": "silicon:intel-core-ultra-x-s3",
+      "rel": "uses",
+      "evidence": "documented",
+      "sourceIds": [
+        "gmktec-s04",
+        "gmktec-s12"
+      ]
+    },
+    {
+      "from": "machine:gmktec-evo-t2-64",
+      "to": "os:windows",
+      "rel": "runs",
+      "evidence": "inferred",
+      "sourceIds": []
+    },
+    {
+      "from": "machine:gmktec-evo-t2-64",
+      "to": "os:linux",
+      "rel": "runs",
+      "evidence": "inferred",
+      "sourceIds": []
+    },
+    {
+      "from": "machine:gmktec-evo-t2-64",
+      "to": "workload:agent-node-10",
+      "rel": "fits-capacity",
+      "evidence": "inferred",
+      "sourceIds": []
+    },
+    {
+      "from": "machine:gmktec-evo-t2-64",
+      "to": "workload:agent-node-20",
+      "rel": "fits-capacity",
+      "evidence": "inferred",
+      "sourceIds": []
+    },
+    {
+      "from": "machine:gmktec-evo-t2-64",
+      "to": "workload:local-moe-30b-q4",
+      "rel": "fits-capacity",
+      "evidence": "inferred",
+      "sourceIds": [
+        "gmktec-s20",
+        "minisforum-s08",
+        "minisforum-s09"
+      ]
+    },
+    {
+      "from": "machine:gmktec-k13-16",
+      "to": "brand:gmktec",
+      "rel": "made-by",
+      "evidence": "documented",
+      "sourceIds": [
+        "gmktec-s06",
+        "gmktec-s08"
+      ]
+    },
+    {
+      "from": "machine:gmktec-k13-16",
+      "to": "silicon:intel-core-ultra-200v",
+      "rel": "uses",
+      "evidence": "documented",
+      "sourceIds": [
+        "gmktec-s06",
+        "gmktec-s08"
+      ]
+    },
+    {
+      "from": "machine:gmktec-k13-16",
+      "to": "os:windows",
+      "rel": "runs",
+      "evidence": "inferred",
+      "sourceIds": []
+    },
+    {
+      "from": "machine:gmktec-k13-16",
+      "to": "os:linux",
+      "rel": "runs",
+      "evidence": "inferred",
+      "sourceIds": []
+    },
+    {
+      "from": "machine:gmktec-k17-plus-32",
+      "to": "brand:gmktec",
+      "rel": "made-by",
+      "evidence": "documented",
+      "sourceIds": [
+        "gmktec-s11"
+      ]
+    },
+    {
+      "from": "machine:gmktec-k17-plus-32",
+      "to": "silicon:intel-core-ultra-200v",
+      "rel": "uses",
+      "evidence": "documented",
+      "sourceIds": [
+        "gmktec-s11"
+      ]
+    },
+    {
+      "from": "machine:gmktec-k17-plus-32",
+      "to": "os:windows",
+      "rel": "runs",
+      "evidence": "inferred",
+      "sourceIds": []
+    },
+    {
+      "from": "machine:gmktec-k17-plus-32",
+      "to": "os:linux",
+      "rel": "runs",
+      "evidence": "inferred",
+      "sourceIds": []
+    },
+    {
+      "from": "machine:gmktec-k17-plus-32",
+      "to": "workload:agent-node-10",
+      "rel": "fits-capacity",
+      "evidence": "inferred",
+      "sourceIds": []
+    },
+    {
+      "from": "machine:gmktec-k11-64",
+      "to": "brand:gmktec",
+      "rel": "made-by",
+      "evidence": "documented",
+      "sourceIds": [
+        "gmktec-s13",
+        "gmktec-s14"
+      ]
+    },
+    {
+      "from": "machine:gmktec-k11-64",
+      "to": "silicon:amd-r9-8945hs",
+      "rel": "uses",
+      "evidence": "documented",
+      "sourceIds": [
+        "gmktec-s13",
+        "gmktec-s14"
+      ]
+    },
+    {
+      "from": "machine:gmktec-k11-64",
+      "to": "os:windows",
+      "rel": "runs",
+      "evidence": "inferred",
+      "sourceIds": []
+    },
+    {
+      "from": "machine:gmktec-k11-64",
+      "to": "os:linux",
+      "rel": "runs",
+      "evidence": "inferred",
+      "sourceIds": []
+    },
+    {
+      "from": "machine:minisforum-ms-s1-max-128",
+      "to": "brand:minisforum",
+      "rel": "made-by",
+      "evidence": "documented",
+      "sourceIds": [
+        "minisforum-s01",
+        "minisforum-s03",
+        "minisforum-s04",
+        "minisforum-s05",
+        "minisforum-s06",
+        "minisforum-s07",
+        "minisforum-s08",
+        "minisforum-s09",
+        "minisforum-s10",
+        "minisforum-s18",
+        "landscape-s21"
+      ]
+    },
+    {
+      "from": "machine:minisforum-ms-s1-max-128",
+      "to": "silicon:amd-max-plus-395",
+      "rel": "uses",
+      "evidence": "documented",
+      "sourceIds": [
+        "minisforum-s01",
+        "minisforum-s03",
+        "minisforum-s04",
+        "minisforum-s05",
+        "minisforum-s06",
+        "minisforum-s07",
+        "minisforum-s08",
+        "minisforum-s09",
+        "minisforum-s10",
+        "minisforum-s18",
+        "landscape-s21"
+      ]
+    },
+    {
+      "from": "machine:minisforum-ms-s1-max-128",
+      "to": "os:windows",
+      "rel": "runs",
+      "evidence": "inferred",
+      "sourceIds": []
+    },
+    {
+      "from": "machine:minisforum-ms-s1-max-128",
+      "to": "os:linux",
+      "rel": "runs",
+      "evidence": "inferred",
+      "sourceIds": []
+    },
+    {
+      "from": "machine:minisforum-ms-s1-max-128",
+      "to": "workload:agent-node-10",
+      "rel": "fits-capacity",
+      "evidence": "inferred",
+      "sourceIds": []
+    },
+    {
+      "from": "machine:minisforum-ms-s1-max-128",
+      "to": "workload:agent-node-20",
+      "rel": "fits-capacity",
+      "evidence": "inferred",
+      "sourceIds": []
+    },
+    {
+      "from": "machine:minisforum-ms-s1-max-128",
+      "to": "workload:local-moe-30b-q4",
+      "rel": "fits-capacity",
+      "evidence": "inferred",
+      "sourceIds": [
+        "gmktec-s20",
+        "minisforum-s08",
+        "minisforum-s09"
+      ]
+    },
+    {
+      "from": "machine:minisforum-ms-s1-max-128",
+      "to": "workload:local-dense-70b-q4",
+      "rel": "fits-capacity",
+      "evidence": "inferred",
+      "sourceIds": [
+        "gmktec-s18",
+        "minisforum-s09",
+        "minisforum-s10"
+      ]
+    },
+    {
+      "from": "machine:minisforum-ms-s1-max-128",
+      "to": "workload:local-moe-120b",
+      "rel": "fits-capacity",
+      "evidence": "inferred",
+      "sourceIds": [
+        "minisforum-s08",
+        "landscape-s19"
+      ]
+    },
+    {
+      "from": "machine:minisforum-ms-s1-max-64",
+      "to": "brand:minisforum",
+      "rel": "made-by",
+      "evidence": "documented",
+      "sourceIds": [
+        "minisforum-s01",
+        "minisforum-s03"
+      ]
+    },
+    {
+      "from": "machine:minisforum-ms-s1-max-64",
+      "to": "silicon:amd-max-plus-395",
+      "rel": "uses",
+      "evidence": "documented",
+      "sourceIds": [
+        "minisforum-s01",
+        "minisforum-s03"
+      ]
+    },
+    {
+      "from": "machine:minisforum-ms-s1-max-64",
+      "to": "os:windows",
+      "rel": "runs",
+      "evidence": "inferred",
+      "sourceIds": []
+    },
+    {
+      "from": "machine:minisforum-ms-s1-max-64",
+      "to": "os:linux",
+      "rel": "runs",
+      "evidence": "inferred",
+      "sourceIds": []
+    },
+    {
+      "from": "machine:minisforum-ms-s1-max-64",
+      "to": "workload:agent-node-10",
+      "rel": "fits-capacity",
+      "evidence": "inferred",
+      "sourceIds": []
+    },
+    {
+      "from": "machine:minisforum-ms-s1-max-64",
+      "to": "workload:agent-node-20",
+      "rel": "fits-capacity",
+      "evidence": "inferred",
+      "sourceIds": []
+    },
+    {
+      "from": "machine:minisforum-ms-s1-max-64",
+      "to": "workload:local-moe-30b-q4",
+      "rel": "fits-capacity",
+      "evidence": "inferred",
+      "sourceIds": [
+        "gmktec-s20",
+        "minisforum-s08",
+        "minisforum-s09"
+      ]
+    },
+    {
+      "from": "machine:minisforum-ms-s1-max-p495",
+      "to": "brand:minisforum",
+      "rel": "made-by",
+      "evidence": "documented",
+      "sourceIds": [
+        "minisforum-s01",
+        "minisforum-s03",
+        "minisforum-s10",
+        "minisforum-s17"
+      ]
+    },
+    {
+      "from": "machine:minisforum-ms-s1-max-p495",
+      "to": "silicon:amd-max-plus-pro-495",
+      "rel": "uses",
+      "evidence": "documented",
+      "sourceIds": [
+        "minisforum-s01",
+        "minisforum-s03",
+        "minisforum-s10",
+        "minisforum-s17"
+      ]
+    },
+    {
+      "from": "machine:minisforum-ms-s1-max-p495",
+      "to": "os:windows",
+      "rel": "runs",
+      "evidence": "inferred",
+      "sourceIds": []
+    },
+    {
+      "from": "machine:minisforum-ms-s1-max-p495",
+      "to": "os:linux",
+      "rel": "runs",
+      "evidence": "inferred",
+      "sourceIds": []
+    },
+    {
+      "from": "machine:minisforum-ms-s1-max-p495",
+      "to": "workload:agent-node-10",
+      "rel": "fits-capacity",
+      "evidence": "inferred",
+      "sourceIds": []
+    },
+    {
+      "from": "machine:minisforum-ms-s1-max-p495",
+      "to": "workload:agent-node-20",
+      "rel": "fits-capacity",
+      "evidence": "inferred",
+      "sourceIds": []
+    },
+    {
+      "from": "machine:minisforum-ms-s1-max-p495",
+      "to": "workload:local-moe-30b-q4",
+      "rel": "fits-capacity",
+      "evidence": "inferred",
+      "sourceIds": [
+        "gmktec-s20",
+        "minisforum-s08",
+        "minisforum-s09"
+      ]
+    },
+    {
+      "from": "machine:minisforum-ms-s1-max-p495",
+      "to": "workload:local-dense-70b-q4",
+      "rel": "fits-capacity",
+      "evidence": "inferred",
+      "sourceIds": [
+        "gmktec-s18",
+        "minisforum-s09",
+        "minisforum-s10"
+      ]
+    },
+    {
+      "from": "machine:minisforum-ms-s1-max-p495",
+      "to": "workload:local-moe-120b",
+      "rel": "fits-capacity",
+      "evidence": "inferred",
+      "sourceIds": [
+        "minisforum-s08",
+        "landscape-s19"
+      ]
+    },
+    {
+      "from": "machine:minisforum-bd395i-max",
+      "to": "brand:minisforum",
+      "rel": "made-by",
+      "evidence": "documented",
+      "sourceIds": [
+        "minisforum-s16"
+      ]
+    },
+    {
+      "from": "machine:minisforum-bd395i-max",
+      "to": "silicon:amd-max-plus-395",
+      "rel": "uses",
+      "evidence": "documented",
+      "sourceIds": [
+        "minisforum-s16"
+      ]
+    },
+    {
+      "from": "machine:minisforum-bd395i-max",
+      "to": "os:windows",
+      "rel": "runs",
+      "evidence": "inferred",
+      "sourceIds": []
+    },
+    {
+      "from": "machine:minisforum-bd395i-max",
+      "to": "os:linux",
+      "rel": "runs",
+      "evidence": "inferred",
+      "sourceIds": []
+    },
+    {
+      "from": "machine:minisforum-bd395i-max",
+      "to": "workload:agent-node-10",
+      "rel": "fits-capacity",
+      "evidence": "inferred",
+      "sourceIds": []
+    },
+    {
+      "from": "machine:minisforum-bd395i-max",
+      "to": "workload:agent-node-20",
+      "rel": "fits-capacity",
+      "evidence": "inferred",
+      "sourceIds": []
+    },
+    {
+      "from": "machine:minisforum-bd395i-max",
+      "to": "workload:local-moe-30b-q4",
+      "rel": "fits-capacity",
+      "evidence": "inferred",
+      "sourceIds": [
+        "gmktec-s20",
+        "minisforum-s08",
+        "minisforum-s09"
+      ]
+    },
+    {
+      "from": "machine:minisforum-bd395i-max",
+      "to": "workload:local-dense-70b-q4",
+      "rel": "fits-capacity",
+      "evidence": "inferred",
+      "sourceIds": [
+        "gmktec-s18",
+        "minisforum-s09",
+        "minisforum-s10"
+      ]
+    },
+    {
+      "from": "machine:minisforum-bd395i-max",
+      "to": "workload:local-moe-120b",
+      "rel": "fits-capacity",
+      "evidence": "inferred",
+      "sourceIds": [
+        "minisforum-s08",
+        "landscape-s19"
+      ]
+    },
+    {
+      "from": "machine:minisforum-ai-x1-pro-370",
+      "to": "brand:minisforum",
+      "rel": "made-by",
+      "evidence": "documented",
+      "sourceIds": [
+        "minisforum-s02",
+        "minisforum-s14",
+        "minisforum-s15"
+      ]
+    },
+    {
+      "from": "machine:minisforum-ai-x1-pro-370",
+      "to": "silicon:amd-ai9-hx-370",
+      "rel": "uses",
+      "evidence": "documented",
+      "sourceIds": [
+        "minisforum-s02",
+        "minisforum-s14",
+        "minisforum-s15"
+      ]
+    },
+    {
+      "from": "machine:minisforum-ai-x1-pro-370",
+      "to": "os:windows",
+      "rel": "runs",
+      "evidence": "inferred",
+      "sourceIds": []
+    },
+    {
+      "from": "machine:minisforum-ai-x1-pro-370",
+      "to": "os:linux",
+      "rel": "runs",
+      "evidence": "inferred",
+      "sourceIds": []
+    },
+    {
+      "from": "machine:minisforum-ms-a2",
+      "to": "brand:minisforum",
+      "rel": "made-by",
+      "evidence": "documented",
+      "sourceIds": [
+        "minisforum-s01",
+        "minisforum-s03"
+      ]
+    },
+    {
+      "from": "machine:minisforum-ms-a2",
+      "to": "silicon:amd-r9-9955hx",
+      "rel": "uses",
+      "evidence": "documented",
+      "sourceIds": [
+        "minisforum-s01",
+        "minisforum-s03"
+      ]
+    },
+    {
+      "from": "machine:minisforum-ms-a2",
+      "to": "os:windows",
+      "rel": "runs",
+      "evidence": "inferred",
+      "sourceIds": []
+    },
+    {
+      "from": "machine:minisforum-ms-a2",
+      "to": "os:linux",
+      "rel": "runs",
+      "evidence": "inferred",
+      "sourceIds": []
+    },
+    {
+      "from": "machine:framework-desktop-395-128",
+      "to": "brand:framework",
+      "rel": "made-by",
+      "evidence": "documented",
+      "sourceIds": [
+        "landscape-s07",
+        "landscape-s09",
+        "landscape-s21"
+      ]
+    },
+    {
+      "from": "machine:framework-desktop-395-128",
+      "to": "silicon:amd-max-plus-395",
+      "rel": "uses",
+      "evidence": "documented",
+      "sourceIds": [
+        "landscape-s07",
+        "landscape-s09",
+        "landscape-s21"
+      ]
+    },
+    {
+      "from": "machine:framework-desktop-395-128",
+      "to": "os:windows",
+      "rel": "runs",
+      "evidence": "inferred",
+      "sourceIds": []
+    },
+    {
+      "from": "machine:framework-desktop-395-128",
+      "to": "os:linux",
+      "rel": "runs",
+      "evidence": "inferred",
+      "sourceIds": []
+    },
+    {
+      "from": "machine:framework-desktop-395-128",
+      "to": "workload:agent-node-10",
+      "rel": "fits-capacity",
+      "evidence": "inferred",
+      "sourceIds": []
+    },
+    {
+      "from": "machine:framework-desktop-395-128",
+      "to": "workload:agent-node-20",
+      "rel": "fits-capacity",
+      "evidence": "inferred",
+      "sourceIds": []
+    },
+    {
+      "from": "machine:framework-desktop-395-128",
+      "to": "workload:local-moe-30b-q4",
+      "rel": "fits-capacity",
+      "evidence": "inferred",
+      "sourceIds": [
+        "gmktec-s20",
+        "minisforum-s08",
+        "minisforum-s09"
+      ]
+    },
+    {
+      "from": "machine:framework-desktop-395-128",
+      "to": "workload:local-dense-70b-q4",
+      "rel": "fits-capacity",
+      "evidence": "inferred",
+      "sourceIds": [
+        "gmktec-s18",
+        "minisforum-s09",
+        "minisforum-s10"
+      ]
+    },
+    {
+      "from": "machine:framework-desktop-395-128",
+      "to": "workload:local-moe-120b",
+      "rel": "fits-capacity",
+      "evidence": "inferred",
+      "sourceIds": [
+        "minisforum-s08",
+        "landscape-s19"
+      ]
+    },
+    {
+      "from": "machine:framework-desktop-395-64",
+      "to": "brand:framework",
+      "rel": "made-by",
+      "evidence": "documented",
+      "sourceIds": [
+        "landscape-s07"
+      ]
+    },
+    {
+      "from": "machine:framework-desktop-395-64",
+      "to": "silicon:amd-max-plus-395",
+      "rel": "uses",
+      "evidence": "documented",
+      "sourceIds": [
+        "landscape-s07"
+      ]
+    },
+    {
+      "from": "machine:framework-desktop-395-64",
+      "to": "os:windows",
+      "rel": "runs",
+      "evidence": "inferred",
+      "sourceIds": []
+    },
+    {
+      "from": "machine:framework-desktop-395-64",
+      "to": "os:linux",
+      "rel": "runs",
+      "evidence": "inferred",
+      "sourceIds": []
+    },
+    {
+      "from": "machine:framework-desktop-395-64",
+      "to": "workload:agent-node-10",
+      "rel": "fits-capacity",
+      "evidence": "inferred",
+      "sourceIds": []
+    },
+    {
+      "from": "machine:framework-desktop-395-64",
+      "to": "workload:agent-node-20",
+      "rel": "fits-capacity",
+      "evidence": "inferred",
+      "sourceIds": []
+    },
+    {
+      "from": "machine:framework-desktop-395-64",
+      "to": "workload:local-moe-30b-q4",
+      "rel": "fits-capacity",
+      "evidence": "inferred",
+      "sourceIds": [
+        "gmktec-s20",
+        "minisforum-s08",
+        "minisforum-s09"
+      ]
+    },
+    {
+      "from": "machine:framework-desktop-385-32",
+      "to": "brand:framework",
+      "rel": "made-by",
+      "evidence": "documented",
+      "sourceIds": [
+        "landscape-s07"
+      ]
+    },
+    {
+      "from": "machine:framework-desktop-385-32",
+      "to": "silicon:amd-max-385",
+      "rel": "uses",
+      "evidence": "documented",
+      "sourceIds": [
+        "landscape-s07"
+      ]
+    },
+    {
+      "from": "machine:framework-desktop-385-32",
+      "to": "os:windows",
+      "rel": "runs",
+      "evidence": "inferred",
+      "sourceIds": []
+    },
+    {
+      "from": "machine:framework-desktop-385-32",
+      "to": "os:linux",
+      "rel": "runs",
+      "evidence": "inferred",
+      "sourceIds": []
+    },
+    {
+      "from": "machine:framework-desktop-385-32",
+      "to": "workload:agent-node-10",
+      "rel": "fits-capacity",
+      "evidence": "inferred",
+      "sourceIds": []
+    },
+    {
+      "from": "machine:framework-desktop-495-192",
+      "to": "brand:framework",
+      "rel": "made-by",
+      "evidence": "documented",
+      "sourceIds": [
+        "landscape-s08",
+        "landscape-s10",
+        "landscape-s11"
+      ]
+    },
+    {
+      "from": "machine:framework-desktop-495-192",
+      "to": "silicon:amd-max-plus-pro-495",
+      "rel": "uses",
+      "evidence": "documented",
+      "sourceIds": [
+        "landscape-s08",
+        "landscape-s10",
+        "landscape-s11"
+      ]
+    },
+    {
+      "from": "machine:framework-desktop-495-192",
+      "to": "os:windows",
+      "rel": "runs",
+      "evidence": "inferred",
+      "sourceIds": []
+    },
+    {
+      "from": "machine:framework-desktop-495-192",
+      "to": "os:linux",
+      "rel": "runs",
+      "evidence": "inferred",
+      "sourceIds": []
+    },
+    {
+      "from": "machine:framework-desktop-495-192",
+      "to": "workload:agent-node-10",
+      "rel": "fits-capacity",
+      "evidence": "inferred",
+      "sourceIds": []
+    },
+    {
+      "from": "machine:framework-desktop-495-192",
+      "to": "workload:agent-node-20",
+      "rel": "fits-capacity",
+      "evidence": "inferred",
+      "sourceIds": []
+    },
+    {
+      "from": "machine:framework-desktop-495-192",
+      "to": "workload:local-moe-30b-q4",
+      "rel": "fits-capacity",
+      "evidence": "inferred",
+      "sourceIds": [
+        "gmktec-s20",
+        "minisforum-s08",
+        "minisforum-s09"
+      ]
+    },
+    {
+      "from": "machine:framework-desktop-495-192",
+      "to": "workload:local-dense-70b-q4",
+      "rel": "fits-capacity",
+      "evidence": "inferred",
+      "sourceIds": [
+        "gmktec-s18",
+        "minisforum-s09",
+        "minisforum-s10"
+      ]
+    },
+    {
+      "from": "machine:framework-desktop-495-192",
+      "to": "workload:local-moe-120b",
+      "rel": "fits-capacity",
+      "evidence": "inferred",
+      "sourceIds": [
+        "minisforum-s08",
+        "landscape-s19"
+      ]
+    },
+    {
+      "from": "machine:hp-z2-mini-g1a-128",
+      "to": "brand:hp",
+      "rel": "made-by",
+      "evidence": "documented",
+      "sourceIds": [
+        "landscape-s15"
+      ]
+    },
+    {
+      "from": "machine:hp-z2-mini-g1a-128",
+      "to": "silicon:amd-max-plus-395",
+      "rel": "uses",
+      "evidence": "documented",
+      "sourceIds": [
+        "landscape-s15"
+      ]
+    },
+    {
+      "from": "machine:hp-z2-mini-g1a-128",
+      "to": "os:windows",
+      "rel": "runs",
+      "evidence": "inferred",
+      "sourceIds": []
+    },
+    {
+      "from": "machine:hp-z2-mini-g1a-128",
+      "to": "os:linux",
+      "rel": "runs",
+      "evidence": "inferred",
+      "sourceIds": []
+    },
+    {
+      "from": "machine:hp-z2-mini-g1a-128",
+      "to": "workload:agent-node-10",
+      "rel": "fits-capacity",
+      "evidence": "inferred",
+      "sourceIds": []
+    },
+    {
+      "from": "machine:hp-z2-mini-g1a-128",
+      "to": "workload:agent-node-20",
+      "rel": "fits-capacity",
+      "evidence": "inferred",
+      "sourceIds": []
+    },
+    {
+      "from": "machine:hp-z2-mini-g1a-128",
+      "to": "workload:local-moe-30b-q4",
+      "rel": "fits-capacity",
+      "evidence": "inferred",
+      "sourceIds": [
+        "gmktec-s20",
+        "minisforum-s08",
+        "minisforum-s09"
+      ]
+    },
+    {
+      "from": "machine:hp-z2-mini-g1a-128",
+      "to": "workload:local-dense-70b-q4",
+      "rel": "fits-capacity",
+      "evidence": "inferred",
+      "sourceIds": [
+        "gmktec-s18",
+        "minisforum-s09",
+        "minisforum-s10"
+      ]
+    },
+    {
+      "from": "machine:hp-z2-mini-g1a-128",
+      "to": "workload:local-moe-120b",
+      "rel": "fits-capacity",
+      "evidence": "inferred",
+      "sourceIds": [
+        "minisforum-s08",
+        "landscape-s19"
+      ]
+    },
+    {
+      "from": "machine:corsair-ai-workstation-300",
+      "to": "brand:corsair",
+      "rel": "made-by",
+      "evidence": "documented",
+      "sourceIds": [
+        "landscape-s16"
+      ]
+    },
+    {
+      "from": "machine:corsair-ai-workstation-300",
+      "to": "silicon:amd-max-plus-395",
+      "rel": "uses",
+      "evidence": "documented",
+      "sourceIds": [
+        "landscape-s16"
+      ]
+    },
+    {
+      "from": "machine:corsair-ai-workstation-300",
+      "to": "os:windows",
+      "rel": "runs",
+      "evidence": "inferred",
+      "sourceIds": []
+    },
+    {
+      "from": "machine:corsair-ai-workstation-300",
+      "to": "os:linux",
+      "rel": "runs",
+      "evidence": "inferred",
+      "sourceIds": []
+    },
+    {
+      "from": "machine:corsair-ai-workstation-300",
+      "to": "workload:agent-node-10",
+      "rel": "fits-capacity",
+      "evidence": "inferred",
+      "sourceIds": []
+    },
+    {
+      "from": "machine:corsair-ai-workstation-300",
+      "to": "workload:agent-node-20",
+      "rel": "fits-capacity",
+      "evidence": "inferred",
+      "sourceIds": []
+    },
+    {
+      "from": "machine:corsair-ai-workstation-300",
+      "to": "workload:local-moe-30b-q4",
+      "rel": "fits-capacity",
+      "evidence": "inferred",
+      "sourceIds": [
+        "gmktec-s20",
+        "minisforum-s08",
+        "minisforum-s09"
+      ]
+    },
+    {
+      "from": "machine:corsair-ai-workstation-300",
+      "to": "workload:local-dense-70b-q4",
+      "rel": "fits-capacity",
+      "evidence": "inferred",
+      "sourceIds": [
+        "gmktec-s18",
+        "minisforum-s09",
+        "minisforum-s10"
+      ]
+    },
+    {
+      "from": "machine:corsair-ai-workstation-300",
+      "to": "workload:local-moe-120b",
+      "rel": "fits-capacity",
+      "evidence": "inferred",
+      "sourceIds": [
+        "minisforum-s08",
+        "landscape-s19"
+      ]
+    },
+    {
+      "from": "machine:amd-ryzen-ai-halo",
+      "to": "brand:amd",
+      "rel": "made-by",
+      "evidence": "documented",
+      "sourceIds": [
+        "landscape-s17",
+        "minisforum-s10"
+      ]
+    },
+    {
+      "from": "machine:amd-ryzen-ai-halo",
+      "to": "silicon:amd-max-plus-395",
+      "rel": "uses",
+      "evidence": "documented",
+      "sourceIds": [
+        "landscape-s17",
+        "minisforum-s10"
+      ]
+    },
+    {
+      "from": "machine:amd-ryzen-ai-halo",
+      "to": "os:windows",
+      "rel": "runs",
+      "evidence": "inferred",
+      "sourceIds": []
+    },
+    {
+      "from": "machine:amd-ryzen-ai-halo",
+      "to": "os:linux",
+      "rel": "runs",
+      "evidence": "inferred",
+      "sourceIds": []
+    },
+    {
+      "from": "machine:amd-ryzen-ai-halo",
+      "to": "workload:agent-node-10",
+      "rel": "fits-capacity",
+      "evidence": "inferred",
+      "sourceIds": []
+    },
+    {
+      "from": "machine:amd-ryzen-ai-halo",
+      "to": "workload:agent-node-20",
+      "rel": "fits-capacity",
+      "evidence": "inferred",
+      "sourceIds": []
+    },
+    {
+      "from": "machine:amd-ryzen-ai-halo",
+      "to": "workload:local-moe-30b-q4",
+      "rel": "fits-capacity",
+      "evidence": "inferred",
+      "sourceIds": [
+        "gmktec-s20",
+        "minisforum-s08",
+        "minisforum-s09"
+      ]
+    },
+    {
+      "from": "machine:amd-ryzen-ai-halo",
+      "to": "workload:local-dense-70b-q4",
+      "rel": "fits-capacity",
+      "evidence": "inferred",
+      "sourceIds": [
+        "gmktec-s18",
+        "minisforum-s09",
+        "minisforum-s10"
+      ]
+    },
+    {
+      "from": "machine:amd-ryzen-ai-halo",
+      "to": "workload:local-moe-120b",
+      "rel": "fits-capacity",
+      "evidence": "inferred",
+      "sourceIds": [
+        "minisforum-s08",
+        "landscape-s19"
+      ]
+    },
+    {
+      "from": "machine:beelink-gtr9-pro",
+      "to": "brand:beelink",
+      "rel": "made-by",
+      "evidence": "documented",
+      "sourceIds": [
+        "landscape-s18"
+      ]
+    },
+    {
+      "from": "machine:beelink-gtr9-pro",
+      "to": "silicon:amd-max-plus-395",
+      "rel": "uses",
+      "evidence": "documented",
+      "sourceIds": [
+        "landscape-s18"
+      ]
+    },
+    {
+      "from": "machine:beelink-gtr9-pro",
+      "to": "os:windows",
+      "rel": "runs",
+      "evidence": "inferred",
+      "sourceIds": []
+    },
+    {
+      "from": "machine:beelink-gtr9-pro",
+      "to": "os:linux",
+      "rel": "runs",
+      "evidence": "inferred",
+      "sourceIds": []
+    },
+    {
+      "from": "machine:beelink-gtr9-pro",
+      "to": "workload:agent-node-10",
+      "rel": "fits-capacity",
+      "evidence": "inferred",
+      "sourceIds": []
+    },
+    {
+      "from": "machine:beelink-gtr9-pro",
+      "to": "workload:agent-node-20",
+      "rel": "fits-capacity",
+      "evidence": "inferred",
+      "sourceIds": []
+    },
+    {
+      "from": "machine:beelink-gtr9-pro",
+      "to": "workload:local-moe-30b-q4",
+      "rel": "fits-capacity",
+      "evidence": "inferred",
+      "sourceIds": [
+        "gmktec-s20",
+        "minisforum-s08",
+        "minisforum-s09"
+      ]
+    },
+    {
+      "from": "machine:beelink-gtr9-pro",
+      "to": "workload:local-dense-70b-q4",
+      "rel": "fits-capacity",
+      "evidence": "inferred",
+      "sourceIds": [
+        "gmktec-s18",
+        "minisforum-s09",
+        "minisforum-s10"
+      ]
+    },
+    {
+      "from": "machine:beelink-gtr9-pro",
+      "to": "workload:local-moe-120b",
+      "rel": "fits-capacity",
+      "evidence": "inferred",
+      "sourceIds": [
+        "minisforum-s08",
+        "landscape-s19"
+      ]
+    },
+    {
+      "from": "machine:bosgame-m5",
+      "to": "brand:bosgame",
+      "rel": "made-by",
+      "evidence": "unsourced",
+      "sourceIds": []
+    },
+    {
+      "from": "machine:bosgame-m5",
+      "to": "silicon:amd-max-plus-395",
+      "rel": "uses",
+      "evidence": "unsourced",
+      "sourceIds": []
+    },
+    {
+      "from": "machine:bosgame-m5",
+      "to": "os:windows",
+      "rel": "runs",
+      "evidence": "inferred",
+      "sourceIds": []
+    },
+    {
+      "from": "machine:bosgame-m5",
+      "to": "os:linux",
+      "rel": "runs",
+      "evidence": "inferred",
+      "sourceIds": []
+    },
+    {
+      "from": "machine:bosgame-m5",
+      "to": "workload:agent-node-10",
+      "rel": "fits-capacity",
+      "evidence": "inferred",
+      "sourceIds": []
+    },
+    {
+      "from": "machine:bosgame-m5",
+      "to": "workload:agent-node-20",
+      "rel": "fits-capacity",
+      "evidence": "inferred",
+      "sourceIds": []
+    },
+    {
+      "from": "machine:bosgame-m5",
+      "to": "workload:local-moe-30b-q4",
+      "rel": "fits-capacity",
+      "evidence": "inferred",
+      "sourceIds": [
+        "gmktec-s20",
+        "minisforum-s08",
+        "minisforum-s09"
+      ]
+    },
+    {
+      "from": "machine:bosgame-m5",
+      "to": "workload:local-dense-70b-q4",
+      "rel": "fits-capacity",
+      "evidence": "inferred",
+      "sourceIds": [
+        "gmktec-s18",
+        "minisforum-s09",
+        "minisforum-s10"
+      ]
+    },
+    {
+      "from": "machine:bosgame-m5",
+      "to": "workload:local-moe-120b",
+      "rel": "fits-capacity",
+      "evidence": "inferred",
+      "sourceIds": [
+        "minisforum-s08",
+        "landscape-s19"
+      ]
+    },
+    {
+      "from": "machine:nvidia-dgx-spark",
+      "to": "brand:nvidia",
+      "rel": "made-by",
+      "evidence": "documented",
+      "sourceIds": [
+        "landscape-s12",
+        "landscape-s13",
+        "landscape-s14",
+        "landscape-s19"
+      ]
+    },
+    {
+      "from": "machine:nvidia-dgx-spark",
+      "to": "silicon:nvidia-gb10",
+      "rel": "uses",
+      "evidence": "documented",
+      "sourceIds": [
+        "landscape-s12",
+        "landscape-s13",
+        "landscape-s14",
+        "landscape-s19"
+      ]
+    },
+    {
+      "from": "machine:nvidia-dgx-spark",
+      "to": "os:linux",
+      "rel": "runs",
+      "evidence": "inferred",
+      "sourceIds": []
+    },
+    {
+      "from": "machine:nvidia-dgx-spark",
+      "to": "workload:agent-node-10",
+      "rel": "fits-capacity",
+      "evidence": "inferred",
+      "sourceIds": []
+    },
+    {
+      "from": "machine:nvidia-dgx-spark",
+      "to": "workload:agent-node-20",
+      "rel": "fits-capacity",
+      "evidence": "inferred",
+      "sourceIds": []
+    },
+    {
+      "from": "machine:nvidia-dgx-spark",
+      "to": "workload:local-moe-30b-q4",
+      "rel": "fits-capacity",
+      "evidence": "inferred",
+      "sourceIds": [
+        "gmktec-s20",
+        "minisforum-s08",
+        "minisforum-s09"
+      ]
+    },
+    {
+      "from": "machine:nvidia-dgx-spark",
+      "to": "workload:local-dense-70b-q4",
+      "rel": "fits-capacity",
+      "evidence": "inferred",
+      "sourceIds": [
+        "gmktec-s18",
+        "minisforum-s09",
+        "minisforum-s10"
+      ]
+    },
+    {
+      "from": "machine:nvidia-dgx-spark",
+      "to": "workload:local-moe-120b",
+      "rel": "fits-capacity",
+      "evidence": "inferred",
+      "sourceIds": [
+        "minisforum-s08",
+        "landscape-s19"
+      ]
+    },
+    {
+      "from": "machine:asus-ascent-gx10",
+      "to": "brand:asus",
+      "rel": "made-by",
+      "evidence": "documented",
+      "sourceIds": [
+        "landscape-s12",
+        "landscape-s13",
+        "landscape-s14"
+      ]
+    },
+    {
+      "from": "machine:asus-ascent-gx10",
+      "to": "silicon:nvidia-gb10",
+      "rel": "uses",
+      "evidence": "documented",
+      "sourceIds": [
+        "landscape-s12",
+        "landscape-s13",
+        "landscape-s14"
+      ]
+    },
+    {
+      "from": "machine:asus-ascent-gx10",
+      "to": "os:linux",
+      "rel": "runs",
+      "evidence": "inferred",
+      "sourceIds": []
+    },
+    {
+      "from": "machine:asus-ascent-gx10",
+      "to": "workload:agent-node-10",
+      "rel": "fits-capacity",
+      "evidence": "inferred",
+      "sourceIds": []
+    },
+    {
+      "from": "machine:asus-ascent-gx10",
+      "to": "workload:agent-node-20",
+      "rel": "fits-capacity",
+      "evidence": "inferred",
+      "sourceIds": []
+    },
+    {
+      "from": "machine:asus-ascent-gx10",
+      "to": "workload:local-moe-30b-q4",
+      "rel": "fits-capacity",
+      "evidence": "inferred",
+      "sourceIds": [
+        "gmktec-s20",
+        "minisforum-s08",
+        "minisforum-s09"
+      ]
+    },
+    {
+      "from": "machine:asus-ascent-gx10",
+      "to": "workload:local-dense-70b-q4",
+      "rel": "fits-capacity",
+      "evidence": "inferred",
+      "sourceIds": [
+        "gmktec-s18",
+        "minisforum-s09",
+        "minisforum-s10"
+      ]
+    },
+    {
+      "from": "machine:asus-ascent-gx10",
+      "to": "workload:local-moe-120b",
+      "rel": "fits-capacity",
+      "evidence": "inferred",
+      "sourceIds": [
+        "minisforum-s08",
+        "landscape-s19"
+      ]
+    },
+    {
+      "from": "machine:apple-mac-mini-m5pro-64",
+      "to": "brand:apple",
+      "rel": "made-by",
+      "evidence": "documented",
+      "sourceIds": [
+        "landscape-s02",
+        "landscape-s05"
+      ]
+    },
+    {
+      "from": "machine:apple-mac-mini-m5pro-64",
+      "to": "silicon:apple-m5-pro",
+      "rel": "uses",
+      "evidence": "documented",
+      "sourceIds": [
+        "landscape-s02",
+        "landscape-s05"
+      ]
+    },
+    {
+      "from": "machine:apple-mac-mini-m5pro-64",
+      "to": "os:macos",
+      "rel": "runs",
+      "evidence": "inferred",
+      "sourceIds": []
+    },
+    {
+      "from": "machine:apple-mac-mini-m5pro-64",
+      "to": "workload:agent-node-10",
+      "rel": "fits-capacity",
+      "evidence": "inferred",
+      "sourceIds": []
+    },
+    {
+      "from": "machine:apple-mac-mini-m5pro-64",
+      "to": "workload:agent-node-20",
+      "rel": "fits-capacity",
+      "evidence": "inferred",
+      "sourceIds": []
+    },
+    {
+      "from": "machine:apple-mac-mini-m5pro-64",
+      "to": "workload:local-moe-30b-q4",
+      "rel": "fits-capacity",
+      "evidence": "inferred",
+      "sourceIds": [
+        "gmktec-s20",
+        "minisforum-s08",
+        "minisforum-s09"
+      ]
+    },
+    {
+      "from": "machine:apple-mac-studio-m5max-64",
+      "to": "brand:apple",
+      "rel": "made-by",
+      "evidence": "documented",
+      "sourceIds": [
+        "landscape-s01",
+        "landscape-s03",
+        "landscape-s06"
+      ]
+    },
+    {
+      "from": "machine:apple-mac-studio-m5max-64",
+      "to": "silicon:apple-m5-max",
+      "rel": "uses",
+      "evidence": "documented",
+      "sourceIds": [
+        "landscape-s01",
+        "landscape-s03",
+        "landscape-s06"
+      ]
+    },
+    {
+      "from": "machine:apple-mac-studio-m5max-64",
+      "to": "os:macos",
+      "rel": "runs",
+      "evidence": "inferred",
+      "sourceIds": []
+    },
+    {
+      "from": "machine:apple-mac-studio-m5max-64",
+      "to": "workload:agent-node-10",
+      "rel": "fits-capacity",
+      "evidence": "inferred",
+      "sourceIds": []
+    },
+    {
+      "from": "machine:apple-mac-studio-m5max-64",
+      "to": "workload:agent-node-20",
+      "rel": "fits-capacity",
+      "evidence": "inferred",
+      "sourceIds": []
+    },
+    {
+      "from": "machine:apple-mac-studio-m5max-64",
+      "to": "workload:local-moe-30b-q4",
+      "rel": "fits-capacity",
+      "evidence": "inferred",
+      "sourceIds": [
+        "gmktec-s20",
+        "minisforum-s08",
+        "minisforum-s09"
+      ]
+    },
+    {
+      "from": "machine:apple-mac-studio-m5ultra-96",
+      "to": "brand:apple",
+      "rel": "made-by",
+      "evidence": "documented",
+      "sourceIds": [
+        "landscape-s01",
+        "landscape-s03",
+        "landscape-s04",
+        "landscape-s06",
+        "landscape-s28",
+        "landscape-s30"
+      ]
+    },
+    {
+      "from": "machine:apple-mac-studio-m5ultra-96",
+      "to": "silicon:apple-m5-ultra",
+      "rel": "uses",
+      "evidence": "documented",
+      "sourceIds": [
+        "landscape-s01",
+        "landscape-s03",
+        "landscape-s04",
+        "landscape-s06",
+        "landscape-s28",
+        "landscape-s30"
+      ]
+    },
+    {
+      "from": "machine:apple-mac-studio-m5ultra-96",
+      "to": "os:macos",
+      "rel": "runs",
+      "evidence": "inferred",
+      "sourceIds": []
+    },
+    {
+      "from": "machine:apple-mac-studio-m5ultra-96",
+      "to": "workload:agent-node-10",
+      "rel": "fits-capacity",
+      "evidence": "inferred",
+      "sourceIds": []
+    },
+    {
+      "from": "machine:apple-mac-studio-m5ultra-96",
+      "to": "workload:agent-node-20",
+      "rel": "fits-capacity",
+      "evidence": "inferred",
+      "sourceIds": []
+    },
+    {
+      "from": "machine:apple-mac-studio-m5ultra-96",
+      "to": "workload:local-moe-30b-q4",
+      "rel": "fits-capacity",
+      "evidence": "inferred",
+      "sourceIds": [
+        "gmktec-s20",
+        "minisforum-s08",
+        "minisforum-s09"
+      ]
+    },
+    {
+      "from": "machine:apple-mac-studio-m5ultra-96",
+      "to": "workload:local-dense-70b-q4",
+      "rel": "fits-capacity",
+      "evidence": "inferred",
+      "sourceIds": [
+        "gmktec-s18",
+        "minisforum-s09",
+        "minisforum-s10"
+      ]
+    },
+    {
+      "from": "machine:rtx-5090",
+      "to": "brand:nvidia",
+      "rel": "made-by",
+      "evidence": "documented",
+      "sourceIds": [
+        "landscape-s23"
+      ]
+    },
+    {
+      "from": "machine:rtx-5090",
+      "to": "silicon:nvidia-gb202",
+      "rel": "uses",
+      "evidence": "documented",
+      "sourceIds": [
+        "landscape-s23"
+      ]
+    },
+    {
+      "from": "machine:rtx-5090",
+      "to": "workload:local-moe-30b-q4",
+      "rel": "fits-capacity",
+      "evidence": "inferred",
+      "sourceIds": [
+        "gmktec-s20",
+        "minisforum-s08",
+        "minisforum-s09"
+      ]
+    },
+    {
+      "from": "machine:rtx-5090",
+      "to": "workload:image-gen",
+      "rel": "fits-capacity",
+      "evidence": "inferred",
+      "sourceIds": [
+        "stack-s22"
+      ]
+    },
+    {
+      "from": "machine:rtx-5090",
+      "to": "workload:video-gen",
+      "rel": "fits-capacity",
+      "evidence": "inferred",
+      "sourceIds": [
+        "stack-s22"
+      ]
+    },
+    {
+      "from": "machine:rtx-pro-6000",
+      "to": "brand:nvidia",
+      "rel": "made-by",
+      "evidence": "documented",
+      "sourceIds": [
+        "landscape-s25"
+      ]
+    },
+    {
+      "from": "machine:rtx-pro-6000",
+      "to": "silicon:nvidia-gb202",
+      "rel": "uses",
+      "evidence": "documented",
+      "sourceIds": [
+        "landscape-s25"
+      ]
+    },
+    {
+      "from": "machine:rtx-pro-6000",
+      "to": "workload:local-moe-30b-q4",
+      "rel": "fits-capacity",
+      "evidence": "inferred",
+      "sourceIds": [
+        "gmktec-s20",
+        "minisforum-s08",
+        "minisforum-s09"
+      ]
+    },
+    {
+      "from": "machine:rtx-pro-6000",
+      "to": "workload:local-dense-70b-q4",
+      "rel": "fits-capacity",
+      "evidence": "inferred",
+      "sourceIds": [
+        "gmktec-s18",
+        "minisforum-s09",
+        "minisforum-s10"
+      ]
+    },
+    {
+      "from": "machine:rtx-pro-6000",
+      "to": "workload:local-moe-120b",
+      "rel": "fits-capacity",
+      "evidence": "inferred",
+      "sourceIds": [
+        "minisforum-s08",
+        "landscape-s19"
+      ]
+    },
+    {
+      "from": "machine:rtx-pro-6000",
+      "to": "workload:image-gen",
+      "rel": "fits-capacity",
+      "evidence": "inferred",
+      "sourceIds": [
+        "stack-s22"
+      ]
+    },
+    {
+      "from": "machine:rtx-pro-6000",
+      "to": "workload:video-gen",
+      "rel": "fits-capacity",
+      "evidence": "inferred",
+      "sourceIds": [
+        "stack-s22"
+      ]
+    },
+    {
+      "from": "machine:radeon-ai-pro-r9700",
+      "to": "brand:amd",
+      "rel": "made-by",
+      "evidence": "documented",
+      "sourceIds": [
+        "landscape-s24"
+      ]
+    },
+    {
+      "from": "machine:radeon-ai-pro-r9700",
+      "to": "silicon:amd-navi48",
+      "rel": "uses",
+      "evidence": "documented",
+      "sourceIds": [
+        "landscape-s24"
+      ]
+    },
+    {
+      "from": "machine:radeon-ai-pro-r9700",
+      "to": "workload:local-moe-30b-q4",
+      "rel": "fits-capacity",
+      "evidence": "inferred",
+      "sourceIds": [
+        "gmktec-s20",
+        "minisforum-s08",
+        "minisforum-s09"
+      ]
+    },
+    {
+      "from": "machine:radeon-ai-pro-r9700",
+      "to": "workload:image-gen",
+      "rel": "fits-capacity",
+      "evidence": "inferred",
+      "sourceIds": [
+        "stack-s22"
+      ]
+    },
+    {
+      "from": "machine:radeon-ai-pro-r9700",
+      "to": "workload:video-gen",
+      "rel": "fits-capacity",
+      "evidence": "inferred",
+      "sourceIds": [
+        "stack-s22"
+      ]
+    },
+    {
+      "from": "machine:framework-board-385-32",
+      "to": "brand:framework",
+      "rel": "made-by",
+      "evidence": "documented",
+      "sourceIds": [
+        "supply-s04"
+      ]
+    },
+    {
+      "from": "machine:framework-board-385-32",
+      "to": "silicon:amd-max-385",
+      "rel": "uses",
+      "evidence": "documented",
+      "sourceIds": [
+        "supply-s04"
+      ]
+    },
+    {
+      "from": "machine:framework-board-385-32",
+      "to": "os:windows",
+      "rel": "runs",
+      "evidence": "inferred",
+      "sourceIds": []
+    },
+    {
+      "from": "machine:framework-board-385-32",
+      "to": "os:linux",
+      "rel": "runs",
+      "evidence": "inferred",
+      "sourceIds": []
+    },
+    {
+      "from": "machine:framework-board-385-32",
+      "to": "workload:agent-node-10",
+      "rel": "fits-capacity",
+      "evidence": "inferred",
+      "sourceIds": []
+    },
+    {
+      "from": "machine:framework-board-395-64",
+      "to": "brand:framework",
+      "rel": "made-by",
+      "evidence": "documented",
+      "sourceIds": [
+        "supply-s04"
+      ]
+    },
+    {
+      "from": "machine:framework-board-395-64",
+      "to": "silicon:amd-max-plus-395",
+      "rel": "uses",
+      "evidence": "documented",
+      "sourceIds": [
+        "supply-s04"
+      ]
+    },
+    {
+      "from": "machine:framework-board-395-64",
+      "to": "os:windows",
+      "rel": "runs",
+      "evidence": "inferred",
+      "sourceIds": []
+    },
+    {
+      "from": "machine:framework-board-395-64",
+      "to": "os:linux",
+      "rel": "runs",
+      "evidence": "inferred",
+      "sourceIds": []
+    },
+    {
+      "from": "machine:framework-board-395-64",
+      "to": "workload:agent-node-10",
+      "rel": "fits-capacity",
+      "evidence": "inferred",
+      "sourceIds": []
+    },
+    {
+      "from": "machine:framework-board-395-64",
+      "to": "workload:agent-node-20",
+      "rel": "fits-capacity",
+      "evidence": "inferred",
+      "sourceIds": []
+    },
+    {
+      "from": "machine:framework-board-395-64",
+      "to": "workload:local-moe-30b-q4",
+      "rel": "fits-capacity",
+      "evidence": "inferred",
+      "sourceIds": [
+        "gmktec-s20",
+        "minisforum-s08",
+        "minisforum-s09"
+      ]
+    },
+    {
+      "from": "machine:framework-board-395-128",
+      "to": "brand:framework",
+      "rel": "made-by",
+      "evidence": "documented",
+      "sourceIds": [
+        "supply-s04"
+      ]
+    },
+    {
+      "from": "machine:framework-board-395-128",
+      "to": "silicon:amd-max-plus-395",
+      "rel": "uses",
+      "evidence": "documented",
+      "sourceIds": [
+        "supply-s04"
+      ]
+    },
+    {
+      "from": "machine:framework-board-395-128",
+      "to": "os:windows",
+      "rel": "runs",
+      "evidence": "inferred",
+      "sourceIds": []
+    },
+    {
+      "from": "machine:framework-board-395-128",
+      "to": "os:linux",
+      "rel": "runs",
+      "evidence": "inferred",
+      "sourceIds": []
+    },
+    {
+      "from": "machine:framework-board-395-128",
+      "to": "workload:agent-node-10",
+      "rel": "fits-capacity",
+      "evidence": "inferred",
+      "sourceIds": []
+    },
+    {
+      "from": "machine:framework-board-395-128",
+      "to": "workload:agent-node-20",
+      "rel": "fits-capacity",
+      "evidence": "inferred",
+      "sourceIds": []
+    },
+    {
+      "from": "machine:framework-board-395-128",
+      "to": "workload:local-moe-30b-q4",
+      "rel": "fits-capacity",
+      "evidence": "inferred",
+      "sourceIds": [
+        "gmktec-s20",
+        "minisforum-s08",
+        "minisforum-s09"
+      ]
+    },
+    {
+      "from": "machine:framework-board-395-128",
+      "to": "workload:local-dense-70b-q4",
+      "rel": "fits-capacity",
+      "evidence": "inferred",
+      "sourceIds": [
+        "gmktec-s18",
+        "minisforum-s09",
+        "minisforum-s10"
+      ]
+    },
+    {
+      "from": "machine:framework-board-395-128",
+      "to": "workload:local-moe-120b",
+      "rel": "fits-capacity",
+      "evidence": "inferred",
+      "sourceIds": [
+        "minisforum-s08",
+        "landscape-s19"
+      ]
+    },
+    {
+      "from": "brand:gmktec",
+      "to": "silicon:amd-max-plus-395",
+      "rel": "ships",
+      "evidence": "documented",
+      "sourceIds": [
+        "gmktec-s02",
+        "gmktec-s10",
+        "gmktec-s23",
+        "gmktec-s24",
+        "gmktec-s30"
+      ]
+    },
+    {
+      "from": "brand:gmktec",
+      "to": "silicon:amd-max-plus-pro-495",
+      "rel": "ships",
+      "evidence": "documented",
+      "sourceIds": [
+        "gmktec-s05",
+        "gmktec-s21"
+      ]
+    },
+    {
+      "from": "brand:gmktec",
+      "to": "silicon:amd-ai9-hx-470",
+      "rel": "ships",
+      "evidence": "documented",
+      "sourceIds": [
+        "gmktec-s03",
+        "gmktec-s08"
+      ]
+    },
+    {
+      "from": "brand:gmktec",
+      "to": "silicon:intel-core-ultra-x-s3",
+      "rel": "ships",
+      "evidence": "documented",
+      "sourceIds": [
+        "gmktec-s04",
+        "gmktec-s12"
+      ]
+    },
+    {
+      "from": "brand:gmktec",
+      "to": "silicon:intel-core-ultra-200v",
+      "rel": "ships",
+      "evidence": "documented",
+      "sourceIds": [
+        "gmktec-s11"
+      ]
+    },
+    {
+      "from": "brand:gmktec",
+      "to": "silicon:amd-r9-8945hs",
+      "rel": "ships",
+      "evidence": "documented",
+      "sourceIds": [
+        "gmktec-s13",
+        "gmktec-s14"
+      ]
+    },
+    {
+      "from": "brand:minisforum",
+      "to": "silicon:amd-max-plus-395",
+      "rel": "ships",
+      "evidence": "documented",
+      "sourceIds": [
+        "minisforum-s16"
+      ]
+    },
+    {
+      "from": "brand:minisforum",
+      "to": "silicon:amd-max-plus-pro-495",
+      "rel": "ships",
+      "evidence": "documented",
+      "sourceIds": [
+        "minisforum-s01",
+        "minisforum-s03",
+        "minisforum-s10",
+        "minisforum-s17"
+      ]
+    },
+    {
+      "from": "brand:minisforum",
+      "to": "silicon:amd-ai9-hx-370",
+      "rel": "ships",
+      "evidence": "documented",
+      "sourceIds": [
+        "minisforum-s02",
+        "minisforum-s14",
+        "minisforum-s15"
+      ]
+    },
+    {
+      "from": "brand:minisforum",
+      "to": "silicon:amd-r9-9955hx",
+      "rel": "ships",
+      "evidence": "documented",
+      "sourceIds": [
+        "minisforum-s01",
+        "minisforum-s03"
+      ]
+    },
+    {
+      "from": "brand:framework",
+      "to": "silicon:amd-max-plus-395",
+      "rel": "ships",
+      "evidence": "documented",
+      "sourceIds": [
+        "supply-s04"
+      ]
+    },
+    {
+      "from": "brand:framework",
+      "to": "silicon:amd-max-385",
+      "rel": "ships",
+      "evidence": "documented",
+      "sourceIds": [
+        "supply-s04"
+      ]
+    },
+    {
+      "from": "brand:framework",
+      "to": "silicon:amd-max-plus-pro-495",
+      "rel": "ships",
+      "evidence": "documented",
+      "sourceIds": [
+        "landscape-s08",
+        "landscape-s10",
+        "landscape-s11"
+      ]
+    },
+    {
+      "from": "brand:hp",
+      "to": "silicon:amd-max-plus-395",
+      "rel": "ships",
+      "evidence": "documented",
+      "sourceIds": [
+        "landscape-s15"
+      ]
+    },
+    {
+      "from": "brand:corsair",
+      "to": "silicon:amd-max-plus-395",
+      "rel": "ships",
+      "evidence": "documented",
+      "sourceIds": [
+        "landscape-s16"
+      ]
+    },
+    {
+      "from": "brand:amd",
+      "to": "silicon:amd-max-plus-395",
+      "rel": "ships",
+      "evidence": "documented",
+      "sourceIds": [
+        "landscape-s17",
+        "minisforum-s10"
+      ]
+    },
+    {
+      "from": "brand:beelink",
+      "to": "silicon:amd-max-plus-395",
+      "rel": "ships",
+      "evidence": "documented",
+      "sourceIds": [
+        "landscape-s18"
+      ]
+    },
+    {
+      "from": "brand:bosgame",
+      "to": "silicon:amd-max-plus-395",
+      "rel": "ships",
+      "evidence": "unsourced",
+      "sourceIds": []
+    },
+    {
+      "from": "brand:nvidia",
+      "to": "silicon:nvidia-gb10",
+      "rel": "ships",
+      "evidence": "documented",
+      "sourceIds": [
+        "landscape-s12",
+        "landscape-s13",
+        "landscape-s14",
+        "landscape-s19"
+      ]
+    },
+    {
+      "from": "brand:asus",
+      "to": "silicon:nvidia-gb10",
+      "rel": "ships",
+      "evidence": "documented",
+      "sourceIds": [
+        "landscape-s12",
+        "landscape-s13",
+        "landscape-s14"
+      ]
+    },
+    {
+      "from": "brand:apple",
+      "to": "silicon:apple-m5-pro",
+      "rel": "ships",
+      "evidence": "documented",
+      "sourceIds": [
+        "landscape-s02",
+        "landscape-s05"
+      ]
+    },
+    {
+      "from": "brand:apple",
+      "to": "silicon:apple-m5-max",
+      "rel": "ships",
+      "evidence": "documented",
+      "sourceIds": [
+        "landscape-s01",
+        "landscape-s03",
+        "landscape-s06"
+      ]
+    },
+    {
+      "from": "brand:apple",
+      "to": "silicon:apple-m5-ultra",
+      "rel": "ships",
+      "evidence": "documented",
+      "sourceIds": [
+        "landscape-s01",
+        "landscape-s03",
+        "landscape-s04",
+        "landscape-s06",
+        "landscape-s28",
+        "landscape-s30"
+      ]
+    },
+    {
+      "from": "brand:nvidia",
+      "to": "silicon:nvidia-gb202",
+      "rel": "ships",
+      "evidence": "documented",
+      "sourceIds": [
+        "landscape-s25"
+      ]
+    },
+    {
+      "from": "brand:amd",
+      "to": "silicon:amd-navi48",
+      "rel": "ships",
+      "evidence": "documented",
+      "sourceIds": [
+        "landscape-s24"
+      ]
+    },
+    {
+      "from": "brand:gmktec",
+      "to": "channel:gmktec-eu-store",
+      "rel": "sold-via",
+      "evidence": "documented",
+      "sourceIds": [
+        "gmktec-s08",
+        "gmktec-s15",
+        "gmktec-s16",
+        "gmktec-s17"
+      ]
+    },
+    {
+      "from": "brand:gmktec",
+      "to": "channel:gmktec-us-store",
+      "rel": "sold-via",
+      "evidence": "documented",
+      "sourceIds": [
+        "gmktec-s07"
+      ]
+    },
+    {
+      "from": "brand:gmktec",
+      "to": "channel:geizhals-at",
+      "rel": "sold-via",
+      "evidence": "documented",
+      "sourceIds": [
+        "gmktec-s25"
+      ]
+    },
+    {
+      "from": "brand:gmktec",
+      "to": "channel:datafox-ee",
+      "rel": "sold-via",
+      "evidence": "documented",
+      "sourceIds": [
+        "gmktec-s26"
+      ]
+    },
+    {
+      "from": "brand:minisforum",
+      "to": "channel:minisforum-eu-store",
+      "rel": "sold-via",
+      "evidence": "documented",
+      "sourceIds": [
+        "minisforum-s01",
+        "minisforum-s02"
+      ]
+    },
+    {
+      "from": "brand:minisforum",
+      "to": "channel:minisforum-wholesale",
+      "rel": "sold-via",
+      "evidence": "documented",
+      "sourceIds": [
+        "partners-s20"
+      ]
+    },
+    {
+      "from": "brand:framework",
+      "to": "channel:framework-nl-store",
+      "rel": "sold-via",
+      "evidence": "documented",
+      "sourceIds": [
+        "supply-s04",
+        "landscape-s07"
+      ]
+    },
+    {
+      "from": "brand:bosgame",
+      "to": "channel:bosgame-eu-store",
+      "rel": "sold-via",
+      "evidence": "documented",
+      "sourceIds": [
+        "supply-s08"
+      ]
+    },
+    {
+      "from": "brand:beelink",
+      "to": "channel:beelink-store",
+      "rel": "sold-via",
+      "evidence": "documented",
+      "sourceIds": [
+        "landscape-s18"
+      ]
+    },
+    {
+      "from": "brand:hp",
+      "to": "channel:bechtle-arp-nl",
+      "rel": "sold-via",
+      "evidence": "documented",
+      "sourceIds": [
+        "landscape-s15"
+      ]
+    },
+    {
+      "from": "brand:apple",
+      "to": "channel:apple-nl-store",
+      "rel": "sold-via",
+      "evidence": "documented",
+      "sourceIds": [
+        "landscape-s01",
+        "landscape-s03"
+      ]
+    },
+    {
+      "from": "machine:gmktec-evo-x2-128",
+      "to": "supplier:sixunited",
+      "rel": "board",
+      "evidence": "documented",
+      "note": "AXB35-02 board per community wiki hardware page",
+      "sourceIds": [
+        "supply-s02",
+        "supply-s01"
+      ]
+    },
+    {
+      "from": "machine:gmktec-evo-x2-64",
+      "to": "supplier:sixunited",
+      "rel": "board",
+      "evidence": "documented",
+      "note": "AXB35-02 board per community wiki hardware page",
+      "sourceIds": [
+        "supply-s02",
+        "supply-s01"
+      ]
+    },
+    {
+      "from": "machine:gmktec-evo-x2-128",
+      "to": "supplier:huntkey",
+      "rel": "psu",
+      "evidence": "documented",
+      "note": "Huntkey HKA230195A2-0A7",
+      "sourceIds": [
+        "supply-s02"
+      ]
+    },
+    {
+      "from": "brand:bosgame",
+      "to": "supplier:sixunited",
+      "rel": "board",
+      "evidence": "documented",
+      "note": "Community wiki: about 90% of Chinese Strix Halo PCs share this platform (wiki, not primary)",
+      "sourceIds": [
+        "supply-s01"
+      ]
+    },
+    {
+      "from": "brand:corsair",
+      "to": "supplier:sixunited",
+      "rel": "board",
+      "evidence": "documented",
+      "note": "Community wiki (not primary)",
+      "sourceIds": [
+        "supply-s01"
+      ]
+    },
+    {
+      "from": "machine:minisforum-ms-s1-max-128",
+      "to": "supplier:lite-on",
+      "rel": "psu",
+      "evidence": "documented",
+      "note": "Internal 320 W PSU",
+      "sourceIds": [
+        "supply-s09"
+      ]
+    },
+    {
+      "from": "machine:minisforum-ms-s1-max-128",
+      "to": "supplier:kingston",
+      "rel": "ssd",
+      "evidence": "documented",
+      "note": "2TB QLC SSD in the review sample only",
+      "sourceIds": [
+        "supply-s09"
+      ]
+    },
+    {
+      "from": "brand:framework",
+      "to": "supplier:fsp",
+      "rel": "psu",
+      "evidence": "documented",
+      "note": "Semi-custom 400 W Flex ATX",
+      "sourceIds": [
+        "supply-s03"
+      ]
+    },
+    {
+      "from": "brand:framework",
+      "to": "supplier:cooler-master",
+      "rel": "cooling",
+      "evidence": "documented",
+      "note": "Co-developed thermal system",
+      "sourceIds": [
+        "supply-s03"
+      ]
+    },
+    {
+      "from": "brand:framework",
+      "to": "supplier:noctua",
+      "rel": "cooling",
+      "evidence": "documented",
+      "note": "Co-developed thermal system",
+      "sourceIds": [
+        "supply-s03"
+      ]
+    },
+    {
+      "from": "silicon:amd-max-plus-395",
+      "to": "supplier:tsmc",
+      "rel": "soc-fab",
+      "evidence": "inferred",
+      "note": "General industry knowledge, not verified this session",
+      "sourceIds": [
+        "supply-s03"
+      ]
+    },
+    {
+      "from": "silicon:amd-max-plus-395",
+      "to": "supplier:dram-vendors",
+      "rel": "memory",
+      "evidence": "rumor",
+      "note": "No opened source names the LPDDR5X vendor",
+      "sourceIds": [
+        "supply-s01",
+        "supply-s03",
+        "supply-s09"
+      ]
+    }
+  ]
+}

@@ -26,16 +26,29 @@ jobs:
           node-version: 24
           cache: pnpm
       - name: Install locked dependencies
+        timeout-minutes: 5
         run: pnpm install --frozen-lockfile
       - name: Verify supported toolchain
+        timeout-minutes: 2
         run: pnpm verify:toolchain
       - name: Lint
+        timeout-minutes: 3
         run: pnpm lint
       - name: Typecheck
+        timeout-minutes: 3
         run: pnpm typecheck
       - name: Test
+        timeout-minutes: 3
         run: pnpm test
       - name: Verify hardware editorial planner
+        timeout-minutes: 2
         run: node --test scripts/editorial/plan.test.mjs
+      - name: Verify compute data and generated graph
+        timeout-minutes: 2
+        run: |
+          node --test scripts/compute/compute.test.mjs
+          node scripts/compute/build.mjs --check
       - name: Build
+        timeout-minutes: 5
         run: pnpm build
+

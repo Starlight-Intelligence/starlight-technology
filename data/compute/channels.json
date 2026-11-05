@@ -1,0 +1,158 @@
+[
+  {
+    "id": "gmktec-eu-store",
+    "name": "GMKtec EU store (de.gmktec.com)",
+    "type": "brand-direct",
+    "region": "EU",
+    "note": "Ships mainly from Bremen; 2-year warranty; 7-day return; 15% restocking fee",
+    "sourceIds": [
+      "gmktec-s08",
+      "gmktec-s15",
+      "gmktec-s16",
+      "gmktec-s17"
+    ]
+  },
+  {
+    "id": "gmktec-us-store",
+    "name": "GMKtec US store (gmktec.com)",
+    "type": "brand-direct",
+    "region": "US",
+    "note": "1-year warranty; prices USD ex tax",
+    "sourceIds": [
+      "gmktec-s07"
+    ]
+  },
+  {
+    "id": "geizhals-at",
+    "name": "Geizhals.at / Galaxus.at",
+    "type": "retailer",
+    "region": "AT",
+    "note": "EVO-X2 128GB/2TB EUR 3,999 incl. 19% Austrian VAT",
+    "sourceIds": [
+      "gmktec-s25"
+    ]
+  },
+  {
+    "id": "datafox-ee",
+    "name": "datafox.ee",
+    "type": "retailer",
+    "region": "EE",
+    "note": "EVO-X2 128GB/2TB Win11 Pro EUR 4,450.20 incl. 24% Estonian VAT",
+    "sourceIds": [
+      "gmktec-s26"
+    ]
+  },
+  {
+    "id": "minisforum-eu-store",
+    "name": "Minisforum EU store (minisforumpc.eu)",
+    "type": "brand-direct",
+    "region": "EU",
+    "note": "Sale/regular price pairs; tax status not stated; customs handling unverified",
+    "sourceIds": [
+      "minisforum-s01",
+      "minisforum-s02"
+    ]
+  },
+  {
+    "id": "minisforum-wholesale",
+    "name": "Minisforum corporate/bulk programme",
+    "type": "wholesale",
+    "region": "EU",
+    "note": "Minimum 10 units, wholesale pricing unpublished, 3-year extended warranty, German warehouse",
+    "sourceIds": [
+      "partners-s20"
+    ]
+  },
+  {
+    "id": "framework-nl-store",
+    "name": "Framework NL store",
+    "type": "brand-direct",
+    "region": "NL",
+    "note": "VAT-inclusive prices; DIY boards out of stock on fetch day",
+    "sourceIds": [
+      "supply-s04",
+      "landscape-s07"
+    ]
+  },
+  {
+    "id": "bosgame-eu-store",
+    "name": "Bosgame EU store",
+    "type": "brand-direct",
+    "region": "EU",
+    "note": "June 2026 EUR 2,439.95 observation only; site blocked live fetch",
+    "sourceIds": [
+      "supply-s08"
+    ]
+  },
+  {
+    "id": "beelink-store",
+    "name": "Beelink store",
+    "type": "brand-direct",
+    "region": "EU/DE",
+    "note": "USD price on DE locale; 35-day pre-order",
+    "sourceIds": [
+      "landscape-s18"
+    ]
+  },
+  {
+    "id": "bechtle-arp-nl",
+    "name": "Bechtle / ARP Netherlands",
+    "type": "b2b-reseller",
+    "region": "NL",
+    "note": "HP Z2 Mini G1a; ships when available",
+    "sourceIds": [
+      "landscape-s15"
+    ]
+  },
+  {
+    "id": "apple-nl-store",
+    "name": "Apple NL store",
+    "type": "brand-direct",
+    "region": "NL",
+    "note": "Prices shown on iCulture / EveryMac, not on Apple's NL spec pages",
+    "sourceIds": [
+      "landscape-s01",
+      "landscape-s03"
+    ]
+  },
+  {
+    "id": "alibaba",
+    "name": "Alibaba.com / AliExpress",
+    "type": "marketplace",
+    "region": "CN to EU",
+    "note": "One Strix Halo 128GB snippet USD 3,027-3,107 (MOQ 1): no price edge for one unit; custom branding MOQ 500-1,000 per snippet for generic mini PCs",
+    "sourceIds": [
+      "supply-s24",
+      "supply-s28",
+      "supply-s25"
+    ]
+  },
+  {
+    "id": "refurbed-nl",
+    "name": "refurbed.nl",
+    "type": "refurb",
+    "region": "NL",
+    "note": "Business mini PCs EUR 164-495 in the listings seen; 12-month warranty",
+    "sourceIds": [
+      "supply-s17"
+    ]
+  },
+  {
+    "id": "apple-refurb-nl",
+    "name": "Apple Refurbished NL",
+    "type": "refurb",
+    "region": "NL",
+    "note": "No Mac Studio listed on 2026-10-05",
+    "sourceIds": [
+      "supply-s20"
+    ]
+  },
+  {
+    "id": "used-private",
+    "name": "Marktplaats / eBay.nl / Tweakers V&A / Back Market NL",
+    "type": "used",
+    "region": "NL/EU",
+    "note": "Not retrieved (blocked): no NL listing counts",
+    "sourceIds": []
+  }
+]

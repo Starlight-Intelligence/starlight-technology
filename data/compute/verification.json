@@ -1,0 +1,409 @@
+{
+  "items": [
+    {
+      "id": "t01",
+      "area": "technical",
+      "question": "Max GPU-addressable memory on Windows 11, 128GB Ryzen AI Max+ 395; is the 96GB cap real?",
+      "status": "partially-verified",
+      "finding": "AMD's own announcement (seen as search excerpt and via secondary HWBusters) says Variable Graphics Memory gives up to 96GB for a 128GB Ryzen AI Max+ 395 on Windows, introduced with Adrenalin 25.8.1 WHQL. So 96GB is the AMD-stated Windows maximum. It is set through AMD software (Adrenalin) per the LM Studio bug report; AMD pages with exact steps and any driver-level hard limit could not be opened. In practice the 96GB does not fully work in Vulkan llama.cpp/LM Studio: open reports show loading fails or stalls near 64GB on Windows even with 96GB set (Adrenalin 26.3.1, LM Studio 0.4.11).",
+      "caveat": "amd.com blog, FAQ blog, release note RN-RAD-WIN-25-10-RC-24 and product page: WebFetch timed out (2 attempts on the key ones); archive.org blocked; Firecrawl skipped per instructions.",
+      "sourceIds": [
+        "stack-s07",
+        "vt-s02",
+        "vt-s17",
+        "vt-s18"
+      ]
+    },
+    {
+      "id": "t02",
+      "area": "technical",
+      "question": "Linux max GTT/GPU memory (~124GB)?",
+      "status": "verified",
+      "finding": "AMD ROCm docs: GTT default is about 50% of RAM; recommended approach is a small BIOS VRAM reservation (e.g. 0.5GB) and raising the TTM/GTT limit (pages_limit, amd-ttm helper). The ~124GB figure is verified as a community configuration: kyuz0 guide sets amdgpu.gttsize=126976 (~124GB) and ttm.pages_limit=32505856. A llama.cpp issue (#14854) reports a 124GB GTT setup on Fedora 42. AMD docs give no officially guaranteed maximum number; 124GB is not an AMD-published cap.",
+      "caveat": "",
+      "sourceIds": [
+        "gaps-s31",
+        "stack-s01",
+        "vt-s19"
+      ]
+    },
+    {
+      "id": "t03",
+      "area": "technical",
+      "question": "Hyper-V GPU-P or WSL2 GPU compute with Strix Halo iGPU (Radeon 8060S)?",
+      "status": "partially-verified",
+      "finding": "WSL2: AMD's ROCm-on-Ryzen WSL guide says it is the first official WSL support for Ryzen Strix and Strix Halo APUs, requiring Adrenalin 26.2.2+ and the ROCDXG library, Ubuntu 24.04/22.04. The separate Radeon WSL matrix does not list the 8060S (it is a Radeon-card matrix). Hyper-V GPU-P: Microsoft's GPU partitioning doc is Windows Server, SR-IOV based, and lists only NVIDIA datacenter GPUs and AMD Radeon PRO V710; Strix Halo is not listed, and Hyper-V cannot be installed on Home edition. No page found confirming GPU-P on Strix Halo; treat as unsupported/unverified. Whether WSL ROCm can address 96GB was not found.",
+      "caveat": "Microsoft Learn Windows 11 client GPU-P page not located; only the Windows Server article opened.",
+      "sourceIds": [
+        "vt-s09",
+        "vt-s10",
+        "vt-s11",
+        "vt-s12",
+        "vt-s05"
+      ]
+    },
+    {
+      "id": "t04",
+      "area": "technical",
+      "question": "Win 11 Home vs Pro: Hyper-V, incoming RDP, BitLocker, Group Policy for update restarts; NL EUR prices",
+      "status": "partially-verified",
+      "finding": "Verified on Microsoft Learn: Hyper-V role cannot be installed on Windows 11 Home (Pro/Enterprise only). Home cannot host incoming Remote Desktop (can be a client); Pro can. BitLocker enablement is listed for Pro/Enterprise/Education editions, not Home; Home gets automatic device encryption (all editions) but it needs a Microsoft account with admin rights (or Entra/AD join) and a local-account-only device stays unprotected; since 24H2 the DMA/HSTI/Modern Standby prerequisites are gone. Update restarts: Learn documents Group Policy, MDM and registry controls (active hours default 8 AM-5 PM; 'Turn off auto-restart for updates during active hours' under Computer Configuration\\Administrative Templates\\Windows Components\\Windows Update; several restart GPOs are legacy and not applicable to Windows 11); the Learn page does not state that Home lacks gpedit (not verified from Microsoft), though Settings active hours and registry values exist regardless. Prices: Microsoft nl-nl store page did not load; a search excerpt from PCWelt says EUR 149 Home and EUR 259 Pro in a Microsoft Online Store, country unconfirmed and page 404 on fetch. Treat NL prices as unverifiable.",
+      "caveat": "microsoft.com/nl-nl/windows/get-windows-11 (opened, no prices); nl-nl /d/windows-11-pro and /d/windows-11-home product URLs timed out; pcwelt 404; support.microsoft.com gpedit article 404; microsoft.com Pro-vs-Home compare page 404.",
+      "sourceIds": [
+        "vt-s05",
+        "gaps-s16",
+        "vt-s07",
+        "stack-s09",
+        "vt-s27",
+        "vt-s28"
+      ]
+    },
+    {
+      "id": "t05",
+      "area": "technical",
+      "question": "Ollama and LM Studio on Windows with Strix Halo: supported backends and current state",
+      "status": "partially-verified",
+      "finding": "Ollama docs: Windows AMD acceleration via ROCm v7/HIP7 stack, listing Ryzen AI processors among supported hardware (exact gfx1151 entry not seen in the summary); Vulkan is available on Windows and Linux and enabled by default (OLLAMA_VULKAN=0 disables; GGML_VK_VISIBLE_DEVICES selects device). Recent Ollama release notes opened (v0.33.2 to v0.40.0 range) mention no AMD/Vulkan/Strix Halo items. LM Studio docs: Windows GPU runtimes include Vulkan and ROCm/HIP for AMD. LM Studio changelog opened shows llama.cpp runtime updates but no explicit Strix Halo/gfx1151 entries in the visible part. Known issue: Vulkan runtime in LM Studio on Windows fails near 64GB with 96GB set (#1790, open).",
+      "caveat": "Ollama docs/gpu.md on GitHub 404; LM Studio runtimes docs page 404; no per-GPU gfx1151 Windows confirmation found.",
+      "sourceIds": [
+        "vt-s14",
+        "vt-s15",
+        "vt-s16",
+        "vt-s17"
+      ]
+    },
+    {
+      "id": "t06",
+      "area": "technical",
+      "question": "GMKtec EVO-X3 exact specs from vendor page",
+      "status": "partially-verified",
+      "finding": "Vendor page not reachable (guessed URL 404; gmktec.com EVO-X3 URL not found). Secondary (Liliputing, opened): ports 1x USB4 (40Gbps), 1x USB-A 3.2 Gen2, 1x USB-A 3.2 Gen1, 1x USB-A 2.0, 1x OCuLink (PCIe Gen4 x4), 1x 2.5G RJ45, 1x HDMI 2.1, 3.5mm combo, DC IN 5.5x2.5mm external power (wattage not given); 353 x 186 x 41 mm; triple fans; two M.2 2280 slots up to 16TB; 128GB/2TB $3,600, 128GB/4TB $3,849. Search excerpts say launch on July 6, 2026 and up to 128GB LPDDR5X-8000. Single Ethernet at 2.5G, no second LAN.",
+      "caveat": "gmktec.com product URL guess returned 404; de.gmktec.com not tried successfully; PSU wattage unverifiable.",
+      "sourceIds": [
+        "vt-s21",
+        "vt-s22"
+      ]
+    },
+    {
+      "id": "t07",
+      "area": "technical",
+      "question": "GMKtec EVO-X2 exact ports, PSU, Ethernet, OCuLink, dimensions, SSD slots, 64GB variant",
+      "status": "verified",
+      "finding": "Vendor page: front 2x USB-A 3.2 Gen2, 1x USB4 Type-C, SD4.0 reader, audio combo; rear DP 1.4, HDMI 2.1, 1x USB-A 3.2 Gen2, 2x USB-A 2.0, 1x USB4 Type-C, 3.5mm audio, DC IN (5525), 1x RJ45 2.5G (Realtek 8125BG). No OCuLink listed in the spec table. 230W external adapter (19.5V 11.8A); sustained 120W, peak 140W. 193 x 185.8 x 77 mm. Dual M.2 2280 slots, PCIe 4.0 x4, up to 8TB each (16TB). Config list: 64GB+1TB, 128GB+1TB, 128GB+2TB (plus a 128GB+2TB bundle with Z.AI coding plan), all shown at $2,199.99 sale price at fetch time. So the 64GB variant is 1TB. (One fetch summary said 2TB/4TB options; the detailed config fetch listed the four variants above.)",
+      "caveat": "",
+      "sourceIds": [
+        "gmktec-s01"
+      ]
+    },
+    {
+      "id": "t08",
+      "area": "technical",
+      "question": "MS-S1 MAX USB4 v2 count/speeds, Ethernet, PCIe slot",
+      "status": "verified",
+      "finding": "Minisforum's page lists 2x USB4 V2 (80Gbps, rear) plus 2x USB4 (40Gbps, front), i.e. dual 80Gbps as STH says; the Liliputing '1x 80 + 2x 40' is not what the product page shows. Also 2x 10GbE RJ45 (Realtek RTL8127), USB 3.2 Gen2 x2 (one front, one rear), USB 2.0 x2, HDMI 2.1, dual M.2, PCIe x16 physical full-length slot running PCIe 4.0 x4, built-in 320W PSU (peak 160W, sustained 130W). Dimensions not on page. Teardown/review not opened.",
+      "caveat": "Teardown or review corroboration not opened (page budget).",
+      "sourceIds": [
+        "ex-s01"
+      ]
+    },
+    {
+      "id": "t09",
+      "area": "technical",
+      "question": "Minisforum EU store return window, warranty, return shipping",
+      "status": "verified",
+      "finding": "minisforumpc.eu refund policy: returns within 30 days of delivery, items must remain unopened; as a general rule all return shipping costs are borne by the customer, except Minisforum pays for defective-on-arrival or incorrect items; no restocking fee mentioned; no returns if scratches, dirt or customer-caused damage. Warranty: 24 months standard, extended by 1 year to 36 months for purchases from the EU Official Store on/after March 9, 2026; screen products stay 24 months; refurbished 12 months; Spain statutory 3 years. Site banners still say '2-Year Quality Guarantee', which conflicts with the policy text. Warranty repair shipping cost not found.",
+      "caveat": "",
+      "sourceIds": [
+        "co-s13",
+        "vt-s25"
+      ]
+    },
+    {
+      "id": "t10",
+      "area": "technical",
+      "question": "Ryzen AI Max+ 395 cores/threads and memory bus width from AMD page",
+      "status": "partially-verified",
+      "finding": "16 cores / 32 threads, 256-bit LPDDR5x up to 8000, Radeon 8060S 40 CU, max 128GB, per search excerpts that include the AMD product page entry and Notebookcheck/TechPowerUp. The AMD page itself never loaded (4 timeouts), so not read first-hand.",
+      "caveat": "amd.com product page (3 URL variants), Halo desktop page: timeouts; Notebookcheck 403; archive.org blocked.",
+      "sourceIds": [
+        "vt-s26"
+      ]
+    },
+    {
+      "id": "t11",
+      "area": "technical",
+      "question": "Special Windows settings for llama.cpp Vulkan on Strix Halo >64GB model memory",
+      "status": "partially-verified",
+      "finding": "The only documented step found is setting AMD GPU memory / Variable Graphics Memory to 96GB in Adrenalin (needs 25.8.1 or later per AMD announcement). No documented BIOS or driver step that removes the problem: open issues show Windows Vulkan loads still fail or stall near 64GB even with 96GB set (LM Studio #1790 with Adrenalin 26.3.1; llama.cpp #16575), and on Linux Vulkan >64GB is slow (#14854). All are unresolved/unconfirmed, so >64GB on Windows Vulkan is not reliably working. AMD's own VGM guidance page could not be opened to check for extra steps.",
+      "caveat": "AMD FAQ/blog pages timed out.",
+      "sourceIds": [
+        "stack-s07",
+        "vt-s17",
+        "vt-s18",
+        "vt-s19"
+      ]
+    },
+    {
+      "id": "l01",
+      "area": "legal",
+      "question": "EU customs duty rate on computers CN 8471 30 / 41 / 49 / 50: 0%?",
+      "status": "verified",
+      "finding": "Annex I to Reg. 2658/87 as amended by Implementing Regulation (EU) 2025/1926 (OJ L 31.10.2025, CN for 2026) shows 'Free' in the conventional duty column for all four lines. Quoted lines: '8471 30 00 Portable automatic data-processing machines, weighing not more than 10 kg, consisting of at least a central processing unit, a keyboard and a display Free p/st'; '8471 41 00 Comprising in the same housing at least a central processing unit and an input and output unit, whether or not combined Free p/st'; '8471 49 00 Other, presented in the form of systems Free p/st'; '8471 50 00 Processing units other than those of subheading 8471 41 or 8471 49, whether or not containing in the same housing one or two of the following types of unit: storage units, input units, output units Free p/st'. A trade-data site (secondary) reports erga omnes 0.000 percent for 8471500000. Access2Markets confirms 8471 50 00 is the code for base units / system boxes with CPU and main memory. A bare mini PC with no keyboard or screen is most plausibly 8471 50 00 or 8471 49 00; classification is the importer's call.",
+      "caveat": "The CN column was read, not the live TARIC measure list. Anti-dumping, safeguard or sanction measures that could attach to a Chinese-origin 10-digit TARIC code were not checked; the Access2Markets and TARIC live pages did not render data through the fetch tool. 'Free' means no ordinary customs duty; import VAT still applies (l02). Mini PCs that include a display could land in 8471 30 or 41. Binding Tariff Information was not sought.",
+      "sourceIds": [
+        "vl-s01",
+        "vl-s31",
+        "vl-s32"
+      ]
+    },
+    {
+      "id": "l02",
+      "area": "legal",
+      "question": "Dutch import VAT rate (21%) and the article 23 deferral permit",
+      "status": "verified",
+      "finding": "Douane: 'Meestal is het btw-tarief 21%. Voor sommige producten, zoals boeken en tijdschriften, is het tarief lager: 9%.' Belastingdienst: import VAT is computed on the customs value, made up of the price or transaction value, 'de bijkomende kosten tot op de plaats van bestemming binnen de EU (commissie, verpakking, vervoer en verzekering)' and 'de belastingen (geen btw) en heffingen bij invoer'. Belastingdienst permit page: the article 23 permit applies when you import goods from outside the EU and lets you 'de betaling uitstellen naar uw eerstvolgende btw-aangifte' (defer payment to your next VAT return).",
+      "caveat": "The Belastingdienst import-VAT page extraction did not itself state '21%'; the rate comes from the Douane page. Eligibility conditions for the permit (established in NL, regular importer, separate records) came only from a search-result snippet of a secondary site, so they are not verified from the Belastingdienst page. The rate for a business buyer who is the importer of record is the same 21%, with the permit changing only timing. A purchase from the German EU store of goods already in free circulation is not an import into NL; German or OSS VAT then applies, which these pages do not cover.",
+      "sourceIds": [
+        "vl-s04",
+        "vl-s05",
+        "vl-s06"
+      ]
+    },
+    {
+      "id": "l03",
+      "area": "legal",
+      "question": "EU temporary EUR 3 fixed duty on low-value parcels: scope, EUR 150 threshold, end date; does not apply to a multi-thousand-euro machine",
+      "status": "verified",
+      "finding": "Council Regulation (EU) 2026/382 Article 2: 'From 1 July 2026 until 1 July 2028, a customs duty of EUR 3 per item in a consignment the intrinsic value of which does not exceed a total of EUR 150 shall apply instead of the relief eliminated pursuant to Article 1 of this Regulation, where: (a) the importation of the goods is exempt from VAT in accordance with Article 143(1), point (ca), of Directive 2006/112/EC; or (b) the goods are in a postal consignment as defined in Article 1, point (24), of Delegated Regulation (EU) 2015/2446.' Article 1 deletes Articles 23 and 24 of Reg. 1186/2009 (the former EUR 150 duty relief). The Council cover note for Commission Delegated Regulation C(2026) 2760 says the same and adds that if the Data Hub is not operational by 1 July 2028 the Commission shall propose an extension. Douane: 'Voor zendingen tot en met EUR 150 heft de Douane sinds 1 juli 2026 invoerrechten. Het gaat om EUR 3 invoerrechten per productcategorie.' A consignment worth more than EUR 150 is outside the flat duty and 'hangt de hoogte af van de totale kosten, waar het product van gemaakt is en waar het vandaan komt' (Douane), meaning the normal tariff; for 8471 that is Free (l01).",
+      "caveat": "Douane says EUR 3 per product category while the Regulation says per item; the Council cover note refers to per item and to tariff sub-headings; wording differs between sources. Confirmed: a single machine above EUR 150 is not in scope. The Regulation text read is the original 2026/382; later amendments were not checked.",
+      "sourceIds": [
+        "vl-s02",
+        "vl-s03",
+        "vl-s04"
+      ]
+    },
+    {
+      "id": "l04",
+      "area": "legal",
+      "question": "Consumer 14-day withdrawal right when buying from an EU store of a non-EU brand; exclusions; B2B not covered; shorter store policy cannot override",
+      "status": "verified",
+      "finding": "Directive 2011/83/EU Article 9(1): 'the consumer shall have a period of 14 days to withdraw from a distance or off-premises contract, without giving any reason'. Article 2(1): consumer means 'any natural person who ... is acting for purposes which are outside his trade, business, craft or profession'. Article 25: 'consumers may not waive the rights conferred on them by the national measures transposing this Directive. Any contractual terms which directly or indirectly waive or restrict the rights ...' are not binding (text continues beyond the quoted part). Your Europe: 14 days from delivery for goods; exclusions include travel tickets and event bookings, perishable items, custom or personalized goods, opened digital content or software; consumers typically bear return postage unless the seller agreed or failed to inform. Your Europe business page: 'This only concerns selling to consumers who buy outside their professional sphere. It does not apply if you sell to other businesses.' So a store policy shorter than 14 days cannot cut the statutory right for a consumer, and a business buyer has no statutory withdrawal right. Article 14(1)-(2): the consumer bears only the direct cost of returning the goods and is liable only for diminished value from handling beyond what is needed to establish nature, characteristics and functioning.",
+      "caveat": "Article 25 applies where the law applicable to the contract is that of a Member State; a seller's choice of foreign law is a separate question not read here. Article 14 and 9 text is from the 2011 original; the amending Directive 2019/2161 was not read. Your Europe's exclusion list is a summary; the full Article 16 list was not read. The Directive applies to the contract with the trader that sells to the consumer; buying direct from a Chinese seller with shipment from China was not separately sourced, though Your Europe's consumer page says the right applies to purchases from professional sellers. Not legal advice.",
+      "sourceIds": [
+        "vl-s07",
+        "vl-s08",
+        "vl-s09"
+      ]
+    },
+    {
+      "id": "l05",
+      "area": "legal",
+      "question": "2-year legal guarantee (Directive 2019/771), reversed burden of proof period; can a seller shorten it for B2B?",
+      "status": "partially-verified",
+      "finding": "Directive 2019/771 Article 10(1): 'The seller shall be liable to the consumer for any lack of conformity which exists at the time when the goods were delivered and which becomes apparent within two years of that time.' Article 11(1): 'Any lack of conformity which becomes apparent within one year of the time when the goods were delivered shall be presumed to have existed at the time when the goods were delivered, unless proved otherwise' (recital 45: one year, or two years if a Member State chooses). Your Europe says the same and that some countries extend reversed burden to 2 years. Article 21(1): any contractual agreement which, 'to the detriment of the consumer', excludes or derogates from the national implementing measures 'shall not be binding on the consumer'. Your Europe: commercial guarantees 'can never exclude or reduce your rights under the minimum 2-year guarantee'. Article 2(2) defines consumer as a natural person acting outside trade, business, craft or profession.",
+      "caveat": "B2B shortening is not verified from a primary source: the Directive and Your Europe pages protect consumers only and say nothing about what business sellers and buyers may agree. Whether a Dutch seller can shorten or exclude the guarantee for a professional buyer depends on Dutch civil code and general terms, which were not opened. Treat as unverifiable for B2B. Whether the Dutch implementation uses 1 year or 2 years for the reversed burden was not checked. Article 10(6)/second-hand shorter periods (not below one year) are a separate rule.",
+      "sourceIds": [
+        "supply-s15",
+        "vl-s11",
+        "vl-s12"
+      ]
+    },
+    {
+      "id": "l06",
+      "area": "legal",
+      "question": "CE marking, RoHS, WEEE, ecodesign and GPSR obligations on an importer or reseller of computers; Stichting OPEN",
+      "status": "partially-verified",
+      "finding": "RoHS 2011/65/EU Article 9: importers 'place only EEE that complies with this Directive on the Union market' and 'ensure that the manufacturer has drawn up the technical documentation, that the EEE bears the CE marking and is accompanied by the required documents'. Commission CE page: importers check the non-EU manufacturer has taken the steps for EU market placement and that the EU declaration of conformity and technical documentation are available upon request. WEEE 2012/19/EU Article 3(1)(f): a producer includes anyone established in a Member State who 'places on the market of that Member State, on a professional basis, EEE from a third country or from another Member State', and anyone who sells by distance communication directly to private households or other users in a Member State while established in another Member State or a third country; Article 16: distance sellers register in the Member State they sell to, or through an authorised representative. Your Europe: WEEE crossed-out wheeled bin marking required; registration and reporting to the national register is free, other financial obligations vary. Ecodesign: Reg. 617/2013 Article 1 sets ecodesign requirements for computers and computer servers, covering desktop computers, integrated desktops, notebooks, thin clients, workstations and servers. GPSR 2023/988 Article 11: importers must ensure the product complies with the general safety requirement, 'indicate their name, their registered trade name or registered trade mark, their postal and electronic address' on the product, packaging or accompanying document, and ensure instructions and safety information in a language consumers can easily understand. Article 2(1): GPSR applies 'only to those aspects and risks or categories of risks which are not covered' by sector-specific Union requirements. Stichting OPEN homepage: 'Wanneer jij als producent/importeur/wederverkoper elektrische apparaten, lampen, batterijen en/of (fiets) accu's als eerste op de Nederlandse markt brengt, is de wettelijke Producentenverantwoordelijkheid op jou van toepassing.' Ondernemersplein: producer responsibility covers importers and foreign sellers selling directly to Dutch consumers; join Stichting OPEN and register in the Nationaal (W)EEE-register.",
+      "caveat": "Texts are original 2011-2013 versions; amendments were not read. Whether 617/2013 still applies as written in October 2026 and whether a given mini PC counts as a desktop computer was not checked. Which CE directives apply to a mini PC (EMC, LVD, RED for Wi-Fi and Bluetooth) was not sourced; the RED text was downloaded but not read. Importer status turns on who places the product on the Dutch market first: buying from the German EU store may leave the store as the importer, while buying direct from China makes the buyer the importer of record. That allocation is not sourced. The Stichting OPEN sub-pages returned 404; only the homepage was read.",
+      "sourceIds": [
+        "vl-s13",
+        "vl-s14",
+        "vl-s15",
+        "vl-s16",
+        "vl-s17",
+        "vl-s18",
+        "vl-s19",
+        "vl-s20"
+      ]
+    },
+    {
+      "id": "l07",
+      "area": "legal",
+      "question": "Affiliate-link disclosure: UCPD annex point, ACM 2024 guideline text, Dutch Reclamecode (social media and influencer marketing)",
+      "status": "verified",
+      "finding": "UCPD 2005/29/EC Annex I point 11 (always unfair): 'Using editorial content in the media to promote a product where a trader has paid for the promotion without making that clear in the content or by images or sounds clearly identifiable by the consumer (advertorial).' ACM Leidraad Bescherming Online Consument 2024, section 6: 'Er is ook sprake van een vergoeding als de influencer iets anders van het bedrijf krijgt. Bijvoorbeeld een korting, partnerschapsregeling, affiliated links, gratis producten, reizen of een uitnodiging voor een evenement.' Same section: 'Reclame moet als zodanig herkenbaar zijn. Consumenten moeten dus weten dat sprake is van een commerciele boodschap.' Section 5.1: 'Bij redactionele inhoud moet duidelijk zijn wanneer er sprake is van gesponsorde content.' and 'Maak geen reclame als onduidelijk is dat het om reclame gaat.' RSM 2022 article 3: 'a. Reclame via Social Media dient, in lijn met art. 11 NRC, duidelijk als zodanig herkenbaar te zijn. b. Indien een Verspreider een Relevante Relatie heeft met de Adverteerder, dient dat uitdrukkelijk in de uiting te worden vermeld.'",
+      "caveat": "The ACM guide has no separate 'native advertising' or affiliate-link section; the affiliate reference sits in the influencer section and the editorial-content rule in section 5. The RSM is scoped to social media; applying it to a website review with affiliate links goes through Nederlandse Reclame Code art. 11 (named in RSM, text not read) and the ACM guide. The RSM text was read from a DDMA-hosted copy, not from reclamecode.nl. Annex I is from the original 2005 text. Not legal advice.",
+      "sourceIds": [
+        "vl-s21",
+        "vl-s22",
+        "vl-s23"
+      ]
+    },
+    {
+      "id": "l08",
+      "area": "legal",
+      "question": "FTC Endorsement Guides (16 CFR 255) and UK ASA/CMA affiliate rule",
+      "status": "verified",
+      "finding": "16 CFR 255.5: 'When there exists a connection between the endorser and the seller of the advertised product that might materially affect the weight or credibility of the endorsement, and that connection is not reasonably expected by the audience, such connection must be disclosed clearly and conspicuously.' Also: 'A material connection needs to be disclosed when a significant minority of the audience for an endorsement does not understand or expect the connection.' The section includes an affiliate-link example (Example 11). UK ASA affiliate marketing page: for posts with affiliate-linked products 'it is likely that the post will need to include an identifier at the beginning, for example Ad', and for blogs 'including an identifier, for example Ad, in the title of the blog or article'. CMA on GOV.UK: 'It is not enough just to tag a brand in your post, use discount codes or affiliate links.'",
+      "caveat": "Quotes come through WebFetch extraction; the 14 examples in 255.5 were not individually read, so the affiliate example number is as reported by the extractor. The ASA statement that 'may receive commission' is generally insufficient is an extractor paraphrase of the page. The FTC rule and UK rules apply to US and UK audiences, not to a Dutch audience as such.",
+      "sourceIds": [
+        "vl-s24",
+        "vl-s25",
+        "vl-s26"
+      ]
+    },
+    {
+      "id": "l09",
+      "area": "legal",
+      "question": "GMKtec EU shipping policy (de.gmktec.com): customs value, duties, declared value; was the 'declares a lower commodity value' summary accurate?",
+      "status": "verified",
+      "finding": "The summary was accurate. The Versandrichtlinie page, section Steuern und Abgaben, reads: 'Wir versenden vorrangig aus dem deutschen Lager, um zusatzliche EU-Steuern zu vermeiden. Bei einem Versand aus China konnen Zollgebuhren oder Einfuhrsteuern anfallen, abhangig vom jeweiligen Land oder Gebiet. Um die Zollkosten zu reduzieren, deklarieren wir in der Regel einen niedrigeren Warenwert.' (umlauts dropped here; the page uses them). The English-path version returned the same sentence. Shipping area: orders via de.gmktec.com are delivered within the EU 'nur auf das europaische Festland (Inseln sind ausgeschlossen)'. An older or alternate page text returned by the extractor on the same site says: 'Steuern und Zolle konnen je nach Land und Region anfallen. Wir deklarieren die Artikel in der Regel zu einem niedrigeren Wert, um die Steuerlast zu reduzieren.' The 27 May 2025 customs notice (blog) words it more cautiously: 'To reduce your tax burden, we declare goods values within legally permitted limits (final charges are determined by local customs).' and 'All customs duties, import taxes and related costs are now the responsibility of the recipient.' It also lists no liability for packages 'Destroyed by customs due to unpaid duties', 'Returned due to lack of customs clearance' or 'Abandoned or not collected by the recipient', and offers Yanwen (taxes prepaid, under 3 kg) or DHL/FedEx (recipient self-clears, over 3 kg or express).",
+      "caveat": "Declared-value practice applies to shipments from China, not to stock in the German warehouse, per the policy's own wording. The pages do not say who is importer of record. The legality of declaring a lower value is not addressed by any page opened; for a business importer of record, the Belastingdienst page says import VAT is computed on the customs value, so a declared value below the transaction price is an exposure the buyer, not GMKtec, would carry. That last point is an inference from vl-s05 and not a statement by any page about GMKtec. Quotes were extracted through WebFetch; the Widerrufsrecht and shipping pages were fetched twice with consistent results. de.gmktec.com/pages/shipping-policy and /pages/warranty-policy returned 404.",
+      "sourceIds": [
+        "vl-s27",
+        "vl-s28",
+        "vl-s05"
+      ]
+    },
+    {
+      "id": "l10",
+      "area": "legal",
+      "question": "GMKtec EU returns and warranty: return days, restocking fee, who pays shipping, warranty months, mention of the 14-day withdrawal right",
+      "status": "partially-verified",
+      "finding": "FAQ (en path): 'If you are not satisfied with your products for any reason, you may request a return within 60 calendar days of the shipment date.' 'For returns and refunds requested for reasons other than a product fault, including change-of-mind returns, a 15% repackaging / restocking fee will be deducted from the refund.' 'All accessories must be new and unopened to be eligible for a refund.' Devices 'must be unused and, if possible, with their original packaging intact'. Refunds: about 5-8 days to major EU countries, 7-15 days elsewhere. Widerrufsrecht page: 'Bei Rucksendungen und Ruckerstattungsantragen aus anderen Grunden als einem Produktdefekt ... wird eine Gebuhr von 15 % fur Neuverpackung und Wiedereinlagerung vom Erstattungsbetrag abgezogen.' Return shipping for change-of-mind: the customer must send the device to the given location and bear shipping costs ('mussen das Gerat an den angegebenen Standort senden und die Versandkosten ubernehmen'); for warranty repairs the customer pays shipping to GMK and GMK returns it without shipping cost. Warranty: 'zweijahrige Garantie' (two years, from date of receipt) with free repairs; exclusions include commercial use, unauthorized repairs, accidents, misuse. Number of warranty months: 24 (stated as two years). The extractor found no explicit statement of the EU 14-day withdrawal period on the Widerrufsrecht page; it refers readers to a separate Ruckgabe- und Umtauschrichtlinie.",
+      "caveat": "The 15% deduction on change-of-mind returns sits on a page titled Widerrufsrecht. Directive 2011/83/EU Article 14(2) makes a consumer liable only for diminished value from handling beyond what is needed to establish the nature, characteristics and functioning of the goods, and Article 13 requires reimbursement of all payments; whether a flat 15% fee is compatible with a consumer's withdrawal right was not resolved by any source opened and is a legal question for counsel. The 60-day window runs from shipment date, not delivery. Warranty exclusion for 'commercial use' could affect a business buyer. Return policy page pulled via WebFetch summaries; the separate Ruckgabe- und Umtauschrichtlinie page was not located. The statutory 2-year guarantee (l05) is separate from this commercial warranty.",
+      "sourceIds": [
+        "vl-s29",
+        "vl-s30",
+        "vl-s08"
+      ]
+    }
+  ],
+  "programme": [
+    {
+      "id": "p01",
+      "was": "Windows 96 GB GPU-memory cap",
+      "status": "partially-verified",
+      "now": "AMD states up to 96 GB under Windows via Variable Graphics Memory (Adrenalin 25.8.1+), seen as excerpt and secondary only; open LM Studio and llama.cpp issues report Vulkan loads failing near 64 GB with 96 GB set.",
+      "items": [
+        "t01",
+        "t11"
+      ]
+    },
+    {
+      "id": "p02",
+      "was": "Independent EVO-X2 reviews including the 64 GB model",
+      "status": "partially-verified",
+      "now": "Five entries; only ServeTheHome has LLM and noise numbers and it tested 128 GB. No independent LLM speed test of the 64 GB unit; its iGPU can take up to 48 GB per Notebookcheck.",
+      "items": []
+    },
+    {
+      "id": "p03",
+      "was": "Independent EVO-X3 review",
+      "status": "partially-verified",
+      "now": "One independent hands-on (Notebookcheck, 2026-08-07, no noise or LLM data) and one maker-supplied, sponsored post (8B models only).",
+      "items": [
+        "t06"
+      ]
+    },
+    {
+      "id": "p04",
+      "was": "Minisforum EU return and warranty terms",
+      "status": "verified",
+      "now": "30 days from delivery, unopened, customer pays return shipping except defective or wrong items; 24 months, 36 for EU-store orders from 2026-03-09 (site banners say 2 years).",
+      "items": [
+        "t09"
+      ]
+    },
+    {
+      "id": "p05",
+      "was": "GMKtec shipping-policy declared-value wording",
+      "status": "verified",
+      "now": "The German policy page says it generally declares a lower goods value to reduce customs costs on China shipments; the German warehouse is described as avoiding extra EU taxes. No page names the importer of record.",
+      "items": [
+        "l09"
+      ]
+    },
+    {
+      "id": "p06",
+      "was": "EU duty on computers and Dutch import VAT",
+      "status": "verified",
+      "now": "CN 2026 shows 'Free' for 8471 30 00, 41 00, 49 00 and 50 00; Douane says import VAT is usually 21%. Live TARIC measures (anti-dumping on Chinese origin) were not retrievable.",
+      "items": [
+        "l01",
+        "l02",
+        "l03"
+      ]
+    },
+    {
+      "id": "p07",
+      "was": "Consumer withdrawal right and warranty",
+      "status": "verified",
+      "now": "14-day withdrawal and 2-year guarantee are consumer rights that a store policy cannot waive; they do not cover business purchases. B2B terms under Dutch civil law were not read.",
+      "items": [
+        "l04",
+        "l05"
+      ]
+    },
+    {
+      "id": "p08",
+      "was": "Windows 11 licence prices in the Netherlands",
+      "status": "verified",
+      "now": "Microsoft Store NL: Home EUR 145.00, Pro EUR 259.00 (USB, Dutch); VAT not stated on the page. A secondary excerpt said 149 and 259.",
+      "items": [
+        "t04"
+      ]
+    },
+    {
+      "id": "p09",
+      "was": "NL merchant prices (Tweakers, Coolblue, Megekko, Azerty)",
+      "status": "partially-verified",
+      "now": "Tweakers Pricewatch read for the EVO-X2; Alternate.nl read for DIY parts. Tweakers has no MS-S1 MAX, Bosgame M5 or Framework Desktop prices; Coolblue, Megekko and Azerty were not visited.",
+      "items": []
+    },
+    {
+      "id": "p10",
+      "was": "Complete DIY build totals",
+      "status": "partially-verified",
+      "now": "Parts priced at Alternate.nl (VAT included). Case, PSU and cooler compatibility with the Framework mainboard is not verified, so the totals are indicative.",
+      "items": []
+    },
+    {
+      "id": "p11",
+      "was": "Dutch used-market prices",
+      "status": "unverifiable",
+      "now": "Marktplaats blocked the browser ('Permission denied'); Tweakers Vraag & Aanbod not attempted.",
+      "items": []
+    },
+    {
+      "id": "p12",
+      "was": "GMKtec affiliate commission",
+      "status": "unverifiable",
+      "now": "Terms sit behind Awin signup; an owner action.",
+      "items": []
+    },
+    {
+      "id": "p13",
+      "was": "Mac Studio 128 GB and M5 Ultra configured EUR prices",
+      "status": "unverifiable",
+      "now": "Apple NL shows entry prices only (M5 Max EUR 3,029; M5 Ultra EUR 6,649); configured prices need the configurator.",
+      "items": []
+    },
+    {
+      "id": "p14",
+      "was": "Sixunited MOQ, NRE and certification costs",
+      "status": "unverifiable",
+      "now": "Not found in public sources.",
+      "items": []
+    },
+    {
+      "id": "p15",
+      "was": "Hyper-V GPU partitioning or WSL2 GPU on Strix Halo",
+      "status": "partially-verified",
+      "now": "AMD documents WSL2 ROCm support for Strix and Strix Halo (Adrenalin 26.2.2+, ROCDXG, Ubuntu). Microsoft's GPU-P document is Windows Server only and does not list Strix Halo.",
+      "items": [
+        "t03"
+      ]
+    }
+  ]
+}

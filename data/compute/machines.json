@@ -1,0 +1,2065 @@
+[
+  {
+    "id": "gmktec-evo-x2-128",
+    "kind": "system",
+    "brandId": "gmktec",
+    "model": "EVO-X2 128GB/2TB (Ryzen AI Max+ 395)",
+    "siliconId": "amd-max-plus-395",
+    "status": "current",
+    "releaseDate": "2025-05 (listed on Geizhals since 2025-05-06)",
+    "memory": {
+      "gb": 128,
+      "type": "LPDDR5X",
+      "speedMTs": "8000",
+      "soldered": true,
+      "upgradable": false,
+      "bandwidthGBs": 256,
+      "gpuAddressable": "up to 96 via BIOS (manufacturer/reviews)",
+      "maxGb": null
+    },
+    "os": [
+      "windows",
+      "linux"
+    ],
+    "prices": [
+      {
+        "kind": "msrp",
+        "amount": 2199.99,
+        "currency": "USD",
+        "merchant": "gmktec.com",
+        "region": "US",
+        "variant": "128GB/2TB (all variants shown at same price)",
+        "includesTax": false,
+        "verifiedOn": "2026-10-05",
+        "url": "https://www.gmktec.com/products/amd-ryzen%E2%84%A2-ai-max-395-evo-x2-ai-mini-pc",
+        "evidence": "page-read",
+        "note": "sale from regular 2,599.99; tax status not stated",
+        "merchantHost": "gmktec.com",
+        "sourceId": "gmktec-s01"
+      },
+      {
+        "kind": "merchant",
+        "amount": 3999,
+        "currency": "EUR",
+        "merchant": "galaxus.at via Geizhals.at",
+        "region": "AT",
+        "variant": "128GB/2TB",
+        "includesTax": true,
+        "verifiedOn": "2026-10-05",
+        "url": "https://geizhals.at/gmktec-evo-x2-a3485299.html",
+        "evidence": "page-read",
+        "note": "19% Austrian VAT per page; Proshop.at 4,123.72",
+        "merchantHost": "geizhals.at",
+        "sourceId": "gmktec-s25"
+      },
+      {
+        "kind": "merchant",
+        "amount": 4450.2,
+        "currency": "EUR",
+        "merchant": "datafox.ee",
+        "region": "EE",
+        "variant": "128GB/2TB Win11 Pro",
+        "includesTax": true,
+        "verifiedOn": "2026-10-05",
+        "url": "https://pood.datafox.ee/evo-x2-amd-ryzen-ai-max-395-128gb-ram-2tb-ssd",
+        "evidence": "page-read",
+        "note": "24% VAT; EUR 3,588.87 ex-VAT",
+        "merchantHost": "datafox.ee",
+        "sourceId": "gmktec-s26"
+      },
+      {
+        "kind": "merchant",
+        "amount": 4319,
+        "currency": "EUR",
+        "merchant": "Tweakers Pricewatch (lowest listed)",
+        "region": "NL",
+        "variant": "128GB/2TB with Windows 11 Pro",
+        "includesTax": null,
+        "verifiedOn": "2026-10-05",
+        "evidence": "listing",
+        "sourceId": "pn-s04",
+        "merchantHost": "tweakers.net",
+        "note": "Lowest listed price on Tweakers Pricewatch; the selling shop is not named and tax status is not stated. Not used as a headline price."
+      }
+    ],
+    "llmEvidence": [
+      {
+        "model": "Llama 3.3 70B",
+        "quant": "Q6_K",
+        "tokensPerSecond": "3.7-3.8",
+        "backend": "GPU full offload (ROCm/Vulkan not stated)",
+        "source": "independent",
+        "sourceIds": [
+          "gmktec-s18"
+        ]
+      },
+      {
+        "model": "Qwen3-32B dense",
+        "quant": "not stated",
+        "tokensPerSecond": "10.4-10.5",
+        "backend": "not stated",
+        "source": "independent",
+        "sourceIds": [
+          "gmktec-s18"
+        ]
+      },
+      {
+        "model": "Qwen3 30B MoE",
+        "quant": "Q4_K_M",
+        "tokensPerSecond": "86.1 (peak, generation)",
+        "backend": "llama.cpp Vulkan RADV, Fedora 43",
+        "source": "independent",
+        "sourceIds": [
+          "gmktec-s20"
+        ]
+      },
+      {
+        "model": "Qwen3-Coder-Next 80B",
+        "quant": "Q4_K_M",
+        "tokensPerSecond": "42.7",
+        "backend": "llama.cpp, Fedora 43",
+        "source": "independent",
+        "sourceIds": [
+          "gmktec-s20"
+        ]
+      },
+      {
+        "model": "dense 70B",
+        "quant": "not stated",
+        "tokensPerSecond": "4-6",
+        "backend": "not stated",
+        "source": "independent",
+        "sourceIds": [
+          "gmktec-s21"
+        ]
+      }
+    ],
+    "issues": [
+      "Soldered RAM, no 128GB upgrade path",
+      "Single 2.5GbE only",
+      "Fan noise 41-43 dBA under AI load (STH), audible across a room under sustained load (aggregator)",
+      "External PSU",
+      "Case/interior access criticised",
+      "Dense 70B is memory-bandwidth bound at single-digit t/s",
+      "Price spread EUR 1,999.99 (EU official 64GB) to 4,450 (EE retailer 128GB) indicates volatile pricing",
+      "Windows: AMD states up to 96 GB of GPU memory via Variable Graphics Memory (Adrenalin 25.8.1+); open LM Studio and llama.cpp issues report Vulkan loads failing or stalling near 64 GB with 96 GB set. Linux: about 124 GB is a community setting (kyuz0 guide), not an AMD-published cap.",
+      "China-Gadgets measured 82-83 C sustained, 92 C peak and about 44 dB at 30 cm on one EVO-X2, and found a pre-installed AI agent that ran file-deleting commands without confirmation; reinstall the OS."
+    ],
+    "sourceIds": [
+      "gmktec-s01",
+      "gmktec-s09",
+      "gmktec-s18",
+      "gmktec-s19",
+      "gmktec-s20",
+      "gmktec-s21",
+      "gmktec-s25",
+      "gmktec-s26",
+      "pn-s04",
+      "gm-s06"
+    ],
+    "specs": {
+      "ports": "Same as the 64GB model: 2x USB4, one 2.5GbE, no OCuLink listed.",
+      "power": "230 W external adapter",
+      "dimensions": "193 x 185.8 x 77 mm",
+      "storage": "Dual M.2 2280; 128GB variants ship with 1TB or 2TB",
+      "sourceIds": [
+        "gmktec-s01"
+      ]
+    }
+  },
+  {
+    "id": "gmktec-evo-x2-64",
+    "kind": "system",
+    "brandId": "gmktec",
+    "model": "EVO-X2 64GB/1TB",
+    "siliconId": "amd-max-plus-395",
+    "status": "current",
+    "releaseDate": "2025-05",
+    "memory": {
+      "gb": 64,
+      "type": "LPDDR5X",
+      "speedMTs": "8000",
+      "soldered": true,
+      "upgradable": false,
+      "bandwidthGBs": 256,
+      "gpuAddressable": "up to 48 GB, leaving 16 GB for the system (Notebookcheck, Spanish edition)",
+      "maxGb": null
+    },
+    "os": [
+      "windows",
+      "linux"
+    ],
+    "prices": [
+      {
+        "kind": "msrp",
+        "amount": 1999.99,
+        "currency": "EUR",
+        "merchant": "de.gmktec.com",
+        "region": "EU",
+        "variant": "64GB/1TB",
+        "includesTax": null,
+        "verifiedOn": "2026-10-05",
+        "url": "https://de.gmktec.com/en/products/gmktec-evo-x2-amd-ryzen%E2%84%A2-ai-max-395-mini-pc-1",
+        "evidence": "page-read",
+        "note": "In stock 280+ units",
+        "merchantHost": "de.gmktec.com",
+        "sourceId": "gmktec-s09"
+      },
+      {
+        "kind": "msrp",
+        "amount": 2199.99,
+        "currency": "USD",
+        "merchant": "gmktec.com",
+        "region": "US",
+        "variant": "64GB/1TB",
+        "includesTax": false,
+        "verifiedOn": "2026-10-05",
+        "url": "https://www.gmktec.com/products/amd-ryzen%E2%84%A2-ai-max-395-evo-x2-ai-mini-pc",
+        "evidence": "page-read",
+        "note": "same price as 128GB variants on the page, suggests sale pricing",
+        "merchantHost": "gmktec.com",
+        "sourceId": "gmktec-s01"
+      },
+      {
+        "kind": "merchant",
+        "amount": 2139,
+        "currency": "EUR",
+        "merchant": "Tweakers Pricewatch (lowest listed)",
+        "region": "NL",
+        "variant": "64GB/1TB",
+        "includesTax": null,
+        "verifiedOn": "2026-10-05",
+        "evidence": "listing",
+        "sourceId": "pn-s04",
+        "merchantHost": "tweakers.net",
+        "note": "Lowest listed price on Tweakers Pricewatch; the selling shop is not named and tax status is not stated. Not used as a headline price."
+      }
+    ],
+    "llmEvidence": [],
+    "issues": [
+      "64GB cannot hold 70B Q4 plus 20 agent sessions comfortably",
+      "Same thermal and pre-installed-agent findings as the 128GB model (one reviewer's unit)."
+    ],
+    "sourceIds": [
+      "gmktec-s01",
+      "gmktec-s09",
+      "pn-s04",
+      "rv-s02",
+      "gm-s06"
+    ],
+    "specs": {
+      "ports": "Front: 2x USB-A 3.2 Gen2, 1x USB4 (40 Gbps), SD 4.0, audio. Rear: DP 1.4, HDMI 2.1, 1x USB-A 3.2 Gen2, 2x USB-A 2.0, 1x USB4, audio, DC in, 1x 2.5GbE (Realtek 8125BG). No OCuLink in the spec table.",
+      "power": "230 W external adapter (19.5 V, 11.8 A); sustained 120 W per the vendor",
+      "dimensions": "193 x 185.8 x 77 mm",
+      "storage": "Dual M.2 2280; the 64GB variant ships with 1TB",
+      "sourceIds": [
+        "gmktec-s01"
+      ]
+    }
+  },
+  {
+    "id": "gmktec-evo-x3-128",
+    "kind": "system",
+    "brandId": "gmktec",
+    "model": "EVO-X3 128GB/2TB or 4TB",
+    "siliconId": "amd-max-plus-395",
+    "status": "current",
+    "releaseDate": "2026-08-29 (aggregator; unverified)",
+    "memory": {
+      "gb": 128,
+      "type": "LPDDR5X",
+      "speedMTs": "8000",
+      "soldered": true,
+      "upgradable": false,
+      "bandwidthGBs": 256,
+      "gpuAddressable": "up to 96 (aggregator)",
+      "maxGb": null
+    },
+    "os": [
+      "windows",
+      "linux"
+    ],
+    "prices": [
+      {
+        "kind": "msrp",
+        "amount": 3799.99,
+        "currency": "USD",
+        "merchant": "gmktec.com",
+        "region": "US",
+        "variant": "128GB/2TB and 4TB listed same price",
+        "includesTax": false,
+        "verifiedOn": "2026-10-05",
+        "url": "https://www.gmktec.com/products/gmktec-evo-x3-ai-mini-pc-amd-ryzen-ai-max-395",
+        "evidence": "page-read",
+        "note": "regular 4,100.00; sold out/unavailable on US page",
+        "merchantHost": "gmktec.com",
+        "sourceId": "gmktec-s02"
+      },
+      {
+        "kind": "msrp",
+        "amount": 3499.99,
+        "currency": "EUR",
+        "merchant": "de.gmktec.com",
+        "region": "EU",
+        "variant": "128GB/2TB base",
+        "includesTax": null,
+        "verifiedOn": "2026-10-05",
+        "url": "https://de.gmktec.com/en/products/gmktec-evo-x3-amd-ryzen%E2%84%A2-ai-max-395-mini-pc",
+        "evidence": "page-read",
+        "note": "in stock 331 units; 2-year warranty",
+        "merchantHost": "de.gmktec.com",
+        "sourceId": "gmktec-s10"
+      }
+    ],
+    "llmEvidence": [],
+    "issues": [
+      "Same SoC as the EVO-X2 (EU 128GB list EUR 3,499.99 here; the EU EVO-X2 listing extracted was the 64GB model at EUR 1,999.99, so no like-for-like price gap is established); adds OCuLink, a bigger chassis and cooling",
+      "Reviewers criticise price, single Ethernet, soldered RAM (aggregator)",
+      "No independent X3 benchmarks opened"
+    ],
+    "sourceIds": [
+      "gmktec-s02",
+      "gmktec-s10",
+      "gmktec-s23",
+      "gmktec-s24",
+      "gmktec-s30"
+    ],
+    "specs": {
+      "ports": "1x USB4 (40 Gbps), 1x OCuLink (PCIe 4.0 x4), single 2.5GbE, HDMI 2.1, USB-A ports (secondary source).",
+      "power": "External DC input, wattage not stated",
+      "dimensions": "353 x 186 x 41 mm, triple fans, 2 M.2 slots (secondary source)",
+      "storage": "2 M.2 slots",
+      "sourceIds": [
+        "vt-s21",
+        "vt-s22"
+      ],
+      "note": "Vendor page not reachable; specs come from Liliputing. Launch date 2026-07-06 from a search excerpt only."
+    }
+  },
+  {
+    "id": "gmktec-evo-x5-pro-192",
+    "kind": "system",
+    "brandId": "gmktec",
+    "model": "EVO-X5 Pro 192GB (Ryzen AI Max+ PRO 495)",
+    "siliconId": "amd-max-plus-pro-495",
+    "status": "current",
+    "releaseDate": "2026-09/10 first 100 units",
+    "memory": {
+      "gb": 192,
+      "type": "LPDDR5X",
+      "speedMTs": "8533",
+      "soldered": null,
+      "upgradable": null,
+      "bandwidthGBs": 273,
+      "gpuAddressable": null,
+      "maxGb": null
+    },
+    "os": [
+      "windows",
+      "linux"
+    ],
+    "prices": [
+      {
+        "kind": "msrp",
+        "amount": 6599,
+        "currency": "USD",
+        "merchant": "gmktec.com",
+        "region": "US",
+        "variant": "192GB/2TB or 4TB",
+        "includesTax": false,
+        "verifiedOn": "2026-10-05",
+        "url": "https://www.gmktec.com/products/gmktec-evo-x5-pro-amd-ryzen-ai-max-pro-495-ai-mini-pc",
+        "evidence": "page-read",
+        "note": "sold out, ship Oct 5 or Oct 9; EU plug sold out",
+        "merchantHost": "gmktec.com",
+        "sourceId": "gmktec-s05"
+      }
+    ],
+    "llmEvidence": [],
+    "issues": [
+      "No independent review found",
+      "Price far above value for this workload"
+    ],
+    "sourceIds": [
+      "gmktec-s05",
+      "gmktec-s21"
+    ]
+  },
+  {
+    "id": "gmktec-evo-x1-pro-64",
+    "kind": "system",
+    "brandId": "gmktec",
+    "model": "EVO-X1 Pro 64GB/1TB (Ryzen AI 9 HX 470)",
+    "siliconId": "amd-ai9-hx-470",
+    "status": "current",
+    "memory": {
+      "gb": 64,
+      "type": "LPDDR5",
+      "speedMTs": "6400",
+      "soldered": true,
+      "upgradable": false,
+      "bandwidthGBs": null,
+      "gpuAddressable": null,
+      "maxGb": null
+    },
+    "os": [
+      "windows",
+      "linux"
+    ],
+    "prices": [
+      {
+        "kind": "msrp",
+        "amount": 1599.99,
+        "currency": "USD",
+        "merchant": "gmktec.com",
+        "region": "US",
+        "variant": "64GB/1TB",
+        "includesTax": false,
+        "verifiedOn": "2026-10-05",
+        "url": "https://www.gmktec.com/products/gmktec-evo-x1-pro-ai-mini-pc-amd-ryzen-ai-9-hx-470",
+        "evidence": "page-read",
+        "note": "regular 2,299.99; in stock",
+        "merchantHost": "gmktec.com",
+        "sourceId": "gmktec-s03"
+      },
+      {
+        "kind": "msrp",
+        "amount": 1499.99,
+        "currency": "EUR",
+        "merchant": "de.gmktec.com",
+        "region": "EU",
+        "variant": "64GB/1TB",
+        "includesTax": null,
+        "verifiedOn": "2026-10-05",
+        "url": "https://de.gmktec.com/en",
+        "evidence": "page-read",
+        "note": "homepage listing",
+        "merchantHost": "de.gmktec.com",
+        "sourceId": "gmktec-s08"
+      }
+    ],
+    "llmEvidence": [],
+    "issues": [
+      "No independent benchmarks found"
+    ],
+    "sourceIds": [
+      "gmktec-s03",
+      "gmktec-s08"
+    ]
+  },
+  {
+    "id": "gmktec-evo-t2-64",
+    "kind": "system",
+    "brandId": "gmktec",
+    "model": "EVO-T2 64GB (Core Ultra X7 358H / X9 388H)",
+    "siliconId": "intel-core-ultra-x-s3",
+    "status": "current",
+    "memory": {
+      "gb": 64,
+      "type": "LPDDR5X",
+      "speedMTs": "8533",
+      "soldered": true,
+      "upgradable": false,
+      "bandwidthGBs": null,
+      "gpuAddressable": null,
+      "maxGb": null
+    },
+    "os": [
+      "windows",
+      "linux"
+    ],
+    "prices": [
+      {
+        "kind": "msrp",
+        "amount": 1799.99,
+        "currency": "EUR",
+        "merchant": "de.gmktec.com",
+        "region": "EU",
+        "variant": "X7 358H 64GB/1TB (T2S, in stock); X9 sold out",
+        "includesTax": null,
+        "verifiedOn": "2026-10-05",
+        "url": "https://de.gmktec.com/en/products/gmktec-evo-t2-intel-core-ultra-x9-388h-x7-358h-mini-pc",
+        "evidence": "page-read",
+        "merchantHost": "de.gmktec.com",
+        "sourceId": "gmktec-s12"
+      },
+      {
+        "kind": "msrp",
+        "amount": 2399.99,
+        "currency": "USD",
+        "merchant": "gmktec.com",
+        "region": "US",
+        "variant": "X7 358H 64GB",
+        "includesTax": false,
+        "verifiedOn": "2026-10-05",
+        "url": "https://www.gmktec.com/products/intel-core-ultra-x7-358h-x9-388h-evo-t2-ai-mini-pc",
+        "evidence": "page-read",
+        "note": "sold out/unavailable",
+        "merchantHost": "gmktec.com",
+        "sourceId": "gmktec-s04"
+      }
+    ],
+    "llmEvidence": [],
+    "issues": [
+      "No independent review found",
+      "US page sold out"
+    ],
+    "sourceIds": [
+      "gmktec-s04",
+      "gmktec-s12"
+    ]
+  },
+  {
+    "id": "gmktec-k13-16",
+    "kind": "system",
+    "brandId": "gmktec",
+    "model": "NucBox K13 16GB (Core Ultra 7 256V)",
+    "siliconId": "intel-core-ultra-200v",
+    "status": "current",
+    "memory": {
+      "gb": 16,
+      "type": "LPDDR5X on-package",
+      "speedMTs": "8533",
+      "soldered": true,
+      "upgradable": false,
+      "bandwidthGBs": null,
+      "gpuAddressable": null,
+      "maxGb": null
+    },
+    "os": [
+      "windows",
+      "linux"
+    ],
+    "prices": [
+      {
+        "kind": "msrp",
+        "amount": 579.99,
+        "currency": "EUR",
+        "merchant": "de.gmktec.com",
+        "region": "EU",
+        "variant": "16GB",
+        "includesTax": null,
+        "verifiedOn": "2026-10-05",
+        "url": "https://de.gmktec.com/en",
+        "evidence": "page-read",
+        "merchantHost": "de.gmktec.com",
+        "sourceId": "gmktec-s08"
+      },
+      {
+        "kind": "msrp",
+        "amount": 589.99,
+        "currency": "USD",
+        "merchant": "gmktec.com",
+        "region": "US",
+        "variant": "16GB/512GB",
+        "includesTax": false,
+        "verifiedOn": "2026-10-05",
+        "url": "https://www.gmktec.com/products/gmktec-k13-mini-pc-intel-core-ultra-7-256v",
+        "evidence": "page-read",
+        "note": "regular 899.99",
+        "merchantHost": "gmktec.com",
+        "sourceId": "gmktec-s06"
+      }
+    ],
+    "llmEvidence": [],
+    "issues": [
+      "16GB only, too small for an agent node of 20+ sessions"
+    ],
+    "sourceIds": [
+      "gmktec-s06",
+      "gmktec-s08"
+    ]
+  },
+  {
+    "id": "gmktec-k17-plus-32",
+    "kind": "system",
+    "brandId": "gmktec",
+    "model": "NucBox K17 / K17 Plus 32GB (Core Ultra 5 226V / 7 258V)",
+    "siliconId": "intel-core-ultra-200v",
+    "status": "current",
+    "memory": {
+      "gb": 32,
+      "type": "LPDDR5X on-package",
+      "speedMTs": "8533",
+      "soldered": true,
+      "upgradable": false,
+      "bandwidthGBs": null,
+      "gpuAddressable": null,
+      "maxGb": null
+    },
+    "os": [
+      "windows",
+      "linux"
+    ],
+    "prices": [],
+    "llmEvidence": [],
+    "issues": [
+      "EU store price EUR 529.99 was for the K17 Ultra 5 16GB variant; the 32GB variants were sold out or unpriced on the page read, so no 32GB price is recorded.",
+      "Max 32GB, soldered"
+    ],
+    "sourceIds": [
+      "gmktec-s11"
+    ]
+  },
+  {
+    "id": "gmktec-k11-64",
+    "kind": "system",
+    "brandId": "gmktec",
+    "model": "NucBox K11 (Ryzen 9 8945HS), barebone / 32GB / 64GB variants",
+    "siliconId": "amd-r9-8945hs",
+    "status": "current",
+    "memory": {
+      "gb": null,
+      "type": "DDR5 SO-DIMM x2",
+      "speedMTs": "5600",
+      "soldered": false,
+      "upgradable": true,
+      "bandwidthGBs": null,
+      "gpuAddressable": null,
+      "maxGb": 64
+    },
+    "os": [
+      "windows",
+      "linux"
+    ],
+    "prices": [
+      {
+        "kind": "msrp",
+        "amount": 469.99,
+        "currency": "EUR",
+        "merchant": "de.gmktec.com",
+        "region": "EU",
+        "variant": "base (barebone/32GB; 64GB+1TB sold out)",
+        "includesTax": null,
+        "verifiedOn": "2026-10-05",
+        "url": "https://de.gmktec.com/en/products/gmktec-nucbox-k11-amd-ryzen%E2%84%A2-9-8945hs",
+        "evidence": "page-read",
+        "note": "which variant the 469.99 refers to is unclear",
+        "merchantHost": "de.gmktec.com",
+        "sourceId": "gmktec-s13"
+      }
+    ],
+    "llmEvidence": [],
+    "issues": [
+      "Best serviceable 64GB candidate seen; no independent review opened",
+      "Also in-stock EU: K8 Plus Ryzen 7 8845HS EUR 389.99, M6 Ultra from 249.99, M7 Ultra 349.99, M8 349.99 (RAM type not verified)"
+    ],
+    "sourceIds": [
+      "gmktec-s13",
+      "gmktec-s14"
+    ]
+  },
+  {
+    "id": "minisforum-ms-s1-max-128",
+    "kind": "system",
+    "brandId": "minisforum",
+    "model": "MS-S1 MAX 128GB (Ryzen AI Max+ 395, 2TB SSD)",
+    "siliconId": "amd-max-plus-395",
+    "status": "current",
+    "memory": {
+      "gb": 128,
+      "type": "LPDDR5X",
+      "speedMTs": "8000",
+      "soldered": true,
+      "upgradable": false,
+      "bandwidthGBs": 256,
+      "gpuAddressable": "96 GB set via BIOS in AkitaOnRails review; STH reports shifting to 126 GB GPU memory in testing",
+      "maxGb": null
+    },
+    "os": [
+      "windows",
+      "linux"
+    ],
+    "prices": [
+      {
+        "kind": "promo",
+        "amount": 3999,
+        "currency": "EUR",
+        "merchant": "minisforumpc.eu",
+        "region": "EU",
+        "variant": "128GB",
+        "includesTax": null,
+        "verifiedOn": "2026-10-05",
+        "url": "https://minisforumpc.eu/collections/all?page=7",
+        "evidence": "page-read",
+        "note": "Sale price; regular EUR 4,999.00. A search snippet showed EUR 3,879.00 sale / 4,849.00 regular for a 'Max AI Compute Edition' listing; unresolved.",
+        "merchantHost": "minisforumpc.eu",
+        "sourceId": "minisforum-s01"
+      },
+      {
+        "kind": "promo",
+        "amount": 3399,
+        "currency": "GBP",
+        "merchant": "minisforum.uk",
+        "region": "UK",
+        "variant": "128GB",
+        "includesTax": null,
+        "verifiedOn": "2026-10-05",
+        "url": "https://www.minisforum.uk/collections/workstations",
+        "evidence": "page-read",
+        "note": "Sale; regular GBP 4,249.00.",
+        "merchantHost": "minisforum.uk",
+        "sourceId": "minisforum-s03"
+      },
+      {
+        "kind": "msrp",
+        "amount": 2919.9,
+        "currency": "USD",
+        "merchant": "minisforum.com",
+        "region": "US",
+        "variant": "128GB+2TB",
+        "includesTax": null,
+        "verifiedOn": "2026-10-05",
+        "url": "https://www.minisforum.com/de/collections/ai-mini-work-station/products/ms-s1-max",
+        "evidence": "page-read",
+        "note": "Shown out of stock on page.",
+        "merchantHost": "minisforum.com",
+        "sourceId": "minisforum-s04"
+      },
+      {
+        "kind": "msrp",
+        "amount": 3799,
+        "currency": "USD",
+        "merchant": "StarryHope citing MSRP",
+        "region": "US",
+        "variant": "128GB/2TB",
+        "includesTax": null,
+        "verifiedOn": "2026-10-05",
+        "url": "https://www.starryhope.com/minipcs/strix-halo-local-llm-inference-2026/",
+        "evidence": "reported",
+        "note": "Third-party article, not a merchant listing; conflicts with USD 2,919.90 on the official page.",
+        "sourceId": "minisforum-s10"
+      }
+    ],
+    "llmEvidence": [
+      {
+        "model": "qwen3.5 35B (MoE, ~24GB)",
+        "quant": "unspecified",
+        "tokensPerSecond": "43.2",
+        "backend": "Ollama ROCm",
+        "source": "independent",
+        "sourceIds": [
+          "minisforum-s08"
+        ]
+      },
+      {
+        "model": "qwen3.5 122B",
+        "quant": "Q4_K_M (81GB)",
+        "tokensPerSecond": "19.2",
+        "backend": "Ollama ROCm",
+        "source": "independent",
+        "sourceIds": [
+          "minisforum-s08"
+        ]
+      },
+      {
+        "model": "glm-4.7-flash",
+        "quant": "bf16 (60GB)",
+        "tokensPerSecond": "17.9",
+        "backend": "Ollama ROCm",
+        "source": "independent",
+        "sourceIds": [
+          "minisforum-s08"
+        ]
+      },
+      {
+        "model": "Llama 70B (Framework Strix Halo, same APU, not Minisforum)",
+        "quant": "Q4_K_M",
+        "tokensPerSecond": "tg 5.26, pp 76.52",
+        "backend": "llama.cpp Vulkan",
+        "source": "independent",
+        "sourceIds": [
+          "minisforum-s09"
+        ]
+      },
+      {
+        "model": "GLM-4 30B (Framework Strix Halo)",
+        "quant": "Q4_K_M",
+        "tokensPerSecond": "tg 65.98, pp 1036",
+        "backend": "llama.cpp Vulkan",
+        "source": "independent",
+        "sourceIds": [
+          "minisforum-s09"
+        ]
+      },
+      {
+        "model": "Qwen3 235B on two MS-S1 MAX",
+        "quant": "Q4",
+        "tokensPerSecond": "10.87",
+        "backend": "unspecified",
+        "source": "manufacturer",
+        "sourceIds": [
+          "minisforum-s18"
+        ]
+      }
+    ],
+    "issues": [
+      "ROCm assert failure on deepseek-r1:70b in Ollama (GGML_ASSERT nbytes <= INT_MAX) per AkitaOnRails",
+      "Loud idle fixed by BIOS v1.03 (Notebookcheck, search digest)",
+      "USB4v2 ports via discrete controller; commenters question real bandwidth given PCIe lane limits",
+      "PCIe x16 slot is x4 electrical",
+      "HDMI only, no DisplayPort",
+      "BF16 models do not run at full context on Strix Halo; Vulkan more stable than ROCm at long context (Level1Techs)",
+      "Windows: AMD states up to 96 GB of GPU memory via Variable Graphics Memory (Adrenalin 25.8.1+); open LM Studio and llama.cpp issues report Vulkan loads failing or stalling near 64 GB with 96 GB set. Linux: about 124 GB is a community setting (kyuz0 guide), not an AMD-published cap.",
+      "Community wiki: conservative stock fan curve can throttle under sustained LLM load; the 10G NICs are unstable on Linux kernels older than 6.17.11."
+    ],
+    "sourceIds": [
+      "minisforum-s01",
+      "minisforum-s03",
+      "minisforum-s04",
+      "minisforum-s05",
+      "minisforum-s06",
+      "minisforum-s07",
+      "minisforum-s08",
+      "minisforum-s09",
+      "minisforum-s10",
+      "minisforum-s18",
+      "landscape-s21"
+    ],
+    "specs": {
+      "ports": "Rear: 2x USB4 v2 (80 Gbps), 2x 10GbE (Realtek RTL8127). Front: 2x USB4 (40 Gbps). Also USB 3.2 Gen2, USB 2.0, HDMI 2.1, dual M.2, PCIe x16 slot running at PCIe 4.0 x4.",
+      "power": "Built-in 320 W PSU",
+      "dimensions": "Not on the vendor page",
+      "storage": "Dual M.2",
+      "sourceIds": [
+        "ex-s01"
+      ],
+      "note": "Minisforum's page confirms two 80 Gbps ports (ServeTheHome is right; Liliputing's one 80 plus two 40 is not what the page shows)."
+    }
+  },
+  {
+    "id": "minisforum-ms-s1-max-64",
+    "kind": "system",
+    "brandId": "minisforum",
+    "model": "MS-S1 MAX 64GB (Local AI Pilot Edition)",
+    "siliconId": "amd-max-plus-395",
+    "status": "current",
+    "memory": {
+      "gb": 64,
+      "type": "LPDDR5X",
+      "speedMTs": null,
+      "soldered": true,
+      "upgradable": false,
+      "bandwidthGBs": 256,
+      "gpuAddressable": null,
+      "maxGb": null
+    },
+    "os": [
+      "windows",
+      "linux"
+    ],
+    "prices": [
+      {
+        "kind": "promo",
+        "amount": 2679,
+        "currency": "EUR",
+        "merchant": "minisforumpc.eu",
+        "region": "EU",
+        "variant": "64GB",
+        "includesTax": null,
+        "verifiedOn": "2026-10-05",
+        "url": "https://minisforumpc.eu/collections/all?page=7",
+        "evidence": "page-read",
+        "note": "Regular EUR 3,449.00. SSD size not shown.",
+        "merchantHost": "minisforumpc.eu",
+        "sourceId": "minisforum-s01"
+      },
+      {
+        "kind": "promo",
+        "amount": 2359,
+        "currency": "GBP",
+        "merchant": "minisforum.uk",
+        "region": "UK",
+        "variant": "64GB",
+        "includesTax": null,
+        "verifiedOn": "2026-10-05",
+        "url": "https://www.minisforum.uk/collections/workstations",
+        "evidence": "page-read",
+        "note": "Regular GBP 2,949.00.",
+        "merchantHost": "minisforum.uk",
+        "sourceId": "minisforum-s03"
+      }
+    ],
+    "llmEvidence": [],
+    "issues": [
+      "64GB is too small for 70B Q4 plus long context (inference); no 64GB-specific benchmark found"
+    ],
+    "sourceIds": [
+      "minisforum-s01",
+      "minisforum-s03"
+    ],
+    "specs": {
+      "ports": "Same chassis as the 128GB model (assumed; not separately verified)",
+      "power": "Built-in 320 W PSU (assumed)",
+      "sourceIds": [
+        "ex-s01"
+      ]
+    }
+  },
+  {
+    "id": "minisforum-ms-s1-max-p495",
+    "kind": "system",
+    "brandId": "minisforum",
+    "model": "MS-S1 MAX-P495 (Ryzen AI Max+ Pro 495, 192GB)",
+    "siliconId": "amd-max-plus-pro-495",
+    "status": "current",
+    "releaseDate": "Announced IFA 2026 (Berlin)",
+    "memory": {
+      "gb": 192,
+      "type": "LPDDR5X",
+      "speedMTs": "8533",
+      "soldered": null,
+      "upgradable": null,
+      "bandwidthGBs": 273,
+      "gpuAddressable": "up to 160 (press-reported claim)",
+      "maxGb": null
+    },
+    "os": [
+      "windows",
+      "linux"
+    ],
+    "prices": [
+      {
+        "kind": "promo",
+        "amount": 7799,
+        "currency": "EUR",
+        "merchant": "minisforumpc.eu",
+        "region": "EU",
+        "variant": "192GB",
+        "includesTax": null,
+        "verifiedOn": "2026-10-05",
+        "url": "https://minisforumpc.eu/collections/minisforum-ai-workstations",
+        "evidence": "page-read",
+        "note": "Regular EUR 9,749.00; listed Available.",
+        "merchantHost": "minisforumpc.eu",
+        "sourceId": "minisforum-s01"
+      },
+      {
+        "kind": "promo",
+        "amount": 6679,
+        "currency": "GBP",
+        "merchant": "minisforum.uk",
+        "region": "UK",
+        "variant": "192GB",
+        "includesTax": null,
+        "verifiedOn": "2026-10-05",
+        "url": "https://www.minisforum.uk/collections/workstations",
+        "evidence": "page-read",
+        "note": "Regular GBP 8,349.00.",
+        "merchantHost": "minisforum.uk",
+        "sourceId": "minisforum-s03"
+      },
+      {
+        "kind": "msrp",
+        "amount": 7399,
+        "currency": "USD",
+        "merchant": "Minisforum US per press",
+        "region": "US",
+        "variant": "192GB",
+        "includesTax": null,
+        "verifiedOn": "2026-10-05",
+        "url": "https://hothardware.com/news/minisforum-192gb-gorgon-halo-mini-pc-local-ai-powerhouse",
+        "evidence": "reported",
+        "note": "Search digest and StarryHope.",
+        "sourceId": "landscape-s13"
+      }
+    ],
+    "llmEvidence": [],
+    "issues": [
+      "No independent review or benchmark found"
+    ],
+    "sourceIds": [
+      "minisforum-s01",
+      "minisforum-s03",
+      "minisforum-s10",
+      "minisforum-s17"
+    ]
+  },
+  {
+    "id": "minisforum-bd395i-max",
+    "kind": "system",
+    "brandId": "minisforum",
+    "model": "BD395i MAX (mini-ITX board, Ryzen AI Max+ 395)",
+    "siliconId": "amd-max-plus-395",
+    "status": "announced",
+    "releaseDate": "Shown CES 2026; ship date null",
+    "memory": {
+      "gb": 128,
+      "type": "LPDDR5X",
+      "speedMTs": "8000",
+      "soldered": true,
+      "upgradable": false,
+      "bandwidthGBs": 256,
+      "gpuAddressable": null,
+      "maxGb": null
+    },
+    "os": [
+      "windows",
+      "linux"
+    ],
+    "prices": [],
+    "llmEvidence": [],
+    "issues": [
+      "Price not announced in the article read; not found in EU store pages opened"
+    ],
+    "sourceIds": [
+      "minisforum-s16"
+    ]
+  },
+  {
+    "id": "minisforum-ai-x1-pro-370",
+    "kind": "system",
+    "brandId": "minisforum",
+    "model": "AI X1 Pro-370 (Ryzen AI 9 HX 370)",
+    "siliconId": "amd-ai9-hx-370",
+    "status": "current",
+    "memory": {
+      "gb": null,
+      "type": "DDR5 SO-DIMM",
+      "speedMTs": "5600",
+      "soldered": false,
+      "upgradable": true,
+      "bandwidthGBs": null,
+      "gpuAddressable": null,
+      "maxGb": 96
+    },
+    "os": [
+      "windows",
+      "linux"
+    ],
+    "prices": [
+      {
+        "kind": "promo",
+        "amount": 729,
+        "currency": "EUR",
+        "merchant": "minisforumpc.eu",
+        "region": "EU",
+        "variant": "AI X1 Pro-370, RAM/SSD not shown",
+        "includesTax": null,
+        "verifiedOn": "2026-10-05",
+        "url": "https://minisforumpc.eu/collections/all?page=2",
+        "evidence": "snippet",
+        "note": "Regular EUR 909.00; barebone vs configured unknown. AI X1 Pro-470 EUR 799.00 (regular 999.00) also listed; AI X1 Mini PC EUR 379.00 (regular 469.00) on page 1.",
+        "sourceId": "minisforum-s02"
+      }
+    ],
+    "llmEvidence": [
+      {
+        "model": "deepseek-r1-distill-qwen-14b",
+        "quant": "unspecified",
+        "tokensPerSecond": "8.8",
+        "backend": "unspecified",
+        "source": "independent",
+        "sourceIds": [
+          "minisforum-s14"
+        ]
+      }
+    ],
+    "issues": [
+      "Weekly blackscreen reboots/wake failures until BIOS/driver updates, then stable 6 months (one user)",
+      "DDR5-5600 bandwidth is the limit; reviewer says 20-30B MoE is the practical ceiling"
+    ],
+    "sourceIds": [
+      "minisforum-s02",
+      "minisforum-s14",
+      "minisforum-s15"
+    ]
+  },
+  {
+    "id": "minisforum-ms-a2",
+    "kind": "system",
+    "brandId": "minisforum",
+    "model": "MS-A2 Workstation (Ryzen 9 9955HX)",
+    "siliconId": "amd-r9-9955hx",
+    "status": "listed-unspecced",
+    "memory": {
+      "gb": null,
+      "type": null,
+      "speedMTs": null,
+      "soldered": null,
+      "upgradable": null,
+      "bandwidthGBs": null,
+      "gpuAddressable": null,
+      "maxGb": null
+    },
+    "os": [
+      "windows",
+      "linux"
+    ],
+    "prices": [
+      {
+        "kind": "promo",
+        "amount": 839,
+        "currency": "EUR",
+        "merchant": "minisforumpc.eu",
+        "region": "EU",
+        "variant": "base, config not shown",
+        "includesTax": null,
+        "verifiedOn": "2026-10-05",
+        "url": "https://minisforumpc.eu/collections/all?page=7",
+        "evidence": "snippet",
+        "note": "Regular EUR 1,049.00. UK GBP 725.00 (regular 909.00). Specs not researched.",
+        "sourceId": "minisforum-s02"
+      }
+    ],
+    "llmEvidence": [],
+    "issues": [],
+    "sourceIds": [
+      "minisforum-s01",
+      "minisforum-s03"
+    ]
+  },
+  {
+    "id": "framework-desktop-395-128",
+    "kind": "system",
+    "brandId": "framework",
+    "model": "Desktop DIY Max+ 395 128GB",
+    "siliconId": "amd-max-plus-395",
+    "status": "listed",
+    "memory": {
+      "gb": 128,
+      "type": "LPDDR5X-8000 soldered",
+      "speedMTs": null,
+      "soldered": true,
+      "upgradable": null,
+      "bandwidthGBs": 256,
+      "gpuAddressable": "not verified for this SKU (see claims c16)",
+      "maxGb": null
+    },
+    "os": [
+      "windows",
+      "linux"
+    ],
+    "prices": [
+      {
+        "kind": "merchant",
+        "amount": 3889,
+        "currency": "EUR",
+        "merchant": "Framework NL",
+        "region": "NL",
+        "variant": "DIY 128GB, out of stock",
+        "includesTax": null,
+        "verifiedOn": "2026-10-05",
+        "url": "https://frame.work/nl/en/products/desktop-diy-amd-aimax300/configuration/new",
+        "evidence": "page-read",
+        "merchantHost": "frame.work",
+        "sourceId": "landscape-s07"
+      }
+    ],
+    "llmEvidence": [],
+    "issues": [
+      "EUR 3,889 vs USD 1,999 in Jan 2026 before hike to 2,459; out of stock on fetch day. Tax inclusion not stated on page. 256 GB/s is theoretical (s21); 273 GB/s applies to the 495 part."
+    ],
+    "sourceIds": [
+      "landscape-s07",
+      "landscape-s09",
+      "landscape-s21"
+    ]
+  },
+  {
+    "id": "framework-desktop-395-64",
+    "kind": "system",
+    "brandId": "framework",
+    "model": "Desktop DIY Max+ 395 64GB",
+    "siliconId": "amd-max-plus-395",
+    "status": "listed",
+    "memory": {
+      "gb": 64,
+      "type": "LPDDR5X-8000 soldered",
+      "speedMTs": null,
+      "soldered": true,
+      "upgradable": null,
+      "bandwidthGBs": 256,
+      "gpuAddressable": "not verified",
+      "maxGb": null
+    },
+    "os": [
+      "windows",
+      "linux"
+    ],
+    "prices": [
+      {
+        "kind": "merchant",
+        "amount": 2209,
+        "currency": "EUR",
+        "merchant": "Framework NL",
+        "region": "NL",
+        "variant": "DIY 64GB, out of stock",
+        "includesTax": null,
+        "verifiedOn": "2026-10-05",
+        "url": "https://frame.work/nl/en/products/desktop-diy-amd-aimax300/configuration/new",
+        "evidence": "page-read",
+        "merchantHost": "frame.work",
+        "sourceId": "landscape-s07"
+      }
+    ],
+    "llmEvidence": [],
+    "issues": [
+      "Agent-node tier."
+    ],
+    "sourceIds": [
+      "landscape-s07"
+    ]
+  },
+  {
+    "id": "framework-desktop-385-32",
+    "kind": "system",
+    "brandId": "framework",
+    "model": "Desktop DIY Max 385 32GB",
+    "siliconId": "amd-max-385",
+    "status": "listed",
+    "memory": {
+      "gb": 32,
+      "type": "LPDDR5X soldered",
+      "speedMTs": null,
+      "soldered": true,
+      "upgradable": null,
+      "bandwidthGBs": null,
+      "gpuAddressable": "not verified",
+      "maxGb": null
+    },
+    "os": [
+      "windows",
+      "linux"
+    ],
+    "prices": [
+      {
+        "kind": "merchant",
+        "amount": 1429,
+        "currency": "EUR",
+        "merchant": "Framework NL",
+        "region": "NL",
+        "variant": "DIY 32GB, out of stock",
+        "includesTax": null,
+        "verifiedOn": "2026-10-05",
+        "url": "https://frame.work/nl/en/products/desktop-diy-amd-aimax300/configuration/new",
+        "evidence": "page-read",
+        "merchantHost": "frame.work",
+        "sourceId": "landscape-s07"
+      }
+    ],
+    "llmEvidence": [],
+    "issues": [
+      "Bandwidth for 385 not verified."
+    ],
+    "sourceIds": [
+      "landscape-s07"
+    ]
+  },
+  {
+    "id": "framework-desktop-495-192",
+    "kind": "system",
+    "brandId": "framework",
+    "model": "Desktop Max+ PRO 495 192GB",
+    "siliconId": "amd-max-plus-pro-495",
+    "status": "listed",
+    "memory": {
+      "gb": 192,
+      "type": "LPDDR5X-8533",
+      "speedMTs": null,
+      "soldered": null,
+      "upgradable": null,
+      "bandwidthGBs": 273,
+      "gpuAddressable": "up to 160GB allocable to iGPU (BornCity)",
+      "maxGb": null
+    },
+    "os": [
+      "windows",
+      "linux"
+    ],
+    "prices": [
+      {
+        "kind": "msrp",
+        "amount": 6799,
+        "currency": "USD",
+        "merchant": "Framework (per BornCity)",
+        "region": "US",
+        "variant": "DIY 192GB",
+        "includesTax": null,
+        "verifiedOn": "2026-10-05",
+        "url": "https://borncity.com/news/framework-desktop-bis-zu-192-gb-ram-und-preise-ab-6-799-us-dollar/",
+        "evidence": "reported",
+        "sourceId": "landscape-s10"
+      }
+    ],
+    "llmEvidence": [
+      {
+        "model": "DeepSeek V4-Flash",
+        "quant": "Q8",
+        "tokensPerSecond": "not stated",
+        "backend": "not stated",
+        "source": "manufacturer",
+        "sourceIds": [
+          "landscape-s11"
+        ]
+      }
+    ],
+    "issues": [
+      "Ships Nov 2026. Price conflict: Wccftech reports Framework guidance of USD 5000+, BornCity USD 6,799 DIY / 7,449 prebuilt. No EUR price found."
+    ],
+    "sourceIds": [
+      "landscape-s08",
+      "landscape-s10",
+      "landscape-s11"
+    ]
+  },
+  {
+    "id": "hp-z2-mini-g1a-128",
+    "kind": "system",
+    "brandId": "hp",
+    "model": "Z2 Mini G1a Ryzen AI Max+ PRO 395 128GB/1TB",
+    "siliconId": "amd-max-plus-395",
+    "status": "listed",
+    "memory": {
+      "gb": 128,
+      "type": "LPDDR5X-8000",
+      "speedMTs": null,
+      "soldered": null,
+      "upgradable": null,
+      "bandwidthGBs": 256,
+      "gpuAddressable": "not verified",
+      "maxGb": null
+    },
+    "os": [
+      "windows",
+      "linux"
+    ],
+    "prices": [
+      {
+        "kind": "merchant",
+        "amount": 3890.15,
+        "currency": "EUR",
+        "merchant": "Bechtle/ARP NL",
+        "region": "NL",
+        "variant": "128GB/1TB, ships when available",
+        "includesTax": true,
+        "verifiedOn": "2026-10-05",
+        "url": "https://www.arp.nl/nl-en/shop/product-family/hp-z2-mini-g1a-workstation--6634--f",
+        "evidence": "page-read",
+        "merchantHost": "arp.nl",
+        "sourceId": "landscape-s15"
+      },
+      {
+        "kind": "merchant",
+        "amount": 3215,
+        "currency": "EUR",
+        "merchant": "Bechtle/ARP NL",
+        "region": "NL",
+        "variant": "128GB/1TB ex VAT",
+        "includesTax": false,
+        "verifiedOn": "2026-10-05",
+        "url": "https://www.arp.nl/nl-en/shop/product-family/hp-z2-mini-g1a-workstation--6634--f",
+        "evidence": "page-read",
+        "merchantHost": "arp.nl",
+        "sourceId": "landscape-s15"
+      }
+    ],
+    "llmEvidence": [],
+    "issues": [
+      "Cheapest verified 128GB box in NL, B2B channel. Same listing shows 128GB/2x1TB at EUR 7,025.26 incl VAT, so verify the SKU before ordering. OS on SKU not stated on fetched page."
+    ],
+    "sourceIds": [
+      "landscape-s15"
+    ]
+  },
+  {
+    "id": "corsair-ai-workstation-300",
+    "kind": "system",
+    "brandId": "corsair",
+    "model": "AI Workstation 300 (395, 128GB)",
+    "siliconId": "amd-max-plus-395",
+    "status": "listed",
+    "memory": {
+      "gb": 128,
+      "type": "LPDDR5X-8000",
+      "speedMTs": null,
+      "soldered": null,
+      "upgradable": null,
+      "bandwidthGBs": 256,
+      "gpuAddressable": "not verified",
+      "maxGb": null
+    },
+    "os": [
+      "windows",
+      "linux"
+    ],
+    "prices": [
+      {
+        "kind": "msrp",
+        "amount": 2699.99,
+        "currency": "USD",
+        "merchant": "Corsair",
+        "region": "US",
+        "variant": "from, 128GB",
+        "includesTax": false,
+        "verifiedOn": "2026-10-05",
+        "url": "https://www.notebookcheck.org/Corsair-confirma-el-nuevo-precio-del-mini-PC-AMD-Strix-Halo-con-hasta-96-GB-de-VRAM.1269374.0.html",
+        "evidence": "reported"
+      }
+    ],
+    "llmEvidence": [],
+    "issues": [
+      "Was USD 1,999.99 at launch; max config USD 3,399.99 (4TB). EU availability and EUR price not verified. USD price is a US list, tax-exclusive."
+    ],
+    "sourceIds": [
+      "landscape-s16"
+    ]
+  },
+  {
+    "id": "amd-ryzen-ai-halo",
+    "kind": "system",
+    "brandId": "amd",
+    "model": "Ryzen AI Halo mini PC",
+    "siliconId": "amd-max-plus-395",
+    "status": "listed",
+    "memory": {
+      "gb": 128,
+      "type": "LPDDR5X",
+      "speedMTs": null,
+      "soldered": null,
+      "upgradable": null,
+      "bandwidthGBs": 256,
+      "gpuAddressable": "not verified",
+      "maxGb": null
+    },
+    "os": [
+      "windows",
+      "linux"
+    ],
+    "prices": [
+      {
+        "kind": "merchant",
+        "amount": 4100,
+        "currency": "EUR",
+        "merchant": "Germany (approx per Notebookcheck)",
+        "region": "DE",
+        "variant": "128GB",
+        "includesTax": true,
+        "verifiedOn": "2026-10-05",
+        "url": "https://www.notebookcheck.com/AMDs-hauseigener-Mini-PC-mit-128GB-RAM-und-Strix-Halo-zeigt-sich-fuer-fast-4-000EUR.1336528.0.html",
+        "evidence": "reported",
+        "sourceId": "landscape-s17"
+      }
+    ],
+    "llmEvidence": [
+      {
+        "model": "GPT-OSS / Qwen variants",
+        "quant": "not stated",
+        "tokensPerSecond": "AMD claims 4-14% faster than DGX Spark",
+        "backend": "not stated",
+        "source": "manufacturer",
+        "sourceIds": [
+          "landscape-s17"
+        ]
+      }
+    ],
+    "issues": [
+      "Approximate figure; USD 3,999 per StarryHope (s20). Launched 10 Jul 2026 US. EU availability not verified."
+    ],
+    "sourceIds": [
+      "landscape-s17",
+      "minisforum-s10"
+    ]
+  },
+  {
+    "id": "beelink-gtr9-pro",
+    "kind": "system",
+    "brandId": "beelink",
+    "model": "GTR9 Pro",
+    "siliconId": "amd-max-plus-395",
+    "status": "listed",
+    "memory": {
+      "gb": 128,
+      "type": "LPDDR5X-8000",
+      "speedMTs": null,
+      "soldered": null,
+      "upgradable": null,
+      "bandwidthGBs": 256,
+      "gpuAddressable": "not verified",
+      "maxGb": null
+    },
+    "os": [
+      "windows",
+      "linux"
+    ],
+    "prices": [
+      {
+        "kind": "merchant",
+        "amount": 4349,
+        "currency": "USD",
+        "merchant": "Beelink store (DE locale page)",
+        "region": "DE locale, currency USD",
+        "variant": "128GB/2TB, pre-order 35 days",
+        "includesTax": null,
+        "verifiedOn": "2026-10-05",
+        "url": "https://www.bee-link.com/de/products/beelink-gtr9-pro-amd-ryzen-ai-max-395",
+        "evidence": "page-read",
+        "merchantHost": "bee-link.com",
+        "sourceId": "landscape-s18"
+      }
+    ],
+    "llmEvidence": [],
+    "issues": [
+      "Price shown in USD on the DE page; tax status unknown; 2x10GbE, USB4. Earlier press quoted USD 1,985 pre-order, not verified here."
+    ],
+    "sourceIds": [
+      "landscape-s18"
+    ]
+  },
+  {
+    "id": "bosgame-m5",
+    "kind": "system",
+    "brandId": "bosgame",
+    "model": "M5 AI Mini",
+    "siliconId": "amd-max-plus-395",
+    "status": "listed",
+    "memory": {
+      "gb": 128,
+      "type": "LPDDR5X-8000",
+      "speedMTs": null,
+      "soldered": null,
+      "upgradable": null,
+      "bandwidthGBs": 256,
+      "gpuAddressable": "not verified",
+      "maxGb": null
+    },
+    "os": [
+      "windows",
+      "linux"
+    ],
+    "prices": [],
+    "llmEvidence": [],
+    "issues": [
+      "GAP: bosgamepc.com returned 403; no verified current price (search snippets only, unverified)."
+    ],
+    "sourceIds": []
+  },
+  {
+    "id": "nvidia-dgx-spark",
+    "kind": "system",
+    "brandId": "nvidia",
+    "model": "DGX Spark Founders Edition",
+    "siliconId": "nvidia-gb10",
+    "status": "listed",
+    "memory": {
+      "gb": 128,
+      "type": "LPDDR5x coherent unified",
+      "speedMTs": null,
+      "soldered": null,
+      "upgradable": null,
+      "bandwidthGBs": 273,
+      "gpuAddressable": "unified; CUDA sees the pool (not verified numerically)",
+      "maxGb": null
+    },
+    "os": [
+      "linux"
+    ],
+    "prices": [
+      {
+        "kind": "msrp",
+        "amount": 4699,
+        "currency": "USD",
+        "merchant": "NVIDIA store (per forum and OpenClawDC)",
+        "region": "US",
+        "variant": "FE",
+        "includesTax": false,
+        "verifiedOn": "2026-10-05",
+        "url": "https://forums.developer.nvidia.com/t/september-2026-availability-of-gb10s/382068",
+        "evidence": "forum",
+        "sourceId": "landscape-s14"
+      }
+    ],
+    "llmEvidence": [
+      {
+        "model": "gpt-oss-120b",
+        "quant": "MXFP4",
+        "tokensPerSecond": "tg32 ~60.6, pp2048 ~1956",
+        "backend": "llama.cpp CUDA",
+        "source": "independent",
+        "sourceIds": [
+          "landscape-s19"
+        ]
+      },
+      {
+        "model": "gpt-oss-20b",
+        "quant": "MXFP4",
+        "tokensPerSecond": "tg32 ~67",
+        "backend": "llama.cpp CUDA",
+        "source": "independent",
+        "sourceIds": [
+          "landscape-s19"
+        ]
+      },
+      {
+        "model": "Qwen3-Coder-30B-A3B",
+        "quant": "Q8_0",
+        "tokensPerSecond": "tg32 ~45-50",
+        "backend": "llama.cpp CUDA",
+        "source": "independent",
+        "sourceIds": [
+          "landscape-s19"
+        ]
+      }
+    ],
+    "issues": [
+      "DGX OS (Linux) only per NVIDIA page; not Windows-first. USD 3,999 at launch, +700 Feb 2026. FE often out of stock. No EU list price verified."
+    ],
+    "sourceIds": [
+      "landscape-s12",
+      "landscape-s13",
+      "landscape-s14",
+      "landscape-s19"
+    ]
+  },
+  {
+    "id": "asus-ascent-gx10",
+    "kind": "system",
+    "brandId": "asus",
+    "model": "Ascent GX10 1TB",
+    "siliconId": "nvidia-gb10",
+    "status": "listed",
+    "memory": {
+      "gb": 128,
+      "type": "LPDDR5x",
+      "speedMTs": null,
+      "soldered": null,
+      "upgradable": null,
+      "bandwidthGBs": 273,
+      "gpuAddressable": "unified",
+      "maxGb": null
+    },
+    "os": [
+      "linux"
+    ],
+    "prices": [
+      {
+        "kind": "merchant",
+        "amount": 3680,
+        "currency": "EUR",
+        "merchant": "EU retailer (forum user)",
+        "region": "EU",
+        "variant": "1TB, late Aug 2026",
+        "includesTax": false,
+        "verifiedOn": "2026-10-05",
+        "url": "https://forums.developer.nvidia.com/t/september-2026-availability-of-gb10s/382068",
+        "evidence": "forum",
+        "sourceId": "landscape-s13"
+      },
+      {
+        "kind": "merchant",
+        "amount": 6999,
+        "currency": "USD",
+        "merchant": "ASUS US store (per forum)",
+        "region": "US",
+        "variant": "1TB",
+        "includesTax": null,
+        "verifiedOn": "2026-10-05",
+        "url": "https://forums.developer.nvidia.com/t/september-2026-availability-of-gb10s/382068",
+        "evidence": "forum",
+        "sourceId": "landscape-s13"
+      }
+    ],
+    "llmEvidence": [],
+    "issues": [
+      "EUR 3,680 ex VAT is a single forum post; US store USD 6,999. Large US/EU divergence; EU stock unverified. Other OEMs (Dell, Lenovo, MSI, Gigabyte, HP, Acer) exist per NVIDIA page; Gigabyte AI TOP ATOM USD 5,999.99 4TB (s14); Dell/Lenovo/MSI prices not found."
+    ],
+    "sourceIds": [
+      "landscape-s12",
+      "landscape-s13",
+      "landscape-s14"
+    ]
+  },
+  {
+    "id": "apple-mac-mini-m5pro-64",
+    "kind": "system",
+    "brandId": "apple",
+    "model": "Mac mini M5 Pro 64GB",
+    "siliconId": "apple-m5-pro",
+    "status": "listed",
+    "memory": {
+      "gb": 64,
+      "type": "unified LPDDR",
+      "speedMTs": null,
+      "soldered": null,
+      "upgradable": null,
+      "bandwidthGBs": 307,
+      "gpuAddressable": "unified; wired limit adjustable via sysctl (s28)",
+      "maxGb": null
+    },
+    "os": [
+      "macos"
+    ],
+    "prices": [
+      {
+        "kind": "msrp",
+        "amount": 3119,
+        "currency": "EUR",
+        "merchant": "Apple NL (derived: 2,019 base + 1,100 RAM upgrade, iCulture)",
+        "region": "NL",
+        "variant": "M5 Pro, 64GB; storage upgrade not included",
+        "includesTax": true,
+        "verifiedOn": "2026-10-05",
+        "url": "https://www.iculture.nl/nieuws/mac-mini-2026-prijzen/",
+        "evidence": "derived",
+        "sourceId": "landscape-s05"
+      }
+    ],
+    "llmEvidence": [],
+    "issues": [
+      "Price is derived arithmetic from two iCulture figures, not a quoted SKU price. Base M5 Pro 24GB. M6 Mac mini: max 32GB, 153-170 GB/s, EUR 1,069 base, +440 for 32GB."
+    ],
+    "sourceIds": [
+      "landscape-s02",
+      "landscape-s05"
+    ]
+  },
+  {
+    "id": "apple-mac-studio-m5max-64",
+    "kind": "system",
+    "brandId": "apple",
+    "model": "Mac Studio M5 Max 18c/40c GPU 64GB",
+    "siliconId": "apple-m5-max",
+    "status": "listed",
+    "memory": {
+      "gb": 64,
+      "type": "unified",
+      "speedMTs": null,
+      "soldered": null,
+      "upgradable": null,
+      "bandwidthGBs": 614,
+      "gpuAddressable": "unified",
+      "maxGb": null
+    },
+    "os": [
+      "macos"
+    ],
+    "prices": [
+      {
+        "kind": "msrp",
+        "amount": 3689,
+        "currency": "EUR",
+        "merchant": "Apple NL (EveryMac)",
+        "region": "NL",
+        "variant": "18c CPU/40c GPU; 64GB per Apple NL listing",
+        "includesTax": true,
+        "verifiedOn": "2026-10-05",
+        "url": "https://everymac.com/global-mac-prices/all-msrp-mac-studio-prices-in-netherlands.html",
+        "evidence": "reported",
+        "sourceId": "landscape-s06"
+      }
+    ],
+    "llmEvidence": [],
+    "issues": [
+      "No independent tokens/s verified (only unopened search snippets: gap). M5 Max max memory 128GB; 128GB EUR price not found. Base 32c GPU 36GB EUR 3,029 at 460 GB/s."
+    ],
+    "sourceIds": [
+      "landscape-s01",
+      "landscape-s03",
+      "landscape-s06"
+    ]
+  },
+  {
+    "id": "apple-mac-studio-m5ultra-96",
+    "kind": "system",
+    "brandId": "apple",
+    "model": "Mac Studio M5 Ultra 30c/64c GPU 96GB",
+    "siliconId": "apple-m5-ultra",
+    "status": "listed",
+    "memory": {
+      "gb": 96,
+      "type": "unified",
+      "speedMTs": null,
+      "soldered": null,
+      "upgradable": null,
+      "bandwidthGBs": 1200,
+      "gpuAddressable": "unified; raise wired limit via iogpu.wired_limit_mb",
+      "maxGb": null
+    },
+    "os": [
+      "macos"
+    ],
+    "prices": [
+      {
+        "kind": "msrp",
+        "amount": 6649,
+        "currency": "EUR",
+        "merchant": "Apple NL (iCulture, EveryMac)",
+        "region": "NL",
+        "variant": "base 96GB/1TB",
+        "includesTax": true,
+        "verifiedOn": "2026-10-05",
+        "url": "https://www.iculture.nl/nieuws/mac-studio-2026-officieel/",
+        "evidence": "reported",
+        "sourceId": "landscape-s05"
+      }
+    ],
+    "llmEvidence": [],
+    "issues": [
+      "Delivery from 22 Sep 2026; 512GB late Oct 2026. 128/192/256/512GB EUR upgrade prices not found. USD 256GB/4TB Ultra reviewed at USD 12,299 (s30). No independent LLM numbers verified: gap.",
+      "A EUR 8,079 price in the research notes was for the 36-core CPU / 80-core GPU configuration, not this base 96GB machine, and was removed."
+    ],
+    "sourceIds": [
+      "landscape-s01",
+      "landscape-s03",
+      "landscape-s04",
+      "landscape-s06",
+      "landscape-s28",
+      "landscape-s30"
+    ]
+  },
+  {
+    "id": "rtx-5090",
+    "kind": "gpu",
+    "brandId": "nvidia",
+    "model": "GeForce RTX 5090",
+    "siliconId": "nvidia-gb202",
+    "status": "listed",
+    "memory": {
+      "gb": 32,
+      "type": "GDDR7",
+      "speedMTs": null,
+      "soldered": null,
+      "upgradable": null,
+      "bandwidthGBs": null,
+      "gpuAddressable": "32GB VRAM",
+      "maxGb": null
+    },
+    "os": [],
+    "prices": [
+      {
+        "kind": "merchant",
+        "amount": 5242.94,
+        "currency": "EUR",
+        "merchant": "Geizhals via Hardwareluxx (cheapest, INNO3D), from search result text",
+        "region": "DE",
+        "variant": "cheapest listing ~Sep 2026",
+        "includesTax": true,
+        "verifiedOn": "2026-10-05",
+        "url": "https://www.guru3d.com/story/geforce-rtx-5090-street-prices-in-eu-now-exceed/",
+        "evidence": "snippet",
+        "sourceId": "landscape-s23"
+      }
+    ],
+    "llmEvidence": [],
+    "issues": [
+      "Guru3D page confirms EU street above EUR 5,000; the 5,242.94 figure was in search result text only. FE EUR 2,099 when available (search text, unverified). Needs a host PC. 32GB cannot hold 70B Q4 (~40GB) alone."
+    ],
+    "sourceIds": [
+      "landscape-s23"
+    ]
+  },
+  {
+    "id": "rtx-pro-6000",
+    "kind": "gpu",
+    "brandId": "nvidia",
+    "model": "RTX PRO 6000 Blackwell",
+    "siliconId": "nvidia-gb202",
+    "status": "listed",
+    "memory": {
+      "gb": 96,
+      "type": "GDDR7 ECC",
+      "speedMTs": null,
+      "soldered": null,
+      "upgradable": null,
+      "bandwidthGBs": 1792,
+      "gpuAddressable": "96GB VRAM",
+      "maxGb": null
+    },
+    "os": [],
+    "prices": [
+      {
+        "kind": "merchant",
+        "amount": 15490,
+        "currency": "EUR",
+        "merchant": "GPU PRIX EU tracker (lowest)",
+        "region": "EU",
+        "variant": "lowest",
+        "includesTax": null,
+        "verifiedOn": "2026-10-05",
+        "url": "https://gpuprix.com/eu/gpus/rtx-pro-6000-blackwell",
+        "evidence": "reported",
+        "sourceId": "landscape-s25"
+      }
+    ],
+    "llmEvidence": [],
+    "issues": [
+      "12-month range EUR 7,628 to 15,490; 3-month median 14,500. Needs host PC."
+    ],
+    "sourceIds": [
+      "landscape-s25"
+    ]
+  },
+  {
+    "id": "radeon-ai-pro-r9700",
+    "kind": "gpu",
+    "brandId": "amd",
+    "model": "Radeon AI PRO R9700",
+    "siliconId": "amd-navi48",
+    "status": "listed",
+    "memory": {
+      "gb": 32,
+      "type": "GDDR6 ECC",
+      "speedMTs": null,
+      "soldered": null,
+      "upgradable": null,
+      "bandwidthGBs": 644.6,
+      "gpuAddressable": "32GB VRAM",
+      "maxGb": null
+    },
+    "os": [],
+    "prices": [
+      {
+        "kind": "merchant",
+        "amount": 1545,
+        "currency": "EUR",
+        "merchant": "GPU PRIX EU tracker (lowest)",
+        "region": "EU",
+        "variant": "lowest",
+        "includesTax": null,
+        "verifiedOn": "2026-10-05",
+        "url": "https://gpuprix.com/eu/gpus/radeon-ai-pro-r9700",
+        "evidence": "reported",
+        "sourceId": "landscape-s24"
+      }
+    ],
+    "llmEvidence": [],
+    "issues": [
+      "Tracker date label inconsistent; 12-mo median 1,599; est MSRP 1,208. Two cards = 64GB for about EUR 3,090 plus host, multi-GPU llama.cpp."
+    ],
+    "sourceIds": [
+      "landscape-s24"
+    ]
+  },
+  {
+    "id": "framework-board-385-32",
+    "kind": "board",
+    "brandId": "framework",
+    "model": "Framework Desktop Mainboard, Ryzen AI Max 385, 32GB",
+    "siliconId": "amd-max-385",
+    "status": "current",
+    "memory": {
+      "gb": 32,
+      "maxGb": null,
+      "type": "LPDDR5X",
+      "speedMTs": "8000",
+      "soldered": true,
+      "upgradable": false,
+      "bandwidthGBs": null,
+      "gpuAddressable": null
+    },
+    "os": [
+      "windows",
+      "linux"
+    ],
+    "prices": [
+      {
+        "kind": "msrp",
+        "amount": 1079,
+        "currency": "EUR",
+        "merchant": "Framework NL",
+        "region": "NL",
+        "variant": "Mainboard 32GB",
+        "includesTax": true,
+        "verifiedOn": "2026-10-05",
+        "evidence": "page-read",
+        "merchantHost": "frame.work",
+        "sourceId": "supply-s04"
+      }
+    ],
+    "llmEvidence": [],
+    "issues": [
+      "Mainboard only: case, PSU (Framework uses a semi-custom FSP 400 W Flex ATX) and SSD are extra."
+    ],
+    "sourceIds": [
+      "supply-s04"
+    ]
+  },
+  {
+    "id": "framework-board-395-64",
+    "kind": "board",
+    "brandId": "framework",
+    "model": "Framework Desktop Mainboard, Ryzen AI Max+ 395, 64GB",
+    "siliconId": "amd-max-plus-395",
+    "status": "current",
+    "memory": {
+      "gb": 64,
+      "maxGb": null,
+      "type": "LPDDR5X",
+      "speedMTs": "8000",
+      "soldered": true,
+      "upgradable": false,
+      "bandwidthGBs": 256,
+      "gpuAddressable": null
+    },
+    "os": [
+      "windows",
+      "linux"
+    ],
+    "prices": [
+      {
+        "kind": "msrp",
+        "amount": 1859,
+        "currency": "EUR",
+        "merchant": "Framework NL",
+        "region": "NL",
+        "variant": "Mainboard 64GB",
+        "includesTax": true,
+        "verifiedOn": "2026-10-05",
+        "evidence": "page-read",
+        "merchantHost": "frame.work",
+        "sourceId": "supply-s04"
+      }
+    ],
+    "llmEvidence": [],
+    "issues": [
+      "Mainboard only: case, PSU (Framework uses a semi-custom FSP 400 W Flex ATX) and SSD are extra."
+    ],
+    "sourceIds": [
+      "supply-s04"
+    ]
+  },
+  {
+    "id": "framework-board-395-128",
+    "kind": "board",
+    "brandId": "framework",
+    "model": "Framework Desktop Mainboard, Ryzen AI Max+ 395, 128GB",
+    "siliconId": "amd-max-plus-395",
+    "status": "current",
+    "memory": {
+      "gb": 128,
+      "maxGb": null,
+      "type": "LPDDR5X",
+      "speedMTs": "8000",
+      "soldered": true,
+      "upgradable": false,
+      "bandwidthGBs": 256,
+      "gpuAddressable": null
+    },
+    "os": [
+      "windows",
+      "linux"
+    ],
+    "prices": [
+      {
+        "kind": "msrp",
+        "amount": 3539,
+        "currency": "EUR",
+        "merchant": "Framework NL",
+        "region": "NL",
+        "variant": "Mainboard 128GB",
+        "includesTax": true,
+        "verifiedOn": "2026-10-05",
+        "evidence": "page-read",
+        "merchantHost": "frame.work",
+        "sourceId": "supply-s04"
+      }
+    ],
+    "llmEvidence": [],
+    "issues": [
+      "Mainboard only: case, PSU (Framework uses a semi-custom FSP 400 W Flex ATX) and SSD are extra."
+    ],
+    "sourceIds": [
+      "supply-s04"
+    ]
+  }
+]

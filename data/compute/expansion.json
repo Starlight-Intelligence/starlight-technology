@@ -1,0 +1,388 @@
+{
+  "egpu": {
+    "links": [
+      {
+        "name": "OCuLink",
+        "lanes": "PCIe 4.0 x4 (usually wired from an M.2 slot or a dedicated port)",
+        "theoreticalGBs": 8,
+        "measuredNotes": "Measured ~6.6-6.7 GB/s in the TB5 comparison tests (gaming test, retailer blog). Cold-plug on most hosts (snippet). Per the Level1Techs thread, OCuLink worked on a GMKtec Evo-X2 via M.2.",
+        "sourceIds": [
+          "ex-s15",
+          "ex-s19",
+          "ex-s20",
+          "ex-s03",
+          "ex-s28"
+        ]
+      },
+      {
+        "name": "USB4 v2 / Thunderbolt 5 (via DEG2)",
+        "lanes": "Tunnelled PCIe; DEG2 capped at PCIe 4.0 x4 on both ports",
+        "theoreticalGBs": 8,
+        "measuredNotes": "Headline 80 Gbps but the dock tops out at 64 Gbps PCIe; TB5 measured ~5.8 GB/s; gaming 14% slower than OCuLink on average.",
+        "sourceIds": [
+          "ex-s16",
+          "ex-s17",
+          "ex-s20"
+        ]
+      },
+      {
+        "name": "USB4 40 Gbps",
+        "lanes": "PCIe tunnel, shared with display/USB",
+        "theoreticalGBs": 4,
+        "measuredNotes": "Vendor/summary claim of ~32 Gbps usable PCIe (snippet only); not confirmed on an opened primary page.",
+        "sourceIds": [
+          "ex-s28"
+        ]
+      },
+      {
+        "name": "PCIe slot (MS-S1 MAX)",
+        "lanes": "Full-length x16 slot, electrically x4",
+        "theoreticalGBs": 8,
+        "measuredNotes": "Internal x4 slot gives the same link width as OCuLink without a dock; the Framework Desktop slot is also x4 per the RDMA guide.",
+        "sourceIds": [
+          "ex-s18",
+          "ex-s10"
+        ]
+      }
+    ],
+    "strixHaloResults": [
+      {
+        "setup": "RTX 5080 16GB via OCuLink on a Strix Halo mini PC (Vulkan, LM Studio)",
+        "workload": "LLM inference, model fits in 16GB",
+        "result": "About 3x the iGPU speed; drops to 1.6 tok/s when the model exceeds VRAM",
+        "os": "not stated",
+        "sourceIds": [
+          "ex-s14"
+        ]
+      },
+      {
+        "setup": "RTX Pro 6000 96GB via OCuLink + Strix Halo iGPU",
+        "workload": "32B dense and 122B MoE; split of 122B across both",
+        "result": "69 tok/s (32B); 121 tok/s (122B MoE); 37-38 tok/s when split across both; source says the OCuLink link bottlenecks the split",
+        "os": "not stated",
+        "sourceIds": [
+          "ex-s14"
+        ]
+      },
+      {
+        "setup": "Strix Halo + dGPU on Windows 11 Pro (forum reports)",
+        "workload": "LM Studio / Jan.ai multi-GPU",
+        "result": "Stability issues and 35-40% slowdowns reported; LM Studio 0.3.16 missed the iGPU when a dGPU was present; capping iGPU VRAM at 512MB in BIOS helped",
+        "os": "Windows 11 Pro",
+        "sourceIds": [
+          "ex-s03"
+        ]
+      }
+    ],
+    "docksAndAdapters": [
+      {
+        "name": "Minisforum DEG1 (OCuLink 4i, PCIe 4.0 x4, ATX/SFX, no PSU)",
+        "priceEur": 109,
+        "merchant": "minisforumpc.eu (sale; EUR 129 regular)",
+        "url": "https://minisforumpc.eu/products/minisforum-deg1-grafik-docking-station",
+        "observedOn": "2026-10-05",
+        "notes": "Needs a separate ATX/SFX PSU. A search snippet showed other EU listings from EUR 90 to 129, not opened."
+      },
+      {
+        "name": "Minisforum DEG2 (OCuLink + USB4 v2, M.2, 2.5G LAN)",
+        "priceEur": null,
+        "merchant": "Minisforum UK (GBP 229 sale, GBP 289 regular)",
+        "url": "https://www.minisforum.uk/products/deg2-egpu-dock",
+        "observedOn": "2026-10-05",
+        "notes": "No EUR price found on an opened page; snippets gave USD 259-299 and GBP 225. Gap."
+      },
+      {
+        "name": "AOOSTAR AG02 (OCuLink + USB4, 800W PSU built in)",
+        "priceEur": 160,
+        "merchant": "Banggood EU warehouse (snippet)",
+        "url": "https://www.dealabs.com/bons-plans/dock-egpu-aoostar-ag02-800w-port-oculink-usb-4-entrepot-eu-3406290",
+        "observedOn": "2026-10-05",
+        "notes": "Snippet only: EUR 159.72 with coupon, EUR 164.04 listed, EUR 249 at Geekbuying. Merchant page not opened; unverified."
+      }
+    ],
+    "limits": [
+      "Link is PCIe 4.0 x4 at best (~8 GB/s theoretical, ~6.6-6.7 GB/s measured), against Strix Halo unified memory; anything crossing the link is slow.",
+      "A model split across iGPU and eGPU is link-limited (MindStudio: 37-38 tok/s split vs 121 on the big GPU alone) and a model that overflows VRAM collapses (1.6 tok/s).",
+      "Cross-vendor split needs Vulkan; CUDA and ROCm do not interoperate (MindStudio).",
+      "BAR trouble with very large VRAM cards (RTX Pro 6000); 16-24GB cards were fine in forum reports.",
+      "OCuLink is cold-plug on most hosts (snippet). A Level1Techs-reported Windows 11 setup showed instability and 35-40% slowdowns.",
+      "A BIOS cap of the iGPU VRAM to 512MB was a forum workaround.",
+      "The MS-S1 MAX slot is x16 physical, x4 electrical, so an internal GPU gets the same link width.",
+      "No Windows-specific OCuLink driver documentation found; OCuLink exposes PCIe so the vendor GPU driver should apply (inference, not verified from a vendor page)."
+    ],
+    "whenItHelps": "Models that fit entirely in the eGPU's VRAM (documented: ~3x iGPU for an RTX 5080 16GB; 69-121 tok/s on a 96GB card), since only token-sized data crosses the link after load. Also a second device for image generation or small agents while the iGPU holds the big model (inference). Gaming tests put OCuLink loss vs a native slot in the single digits; the retailer's 2-3% inference-loss claim is unsourced.",
+    "whenItDoesNot": "Models larger than eGPU VRAM or split across iGPU+eGPU: the link bottlenecks (1.6 tok/s overflow case). On Windows the dGPU+iGPU combination showed instability and 35-40% slowdowns in forum reports. No measured Stable Diffusion/Flux/video numbers over OCuLink or USB4 were found; model load time and any CPU/RAM offload are the link-bound parts (inference, not measured)."
+  },
+  "clustering": {
+    "approaches": [
+      {
+        "name": "llama.cpp RPC",
+        "what": "Layer-wise sharding across nodes over TCP; one head node, RPC servers on the others. Official docs call it proof-of-concept, fragile and insecure.",
+        "networkNeeds": "Low bandwidth (a forum poster saw >20 MB/s use) but latency-sensitive.",
+        "measured": [
+          {
+            "setup": "2x Ryzen AI Max+ 395, direct USB4 (~9.4 Gbps), Fedora 43",
+            "model": "MiniMax-M2.5-REAP-139B",
+            "result": "15.35 tok/s tg",
+            "sourceIds": [
+              "rv-s23"
+            ]
+          },
+          {
+            "setup": "same",
+            "model": "Qwen3.5-397B",
+            "result": "12.6 tok/s tg",
+            "sourceIds": [
+              "rv-s23"
+            ]
+          },
+          {
+            "setup": "4x Framework mainboards, 5GbE switch",
+            "model": "DeepSeek R1 Q2_K_M",
+            "result": "tg ~8.25 tok/s, same as single node; Llama 405B 0.7 tok/s",
+            "sourceIds": [
+              "ex-s11"
+            ]
+          }
+        ],
+        "maturity": "Experimental; segfaults reported on some quants (Geerling). Fits larger models, does not speed them up.",
+        "windowsSupport": "Not documented in the RPC README; all community Strix Halo cluster reports found are Linux.",
+        "sourceIds": [
+          "ex-s12",
+          "rv-s23",
+          "ex-s08",
+          "ex-s11"
+        ]
+      },
+      {
+        "name": "vLLM + RCCL tensor parallel (kyuz0 toolbox)",
+        "what": "Two-host TP=2 over Ethernet or RDMA/RoCE with a patched RCCL; the repo confirms both were tested on an Ubuntu 24.04 container. Patch details came from a search summary.",
+        "networkNeeds": "AMD playbook: 10GbE switch, star topology. RDMA guide: Intel E810 100GbE via DAC in the x4 slot with a riser; RDMA latency ~5 us vs 0.07 ms Ethernet.",
+        "measured": [
+          {
+            "setup": "Two Framework mainboards, E810 RDMA",
+            "model": "n/a",
+            "result": "No tok/s published. Latency 5.23 us (RDMA) vs 74 us (1GbE); bandwidth 50.6 Gbps.",
+            "sourceIds": [
+              "ex-s10"
+            ]
+          }
+        ],
+        "maturity": "Repo says benchmarks have not been run for the current image; AMD playbook gives no throughput.",
+        "windowsSupport": "Linux only (Ubuntu container, Fedora host, apt in the playbook).",
+        "sourceIds": [
+          "ex-s02",
+          "ex-s04",
+          "ex-s10"
+        ]
+      },
+      {
+        "name": "exo",
+        "what": "Auto-discovery distributed inference.",
+        "networkNeeds": "RDMA over Thunderbolt 5 only on macOS 26.2+.",
+        "measured": [],
+        "maturity": "README: Linux is CPU-only, GPU support under development; no AMD/Windows mention.",
+        "windowsSupport": "None documented.",
+        "sourceIds": [
+          "ex-s13"
+        ]
+      },
+      {
+        "name": "other: Minisforum published claim",
+        "what": "Two MS-S1 MAX: 235B Q4 at 10.87 tok/s; four units ran DeepSeek-R1 671B Q4.",
+        "networkNeeds": "Page does not state link, framework or runtime (10GbE ports and USB4 v2 are listed).",
+        "measured": [
+          {
+            "setup": "2x MS-S1 MAX (vendor)",
+            "model": "235B Q4",
+            "result": "10.87 tok/s",
+            "sourceIds": [
+              "ex-s01"
+            ]
+          }
+        ],
+        "maturity": "Vendor marketing, unverified; consistent with the 10-15 tok/s MoE range in community reports.",
+        "windowsSupport": "Not stated.",
+        "sourceIds": [
+          "ex-s01",
+          "ex-s07"
+        ]
+      }
+    ],
+    "networking": [
+      {
+        "option": "2.5GbE",
+        "bandwidthGbps": 2.5,
+        "measuredNotes": "iperf3 2.35 Gb/s in one run. Search-summary of community data (underlying thread not opened): 1GbE cost ~13-15% on prompt processing, while 10GbE and 20Gbps USB cost 2-5%; token generation ~15% slower on every link.",
+        "sourceIds": [
+          "ex-s06"
+        ]
+      },
+      {
+        "option": "5GbE (Framework)",
+        "bandwidthGbps": 5,
+        "measuredNotes": "Used for the 4-node test; no speedup.",
+        "sourceIds": [
+          "ex-s11"
+        ]
+      },
+      {
+        "option": "10GbE",
+        "bandwidthGbps": 10,
+        "measuredNotes": "MS-S1 MAX has 2 ports; the AMD vLLM playbook requires 10Gbps via switch. No tok/s comparison against 2.5GbE found on an opened page.",
+        "sourceIds": [
+          "ex-s01",
+          "ex-s04"
+        ]
+      },
+      {
+        "option": "USB4 / Thunderbolt bridge",
+        "bandwidthGbps": 8.85,
+        "measuredNotes": "iperf3 TCP 8.85 Gb/s, ~0.5 ms ping, Soft-RoCE 4.3 Gb/s; Geerling got 10 Gbps; visorcraft ~9.4 Gbps effective. Latency-dominated, so extra bandwidth barely matters.",
+        "sourceIds": [
+          "ex-s06",
+          "ex-s11",
+          "rv-s23"
+        ]
+      },
+      {
+        "option": "100GbE RoCE (Intel E810)",
+        "bandwidthGbps": 50.64,
+        "measuredNotes": "x4 slot caps it near 50 Gbps; RDMA latency 5.23 us.",
+        "sourceIds": [
+          "ex-s10"
+        ]
+      }
+    ],
+    "limits": [
+      "Clustering did not raise speed in Geerling's tests; it fit bigger models (ex-s11).",
+      "Latency, not bandwidth, limits layer-split clustering (ex-s07, ex-s08).",
+      "Tensor-parallel vLLM needs RDMA-class networking to pay off and is Linux-only (ex-s04, ex-s10).",
+      "MoE models run far faster than dense at this memory bandwidth (StarryHope: 235B MoE ~10-15 tok/s vs dense 235B ~3-5 tok/s, secondary estimate).",
+      "No documented Windows path for RPC, vLLM TP or exo on Strix Halo clusters."
+    ]
+  },
+  "racks": {
+    "options": [
+      {
+        "name": "Minisforum MS-S1 MAX (2U horizontal mount)",
+        "what": "Desktop box that supports 2U rack mounting; 130W sustained/160W peak; 320W PSU; 2x 10GbE; x4 PCIe slot",
+        "priceEur": 3999,
+        "sourceIds": [
+          "ex-s18",
+          "ex-s01"
+        ]
+      },
+      {
+        "name": "Framework Desktop mini-rack (10-inch, 4 boards)",
+        "what": "Four Ryzen AI Max+ 395 boards in a 10-inch rack (Computex demo per search summary); Geerling's 4-node build used 5GbE.",
+        "priceEur": null,
+        "sourceIds": [
+          "ex-s11"
+        ]
+      }
+    ],
+    "notes": [
+      "Rack form factor is a mount, not extra performance; the interconnect is the same 10GbE/USB4 as a stack of desktops.",
+      "Framework boards draw 11W idle and ~150W peak per node (Geerling); at EUR 3,999 per 128GB MS-S1 MAX (EU shop), four nodes is ~EUR 16k before a switch (arithmetic).",
+      "Third-party MS-S1 MAX rack kits (USD ~69-71 on eBay) appeared only in a search snippet; not opened.",
+      "GPU rigs and workstation racks were not researched; gap."
+    ]
+  },
+  "rag": {
+    "footprints": [
+      {
+        "component": "embedding model",
+        "example": "Qwen3-Embedding-0.6B 639MB, 4B 2.5GB, 8B 4.7GB (Ollama quants); 4B is BF16 on HF, up to 2560 dims",
+        "memoryGb": 2.5,
+        "basis": "documented",
+        "sourceIds": [
+          "ex-s25",
+          "ex-s26"
+        ]
+      },
+      {
+        "component": "reranker",
+        "example": "Qwen3-Reranker-4B has the same 4B parameter count as the embedder; size not opened, assume a few GB (estimate)",
+        "memoryGb": null,
+        "basis": "estimate",
+        "sourceIds": [
+          "ex-s25"
+        ]
+      },
+      {
+        "component": "vector DB (Qdrant) 1M",
+        "example": "1M x 768d float32 = 5.72 GB (docs example uses replication 2); HNSW m=16 ~0.29 GB; 4-bit quantization ~0.72 GB. 1M x 1024d x 1 replica: ~4.1 GB by the same formula",
+        "memoryGb": 4.1,
+        "basis": "documented",
+        "sourceIds": [
+          "ex-s22"
+        ]
+      },
+      {
+        "component": "vector DB (Qdrant) 10M",
+        "example": "10M x 1024d float32 = ~41 GB by the same formula, plus HNSW and payload; quantization reduces it",
+        "memoryGb": 41,
+        "basis": "estimate",
+        "sourceIds": [
+          "ex-s22"
+        ]
+      },
+      {
+        "component": "vector DB (Chroma)",
+        "example": "10M x 1536d = 57.2 GiB lower bound, add 15-50% headroom; 1M x 1536d ~5.7 GiB (arithmetic)",
+        "memoryGb": 57.2,
+        "basis": "documented",
+        "sourceIds": [
+          "ex-s23"
+        ]
+      },
+      {
+        "component": "vector DB (pgvector)",
+        "example": "vector = 4 bytes/dim + 8; halfvec = 2 bytes/dim + 8. 1M x 1024d ~4.1 GB, 10M ~41 GB of vector data (arithmetic from README); HNSW graph and index size not published in README",
+        "memoryGb": 4.1,
+        "basis": "estimate",
+        "sourceIds": [
+          "ex-s24"
+        ]
+      }
+    ],
+    "fitOnStrixHalo": "1M chunks fit easily on 64GB or 128GB beside a 4B embedder (~2.5GB quantized) and a reranker, at roughly 4-6GB of vector memory. 10M chunks at 1024-1536 dims need ~41-57+ GiB for full-precision in-RAM vectors by the vendors' formulas, which leaves little room for a large model on 64GB and a smaller one on 128GB; quantized or on-disk vectors (Qdrant 4-bit ~8x reduction in its example, pgvector halfvec 2x) are the realistic route. Fit is arithmetic from vendor formulas, not a measured co-run benchmark.",
+    "notes": [
+      "Ingestion embedding competes with the chat model for the same unified memory bandwidth; no measurement found.",
+      "Qwen3-Embedding lets you choose 32-4096 dims (by model), so truncating to 512-768 cuts vector memory proportionally.",
+      "pgvector HNSW builds fast only if the graph fits maintenance_work_mem (README)."
+    ]
+  },
+  "scaleUpVsScaleOut": {
+    "findings": [
+      "Geerling (4 nodes): clustering did not accelerate inference, it only fit larger models; his advice was to scale vertically as much as possible.",
+      "Two-node llama.cpp RPC runs 139B-397B MoE models at 12-15 tok/s (USB4 ~9.4 Gbps), compared with single-node results of 42.7 tok/s (80B-A3B) and 86.1 tok/s (30B-A3B).",
+      "Latency, not bandwidth, limits layer-split clustering; token generation lost ~15% on every link per a community summary (not fully verified).",
+      "vLLM TP=2 on Strix Halo is documented but Linux-only and, for good latency, uses a 100GbE RDMA NIC in a x4 slot; no tok/s published.",
+      "An eGPU adds a fast lane for models that fit its VRAM (~3x iGPU in one source), but splitting across iGPU and eGPU is link-bound and a VRAM overflow is a cliff.",
+      "For a Windows-first buyer: every documented cluster setup (RPC, vLLM, exo) is Linux or macOS, and Windows dGPU+iGPU showed instability in forum reports."
+    ],
+    "sourceIds": [
+      "ex-s11",
+      "rv-s23",
+      "ex-s07",
+      "ex-s10",
+      "ex-s04",
+      "ex-s14",
+      "ex-s03",
+      "ex-s13"
+    ]
+  },
+  "gaps": [
+    "No measured Stable Diffusion/Flux/video generation numbers over OCuLink or USB4 on Strix Halo or any mini PC were found.",
+    "No Windows 11 OCuLink driver documentation from AMD/NVIDIA/Microsoft was opened; the only Windows evidence is forum anecdotes.",
+    "Minisforum's network for the 10.87 tok/s claim is not stated; quant and framework not stated either.",
+    "DEG2 EUR price unverified (GBP 229 only); AG02 EU price is snippet-only; DEG1 snippets showed EUR 90 but only EUR 109 was opened.",
+    "The 1GbE/10GbE/USB prompt-processing percentages came from search summaries, not an opened page.",
+    "Qwen3-Reranker size and reranker memory not opened; pgvector index-size tables not in the primary README; no measured RAG-plus-agent co-run benchmark.",
+    "Racks: no price for a rack kit or Framework mini-rack opened; GPU-rig racks not covered.",
+    "MindStudio and EveZone are secondary/retailer sources; their eGPU numbers are unverified by a primary benchmark.",
+    "Windows support for llama.cpp RPC across Strix Halo nodes is undocumented in what was opened."
+  ]
+}

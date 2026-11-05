@@ -1,0 +1,382 @@
+{
+  "affiliatePrograms": [
+    {
+      "id": "gmktec-awin",
+      "brand": "GMKtec",
+      "network": "Awin",
+      "commission": "not disclosed on page",
+      "cookieDays": "not found",
+      "restrictions": "Terms sit behind Awin signup",
+      "evidenceStatus": "partial",
+      "sourceIds": [
+        "partners-s03"
+      ]
+    },
+    {
+      "id": "minisforum-awin",
+      "brand": "Minisforum",
+      "network": "Awin",
+      "commission": "2% (ex VAT and postage on Webgains DE); 1-8% claimed by directories",
+      "cookieDays": "30",
+      "restrictions": "Webgains DE: PPC policy closed. Programs also on Impact and Webgains.",
+      "evidenceStatus": "verified",
+      "sourceIds": [
+        "partners-s04",
+        "partners-s05"
+      ]
+    },
+    {
+      "id": "beelink-impact",
+      "brand": "Beelink",
+      "network": "Impact",
+      "commission": "5-10% incl. VAT (directory claim)",
+      "cookieDays": "30 (directory claim)",
+      "restrictions": "PPC on brand and generic terms allowed per directory; also on Webgains, BlueAff, Sale Gains",
+      "evidenceStatus": "partial",
+      "sourceIds": [
+        "partners-s06"
+      ]
+    },
+    {
+      "id": "bosgame-none",
+      "brand": "Bosgame",
+      "network": "other",
+      "commission": "not found",
+      "cookieDays": "not found",
+      "restrictions": "Search returned nothing relevant; bosgamepc.com returned 403",
+      "evidenceStatus": "not-found",
+      "sourceIds": []
+    },
+    {
+      "id": "framework-impact",
+      "brand": "Framework",
+      "network": "Impact",
+      "commission": "1-5% (directory claim), higher private payouts possible",
+      "cookieDays": "not found",
+      "restrictions": "Brand-fit review; low-traffic applicants may be rejected",
+      "evidenceStatus": "partial",
+      "sourceIds": [
+        "partners-s09"
+      ]
+    },
+    {
+      "id": "amazon-nl",
+      "brand": "Amazon Associates amazon.nl",
+      "network": "Amazon",
+      "commission": "Fee schedule read as 6% electronics/computers, 1% consoles; conflicts with DE read",
+      "cookieDays": "24 hours per search summaries, not on fee page",
+      "restrictions": "Direct vs indirect qualifying purchase distinction",
+      "evidenceStatus": "partial",
+      "sourceIds": [
+        "partners-s08",
+        "partners-s24"
+      ]
+    },
+    {
+      "id": "amazon-de",
+      "brand": "Amazon Associates amazon.de",
+      "network": "Amazon",
+      "commission": "Fee schedule read as 5% electronics, 2.5% large appliances and mobile electronics",
+      "cookieDays": "24 hours per search summaries",
+      "restrictions": "Approval reportedly needs 3 qualifying sales in 180 days (search summary)",
+      "evidenceStatus": "partial",
+      "sourceIds": [
+        "partners-s07",
+        "partners-s24"
+      ]
+    },
+    {
+      "id": "aliexpress-awin",
+      "brand": "AliExpress",
+      "network": "Awin",
+      "commission": "Base 2.6% and 8% by category; promo 10-90% (Awin UK); other sources show 1.5% for PCs/storage",
+      "cookieDays": "30",
+      "restrictions": "Check category rates; PC categories are low",
+      "evidenceStatus": "verified",
+      "sourceIds": [
+        "partners-s13",
+        "partners-s24"
+      ]
+    },
+    {
+      "id": "alibaba",
+      "brand": "Alibaba.com",
+      "network": "other",
+      "commission": "percentage up to $1,000 per referral (summary claim)",
+      "cookieDays": "up to 15",
+      "restrictions": "B2B sourcing audience",
+      "evidenceStatus": "partial",
+      "sourceIds": [
+        "partners-s24"
+      ]
+    },
+    {
+      "id": "apple-partnerize",
+      "brand": "Apple (Performance Partners)",
+      "network": "Partnerize",
+      "commission": "7% TV/movies/books; one-time payment on memberships; no hardware listed",
+      "cookieDays": "30",
+      "restrictions": "Limited partner acceptance; Premier tier by invitation; Mac/iPad hardware not eligible on the pages read",
+      "evidenceStatus": "verified",
+      "sourceIds": [
+        "partners-s11",
+        "partners-s12"
+      ]
+    },
+    {
+      "id": "backmarket-awin",
+      "brand": "Back Market",
+      "network": "Awin",
+      "commission": "not shown on Awin page (5% per search snippet)",
+      "cookieDays": "30",
+      "restrictions": "No promo codes, cashback or loyalty; no search ads or brand bidding",
+      "evidenceStatus": "partial",
+      "sourceIds": [
+        "partners-s10",
+        "partners-s24"
+      ]
+    },
+    {
+      "id": "idealo",
+      "brand": "idealo",
+      "network": "other",
+      "commission": "Per-leadout, individual agreement; no rate found",
+      "cookieDays": "30 (search summary)",
+      "restrictions": "Premium Publisher application",
+      "evidenceStatus": "partial",
+      "sourceIds": [
+        "partners-s24"
+      ]
+    },
+    {
+      "id": "geizhals",
+      "brand": "Geizhals",
+      "network": "other",
+      "commission": "not found",
+      "cookieDays": "not found",
+      "restrictions": "Not searched beyond first pass",
+      "evidenceStatus": "not-found",
+      "sourceIds": []
+    },
+    {
+      "id": "corsair-impact",
+      "brand": "Corsair",
+      "network": "Impact",
+      "commission": "Directory claims 0.8-2.4% and $8 on systems",
+      "cookieDays": "30 (directory claim)",
+      "restrictions": "Varies by network",
+      "evidenceStatus": "partial",
+      "sourceIds": [
+        "partners-s24"
+      ]
+    },
+    {
+      "id": "dell-awin",
+      "brand": "Dell NL",
+      "network": "Awin",
+      "commission": "3% (general Dell claim); NL page not opened",
+      "cookieDays": "3 (NL listing claim)",
+      "restrictions": "unverified",
+      "evidenceStatus": "partial",
+      "sourceIds": [
+        "partners-s24"
+      ]
+    },
+    {
+      "id": "samsung-awin",
+      "brand": "Samsung (EU Awin)",
+      "network": "Awin",
+      "commission": "Up to 3% (UK, IE, FI), 2% with voucher; 6% PT claim",
+      "cookieDays": "30",
+      "restrictions": "NL programme not confirmed",
+      "evidenceStatus": "partial",
+      "sourceIds": [
+        "partners-s24"
+      ]
+    },
+    {
+      "id": "crucial-lg-benq",
+      "brand": "Crucial, LG, BenQ",
+      "network": "other",
+      "commission": "not found",
+      "cookieDays": "not found",
+      "restrictions": "Not found in searches",
+      "evidenceStatus": "not-found",
+      "sourceIds": []
+    }
+  ],
+  "partnerRoutes": [
+    {
+      "brand": "Minisforum",
+      "route": "reseller",
+      "terms": "Corporate/bulk programme: minimum 10 units, wholesale pricing (percentages not published), flexible payment terms, 3-year extended warranty, German warehouse, account manager.",
+      "contactPath": "Form on minisforumpc.eu/pages/bulk-discount; eustore@minisforum.com"
+    },
+    {
+      "brand": "Beelink",
+      "route": "OEM-ODM",
+      "terms": "ODM (mold, electronics, software, packaging) and OEM offered; positions itself as private-cloud and small-office system integrator. No MOQ or price published.",
+      "contactPath": "wholesale@bee-link.com"
+    },
+    {
+      "brand": "GMKtec",
+      "route": "none-found",
+      "terms": "No reseller, OEM or review-sample programme found; only an Awin affiliate link.",
+      "contactPath": "Awin signup; direct contact via site (unverified)"
+    },
+    {
+      "brand": "Framework",
+      "route": "none-found",
+      "terms": "Affiliate on Impact per directory; no reseller or sample route verified.",
+      "contactPath": "Impact"
+    },
+    {
+      "brand": "Bosgame",
+      "route": "none-found",
+      "terms": "Nothing found; site blocked fetch.",
+      "contactPath": ""
+    },
+    {
+      "brand": "Tom's Hardware (reference)",
+      "route": "review-sample",
+      "terms": "Publishes a review sample policy and affiliate disclosure; text not retrieved.",
+      "contactPath": "tomshardware.com about page"
+    }
+  ],
+  "disclosureRules": [
+    {
+      "jurisdiction": "US",
+      "rule": "FTC: disclose any material connection (payment, free product, discount); disclosure must be hard to miss and placed with the endorsement, using plain terms like ad or sponsored; the endorser is personally responsible.",
+      "implication": "For US readers, a label next to affiliate links and in the video itself, not only a footer or profile.",
+      "sourceIds": [
+        "partners-s01"
+      ]
+    },
+    {
+      "jurisdiction": "NL/EU",
+      "rule": "Dutch Advertising Code for Social Media and Influencer Marketing (in force since 2022): advertising must be recognisable and relationships disclosed. ACM publishes 2024 online-consumer guidelines (PDF not read). EU UCPD/Omnibus text not opened.",
+      "implication": "Label affiliate content as advertising where it appears; the exact ACM and UCPD wording is a gap to close from the primary PDF/directive.",
+      "sourceIds": [
+        "partners-s02",
+        "partners-s22"
+      ]
+    },
+    {
+      "jurisdiction": "NL/EU",
+      "rule": "Awin requires #Ad, #PaidAd, #sponsorship or #sponsoredpost; #affiliate, #partner, #spon are insufficient; a general 'some links may earn commission' note is not enough when only some items are linked.",
+      "implication": "Network contract rule, stricter than a footer note; follow it in addition to law.",
+      "sourceIds": [
+        "partners-s17"
+      ]
+    },
+    {
+      "jurisdiction": "UK",
+      "rule": "ASA/CMA affiliate rule not verified: the fetched ASA PDF extraction was unreliable.",
+      "implication": "Gap; do not state UK specifics.",
+      "sourceIds": [
+        "partners-s23"
+      ]
+    }
+  ],
+  "competitors": [
+    {
+      "name": "tinygrad tinybox",
+      "what": "local AI workstation",
+      "pricing": "red v2 (4x Radeon 9070XT, 64GB) and green v2 blackwell (4x RTX PRO 6000, 384GB) listed; prices not extracted; wire transfer only, no customisation",
+      "lesson": "Single fixed SKUs sold direct with no setup or service; far above a mini-PC fleet in cost.",
+      "sourceIds": [
+        "partners-s15"
+      ]
+    },
+    {
+      "name": "Framework Desktop",
+      "what": "local AI workstation",
+      "pricing": "Ryzen AI Max+ PRO 495, up to 192GB; DIY or Fedora pre-built. A search snippet cited EUR 2,329 for the 395/128GB at launch; stale, current prices not verified",
+      "lesson": "Maker sells the box and an affiliate programme; no managed agent layer, which is the gap.",
+      "sourceIds": [
+        "landscape-s08",
+        "partners-s24"
+      ]
+    },
+    {
+      "name": "Puget Systems generative AI workstations",
+      "what": "local AI workstation",
+      "pricing": "Single GPU from $4,812.73; multi-GPU rackmount from $25,734.72; optional onsite support",
+      "lesson": "Premium integrator pricing with free non-commissioned consultation as the sales motion.",
+      "sourceIds": [
+        "partners-s14"
+      ]
+    },
+    {
+      "name": "AiBitches.nl",
+      "what": "managed AI infra for SMB",
+      "pricing": "Ten plug-and-play AI modules for MKB; no pricing published",
+      "lesson": "A Dutch SMB AI offer exists and sells software modules, not hardware-plus-fleet.",
+      "sourceIds": [
+        "partners-s19"
+      ]
+    },
+    {
+      "name": "Tom's Hardware",
+      "what": "buying guide",
+      "pricing": "Free; affiliate commission disclosure statement and review sample policy",
+      "lesson": "Large publishers publish both policies as standing pages.",
+      "sourceIds": [
+        "partners-s18"
+      ]
+    },
+    {
+      "name": "Wirecutter",
+      "what": "buying guide",
+      "pricing": "Affiliate-funded; per search results the How We Make Money page was updated 2026-03-03 and separates editorial from commerce (page not opened)",
+      "lesson": "Disclosure plus editorial firewall is the trust model to copy; unverified first hand.",
+      "sourceIds": [
+        "partners-s24"
+      ]
+    }
+  ],
+  "fleetOfferModels": [
+    {
+      "model": "hardware resale margin",
+      "typicalEconomics": "Hardware resale gross margin about 30-40% (one source), about 16% in more recent channel data (another); search summaries, not primary. Minisforum wholesale needs 10+ units and discount percentages are unpublished.",
+      "evidence": "search-summary",
+      "sourceIds": [
+        "partners-s20",
+        "partners-s24"
+      ]
+    },
+    {
+      "model": "managed service retainer",
+      "typicalEconomics": "Managed services gross margin 50-60% typical; SMB up to 20 staff $2,000-3,000/month fully managed IT; per-seat $150-200 (search summaries of MSP pricing guides). Those are IT-MSP figures, not AI-fleet figures.",
+      "evidence": "search-summary",
+      "sourceIds": [
+        "partners-s24"
+      ]
+    },
+    {
+      "model": "setup fee",
+      "typicalEconomics": "No sourced numbers found; Puget sells optional onsite support but price not extracted.",
+      "evidence": "inferred",
+      "sourceIds": [
+        "partners-s14"
+      ]
+    },
+    {
+      "model": "affiliate",
+      "typicalEconomics": "Maker programmes found pay about 2% (Minisforum), 1-5% (Framework, directory), 5-10% (Beelink, directory); Amazon 3-6% depending on read. At a 2% rate a EUR 600 mini PC earns EUR 12; Apple hardware is not in its program.",
+      "evidence": "search-summary",
+      "sourceIds": [
+        "partners-s05",
+        "partners-s06",
+        "partners-s09",
+        "partners-s12"
+      ]
+    },
+    {
+      "model": "software subscription",
+      "typicalEconomics": "No sourced numbers found.",
+      "evidence": "inferred",
+      "sourceIds": []
+    }
+  ]
+}

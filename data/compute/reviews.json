@@ -1,0 +1,851 @@
+{
+  "reviews": [
+    {
+      "id": "rv-r01",
+      "machineKey": "evo-x2-128",
+      "machineId": "gmktec-evo-x2-128",
+      "outlet": "ServeTheHome",
+      "author": "Patrick Kennedy",
+      "publishedAt": "2025-07-11",
+      "sourceId": "gmktec-s19",
+      "independent": true,
+      "unitSource": "loaned by maker",
+      "sponsored": false,
+      "verdict": "Positive on large-model capability for the money; wants 10GbE and a better case.",
+      "measured": {
+        "idleWatts": "8-14",
+        "loadWatts": "147-160 (Llama 3.3 70B Q6_K); 170-180 gaming",
+        "noiseDbA": "37-38 idle; 41-43 LLM; 43-44 gaming",
+        "thermalNotes": "Not extracted. 19.5V 230W HuntKey adapter.",
+        "tokensPerSecond": [
+          {
+            "model": "Llama 3.3 70B",
+            "quant": "Q6_K",
+            "backend": "GPU offload (backend not stated)",
+            "os": "not stated",
+            "value": "3.7-3.8"
+          },
+          {
+            "model": "Llama 3.3 70B",
+            "quant": "Q6_K",
+            "backend": "CPU",
+            "os": "not stated",
+            "value": "~2"
+          },
+          {
+            "model": "Qwen3-32B",
+            "quant": "not stated",
+            "backend": "not stated",
+            "os": "not stated",
+            "value": "10.4-10.5"
+          }
+        ],
+        "other": "Reviewer: almost double speed moving from partial CPU offload to full GPU; model needed 50GB+ VRAM, so a 64GB unit (48GB GPU cap per Notebookcheck ES) could not run this config. Page 2 not opened."
+      },
+      "pros": [
+        "128GB LPDDR5X",
+        "40CU RDNA 3.5 with ROCm support",
+        "Strong AI inference for the price"
+      ],
+      "cons": [
+        "Only 2.5GbE",
+        "Limited serviceability",
+        "Case aesthetics",
+        "Noise could be improved"
+      ],
+      "issuesFound": [],
+      "snippetOnly": false
+    },
+    {
+      "id": "rv-r02",
+      "machineKey": "evo-x2-64",
+      "machineId": "gmktec-evo-x2-64",
+      "outlet": "Notebookcheck (ES mirror)",
+      "author": "not stated in extraction",
+      "publishedAt": "not stated in extraction",
+      "sourceId": "rv-s02",
+      "independent": true,
+      "unitSource": "unknown",
+      "sponsored": false,
+      "verdict": "88% rating, 'very good'. Cool and quiet at full load per extraction.",
+      "measured": {
+        "idleWatts": null,
+        "loadWatts": "BIOS power modes: Performance 140W peak/120W sustained; Balanced 120/85; Quiet 100/54",
+        "noiseDbA": null,
+        "thermalNotes": "Consistent CPU/GPU/SSD performance under sustained load; no dB measurements returned by extraction.",
+        "tokensPerSecond": [],
+        "other": "64GB config: up to 48GB assignable to iGPU, 16GB left for the system. Price $1,499 (64GB), $1,799 (96GB), $1,999 (128GB). Storage Crucial P3 Plus 1TB. Wi-Fi 7 MT7925. Conflicts with STH (41-43 dBA under LLM load) and 3DTested snippet (50 dBA): not reconciled."
+      },
+      "pros": [
+        "Sturdy aluminium/plastic chassis",
+        "Dual USB4 40Gbps",
+        "Three BIOS/button power modes",
+        "Consistent sustained performance"
+      ],
+      "cons": [
+        "Soldered RAM",
+        "Limited fan speed adjustment",
+        "Restricted BIOS options",
+        "Rubber feet hide screws"
+      ],
+      "issuesFound": [
+        "BIOS has restricted tuning options",
+        "Fan curve adjustment limited"
+      ],
+      "snippetOnly": false
+    },
+    {
+      "id": "rv-r03",
+      "machineKey": "evo-x2-64",
+      "machineId": "gmktec-evo-x2-64",
+      "outlet": "Wccftech",
+      "author": "Hassan Mujtaba",
+      "publishedAt": "2025-09-21",
+      "sourceId": "rv-s03",
+      "independent": true,
+      "unitSource": "loaned by maker",
+      "sponsored": false,
+      "verdict": "Strong gaming/productivity mini PC; fan noise annoying at higher TDP modes.",
+      "measured": {
+        "idleWatts": "6-7",
+        "loadWatts": "Gaming 76-112 depending on TDP mode; peak range 54-120 W BIOS-configurable",
+        "noiseDbA": null,
+        "thermalNotes": "Idle ~40C; gaming 49-81C by TDP mode; peak 59-86C; temps exceed 85C under full load",
+        "tokensPerSecond": [],
+        "other": "No tok/s; reviewer cited 126 TOPS only. Said up to 96GB GPU allocation on the family (not applicable to this 64GB unit; Notebookcheck says 48GB cap)."
+      },
+      "pros": [
+        "16 Zen 5 cores",
+        "Radeon 8060S strong at 1080p"
+      ],
+      "cons": [
+        "Soldered memory",
+        "Fan noise at higher modes",
+        "Limited BIOS tuning",
+        "Temps above 85C at full load"
+      ],
+      "issuesFound": [
+        "Fan 'annoying' at high TDP"
+      ],
+      "snippetOnly": false
+    },
+    {
+      "id": "rv-r04",
+      "machineKey": "evo-x2-128",
+      "machineId": "gmktec-evo-x2-128",
+      "outlet": "NoobFeed",
+      "author": "Masaru Hoshino",
+      "publishedAt": "2025-07-11",
+      "sourceId": "rv-s04",
+      "independent": true,
+      "unitSource": "unknown",
+      "sponsored": false,
+      "verdict": "Desktop-class benchmarks in a compact box.",
+      "measured": {
+        "idleWatts": null,
+        "loadWatts": "~120 sustained, 140 brief; ~150 W when overclocked",
+        "noiseDbA": null,
+        "thermalNotes": "Dual blower; RGB fan for M.2",
+        "tokensPerSecond": [
+          {
+            "model": "DeepSeek R1 Distilled (size not stated)",
+            "quant": "not stated",
+            "backend": "LM Studio, CPU",
+            "os": "not stated",
+            "value": "~13.10"
+          }
+        ],
+        "other": "Video-gen 6s/140-frame clip ~231 s on iGPU. Geekbench 6 3,076 / 20,000+."
+      },
+      "pros": [
+        "Compact",
+        "Desktop-class scores"
+      ],
+      "cons": [
+        "Limited upgrades",
+        "Premium price"
+      ],
+      "issuesFound": [],
+      "snippetOnly": false
+    },
+    {
+      "id": "rv-r05",
+      "machineKey": "evo-x2-64",
+      "machineId": "gmktec-evo-x2-64",
+      "outlet": "3DTested",
+      "author": "not stated",
+      "publishedAt": "not stated",
+      "sourceId": "rv-s05",
+      "independent": true,
+      "unitSource": "unknown",
+      "sponsored": false,
+      "verdict": "Snippet only: $1,499 as tested, case feels cheap, fan noise up to 50 dBA under load. (Figures from a search snippet, not an opened page: {\"idleWatts\":null,\"loadWatts\":null,\"noiseDbA\":\"50 (snippet, unverified)\",\"thermalNotes\":\"CPU 97C in stress test, performance mode (snippet, unverified)\",\"tokensPerSecond\":[],\"other\":\"Page not opened (HTTP 523). Memory size of tested unit not confirmed.\"})",
+      "measured": {},
+      "pros": [
+        "Dual blower plus SSD fan; stable under gaming"
+      ],
+      "cons": [
+        "Cheap-feeling case",
+        "Fan noise"
+      ],
+      "issuesFound": [],
+      "snippetOnly": true
+    },
+    {
+      "id": "rv-r06",
+      "machineKey": "evo-x3",
+      "machineId": "gmktec-evo-x3-128",
+      "outlet": "Notebookcheck (ES mirror)",
+      "author": "Fawad Murtaza",
+      "publishedAt": "2026-08-07",
+      "sourceId": "rv-s07",
+      "independent": true,
+      "unitSource": "unknown",
+      "sponsored": false,
+      "verdict": "'Much more than just an AI PC'; strong gaming alongside AI.",
+      "measured": {
+        "idleWatts": null,
+        "loadWatts": "~147 gaming",
+        "noiseDbA": null,
+        "thermalNotes": "Gaming 66C; CPU stress max 83C. Max TDP 140W.",
+        "tokensPerSecond": [],
+        "other": "128GB LPDDR5X-8000, $3,799.99. Geekbench 6 3,081/22,314. 3DMark Time Spy 10% above desktop RTX 4060. No LLM tok/s or dB extracted."
+      },
+      "pros": [
+        "Runs cool in gaming",
+        "Strong GPU"
+      ],
+      "cons": [],
+      "issuesFound": [],
+      "snippetOnly": false
+    },
+    {
+      "id": "rv-r07",
+      "machineKey": "evo-x3",
+      "machineId": "gmktec-evo-x3-128",
+      "outlet": "Level1Techs (L1Sean)",
+      "author": "L1Sean",
+      "publishedAt": "2026-07-28",
+      "sourceId": "rv-s08",
+      "independent": false,
+      "unitSource": "loaned by maker",
+      "sponsored": true,
+      "verdict": "Hybrid NPU+iGPU gives ~38 tok/s on 8B models.",
+      "measured": {
+        "idleWatts": null,
+        "loadWatts": null,
+        "noiseDbA": null,
+        "thermalNotes": "",
+        "tokensPerSecond": [
+          {
+            "model": "Meta-Llama-3.1-8B",
+            "quant": "not stated",
+            "backend": "Lemonade Server, NPU only",
+            "os": "not stated",
+            "value": "10.533"
+          },
+          {
+            "model": "Meta-Llama-3.1-8B",
+            "quant": "not stated",
+            "backend": "Lemonade Server, Hybrid NPU+iGPU",
+            "os": "not stated",
+            "value": "38.010"
+          },
+          {
+            "model": "DeepSeek-R1-Distill-8B",
+            "quant": "not stated",
+            "backend": "Lemonade, CPU",
+            "os": "not stated",
+            "value": "11.095"
+          },
+          {
+            "model": "DeepSeek-R1-Distill-8B",
+            "quant": "not stated",
+            "backend": "Lemonade, NPU",
+            "os": "not stated",
+            "value": "10.544"
+          },
+          {
+            "model": "DeepSeek-R1-Distill-8B",
+            "quant": "not stated",
+            "backend": "Lemonade, Hybrid",
+            "os": "not stated",
+            "value": "38.294"
+          }
+        ],
+        "other": "Sponsored-style post (unit plus discount coupon from GMKtec). Only 8B models; says nothing about large-model use."
+      },
+      "pros": [],
+      "cons": [],
+      "issuesFound": [],
+      "snippetOnly": false
+    },
+    {
+      "id": "rv-r08",
+      "machineKey": "ms-s1-max-128",
+      "machineId": "minisforum-ms-s1-max-128",
+      "outlet": "ServeTheHome",
+      "author": "Ryan Smith per extraction (verify)",
+      "publishedAt": "2026-01-14",
+      "sourceId": "rv-s10",
+      "independent": true,
+      "unitSource": "unknown",
+      "sponsored": false,
+      "verdict": "Headline: best Ryzen AI Max mini PC yet; chart-topping CPU/GPU performance among 395 systems; acoustics in performance mode lack refinement.",
+      "measured": {
+        "idleWatts": "9-12 (performance mode, Windows desktop); 5-6 without desktop; ~10 per page 1",
+        "loadWatts": "~120 AI inference; gaming 150-160; synthetic 200-220 (peak 220, ~200 sustained)",
+        "noiseDbA": "up to 43 at 1 m under load",
+        "thermalNotes": "No temperatures given",
+        "tokensPerSecond": [],
+        "other": "320W internal PSU; Realtek 10GbE lacks RoCEv2; second M.2 is Gen4 x1; HDMI 2.1 rather than DP. Price quoted $2,900-3,000."
+      },
+      "pros": [
+        "Dual USB4 v2",
+        "Dual 10GbE",
+        "Internal 320W PSU",
+        "Easy two-screw serviceability",
+        "Internal PCIe x16 slot"
+      ],
+      "cons": [
+        "Acoustics in performance mode",
+        "Price"
+      ],
+      "issuesFound": [],
+      "snippetOnly": false
+    },
+    {
+      "id": "rv-r09",
+      "machineKey": "ms-s1-max-128",
+      "machineId": "minisforum-ms-s1-max-128",
+      "outlet": "NASCompares",
+      "author": "Rob Andrews",
+      "publishedAt": "2026-01-23",
+      "sourceId": "rv-s11",
+      "independent": true,
+      "unitSource": "loaned by maker",
+      "sponsored": false,
+      "verdict": "Compact Strix Halo workstation; price and idle surface heat are the downsides.",
+      "measured": {
+        "idleWatts": "13-16",
+        "loadWatts": "CPU workloads 45-58; GPU-heavy 141-158",
+        "noiseDbA": "39-41 idle; 51-53 load",
+        "thermalNotes": "Chassis exterior 55-60C at idle; 31-34C under load (as extracted)",
+        "tokensPerSecond": [],
+        "other": "LLM not tested (reviewer acknowledged). Price ~ $2,639 cited."
+      },
+      "pros": [
+        "Workstation-class CPU",
+        "Dual 10GbE",
+        "Four USB4-class ports",
+        "Slide-out chassis"
+      ],
+      "cons": [
+        "High price",
+        "Uneven storage lanes",
+        "Exterior hot at idle",
+        "PCIe x16 slot is x4 electrical"
+      ],
+      "issuesFound": [
+        "Idle noise 39-41 dBA is high versus STH/GTR9 numbers",
+        "Chassis surface 55-60C at idle"
+      ],
+      "snippetOnly": false
+    },
+    {
+      "id": "rv-r10",
+      "machineKey": "ms-s1-max-128",
+      "machineId": "minisforum-ms-s1-max-128",
+      "outlet": "AkitaOnRails",
+      "author": "Fabio Akita",
+      "publishedAt": "2026-03-31",
+      "sourceId": "minisforum-s08",
+      "independent": true,
+      "unitSource": "unknown",
+      "sponsored": false,
+      "verdict": "Excels at 50GB+ models that do not fit gaming cards; RTX 5090 is 6-7x faster on small models.",
+      "measured": {
+        "idleWatts": null,
+        "loadWatts": "under 100 (as extracted)",
+        "noiseDbA": null,
+        "thermalNotes": "",
+        "tokensPerSecond": [
+          {
+            "model": "Qwen3.5:35b (24GB)",
+            "quant": "not stated",
+            "backend": "not stated (Ollama-style tag)",
+            "os": "openSUSE MicroOS",
+            "value": "43.2"
+          },
+          {
+            "model": "Qwen3-coder-next (52GB)",
+            "quant": "not stated",
+            "backend": "not stated",
+            "os": "openSUSE MicroOS",
+            "value": "29.5"
+          },
+          {
+            "model": "Qwen3.5:122b (81GB)",
+            "quant": "not stated",
+            "backend": "not stated",
+            "os": "openSUSE MicroOS",
+            "value": "19.2"
+          },
+          {
+            "model": "GLM-4.7-flash:bf16 (60GB)",
+            "quant": "bf16",
+            "backend": "not stated",
+            "os": "openSUSE MicroOS",
+            "value": "17.9"
+          },
+          {
+            "model": "gpt-oss 120B",
+            "quant": "MXFP4",
+            "backend": "llama.cpp Vulkan",
+            "os": "not stated",
+            "value": "30-35 at small context (search snippet, not on the opened page)"
+          }
+        ],
+        "other": "96GB allocated to GPU of 128GB."
+      },
+      "pros": [
+        "Runs very large models locally"
+      ],
+      "cons": [
+        "deepseek-r1:70b and llama3.3:70b crash due to a ROCm bug with tensors over 2GB"
+      ],
+      "issuesFound": [
+        "ROCm crash for tensors over 2GB on 70B models"
+      ],
+      "snippetOnly": false
+    },
+    {
+      "id": "rv-r11",
+      "machineKey": "ms-s1-max-128",
+      "machineId": "minisforum-ms-s1-max-128",
+      "outlet": "Notebookcheck (ES mirror + snippet)",
+      "author": "Sebastian Bade",
+      "publishedAt": "2025-09-28",
+      "sourceId": "rv-s13",
+      "independent": true,
+      "unitSource": "unknown",
+      "sponsored": false,
+      "verdict": "Performance/Balanced/Quiet modes compared; Quiet loses ~10-16% GPU.",
+      "measured": {
+        "idleWatts": null,
+        "loadWatts": "236 total system (snippet from main review rv-s14)",
+        "noiseDbA": "up to 48 under load (snippet rv-s14)",
+        "thermalNotes": "Cinebench R23 MC 37,334 / 35,991 / 32,001 (Perf/Bal/Quiet); 3DMark11 GPU 46,861 / 43,169 / 39,130",
+        "tokensPerSecond": [],
+        "other": "The 48 dB and 236 W figures rest on a snippet, not an opened page. Conflicts with STH 43 dBA and NASCompares 51-53 dBA."
+      },
+      "pros": [
+        "Flexible UEFI fan/performance tuning"
+      ],
+      "cons": [
+        "Noise under load; BIOS update improved idle noise (snippet)"
+      ],
+      "issuesFound": [
+        "Idle noise high before BIOS update (snippet)"
+      ],
+      "snippetOnly": false
+    },
+    {
+      "id": "rv-r12",
+      "machineKey": "ms-s1-max-64",
+      "machineId": "minisforum-ms-s1-max-64",
+      "outlet": "Notebookcheck (news)",
+      "author": "not stated",
+      "publishedAt": "2026-05-22",
+      "sourceId": "rv-s15",
+      "independent": true,
+      "unitSource": "unknown",
+      "sponsored": false,
+      "verdict": "News on the 64GB SKU, no hands-on measurement.",
+      "measured": {
+        "idleWatts": null,
+        "loadWatts": null,
+        "noiseDbA": null,
+        "thermalNotes": "",
+        "tokensPerSecond": [],
+        "other": "64GB $2,639 vs 128GB $3,199; cannot assign 96GB to the iGPU on 64GB; same noise-in-idle remark and PCIe x4/ventilation concerns as other MS-S1 coverage."
+      },
+      "pros": [],
+      "cons": [
+        "No 96GB GPU allocation"
+      ],
+      "issuesFound": [
+        "Idle noise",
+        "PCIe slot x4 with weak ventilation"
+      ],
+      "snippetOnly": false
+    },
+    {
+      "id": "rv-r13",
+      "machineKey": "bosgame-m5",
+      "machineId": "bosgame-m5",
+      "outlet": "ServeTheHome",
+      "author": "Patrick Kennedy",
+      "publishedAt": "2026-08-21",
+      "sourceId": "rv-s17",
+      "independent": true,
+      "unitSource": "unknown",
+      "sponsored": false,
+      "verdict": "Platform is familiar (same Sixunited AXB35 board as EVO-X2); best on price per GB.",
+      "measured": {
+        "idleWatts": null,
+        "loadWatts": "160-170 typical maximum; 240W PSU",
+        "noiseDbA": null,
+        "thermalNotes": "Three modes; quiet in normal mode",
+        "tokensPerSecond": [],
+        "other": "128GB tested. Page 3 held MLPerf and LLM comparisons, but tok/s not extracted."
+      },
+      "pros": [
+        "Cheapest 128GB option",
+        "Multiple modes",
+        "Low typical power"
+      ],
+      "cons": [
+        "Only 2.5GbE",
+        "Same design as EVO-X2"
+      ],
+      "issuesFound": [
+        "A commenter reported Bosgame refused an advertised price (customer service)"
+      ],
+      "snippetOnly": false
+    },
+    {
+      "id": "rv-r14",
+      "machineKey": "bosgame-m5",
+      "machineId": "bosgame-m5",
+      "outlet": "Guru3D",
+      "author": "Hilbert Hagedoorn",
+      "publishedAt": "2025-08-20",
+      "sourceId": "rv-s18",
+      "independent": true,
+      "unitSource": "unknown",
+      "sponsored": false,
+      "verdict": "Not read beyond page 4.",
+      "measured": {
+        "idleWatts": null,
+        "loadWatts": null,
+        "noiseDbA": null,
+        "thermalNotes": "On pages 5 and 17, not opened",
+        "tokensPerSecond": [],
+        "other": ""
+      },
+      "pros": [],
+      "cons": [],
+      "issuesFound": [],
+      "snippetOnly": true
+    },
+    {
+      "id": "rv-r15",
+      "machineKey": "beelink-gtr9-pro",
+      "machineId": "beelink-gtr9-pro",
+      "outlet": "ServeTheHome",
+      "author": "Patrick Kennedy",
+      "publishedAt": "2025-10-11",
+      "sourceId": "rv-s19",
+      "independent": true,
+      "unitSource": "loaned by maker",
+      "sponsored": false,
+      "verdict": "Good value at ~$1,999, quiet, but NIC driver instability and bloatware.",
+      "measured": {
+        "idleWatts": "16-25",
+        "loadWatts": "~120 during quick AI use; 125-128 running gpt-oss 120B for long periods",
+        "noiseDbA": "36-37 idle (34 dBA noise floor); 39-41 heavy AI",
+        "thermalNotes": "Vapor chamber dual-fan design per Notebookcheck teardown title (not opened)",
+        "tokensPerSecond": [
+          {
+            "model": "gpt-oss 120B",
+            "quant": "not stated",
+            "backend": "not stated",
+            "os": "not stated",
+            "value": "31.41"
+          },
+          {
+            "model": "Meta Llama 3.3 70B",
+            "quant": "not stated",
+            "backend": "not stated",
+            "os": "not stated",
+            "value": "4.89"
+          }
+        ],
+        "other": "Reviewer noted large CPU/GPU variability depending on memory split and power distribution."
+      },
+      "pros": [
+        "Quiet",
+        "Dual Intel E610 10GbE",
+        "Premium design",
+        "Strong value"
+      ],
+      "cons": [
+        "Wondershare bloatware",
+        "E610 NIC dropped after a Windows update",
+        "10GbE crash reports under sustained GPU load"
+      ],
+      "issuesFound": [
+        "Intel E610 NICs lost after Windows update (later driver fixes)",
+        "Reports of 10GbE-linked crashes under GPU load"
+      ],
+      "snippetOnly": false
+    },
+    {
+      "id": "rv-r16",
+      "machineKey": "framework-desktop",
+      "machineId": null,
+      "outlet": "PCWorld",
+      "author": "Mark Hachman",
+      "publishedAt": "2025-08-07",
+      "sourceId": "rv-s21",
+      "independent": true,
+      "unitSource": "loaned by maker",
+      "sponsored": false,
+      "verdict": "Editors' Choice; thoughtfully engineered, quiet, good cooling.",
+      "measured": {
+        "idleWatts": null,
+        "loadWatts": null,
+        "noiseDbA": null,
+        "thermalNotes": "Superior cooling versus mobile Strix Halo parts",
+        "tokensPerSecond": [
+          {
+            "model": "Llama 4 Scout 109B",
+            "quant": "not stated",
+            "backend": "not stated",
+            "os": "not stated",
+            "value": "12.64"
+          },
+          {
+            "model": "GPT-OSS 20B",
+            "quant": "not stated",
+            "backend": "not stated",
+            "os": "not stated",
+            "value": "53.9"
+          }
+        ],
+        "other": "400W FlexATX PSU."
+      },
+      "pros": [
+        "Quiet",
+        "Configurable",
+        "High build quality",
+        "Detailed assembly guide"
+      ],
+      "cons": [
+        "Soldered memory",
+        "SSD install stressful",
+        "Top panel finicky"
+      ],
+      "issuesFound": [],
+      "snippetOnly": false
+    },
+    {
+      "id": "rv-r17",
+      "machineKey": "framework-desktop",
+      "machineId": null,
+      "outlet": "Phoronix (snippet)",
+      "author": "not confirmed",
+      "publishedAt": "not stated",
+      "sourceId": "rv-s22",
+      "independent": true,
+      "unitSource": "unknown",
+      "sponsored": false,
+      "verdict": "Snippet only. (Figures from a search snippet, not an opened page: {\"idleWatts\":null,\"loadWatts\":\"avg 100-104 system with 128GB across 230+ tests; peak ~180\",\"noiseDbA\":null,\"thermalNotes\":\"Default Noctua NF-A12x25 fan quiet enough for office (snippet)\",\"tokensPerSecond\":[],\"other\":\"Up to 120W custom TDP allowed.\"})",
+      "measured": {},
+      "pros": [],
+      "cons": [],
+      "issuesFound": [],
+      "snippetOnly": true
+    }
+  ],
+  "ownerReports": [
+    {
+      "platform": "GitHub",
+      "url": "https://github.com/visorcraft/strix-halo-llm-perf",
+      "observedOn": "2026-10-05",
+      "machineKey": "evo-x2-128",
+      "machineId": "gmktec-evo-x2-128",
+      "issue": "Qwen3.5-397B crashes with synthetic prompt shapes; stable only with tuned prompts (300k ctx at np=1, 200k at np=2). Same repo throughput: Qwen3 30B MoE Q4_K_M tg128 86.1, pp512 1,142; Qwen3-Coder-Next 80B Q4_K_M tg128 42.7; MiniMax M2.5 Q3_K_M (101.76 GB) tg128 32.8; Nemotron-3 Nano 30B MXFP4 tg128 61.5, on Fedora 43, kernel 6.18.x, ROCm 7.0 nightly, 128GB. Split between EVO-X2 and GTR9 Pro not stated.",
+      "severity": "minor",
+      "resolved": "unknown",
+      "sourceId": "rv-s23"
+    },
+    {
+      "platform": "other",
+      "url": "https://www.computerbase.de/forum/threads/gtr9-pro-beelinks-2-400-euro-strix-halo-pc-macht-probleme.2259706/",
+      "observedOn": "2026-10-05",
+      "machineKey": "beelink-gtr9-pro",
+      "machineId": "beelink-gtr9-pro",
+      "issue": "Crashes under heavy GPU or full load (at least 2 reports) and integrated NIC not detected after crash until power cycle (1 report); Ubuntu ~2 min boot. USB Ethernet or Wi-Fi avoids crashes.",
+      "severity": "major",
+      "resolved": "no",
+      "sourceId": "rv-s20"
+    },
+    {
+      "platform": "other",
+      "url": "https://discuss.cachyos.org/t/strix-halo-hdmi-black-after-login-kwin-failed-to-create-framebuffer/35155",
+      "observedOn": "2026-10-05",
+      "machineKey": "bosgame-m5",
+      "machineId": "bosgame-m5",
+      "issue": "HDMI black screen after login on KDE and Hyprland from kernel 7.2.3 onward (7.2.5, 7.2.6 also); 7.1.8 works. One reporter.",
+      "severity": "major",
+      "resolved": "no",
+      "sourceId": "rv-s27"
+    },
+    {
+      "platform": "other",
+      "url": "https://community.frame.work/t/strix-halo-gfx1151-gfx-ring-timeout-under-mundane-gl-load/82310",
+      "observedOn": "2026-10-05",
+      "machineKey": "framework-desktop",
+      "machineId": null,
+      "issue": "gfx ring timeout freeze/blackout under light GL load (Ubuntu kernel 7.0.0-15.15, BIOS 3.0.3). amdgpu.gpu_recovery=1 only enables recovery.",
+      "severity": "major",
+      "resolved": "no",
+      "sourceId": "rv-s25"
+    },
+    {
+      "platform": "other",
+      "url": "https://community.frame.work/t/attn-critical-bugs-in-amdgpu-driver-included-with-kernel-6-18-x-6-19-x/79221",
+      "observedOn": "2026-10-05",
+      "machineKey": "framework-desktop",
+      "machineId": null,
+      "issue": "Kernel 6.18.x/6.19.x amdgpu hangs, GPU reset loops and freezes; workaround amdgpu.cwsr_enable=0 or kernel 6.15-6.17. Mostly laptops (gfx1150); applies to Strix Halo hardware only by inference.",
+      "severity": "firmware",
+      "resolved": "no",
+      "sourceId": "rv-s26"
+    },
+    {
+      "platform": "other",
+      "url": "https://community.frame.work/t/ryzen-ai-max-not-so-much/77999",
+      "observedOn": "2026-10-05",
+      "machineKey": "framework-desktop",
+      "machineId": null,
+      "issue": "Owners report gpt-oss-20B 22 t/s (LM Studio) vs 77 t/s (Vulkan); 70B dense 5-7 t/s; gpt-oss-120B 22 t/s at Q4 with 30k ctx by one user, 50-60 t/s by others; 215 GB/s bandwidth cited as the limit.",
+      "severity": "minor",
+      "resolved": "unknown",
+      "sourceId": "rv-s24"
+    }
+  ],
+  "consensus": {
+    "evo-x2-64": {
+      "summary": "Three entries cover the 64GB unit or the family: Notebookcheck (64GB unit), Wccftech (64GB) and a snippet-only 3DTested note. Memory is soldered; the iGPU can take up to 48GB and 16GB stays with the system (Notebookcheck, Spanish edition). No independent LLM tokens/s measurement of a 64GB unit was found. Noise: Wccftech calls the fan 'annoying' at high TDP and a snippet says up to 50 dBA; the 41-43 dBA figure is ServeTheHome's test of the 128GB unit (see evo-x2-128), which would not carry over automatically. Temperatures: Wccftech reports over 85C at full load, Notebookcheck 'cool and quiet'; unreconciled.",
+      "reviewCount": 3,
+      "commonIssues": [
+        "Fan noise at high TDP modes",
+        "Limited BIOS/fan tuning",
+        "Soldered RAM",
+        "2.5GbE only",
+        "Cheap-feeling case (Tom's Hardware snippet)"
+      ],
+      "sourceIds": [
+        "rv-s02",
+        "rv-s03",
+        "rv-s05"
+      ]
+    },
+    "evo-x2-128": {
+      "summary": "STH measured 8-14W idle, 147-160W and 41-43 dBA on 70B Q6_K, 3.7-3.8 t/s on that dense model; owner GitHub data shows MoE models in the 30-86 t/s range on Linux/ROCm.",
+      "reviewCount": 2,
+      "commonIssues": [
+        "Noise at load",
+        "2.5GbE"
+      ],
+      "sourceIds": [
+        "gmktec-s19",
+        "rv-s04",
+        "rv-s23"
+      ]
+    },
+    "evo-x3": {
+      "summary": "One hands-on Notebookcheck review (gaming/CPU focus, 66C gaming, 83C CPU stress, ~147W gaming, $3,799.99) and one sponsored L1T post (8B models only, ~38 t/s hybrid). No independent noise, idle-power or large-model data found.",
+      "reviewCount": 2,
+      "commonIssues": [
+        "Price $3,600-3,800"
+      ],
+      "sourceIds": [
+        "rv-s07",
+        "rv-s08"
+      ]
+    },
+    "ms-s1-max-64": {
+      "summary": "Only news coverage; no hands-on 64GB measurements found. Known: $2,639 vs $3,199, no 96GB GPU allocation.",
+      "reviewCount": 0,
+      "commonIssues": [
+        "Idle noise",
+        "PCIe x4 slot"
+      ],
+      "sourceIds": [
+        "rv-s15"
+      ]
+    },
+    "ms-s1-max-128": {
+      "summary": "Conflicting noise: STH up to 43 dBA at 1 m, Notebookcheck snippet up to 48 dB, NASCompares 51-53 dBA load and 39-41 idle. Power: STH ~120W AI, 220W synthetic; Notebookcheck snippet 236W; NASCompares 141-158 GPU-heavy. LLM: Akita 43.2 t/s Qwen3.5-35B, 19.2 t/s Qwen3.5-122B, 30-35 t/s gpt-oss-120B (snippet).",
+      "reviewCount": 4,
+      "commonIssues": [
+        "Fan noise in performance mode",
+        "Idle noise",
+        "PCIe x16 runs at x4",
+        "Hot chassis at idle (NASCompares)"
+      ],
+      "sourceIds": [
+        "rv-s10",
+        "rv-s11",
+        "minisforum-s08",
+        "rv-s13"
+      ]
+    },
+    "bosgame-m5": {
+      "summary": "STH: 160-170W max, familiar AXB35 platform, cheapest 128GB. Owner HDMI black-screen on CachyOS kernel 7.2.x.",
+      "reviewCount": 2,
+      "commonIssues": [
+        "2.5GbE",
+        "Customer-service complaint (one commenter)",
+        "Kernel-dependent HDMI regression"
+      ],
+      "sourceIds": [
+        "rv-s17",
+        "rv-s18",
+        "rv-s27"
+      ]
+    },
+    "beelink-gtr9-pro": {
+      "summary": "STH: idle 16-25W, 39-41 dBA heavy AI, 31.41 t/s gpt-oss 120B; E610 10GbE instability causing crashes in some units.",
+      "reviewCount": 1,
+      "commonIssues": [
+        "Intel E610 NIC drops/crashes",
+        "Bloatware"
+      ],
+      "sourceIds": [
+        "rv-s19",
+        "rv-s20"
+      ]
+    },
+    "framework-desktop": {
+      "summary": "PCWorld Editors' Choice, quiet; Phoronix snippet 100-104W average. Owner threads show kernel-dependent gfx1151 ring timeouts.",
+      "reviewCount": 2,
+      "commonIssues": [
+        "amdgpu ring timeouts/hangs on some kernels"
+      ],
+      "sourceIds": [
+        "rv-s21",
+        "rv-s22",
+        "rv-s24",
+        "rv-s25",
+        "rv-s26"
+      ]
+    }
+  },
+  "gaps": [
+    "No independent hands-on LLM tok/s for a 64GB EVO-X2 or 64GB MS-S1 MAX found. The STH 70B Q6_K test needs 50GB+ VRAM and used 128GB.",
+    "No independent noise dB or idle-watt measurement of the EVO-X3 found; Tom's Hardware and TechRadar EVO-X3 pieces were news or paywalled.",
+    "Notebookcheck English pages returned 403 (EVO-X2, EVO-X3, MS-S1 main review); Spanish/Russian mirrors used and extractions lacked dB/idle figures. The MS-S1 48 dB/236 W numbers are snippet-only.",
+    "Phoronix Framework pages returned 403 on two attempts; its numbers are snippet-only.",
+    "TechRadar MS-S1 MAX (membership wall), TechRadar Bosgame (not opened), Liliputing, Tom's Hardware reviews, TechPowerUp, Chips and Cheese, Hardware Canucks, Ars Technica: no usable hands-on review opened.",
+    "STH EVO-X2 page 2 not opened; STH Bosgame and GTR9 power/noise pages not fully read; Guru3D Bosgame power/noise pages (5, 17) not opened.",
+    "Owner defect reports: no Reddit, Trustpilot or GMKtec-owner threads were retrievable. Searches returned no EVO-X2 coil-whine, DOA or SSD reports, so no counts exist for those. The ownerReports above are mostly Strix Halo kernel/firmware issues on other brands.",
+    "Minisforum 'BIOS update issues' came from a Japanese blog snippet (gadgetzamurai.jp), not opened.",
+    "MiniPCLab, runaihome and dev.to pages are low-quality aggregators; MiniPCLab MS-S1 page contains factual errors and was excluded from measurements.",
+    "STH MS-S1 byline (Ryan Smith) came from the extraction; verify before citing."
+  ]
+}

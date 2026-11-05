@@ -1,0 +1,510 @@
+[
+  {
+    "id": "gmktec",
+    "name": "GMKtec",
+    "kind": "maker",
+    "hq": "Shenzhen, China (search summary, unverified at primary)",
+    "platform": "sixunited",
+    "ownBoardDesign": false,
+    "approach": "Sells the Sixunited AXB35-02 Strix Halo board (a community wiki's attribution) in its own chassis as the EVO-X2, and a larger OCuLink chassis with the same SoC as the EVO-X3. EU list prices seen: EVO-X2 64GB EUR 1,999.99 and EVO-X3 128GB EUR 3,499.99. No like-for-like official EU EVO-X2 128GB price was extracted.",
+    "techChoices": [
+      {
+        "topic": "memory",
+        "choice": "Soldered LPDDR5X on every Strix Halo and Intel Lunar/Panther model; SO-DIMM only on K11, K8 Plus and M-series",
+        "evidence": "inferred",
+        "sourceIds": [
+          "gmktec-s01",
+          "gmktec-s02",
+          "gmktec-s03",
+          "gmktec-s13"
+        ]
+      },
+      {
+        "topic": "power",
+        "choice": "External Huntkey PSU on the EVO-X2; 8-14 W idle, 147-160 W under 70B load",
+        "evidence": "documented",
+        "sourceIds": [
+          "supply-s02",
+          "gmktec-s18"
+        ]
+      },
+      {
+        "topic": "network",
+        "choice": "Single 2.5GbE on EVO-X2; OCuLink only on EVO-X3",
+        "evidence": "documented",
+        "sourceIds": [
+          "gmktec-s18",
+          "gmktec-s24"
+        ]
+      },
+      {
+        "topic": "acoustics",
+        "choice": "41-43 dBA under AI load at the STH test position",
+        "evidence": "documented",
+        "sourceIds": [
+          "gmktec-s18"
+        ]
+      }
+    ],
+    "channels": [
+      "gmktec-eu-store",
+      "gmktec-us-store",
+      "geizhals-at",
+      "datafox-ee"
+    ],
+    "euTerms": {
+      "warrantyMonths": 24,
+      "usWarrantyMonths": 12,
+      "returnDays": 7,
+      "restockingFeePct": 15,
+      "shipsFrom": "Bremen, Germany (Shenzhen fallback)",
+      "note": "Return window and restocking fee read shorter than the EU 14-day withdrawal right; needs a legal check. Shipping policy summary mentions declaring a lower commodity value: treat as a compliance risk, never as a method.",
+      "sourceIds": [
+        "gmktec-s15",
+        "gmktec-s16",
+        "gmktec-s17"
+      ]
+    },
+    "strengths": [
+      "Lowest official EU list price for a complete 64GB Strix Halo machine seen (EUR 1,999.99)",
+      "Large model range incl. serviceable K11"
+    ],
+    "weaknesses": [
+      "Shares a board platform with several other brands per a community wiki, so the hardware itself is not distinctive",
+      "Official EU 128GB EVO-X2 price not extracted; independent retail EUR 3,999-4,450 incl. VAT (Austria, Estonia)",
+      "Short EU return window, restocking fee"
+    ],
+    "affiliate": {
+      "programId": "gmktec-awin",
+      "status": "partial"
+    },
+    "sourceIds": [
+      "gmktec-s01",
+      "gmktec-s09",
+      "gmktec-s15",
+      "supply-s02",
+      "supply-s01"
+    ]
+  },
+  {
+    "id": "minisforum",
+    "name": "Minisforum",
+    "kind": "maker",
+    "hq": "Shenzhen, China (search digest of About page, unverified at primary)",
+    "platform": "own",
+    "ownBoardDesign": null,
+    "approach": "Positions the MS-S1 MAX as a workstation: internal 320 W PSU, 2x10GbE, PCIe x16 slot wired x4, rack and two-unit cluster marketing. The board appears to be its own design (inferred; the board fab was not identified). Also sells SO-DIMM machines (AI X1 Pro up to 96GB) and announced a Strix Halo mini-ITX board (BD395i MAX).",
+    "techChoices": [
+      {
+        "topic": "power",
+        "choice": "Internal Lite-On 320 W PSU in the MS-S1 MAX; about 10 W idle in Windows, 200-220 W peak",
+        "evidence": "documented",
+        "sourceIds": [
+          "supply-s09",
+          "minisforum-s06"
+        ]
+      },
+      {
+        "topic": "network",
+        "choice": "2x10GbE on MS-S1 MAX",
+        "evidence": "documented",
+        "sourceIds": [
+          "minisforum-s04",
+          "minisforum-s05"
+        ]
+      },
+      {
+        "topic": "expansion",
+        "choice": "PCIe 4.0 x16 slot that is x4 electrically; no OCuLink on MS-S1 MAX; OCuLink on AI X1 Pro",
+        "evidence": "documented",
+        "sourceIds": [
+          "minisforum-s04",
+          "minisforum-s05",
+          "minisforum-s14"
+        ]
+      },
+      {
+        "topic": "memory",
+        "choice": "Soldered 64/128/192GB on Strix Halo models; SO-DIMM on AI X1 Pro",
+        "evidence": "documented",
+        "sourceIds": [
+          "minisforum-s01",
+          "minisforum-s14"
+        ]
+      }
+    ],
+    "channels": [
+      "minisforum-eu-store",
+      "minisforum-wholesale"
+    ],
+    "euTerms": {
+      "warrantyMonths": 24,
+      "returnDays": 30,
+      "note": "UK page read: 24 months standard (36 months promotion ended 2026-07-31), 30-day returns, customer pays return shipping. EU/NL policy page not opened. Store sells a EUR 30 'Duty Free Shipping Service' and 'Tariff Insurance' as products: customs handling unverified.",
+      "sourceIds": [
+        "minisforum-s12",
+        "minisforum-s02"
+      ]
+    },
+    "strengths": [
+      "Own board design and best-documented workstation feature set",
+      "Wholesale route from 10 units with 3-year warranty"
+    ],
+    "weaknesses": [
+      "EU list is high (EUR 3,999 sale / 4,999 regular for 128GB)",
+      "BIOS issues reported on AI X1 Pro (one owner) and a loud idle on early MS-S1 MAX fixed by BIOS v1.03 (Notebookcheck, via search digest)",
+      "No independent EU merchant price verified"
+    ],
+    "affiliate": {
+      "programId": "minisforum-awin",
+      "status": "verified"
+    },
+    "sourceIds": [
+      "minisforum-s01",
+      "minisforum-s04",
+      "minisforum-s06",
+      "minisforum-s12"
+    ]
+  },
+  {
+    "id": "framework",
+    "name": "Framework",
+    "kind": "maker",
+    "hq": "San Francisco, USA (not researched)",
+    "platform": "own",
+    "ownBoardDesign": null,
+    "approach": "Standard mini-ITX mainboard sold separately and as a DIY or prebuilt Desktop, with named component partners and public price explanations. Raised prices during the 2026 DRAM shortage and states it will cut when the market calms.",
+    "techChoices": [
+      {
+        "topic": "power",
+        "choice": "Semi-custom FSP 400 W Flex ATX PSU",
+        "evidence": "documented",
+        "sourceIds": [
+          "supply-s03"
+        ]
+      },
+      {
+        "topic": "cooling",
+        "choice": "Cooler Master and Noctua co-developed thermal system",
+        "evidence": "documented",
+        "sourceIds": [
+          "supply-s03"
+        ]
+      },
+      {
+        "topic": "platform",
+        "choice": "AMD-supplied Strix Halo platform; 192GB Max+ PRO 495 variant ships Nov 2026",
+        "evidence": "documented",
+        "sourceIds": [
+          "landscape-s11",
+          "landscape-s10"
+        ]
+      }
+    ],
+    "channels": [
+      "framework-nl-store"
+    ],
+    "euTerms": {
+      "note": "Support and warranty terms not read.",
+      "sourceIds": []
+    },
+    "strengths": [
+      "Named suppliers (FSP, Cooler Master, Noctua), serviceable design, EU store with VAT-inclusive prices",
+      "Mainboard sold alone: the closest thing to a build-your-own Strix Halo"
+    ],
+    "weaknesses": [
+      "128GB mainboard alone EUR 3,539 incl. VAT, about EUR 1,100 above a complete Bosgame M5 128GB seen in June",
+      "Out of stock on fetch day for 32/64/128GB DIY"
+    ],
+    "affiliate": {
+      "programId": "framework-impact",
+      "status": "partial"
+    },
+    "sourceIds": [
+      "supply-s03",
+      "supply-s04",
+      "landscape-s07",
+      "landscape-s09"
+    ]
+  },
+  {
+    "id": "bosgame",
+    "name": "Bosgame",
+    "kind": "maker",
+    "hq": "not researched",
+    "platform": "sixunited",
+    "ownBoardDesign": false,
+    "approach": "Sells the Sixunited-platform M5 at the lowest complete-system price found: EUR 2,439.95 for 128GB/2TB on 24 June 2026 (cut from EUR 2,875.95). One June observation only; bosgamepc.com blocked live fetches.",
+    "techChoices": [
+      {
+        "topic": "platform",
+        "choice": "Sixunited platform per community wiki",
+        "evidence": "documented",
+        "sourceIds": [
+          "supply-s01"
+        ]
+      }
+    ],
+    "channels": [
+      "bosgame-eu-store"
+    ],
+    "euTerms": {
+      "note": "Not read.",
+      "sourceIds": []
+    },
+    "strengths": [
+      "Cheapest credible complete 128GB machine in the data"
+    ],
+    "weaknesses": [
+      "Stuck power button and limited BIOS updates reported in the community wiki",
+      "Price not verified live"
+    ],
+    "affiliate": {
+      "programId": null,
+      "status": "not-found"
+    },
+    "sourceIds": [
+      "supply-s01",
+      "supply-s08"
+    ]
+  },
+  {
+    "id": "beelink",
+    "name": "Beelink",
+    "kind": "maker",
+    "hq": "Shenzhen, China (not researched)",
+    "platform": "own-or-unidentified",
+    "ownBoardDesign": null,
+    "approach": "GTR9 Pro uses a board the community wiki treats as distinct from Sixunited, with early stability problems in owner threads. Offers ODM/OEM services and wholesale.",
+    "techChoices": [
+      {
+        "topic": "network",
+        "choice": "2x10GbE and USB4 on GTR9 Pro",
+        "evidence": "documented",
+        "sourceIds": [
+          "landscape-s18"
+        ]
+      }
+    ],
+    "channels": [
+      "beelink-store"
+    ],
+    "euTerms": {
+      "note": "Not read.",
+      "sourceIds": []
+    },
+    "strengths": [
+      "Offers ODM and OEM route (wholesale@bee-link.com)"
+    ],
+    "weaknesses": [
+      "USD price on DE page with 35-day pre-order; stability reports are forum-level evidence"
+    ],
+    "affiliate": {
+      "programId": "beelink-impact",
+      "status": "partial"
+    },
+    "sourceIds": [
+      "landscape-s18",
+      "supply-s27",
+      "partners-s21"
+    ]
+  },
+  {
+    "id": "hp",
+    "name": "HP",
+    "kind": "oem",
+    "hq": "not researched",
+    "platform": null,
+    "ownBoardDesign": null,
+    "approach": "Z2 Mini G1a is a Strix Halo workstation sold through business resellers: EUR 3,890.15 incl. VAT for 128GB/1TB at a Dutch reseller, ships when available; the 2x1TB SKU on the same listing is EUR 7,025.26.",
+    "techChoices": [],
+    "channels": [
+      "bechtle-arp-nl"
+    ],
+    "euTerms": {
+      "note": "Not read.",
+      "sourceIds": []
+    },
+    "strengths": [
+      "Cheapest verified in-NL 128GB listing with VAT stated"
+    ],
+    "weaknesses": [
+      "B2B channel, SKU ambiguity, OS on SKU not stated"
+    ],
+    "affiliate": {
+      "programId": null,
+      "status": "not-found"
+    },
+    "sourceIds": [
+      "landscape-s15"
+    ]
+  },
+  {
+    "id": "corsair",
+    "name": "Corsair",
+    "kind": "brand-on-platform",
+    "hq": "not researched",
+    "platform": "sixunited",
+    "ownBoardDesign": false,
+    "approach": "AI Workstation 300 is on the Sixunited platform per the community wiki. List price rose from USD 1,999.99 at launch to 2,699.99 from, max USD 3,399.99.",
+    "techChoices": [],
+    "channels": [],
+    "euTerms": {
+      "note": "EU availability and price not verified.",
+      "sourceIds": []
+    },
+    "strengths": [
+      "Established brand and retail presence"
+    ],
+    "weaknesses": [
+      "EU price not verified"
+    ],
+    "affiliate": {
+      "programId": "corsair-impact",
+      "status": "partial"
+    },
+    "sourceIds": [
+      "supply-s01",
+      "landscape-s16"
+    ]
+  },
+  {
+    "id": "amd",
+    "name": "AMD",
+    "kind": "silicon-vendor",
+    "hq": "USA",
+    "platform": null,
+    "ownBoardDesign": null,
+    "approach": "Supplies the Strix Halo silicon and sells its own Ryzen AI Halo reference mini PC (launched 10 July 2026 in the US; about EUR 4,100 in Germany per Notebookcheck, approximate). A Medusa Halo successor with LPDDR6 is a rumor for 2027-28.",
+    "techChoices": [],
+    "channels": [],
+    "euTerms": {
+      "note": "n/a",
+      "sourceIds": []
+    },
+    "strengths": [],
+    "weaknesses": [],
+    "affiliate": {
+      "programId": null,
+      "status": "not-found"
+    },
+    "sourceIds": [
+      "landscape-s17",
+      "landscape-s29"
+    ]
+  },
+  {
+    "id": "nvidia",
+    "name": "NVIDIA",
+    "kind": "silicon-vendor",
+    "hq": "USA",
+    "platform": null,
+    "ownBoardDesign": null,
+    "approach": "DGX Spark (GB10) is Linux-only (DGX OS) with CUDA; USD 3,999 at launch, USD 4,699 after a February 2026 rise. OEM GB10 boxes (ASUS, Gigabyte, Dell, Lenovo, MSI, HP, Acer) list USD 5,400-8,200 with stock-outs.",
+    "techChoices": [
+      {
+        "topic": "software",
+        "choice": "DGX OS (Linux) only",
+        "evidence": "documented",
+        "sourceIds": [
+          "landscape-s12"
+        ]
+      }
+    ],
+    "channels": [],
+    "euTerms": {
+      "note": "No EU list price verified.",
+      "sourceIds": []
+    },
+    "strengths": [
+      "Fast prompt processing (pp about 1956 t/s on gpt-oss-120b)"
+    ],
+    "weaknesses": [
+      "Not Windows",
+      "Price and stock volatility"
+    ],
+    "affiliate": {
+      "programId": null,
+      "status": "not-found"
+    },
+    "sourceIds": [
+      "landscape-s12",
+      "landscape-s14",
+      "landscape-s19"
+    ]
+  },
+  {
+    "id": "asus",
+    "name": "ASUS",
+    "kind": "oem",
+    "hq": "Taiwan (general knowledge)",
+    "platform": "nvidia-gb10",
+    "ownBoardDesign": null,
+    "approach": "Ascent GX10 is an ASUS GB10 box: USD 6,999 on the ASUS US store (forum report) and EUR 3,680 ex VAT in one forum post. Neither is a verified EU merchant price.",
+    "techChoices": [],
+    "channels": [],
+    "euTerms": {
+      "note": "n/a",
+      "sourceIds": []
+    },
+    "strengths": [],
+    "weaknesses": [
+      "Evidence is forum-level"
+    ],
+    "affiliate": {
+      "programId": null,
+      "status": "not-found"
+    },
+    "sourceIds": [
+      "landscape-s13",
+      "landscape-s14"
+    ]
+  },
+  {
+    "id": "apple",
+    "name": "Apple",
+    "kind": "vertical",
+    "hq": "USA",
+    "platform": "own",
+    "ownBoardDesign": true,
+    "approach": "Vertically integrated unified memory: Mac Studio M5 Max 460/614 GB/s (to 128GB), M5 Ultra 1.2 TB/s (96GB base, 512GB max), Mac mini M5 Pro 307 GB/s (64GB max). macOS only. Raised Mac mini prices by EUR 300-350 over the M4 generation.",
+    "techChoices": [
+      {
+        "topic": "memory",
+        "choice": "Unified memory; GPU wired limit adjustable via iogpu.wired_limit_mb",
+        "evidence": "documented",
+        "sourceIds": [
+          "landscape-s01",
+          "landscape-s28"
+        ]
+      }
+    ],
+    "channels": [
+      "apple-nl-store"
+    ],
+    "euTerms": {
+      "note": "Not read.",
+      "sourceIds": []
+    },
+    "strengths": [
+      "Memory bandwidth 1.2x to 4.7x Strix Halo's 256 GB/s theoretical",
+      "Documented 512GB option"
+    ],
+    "weaknesses": [
+      "No Windows",
+      "Apple NL pages show no prices (prices taken from iCulture / EveryMac)",
+      "Apple affiliate covers digital content only, not Mac hardware"
+    ],
+    "affiliate": {
+      "programId": "apple-partnerize",
+      "status": "verified"
+    },
+    "sourceIds": [
+      "landscape-s01",
+      "landscape-s02",
+      "landscape-s04",
+      "landscape-s05",
+      "landscape-s06"
+    ]
+  }
+]

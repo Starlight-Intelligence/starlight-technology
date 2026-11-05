@@ -1,0 +1,217 @@
+{
+  "diy": [
+    {
+      "id": "diy-agent-node",
+      "goal": "64GB always-on agent node",
+      "status": "incomplete-estimate",
+      "pricedParts": [
+        {
+          "part": "Framework Desktop mainboard, Ryzen AI Max+ 395, 64GB",
+          "amount": 1859,
+          "currency": "EUR",
+          "merchant": "Framework NL",
+          "merchantHost": "frame.work",
+          "includesTax": true,
+          "verifiedOn": "2026-10-05",
+          "sourceId": "supply-s04"
+        },
+        {
+          "part": "DeepCool CH170 Digital mini-ITX case (SFX)",
+          "amount": 79.9,
+          "currency": "EUR",
+          "merchant": "Alternate.nl",
+          "merchantHost": "alternate.nl",
+          "includesTax": true,
+          "verifiedOn": "2026-10-05",
+          "sourceId": "pn-s09"
+        },
+        {
+          "part": "Lian Li SP750 V2 SFX 750W PSU",
+          "amount": 124.99,
+          "currency": "EUR",
+          "merchant": "Alternate.nl",
+          "merchantHost": "alternate.nl",
+          "includesTax": true,
+          "verifiedOn": "2026-10-05",
+          "sourceId": "pn-s10"
+        },
+        {
+          "part": "Kingston NV3 2TB NVMe SSD",
+          "amount": 258,
+          "currency": "EUR",
+          "merchant": "Alternate.nl",
+          "merchantHost": "alternate.nl",
+          "includesTax": true,
+          "verifiedOn": "2026-10-05",
+          "sourceId": "pn-s08"
+        }
+      ],
+      "missingParts": [
+        "cooler (not verified whether the mainboard ships with one)",
+        "compatibility of the case, PSU and cooler with the Framework mainboard",
+        "shipping",
+        "exact component listings (prices come from Alternate category or search pages, not product pages)"
+      ],
+      "totalEur": 2321.89,
+      "compareToBuilt": "Incomplete estimate, a lower bound that omits the cooler and shipping, EUR 2321.89 incl. VAT against GMKtec EVO-X2 64GB/1TB at EUR 1,999.99 (EU official, tax not stated) and Framework Desktop DIY 64GB at EUR 2,209 plus a EUR 258 SSD (EUR 2,467, out of stock on the day read). The mainboard route costs more than the complete machines and carries compatibility risk.",
+      "sourceIds": [
+        "supply-s04",
+        "pn-s08",
+        "pn-s09",
+        "pn-s10"
+      ]
+    },
+    {
+      "id": "diy-llm-box",
+      "goal": "128GB local-model box",
+      "status": "incomplete-estimate",
+      "pricedParts": [
+        {
+          "part": "Framework Desktop mainboard, Ryzen AI Max+ 395, 128GB",
+          "amount": 3539,
+          "currency": "EUR",
+          "merchant": "Framework NL",
+          "merchantHost": "frame.work",
+          "includesTax": true,
+          "verifiedOn": "2026-10-05",
+          "sourceId": "supply-s04"
+        },
+        {
+          "part": "DeepCool CH170 Digital mini-ITX case (SFX)",
+          "amount": 79.9,
+          "currency": "EUR",
+          "merchant": "Alternate.nl",
+          "merchantHost": "alternate.nl",
+          "includesTax": true,
+          "verifiedOn": "2026-10-05",
+          "sourceId": "pn-s09"
+        },
+        {
+          "part": "Lian Li SP750 V2 SFX 750W PSU",
+          "amount": 124.99,
+          "currency": "EUR",
+          "merchant": "Alternate.nl",
+          "merchantHost": "alternate.nl",
+          "includesTax": true,
+          "verifiedOn": "2026-10-05",
+          "sourceId": "pn-s10"
+        },
+        {
+          "part": "Kingston NV3 2TB NVMe SSD",
+          "amount": 258,
+          "currency": "EUR",
+          "merchant": "Alternate.nl",
+          "merchantHost": "alternate.nl",
+          "includesTax": true,
+          "verifiedOn": "2026-10-05",
+          "sourceId": "pn-s08"
+        }
+      ],
+      "missingParts": [
+        "cooler (not verified whether the mainboard ships with one)",
+        "compatibility of the case, PSU and cooler with the Framework mainboard",
+        "shipping",
+        "exact component listings (prices come from Alternate category or search pages, not product pages)"
+      ],
+      "totalEur": 4001.89,
+      "compareToBuilt": "Incomplete estimate, a lower bound that omits the cooler and shipping, EUR 4001.89 incl. VAT against Minisforum MS-S1 MAX 128GB/2TB at EUR 3,999 (sale, tax not stated) and Framework Desktop DIY 128GB at EUR 3,889 plus a EUR 258 SSD (EUR 4,147, out of stock on the day read). Building from the mainboard saves nothing; its value is an EU counterparty (Framework Computer B.V.), not the price.",
+      "sourceIds": [
+        "supply-s04",
+        "pn-s08",
+        "pn-s09",
+        "pn-s10"
+      ]
+    }
+  ],
+  "secondHand": [
+    {
+      "id": "used-1",
+      "item": "Refurbished business mini PC (EliteDesk 800 G5 DM / ThinkCentre M920q / OptiPlex 5080 Micro)",
+      "priceLowEur": 163.99,
+      "priceMedianEur": null,
+      "priceHighEur": 329.95,
+      "listingsSeen": 4,
+      "worthIt": "yes",
+      "why": "12-month warranty, cheap always-on agent node, but base RAM 4-8GB and not 64GB class. Median not computed from 4 listings.",
+      "sourceIds": [
+        "supply-s17"
+      ]
+    },
+    {
+      "id": "used-2",
+      "item": "Lenovo ThinkCentre M70q Gen 3 Tiny 16GB/512GB (refurbed.nl)",
+      "priceLowEur": 494.95,
+      "priceMedianEur": null,
+      "priceHighEur": 494.95,
+      "listingsSeen": 1,
+      "worthIt": "conditional",
+      "why": "Verified single listing; newer platform, still 16GB.",
+      "sourceIds": [
+        "supply-s17"
+      ]
+    },
+    {
+      "id": "used-3",
+      "item": "Mac mini 2018 8GB/256GB refurbished (refurbed.nl)",
+      "priceLowEur": 236.49,
+      "priceMedianEur": null,
+      "priceHighEur": 236.49,
+      "listingsSeen": 1,
+      "worthIt": "no",
+      "why": "Intel-era, no unified-memory LLM value.",
+      "sourceIds": [
+        "supply-s17"
+      ]
+    },
+    {
+      "id": "used-4",
+      "item": "Mac Studio M1 Ultra 64GB (Swiss refurbisher, CHF)",
+      "priceLowEur": null,
+      "priceMedianEur": null,
+      "priceHighEur": null,
+      "listingsSeen": 1,
+      "worthIt": "conditional",
+      "why": "Revendo CH 1,620 CHF, out of stock, one listing; EUR conversion not done (rate not sourced). New price was EUR 4,599 (LDLC). No NL listing evidence. Apple NL refurbished page showed no Mac Studio.",
+      "sourceIds": [
+        "supply-s18",
+        "supply-s19"
+      ]
+    },
+    {
+      "id": "used-5",
+      "item": "Mac Studio M1/M2 Ultra 128/192GB, NL",
+      "priceLowEur": null,
+      "priceMedianEur": null,
+      "priceHighEur": null,
+      "listingsSeen": 0,
+      "worthIt": "conditional",
+      "why": "No NL data obtained. Marktplaats, Tweakers V&A, Back Market NL, eBay.nl blocked or not retrievable. Search snippets from other regions (USD 4,200-11,676 for M2 Ultra 192GB) are too wide to quote.",
+      "sourceIds": []
+    },
+    {
+      "id": "used-6",
+      "item": "Used RTX 3090 24GB (eBay.de snippets)",
+      "priceLowEur": 660,
+      "priceMedianEur": null,
+      "priceHighEur": 1039,
+      "listingsSeen": 4,
+      "worthIt": "conditional",
+      "why": "4 snippet listings EUR 660-1,039; US tracker USD 1,338-1,355 and rising. Mining wear and no warranty risk from private sellers. RTX 4090 not researched.",
+      "sourceIds": [
+        "supply-s21",
+        "supply-s22"
+      ]
+    },
+    {
+      "id": "used-7",
+      "item": "Mac mini M-series used, used workstations",
+      "priceLowEur": null,
+      "priceMedianEur": null,
+      "priceHighEur": null,
+      "listingsSeen": 0,
+      "worthIt": "conditional",
+      "why": "Not retrieved.",
+      "sourceIds": []
+    }
+  ]
+}

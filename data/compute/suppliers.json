@@ -1,0 +1,99 @@
+[
+  {
+    "id": "sixunited",
+    "name": "Sixunited",
+    "role": "board-and-chassis-platform",
+    "country": "China",
+    "countryEvidence": "source",
+    "note": "AXB35 Strix Halo board and stock case (XB35-H02/03-BQ)",
+    "sourceIds": [
+      "supply-s01",
+      "supply-s02"
+    ]
+  },
+  {
+    "id": "huntkey",
+    "name": "Huntkey",
+    "role": "psu",
+    "country": "China",
+    "countryEvidence": "source",
+    "sourceIds": [
+      "supply-s02"
+    ]
+  },
+  {
+    "id": "lite-on",
+    "name": "Lite-On",
+    "role": "psu",
+    "country": "Taiwan",
+    "countryEvidence": "general-knowledge",
+    "sourceIds": [
+      "supply-s09"
+    ]
+  },
+  {
+    "id": "fsp",
+    "name": "FSP Group",
+    "role": "psu",
+    "country": "Taiwan",
+    "countryEvidence": "general-knowledge",
+    "sourceIds": [
+      "supply-s03"
+    ]
+  },
+  {
+    "id": "cooler-master",
+    "name": "Cooler Master",
+    "role": "cooling",
+    "country": "Taiwan",
+    "countryEvidence": "general-knowledge",
+    "sourceIds": [
+      "supply-s03"
+    ]
+  },
+  {
+    "id": "noctua",
+    "name": "Noctua",
+    "role": "cooling",
+    "country": "Austria",
+    "countryEvidence": "general-knowledge",
+    "sourceIds": [
+      "supply-s03"
+    ]
+  },
+  {
+    "id": "kingston",
+    "name": "Kingston",
+    "role": "ssd",
+    "country": null,
+    "countryEvidence": "not-stated",
+    "note": "2TB QLC SSD in the MS-S1 Max review sample",
+    "sourceIds": [
+      "supply-s09"
+    ]
+  },
+  {
+    "id": "tsmc",
+    "name": "TSMC",
+    "role": "soc-fab",
+    "country": "Taiwan",
+    "countryEvidence": "general-knowledge",
+    "note": "Strix Halo fab not verified this session",
+    "sourceIds": [
+      "supply-s03"
+    ]
+  },
+  {
+    "id": "dram-vendors",
+    "name": "LPDDR5X vendors (unnamed)",
+    "role": "memory",
+    "country": null,
+    "countryEvidence": "not-stated",
+    "note": "No opened source names the memory maker in any Strix Halo box",
+    "sourceIds": [
+      "supply-s01",
+      "supply-s03",
+      "supply-s09"
+    ]
+  }
+]

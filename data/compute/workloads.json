@@ -1,0 +1,88 @@
+[
+  {
+    "id": "agent-node-10",
+    "name": "10 concurrent agent + headless-browser sessions",
+    "kind": "always-on",
+    "minMemoryGb": 32,
+    "minCores": 8,
+    "basis": "estimate",
+    "note": "About 1.0-1.5 GB per agent plus headless-browser session, plus 8-12 GB for build bursts. Derived from one 30-minute profile of a 31 GB Windows laptop, not a benchmark of these machines.",
+    "sourceIds": []
+  },
+  {
+    "id": "agent-node-20",
+    "name": "20 concurrent agent + headless-browser sessions",
+    "kind": "always-on",
+    "minMemoryGb": 64,
+    "minCores": 16,
+    "basis": "estimate",
+    "note": "Same per-session estimate; 64 GB leaves room for builds and cache.",
+    "sourceIds": []
+  },
+  {
+    "id": "local-moe-30b-q4",
+    "name": "Local 30-35B mixture-of-experts at Q4",
+    "kind": "local-llm",
+    "modelGb": 25,
+    "headroomGb": 24,
+    "basis": "size arithmetic",
+    "measured": "Qwen3 30B Q4_K_M 86 t/s (llama.cpp Vulkan, Linux); 43-66 t/s on other runs",
+    "note": "Weights about 18-21 GB at Q4_K_M plus about 4 GB KV cache. Headroom 24 GB is an estimate: OS 4 GB, 10 agent sessions 12 GB, 8 GB spare.",
+    "sourceIds": [
+      "gmktec-s20",
+      "minisforum-s08",
+      "minisforum-s09"
+    ]
+  },
+  {
+    "id": "local-dense-70b-q4",
+    "name": "Local 70B dense at Q4",
+    "kind": "local-llm",
+    "modelGb": 46,
+    "headroomGb": 24,
+    "basis": "size arithmetic",
+    "measured": "Independent tests: Llama 70B Q4_K_M 5.26 tok/s (Framework Strix Halo, llama.cpp Vulkan); Llama 3.3 70B Q6_K 3.7-3.8 tok/s (GMKtec EVO-X2). A secondary source reports 8-12 tok/s at Q4.",
+    "note": "Weights about 40 GB at Q4 plus about 6 GB KV cache at moderate context; same 24 GB headroom estimate. Measured speeds on 256 GB/s class memory are about 4-5 tok/s; one secondary report says 8-12. Bandwidth, not capacity, sets the speed.",
+    "sourceIds": [
+      "gmktec-s18",
+      "minisforum-s09",
+      "minisforum-s10"
+    ]
+  },
+  {
+    "id": "local-moe-120b",
+    "name": "Local 120B-class mixture-of-experts",
+    "kind": "local-llm",
+    "modelGb": 87,
+    "headroomGb": 24,
+    "basis": "measured size",
+    "measured": "Qwen3.5 122B Q4_K_M (81 GB) 19.2 t/s on MS-S1 MAX; gpt-oss-120b about 60 t/s on DGX Spark",
+    "note": "Weights 81 GB (Qwen3.5 122B Q4_K_M, measured size) plus about 6 GB KV; needs the 128 GB class or larger. A reported Windows cap of 96 GB addressable GPU memory on 128 GB Strix Halo machines is unconfirmed.",
+    "sourceIds": [
+      "minisforum-s08",
+      "landscape-s19"
+    ]
+  },
+  {
+    "id": "image-gen",
+    "name": "Local image generation (Flux, SDXL)",
+    "kind": "gpu-later",
+    "minVramGb": 16,
+    "basis": "documented",
+    "note": "FLUX.1-dev needs about 34 GiB unoptimised and runs under 16 GB with quantisation and offload.",
+    "sourceIds": [
+      "stack-s22"
+    ]
+  },
+  {
+    "id": "video-gen",
+    "name": "Local video generation (Wan, HunyuanVideo, LTX)",
+    "kind": "gpu-later",
+    "minVramGb": 24,
+    "basis": "documented",
+    "note": "Wan2.2 A14B needs 80 GB or more; TI2V-5B about 24 GB with offload. Large runs belong in rented cloud GPUs.",
+    "sourceIds": [
+      "stack-s22"
+    ]
+  }
+]

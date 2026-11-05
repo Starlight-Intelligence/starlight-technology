@@ -1,0 +1,188 @@
+[
+  {
+    "id": "amd-max-plus-395",
+    "name": "AMD Ryzen AI Max+ 395 (Strix Halo)",
+    "vendor": "AMD",
+    "kind": "apu",
+    "memoryBandwidthGBs": 256,
+    "bandwidthNote": "256-bit LPDDR5X-8000 theoretical; measured about 212-215 GB/s",
+    "maxMemoryGb": 128,
+    "sourceIds": [
+      "landscape-s21",
+      "landscape-s22"
+    ]
+  },
+  {
+    "id": "amd-max-plus-pro-495",
+    "name": "AMD Ryzen AI Max+ PRO 495",
+    "vendor": "AMD",
+    "kind": "apu",
+    "memoryBandwidthGBs": 273,
+    "bandwidthNote": "LPDDR5X-8533, vendor/press figure",
+    "maxMemoryGb": 192,
+    "sourceIds": [
+      "landscape-s11",
+      "landscape-s10"
+    ]
+  },
+  {
+    "id": "amd-max-385",
+    "name": "AMD Ryzen AI Max 385",
+    "vendor": "AMD",
+    "kind": "apu",
+    "memoryBandwidthGBs": null,
+    "bandwidthNote": "not verified",
+    "maxMemoryGb": 32,
+    "sourceIds": [
+      "supply-s04"
+    ]
+  },
+  {
+    "id": "amd-ai9-hx-470",
+    "name": "AMD Ryzen AI 9 HX 470",
+    "vendor": "AMD",
+    "kind": "apu",
+    "memoryBandwidthGBs": null,
+    "bandwidthNote": "not verified",
+    "maxMemoryGb": 64,
+    "sourceIds": [
+      "gmktec-s03"
+    ]
+  },
+  {
+    "id": "amd-ai9-hx-370",
+    "name": "AMD Ryzen AI 9 HX 370",
+    "vendor": "AMD",
+    "kind": "apu",
+    "memoryBandwidthGBs": null,
+    "bandwidthNote": "DDR5-5600 SO-DIMM; reviewer calls bandwidth the limit",
+    "maxMemoryGb": 96,
+    "sourceIds": [
+      "minisforum-s14"
+    ]
+  },
+  {
+    "id": "amd-r9-8945hs",
+    "name": "AMD Ryzen 9 8945HS",
+    "vendor": "AMD",
+    "kind": "apu",
+    "memoryBandwidthGBs": null,
+    "bandwidthNote": "DDR5-5600 SO-DIMM",
+    "maxMemoryGb": 64,
+    "sourceIds": [
+      "gmktec-s13"
+    ]
+  },
+  {
+    "id": "amd-r9-9955hx",
+    "name": "AMD Ryzen 9 9955HX",
+    "vendor": "AMD",
+    "kind": "cpu",
+    "memoryBandwidthGBs": null,
+    "bandwidthNote": "not researched",
+    "maxMemoryGb": null,
+    "sourceIds": [
+      "minisforum-s02"
+    ]
+  },
+  {
+    "id": "intel-core-ultra-x-s3",
+    "name": "Intel Core Ultra X7/X9 (series 3, Panther Lake)",
+    "vendor": "Intel",
+    "kind": "apu",
+    "memoryBandwidthGBs": null,
+    "bandwidthNote": "LPDDR5X-8533 per GMKtec page; bandwidth not verified",
+    "maxMemoryGb": 64,
+    "sourceIds": [
+      "gmktec-s04",
+      "gmktec-s12"
+    ]
+  },
+  {
+    "id": "intel-core-ultra-200v",
+    "name": "Intel Core Ultra 200V (Lunar Lake)",
+    "vendor": "Intel",
+    "kind": "apu",
+    "memoryBandwidthGBs": null,
+    "bandwidthNote": "on-package LPDDR5X-8533",
+    "maxMemoryGb": 32,
+    "sourceIds": [
+      "gmktec-s06",
+      "gmktec-s11"
+    ]
+  },
+  {
+    "id": "nvidia-gb10",
+    "name": "NVIDIA GB10 Grace Blackwell",
+    "vendor": "NVIDIA",
+    "kind": "soc",
+    "memoryBandwidthGBs": 273,
+    "bandwidthNote": "128GB coherent LPDDR5x",
+    "maxMemoryGb": 128,
+    "sourceIds": [
+      "landscape-s12"
+    ]
+  },
+  {
+    "id": "apple-m5-pro",
+    "name": "Apple M5 Pro",
+    "vendor": "Apple",
+    "kind": "soc",
+    "memoryBandwidthGBs": 307,
+    "bandwidthNote": "Apple spec",
+    "maxMemoryGb": 64,
+    "sourceIds": [
+      "landscape-s02"
+    ]
+  },
+  {
+    "id": "apple-m5-max",
+    "name": "Apple M5 Max",
+    "vendor": "Apple",
+    "kind": "soc",
+    "memoryBandwidthGBs": 614,
+    "bandwidthNote": "614 GB/s on 40-core GPU part; 460 GB/s on 32-core part; max 128GB",
+    "maxMemoryGb": 128,
+    "sourceIds": [
+      "landscape-s01"
+    ]
+  },
+  {
+    "id": "apple-m5-ultra",
+    "name": "Apple M5 Ultra",
+    "vendor": "Apple",
+    "kind": "soc",
+    "memoryBandwidthGBs": 1200,
+    "bandwidthNote": "1.2 TB/s; 96GB base, 512GB max",
+    "maxMemoryGb": 512,
+    "sourceIds": [
+      "landscape-s01",
+      "landscape-s30"
+    ]
+  },
+  {
+    "id": "nvidia-gb202",
+    "name": "NVIDIA GB202 (RTX 5090 / RTX PRO 6000)",
+    "vendor": "NVIDIA",
+    "kind": "gpu",
+    "memoryBandwidthGBs": null,
+    "bandwidthNote": "RTX PRO 6000 1792 GB/s per landscape record",
+    "maxMemoryGb": 96,
+    "sourceIds": [
+      "landscape-s23",
+      "landscape-s25"
+    ]
+  },
+  {
+    "id": "amd-navi48",
+    "name": "AMD Navi 48 (Radeon AI PRO R9700)",
+    "vendor": "AMD",
+    "kind": "gpu",
+    "memoryBandwidthGBs": 644.6,
+    "bandwidthNote": "32GB GDDR6 ECC",
+    "maxMemoryGb": 32,
+    "sourceIds": [
+      "landscape-s24"
+    ]
+  }
+]

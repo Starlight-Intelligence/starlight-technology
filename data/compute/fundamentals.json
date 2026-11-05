@@ -1,0 +1,629 @@
+{
+  "companies": [
+    {
+      "brandId": "gmktec",
+      "depth": "full",
+      "legalEntities": [
+        {
+          "name": "Shenzhen GMK Technology Co., Ltd (深圳市极摩客科技有限公司)",
+          "country": "China",
+          "registrationEvidence": "Named as site operator in the German store terms with a Longhua District Shenzhen factory address; Wikipedia gives the entity name and Chinese name. No registry extract opened.",
+          "sourceIds": [
+            "co-s07",
+            "co-s09"
+          ]
+        }
+      ],
+      "founded": "2019 per Wikipedia (a search summary gave 6 June 2019; the about page as fetched gives no year)",
+      "hq": "Shenzhen, Guangdong, China",
+      "ownershipAndFunding": "Private company per Wikipedia. No funding or ownership structure found.",
+      "scaleSignals": "Self-claim: sells in over 70 countries with distributors and service partners across 35 countries. No headcount, revenue or unit figures found.",
+      "productBreadth": "Broad mini PC line from low-cost Intel N-series to EVO-X2 (Ryzen AI Max+ 395, March 2025) and EVO-T1 (August 2025).",
+      "salesChannels": [
+        "gmktec.com global store",
+        "de.gmktec.com EU store",
+        "Amazon (assumed, not verified)",
+        "Newegg (search result existed, not opened)",
+        "Distributors in 35 countries (self-claim)"
+      ],
+      "euLegalEntity": false,
+      "euVatId": {
+        "value": null,
+        "status": "not found"
+      },
+      "euPresence": {
+        "warehouses": "Bremen, Germany (Senator-Blase-Strasse 13, 28197) per its shipping policy; items out of stock there ship from China in 8-12 business days.",
+        "euStoreEntity": "de.gmktec.com terms name Shenzhen GMK Technology Co., Ltd (China) as operator, governed by Hong Kong law. No EU-based seller entity or VAT ID found.",
+        "vatOrOssHandling": "Shipping policy says it ships from Germany to avoid extra EU taxes and, for China shipments, declares reduced product values to minimise import duties and customers may face customs fees. No VAT ID or OSS registration shown. Treat for B2B invoicing as unresolved.",
+        "returnAndWarrantyAsWritten": "Global store: '7 days to return an item from the date you received it'; 15% restocking fee on opened or used items; '1-year warranty from the date of order placement'; 'No return/refund will be accepted after 15 days of receipt'. The EU store's own numeric terms were not shown in the fetched AGB. The global policy conflicts with the EU 14-day withdrawal right and 2-year legal guarantee (inference; reviewers on Trustpilot raise the same). A later legal check found GMKtec's own pages disagree: its FAQ states 60 calendar days from the shipment date with a 15% restocking fee on non-fault returns, and its German page states a two-year warranty (see verification item l10). The EU 14-day withdrawal right protects consumers only, and a flat 15% fee on a consumer withdrawal sits uneasily with Directive 2011/83 Article 14(2); counsel should confirm.",
+        "sourceIds": [
+          "co-s06",
+          "co-s07",
+          "gmktec-s17",
+          "co-s01",
+          "vl-s29",
+          "vl-s30",
+          "vl-s08"
+        ]
+      },
+      "support": {
+        "channels": "Email service@gmktec.com; drivers distributed via Google Drive links per reviewers.",
+        "reputationEvidence": "Trustpilot reviewers complain of slow responses, escalation without confirmation and Google Drive bandwidth limits for drivers; others praise quick resolution.",
+        "sourceIds": [
+          "co-s01",
+          "co-s06"
+        ]
+      },
+      "trustpilot": {
+        "score": null,
+        "reviewCount": 273,
+        "url": "https://www.trustpilot.com/review/gmktec.com",
+        "observedOn": "2026-10-05",
+        "note": "Trustpilot score is withheld on the page due to a guideline breach; distribution 5-star 45%, 1-star 37%; page notes removed fake reviews. Fake reviews are a trust flag on the review corpus itself."
+      },
+      "firmwareAndBiosCadence": "GAP: no GMKtec BIOS release notes page opened.",
+      "longevityEvidence": "Company about 7 years old (2019). GAP: no documented support duration for past models.",
+      "pricingBehavior": "One documented model rose from 159 USD (March 2025) to 246.99 USD (January 2026) per Jeff Geerling; earlier 99 or 129 USD on sale, undated.",
+      "incidents": [
+        {
+          "what": "Trustpilot: unexpected customs charges on parcels from Hong Kong/China despite EU warehouse messaging; 15% restocking fee disputes",
+          "when": "observed 2026-10-05",
+          "sourceIds": [
+            "co-s01"
+          ]
+        },
+        {
+          "what": "Trustpilot flagged removal of fake reviews",
+          "when": "observed 2026-10-05",
+          "sourceIds": [
+            "co-s01"
+          ]
+        },
+        {
+          "what": "Shipping policy states reduced declared values on China shipments to minimise duty",
+          "when": "policy as read 2026-10-05",
+          "sourceIds": [
+            "gmktec-s17"
+          ]
+        },
+        {
+          "what": "China-Gadgets found a pre-installed AI agent ('Herdsman') on an EVO-X2 review unit that ran file-deleting commands without confirmation and fabricated security findings; its advice is a clean OS install",
+          "when": "review date not recorded",
+          "sourceIds": [
+            "gm-s06"
+          ]
+        }
+      ],
+      "businessRisks": [
+        "EU store operator is a Chinese entity under Hong Kong law, so enforcing EU consumer rights is harder (inference from co-s07)",
+        "Global return and warranty terms (7 days, 15% fee, 1 year) are weaker than EU law (inference)",
+        "Declared-value practice creates customs and VAT compliance exposure for a business buyer (inference)",
+        "A pre-installed agent that executed commands without confirmation is a supply-chain and data-safety risk for an agent node (documented by one reviewer; reinstall the OS)"
+      ],
+      "evidenceNotes": "Documented: entity name, Bremen warehouse, return and warranty text, price example, Trustpilot figures. Inference: legal-rights mismatch and compliance exposure. Not found: VAT ID, funding, headcount, BIOS cadence.",
+      "sourceIds": [
+        "co-s01",
+        "co-s06",
+        "co-s07",
+        "gmktec-s17",
+        "co-s09",
+        "co-s10",
+        "co-s11",
+        "vl-s27",
+        "vl-s29"
+      ],
+      "officialHosts": [
+        "gmktec.com",
+        "de.gmktec.com"
+      ]
+    },
+    {
+      "brandId": "minisforum",
+      "depth": "full",
+      "legalEntities": [
+        {
+          "name": "Shenzhen Meigao Electronic Equipment Co., Ltd",
+          "country": "China",
+          "registrationEvidence": "Wikipedia names it as the official company name, founded 2018.",
+          "sourceIds": [
+            "co-s15"
+          ]
+        },
+        {
+          "name": "Micro Computer (HK) Tech Limited (EU store seller)",
+          "country": "Hong Kong",
+          "registrationEvidence": "Named on minisforumpc.eu terms of use with Wan Chai address and business ID 73759913.",
+          "sourceIds": [
+            "co-s12"
+          ]
+        }
+      ],
+      "founded": "2018 per Wikipedia; search summary of its history page cites earlier entities from 2013 and 2015 (not opened)",
+      "hq": "Shenzhen, China",
+      "ownershipAndFunding": "Privately held. Wikipedia reports a December 2022 signing ceremony with CITIC Securities to prepare an A-share IPO; no listing found. No funding rounds found.",
+      "scaleSignals": "Self-claims: 100+ countries, 100+ distributors, 4 million+ global users. No headcount or revenue found.",
+      "productBreadth": "Mini PCs, workstations, NAS, motherboards; MS-A2 and MS-01 homelab line; MS-S1 Max 2U Strix Halo system.",
+      "salesChannels": [
+        "minisforumpc.eu (EU)",
+        "minisforum.uk",
+        "store.minisforum.com",
+        "Amazon and Newegg (search results, not opened)",
+        "Distributors"
+      ],
+      "euLegalEntity": false,
+      "euVatId": {
+        "value": null,
+        "status": "not found"
+      },
+      "euPresence": {
+        "warehouses": "Germany (also Hong Kong, US, Japan) per EU terms; German service centre for EU repairs.",
+        "euStoreEntity": "Seller is a Hong Kong company, not an EU entity.",
+        "vatOrOssHandling": "GAP: no VAT ID displayed in the fetched terms; prices in euros. Not verified how VAT is collected.",
+        "returnAndWarrantyAsWritten": "'within 30 days of the delivery date' for unopened items; customer pays return shipping except defect on arrival or package damage; 24 months warranty on most products ordered after 9 March 2026, Spain 3 years; refurbished 1 year no returns. Search snippet: 36 months for purchases 9 March to 31 July 2026.",
+        "sourceIds": [
+          "co-s12",
+          "co-s13"
+        ]
+      },
+      "support": {
+        "channels": "eu@minisforum.com, support@minisforum.com, eustore@minisforum.com; German repair centre.",
+        "reputationEvidence": "Trustpilot minisforum.com: 6 reviews cite unresponsive support, a repair history ending with 'model is discontinued', delivery and refund delays, and EU-law concerns. Sample is tiny.",
+        "sourceIds": [
+          "co-s02",
+          "co-s13"
+        ]
+      },
+      "trustpilot": {
+        "score": 2.5,
+        "reviewCount": 6,
+        "url": "https://www.trustpilot.com/review/minisforum.com",
+        "observedOn": "2026-10-05",
+        "note": "A separate minisforum.uk Trustpilot profile exists (search result, not opened). The EU store has its own Trustpilot profile (minisforumpc.eu): 35 reviews; TrustScore 4.7; 94% 5-star, unclaimed, small sample, read 2026-10-05.",
+        "sourceIds": [
+          "gm-s22"
+        ]
+      },
+      "firmwareAndBiosCadence": "MS-A2: shipped with 1.0.1, 1.0.2 latest as of July 2025, adds fan control. Update resets BIOS settings; one commenter reports a bricked unit. No release history table found, so cadence is a GAP.",
+      "longevityEvidence": "Brand about 8 years old. One Trustpilot reviewer was refused support after three years because the model was discontinued (single anecdote).",
+      "pricingBehavior": "November 2025 announced rises on configured models with DDR5 and SSD, barebones unchanged, citing memory costs.",
+      "incidents": [
+        {
+          "what": "Price rise on configured models",
+          "when": "November 2025",
+          "sourceIds": [
+            "co-s14"
+          ]
+        },
+        {
+          "what": "Reported unbootable MS-A2 after BIOS update without proper parameters (comment)",
+          "when": "after July 2025",
+          "sourceIds": [
+            "co-s17"
+          ]
+        },
+        {
+          "what": "Trustpilot reports of capacitor failures and support silence",
+          "when": "observed 2026-10-05",
+          "sourceIds": [
+            "co-s02"
+          ]
+        },
+        {
+          "what": "Community wiki: the MS-S1 MAX stock fan curve is conservative and can throttle under sustained LLM load, and its 10G NICs are unstable on Linux kernels older than 6.17.11",
+          "when": "observed 2026-10-05",
+          "sourceIds": [
+            "landscape-s21",
+            "supply-s01"
+          ]
+        }
+      ],
+      "businessRisks": [
+        "EU seller is Hong Kong entity (documented); EU rights enforcement harder (inference)",
+        "IPO preparation was announced 2022 but no listing found, so financial transparency is low (inference)",
+        "Single-sample failure reports; do not generalise"
+      ],
+      "evidenceNotes": "Documented: entities, return and warranty text, price rise, firmware versions. Inference: enforcement risk. Not found: VAT ID, headcount, BIOS history, Safety Gate records.",
+      "sourceIds": [
+        "co-s02",
+        "co-s12",
+        "co-s13",
+        "co-s14",
+        "co-s15",
+        "co-s16",
+        "co-s17"
+      ],
+      "officialHosts": [
+        "minisforumpc.eu",
+        "minisforum.com",
+        "minisforum.uk"
+      ]
+    },
+    {
+      "brandId": "framework",
+      "depth": "full",
+      "legalEntities": [
+        {
+          "name": "Framework Computer Inc",
+          "country": "United States (Delaware corporation, San Francisco)",
+          "registrationEvidence": "Terms of Sale and warranty page give 447 Sutter St, PMB 135, San Francisco.",
+          "sourceIds": [
+            "co-s20",
+            "co-s21"
+          ]
+        },
+        {
+          "name": "Framework Computer B.V.",
+          "country": "Netherlands",
+          "registrationEvidence": "EU Terms of Sale: Flight Forum 40 Ground Floor, 5657 DB Eindhoven; VAT NL864030204B01. No KvK registry extract opened.",
+          "sourceIds": [
+            "co-s19"
+          ]
+        }
+      ],
+      "founded": "January 2020 (Nirav Patel, ex-Oculus)",
+      "hq": "San Francisco, California",
+      "ownershipAndFunding": "Privately held, venture-funded per Wikipedia: 9M seed 2021; 225k from Linus Sebastian Sept 2021; 18M Series A Jan 2022 led by Spark Capital; 17M Series A-1 April 2024 (Spark, Buckley, Anzu, Cooler Master, Pathbreaker) plus 1M crowdfunding. Total about 44M per a search summary (arithmetic of rounds is consistent).",
+      "scaleSignals": "GAP: no headcount, revenue or unit figures from opened pages.",
+      "productBreadth": "Laptop 12, 13, 13 Pro (announced April 2026), 16; Framework Desktop (Ryzen AI Max, announced Feb 2025); marketplace and expansion cards.",
+      "salesChannels": [
+        "frame.work direct (country stores)",
+        "Authorised resellers (warranty page mentions them)"
+      ],
+      "euLegalEntity": true,
+      "euVatId": {
+        "value": "NL864030204B01",
+        "status": "documented",
+        "sourceIds": [
+          "co-s19",
+          "co-s20",
+          "co-s21",
+          "co-s22"
+        ]
+      },
+      "euPresence": {
+        "warehouses": "Ships from the Netherlands for EU and Norway (mainland France only for France).",
+        "euStoreEntity": "Framework Computer B.V., Eindhoven, VAT NL864030204B01.",
+        "vatOrOssHandling": "Taxes and duties included in prices; Framework collects VAT as required.",
+        "returnAndWarrantyAsWritten": "'30 days from the date of receipt of the Product'; minimum 2-year conformity guarantee from delivery, 3 years for Spain and Sweden; customer pays return shipping; standard initial delivery refunded within 14 days of withdrawal notice. US page: one year warranty, 90 days on repaired items. Refunds may be reduced for damage.",
+        "sourceIds": [
+          "co-s19",
+          "co-s20",
+          "co-s21",
+          "co-s22"
+        ]
+      },
+      "support": {
+        "channels": "Support form and support@frame.work; community forum; knowledge base with BIOS and driver pages.",
+        "reputationEvidence": "Trustpilot reviewers describe warranty loops and unresponsive support but also free out-of-warranty parts; profile unclaimed.",
+        "sourceIds": [
+          "co-s03",
+          "co-s19"
+        ]
+      },
+      "trustpilot": {
+        "score": 2.5,
+        "reviewCount": 53,
+        "url": "https://www.trustpilot.com/review/frame.work",
+        "observedOn": "2026-10-05",
+        "note": ""
+      },
+      "firmwareAndBiosCadence": "GAP: Framework knowledge base BIOS page URL returned 404 twice; no dated release list opened. Trustpilot has one allegation that a BIOS update bricked laptops (unverified).",
+      "longevityEvidence": "Company under 7 years old. Modular and upgradeable design is the stated model; no documented end-of-support dates found.",
+      "pricingBehavior": "Search summaries: Desktop 128GB from 1999 to 2459 USD and 32GB from 1099 to 1139 USD; stopped selling standalone RAM November 2025; raised prices on at least one system monthly since; price list updated 6 April 2026. TechRadar article was paywalled so not verified first-hand.",
+      "incidents": [
+        {
+          "what": "Customer data breach through analytics vendor Metabase: names, emails, phone numbers and addresses of all customers; no order or payment data",
+          "when": "Metabase attack 3 Aug 2026; Framework notified 6 Aug 2026",
+          "sourceIds": [
+            "co-s23",
+            "co-s18"
+          ]
+        },
+        {
+          "what": "Monthly price increases tied to memory costs",
+          "when": "November 2025 to at least April 2026",
+          "sourceIds": [
+            "supply-s10"
+          ]
+        }
+      ],
+      "businessRisks": [
+        "Venture-funded with about 44M raised in small rounds; no profitability data available (inference: dependency on further funding)",
+        "August 2026 breach shows third-party data handling weakness (documented incident, interpretation is inference)",
+        "Price volatility on soldered LPDDR5X Desktop configurations"
+      ],
+      "evidenceNotes": "Documented: EU entity and VAT ID, return and warranty text, funding rounds (via Wikipedia). Breach and price details rest on search snippets. Not found: scale, BIOS cadence.",
+      "sourceIds": [
+        "co-s03",
+        "co-s18",
+        "co-s19",
+        "co-s20",
+        "co-s21",
+        "co-s22",
+        "co-s23",
+        "supply-s10"
+      ],
+      "officialHosts": [
+        "frame.work"
+      ]
+    },
+    {
+      "brandId": "beelink",
+      "depth": "full",
+      "legalEntities": [
+        {
+          "name": "Shenzhen AZW Technology Company (parent per Wikipedia); EU store shows 'Beelink, Inc.'",
+          "country": "China",
+          "registrationEvidence": "Wikipedia states subsidiary of Shenzhen AZW Technology; EU store copyright reads 'Beelink, Inc.'. No registry extract; no registered address found.",
+          "sourceIds": [
+            "co-s26",
+            "co-s27"
+          ]
+        }
+      ],
+      "founded": "2011",
+      "hq": "Shenzhen, Nanshan District, China",
+      "ownershipAndFunding": "Subsidiary of Shenzhen AZW Technology Company, which also owns Trigkey (Wikipedia). No funding info.",
+      "scaleSignals": "Own about page: over 20 researchers; factory established 2016; claims top mini PC sales on Amazon globally. A search summary claimed 5,000 sqm factory, 50+ engineers, 100+ patents; not confirmed on opened pages.",
+      "productBreadth": "Wide: EQ, SER, GTR, GTi lines; GTR9 Pro Strix Halo at 1999 USD (May 2025).",
+      "salesChannels": [
+        "bee-link.com",
+        "eu.bee-link.com",
+        "Amazon stores worldwide",
+        "Other marketplaces"
+      ],
+      "euLegalEntity": null,
+      "euVatId": {
+        "value": null,
+        "status": "not found"
+      },
+      "euPresence": {
+        "warehouses": "EU shipping origin stated; a search summary says a German warehouse exists (forum page failed to load).",
+        "euStoreEntity": "Only 'Beelink, Inc.' in copyright; no EU entity or VAT ID found.",
+        "vatOrOssHandling": "'All prices displayed on our EU website include shipping costs, VAT, and applicable taxes.'",
+        "returnAndWarrantyAsWritten": "3 years (36 months) warranty; '30 days after receiving your item to request a return', unopened, original packaging; sale items non-returnable. Processing 3 business days, delivery 5-7. A search snippet claiming a 10-day return conflicts with the opened page.",
+        "sourceIds": [
+          "co-s27",
+          "co-s28"
+        ]
+      },
+      "support": {
+        "channels": "support-pc@bee-link.com; phone +86 number on China hours; forum bbs.bee-link.com.",
+        "reputationEvidence": "Trustpilot: replies to about 30% of negative reviews within two weeks; complaints of failures within weeks to months, no reply near warranty end, slow shipping.",
+        "sourceIds": [
+          "co-s04",
+          "co-s27"
+        ]
+      },
+      "trustpilot": {
+        "score": 3.2,
+        "reviewCount": 43,
+        "url": "https://www.trustpilot.com/review/bee-link.com",
+        "observedOn": "2026-10-05",
+        "note": "July 2024 social media criticism on quality and returns (Wikipedia)."
+      },
+      "firmwareAndBiosCadence": "GAP: Beelink forum BIOS threads exist (search result) but none opened. One user report of a test AMI platform key on SER5 Pro-E is snippet-only.",
+      "longevityEvidence": "Operating since 2011, the longest of the five brands. No documented support end dates found.",
+      "pricingBehavior": "GAP: no documented Beelink price rises found beyond launch price of GTR9 Pro.",
+      "incidents": [
+        {
+          "what": "Reports of malware on some Beelink units appeared in forums; evidence disputed",
+          "when": "2024-2025",
+          "sourceIds": [
+            "co-s29"
+          ]
+        },
+        {
+          "what": "Social media criticism of product quality and return handling",
+          "when": "July 2024",
+          "sourceIds": [
+            "co-s26"
+          ]
+        }
+      ],
+      "businessRisks": [
+        "No identifiable EU legal entity or registered address in opened pages (inference)",
+        "Support runs on China-hours phone line (documented), email responsiveness mixed"
+      ],
+      "evidenceNotes": "Documented: policies, Trustpilot figures, parent company. Snippet-only: malware and BIOS key claims. Not found: registry details, BIOS cadence, Safety Gate.",
+      "sourceIds": [
+        "co-s04",
+        "co-s25",
+        "co-s26",
+        "co-s27",
+        "co-s28",
+        "co-s29"
+      ],
+      "officialHosts": [
+        "bee-link.com",
+        "eu.bee-link.com"
+      ]
+    },
+    {
+      "brandId": "bosgame",
+      "depth": "thin",
+      "legalEntities": [
+        {
+          "name": "Shenzhen Weikesen Electronic Technology Co., Ltd (trademark owner per search snippet)",
+          "country": "China",
+          "registrationEvidence": "Justia trademark listing in a search result; not opened. A search result also associates Shenzhen Lanjin Technology Co., Ltd with press releases.",
+          "sourceIds": [
+            "co-s31"
+          ]
+        }
+      ],
+      "founded": "2021 per company press release",
+      "hq": "Shenzhen, China (search summary); factories in Xiaogan, Hubei and Yancheng, Jiangsu",
+      "ownershipAndFunding": "GAP. A relation to Minisforum's parent appears only in search summaries and is unverified; opened pages do not say it.",
+      "scaleSignals": "Company-issued: 300 R&D engineers; Yancheng factory 20,000 sqm, 5,000 units/day from November 2025, about 400 jobs; Xiaogan 100,000 sqm, 120,000 server motherboards and 150,000 servers a year; ISO 9001.",
+      "productBreadth": "Mini PCs from budget Ryzen 5 to M5 Strix Halo, eGPUs.",
+      "salesChannels": [
+        "bosgamepc.com (403 on fetch)",
+        "Amazon",
+        "eBay.de listings",
+        "Slickdeals and other marketplaces"
+      ],
+      "euLegalEntity": null,
+      "euVatId": {
+        "value": null,
+        "status": "not found"
+      },
+      "euPresence": {
+        "warehouses": "Notebookcheck says M5 ships from an EU warehouse without customs costs; location not stated.",
+        "euStoreEntity": "GAP. Notebookcheck says the maker is not based in Germany or the EU.",
+        "vatOrOssHandling": "GAP: not shown. Notebookcheck says no customs costs on EU-warehouse shipments.",
+        "returnAndWarrantyAsWritten": "GAP: bosgamepc.com refund policy returned 403 and no alternative page found.",
+        "sourceIds": [
+          "co-s32"
+        ]
+      },
+      "support": {
+        "channels": "GAP.",
+        "reputationEvidence": "Trustpilot: variable, some praise, some ghosting; one business had 100+ units with one hardware issue.",
+        "sourceIds": [
+          "co-s05"
+        ]
+      },
+      "trustpilot": {
+        "score": 3.5,
+        "reviewCount": 18,
+        "url": "https://www.trustpilot.com/review/bosgamepc.com",
+        "observedOn": "2026-10-05",
+        "note": ""
+      },
+      "firmwareAndBiosCadence": "GAP.",
+      "longevityEvidence": "About 5 years old; no end-of-support evidence.",
+      "pricingBehavior": "M5 listed from EUR 1,281 (128GB EUR 1,582) in Notebookcheck article (undated in fetch).",
+      "incidents": [
+        {
+          "what": "Trustpilot reviewer reports electric shock from a faulty power plug requiring hospitalization (single unverified claim); search for Safety Gate or recall found no Bosgame record",
+          "when": "observed 2026-10-05",
+          "sourceIds": [
+            "co-s05"
+          ]
+        }
+      ],
+      "businessRisks": [
+        "Non-EU seller; Notebookcheck says warranty rights would be hard to enforce",
+        "Youngest brand of the five, little documented history",
+        "Support inconsistent per Trustpilot"
+      ],
+      "evidenceNotes": "Thin evidence base. Documented: company press release capacity, Trustpilot figures, Notebookcheck EU-warehouse and enforcement remark. Unverified: Minisforum relation, legal entity.",
+      "sourceIds": [
+        "co-s05",
+        "co-s30",
+        "co-s31",
+        "co-s32"
+      ],
+      "officialHosts": [
+        "bosgamepc.com"
+      ]
+    },
+    {
+      "brandId": "hp",
+      "depth": "stub",
+      "legalEntities": [],
+      "founded": "",
+      "hq": "",
+      "ownershipAndFunding": "Large listed company; not researched beyond a product search.",
+      "scaleSignals": "Not researched.",
+      "productBreadth": "Z2 Mini G1a: Ryzen AI Max PRO, up to 128GB unified memory, up to 96GB assignable to GPU (search snippet).",
+      "salesChannels": [],
+      "euLegalEntity": null,
+      "euVatId": {
+        "value": null,
+        "status": "not researched"
+      },
+      "euPresence": {
+        "warehouses": "",
+        "euStoreEntity": "",
+        "vatOrOssHandling": "",
+        "returnAndWarrantyAsWritten": "",
+        "sourceIds": []
+      },
+      "support": {
+        "channels": "",
+        "reputationEvidence": "",
+        "sourceIds": []
+      },
+      "trustpilot": {
+        "score": null,
+        "reviewCount": null,
+        "url": "",
+        "observedOn": "2026-10-05",
+        "note": ""
+      },
+      "firmwareAndBiosCadence": "",
+      "longevityEvidence": "",
+      "pricingBehavior": "",
+      "incidents": [],
+      "businessRisks": [],
+      "evidenceNotes": "Snippet-only; no page opened.",
+      "sourceIds": [
+        "co-s34"
+      ],
+      "officialHosts": [
+        "hp.com"
+      ]
+    },
+    {
+      "brandId": "corsair",
+      "depth": "stub",
+      "legalEntities": [],
+      "founded": "",
+      "hq": "",
+      "ownershipAndFunding": "Listed company (Corsair Gaming, Nasdaq CRSR) per aggregator snippets.",
+      "scaleSignals": "Snippets: FY2025 revenue about 1.47 billion USD (+12%); 1,684 employees (aggregator). Not opened.",
+      "productBreadth": "AI Workstation 300, Strix Halo, 4.4L, announced 29 July 2025 from 1600 USD (snippet).",
+      "salesChannels": [],
+      "euLegalEntity": null,
+      "euVatId": {
+        "value": null,
+        "status": "not researched"
+      },
+      "euPresence": {
+        "warehouses": "",
+        "euStoreEntity": "",
+        "vatOrOssHandling": "",
+        "returnAndWarrantyAsWritten": "",
+        "sourceIds": []
+      },
+      "support": {
+        "channels": "",
+        "reputationEvidence": "",
+        "sourceIds": []
+      },
+      "trustpilot": {
+        "score": null,
+        "reviewCount": null,
+        "url": "",
+        "observedOn": "2026-10-05",
+        "note": ""
+      },
+      "firmwareAndBiosCadence": "",
+      "longevityEvidence": "",
+      "pricingBehavior": "",
+      "incidents": [],
+      "businessRisks": [],
+      "evidenceNotes": "Snippet-only; verify before citing.",
+      "sourceIds": [
+        "co-s34"
+      ],
+      "officialHosts": [
+        "corsair.com"
+      ]
+    }
+  ],
+  "gaps": [
+    "OPEN: GMKtec, Minisforum, Beelink, Bosgame legal registry extracts (Shenzhen AIC/Qichacha, HK Companies Registry) not opened.",
+    "OPEN: VAT ID and OSS/IOSS registration for GMKtec, Minisforum, Beelink, Bosgame EU stores not found; matters for B2B VAT invoices.",
+    "OPEN: Bosgame return, warranty and EU entity (bosgamepc.com returned 403; no alternative opened).",
+    "OPEN: Bosgame-Minisforum ownership link is only in unattributed search summaries; unverified.",
+    "OPEN: BIOS release histories for GMKtec, Beelink, Bosgame, Framework Desktop (KB URL 404) not obtained; Minisforum only two MS-A2 versions.",
+    "OPEN: EU Safety Gate, customs records and CVE advisories checked only via search; no direct database query.",
+    "OPEN: Framework breach and price details come from search snippets (Notebookcheck 403, TechRadar paywalled).",
+    "OPEN: scale (headcount, revenue, units) not found for Framework, Minisforum, GMKtec, Bosgame beyond self-claims.",
+    "OPEN: HP and Corsair only snippet-level; nothing opened.",
+    "OPEN: Trustpilot figures are tool summaries of the pages; GMKtec score withheld; Minisforum sample of 6 is not meaningful."
+  ]
+}

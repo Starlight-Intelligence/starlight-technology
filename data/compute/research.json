@@ -1,0 +1,3316 @@
+{
+  "retrievedAt": "2026-10-05",
+  "topics": {
+    "gmktec-vs-minisforum": {
+      "reviews": [
+        {
+          "machine": "Minisforum MS-S1 MAX 128GB",
+          "outlet": "ServeTheHome",
+          "author": "Ryan Smith",
+          "publishedAt": "2026-01-14",
+          "sourceId": "gm-s03",
+          "independent": true,
+          "unitSource": "unknown",
+          "finding": "Called it 'our favorite of the Ryzen AI Max systems'. Measured about 43 dBA at 1 m in performance mode under load and called acoustics 'middling for a mini-PC' but 'not loud'. 9-12W idle, about 120W under AI inference, internal 320W PSU, dual 10GbE, USB4 v2, PCIe x16 slot. Praised expandability and serviceability. Fetched page gave no detailed thermal data."
+        },
+        {
+          "machine": "Minisforum MS-S1 MAX 128GB",
+          "outlet": "Notebookcheck (as quoted by RunAIHome)",
+          "author": "unknown",
+          "publishedAt": "unknown",
+          "sourceId": "gm-s04",
+          "independent": true,
+          "unitSource": "unknown",
+          "finding": "Second-hand figures: Performance mode 37 dB idle / 48 dB load; Balanced 35 / 42; Quiet 32 / 41.6. Search snippet says a BIOS update improved noise. Original article not read (403)."
+        },
+        {
+          "machine": "GMKtec EVO-X2 (Strix Halo)",
+          "outlet": "Tom's Hardware and ServeTheHome (as quoted by RunAIHome)",
+          "author": "unknown",
+          "publishedAt": "unknown",
+          "sourceId": "gm-s04",
+          "independent": true,
+          "unitSource": "unknown",
+          "finding": "Second-hand: 37-38 dBA idle and 41-43 dBA under load. Original reviews not opened, so this is unverified at the source."
+        },
+        {
+          "machine": "GMKtec EVO-X2 64GB/1TB",
+          "outlet": "China-Gadgets.de",
+          "author": "Thommy",
+          "publishedAt": "2026-09",
+          "sourceId": "gm-s06",
+          "independent": true,
+          "unitSource": "unknown",
+          "finding": "170W under full load, 44 dB at 30 cm, CPU 82-83C sustained with peaks to 92C, Cinebench 2026 multi 7,479, Qwen 27B 12.63 tok/s. Pre-installed Herdsman AI agent ran system commands including file deletion without confirmation and produced fabricated security reports; reviewer recommends a clean Windows reinstall. Prices seen: EUR 1,909 (64GB) to EUR 3,309 (128GB)."
+        },
+        {
+          "machine": "EVO-X2 vs MS-S1 MAX",
+          "outlet": "RunAIHome (aggregator)",
+          "author": "RunAIHome Team",
+          "publishedAt": "2026-09-12",
+          "sourceId": "gm-s04",
+          "independent": true,
+          "unitSource": "unknown",
+          "finding": "Prices: MS-S1 Max 128GB/2TB about $2,959 street; EVO-X2 128GB/1TB $3,499 direct, previously $2,199-$2,299 in June. Networking: MS-S1 Max 2x10GbE (RTL8127) vs EVO-X2 2x2.5GbE (8125BG). Says EVO-X2 has the longer track record; no reliability data given. Headline claims the DRAM crisis erased the Minisforum premium."
+        },
+        {
+          "machine": "EVO-X2 vs MS-S1 MAX",
+          "outlet": "MiniPCLab (blog)",
+          "author": "unknown",
+          "publishedAt": "2026",
+          "sourceId": "gm-s05",
+          "independent": true,
+          "unitSource": "unknown",
+          "finding": "Calls LLM inference effectively tied (same SoC, 128GB LPDDR5X). Says MS-S1 Max wins on dual 10GbE and about $600 lower price; EVO-X2 wins on Amazon availability, triple-fan cooling and SD card reader. No measurements seen on the fetched page."
+        }
+      ],
+      "engineering": [
+        {
+          "topic": "cooling",
+          "gmktec": "EVO-X2: dual CPU fans plus triple heat pipes per maker; community wiki lists a 120x25mm rear fan. EVO-X3 maker page: triple heat pipes and triple fans, 54W silent to 140W peak. EVO-X5 Pro maker page: vapor chamber with multiple fans, 54W to 160W. China-Gadgets measured 82-83C sustained, 92C peak on an EVO-X2.",
+          "minisforum": "MS-S1 MAX maker page: copper base, 6 heat pipes, dual turbine fans, phase-change material, 160W peak / 130W sustained. Community wiki: stock fan curve conservative (about 40% duty until 93C), can throttle the APU on sustained LLM load; third-party fan-control kernel module exists for Linux.",
+          "evidence": "documented",
+          "sourceIds": [
+            "gmktec-s05",
+            "gmktec-s02",
+            "gmktec-s01",
+            "ex-s01",
+            "supply-s02",
+            "gm-s17",
+            "gm-s06",
+            "gm-s19"
+          ]
+        },
+        {
+          "topic": "PSU",
+          "gmktec": "EVO-X2 uses an external Huntkey adapter (HKA230195A2-0A7) per community wiki.",
+          "minisforum": "320W internal PSU (maker page, STH, Liliputing).",
+          "evidence": "documented",
+          "sourceIds": [
+            "supply-s02",
+            "ex-s01",
+            "gm-s03",
+            "minisforum-s05"
+          ]
+        },
+        {
+          "topic": "board design",
+          "gmktec": "EVO-X2 uses the Sixunited AXB35-02 board (community wiki), a board the wiki treats as a shared platform with its own guides (BIOS restore, fan control, power management).",
+          "minisforum": "Different EC layout from AXB35-02 per wiki, so AXB35 tooling does not apply; MS-S1 MAX is a Minisforum-specific design with slide-out chassis and a PCIe slot.",
+          "evidence": "documented",
+          "sourceIds": [
+            "supply-s02",
+            "gm-s17",
+            "ex-s01"
+          ]
+        },
+        {
+          "topic": "serviceability",
+          "gmktec": "Community has a disassembly guide and thermal-interface replacement guide (PTM7950). Memory soldered; two M.2 slots (EVO-X2/X3), three on EVO-X5 Pro.",
+          "minisforum": "STH praised serviceability and expandability; maker advertises slide-out chassis. Second M.2 is x1 only.",
+          "evidence": "documented",
+          "sourceIds": [
+            "supply-s02",
+            "gm-s18",
+            "gm-s03",
+            "ex-s01",
+            "minisforum-s05"
+          ]
+        },
+        {
+          "topic": "ports",
+          "gmktec": "EVO-X2: USB4, HDMI 2.1, DP 1.4, 2.5GbE. EVO-X3 adds OCuLink (PCIe 4.0 x4). EVO-X5 Pro: USB4 v2 80Gbps, dual 10GbE, Wi-Fi 7.",
+          "minisforum": "MS-S1 MAX: USB4 v2 80Gbps, 2x USB4 40Gbps, dual 10GbE, HDMI 2.1, Wi-Fi 7, PCIe slot physically x16 but electrically x4 Gen4.",
+          "evidence": "documented",
+          "sourceIds": [
+            "gmktec-s01",
+            "gmktec-s02",
+            "gmktec-s05",
+            "ex-s01",
+            "minisforum-s05"
+          ]
+        },
+        {
+          "topic": "networking",
+          "gmktec": "EVO-X2/X3: 2.5GbE only per sources. EVO-X5 Pro adds dual 10GbE.",
+          "minisforum": "Dual 10GbE on MS-S1 MAX; wiki warns the 10G NICs are unstable on Linux with older kernels (needs 6.17.11 or 6.18+).",
+          "evidence": "documented",
+          "sourceIds": [
+            "gm-s04",
+            "gm-s05",
+            "gmktec-s05",
+            "gm-s17"
+          ]
+        },
+        {
+          "topic": "BIOS",
+          "gmktec": "Ships BIOS fixes publicly (EVO-X1 PRO freeze fix BIOS EVO_X1_PRO_103_260812, Aug 2026, plus US$20 compensation). One Reddit user reports UEFI dbx update failing on EVO-X2 under fwupd (single report, snippet only).",
+          "minisforum": "Notebookcheck snippet says a BIOS update reduced MS-S1 MAX noise. Separate unverified single-user claim that Minisforum refused AMD AGESA security updates on a 2021 HM80.",
+          "evidence": "documented",
+          "sourceIds": [
+            "gm-s07",
+            "gm-s28",
+            "minisforum-s07",
+            "gm-s08"
+          ]
+        },
+        {
+          "topic": "firmware updates",
+          "gmktec": "Per wiki, drivers, manuals and firmware are on GMKtec channels; Trustpilot reviewer complains drivers were on a bandwidth-limited Google Drive.",
+          "minisforum": "No firmware-cadence evidence gathered for either brand beyond the items above.",
+          "evidence": "inferred",
+          "sourceIds": [
+            "supply-s02",
+            "co-s01"
+          ]
+        },
+        {
+          "topic": "case",
+          "gmktec": "RGB and aesthetics emphasised (MiniPCLab).",
+          "minisforum": "Utilitarian design; supports vertical or 2U rack horizontal orientation per maker.",
+          "evidence": "documented",
+          "sourceIds": [
+            "gm-s05",
+            "ex-s01"
+          ]
+        },
+        {
+          "topic": "VRM",
+          "gmktec": "Not found.",
+          "minisforum": "Not found. One Trustpilot reviewer on minisforum.com claims faulty capacitor chips on an unnamed unit.",
+          "evidence": "inferred",
+          "sourceIds": [
+            "co-s02"
+          ]
+        }
+      ],
+      "communitySentiment": [
+        {
+          "platform": "Trustpilot",
+          "machine": "GMKtec (store)",
+          "summary": "273 reviews; Trustpilot withholds the TrustScore for a guideline breach and notes removed fake reviews. Complaints: customs fees despite EU-looking shipping, 15% restocking fee disputes, outdated drivers on Google Drive, delays. Praise: quick support when escalated, quiet compact units, quick replacements.",
+          "counts": "273 reviews; 5-star 45%, 4-star 9%, 3-star 5%, 2-star 4%, 1-star 37%",
+          "url": "https://www.trustpilot.com/review/gmktec.com",
+          "observedOn": "2026-10-05",
+          "sourceId": "co-s01"
+        },
+        {
+          "platform": "Trustpilot",
+          "machine": "Minisforum (minisforum.com)",
+          "summary": "Tiny sample, unclaimed profile. Complaints: capacitor failures within months, unresponsive support, missing deliveries, protracted RMA, EU refund law complaint.",
+          "counts": "6 reviews; TrustScore 2.5; 1-star 66%",
+          "url": "https://www.trustpilot.com/review/minisforum.com",
+          "observedOn": "2026-10-05",
+          "sourceId": "co-s02"
+        },
+        {
+          "platform": "Trustpilot",
+          "machine": "Minisforum EU store (minisforumpc.eu)",
+          "summary": "Praise for responsive support and a warranty motherboard replacement done on time. Unclaimed profile, small sample. Same page notes a related store at 4.7/2K reviews, minisforumeu.com 4.5/15, and a German site at 2.4.",
+          "counts": "35 reviews; TrustScore 4.7; 94% 5-star",
+          "url": "https://www.trustpilot.com/review/minisforumpc.eu",
+          "observedOn": "2026-10-05",
+          "sourceId": "gm-s22"
+        },
+        {
+          "platform": "GitHub",
+          "machine": "Minisforum MS-S1 MAX",
+          "summary": "Hobbyist repo for Linux fan control exists, implying stock fan control on Linux is lacking; 4 stars, so low adoption signal.",
+          "counts": "4 stars",
+          "url": "https://github.com/raimondomartire/ms-s1-max-fans-control",
+          "observedOn": "2026-10-05",
+          "sourceId": "gm-s19"
+        },
+        {
+          "platform": "Reddit",
+          "machine": "GMKtec EVO-X2",
+          "summary": "Reddit blocked for fetch. Only a search-snippet report of fwupd UEFI dbx update failure on one Linux user's unit. Not representative.",
+          "counts": "1 user",
+          "url": "https://redlib.hbubli.cc/user/UnsilentObserver",
+          "observedOn": "2026-10-05",
+          "sourceId": "gm-s28"
+        },
+        {
+          "platform": "Reddit",
+          "machine": "Minisforum HM80 (2021)",
+          "summary": "One user claims 14-15 support emails over weeks, told to buy a newer model, then told out of warranty; unverified; Minisforum no public comment (via Notebookcheck article).",
+          "counts": "1 user",
+          "url": "https://www.notebookcheck.org/Se-acusa-a-Minisforum-de-ignorar-la-propia-correccion-de-seguridad-de-la-BIOS-de-AMD-en-un-mini-PC-de-2021.1393292.0.html",
+          "observedOn": "2026-10-05",
+          "sourceId": "gm-s08"
+        }
+      ],
+      "companyQuality": [
+        {
+          "topic": "warranty length",
+          "gmktec": "US page: 1 year from order date. EU (de.gmktec.com): 24 months from delivery.",
+          "minisforum": "EU store: 24 months (Spain statutory 3 years); refurbished 12 months.",
+          "evidence": "documented",
+          "sourceIds": [
+            "co-s06",
+            "vl-s29",
+            "co-s13"
+          ]
+        },
+        {
+          "topic": "returns and fees",
+          "gmktec": "7-day return unopened (US); 15% restocking/repackaging fee, EU page says 15% deducted on change-of-mind returns regardless of opened status. Trustpilot reviewers dispute this.",
+          "minisforum": "30-day return (14 days EU cooling-off on global page; EU store says 30 days); no restocking fee mentioned.",
+          "evidence": "documented",
+          "sourceIds": [
+            "co-s06",
+            "vl-s29",
+            "gm-s25",
+            "co-s13",
+            "co-s01"
+          ]
+        },
+        {
+          "topic": "RMA process",
+          "gmktec": "Customer ships device to a GMK-specified address at own expense in EU (GMK pays return); 2-3 business day claim review (US page). Whether the address is in the EU is not stated in fetched text.",
+          "minisforum": "EU: defect verified, return address supplied, typical repair 2 weeks, service centre in Germany, maker covers return shipping. Global refund policy still contains an unfilled '[INSERT RETURN ADDRESS]' placeholder.",
+          "evidence": "documented",
+          "sourceIds": [
+            "co-s06",
+            "vl-s29",
+            "co-s13",
+            "gm-s25"
+          ]
+        },
+        {
+          "topic": "EU service experience",
+          "gmktec": "Trustpilot: customs surprises, quick escalated support, quick replacements.",
+          "minisforum": "Trustpilot (EU store): on-time warranty motherboard replacement. Trustpilot (global store, 6 reviews): long RMA, unresponsive support. Unverified HM80 BIOS complaint.",
+          "evidence": "documented",
+          "sourceIds": [
+            "co-s01",
+            "gm-s22",
+            "co-s02",
+            "gm-s08"
+          ]
+        },
+        {
+          "topic": "factory software hygiene",
+          "gmktec": "China-Gadgets found a pre-installed AI agent (Herdsman 'Work') executing commands without confirmation and fabricating security findings on EVO-X2; recommends a clean install.",
+          "minisforum": "Not found for MS-S1 MAX.",
+          "evidence": "documented",
+          "sourceIds": [
+            "gm-s06"
+          ]
+        },
+        {
+          "topic": "price",
+          "gmktec": "EVO-X2 list $2,199.99 (page shows regular $2,599.99); EVO-X3 $3,799.99; EVO-X5 Pro $6,599 (down from $6,799). RunAIHome reported EVO-X2 128GB at $3,499 direct in Sept after $2,199-$2,299 in June, so GMKtec price has moved a lot. The 2,199.99 on the product page is likely the lower-memory SKU (page lists 64GB+1TB to 128GB+2TB options).",
+          "minisforum": "MS-S1 MAX 128GB/2TB $2,919.90 on maker page; about $2,959 street per RunAIHome; STH cites $2,900-$3,000.",
+          "evidence": "documented",
+          "sourceIds": [
+            "gmktec-s07",
+            "gmktec-s01",
+            "gmktec-s02",
+            "gmktec-s05",
+            "gm-s04",
+            "ex-s01",
+            "gm-s03"
+          ]
+        }
+      ],
+      "newestTech": [
+        {
+          "claim": "Ryzen AI Max+ PRO 495, 16C/32T up to 5.2GHz, Radeon 8065S 40 CU, NPU up to 55 TOPS, up to 192GB LPDDR5X",
+          "machine": "GMKtec EVO-X5 Pro",
+          "sourceIds": [
+            "gmktec-s05"
+          ],
+          "verdict": "marketing only"
+        },
+        {
+          "claim": "'World's first agentic PC capable of running 320B-parameter LLMs fully offline'",
+          "machine": "GMKtec EVO-X5 Pro",
+          "sourceIds": [
+            "gmktec-s05"
+          ],
+          "verdict": "marketing only"
+        },
+        {
+          "claim": "EVO-X5 Pro: first 100 units allocated, remaining orders ship from October 9; no independent review found",
+          "machine": "GMKtec EVO-X5 Pro",
+          "sourceIds": [
+            "gmktec-s05"
+          ],
+          "verdict": "unverified"
+        },
+        {
+          "claim": "EVO-X3 adds OCuLink PCIe 4.0 x4, 4TB base storage and 'enhanced cooling' over EVO-X2 at $3,799.99 vs $2,199.99; same 395 SoC and 128GB",
+          "machine": "GMKtec EVO-X3",
+          "sourceIds": [
+            "gmktec-s02",
+            "gmktec-s01",
+            "gmktec-s07"
+          ],
+          "verdict": "documented"
+        },
+        {
+          "claim": "EVO-X3 'supports 235B LLMs' and EVO-X2 128GB 'runs Qwen3:235B at 11 tok/s'",
+          "machine": "GMKtec EVO-X3 / EVO-X2",
+          "sourceIds": [
+            "gmktec-s02",
+            "gmktec-s01"
+          ],
+          "verdict": "marketing only"
+        },
+        {
+          "claim": "MS-S1 MAX-P495 listed as 'New Flagship Configuration' with Ryzen AI Max+ Pro 495; no product page, price, memory size or review found, so the 192GB claim for it is unverified",
+          "machine": "Minisforum MS-S1 MAX-P495",
+          "sourceIds": [
+            "gm-s14"
+          ],
+          "verdict": "unverified"
+        },
+        {
+          "claim": "Dual 10GbE, USB4 v2 80Gbps, PCIe slot (x4 electrical), 320W internal PSU",
+          "machine": "Minisforum MS-S1 MAX",
+          "sourceIds": [
+            "ex-s01",
+            "minisforum-s05",
+            "gm-s03"
+          ],
+          "verdict": "documented"
+        },
+        {
+          "claim": "OCuLink on EVO-X3 gives eGPU path; MS-S1 MAX alternative is internal PCIe x4 slot",
+          "machine": "EVO-X3 vs MS-S1 MAX",
+          "sourceIds": [
+            "gmktec-s02",
+            "minisforum-s05"
+          ],
+          "verdict": "documented"
+        }
+      ],
+      "affiliate": {
+        "gmktec": {
+          "network": "AWIN (signup portal linked from the page)",
+          "commission": "not stated on page",
+          "cookie": "not stated on page",
+          "termsUrl": "https://www.gmktec.com/pages/affiliate-program",
+          "evidence": "not found"
+        },
+        "minisforum": {
+          "network": "ShareASale (via AWIN) per the EU page",
+          "commission": "2% on qualified sales ('consistent 2% commission')",
+          "cookie": "7 days in the FAQ; the benefits section says 30 days; page contradicts itself",
+          "termsUrl": "https://minisforumpc.eu/pages/minisforum-affiliate-program",
+          "evidence": "documented"
+        },
+        "note": "GMKtec's rate and cookie are hidden behind AWIN signup, so a commission comparison cannot be made without applying. Minisforum EU pays 2% on a page that cites average order value above $1,000, which implies roughly $20+ per order, but that is arithmetic on a stated rate, not a stated payout. Terms include commission reversal on refund/cancellation and bans on browser extensions and search-engine placement. Minisforum affiliate page covers the EU store only; the global minisforum.com programme was not checked."
+      },
+      "verdict": {
+        "gmktecStrengths": [
+          "Cheapest Strix Halo entry: EVO-X2 listed at $2,199.99 with 64GB/128GB options and a larger SKU range (EVO-X3 with OCuLink, EVO-X5 Pro 192GB).",
+          "Reached market first and has the longer track record per RunAIHome; the community wiki has board-level guides (Sixunited AXB35-02: BIOS restore, fan control, thermal paste swap).",
+          "Triple-fan / vapor chamber cooling on paper; quick support when escalated and quick replacements per some Trustpilot reviews.",
+          "Publishes BIOS fixes and offered compensation on a Windows-update freeze (EVO-X1 PRO, not Strix Halo)."
+        ],
+        "gmktecWeaknesses": [
+          "EVO-X2/X3 have 2.5GbE only; no 10GbE until EVO-X5 Pro.",
+          "Pre-installed 'Herdsman' AI agent ran file-deleting commands without confirmation and fabricated security reports on an EVO-X2 review unit; clean OS install required.",
+          "Measured 82-83C sustained and 92C peaks, about 44 dB at 30 cm on one EVO-X2; STH/Tom's figures for EVO-X2 are only second-hand here.",
+          "Trustpilot score withheld for guideline breach; 37% 1-star; customs fees, 15% restocking fee, drivers on throttled Google Drive.",
+          "US warranty is 1 year; prices swung widely (EVO-X2 128GB from about $2,199 to $3,499 direct per RunAIHome).",
+          "EVO-X5 Pro and EVO-X3 have no independent reviews found; X5 Pro 'agentic PC / 320B' claim is marketing.",
+          "Affiliate terms not public."
+        ],
+        "minisforumStrengths": [
+          "Only independently reviewed MS-S1 MAX in the sources: STH called it the favourite Ryzen AI Max system; dual 10GbE, USB4 v2, 320W internal PSU, PCIe slot, rack/vertical chassis.",
+          "At the street price seen (about $2,919-$2,959 for 128GB/2TB) it is cheaper than GMKtec's $3,499 EVO-X2 128GB seen in Sept, and RunAIHome and MiniPCLab both say it is the better value for 10G homelab use.",
+          "EU store: 24-month warranty, 30-day returns, no restocking fee stated, German service centre, 2-week typical repair, good small-sample Trustpilot."
+        ],
+        "minisforumWeaknesses": [
+          "STH measured about 43 dBA at 1 m under load ('middling'); Notebookcheck numbers up to 48 dB in Performance mode (second-hand).",
+          "Conservative stock fan curve can throttle under sustained LLM load; Linux fan control requires a community kernel module.",
+          "10GbE NICs unstable on Linux kernels older than 6.17.11 per community wiki.",
+          "Trustpilot for minisforum.com: 6 reviews, 2.5 score, capacitor failures and slow RMA claims; plus an unverified allegation of ignoring AMD BIOS security fixes on an old model; policy page has an unfilled placeholder.",
+          "MS-S1 MAX-P495 is listed on the homepage but no price, memory size, specs or review were found.",
+          "Affiliate pays 2% with contradictory cookie terms (7 vs 30 days)."
+        ],
+        "summary": "On Strix Halo the SoC and LLM throughput are the same, so the decision rests on platform and service. Evidence does not support 'Minisforum is more expensive without being better': at the prices observed on 2026-10-05 the 128GB MS-S1 MAX ($2,919.90) is below GMKtec's September EVO-X2 128GB price, and it adds dual 10GbE, an internal 320W PSU and an expansion slot. GMKtec's real edge is the cheaper 64GB entry price, OCuLink on the X3, and a larger board-level community knowledge base for the AXB35 board. Neither brand has strong independent reliability data; the Minisforum negatives come from tiny Trustpilot samples and one unverified claim, the GMKtec negatives from a documented factory-software problem and mixed Trustpilot. EVO-X5 Pro 192GB and MS-S1 MAX-P495 are unproven: no independent reviews found for either. Affiliate economics should not drive the recommendation since GMKtec's rate is undisclosed."
+      },
+      "gaps": [
+        "WebSearch budget exhausted mid-session; EVO-X5 Pro, EVO-X3 and MS-S1 MAX-P495 independent coverage not searched, so absence of reviews means 'not found', not 'does not exist'.",
+        "Reddit and Level1Techs were not readable (blocked or empty); no thread counts or sentiment from r/GMKtec, r/MINISFORUM or Level1Techs.",
+        "Notebookcheck MS-S1 MAX full review: 403 / 404; only second-hand numbers.",
+        "ServeTheHome, Tom's Hardware, NASCompares, AkitaOnRails EVO-X2 reviews not opened; no head-to-head thermals/noise on the same SoC from a single independent test bench.",
+        "Unit provenance (bought vs loaned) not stated in any fetched page.",
+        "No teardown (iFixit-style) or VRM/board-level analysis of either brand found.",
+        "No YouTube transcripts read.",
+        "No price-history data (CamelCamelCamel, Keepa etc.) opened; only point-in-time prices from maker pages and RunAIHome.",
+        "MS-S1 MAX-P495 specs, memory size, price and 192GB claim unconfirmed; Minisforum product URL for it not found.",
+        "GMKtec EU RMA return address location and real-world turnaround not documented; Minisforum global (non-EU) affiliate programme not checked.",
+        "Trustpilot samples are small or unclaimed and not comparable across brand domains."
+      ]
+    },
+    "media-pipeline": {
+      "localModels": [
+        {
+          "model": "Flux",
+          "kind": "image",
+          "minVramGb": null,
+          "recommendedVramGb": null,
+          "speed": "FLUX text-to-image roughly 15-30 s at defaults on high-memory hardware (NVIDIA DGX playbook). 12B params; fp16 dev file ~23GB; fp8 checkpoints for low VRAM; schnell 4 steps. FLUX.1 dev is non-commercial licensed. RTX 5090 reportedly 8x faster than Apple M3 Ultra on FLUX.1 Krea (vendor claim).",
+          "hardwareTested": "High-memory DGX-class hardware (playbook); RTX 5090 vs M3 Ultra (relative only)",
+          "sourceIds": [
+            "mp-s08",
+            "mp-s09",
+            "gaps-s32",
+            "mp-s11"
+          ]
+        },
+        {
+          "model": "Qwen-Image",
+          "kind": "image",
+          "minVramGb": 4,
+          "recommendedVramGb": 24,
+          "speed": "RTX 4090D 24GB, ComfyUI fp8: ~94s first gen / ~71s later; with Lightning LoRA ~55s / ~34s; distilled fp8 ~69s / ~36s. bf16 40.9GB, fp8 20.4GB. 4GB minimum is a repo claim with layer-by-layer offload (no speed given). Apache 2.0, 20B.",
+          "hardwareTested": "RTX 4090D 24GB",
+          "sourceIds": [
+            "mp-s04",
+            "mp-s12"
+          ]
+        },
+        {
+          "model": "Wan 2.x",
+          "kind": "video",
+          "minVramGb": 8,
+          "recommendedVramGb": 24,
+          "speed": "Wan 2.2 TI2V-5B: fits 8GB with ComfyUI offloading (ComfyUI docs); official README says at least 24GB (RTX 4090) and a 5s 720P clip in under 9 min on one consumer GPU. Forum report 1280x704/24fps/30 steps fp16: ~3 min on RTX 5070 12GB, 14.1 min warm on DGX Spark via ComfyUI, 30+ min Spark native pipeline. A14B T2V/I2V: official 80GB single-GPU; ComfyUI offers fp8 scaled variants but no sourced consumer-card timing.",
+          "hardwareTested": "RTX 4090 (README claim), RTX 5070 12GB and DGX Spark (forum user report)",
+          "sourceIds": [
+            "mp-s01",
+            "gaps-s34",
+            "mp-s06",
+            "mp-s08"
+          ]
+        },
+        {
+          "model": "HunyuanVideo",
+          "kind": "video",
+          "minVramGb": 45,
+          "recommendedVramGb": 60,
+          "speed": "No speed figure in the card. 13B+ params. 60GB for 720p x129 frames, 45GB for 540p x129; FP8 weights save ~10GB. Not feasible on a single 24-32GB card without heavy offload (offload performance unsourced).",
+          "hardwareTested": "not stated",
+          "sourceIds": [
+            "mp-s03",
+            "mp-s08"
+          ]
+        },
+        {
+          "model": "LTX-Video",
+          "kind": "video",
+          "minVramGb": null,
+          "recommendedVramGb": null,
+          "speed": "Card claims 30 FPS at 1216x704 'faster than they can be watched' (real-time); 24 FPS output; best under 720x1280. 13B, 13B distilled and 2B distilled variants, distilled variants for lower VRAM. Custom open-weights licence.",
+          "hardwareTested": "not stated in the text read",
+          "sourceIds": [
+            "mp-s02"
+          ]
+        },
+        {
+          "model": "other",
+          "kind": "video",
+          "minVramGb": null,
+          "recommendedVramGb": null,
+          "speed": "LTX-2 (video + synchronized audio): DistilledPipeline fastest (8+4 steps); fp8-cast with CPU/disk offload for limited memory. A third-party blog reports ~3 min for a 720p clip on DGX Spark, with Strix Halo hitting compatibility errors. No numeric VRAM minimum on the repo page.",
+          "hardwareTested": "DGX Spark (third-party blog)",
+          "sourceIds": [
+            "mp-s13",
+            "mp-s07"
+          ]
+        },
+        {
+          "model": "other",
+          "kind": "lipsync",
+          "minVramGb": null,
+          "recommendedVramGb": null,
+          "speed": "Not researched: no local lip-sync or avatar model page was opened. See gaps.",
+          "hardwareTested": "",
+          "sourceIds": []
+        },
+        {
+          "model": "other",
+          "kind": "tts",
+          "minVramGb": null,
+          "recommendedVramGb": null,
+          "speed": "Not researched for local TTS models. HyperFrames' media skill advertises local TTS (mp-s25) but model and quality were not verified.",
+          "hardwareTested": "",
+          "sourceIds": [
+            "mp-s25"
+          ]
+        },
+        {
+          "model": "other",
+          "kind": "avatar",
+          "minVramGb": null,
+          "recommendedVramGb": null,
+          "speed": "Not researched: no local avatar model page opened.",
+          "hardwareTested": "",
+          "sourceIds": []
+        },
+        {
+          "model": "other",
+          "kind": "image",
+          "minVramGb": 1,
+          "recommendedVramGb": 10,
+          "speed": "Whisper for captions (transcription, not generation): MIT; turbo ~6GB VRAM at 8x large speed; large ~10GB; small ~2GB; tiny/base ~1GB.",
+          "hardwareTested": "VRAM table from README, no GPU named",
+          "sourceIds": [
+            "mp-s27"
+          ]
+        },
+        {
+          "model": "other",
+          "kind": "image",
+          "minVramGb": null,
+          "recommendedVramGb": null,
+          "speed": "Hardware context: DGX Spark 128GB unified, 273 GB/s, MSRP $4,699 per blog; ~2.5x faster than Strix Halo on FLUX.1 Dev (blog claim; Strix Halo 256 GB/s). RTX 5070 has ~672 GB/s per forum, video diffusion is bandwidth-bound, so a cheap fast-GDDR card beat the Spark in the one Wan test. No sourced RTX 5090 or Strix Halo absolute Wan/Flux times were found.",
+          "hardwareTested": "DGX Spark, Strix Halo, RTX 5070",
+          "sourceIds": [
+            "mp-s06",
+            "mp-s07"
+          ]
+        }
+      ],
+      "saasAndApis": [
+        {
+          "provider": "Google Veo",
+          "product": "Veo 3.1 Fast",
+          "unit": "per second of video",
+          "price": "0.10 (720p), 0.12 (1080p), 0.30 (4K)",
+          "currency": "USD",
+          "observedOn": "2026-10-05",
+          "url": "https://ai.google.dev/gemini-api/docs/pricing",
+          "sourceId": "mp-s14",
+          "notes": "A 5s clip = $0.50 at 720p. Audio inclusion not verified."
+        },
+        {
+          "provider": "Google Veo",
+          "product": "Veo 3.1 Standard",
+          "unit": "per second of video",
+          "price": "0.40 (720p/1080p), 0.60 (4K)",
+          "currency": "USD",
+          "observedOn": "2026-10-05",
+          "url": "https://ai.google.dev/gemini-api/docs/pricing",
+          "sourceId": "mp-s14",
+          "notes": "A 5s clip = $2.00."
+        },
+        {
+          "provider": "Google Veo",
+          "product": "Veo 3.1 Lite",
+          "unit": "per second of video",
+          "price": "0.05 (720p), 0.08 (1080p)",
+          "currency": "USD",
+          "observedOn": "2026-10-05",
+          "url": "https://ai.google.dev/gemini-api/docs/pricing",
+          "sourceId": "mp-s14",
+          "notes": "Quality tier vs Fast not assessed."
+        },
+        {
+          "provider": "Nano Banana",
+          "product": "Gemini 3.1 Flash Image",
+          "unit": "per image",
+          "price": "0.045 (0.5K), 0.067 (1K), 0.101 (2K), 0.151 (4K); Lite 1K 0.0336; batch 50% off",
+          "currency": "USD",
+          "observedOn": "2026-10-05",
+          "url": "https://ai.google.dev/gemini-api/docs/pricing",
+          "sourceId": "mp-s14",
+          "notes": "1024px output = 1120 tokens."
+        },
+        {
+          "provider": "xAI Grok Imagine",
+          "product": "grok-imagine-image / 2.0 / quality",
+          "unit": "per image",
+          "price": "0.02 / 0.04 / 0.05",
+          "currency": "USD",
+          "observedOn": "2026-10-05",
+          "url": "https://docs.x.ai/docs/models",
+          "sourceId": "mp-s15",
+          "notes": ""
+        },
+        {
+          "provider": "xAI Grok Imagine",
+          "product": "grok-imagine-video-1.5 / video / video-1.5-lite",
+          "unit": "per second of video",
+          "price": "0.080 / 0.050 / 0.020",
+          "currency": "USD",
+          "observedOn": "2026-10-05",
+          "url": "https://docs.x.ai/docs/models",
+          "sourceId": "mp-s15",
+          "notes": "Cheapest documented per-second video price found. Output resolution and audio not verified."
+        },
+        {
+          "provider": "OpenAI image/Sora",
+          "product": "Sora 2 / Sora 2 Pro",
+          "unit": "per second of video",
+          "price": "discontinued",
+          "currency": "USD",
+          "observedOn": "2026-10-05",
+          "url": "https://developers.openai.com/api/docs/guides/video-generation",
+          "sourceId": "mp-s17",
+          "notes": "OpenAI docs say Sora 2 and Videos API ended 2026-09-24; do not plan on it."
+        },
+        {
+          "provider": "OpenAI image/Sora",
+          "product": "gpt-image-2.5 family",
+          "unit": "per image",
+          "price": "not listed on pricing page; Runway lists GPT Image 2.5 at 1-76 credits = $0.01-$0.76 depending on quality/resolution",
+          "currency": "USD",
+          "observedOn": "2026-10-05",
+          "url": "https://developers.openai.com/api/docs/pricing",
+          "sourceId": "mp-s16",
+          "notes": "OpenAI page points to a calculator. Runway-hosted figure is via mp-s18, not OpenAI direct."
+        },
+        {
+          "provider": "OpenAI image/Sora",
+          "product": "tts-1 / tts-1-hd",
+          "unit": "per 1M characters",
+          "price": "15.00 / 30.00",
+          "currency": "USD",
+          "observedOn": "2026-10-05",
+          "url": "https://developers.openai.com/api/docs/pricing",
+          "sourceId": "mp-s16",
+          "notes": "Cheapest documented TTS: ~$0.015 per 1K chars for tts-1."
+        },
+        {
+          "provider": "Runway",
+          "product": "Gen-4.5 video",
+          "unit": "credits (1 credit = $0.01)",
+          "price": "12 credits/s = $0.12/s",
+          "currency": "USD",
+          "observedOn": "2026-10-05",
+          "url": "https://docs.dev.runwayml.com/guides/pricing/",
+          "sourceId": "mp-s18",
+          "notes": "Also lists WAN3 5-20 credits/s ($0.05-0.20/s), Gemini Omni Flash 1.1 3.4-30 credits/s, Seedance 2.5 20-68 credits/s + input fees."
+        },
+        {
+          "provider": "Runway",
+          "product": "Gen4 Image Turbo",
+          "unit": "credits",
+          "price": "2 credits = $0.02 per image",
+          "currency": "USD",
+          "observedOn": "2026-10-05",
+          "url": "https://docs.dev.runwayml.com/guides/pricing/",
+          "sourceId": "mp-s18",
+          "notes": "Muse Image 1 credit ($0.01)."
+        },
+        {
+          "provider": "Luma",
+          "product": "Ray3.2 text/image-to-video",
+          "unit": "per 5s clip",
+          "price": "0.15-1.20 depending on resolution",
+          "currency": "USD",
+          "observedOn": "2026-10-05",
+          "url": "https://lumalabs.ai/api/pricing",
+          "sourceId": "mp-s20",
+          "notes": "= $0.03-$0.24/s. HDR 2x, EXR 3x."
+        },
+        {
+          "provider": "Luma",
+          "product": "Uni-1.1 / Uni-1.1 Max image 2K",
+          "unit": "per image",
+          "price": "0.0404 / 0.1000",
+          "currency": "USD",
+          "observedOn": "2026-10-05",
+          "url": "https://lumalabs.ai/api/pricing",
+          "sourceId": "mp-s20",
+          "notes": ""
+        },
+        {
+          "provider": "Kling",
+          "product": "Kling API",
+          "unit": "units",
+          "price": "not retrieved",
+          "currency": "",
+          "observedOn": "2026-10-05",
+          "url": "https://kling.ai/dev/pricing",
+          "notes": "Pages opened returned no price table. Gap."
+        },
+        {
+          "provider": "ElevenLabs",
+          "product": "TTS API v3 / Flash-Turbo",
+          "unit": "per 1K characters",
+          "price": "0.08 / 0.04; v4 0.022 promo (reg 0.08) until Oct 12; v4 Turbo 0.011 promo (reg 0.04)",
+          "currency": "USD",
+          "observedOn": "2026-10-05",
+          "url": "https://elevenlabs.io/pricing/api",
+          "sourceId": "mp-s19",
+          "notes": "Promo ends Oct 12, 2026; use regular prices for planning. Subscriptions start at Starter $6/month."
+        },
+        {
+          "provider": "HeyGen",
+          "product": "Creator / Pro / Business plans",
+          "unit": "subscription (credits)",
+          "price": "29 (600 credits) / 49 (1,000 credits) / 149 + 20 per seat",
+          "currency": "USD",
+          "observedOn": "2026-10-05",
+          "url": "https://www.heygen.com/pricing",
+          "sourceId": "mp-s22",
+          "notes": "Credit-per-minute rate not retrieved, so no per-minute avatar cost computed."
+        },
+        {
+          "provider": "Synthesia",
+          "product": "Starter / Pro",
+          "unit": "subscription",
+          "price": "29/mo (~12 min) monthly, 18/mo annual; Pro 89/mo (~60 min) monthly, 64/mo annual",
+          "currency": "USD",
+          "observedOn": "2026-10-05",
+          "url": "https://www.synthesia.io/pricing",
+          "sourceId": "mp-s23",
+          "notes": "Implied $2.4/min at Starter monthly, ~$1.48/min at Pro monthly (arithmetic from page figures)."
+        },
+        {
+          "provider": "OpenArt",
+          "product": "Starter / Plus / Pro / Wonder",
+          "unit": "subscription (credits)",
+          "price": "13 (4,000 credits, ~50 videos) / 27 (12,000, ~150 videos) / 44 (24,000, ~300 videos) / 175 (106,000, ~1,300 videos)",
+          "currency": "USD",
+          "observedOn": "2026-10-05",
+          "url": "https://openart.ai/pricing",
+          "sourceId": "mp-s21",
+          "notes": "Implied ~$0.15-0.26 per video at plan rates (arithmetic, video length unstated). Commercial use rights listed from Plus up."
+        },
+        {
+          "provider": "Higgsfield",
+          "product": "pricing page",
+          "unit": "credits",
+          "price": "not retrieved",
+          "currency": "",
+          "observedOn": "2026-10-05",
+          "url": "https://higgsfield.ai/pricing",
+          "sourceId": "mp-s24",
+          "notes": "Page fetch returned metadata only. No numbers recorded."
+        },
+        {
+          "provider": "other",
+          "product": "Remotion (renderer licence)",
+          "unit": "per render / seat",
+          "price": "free up to 3 people; Automators $0.01/render, $100/month min; Creators $25/month/seat",
+          "currency": "USD",
+          "observedOn": "2026-10-05",
+          "url": "https://www.remotion.pro/license",
+          "sourceId": "mp-s26",
+          "notes": "HyperFrames (Apache 2.0, mp-s25) has no per-render fee."
+        }
+      ],
+      "costPerFinishedMinute": [
+        {
+          "pipeline": "A. All-SaaS (ElevenLabs voice + Veo 3.1 Fast for every second of video)",
+          "assumptions": "ESTIMATE. 60 s finished 9:16 video; 60 s of generated footage (12 x 5 s clips); 720p; 2.5 generations per kept clip (assumed retry rate); narration ~150 words ~900 characters (assumed); ElevenLabs v3 at $0.08/1K chars; edit/captions done in a SaaS editor already paid for, not priced; LLM script cost not priced.",
+          "costEstimate": "Voice 0.9 x 0.08 = $0.07. Video 60 s x $0.10 = $6.00 at 1 take; x2.5 takes = $15.00. Total about $6.07 (perfect yield) to $15.07 (assumed retries). With Veo 3.1 Standard at $0.40/s: $24.07 at 1 take, $60.07 at 2.5 takes. With grok-imagine-video-1.5-lite at $0.02/s: $1.27 at 1 take, $3.07 at 2.5 takes.",
+          "basis": "documented prices x stated assumptions",
+          "sourceIds": [
+            "mp-s14",
+            "mp-s15",
+            "mp-s19"
+          ]
+        },
+        {
+          "pipeline": "B. Hybrid (Nano Banana stills, SaaS animation of half the shots, local edit/captions)",
+          "assumptions": "ESTIMATE. 60 s finished; 12 shots; 12 stills at Gemini 3.1 Flash Image 1K $0.067 with 2x retries = 24 generations; 6 shots animated 5 s each = 30 s of video via grok-imagine-video at $0.05/s (or Veo 3.1 Fast at $0.10/s) with 1 take; other 6 shots are pan/zoom stills rendered in FFmpeg or HyperFrames; voice ElevenLabs v3 ~900 chars; captions with Whisper locally; render locally.",
+          "costEstimate": "Stills 24 x $0.067 = $1.61. Animation 30 s x $0.05 = $1.50 (Veo 3.1 Fast variant $3.00). Voice $0.07. Total about $3.18 (Grok animation) or $4.68 (Veo Fast animation). Local compute (any consumer GPU, CPU for Whisper) adds electricity not priced.",
+          "basis": "documented prices x stated assumptions",
+          "sourceIds": [
+            "mp-s14",
+            "mp-s15",
+            "mp-s19",
+            "mp-s25",
+            "mp-s27",
+            "mp-s28"
+          ]
+        },
+        {
+          "pipeline": "C. Mostly local (Qwen-Image + Wan 2.2 TI2V-5B on one 24GB card, local captions/edit, API voice)",
+          "assumptions": "ESTIMATE. 60 s finished; 12 stills with Qwen-Image fp8 at ~34-71 s each on a 24GB RTX 4090D (ComfyUI doc timings), 2x retries = 24 gens; 6 shots animated as 5 s clips at ~9 min each (Wan README under-9-minute claim; a 12GB RTX 5070 forum report says ~3 min, DGX Spark 14.1 min); 1 take; remaining shots pan/zoom; voice tts-1 at $15/1M chars (~900 chars) or ElevenLabs v3. Hardware purchase and electricity not priced (no sourced power or card price except DGX Spark $4,699 blog figure).",
+          "costEstimate": "Cash cost per finished minute: voice $0.0135 (tts-1) to $0.07 (ElevenLabs v3). GPU time: images 24 x 34-71 s = about 14-28 min; video 6 x up to 9 min = up to 54 min (about 18 min at the 3 min RTX 5070 figure; 85 min on Spark at 14.1 min each). Roughly 70-80 GPU minutes per finished minute on a 24GB card at the documented worst case, about 1.2-1.3 hours.",
+          "basis": "documented prices x stated assumptions",
+          "sourceIds": [
+            "mp-s04",
+            "gaps-s34",
+            "mp-s06",
+            "mp-s07",
+            "mp-s16",
+            "mp-s19",
+            "mp-s27"
+          ]
+        }
+      ],
+      "pipelineStages": [
+        {
+          "stage": "script",
+          "localOptions": [
+            "Not researched this session"
+          ],
+          "saasOptions": [
+            "Not priced this session"
+          ],
+          "hardwareNeed": "None for API LLMs. Gap: no local LLM sizing researched."
+        },
+        {
+          "stage": "voice",
+          "localOptions": [
+            "Local TTS not verified (HyperFrames media skill advertises local TTS, mp-s25)"
+          ],
+          "saasOptions": [
+            "ElevenLabs v3 $0.08/1K chars, Flash $0.04/1K",
+            "OpenAI tts-1 $15/1M chars, tts-1-hd $30/1M chars"
+          ],
+          "hardwareNeed": "None for SaaS. 900 chars of narration costs $0.0135 to $0.072."
+        },
+        {
+          "stage": "image",
+          "localOptions": [
+            "Qwen-Image fp8 (24GB; Apache 2.0)",
+            "FLUX.1 dev (non-commercial licence) / schnell",
+            "SDXL not researched"
+          ],
+          "saasOptions": [
+            "Gemini 3.1 Flash Image $0.067/1K image",
+            "Grok Imagine image $0.02-0.05",
+            "Luma Uni-1.1 $0.0404",
+            "Runway Gen4 Image Turbo $0.02"
+          ],
+          "hardwareNeed": "24GB class card for fp8 Qwen-Image at ~34-71 s per image; Flux fp8 for lower VRAM."
+        },
+        {
+          "stage": "video",
+          "localOptions": [
+            "Wan 2.2 TI2V-5B (8GB with offload per ComfyUI docs; 24GB per README)",
+            "LTX-Video / LTX-2 (distilled for speed)",
+            "HunyuanVideo needs 45-60GB"
+          ],
+          "saasOptions": [
+            "Grok Imagine video $0.02-0.08/s",
+            "Veo 3.1 Lite/Fast/Standard $0.05-0.40/s",
+            "Runway Gen-4.5 $0.12/s",
+            "Luma Ray3.2 $0.03-0.24/s"
+          ],
+          "hardwareNeed": "Consumer 12-24GB for Wan 5B at ~3-9 min per 5 s clip; 80GB for Wan A14B official path; bandwidth matters more than capacity (Spark 14.1 min vs RTX 5070 ~3 min)."
+        },
+        {
+          "stage": "lipsync",
+          "localOptions": [
+            "Not researched"
+          ],
+          "saasOptions": [
+            "HeyGen Creator $29/mo, Synthesia Starter $29/mo (~12 min)"
+          ],
+          "hardwareNeed": "Gap. Faceless channels may skip this stage entirely."
+        },
+        {
+          "stage": "edit",
+          "localOptions": [
+            "FFmpeg (LGPL 2.1+)",
+            "HyperFrames (Apache 2.0, HTML to MP4, Node 22+, headless Chrome)",
+            "Remotion (free up to 3 people, otherwise $0.01/render or $25/seat/month)"
+          ],
+          "saasOptions": [
+            "Not priced"
+          ],
+          "hardwareNeed": "CPU; HyperFrames needs Node 22+, FFmpeg, headless Chrome."
+        },
+        {
+          "stage": "captions",
+          "localOptions": [
+            "Whisper (MIT): turbo ~6GB VRAM 8x speed; small ~2GB; tiny/base ~1GB",
+            "HyperFrames transcribe skill"
+          ],
+          "saasOptions": [
+            "Not priced"
+          ],
+          "hardwareNeed": "1-6GB VRAM or CPU."
+        },
+        {
+          "stage": "upload",
+          "localOptions": [
+            "Not researched (platform APIs)"
+          ],
+          "saasOptions": [
+            "Postiz named in global config but not researched here"
+          ],
+          "hardwareNeed": "None. Gap: no platform API posting terms read."
+        }
+      ],
+      "channelEconomics": [
+        {
+          "topic": "YouTube monetisation thresholds",
+          "finding": "Partner Program needs 1,000 subscribers plus either 4,000 public watch hours in 12 months or 10 million public Shorts views in 90 days; Shorts views do not count toward the 4,000 hours; a review takes about a month. The 10M Shorts route is a high bar; no revenue figure is implied.",
+          "sourceIds": [
+            "mp-s29"
+          ]
+        },
+        {
+          "topic": "YouTube policy risk for faceless AI channels",
+          "finding": "YouTube requires original and authentic content and calls out AI content made with generic or unoriginal templates that gives an impression of mass production, templated repeat scenarios, and slideshow-style content with minimal narrative. Series remain eligible when each video is materially varied. AI personas posing as experts on health, legal, financial or political topics cannot monetise.",
+          "sourceIds": [
+            "mp-s30",
+            "mp-s31"
+          ]
+        },
+        {
+          "topic": "Cost is not the bottleneck",
+          "finding": "At documented prices a finished minute is roughly $1-15 in SaaS and about $3 hybrid (estimates above), so tool cost per video is small next to the originality and variation the platform policy demands. Cheaper generation raises the volume of near-identical output, which is exactly what the inauthentic-content policy targets.",
+          "sourceIds": [
+            "mp-s14",
+            "mp-s15",
+            "mp-s30",
+            "mp-s31"
+          ]
+        },
+        {
+          "topic": "Licence constraints on local stacks",
+          "finding": "FLUX.1 dev ships under a non-commercial licence (check output terms before monetised channels); Qwen-Image is Apache 2.0; Whisper MIT; HyperFrames Apache 2.0; FFmpeg LGPL (GPL if GPL components enabled) with a patent caution for commercial MPEG use; Remotion is free only up to 3 people.",
+          "sourceIds": [
+            "gaps-s32",
+            "mp-s12",
+            "mp-s27",
+            "mp-s25",
+            "mp-s28",
+            "mp-s26"
+          ]
+        },
+        {
+          "topic": "Vendor volatility",
+          "finding": "OpenAI discontinued Sora 2 and its Videos API on 2026-09-24; ElevenLabs v4 prices are promotional until Oct 12; price tables change. Pipelines should keep the video provider swappable.",
+          "sourceIds": [
+            "mp-s17",
+            "mp-s19"
+          ]
+        },
+        {
+          "topic": "TikTok and Instagram",
+          "finding": "No TikTok Creator Rewards thresholds or AI-content labelling rules were retrievable (pages returned no detail) and no Instagram source was opened. No claims made.",
+          "sourceIds": []
+        }
+      ],
+      "gaps": [
+        "No sourced RTX 5090 or RTX 4090 Wan 2.2 A14B / HunyuanVideo / LTX timings (Wan README efficiency table is an image; WebSearch budget exhausted after two early searches).",
+        "No Strix Halo absolute numbers; only a blog claim that DGX Spark is 2.5x faster on FLUX.1 Dev and that Strix Halo hit LTX-2 compatibility errors.",
+        "DGX Spark and RTX 5070 numbers are user forum reports, not lab benchmarks; RTX 5090 numbers are vendor-relative only (7x/8x vs M3 Ultra).",
+        "No SDXL page opened. No local TTS, lip-sync or avatar model researched. No local LLM sizing for scripts.",
+        "Kling API pricing and Higgsfield pricing tables not retrievable via WebFetch (no figures recorded). HeyGen API per-minute price and credit-per-minute rate not retrieved.",
+        "OpenAI gpt-image per-image price not on the pricing page; only Runway's reseller credit range (1-76 credits) was found.",
+        "Veo/Grok/Luma output specs (audio, vertical 9:16 support, clip length caps) not verified; cost estimates assume 9:16 720p availability.",
+        "Retry rates (2x images, 2.5x video takes), 900 characters per minute of narration, 12 shots per minute and which shots get animated are my assumptions, not sourced.",
+        "No electricity, hardware amortisation or cloud-GPU rental price sourced, so pipeline C cash cost excludes them.",
+        "TikTok Creator Rewards, TikTok AI labelling policy and Instagram guidance not retrieved. No sourced evidence on what makes faceless channels grow (hooks, retention, posting cadence); only monetisation thresholds and policy risk were verified. No view or revenue promises made.",
+        "Remotion, HyperFrames and FFmpeg render speeds not measured or sourced.",
+        "WebSearch budget (200) was exhausted early in the session; the Fal 9-minute RTX 4090 claim is snippet-only (mp-s32) and corroborated only by the Wan README."
+      ]
+    },
+    "platform-compliance": {
+      "items": [
+        {
+          "id": "c01",
+          "area": "labeling",
+          "platformOrLaw": "YouTube",
+          "rule": "Creators must disclose realistic altered or synthetic content that: 'Makes a real person appear to say or do something they didn't do'; 'Alters footage of a real event or place'; 'Generates a realistic scene that didn't actually occur'; 'Creates music that's the main focus of the video'. Not required: fantastical depictions, beauty filters, colour/lighting, 'Cloning one's own voice to create voice overs or dubs', sharpening/upscaling, scriptwriting or thumbnail production help.",
+          "appliesTo": "All YouTube uploaders, including Shorts",
+          "effectiveDate": "Not stated on the page read",
+          "caveats": "The fetch tool summarised the page, so full wording and the music bullet context should be rechecked on the live page.",
+          "status": "partially-verified",
+          "sourceIds": [
+            "pc-s01"
+          ]
+        },
+        {
+          "id": "c02",
+          "area": "labeling",
+          "platformOrLaw": "YouTube",
+          "rule": "Labels appear 'in the video player' for photorealistic AI content and 'in the expanded description' for non-photorealistic or animated content. YouTube may add labels automatically for its own GenAI tools or C2PA metadata. 'Creators who consistently choose not to disclose this information may be subject to manual application of a label, or penalties from YouTube, including removal of content or suspension from the YouTube Partner Program.'",
+          "appliesTo": "All YouTube uploaders",
+          "effectiveDate": "Not stated",
+          "caveats": "",
+          "status": "partially-verified",
+          "sourceIds": [
+            "pc-s01"
+          ]
+        },
+        {
+          "id": "c03",
+          "area": "monetisation",
+          "platformOrLaw": "YouTube",
+          "rule": "YPP monetization policy ('inauthentic content', renamed from 'repetitious content') makes content that is 'repetitive or mass-produced' ineligible. Page also contains the fragment: 'An AI \"doctor\" providing medical diagnoses, health advice, or wellness remedies' (read as an example of unacceptable AI-persona content).",
+          "appliesTo": "Channels in or applying to YPP",
+          "effectiveDate": "Fetch summary gave 15 July 2025 for the inauthentic-content wording; not confirmed from page text",
+          "caveats": "Only fragments were read. The summary's fuller claims (generic AI templates, AI personas on health/legal/financial/political topics barred from monetisation) are plausible but not read in context; confirm on the live page before quoting.",
+          "status": "partially-verified",
+          "sourceIds": [
+            "mp-s30"
+          ]
+        },
+        {
+          "id": "c04",
+          "area": "monetisation",
+          "platformOrLaw": "YouTube",
+          "rule": "YPP ad-revenue thresholds: '1,000 subscribers' and either '4,000 qualified watch hours on long form videos in the last 365 days' or '10 million qualified Shorts views in the last 90 days'. Memberships: 500 subscribers plus 3,000 watch hours or 3 million Shorts views in 90 days.",
+          "appliesTo": "YPP applicants",
+          "effectiveDate": "Current as of fetch",
+          "caveats": "Netherlands availability not shown on the fetched text; lower tier thresholds (e.g. 500 subs) not read.",
+          "status": "partially-verified",
+          "sourceIds": [
+            "pc-s03"
+          ]
+        },
+        {
+          "id": "c05",
+          "area": "labeling",
+          "platformOrLaw": "TikTok",
+          "rule": "'Label AI-generated content that contains realistic images, audio or video, in order to help viewers contextualize the video and prevent the potential spread of misleading content.' Applies to content completely generated or significantly edited by AI; creators comply with the label tool, sticker, caption or other disclosure. TikTok tests auto-detection. By May 2024 TikTok said it had required creators to label realistic AIGC for over a year and reads C2PA Content Credentials to auto-label.",
+          "appliesTo": "TikTok creators posting realistic AI content",
+          "effectiveDate": "Announced 19 Sep 2023; C2PA labeling 9 May 2024",
+          "caveats": "Newsroom posts only. The current Community Guidelines and help-centre text did not render, so current wording, prohibited uses (public figures, minors, deepfakes) and enforcement are unread.",
+          "status": "partially-verified",
+          "sourceIds": [
+            "pc-s05",
+            "pc-s06",
+            "pc-s07",
+            "pc-s08"
+          ]
+        },
+        {
+          "id": "c06",
+          "area": "monetisation",
+          "platformOrLaw": "TikTok",
+          "rule": "Creator Rewards Program eligibility (follower/view thresholds, minimum video length, originality and AI-content rules) could not be read.",
+          "appliesTo": "TikTok Creator Rewards applicants",
+          "effectiveDate": "Unknown",
+          "caveats": "Creator Academy pages did not render.",
+          "status": "unverifiable",
+          "sourceIds": [
+            "pc-s09"
+          ]
+        },
+        {
+          "id": "c07",
+          "area": "spam-or-inauthentic",
+          "platformOrLaw": "TikTok",
+          "rule": "The Community Guidelines integrity and authenticity page lists headings for edited media and AI-generated content, deepfakes, public figures, minors and unoriginal content, but no operative text was read.",
+          "appliesTo": "All TikTok accounts",
+          "effectiveDate": "Unknown",
+          "caveats": "Treat as unverified; read the page in a browser before relying on it.",
+          "status": "unverifiable",
+          "sourceIds": [
+            "pc-s07"
+          ]
+        },
+        {
+          "id": "c08",
+          "area": "labeling",
+          "platformOrLaw": "Instagram/Meta",
+          "rule": "'We'll require people to use this disclosure and label tool when they post organic content with a photorealistic video or realistic-sounding audio that was digitally created or altered', and Meta 'may apply penalties if they fail to do so'. Higher-risk content may get 'a more prominent label'. Label renamed from 'Made with AI' to 'AI info' (April 2024). Meta keeps such content up and labels it 'unless the content otherwise violates our policies'.",
+          "appliesTo": "Facebook, Instagram, Threads users",
+          "effectiveDate": "Feb and Apr 2024 announcements",
+          "caveats": "Newsroom announcements, not the live help page; current disclosure mechanics unread.",
+          "status": "partially-verified",
+          "sourceIds": [
+            "pc-s11",
+            "pc-s12"
+          ]
+        },
+        {
+          "id": "c09",
+          "area": "monetisation",
+          "platformOrLaw": "Instagram/Meta",
+          "rule": "Meta originality, unoriginal-content and monetisation rules for Instagram/Facebook could not be read (creators.facebook.com/originality returned 404).",
+          "appliesTo": "Instagram/Facebook creators",
+          "effectiveDate": "Unknown",
+          "caveats": "Gap.",
+          "status": "unverifiable",
+          "sourceIds": [
+            "pc-s13"
+          ]
+        },
+        {
+          "id": "c10",
+          "area": "eu-ai-act",
+          "platformOrLaw": "EU AI Act",
+          "rule": "Art. 50(2): providers of systems generating synthetic audio, image, video or text must ensure outputs 'are marked in a machine-readable format and detectable as artificially generated or manipulated' (technically feasible, robust solutions; exceptions for assistive editing). Art. 50(1): AI systems that interact directly with people must inform them they are interacting with an AI system unless obvious. This falls on the generator provider, not on a creator who only uses a third-party tool, unless the founder builds or places such a system on the market.",
+          "appliesTo": "Providers of generative AI systems and AI chatbots/avatars that interact with people",
+          "effectiveDate": "2 Aug 2026 general application (Art. 113); marking for systems already on the market before 2 Aug 2026 postponed to 2 Dec 2026 by the Digital Omnibus",
+          "caveats": "Provider/deployer role split matters; a founder who ships an avatar product is probably a provider. Article text read via the Commission service desk through a summarising tool.",
+          "status": "partially-verified",
+          "sourceIds": [
+            "pc-s14",
+            "pc-s15",
+            "pc-s16",
+            "pc-s18"
+          ]
+        },
+        {
+          "id": "c11",
+          "area": "eu-ai-act",
+          "platformOrLaw": "EU AI Act",
+          "rule": "Art. 50(4): deployers of an AI system that generates or manipulates deep fake content must 'disclose that the content has been artificially generated or manipulated'. For evidently artistic, creative, satirical or fictional works, the obligation is 'limited to disclosure of the existence of such generated or manipulated content in an appropriate manner that does not hamper the display or enjoyment of the work'. AI-generated text published to inform the public on matters of public interest must be disclosed unless it underwent human review or editorial control with a responsible editor. Art. 50(5): information 'in a clear and distinguishable manner at the latest at the time of the first interaction or exposure'.",
+          "appliesTo": "Deployers (a founder or creator publishing AI-made realistic content of people, objects, places or events in the EU)",
+          "effectiveDate": "2 Aug 2026 (deployer duties not delayed by the Omnibus, per secondary sources)",
+          "caveats": "Deep fake definition (Art. 3(60)) not read this session. The service-desk text was paraphrased by the fetch tool; quote from EUR-Lex 2024/1689 before publishing.",
+          "status": "partially-verified",
+          "sourceIds": [
+            "pc-s14",
+            "pc-s15",
+            "pc-s18"
+          ]
+        },
+        {
+          "id": "c12",
+          "area": "eu-ai-act",
+          "platformOrLaw": "EU AI Act",
+          "rule": "Regulation (EU) 2026/1744 (Digital Omnibus on AI), dated 8 July 2026, published in the OJ on 24 July 2026, enters into force on the third day after publication (27 July 2026). Recital 38: 'a transitional period of four months for providers who have already placed their systems on the market before the 2 August 2026' for the Art. 50(2) marking obligation, i.e. to 2 December 2026. Article 50 was not otherwise amended.",
+          "appliesTo": "Providers of generative AI systems",
+          "effectiveDate": "Entry into force 27 July 2026; Art. 50(2) transition ends 2 Dec 2026",
+          "caveats": "The EUR-Lex operative article was truncated in the fetch, so the 2 December 2026 date rests on recital 38 plus two secondary sources. Systems placed on the market on or after 2 Aug 2026 get no grace period (secondary sources).",
+          "status": "partially-verified",
+          "sourceIds": [
+            "pc-s16",
+            "pc-s18",
+            "pc-s19"
+          ]
+        },
+        {
+          "id": "c13",
+          "area": "eu-ai-act",
+          "platformOrLaw": "EU AI Act",
+          "rule": "Code of Practice on Transparency of AI-generated Content: voluntary; drafting kicked off 5 Nov 2025, drafts 17 Dec 2025 and 3 Mar 2026, draft guidelines with consultation 8 May 2026, final code published at closing plenary 10 June 2026; 'By the end of July 2026, about 190 companies organisations have signed the code.' Signing is voluntary; Art. 50 obligations are binding.",
+          "appliesTo": "Providers and deployers of generative AI",
+          "effectiveDate": "Final code 10 Jun 2026",
+          "caveats": "Code content (marking techniques, labeling icon) not read.",
+          "status": "verified",
+          "sourceIds": [
+            "pc-s17"
+          ]
+        },
+        {
+          "id": "c14",
+          "area": "data-protection",
+          "platformOrLaw": "GDPR",
+          "rule": "Art. 4(1): personal data is 'any information relating to an identified or identifiable natural person'. Art. 6(1)(a) consent and 6(1)(f) legitimate interests are the usual bases. Art. 9(1) prohibits processing of 'biometric data for identification purposes' and other special categories unless an exception applies. Art. 4(14) defines biometric data as data from technical processing of physical, physiological or behavioural characteristics 'which allow or confirm the unique identification'.",
+          "appliesTo": "Anyone in the EU creating avatars or voice clones of a real, identifiable person, or processing photos and voice samples of one",
+          "effectiveDate": "In force since 25 May 2018",
+          "caveats": "Application to a synthetic likeness is an inference: a recognisable face or voice relates to an identifiable person, so a lawful basis (practically, documented consent) is needed. Dutch portrait right (Auteurswet art. 21) and personality rights were not researched. EDPB Opinion 28/2024 (adopted 18 Dec 2024) is about model training and was not read in depth. Not legal advice.",
+          "status": "partially-verified",
+          "sourceIds": [
+            "pc-s20",
+            "pc-s21"
+          ]
+        },
+        {
+          "id": "c15",
+          "area": "likeness-and-voice",
+          "platformOrLaw": "YouTube",
+          "rule": "YouTube's privacy complaint page says users can 'let us know if videos or comments on the site violate your privacy or sense of safety'. The page read did not mention AI or synthetic likeness.",
+          "appliesTo": "People depicted in uploads",
+          "effectiveDate": "Unknown",
+          "caveats": "YouTube's specific synthetic-likeness removal process was not found.",
+          "status": "unverifiable",
+          "sourceIds": []
+        },
+        {
+          "id": "c16",
+          "area": "copyright",
+          "platformOrLaw": "other",
+          "rule": "US Copyright Office, Part 2 (29 Jan 2025): 'outputs of generative AI can be protected by copyright only where a human author has determined sufficient expressive elements'; copyrightability does not extend to 'the mere provision of prompts'.",
+          "appliesTo": "US copyright registration of AI-assisted works",
+          "effectiveDate": "29 Jan 2025",
+          "caveats": "Quotes come from the Office's press item, not the 2025 report PDF (which did not load). EU position and generators' commercial-use terms were not verified. An EU consequence (a bare-prompt output may be unprotected and copyable by others) is an inference.",
+          "status": "partially-verified",
+          "sourceIds": [
+            "pc-s22",
+            "pc-s23"
+          ]
+        },
+        {
+          "id": "c17",
+          "area": "copyright",
+          "platformOrLaw": "other",
+          "rule": "EU position on copyright in AI outputs and commercial-use terms of major generators (OpenAI, Google, Midjourney, ElevenLabs etc.): not researched.",
+          "appliesTo": "All",
+          "effectiveDate": "Unknown",
+          "caveats": "Gap.",
+          "status": "unverifiable",
+          "sourceIds": []
+        },
+        {
+          "id": "c18",
+          "area": "music",
+          "platformOrLaw": "TikTok",
+          "rule": "Before posting, TikTok asks users to confirm either that the video contains 'no copyright protected music' or that they have 'obtained and paid for all necessary licenses (including in respect of rights in the musical compositions and the master recordings)'.",
+          "appliesTo": "TikTok uploaders",
+          "effectiveDate": "Unknown",
+          "caveats": "Commercial Music Library terms and business-account restrictions could not be read. Instagram and YouTube music rules not read.",
+          "status": "partially-verified",
+          "sourceIds": [
+            "pc-s10"
+          ]
+        },
+        {
+          "id": "c19",
+          "area": "advertising-disclosure",
+          "platformOrLaw": "YouTube",
+          "rule": "'If you feature branded content, sponsorships, endorsements, or other commercial relationships in your videos, you have to let YouTube know by selecting the paid promotion button in your video details.' A label shows at the video start. Since 10 Oct 2025, EU creators must separately disclose EU political paid promotion, which makes the content unavailable to EU users.",
+          "appliesTo": "YouTube creators with sponsored or affiliate content",
+          "effectiveDate": "10 Oct 2025 (EU political ads item)",
+          "caveats": "Page read via summarising tool.",
+          "status": "verified",
+          "sourceIds": [
+            "pc-s04"
+          ]
+        },
+        {
+          "id": "c20",
+          "area": "advertising-disclosure",
+          "platformOrLaw": "EU AI Act",
+          "rule": "Directive 2005/29/EC Annex I point 11 prohibits: 'Using editorial content in the media to promote a product where a trader has paid for the promotion without making that clear in the content or by images or sounds clearly identifiable by the consumer (advertorial).' Article 7(2): hiding or failing to identify commercial intent in an unclear, unintelligible, ambiguous or untimely manner is a misleading omission.",
+          "appliesTo": "Any trader or creator promoting products in the EU/NL, including AI avatar influencers",
+          "effectiveDate": "In force",
+          "caveats": "Platform label: the directive is not an AI Act item (platformOrLaw set to nearest enum). Dutch ACM influencer guidance and Reclamecode RSM disclosure wording (#ad / #advertentie per the alcohol codes' cross-reference to RSM art. 3) were not read directly.",
+          "status": "partially-verified",
+          "sourceIds": [
+            "pc-s24",
+            "partners-s02",
+            "pc-s26"
+          ]
+        },
+        {
+          "id": "c21",
+          "area": "advertising-disclosure",
+          "platformOrLaw": "TikTok",
+          "rule": "TikTok branded-content disclosure toggle and Instagram/Meta paid partnership label: not read.",
+          "appliesTo": "Sponsored posts",
+          "effectiveDate": "Unknown",
+          "caveats": "Help pages did not render or 404.",
+          "status": "unverifiable",
+          "sourceIds": []
+        },
+        {
+          "id": "c22",
+          "area": "children",
+          "platformOrLaw": "DSA",
+          "rule": "DSA Art. 28(1): 'Providers of online platforms accessible to minors shall put in place appropriate and proportionate measures to ensure a high level of privacy, safety, and security of minors, on their service.' Art. 28(2): platforms 'shall not present advertisements ... based on profiling ... when they are aware with reasonable certainty that the recipient of the service is a minor.'",
+          "appliesTo": "Platform providers; indirectly shapes what TikTok, Meta and YouTube enforce on creators",
+          "effectiveDate": "17 Feb 2024 for all platforms (date not read this session)",
+          "caveats": "Duties sit on platforms, not creators. Text read from an unofficial reproduction. No platform rule on AI characters depicting minors was read.",
+          "status": "partially-verified",
+          "sourceIds": [
+            "pc-s27"
+          ]
+        },
+        {
+          "id": "c23",
+          "area": "likeness-and-voice",
+          "platformOrLaw": "other",
+          "rule": "Platform rules on AI characters presented as real people, impersonation of public figures, and sexualised or minor-like AI personas: not read for TikTok or Meta. YouTube states only the c01 disclosure rule and the c03 AI-persona fragment.",
+          "appliesTo": "AI avatar channels",
+          "effectiveDate": "Unknown",
+          "caveats": "Gap.",
+          "status": "unverifiable",
+          "sourceIds": [
+            "pc-s01",
+            "mp-s30"
+          ]
+        }
+      ],
+      "checklist": [
+        "Decide per video whether it shows a realistic person, place or event that did not happen, or a real person saying or doing something they did not. If yes, switch on the platform AI label on TikTok, Instagram and YouTube, and add an on-screen or caption line as well.",
+        "Do not rely on auto-detection: platforms read C2PA metadata, but creators are still the ones required to disclose, and YouTube can suspend YPP for repeated non-disclosure.",
+        "Keep every AI character plainly an AI character. Never present one as a real person, a doctor, financial adviser or lawyer; YouTube's monetization page names an AI doctor as an example.",
+        "Do not publish batches of near-identical template videos. YouTube treats 'repetitive or mass-produced' content as ineligible for monetization; add original script, voice, editing or commentary to each.",
+        "Get written consent before cloning a real person's face or voice (GDPR: it relates to an identifiable person; biometric identification triggers Art. 9). Keep the consent on file.",
+        "If you build the avatar or generator tool yourself, check provider duties: machine-readable marking (Art. 50(2)) and telling users they are talking to an AI (Art. 50(1)). Existing systems have until 2 Dec 2026 for marking; new ones from 2 Aug 2026.",
+        "If you only publish with third-party tools, you are a deployer: disclose realistic deep fakes under Art. 50(4) since 2 Aug 2026, clearly and no later than first exposure.",
+        "Use only licensed music. On TikTok you confirm you hold all licences; check each platform's commercial music library before using tracks in brand or sales content.",
+        "Tick paid-promotion or branded-content tools on every sponsored or affiliate post and say so in the content itself (UCPD Annex I point 11; Reclamecode wording such as #ad or #advertentie).",
+        "Do not rely on owning copyright in output made with prompts alone. Add human-authored script, edits or arrangement and keep drafts as evidence.",
+        "Do not target or depict minors with AI characters until the platform's minor rules are read; DSA Art. 28 pushes platforms to enforce these.",
+        "Re-read the live platform policy page on the day you publish; three of the platform policy pages here could not be read this session."
+      ],
+      "gaps": [
+        "WebSearch quota ran out mid-session, so no further discovery searches were possible.",
+        "TikTok current AIGC policy text, Community Guidelines operative text and Creator Rewards rules did not render through the fetch tool (JS pages). Needs a browser read.",
+        "Instagram/Meta: current AI info help-centre wording, branded-content (paid partnership) rules and monetisation originality rules unread; creators.facebook.com/originality returned 404.",
+        "YouTube: AI-persona monetization language read only as a fragment; synthetic-likeness privacy removal process not found.",
+        "EU AI Act: Art. 3(60) deep fake definition and the Commission Art. 50 guidelines (draft published 8 May 2026) not read; the operative 2 Dec 2026 date in Regulation 2026/1744 confirmed only via recital 38 and secondary sources.",
+        "Code of Practice content (marking techniques, label design) not read, only its page and timeline.",
+        "EU position on copyright in AI outputs; USCO Part 2 report PDF not read directly; generators' commercial-use terms not checked.",
+        "Dutch law: portrait right, personality rights, ACM influencer guidance PDF and Reclamecode RSM text not read.",
+        "Music licensing: Instagram, YouTube and TikTok Commercial Music Library terms not read.",
+        "AI characters presented as real people or as minors: no platform or EU text found beyond the items above.",
+        "Several fetches were summarised by a small model rather than returned raw; quoted fragments should be rechecked against the live page before they are published as quotes."
+      ]
+    },
+    "business-stack": {
+      "systems": [
+        {
+          "category": "ERP",
+          "options": [
+            {
+              "name": "Odoo (Community / Enterprise)",
+              "licence": "Community LGPLv3; Enterprise proprietary, subscription per user",
+              "selfHostRequirements": {
+                "ramGb": null,
+                "cpu": "Workers = (#CPU*2)+1; 1 worker ~= 6 concurrent users",
+                "storage": "Not documented on the page read; DB plus filestore, both to be backed up",
+                "basis": "documented"
+              },
+              "agentAccess": "XML-RPC/JSON-RPC (legacy) and JSON-2 API with API keys; MCP: ivnvxd/mcp-server-odoo (community, MPL-2.0, 396 stars, XML-RPC, optional Odoo-side module honouring access rights and record rules, read-only mode available); other community servers exist (tuanle96, nicolasramos, parth-unjiya) and were not opened",
+              "dutchFit": "l10n_nl in Odoo 19: Dutch chart of accounts, VAT rates and fiscal positions, SBR/XBRL reporting, XAF export, SEPA credit transfer. OCA l10n-netherlands 19.0 adds a BTW statement addon only. Peppol/NLCIUS in Odoo not confirmed (gap).",
+              "sourceIds": [
+                "bs-s01",
+                "bs-s02",
+                "bs-s03",
+                "bs-s04",
+                "bs-s05",
+                "bs-s18",
+                "bs-s19",
+                "bs-s21"
+              ]
+            },
+            {
+              "name": "ERPNext (Frappe)",
+              "licence": "GPL-3.0",
+              "selfHostRequirements": {
+                "ramGb": null,
+                "cpu": "Not documented in pages read",
+                "storage": "Not documented in pages read; MariaDB",
+                "basis": "estimate"
+              },
+              "agentAccess": "Auto-generated REST per DocType with token auth, requests logged and role-checked against the token user; MCP: rakeshgangwar/erpnext-mcp-server (community, MIT, 122 stars, 11 tools including delete and submit) and a frappe-mcp-server on PyPI (not opened)",
+              "dutchFit": "Release notes mention VAT reporting fixes (generic). Dutch-specific localisation, Peppol and BTW support not confirmed (gap).",
+              "sourceIds": [
+                "bs-s06",
+                "bs-s07",
+                "bs-s08",
+                "bs-s09",
+                "bs-s20"
+              ]
+            },
+            {
+              "name": "Dolibarr",
+              "licence": "GPL-3.0 or later",
+              "selfHostRequirements": {
+                "ramGb": null,
+                "cpu": "Not documented on the page read",
+                "storage": "MariaDB, MySQL or PostgreSQL; PHP",
+                "basis": "estimate"
+              },
+              "agentAccess": "REST and SOAP APIs; no maintained MCP server verified",
+              "dutchFit": "Not verified (gap).",
+              "sourceIds": [
+                "bs-s10",
+                "bs-s11"
+              ]
+            }
+          ]
+        },
+        {
+          "category": "CRM",
+          "options": [
+            {
+              "name": "Twenty",
+              "licence": "Not shown in fetched text (gap); repo has a LICENSE file",
+              "selfHostRequirements": {
+                "ramGb": null,
+                "cpu": "Not documented in pages read",
+                "storage": "PostgreSQL and Redis via Docker Compose",
+                "basis": "estimate"
+              },
+              "agentAccess": "REST and GraphQL APIs, webhooks, OAuth; repo contains .mcp.json but a documented official MCP server was not confirmed",
+              "dutchFit": "No Dutch-specific features verified.",
+              "sourceIds": [
+                "bs-s12",
+                "bs-s13",
+                "bs-s14",
+                "bs-s15"
+              ]
+            },
+            {
+              "name": "SuiteCRM",
+              "licence": "AGPLv3",
+              "selfHostRequirements": {
+                "ramGb": null,
+                "cpu": "PHP 8.1-8.4, Apache recommended",
+                "storage": "MySQL or MariaDB (recommended) or MSSQL",
+                "basis": "documented"
+              },
+              "agentAccess": "SuiteCRM 8 JSON:API (page says 8 is still in development; 7.15.2 is the stable line shown); no MCP verified",
+              "dutchFit": "Not verified.",
+              "sourceIds": [
+                "bs-s17"
+              ]
+            },
+            {
+              "name": "Frappe CRM",
+              "licence": "AGPL-3.0",
+              "selfHostRequirements": {
+                "ramGb": null,
+                "cpu": "Not documented in page read",
+                "storage": "Frappe bench; easy-install script or Frappe Cloud",
+                "basis": "estimate"
+              },
+              "agentAccess": "Runs on Frappe, so the Frappe REST API applies (inference from framework docs, not a CRM-specific page); no MCP verified",
+              "dutchFit": "Not verified.",
+              "sourceIds": [
+                "bs-s16",
+                "bs-s09"
+              ]
+            }
+          ]
+        },
+        {
+          "category": "logistics-TMS-WMS",
+          "options": [
+            {
+              "name": "Odoo Inventory / Fleet and ERPNext Stock modules",
+              "licence": "As the parent ERP",
+              "selfHostRequirements": {
+                "ramGb": null,
+                "cpu": "As parent ERP",
+                "storage": "As parent ERP",
+                "basis": "estimate"
+              },
+              "agentAccess": "Same APIs as the parent ERP",
+              "dutchFit": "No transport-specific Dutch features verified (CMR, tachograph, route planning all gaps). Module-level docs for Odoo Fleet and ERPNext Stock were not opened.",
+              "sourceIds": [
+                "bs-s05",
+                "bs-s06"
+              ]
+            },
+            {
+              "name": "OpenBoxes",
+              "licence": "EPL-1.0",
+              "selfHostRequirements": {
+                "ramGb": null,
+                "cpu": "Grails app, Docker supported",
+                "storage": "Not documented on page read",
+                "basis": "estimate"
+              },
+              "agentAccess": "REST API not confirmed on page read",
+              "dutchFit": "Aimed at healthcare facilities; none verified.",
+              "sourceIds": [
+                "bs-s23"
+              ]
+            },
+            {
+              "name": "frePPLe",
+              "licence": "Community MIT; Enterprise and Cloud commercial",
+              "selfHostRequirements": {
+                "ramGb": null,
+                "cpu": "Ubuntu 24 .deb or Docker available",
+                "storage": "Not documented on page read",
+                "basis": "estimate"
+              },
+              "agentAccess": "Integration with Odoo/ERPNext not confirmed on page read",
+              "dutchFit": "Manufacturing planning, not transport; none verified.",
+              "sourceIds": [
+                "bs-s22"
+              ]
+            }
+          ]
+        },
+        {
+          "category": "accounting",
+          "options": []
+        },
+        {
+          "category": "helpdesk",
+          "options": []
+        },
+        {
+          "category": "e-invoicing",
+          "options": [
+            {
+              "name": "Peppol network (NL via Logius / Nederlandse Peppolautoriteit)",
+              "licence": "Open standard",
+              "selfHostRequirements": {
+                "ramGb": null,
+                "cpu": "",
+                "storage": "",
+                "basis": "estimate"
+              },
+              "agentAccess": "Via an access point provider or ERP module; not researched",
+              "dutchFit": "Logius page: government bodies and suppliers use Peppol. EU ViDA: member states may mandate e-invoicing; cross-border B2B digital reporting from 2030-07-01. Dutch domestic B2B mandate status not confirmed (gap).",
+              "sourceIds": [
+                "bs-s24",
+                "bs-s25"
+              ]
+            }
+          ]
+        },
+        {
+          "category": "BI",
+          "options": []
+        }
+      ],
+      "agentPatterns": [
+        {
+          "pattern": "Read-only first",
+          "what": "Start every agent on a read-only credential: Odoo MCP read-only (YOLO=read) or a dedicated ERP user with read roles only; ERPNext/Frappe token tied to a read-only user. Move to write only per tool, per document type.",
+          "risk": "A hallucinated or injected write (OWASP excessive agency) changes ledgers or stock. Odoo YOLO full-CRUD mode bypasses the Odoo-side module and should never run on production.",
+          "sourceIds": [
+            "bs-s18",
+            "bs-s09",
+            "bs-s32"
+          ]
+        },
+        {
+          "pattern": "Per-user API identity so the ERP enforces permissions and logs",
+          "what": "Give the agent its own ERP user and API key. Frappe logs every token request against that user and checks its roles; Odoo's standard MCP mode respects access rights and record rules. Authorisation is enforced downstream, not in the prompt.",
+          "risk": "A shared admin key makes the agent indistinguishable from a human in the audit trail and removes the permission boundary.",
+          "sourceIds": [
+            "bs-s09",
+            "bs-s18",
+            "bs-s32"
+          ]
+        },
+        {
+          "pattern": "Human approval for money and deletions",
+          "what": "Agents draft (invoice, payment run, stock write-off, deletion) into a pending state; a named person approves. Do not expose delete or submit tools to the agent (the ERPNext MCP server has them, so filter the tool list).",
+          "risk": "Prompt injection through inbound email or documents triggers payments or deletions.",
+          "sourceIds": [
+            "bs-s32",
+            "bs-s20"
+          ]
+        },
+        {
+          "pattern": "Staging copy before production",
+          "what": "Restore last night's backup to a staging instance and run new agents there first. Odoo advises daily DB plus filestore backups copied off the host; use those as the staging seed.",
+          "risk": "Staging holds real personal data, so it needs the same access control and retention as production.",
+          "sourceIds": [
+            "bs-s01"
+          ]
+        },
+        {
+          "pattern": "Narrow tools instead of open-ended ones",
+          "what": "Wrap specific operations (create draft quote, look up stock) rather than giving a generic call-any-method tool; ERPNext MCP exposes a whitelisted-method call tool that should be scoped.",
+          "risk": "Open-ended tools widen blast radius.",
+          "sourceIds": [
+            "bs-s32",
+            "bs-s20"
+          ]
+        },
+        {
+          "pattern": "Log agent actions and rate-limit",
+          "what": "Log tool calls, arguments and results outside the agent's reach; apply rate limits. Combine with the ERP's own user-level logging.",
+          "risk": "Logs of prompts and results may themselves contain personal data, so they need retention limits.",
+          "sourceIds": [
+            "bs-s32",
+            "bs-s09"
+          ]
+        }
+      ],
+      "gdprAndLiability": [
+        {
+          "topic": "processor vs controller",
+          "finding": "The businesses decide purposes and means, so they are controllers. A founder who builds and runs agents on their data acts on their behalf and is a processor in most framings; if he decides purposes himself he risks controller status. EDPB Guidelines 07/2020 (final, adopted 7 July 2021) are the reference; only the landing page was read, so criteria are not quoted here. Two separate businesses (family and larger sibling) are separate controllers unless they jointly determine purposes; joint controllership was not researched (gap). Legal advice from a Dutch privacy lawyer is advisable.",
+          "sourceIds": [
+            "bs-s27"
+          ]
+        },
+        {
+          "topic": "DPA",
+          "finding": "Article 28 requires a binding contract: processing only on documented instructions, no sub-processor without controller authorisation, Art. 32 security measures, confidentiality of personnel, deletion or return of data at the end, and audit support. The text was read from a secondary reproduction. The Dutch AP page on the verwerkersovereenkomst returned 403 and its English variant returned 403; gap for AP-specific wording.",
+          "sourceIds": [
+            "bs-s26"
+          ]
+        },
+        {
+          "topic": "LLM provider as sub-processor: retention and training",
+          "finding": "Anthropic API: inputs and outputs deleted within 30 days by default, with exceptions (zero-retention agreement, longer-lived Files API, policy violations); commercial data is not used for training by default. OpenAI API: abuse-monitoring logs up to 30 days, zero data retention available on listed endpoints, no training on API data unless opted in. Gemini API: paid services are not used to improve products and fall under a Data Processing Addendum, unpaid services are used and may be human-reviewed, so only paid tiers fit business data. Treat the provider as a sub-processor that must be listed to the controllers.",
+          "sourceIds": [
+            "bs-s28",
+            "bs-s29",
+            "bs-s30",
+            "bs-s31"
+          ]
+        },
+        {
+          "topic": "data residency",
+          "finding": "OpenAI offers an EEA and Switzerland region (eu.api.openai.com) that requires approval for abuse monitoring controls and a Modified Retention amendment. Anthropic and Google EU residency terms were not researched (gap). Self-hosting the ERP keeps business data on the owners' hardware, but any prompt sent to a hosted LLM carries data out unless residency is contracted.",
+          "sourceIds": [
+            "bs-s30"
+          ]
+        },
+        {
+          "topic": "logging",
+          "finding": "ERP-side: Frappe logs token requests against the token user; Odoo respects access rights and record rules in standard MCP mode. OWASP recommends logging, monitoring and rate limiting as secondary controls. Retention period for agent logs is a decision to document; no Dutch rule on this was verified.",
+          "sourceIds": [
+            "bs-s09",
+            "bs-s18",
+            "bs-s32"
+          ]
+        },
+        {
+          "topic": "least privilege",
+          "finding": "OWASP LLM06: minimise tools, avoid open-ended tools, grant minimal downstream permissions, run in the user's security context, enforce authorisation in downstream systems. Odoo: PostgreSQL user must not be a superuser.",
+          "sourceIds": [
+            "bs-s32",
+            "bs-s01"
+          ]
+        },
+        {
+          "topic": "backups",
+          "finding": "Odoo documentation: daily backups of databases and filestore, copied to a remote archive server not accessible from the host. Backups of personal data fall under the same retention and deletion duties; deletion-on-request across backups was not researched (gap). Frappe docker docs read give no backup numbers.",
+          "sourceIds": [
+            "bs-s01",
+            "bs-s08"
+          ]
+        },
+        {
+          "topic": "incident",
+          "finding": "Not researched. Breach notification timing (72 hours under GDPR Art. 33) and the AP reporting route were not opened, so no claim is made here (gap). A processor notifying controllers promptly should be written into the DPA.",
+          "sourceIds": []
+        },
+        {
+          "topic": "Dutch e-invoicing and tax records",
+          "finding": "EU ViDA entered into force 14 April 2025 and lets member states mandate e-invoicing; cross-border B2B digital reporting from 1 July 2030. Belastingdienst and RVO pages tried returned 404 (several guessed URLs), so the Dutch domestic position, BTW record retention and invoice requirements are gaps.",
+          "sourceIds": [
+            "bs-s24",
+            "bs-s25"
+          ]
+        }
+      ],
+      "hostingOptions": [
+        {
+          "option": "on the mini PC in a VM",
+          "pros": [
+            "Data stays on the owners' hardware",
+            "Cheapest; staging VM can be cloned from backup",
+            "No extra DPA for hosting"
+          ],
+          "cons": [
+            "Single machine: power, disk and network failure take ERP down",
+            "Backups must go off-site (Odoo advises a remote archive the host cannot reach)",
+            "Security patching and uptime become the founder's liability",
+            "Sizing numbers for ERPNext, Twenty and Dolibarr not verified"
+          ],
+          "sourceIds": [
+            "bs-s01",
+            "bs-s08"
+          ]
+        },
+        {
+          "option": "dedicated small node",
+          "pros": [
+            "Separates ERP from the founder's dev work and agents",
+            "Can run production and staging on separate hosts"
+          ],
+          "cons": [
+            "Extra hardware to maintain",
+            "No sourced cost or sizing figures"
+          ],
+          "sourceIds": [
+            "bs-s01"
+          ]
+        },
+        {
+          "option": "managed cloud (EU)",
+          "pros": [
+            "Provider handles patching and backups",
+            "Frappe Cloud is named as a managed option for Frappe CRM"
+          ],
+          "cons": [
+            "Hosting provider becomes another processor needing a DPA",
+            "EU residency terms per provider not researched",
+            "Cost not researched"
+          ],
+          "sourceIds": [
+            "bs-s16",
+            "bs-s26"
+          ]
+        },
+        {
+          "option": "SaaS",
+          "pros": [
+            "Least operational load"
+          ],
+          "cons": [
+            "Not researched here; data leaves the owners' control and agent access depends on vendor API terms"
+          ],
+          "sourceIds": []
+        }
+      ],
+      "gaps": [
+        "WebSearch budget exhausted mid-run, so Dutch government pages were only guessed by URL. Belastingdienst, RVO, business.gov.nl and KVK e-invoicing URLs returned 404; AP verwerkersovereenkomst pages returned 403. No Dutch source on a domestic B2B e-invoicing obligation, BTW invoice rules or bewaartermijn was opened.",
+        "ERPNext, Dolibarr, Twenty, SuiteCRM, Frappe CRM RAM, CPU and disk requirements: not documented in pages opened (ERPNext system-requirements URL returned 404 after redirect). Only Odoo has sourced worker and RAM formulas; ramGb left null, and basis marked estimate where nothing was documented.",
+        "Odoo RAM worked example not computed in the source; the formula and per-worker figures (150MB light, 1GB heavy, 20/80 mix) are documented, but total RAM for N users is derived by the reader.",
+        "Postgres sizing beyond 'DB user must not be superuser' and remote-DB notes: not found.",
+        "Odoo Peppol/NLCIUS support, ERPNext Dutch localisation, Dolibarr Dutch features: not confirmed.",
+        "Twenty licence type, official MCP server and self-host requirements: not confirmed; Docker Compose docs page not opened.",
+        "Frappe MCP package on PyPI, other Odoo MCP servers (tuanle96, nicolasramos, parth-unjiya): only seen in search snippets; star counts in snippets are stale versus repo page. Last release dates for MCP servers not captured.",
+        "Joint controllership between separate businesses sharing one stack, breach notification (Art. 33), data-subject erasure in backups, EDPB criteria text, and Anthropic/Google EU residency terms: not researched.",
+        "Odoo release version and date not captured (repo page shows default branch 20.0 only).",
+        "No cost, uptime or hardware-failure data for hosting options."
+      ]
+    },
+    "finetune-and-routing": {
+      "fineTuning": [
+        {
+          "method": "QLoRA",
+          "modelSize": "7B",
+          "hardware": "any 8GB+ GPU class",
+          "vramOrMemoryNeededGb": 5,
+          "throughputOrTime": "not stated",
+          "toolchain": "Unsloth",
+          "platformSupport": {
+            "strixHaloRocm": "fits trivially in 128GB; Unsloth page names RDNA3/3.5/4 and MI300X, not Strix Halo (ft-s08)",
+            "gb10Cuda": "fits trivially",
+            "rtx5090": "fits; Unsloth lists RTX 50-series support (ft-s07)",
+            "appleMlx": "mlx-lm supports lora/dora/full; M1 Max 32GB ~250 tok/s on Mistral-7B example with batch 1, 4 layers (ft-s09)"
+          },
+          "evidence": "documented",
+          "sourceIds": [
+            "ft-s01",
+            "ft-s07",
+            "ft-s08",
+            "ft-s09"
+          ]
+        },
+        {
+          "method": "LoRA (16-bit)",
+          "modelSize": "7B",
+          "hardware": "24GB class GPU",
+          "vramOrMemoryNeededGb": 19,
+          "throughputOrTime": "not stated",
+          "toolchain": "Unsloth",
+          "platformSupport": {
+            "strixHaloRocm": "fits",
+            "gb10Cuda": "fits",
+            "rtx5090": "fits in 32GB (19 < 32, my arithmetic)",
+            "appleMlx": "fits on 32GB+ Mac (my arithmetic)"
+          },
+          "evidence": "documented",
+          "sourceIds": [
+            "ft-s01"
+          ]
+        },
+        {
+          "method": "QLoRA",
+          "modelSize": "14B",
+          "hardware": "-",
+          "vramOrMemoryNeededGb": 8.5,
+          "throughputOrTime": "not stated",
+          "toolchain": "Unsloth",
+          "platformSupport": {
+            "strixHaloRocm": "fits",
+            "gb10Cuda": "fits",
+            "rtx5090": "fits",
+            "appleMlx": "fits"
+          },
+          "evidence": "documented",
+          "sourceIds": [
+            "ft-s01"
+          ]
+        },
+        {
+          "method": "LoRA (16-bit)",
+          "modelSize": "14B",
+          "hardware": "-",
+          "vramOrMemoryNeededGb": 33,
+          "throughputOrTime": "not stated",
+          "toolchain": "Unsloth",
+          "platformSupport": {
+            "strixHaloRocm": "fits in 128GB",
+            "gb10Cuda": "fits in 128GB",
+            "rtx5090": "does NOT fit 32GB at 33GB minimum (my arithmetic from table)",
+            "appleMlx": "needs 48GB+ Mac (my arithmetic)"
+          },
+          "evidence": "documented",
+          "sourceIds": [
+            "ft-s01"
+          ]
+        },
+        {
+          "method": "QLoRA",
+          "modelSize": "32B",
+          "hardware": "-",
+          "vramOrMemoryNeededGb": 26,
+          "throughputOrTime": "not stated",
+          "toolchain": "Unsloth",
+          "platformSupport": {
+            "strixHaloRocm": "fits",
+            "gb10Cuda": "fits",
+            "rtx5090": "26GB minimum is tight in 32GB; context length and batch will bind (estimate)",
+            "appleMlx": "fits 64GB+ Mac (estimate)"
+          },
+          "evidence": "documented",
+          "sourceIds": [
+            "ft-s01"
+          ]
+        },
+        {
+          "method": "LoRA (16-bit)",
+          "modelSize": "32B",
+          "hardware": "-",
+          "vramOrMemoryNeededGb": 76,
+          "throughputOrTime": "not stated",
+          "toolchain": "Unsloth",
+          "platformSupport": {
+            "strixHaloRocm": "fits in 128GB, no run report found",
+            "gb10Cuda": "fits in 128GB, no run report found",
+            "rtx5090": "no",
+            "appleMlx": "needs 96GB+ unified (estimate)"
+          },
+          "evidence": "documented",
+          "sourceIds": [
+            "ft-s01"
+          ]
+        },
+        {
+          "method": "QLoRA",
+          "modelSize": "70B",
+          "hardware": "-",
+          "vramOrMemoryNeededGb": 41,
+          "throughputOrTime": "not stated",
+          "toolchain": "Unsloth",
+          "platformSupport": {
+            "strixHaloRocm": "fits in 128GB; no run report found",
+            "gb10Cuda": "fits in 128GB; NeMo playbook says 1-70B models supported (ft-s03)",
+            "rtx5090": "does NOT fit 32GB at 41GB minimum (arithmetic)",
+            "appleMlx": "needs 64GB+ unified; no 70B number in mlx-lm doc (ft-s09)"
+          },
+          "evidence": "documented",
+          "sourceIds": [
+            "ft-s01",
+            "ft-s03",
+            "ft-s09"
+          ]
+        },
+        {
+          "method": "LoRA (16-bit)",
+          "modelSize": "70B",
+          "hardware": "-",
+          "vramOrMemoryNeededGb": 164,
+          "throughputOrTime": "not stated",
+          "toolchain": "Unsloth",
+          "platformSupport": {
+            "strixHaloRocm": "does NOT fit 128GB at 164GB (arithmetic)",
+            "gb10Cuda": "does NOT fit 128GB",
+            "rtx5090": "no",
+            "appleMlx": "needs 192GB+ (arithmetic)"
+          },
+          "evidence": "documented",
+          "sourceIds": [
+            "ft-s01"
+          ]
+        },
+        {
+          "method": "QLoRA",
+          "modelSize": "gpt-oss-120b (MoE)",
+          "hardware": "DGX Spark / GB10 128GB",
+          "vramOrMemoryNeededGb": 68,
+          "throughputOrTime": "no per-run time given for 120b; 1,000 RL steps on gpt-oss-20b took 4 hours",
+          "toolchain": "Unsloth",
+          "platformSupport": {
+            "strixHaloRocm": "no report found",
+            "gb10Cuda": "documented by Unsloth with NVIDIA engineers; NVIDIA PyTorch 25.09 container",
+            "rtx5090": "no (68GB)",
+            "appleMlx": "no report found"
+          },
+          "evidence": "documented",
+          "sourceIds": [
+            "ft-s04",
+            "ft-s02"
+          ]
+        },
+        {
+          "method": "full fine-tune",
+          "modelSize": "Gemma-3 12B-IT",
+          "hardware": "AMD Strix Halo 128GB (kyuz0 toolbox)",
+          "vramOrMemoryNeededGb": 115,
+          "throughputOrTime": "25m (table; dataset/epochs not shown to me)",
+          "toolchain": "other (HF Transformers toolbox)",
+          "platformSupport": {
+            "strixHaloRocm": "works; use attn_implementation=eager for training; FlashAttention 2 inference only",
+            "gb10Cuda": "n/a",
+            "rtx5090": "n/a",
+            "appleMlx": "n/a"
+          },
+          "evidence": "benchmark",
+          "sourceIds": [
+            "ft-s05"
+          ]
+        },
+        {
+          "method": "LoRA",
+          "modelSize": "Gemma-3 12B-IT",
+          "hardware": "AMD Strix Halo 128GB",
+          "vramOrMemoryNeededGb": 67,
+          "throughputOrTime": "13m",
+          "toolchain": "other",
+          "platformSupport": {
+            "strixHaloRocm": "works",
+            "gb10Cuda": "n/a",
+            "rtx5090": "n/a",
+            "appleMlx": "n/a"
+          },
+          "evidence": "benchmark",
+          "sourceIds": [
+            "ft-s05"
+          ]
+        },
+        {
+          "method": "QLoRA",
+          "modelSize": "Gemma-3 12B-IT",
+          "hardware": "AMD Strix Halo 128GB",
+          "vramOrMemoryNeededGb": 26,
+          "throughputOrTime": "23m",
+          "toolchain": "other",
+          "platformSupport": {
+            "strixHaloRocm": "works",
+            "gb10Cuda": "n/a",
+            "rtx5090": "n/a",
+            "appleMlx": "n/a"
+          },
+          "evidence": "benchmark",
+          "sourceIds": [
+            "ft-s05"
+          ]
+        },
+        {
+          "method": "LoRA / QLoRA / full",
+          "modelSize": "Gemma-3 1B and 4B",
+          "hardware": "AMD Strix Halo 128GB",
+          "vramOrMemoryNeededGb": null,
+          "throughputOrTime": "1B: full 19GB/2m52s, LoRA 15GB/2m, QLoRA 13GB/9m. 4B: full 46GB/9m, LoRA 30GB/5m, QLoRA 13GB/9m. Independent: 1B 2 epochs full 19.43GB ~3min, LoRA 15.40GB ~2min on ROCm 7 nightly (ft-s06)",
+          "toolchain": "other",
+          "platformSupport": {
+            "strixHaloRocm": "works, reproduced by a second user",
+            "gb10Cuda": "n/a",
+            "rtx5090": "n/a",
+            "appleMlx": "n/a"
+          },
+          "evidence": "benchmark",
+          "sourceIds": [
+            "ft-s05",
+            "ft-s06"
+          ]
+        },
+        {
+          "method": "LoRA with MXFP4",
+          "modelSize": "gpt-oss-20B",
+          "hardware": "AMD Strix Halo",
+          "vramOrMemoryNeededGb": null,
+          "throughputOrTime": "not stated in what I could read",
+          "toolchain": "other",
+          "platformSupport": {
+            "strixHaloRocm": "supported by toolbox; needs Mxfp4Config(dequantize=True) to use bf16 in memory",
+            "gb10Cuda": "n/a",
+            "rtx5090": "n/a",
+            "appleMlx": "n/a"
+          },
+          "evidence": "documented",
+          "sourceIds": [
+            "ft-s05"
+          ]
+        },
+        {
+          "method": "LoRA/QLoRA/SFT recipes",
+          "modelSize": "1B-70B",
+          "hardware": "DGX Spark 128GB unified",
+          "vramOrMemoryNeededGb": null,
+          "throughputOrTime": "45-90 min for setup plus an initial run (not a full-run time)",
+          "toolchain": "other (NeMo AutoModel)",
+          "platformSupport": {
+            "strixHaloRocm": "n/a",
+            "gb10Cuda": "NVIDIA playbook; min 32GB system memory",
+            "rtx5090": "n/a",
+            "appleMlx": "n/a"
+          },
+          "evidence": "documented",
+          "sourceIds": [
+            "ft-s03"
+          ]
+        },
+        {
+          "method": "DPO",
+          "modelSize": "any",
+          "hardware": "-",
+          "vramOrMemoryNeededGb": null,
+          "throughputOrTime": "not stated",
+          "toolchain": "TRL",
+          "platformSupport": {
+            "strixHaloRocm": "no report found",
+            "gb10Cuda": "no report found",
+            "rtx5090": "no report found",
+            "appleMlx": "no report found"
+          },
+          "evidence": "documented",
+          "sourceIds": [
+            "ft-s10"
+          ]
+        }
+      ],
+      "licensingAndTerms": [
+        {
+          "topic": "training on API outputs",
+          "finding": "Anthropic Commercial Terms: 'Anthropic may not train models on Customer Content from Services.' And Customer may not 'access the Services to build a competing product or service, including to train competing AI models or resell the Services except as expressly approved by Anthropic'. So distilling Claude outputs into a model sold as a competing model is barred; narrow internal task models are not clearly addressed, needs counsel.",
+          "sourceIds": [
+            "ft-s11"
+          ]
+        },
+        {
+          "topic": "training on API outputs",
+          "finding": "Google Gemini API terms: 'You may not use the Services to develop models that compete with the Services (e.g., Gemini API or Google AI Studio).' Unpaid services: Google may use content to 'provide, improve, and develop Google products and services and machine learning technologies'. Paid: 'Google doesn't use your prompts...or responses to improve our products'.",
+          "sourceIds": [
+            "bs-s31"
+          ]
+        },
+        {
+          "topic": "training on API outputs",
+          "finding": "OpenAI terms of use: NOT verified. openai.com/policies/terms-of-use, row-terms, service-terms and eu-terms all returned 403. Do not quote OpenAI wording from memory.",
+          "sourceIds": []
+        },
+        {
+          "topic": "open-weight licences",
+          "finding": "Apache 2.0 stated on model cards for Qwen3-32B, gpt-oss-20b ('ideal for experimentation, customization, and commercial deployment') and Mistral-Small-3.2-24B-Instruct-2506. Apache 2.0 text itself not opened.",
+          "sourceIds": [
+            "ft-s14",
+            "ft-s16",
+            "ft-s17"
+          ]
+        },
+        {
+          "topic": "open-weight licences",
+          "finding": "Llama 3.3 Community License: licence request needed if 'greater than 700 million monthly active users'; must 'prominently display Built with Llama'; any model created, trained, fine-tuned or improved using Llama materials or outputs and distributed must include 'Llama' at the beginning of its name. Only 3.3 verified; other versions not checked.",
+          "sourceIds": [
+            "ft-s13"
+          ]
+        },
+        {
+          "topic": "open-weight licences",
+          "finding": "Qwen2.5-72B-Instruct carries a custom 'qwen' licence tag, not Apache; its terms were not visible. Check the LICENSE file before commercial use. Qwen2.5 raw LICENSE URL returned 404.",
+          "sourceIds": [
+            "ft-s15"
+          ]
+        }
+      ],
+      "routing": [
+        {
+          "tool": "LiteLLM proxy",
+          "role": "OpenAI-compatible gateway in front of cloud APIs and local servers",
+          "features": "Budgets at global, team, team-member, user, virtual-key, model and customer scope; multiple budget windows ($10/day AND $100/month); budget_duration; TPM/RPM limits; fallbacks across deployments with order=2,3; retries with exponential backoff on RateLimitError; cooldown after allowed_fails (default 5s); strategies simple-shuffle, latency, usage, least-busy, cost-based; traffic mirroring. Local servers via openai/<name> with api_base ending /v1. Langfuse via callbacks: [langfuse_otel] plus LANGFUSE_PUBLIC_KEY, LANGFUSE_SECRET_KEY, LANGFUSE_OTEL_HOST.",
+          "resourceFootprint": "Budgets require a database (Postgres); DB-less deployments 'fail open'. Docs give autoscaling and connection-pool guidance for scale, no single-node RAM figure found.",
+          "sourceIds": [
+            "ft-s18",
+            "ft-s19",
+            "ft-s20",
+            "ft-s21",
+            "ft-s22"
+          ]
+        },
+        {
+          "tool": "OpenRouter",
+          "role": "Hosted multi-provider router",
+          "features": "Auto Router classifies ~30 task types and picks models by spend share; cost_tier low..max; allowed_models/excluded_models wildcards; session stickiness; falls back to a default model set if routing fails.",
+          "resourceFootprint": "Hosted, no local footprint. Cannot front a local model.",
+          "sourceIds": [
+            "ft-s25"
+          ]
+        },
+        {
+          "tool": "llama.cpp server",
+          "role": "Always-on local inference endpoint",
+          "features": "OpenAI-compatible chat completions, responses and embeddings routes; /reranking; parallel decoding with continuous batching; speculative decoding; JSON-schema output; tool calls; LoRA adapters; /metrics and /slots; default 127.0.0.1:8080.",
+          "resourceFootprint": "Described as lightweight C/C++; memory is the model weights plus KV cache.",
+          "sourceIds": [
+            "ft-s23"
+          ]
+        },
+        {
+          "tool": "Lemonade",
+          "role": "Local server for AMD Ryzen AI / Strix Halo",
+          "features": "OpenAI and Anthropic APIs at localhost:13305/v1; backends llamacpp, FLM, ONNX, vLLM; XDNA2 NPU, Radeon gfx1151, NVIDIA CUDA, Apple Silicon, CPU.",
+          "resourceFootprint": "No figures published on the README.",
+          "sourceIds": [
+            "stack-s02"
+          ]
+        },
+        {
+          "tool": "Portkey",
+          "role": "Gateway",
+          "features": "Not researched",
+          "resourceFootprint": "Not researched",
+          "sourceIds": []
+        },
+        {
+          "tool": "vLLM / Ollama",
+          "role": "Local serving",
+          "features": "Named only as valid OpenAI-compatible targets for LiteLLM; own docs not opened.",
+          "resourceFootprint": "not researched",
+          "sourceIds": [
+            "ft-s22"
+          ]
+        }
+      ],
+      "localModelsAlwaysOn": [
+        {
+          "model": "gpt-oss-20b",
+          "size": "20B MoE",
+          "quant": "MXFP4",
+          "memoryGb": 16,
+          "measuredTokensPerSecond": "DGX Spark llama-bench: pp2048 2008.85, tg32 60.85 t/s",
+          "hardware": "DGX Spark / GB10",
+          "goodFor": "drafting, routing, classification",
+          "sourceIds": [
+            "ft-s16",
+            "landscape-s19"
+          ]
+        },
+        {
+          "model": "gpt-oss-120b",
+          "size": "120B MoE",
+          "quant": "MXFP4",
+          "memoryGb": null,
+          "measuredTokensPerSecond": "DGX Spark: pp2048 1956.03, tg32 60.57 t/s; at depth 4096 pp 1637.34, tg 54.14 t/s",
+          "hardware": "DGX Spark / GB10",
+          "goodFor": "drafting, agentic work as local tier",
+          "sourceIds": [
+            "landscape-s19"
+          ]
+        },
+        {
+          "model": "Qwen3-Coder-30B-A3B-Instruct",
+          "size": "30.5B total, 3.3B active",
+          "quant": "Q8_0",
+          "memoryGb": null,
+          "measuredTokensPerSecond": "DGX Spark: pp2048 1654.25, tg32 44.26 t/s",
+          "hardware": "DGX Spark / GB10",
+          "goodFor": "code completion/agentic coding (model card says non-thinking only; I did not see a FIM claim)",
+          "sourceIds": [
+            "ft-s31",
+            "landscape-s19"
+          ]
+        },
+        {
+          "model": "Qwen3-Embedding-0.6B",
+          "size": "0.6B",
+          "quant": "native",
+          "memoryGb": null,
+          "measuredTokensPerSecond": "not found",
+          "hardware": "-",
+          "goodFor": "embeddings (MTEB multilingual 64.33, 32K context, up to 1024 dims, Apache-2.0)",
+          "sourceIds": [
+            "ft-s30"
+          ]
+        },
+        {
+          "model": "Llama 2 7B (reference benchmark)",
+          "size": "7B",
+          "quant": "Q4_0",
+          "memoryGb": null,
+          "measuredTokensPerSecond": "RTX 5090: pp512 14073 / tg128 290 t/s (14970 / 300 with FA). Apple: M4 Max 885.68/83.06, M3 Ultra 1471.24/92.14, M5 Max 3219.99/119.92 (pp512/tg128)",
+          "hardware": "RTX 5090; Apple M-series",
+          "goodFor": "scale reference only; not a model recommendation",
+          "sourceIds": [
+            "ft-s27",
+            "ft-s28"
+          ]
+        },
+        {
+          "model": "Qwen3.8-Flash-Next (experimental build)",
+          "size": "unknown",
+          "quant": "Q4_K_XL",
+          "memoryGb": null,
+          "measuredTokensPerSecond": "Strix Halo: pp2048 1207 t/s, 1055 at 32k depth, 43.9 t/s decode, on an experimental ROCm build only",
+          "hardware": "Strix Halo",
+          "goodFor": "single data point; I did not verify this model name beyond the README",
+          "sourceIds": [
+            "gmktec-s27"
+          ]
+        }
+      ],
+      "moatEvidence": [
+        {
+          "claim": "Data alone is a weak moat",
+          "source": "a16z, The Empty Promise of Data Moats",
+          "finding": "'defensibility is not inherent to data itself'; data network effects are mostly scale effects that erode as the corpus grows. Longer-term defensibility 'more likely to come from packaging differentiated technology; understanding the domain and reflecting that in your product as you verticalize', plus go-to-market and talent. Exceptions: scarce or restricted proprietary data, or data that dramatically improves the product.",
+          "sourceIds": [
+            "ft-s33"
+          ]
+        },
+        {
+          "claim": "AI moats are shallower than expected",
+          "source": "a16z, The New Business of AI",
+          "finding": "'the moats for AI companies appear to be shallower than many expected'; model architectures come from open academic work; advice is to 'Build defensibility the old-fashioned way' through product and customer stickiness.",
+          "sourceIds": [
+            "ft-s32"
+          ]
+        },
+        {
+          "claim": "Workflows and networks beat the data flywheel",
+          "source": "Sequoia, Generative AI's Act Two",
+          "finding": "Data flywheel is 'on shaky ground'; 'workflows and user networks seem to be creating more durable sources of competitive advantage'; winners solve problems 'end-to-end' and are often vertically integrated; editing interfaces make workflows stickier.",
+          "sourceIds": [
+            "ft-s34"
+          ]
+        }
+      ],
+      "gaps": [
+        "OpenAI terms of use: all four attempts returned 403. No quote obtained. WebSearch budget (200) was exhausted mid-session, so no alternate source search was possible.",
+        "Anthropic consumer terms, Anthropic usage policy, Google Gemma licence and Llama 3.1/4 licences not opened. Only Anthropic Commercial Terms.",
+        "No documented fine-tune run times for 32B or 70B on any of the four platforms; Unsloth table gives memory only. Time evidence is Gemma-3 up to 12B on Strix Halo and the Spark 4h RL run.",
+        "No documented RTX 5090 fine-tune run report (VRAM used or time); only Unsloth stating 50-series support. Fit statements for the 5090 are arithmetic on the Unsloth minimums.",
+        "No Apple MLX number beyond the M1 Max Mistral-7B example; no 70B MLX LoRA memory report.",
+        "No Strix Halo throughput for gpt-oss-20b/120b or Qwen3 30B-A3B from a page I could read; kyuz0 legacy page and local-llm-benchmarks.dev did not render tables. Spark figures come from a GitHub discussion via a summarizing fetch.",
+        "Strix Halo is not named on Unsloth's AMD install page; kyuz0 uses its own HF Transformers toolbox.",
+        "Distillation as a method: no source opened; DPO memory numbers absent.",
+        "Portkey, vLLM, Ollama docs not opened. Small always-on routing/classifier models (e.g. 1-4B) with measured speeds not covered.",
+        "Fetches went through a summarizing model; figures are as returned and could carry transcription error. Moat sources are older (2019-2023) essays, no 2026 source or YC piece found; Sequoia 2026 page had no moat content.",
+        "Anthropic quote text came via summarizer; verify against the page before legal use."
+      ]
+    },
+    "observability": {
+      "layers": [
+        {
+          "layer": "host metrics",
+          "tools": [
+            {
+              "name": "Prometheus+windows_exporter",
+              "licence": "windows_exporter: MIT (Prometheus licence not fetched)",
+              "windowsSupport": "Windows 10/11 21H2+ and Server 2016+; MSI installs a service; port 9182",
+              "footprint": "Not stated in docs fetched",
+              "whatItAnswers": "Per-host CPU, memory (available, committed, standby, modified, page faults), disk, network, service state on Windows mini PCs.",
+              "sourceIds": [
+                "gaps-s09",
+                "ob-s06"
+              ]
+            },
+            {
+              "name": "Beszel",
+              "licence": "MIT",
+              "windowsSupport": "Windows agent via Scoop/WinGet script with NSSM service; hub runs via Docker or binary",
+              "footprint": "Docs claim 'lightweight' and 'smaller and less resource-intensive than leading solutions' but give no RAM or disk numbers",
+              "whatItAnswers": "One small hub for CPU, memory, disk, network, temperature, GPU, containers, S.M.A.R.T. and built-in alerts across a few boxes.",
+              "sourceIds": [
+                "ob-s07",
+                "ob-s08",
+                "gaps-s07",
+                "gaps-s06"
+              ]
+            },
+            {
+              "name": "Netdata",
+              "licence": "Agent GPLv3+; UI closed-source but free",
+              "windowsSupport": "x64 MSI; Windows 10/11 or Server 2019+ recommended; Windows covers system resources, storage, network, processes, synthetic checks; some hardware sensors limited",
+              "footprint": "Repo claims default ~5% CPU and 150 MiB RAM; under 1% CPU and ~100 MiB RAM with ML and alerts disabled",
+              "whatItAnswers": "Per-second host charts with tiered retention (per-second, per-minute, per-hour) bounded by disk space.",
+              "sourceIds": [
+                "gaps-s08",
+                "ob-s13"
+              ]
+            },
+            {
+              "name": "Telegraf",
+              "licence": "MIT",
+              "windowsSupport": "Windows Event Log, WMI and Performance Counters plugins listed",
+              "footprint": "Single Go binary; no numbers on page",
+              "whatItAnswers": "Generic collector that can read host metrics and nvidia-smi and push to Prometheus-format outputs.",
+              "sourceIds": [
+                "ob-s39"
+              ]
+            }
+          ]
+        },
+        {
+          "layer": "gpu metrics",
+          "tools": [
+            {
+              "name": "nvidia-smi",
+              "licence": "Ships with NVIDIA driver (licence not fetched)",
+              "windowsSupport": "64-bit Windows supported",
+              "footprint": "CLI, no daemon; -l loops at an interval",
+              "whatItAnswers": "GPU utilization, memory, power, temperature, clocks, ECC errors, compute processes via --query-gpu in CSV/XML.",
+              "sourceIds": [
+                "ob-s16"
+              ]
+            },
+            {
+              "name": "other",
+              "licence": "nvidia_gpu_exporter: MIT",
+              "windowsSupport": "Windows via winget, Scoop, native service; wraps nvidia-smi; port 9835; experimental NVML backend adds XID errors, PCIe throughput",
+              "footprint": "Not stated",
+              "whatItAnswers": "Prometheus-scrapable NVIDIA GPU metrics on a Windows GPU node. Community project, not NVIDIA's.",
+              "sourceIds": [
+                "ob-s18"
+              ]
+            },
+            {
+              "name": "nvidia DCGM exporter",
+              "licence": "Apache-2.0",
+              "windowsSupport": "No Windows: DCGM docs list Linux distributions only. Port 9400",
+              "footprint": "DCGM docs state minimum 16 GB RAM and CPU cores >= number of GPUs; tested with datacenter drivers",
+              "whatItAnswers": "Fleet-grade GPU telemetry in Prometheus format on Linux GPU nodes.",
+              "sourceIds": [
+                "ob-s14",
+                "ob-s15"
+              ]
+            },
+            {
+              "name": "other",
+              "licence": "AMD SMI: not fetched",
+              "windowsSupport": "AMD SMI: Linux supported; Windows only experimental via WSL2 (note WSL2 is not installed on Frank's primary machine). Successor to ROCm SMI; CLI plus C++/Python/Go APIs",
+              "footprint": "Not stated",
+              "whatItAnswers": "AMD GPU monitoring on Linux nodes. Beszel prefers amd_sysfs and marks rocm-smi deprecated.",
+              "sourceIds": [
+                "ob-s17",
+                "ob-s09"
+              ]
+            },
+            {
+              "name": "Beszel",
+              "licence": "MIT",
+              "windowsSupport": "GPU collectors auto-detected; NVIDIA via nvidia-smi, AMD via amd_sysfs on Linux, Intel via intel_sysfs/intel_gpu_top; GPU_COLLECTOR and SKIP_GPU env vars",
+              "footprint": "see host metrics",
+              "whatItAnswers": "GPU view next to host view without a separate exporter. Windows coverage per vendor is not stated on the GPU page.",
+              "sourceIds": [
+                "ob-s09"
+              ]
+            }
+          ]
+        },
+        {
+          "layer": "process and container",
+          "tools": [
+            {
+              "name": "Beszel",
+              "licence": "MIT",
+              "windowsSupport": "see host metrics",
+              "footprint": "see host metrics",
+              "whatItAnswers": "Docker/Podman per-container CPU, memory, network and container status.",
+              "sourceIds": [
+                "ob-s07",
+                "gaps-s06"
+              ]
+            },
+            {
+              "name": "Prometheus+windows_exporter",
+              "licence": "MIT",
+              "windowsSupport": "Service state collector enabled by default",
+              "footprint": "n/a",
+              "whatItAnswers": "Windows service up/down state; further process collectors exist but were not individually verified.",
+              "sourceIds": [
+                "gaps-s09"
+              ]
+            }
+          ]
+        },
+        {
+          "layer": "llm traces and cost",
+          "tools": [
+            {
+              "name": "Langfuse",
+              "licence": "MIT except ee folders",
+              "windowsSupport": "Runs as containers (Docker Compose on a VM, Helm, Terraform); native Windows not claimed",
+              "footprint": "Components: PostgreSQL, Redis/Valkey, ClickHouse, S3/blob storage, Langfuse Web and Worker containers. Docker Compose guide recommends 4+ cores, 16 GiB RAM, 100 GiB+ storage. Main self-hosting page gives no explicit minimums. Docker Compose is single VM, no HA.",
+              "whatItAnswers": "Per-trace tokens, cost and latency; ingested cost takes priority over inferred; custom model prices for self-hosted models; OTLP ingestion over HTTP.",
+              "sourceIds": [
+                "ob-s01",
+                "ob-s02",
+                "ob-s35",
+                "ob-s36",
+                "ob-s37"
+              ]
+            },
+            {
+              "name": "LiteLLM spend logs",
+              "licence": "MIT with enterprise folder",
+              "windowsSupport": "Python/Docker proxy; Windows not specifically stated",
+              "footprint": "Needs PostgreSQL for spend and budgets; page states 8ms P95 at 1k RPS",
+              "whatItAnswers": "Spend per key, user, team and tag in LiteLLM_SpendLogs; response_cost, tokens, status, latency per call; Prometheus /metrics with spend, remaining budget, failures, in-flight requests.",
+              "sourceIds": [
+                "ob-s30",
+                "ob-s31",
+                "ob-s33",
+                "ob-s34"
+              ]
+            },
+            {
+              "name": "OpenTelemetry",
+              "licence": "not fetched",
+              "windowsSupport": "n/a (instrumentation standard)",
+              "footprint": "n/a",
+              "whatItAnswers": "Vendor-neutral names for GenAI telemetry: gen_ai.client.operation.duration, time_to_first_chunk, invoke_agent.duration, invoke_agent.inference_calls, invoke_agent.tool_calls, execute_tool.duration. All Development stability, so names may change.",
+              "sourceIds": [
+                "ob-s04",
+                "ob-s41"
+              ]
+            }
+          ]
+        },
+        {
+          "layer": "uptime",
+          "tools": [
+            {
+              "name": "Uptime Kuma",
+              "licence": "MIT",
+              "windowsSupport": "Windows 10 x64 and Server 2012 R2+; Node.js 20.4+",
+              "footprint": "Not stated",
+              "whatItAnswers": "Is an endpoint up: HTTP, TCP, keyword, JSON query, ping, DNS, Docker container, plus push monitors that a job calls to prove it ran; 20-second intervals; status pages.",
+              "sourceIds": [
+                "gaps-s05"
+              ]
+            }
+          ]
+        },
+        {
+          "layer": "logs",
+          "tools": [
+            {
+              "name": "Loki",
+              "licence": "AGPL-3.0 with Apache-2.0 exceptions",
+              "windowsSupport": "Not stated on the page fetched",
+              "footprint": "Label-only indexing, described as cheaper to run; no numbers",
+              "whatItAnswers": "Searchable agent and job logs; Alloy replaces Promtail as the agent.",
+              "sourceIds": [
+                "ob-s38"
+              ]
+            },
+            {
+              "name": "Telegraf",
+              "licence": "MIT",
+              "windowsSupport": "Windows Event Log plugin listed",
+              "footprint": "n/a",
+              "whatItAnswers": "Ships Windows event and metric data.",
+              "sourceIds": [
+                "ob-s39"
+              ]
+            }
+          ]
+        },
+        {
+          "layer": "alerts",
+          "tools": [
+            {
+              "name": "Prometheus+windows_exporter",
+              "licence": "n/a",
+              "windowsSupport": "Alertmanager built-in receivers: Telegram, Slack, Discord, email, Pushover, Teams, PagerDuty, Opsgenie, webhook and more",
+              "footprint": "n/a",
+              "whatItAnswers": "Rule-based alerts routed to chat or phone push.",
+              "sourceIds": [
+                "ob-s27",
+                "ob-s25"
+              ]
+            },
+            {
+              "name": "Grafana",
+              "licence": "AGPL-3.0 with Apache exceptions",
+              "windowsSupport": "Not stated on page fetched",
+              "footprint": "n/a",
+              "whatItAnswers": "Contact points with 20+ integrations (Slack, Telegram, Discord, email, webhook, Pushover, PagerDuty).",
+              "sourceIds": [
+                "ob-s28",
+                "ob-s40"
+              ]
+            },
+            {
+              "name": "Uptime Kuma",
+              "licence": "MIT",
+              "windowsSupport": "see uptime",
+              "footprint": "n/a",
+              "whatItAnswers": "90+ notification services incl. Telegram, Discord, Slack, Pushover, email.",
+              "sourceIds": [
+                "gaps-s05"
+              ]
+            },
+            {
+              "name": "LiteLLM spend logs",
+              "licence": "see above",
+              "windowsSupport": "n/a",
+              "footprint": "n/a",
+              "whatItAnswers": "Alerts to Slack, Discord, Teams, generic webhook for hanging, slow and failed calls, DB failures, soft-budget crossings; digest mode aggregates repeats.",
+              "sourceIds": [
+                "ob-s32"
+              ]
+            }
+          ]
+        },
+        {
+          "layer": "capacity forecast",
+          "tools": [
+            {
+              "name": "Prometheus+windows_exporter",
+              "licence": "n/a",
+              "windowsSupport": "n/a",
+              "footprint": "n/a",
+              "whatItAnswers": "predict_linear and deriv extrapolate gauges by simple linear regression (needs 2+ float samples); suited to disk fill and commit growth, not to bursty queues.",
+              "sourceIds": [
+                "ob-s26"
+              ]
+            },
+            {
+              "name": "Netdata",
+              "licence": "GPLv3+",
+              "windowsSupport": "see host metrics",
+              "footprint": "see host metrics",
+              "whatItAnswers": "Long retention through per-minute and per-hour tiers, bounded by disk space, for trend review.",
+              "sourceIds": [
+                "gaps-s08"
+              ]
+            }
+          ]
+        }
+      ],
+      "metricsToWatch": [
+        {
+          "metric": "Free RAM, lower tail (windows_memory_available_bytes, p5 over a window)",
+          "why": "Agent fleets spike memory; the low tail shows how close a box gets to stalling. USE method treats any saturation as a potential problem.",
+          "alertRule": "No source gives a numeric threshold. Practice: alert on available-memory p5 falling below a floor Frank sets from observed baseline. Frank's own 4 GiB Windows safety floor is local policy, not from these sources.",
+          "source": "practice",
+          "sourceIds": [
+            "ob-s06",
+            "ob-s24"
+          ]
+        },
+        {
+          "metric": "Swap, commit and compression pressure (windows_memory_committed_bytes vs commit_limit; modified page list; page faults; Linux /proc/pressure/memory)",
+          "why": "Memory saturation shows up as paging or stalls before OOM. PSI 'full' means all non-idle tasks stalled at once, described as a thrashing state.",
+          "alertRule": "Sources define the signals but give no recommended alert thresholds (the PSI page's 150 ms/1 s and 50 ms/1 s values are API examples, not guidance). Practice: alert on sustained committed/limit ratio near 1 or sustained PSI full > 0.",
+          "source": "practice",
+          "sourceIds": [
+            "ob-s06",
+            "ob-s29",
+            "ob-s24"
+          ]
+        },
+        {
+          "metric": "CPU utilization",
+          "why": "USE method: 100% typically a bottleneck; for non-interruptible resources like disks, sustained use above 70% warrants investigation. Google chose CPU consumption over QPS as the capacity measure.",
+          "alertRule": "Documented: investigate sustained >70% on disk-like resources; 100% = bottleneck (USE page). Not a CPU-specific paging rule.",
+          "source": "documented",
+          "sourceIds": [
+            "ob-s24",
+            "ob-s22"
+          ]
+        },
+        {
+          "metric": "Queue depth / saturation (job queue length, litellm_in_flight_requests, executor load)",
+          "why": "Saturation is the golden signal for how full the service is; queued work that cannot be serviced is a USE saturation measure. Google favours rejecting excess load over unbounded queues.",
+          "alertRule": "USE page: any non-zero saturation is a potential problem. No numeric queue limit documented for agent fleets; set from baseline (practice).",
+          "source": "documented",
+          "sourceIds": [
+            "ob-s20",
+            "ob-s24",
+            "ob-s22",
+            "ob-s31"
+          ]
+        },
+        {
+          "metric": "Token spend per task and daily spend (LiteLLM response_cost, spend metrics, Langfuse cost)",
+          "why": "Cloud API cost is the only variable cost that scales with agent count.",
+          "alertRule": "Documented mechanism: max_budget with budget_duration per key/user/team, plus soft-budget alerts and remaining-budget metrics. Dollar amounts are Frank's to set; no source gives one.",
+          "source": "documented",
+          "sourceIds": [
+            "ft-s18",
+            "ob-s32",
+            "ob-s31",
+            "ob-s30"
+          ]
+        },
+        {
+          "metric": "Completion time per task, as percentiles (gen_ai.invoke_agent.duration, gen_ai.client.operation.duration)",
+          "why": "SRE book warns averages hide tails: 100 ms average at 1,000 rps can still mean 1% of requests take 5 s. Use histograms.",
+          "alertRule": "Alert on p95/p99 against a baseline Frank sets; no numeric target in sources. LiteLLM alerting_threshold is configured in seconds for slow/hanging calls (example value 300 in the doc).",
+          "source": "documented",
+          "sourceIds": [
+            "ob-s20",
+            "ob-s04",
+            "ob-s32"
+          ]
+        },
+        {
+          "metric": "Retries and timeouts",
+          "why": "Retry storms amplify overload. Google guidance: max 3 retries per request, and retry only when retries are under 10% of requests.",
+          "alertRule": "Documented limits above are design rules; alert when retry ratio exceeds 10% (derived from the per-client rule, practice for alerting). Failed-call and hanging-call alerts exist in LiteLLM.",
+          "source": "documented",
+          "sourceIds": [
+            "ob-s22",
+            "ob-s32",
+            "ob-s31"
+          ]
+        },
+        {
+          "metric": "Error rate (failed LLM calls, failed jobs)",
+          "why": "Errors are a golden signal and USE dimension; Prometheus guidance says page on user-visible errors high in the stack.",
+          "alertRule": "Alert on symptoms; for batch jobs wait at least 2 full job cycles before paging (Prometheus practice doc).",
+          "source": "documented",
+          "sourceIds": [
+            "ob-s20",
+            "ob-s25",
+            "ob-s31"
+          ]
+        },
+        {
+          "metric": "GPU memory used and GPU utilization (nvidia-smi --query-gpu, DCGM exporter, nvidia_gpu_exporter)",
+          "why": "VRAM exhaustion kills local-model jobs; utilization shows idle paid capacity.",
+          "alertRule": "No source gives a threshold. Practice: alert on VRAM used / total near full for a sustained window.",
+          "source": "practice",
+          "sourceIds": [
+            "ob-s16",
+            "ob-s14",
+            "ob-s18"
+          ]
+        },
+        {
+          "metric": "GPU and host temperature",
+          "why": "Always-on mini PCs and GPU nodes throttle when hot; temperature is exposed by nvidia-smi, DCGM, Beszel.",
+          "alertRule": "No source gives a safe temperature. Use the GPU vendor's published limit for the exact card (not fetched).",
+          "source": "practice",
+          "sourceIds": [
+            "ob-s16",
+            "ob-s07"
+          ]
+        },
+        {
+          "metric": "Node and job liveness (push heartbeat from each scheduled job; HTTP/TCP checks)",
+          "why": "Detects silent failure of always-on boxes and cron-style agents. Uptime Kuma push monitors let a job report in.",
+          "alertRule": "Alert when heartbeat missing; interval floor 20 s per Uptime Kuma. Interval to match job cadence (practice).",
+          "source": "documented",
+          "sourceIds": [
+            "gaps-s05",
+            "ob-s25"
+          ]
+        },
+        {
+          "metric": "Disk free and growth (windows logical_disk, Langfuse ClickHouse/S3 growth)",
+          "why": "Langfuse docs say observability data is large; storage is the first thing that fills on a small box.",
+          "alertRule": "Use predict_linear to alert on projected fill time; the horizon is a choice (practice).",
+          "source": "practice",
+          "sourceIds": [
+            "ob-s02",
+            "ob-s26",
+            "gaps-s09"
+          ]
+        },
+        {
+          "metric": "Monitoring-of-monitoring (is the alert pipeline itself working)",
+          "why": "Prometheus docs recommend a blackbox test that alerts flow end to end.",
+          "alertRule": "Send a periodic always-firing test alert to the notification channel and alarm on its absence.",
+          "source": "documented",
+          "sourceIds": [
+            "ob-s25"
+          ]
+        }
+      ],
+      "capacityPlanning": [
+        {
+          "method": "USE method per resource",
+          "finding": "For every resource check utilization, saturation and errors. 100% utilization is typically a bottleneck; sustained >70% on disk-like non-interruptible resources deserves investigation; any non-zero saturation is a potential problem. Applies to software resources such as thread pools too.",
+          "sourceIds": [
+            "ob-s24"
+          ]
+        },
+        {
+          "method": "Four golden signals",
+          "finding": "Latency, traffic, errors, saturation; 'if you can only measure four metrics', use these. Saturation emphasises the most constrained resource.",
+          "sourceIds": [
+            "ob-s20"
+          ]
+        },
+        {
+          "method": "Percentile-based sizing",
+          "finding": "Measure distributions, not means; bucket request counts by latency. Averages hide a slow tail (1% at 5 s behind a 100 ms mean).",
+          "sourceIds": [
+            "ob-s20"
+          ]
+        },
+        {
+          "method": "Measure capacity in resource terms, not request counts",
+          "finding": "Google models capacity as CPU consumption rather than QPS because per-request cost varies by type, time and client. For agent fleets this argues for sizing in tokens, RAM and VRAM per task type rather than 'tasks per hour'. The translation to agents is practice, not stated by the source.",
+          "sourceIds": [
+            "ob-s22"
+          ]
+        },
+        {
+          "method": "Shed load rather than queue unboundedly",
+          "finding": "Accept only what can be processed; unbounded queueing causes memory exhaustion and cascades. Retry limits: max 3 per request, retry only if under 10% of requests are retries.",
+          "sourceIds": [
+            "ob-s22"
+          ]
+        },
+        {
+          "method": "Intent-based capacity planning",
+          "finding": "Specify requirements (reliability target, redundancy such as N+2) rather than concrete allocations; spreadsheet plans go stale and are brittle to small changes. The source gives no headroom percentage.",
+          "sourceIds": [
+            "ob-s21"
+          ]
+        },
+        {
+          "method": "Match reliability and provisioning to need",
+          "finding": "Over-provisioning for maximum reliability has direct and opportunity costs; the book cites throughput-optimized clusters running hot at 10-50% of the cost of low-latency clusters (a Bigtable example, not a general rule).",
+          "sourceIds": [
+            "ob-s23"
+          ]
+        },
+        {
+          "method": "Alert when approaching capacity limits",
+          "finding": "Prometheus practice doc lists capacity as an alert category because it needs intervention before outages; batch/offline work should look at throughput and job success over at least 2 cycles.",
+          "sourceIds": [
+            "ob-s25"
+          ]
+        },
+        {
+          "method": "Linear forecast for slow-growing gauges",
+          "finding": "predict_linear(v, t) extrapolates a gauge t seconds ahead via simple linear regression; good for disk and storage fill, weak for bursty demand.",
+          "sourceIds": [
+            "ob-s26"
+          ]
+        },
+        {
+          "method": "Pressure stall information on Linux",
+          "finding": "PSI 'some' vs 'full' quantifies time lost to memory, CPU or IO contention in 10/60/300 s windows via /proc/pressure/memory. Linux only; kernel doc gives no alert thresholds.",
+          "sourceIds": [
+            "ob-s29"
+          ]
+        }
+      ],
+      "llmCostTracking": [
+        {
+          "approach": "Gateway-level budgets (LiteLLM proxy)",
+          "finding": "Virtual keys carry max_budget (USD) and budget_duration (e.g. 30s, 30m, 24h, 30d) per key, user, team or end-user; also TPM, RPM and max-parallel limits. Requires a Postgres database, otherwise budget checks are skipped. Budget reservation is on by default so concurrent requests cannot overshoot. Models priced at zero (self-hosted) are excluded from budget checks.",
+          "sourceIds": [
+            "ft-s18"
+          ]
+        },
+        {
+          "approach": "Per-call spend ledger",
+          "finding": "All calls land in LiteLLM_SpendLogs with key hash, user, team, tags, model, prompt/completion/total tokens and USD spend; response cost is also in the x-litellm-response-cost header. Payload includes status, latency (time to first token if streaming), cost breakdown, cache costs. Retention policy not documented in pages fetched.",
+          "sourceIds": [
+            "ob-s33",
+            "ob-s30"
+          ]
+        },
+        {
+          "approach": "Prometheus export of spend",
+          "finding": "/metrics exposes spend per user/key/team, tokens, remaining budget, failed/total requests, latency histograms, litellm_in_flight_requests. Requires prometheus callback in config; /metrics needs a LiteLLM API key by default in recent versions (doc says since v1.85.0).",
+          "sourceIds": [
+            "ob-s31"
+          ]
+        },
+        {
+          "approach": "Budget alerts to chat",
+          "finding": "Soft budget alerts and periodic reports plus failure and hanging-call alerts to Slack, Discord, Teams or webhook; digest mode reduces repeats.",
+          "sourceIds": [
+            "ob-s32"
+          ]
+        },
+        {
+          "approach": "Trace-level cost (Langfuse)",
+          "finding": "Cost attaches to each generation. Ingested provider cost wins over inferred cost; inference uses model definitions (regex match plus per-token-type prices); custom models can be added for fine-tuned or self-hosted models. Per task cost needs traces grouped by session or trace id.",
+          "sourceIds": [
+            "ob-s36"
+          ]
+        },
+        {
+          "approach": "OpenTelemetry route",
+          "finding": "Langfuse accepts OTLP over HTTP (JSON or protobuf, not gRPC) at /api/public/otel with Basic auth; header x-langfuse-ingestion-version: 4 avoids up-to-10-minute delay. Langfuse prefers langfuse.* attributes over generic OTel ones. GenAI duration and agent metrics are named in OTel conventions but still in Development.",
+          "sourceIds": [
+            "ob-s35",
+            "ob-s04"
+          ]
+        },
+        {
+          "approach": "Cost of running the tracker itself",
+          "finding": "Langfuse self-hosting pulls in ClickHouse, Postgres, Redis and S3 with a 16 GiB RAM, 100 GiB recommended VM; on a disk-constrained box that overhead may exceed the API spend it tracks. LiteLLM alone needs only Postgres. Whether to choose Langfuse Cloud instead was not evaluated (pricing not fetched).",
+          "sourceIds": [
+            "ob-s01",
+            "ob-s02",
+            "ob-s34"
+          ]
+        }
+      ],
+      "gaps": [
+        "Beszel hub and agent RAM/disk footprint: docs only say lightweight, no numbers found in any page opened.",
+        "Prometheus, Alertmanager and Node/windows_exporter RAM/disk sizing: not opened; no footprint figures.",
+        "Langfuse main self-hosting page gives no minimums; only the Docker Compose page's VM recommendation (4 cores, 16 GiB, 100 GiB) was found. Helm/Kubernetes sizing not opened.",
+        "OpenTelemetry gen_ai.client.token.usage: named in the repo overview but its row was not in the metrics table the fetch returned; unit and attributes unverified. The old opentelemetry.io and main-repo pages are redirect stubs.",
+        "Loki and Grafana Windows support, and Grafana/Loki footprint: not stated on pages opened.",
+        "Windows GPU monitoring for AMD and Intel: AMD SMI is Linux-only plus experimental WSL2; Beszel's Windows GPU coverage by vendor not stated; windows_exporter GPU collector not verified. WSL2 is not installed on Frank's primary machine.",
+        "No source gives numeric alert thresholds for free RAM, swap, GPU temperature or VRAM; those rows are labelled practice.",
+        "No primary source opened on capacity headroom percentages; Google SRE chapters give principles (N+2, intent-based, CPU-based capacity), not a headroom rule.",
+        "LiteLLM spend log retention, Langfuse Cloud pricing and Uptime Kuma resource use not found. Uptime Kuma docs site returned 404; GitHub README used.",
+        "WebSearch budget for the session was exhausted, so discovery was limited to known primary URLs; fetched pages were summarised by a small model, so quotes and exact numbers should be re-checked before any public use.",
+        "Netdata footprint figures (5% CPU, 150 MiB; <1%, ~100 MiB) are vendor claims from the GitHub README, not measured, and Windows-specific footprint was not stated."
+      ]
+    },
+    "gpu-nodes": {
+      "gpus": [
+        {
+          "id": "rtx-5090",
+          "name": "GeForce RTX 5090",
+          "vramGb": 32,
+          "memoryBandwidthGBs": 1792,
+          "tdpWatts": 575,
+          "psuRecommendedWatts": null,
+          "lengthMm": 304,
+          "prices": [
+            {
+              "amount": 5412.12,
+              "currency": "EUR",
+              "merchant": "MSI Ventus 3X OC via Geizhals EU",
+              "merchantHost": "geizhals.eu",
+              "includesTax": true,
+              "observedOn": "2026-10-05",
+              "sourceId": "gn-s19",
+              "kind": "aggregator"
+            },
+            {
+              "amount": 5672.06,
+              "currency": "EUR",
+              "merchant": "ASUS ROG Astral OC via Geizhals EU",
+              "merchantHost": "geizhals.eu",
+              "includesTax": true,
+              "observedOn": "2026-10-05",
+              "sourceId": "gn-s19",
+              "kind": "aggregator"
+            }
+          ],
+          "notes": "Cheapest 32GB EUR listings seen were about EUR 5.4k, far above the 1,999 USD MSRP; UK tracker shows GBP 2,900-3,500 for cheapest cards (not EU, snapshot date unstated), so the two trackers disagree and the EUR figure should be rechecked before purchase. NVIDIA page extraction gave PSU 850W and 1000W inconsistently, so PSU left null. 4-slot cards are common; check case and OCuLink dock clearance.",
+          "sourceIds": [
+            "gn-s02",
+            "gn-s05",
+            "gn-s17",
+            "gn-s19"
+          ]
+        },
+        {
+          "id": "rtx-5080",
+          "name": "GeForce RTX 5080",
+          "vramGb": 16,
+          "memoryBandwidthGBs": 960,
+          "tdpWatts": 360,
+          "psuRecommendedWatts": 850,
+          "lengthMm": 304,
+          "prices": [],
+          "notes": "EU price not obtained (Geizhals 403, PriceSpy 404). Gap.",
+          "sourceIds": [
+            "gn-s03",
+            "gn-s05"
+          ]
+        },
+        {
+          "id": "rtx-5070-ti",
+          "name": "GeForce RTX 5070 Ti",
+          "vramGb": 16,
+          "memoryBandwidthGBs": 896,
+          "tdpWatts": 300,
+          "psuRecommendedWatts": 750,
+          "lengthMm": null,
+          "prices": [],
+          "notes": "Only UK tracker price: from GBP 799 (Palit GameRock), VAT not stated, not EUR; no EU price. Length varies by partner.",
+          "sourceIds": [
+            "gn-s04",
+            "gn-s05",
+            "gn-s18"
+          ]
+        },
+        {
+          "id": "rtx-pro-6000-blackwell",
+          "name": "RTX PRO 6000 Blackwell (Workstation / Max-Q / Server)",
+          "vramGb": 96,
+          "memoryBandwidthGBs": null,
+          "tdpWatts": 600,
+          "psuRecommendedWatts": null,
+          "lengthMm": 305,
+          "prices": [],
+          "notes": "Workstation Edition 600W, 12in (~305mm); Max-Q 300W, 10.5in (~267mm); Server 400-600W passive. Bandwidth not on fetched page. No price verified. Max-Q suits a small box or eGPU PSU budget better.",
+          "sourceIds": [
+            "gn-s06"
+          ]
+        },
+        {
+          "id": "rtx-pro-5000-blackwell",
+          "name": "RTX PRO 5000 Blackwell",
+          "vramGb": 48,
+          "memoryBandwidthGBs": 1344,
+          "tdpWatts": 300,
+          "psuRecommendedWatts": null,
+          "lengthMm": 267,
+          "prices": [],
+          "notes": "48GB or 72GB variants; 10.5in dual slot. No price verified.",
+          "sourceIds": [
+            "gn-s07"
+          ]
+        },
+        {
+          "id": "rtx-pro-4500-blackwell",
+          "name": "RTX PRO 4500 Blackwell",
+          "vramGb": null,
+          "memoryBandwidthGBs": null,
+          "tdpWatts": null,
+          "psuRecommendedWatts": null,
+          "lengthMm": null,
+          "prices": [],
+          "notes": "Referenced on NVIDIA page but no specs retrieved. Gap.",
+          "sourceIds": [
+            "gn-s07"
+          ]
+        },
+        {
+          "id": "amd-radeon-ai-pro-r9700",
+          "name": "AMD Radeon AI PRO R9700",
+          "vramGb": null,
+          "memoryBandwidthGBs": null,
+          "tdpWatts": null,
+          "psuRecommendedWatts": null,
+          "lengthMm": null,
+          "prices": [],
+          "notes": "AMD page fetch timed out; no verified data. Gap.",
+          "sourceIds": []
+        },
+        {
+          "id": "intel-arc-pro-b60",
+          "name": "Intel Arc Pro B60",
+          "vramGb": 24,
+          "memoryBandwidthGBs": 456,
+          "tdpWatts": 200,
+          "psuRecommendedWatts": null,
+          "lengthMm": null,
+          "prices": [],
+          "notes": "PCIe 5.0 x8, GDDR6. Price not retrieved. Not CUDA.",
+          "sourceIds": [
+            "gn-s08"
+          ]
+        }
+      ],
+      "gb10Boxes": [
+        {
+          "name": "Dell Pro Max GB10 (T9WMV, 2TB)",
+          "memoryGb": 128,
+          "bandwidthGBs": 273,
+          "os": "NVIDIA DGX OS 7 (Ubuntu-based, Arm64)",
+          "priceEur": 6537,
+          "priceUsd": null,
+          "includesTax": true,
+          "availability": "In stock at Alternate.de; second EU retailer EUR 7,318.60 incl VAT with 6-11 day lead",
+          "sourceIds": [
+            "gn-s09",
+            "gn-s10",
+            "gn-s16"
+          ]
+        },
+        {
+          "name": "Dell Pro Max GB10 (UK, 4TB config)",
+          "memoryGb": 128,
+          "bandwidthGBs": 273,
+          "os": "NVIDIA DGX OS 7",
+          "priceEur": null,
+          "priceUsd": null,
+          "includesTax": true,
+          "availability": "GBP 11,893.48 inc VAT (9,911.23 ex) on Dell UK; unreconciled with a snippet showing GBP 4,958.53",
+          "sourceIds": [
+            "gn-s11"
+          ]
+        },
+        {
+          "name": "ASUS Ascent GX10",
+          "memoryGb": 128,
+          "bandwidthGBs": 273,
+          "os": "NVIDIA DGX OS (Ubuntu 24.04 Arm64); Windows unsupported",
+          "priceEur": null,
+          "priceUsd": 5999,
+          "includesTax": false,
+          "availability": "USD 5,999 / 6,999 / 7,999 for 1/2/4TB per ASUS store as reported by a secondary source; launched USD 2,999; no EU price verified",
+          "sourceIds": [
+            "gn-s12"
+          ]
+        },
+        {
+          "name": "Lenovo ThinkStation PGX (128GB/1TB)",
+          "memoryGb": 128,
+          "bandwidthGBs": 273,
+          "os": "NVIDIA DGX OS",
+          "priceEur": null,
+          "priceUsd": null,
+          "includesTax": null,
+          "availability": "ARP.nl lists as no longer available; search snippet claims EUR 6,116.47 for 2TB, not page-verified",
+          "sourceIds": [
+            "gn-s13"
+          ]
+        },
+        {
+          "name": "NVIDIA DGX Spark Founders Edition",
+          "memoryGb": 128,
+          "bandwidthGBs": 273,
+          "os": "NVIDIA DGX OS",
+          "priceEur": null,
+          "priceUsd": null,
+          "includesTax": null,
+          "availability": "Sold via Amazon, Micro Center, PNY, TD Synnex; current price not verified. Launch-era figures (USD 3,999, DE EUR 3,689) are stale and secondary snippets claim a rise to about USD 4,699-5,000, unverified",
+          "sourceIds": [
+            "landscape-s12",
+            "gn-s14"
+          ]
+        },
+        {
+          "name": "MSI, Gigabyte, HP, Acer GB10 boxes",
+          "memoryGb": 128,
+          "bandwidthGBs": 273,
+          "os": "NVIDIA DGX OS",
+          "priceEur": null,
+          "priceUsd": null,
+          "includesTax": null,
+          "availability": "Named as OEM partners by NVIDIA; no prices retrieved",
+          "sourceIds": [
+            "landscape-s12"
+          ]
+        }
+      ],
+      "routes": [
+        {
+          "route": "eGPU",
+          "pros": [
+            "Keeps one box and one desk",
+            "CUDA available to a Strix Halo mini PC with OCuLink or USB4 port",
+            "OCuLink x4 PCIe 4.0 about 8 GB/s, enough for models resident in VRAM"
+          ],
+          "cons": [
+            "Needs separate PSU and dock; 5090 is 575W TGP and up to 4 slots",
+            "USB4 v1 PCIe tunneling has payload overhead and 40 Gbit/s ceiling",
+            "Model loading and any CPU/VRAM offload are bandwidth-starved",
+            "Strix Halo unified memory cannot be shared with the discrete card",
+            "Framework Desktop offers an open-ended PCIe x4 slot, an alternative to a dock"
+          ],
+          "bandwidthOrNetworkNotes": "OCuLink-2 8 GB/s (PCIe 4.0 x4), 16 GB/s at x8; USB4 40 Gbit/s (v2 80 Gbit/s) with tunneling overhead.",
+          "windowsSupport": "Strix Halo eGPU specifics not verified (wiki page unavailable).",
+          "bestFor": "Image/video generation and fine-tuning small models that fit in 16-32GB VRAM when you already own a Strix Halo box with OCuLink.",
+          "evidence": "inferred",
+          "sourceIds": [
+            "gn-s29",
+            "gn-s30",
+            "gn-s31",
+            "gn-s32"
+          ]
+        },
+        {
+          "route": "gpu-node",
+          "pros": [
+            "Full PCIe x16 and proper PSU/cooling",
+            "Existing gaming PC can be reused",
+            "Works with ComfyUI API, vLLM and llama.cpp over LAN"
+          ],
+          "cons": [
+            "Noise, 600W+ power draw, heat",
+            "llama.cpp RPC is insecure and should stay on a private network",
+            "Always-on or Wake-on-LAN needed (not verified)"
+          ],
+          "bandwidthOrNetworkNotes": "Only prompts and results cross the network when using ComfyUI /prompt and /ws or an OpenAI-compatible endpoint; llama.cpp RPC moves tensors over TCP.",
+          "windowsSupport": "Sunshine host supported on Windows; ComfyUI and vLLM Windows support not verified.",
+          "bestFor": "Dedicated image/video generation queue and heavier inference behind an API; default recommendation for a founder with a Strix Halo mini PC.",
+          "evidence": "documented",
+          "sourceIds": [
+            "ex-s12",
+            "gn-s25",
+            "gn-s26",
+            "gn-s27",
+            "gn-s28"
+          ]
+        },
+        {
+          "route": "gb10",
+          "pros": [
+            "128GB unified memory fits models and fine-tunes that a 32GB card cannot",
+            "Full CUDA stack on DGX OS, quiet (35 dB), small, 140W TDP",
+            "200Gbps ConnectX-7 for two-box clustering"
+          ],
+          "cons": [
+            "273 GB/s memory bandwidth, so dense models decode slowly, MoE fine",
+            "Arm64 Linux only; x86-only software and Windows unsupported",
+            "EUR 6.5-7.3k incl VAT seen for Dell 2TB",
+            "Not a gaming or Windows machine"
+          ],
+          "bandwidthOrNetworkNotes": "10GbE plus 2x 200Gbps QSFP; 273 GB/s memory.",
+          "windowsSupport": "None; DGX OS Ubuntu Arm64.",
+          "bestFor": "CUDA development, fine-tuning/QLoRA of large models, large-model prototyping before cloud.",
+          "evidence": "documented",
+          "sourceIds": [
+            "landscape-s12",
+            "gn-s09",
+            "gn-s10",
+            "gn-s12",
+            "gn-s15",
+            "gn-s16"
+          ]
+        },
+        {
+          "route": "pro-card",
+          "pros": [
+            "96GB (PRO 6000) or 48-72GB (PRO 5000) on one card, ECC",
+            "Max-Q 300W variant is far easier on PSU/thermals",
+            "1344 GB/s on PRO 5000 vs 273 on GB10"
+          ],
+          "cons": [
+            "No EU price verified this session",
+            "Needs a host with PCIe x16 and strong PSU (PRO 6000 Workstation is 600W)"
+          ],
+          "bandwidthOrNetworkNotes": "PCIe Gen 5 x16.",
+          "windowsSupport": "Not verified.",
+          "bestFor": "Fine-tuning and large single-GPU inference when 32GB is too small and GB10 bandwidth too slow.",
+          "evidence": "inferred",
+          "sourceIds": [
+            "gn-s06",
+            "gn-s07"
+          ]
+        },
+        {
+          "route": "cloud",
+          "pros": [
+            "No capex, per-second billing, H100/RTX PRO 6000 on demand",
+            "Good for bursts such as fine-tune runs",
+            "Modal has free USD 30/month credits on Starter"
+          ],
+          "cons": [
+            "Costs accumulate for daily use",
+            "Lambda prices exclude VAT; Vast offers fluctuate (none for 5090/H100 at fetch)"
+          ],
+          "bandwidthOrNetworkNotes": "Internet latency; use API endpoints.",
+          "windowsSupport": "Linux containers (not verified).",
+          "bestFor": "Occasional heavy jobs. Break-even arithmetic (not sourced): a roughly EUR 5.4k 5090 equals thousands of hours at USD 0.69-0.99/hr.",
+          "evidence": "documented",
+          "sourceIds": [
+            "stack-s11",
+            "stack-s12",
+            "stack-s13",
+            "gn-s23"
+          ]
+        }
+      ],
+      "remoteGpuNode": {
+        "howToConnect": [
+          {
+            "method": "ComfyUI API",
+            "what": "Run ComfyUI on the GPU PC and submit workflows via POST /prompt, watch /ws, fetch from /history and /view; /system_stats reports VRAM. Remote bind flag not verified.",
+            "sourceIds": [
+              "gn-s26"
+            ]
+          },
+          {
+            "method": "vLLM server",
+            "what": "vllm serve exposes OpenAI-compatible /v1/chat/completions, /v1/completions, embeddings and also /v1/messages; point any OpenAI-style client at it.",
+            "sourceIds": [
+              "gn-s25"
+            ]
+          },
+          {
+            "method": "llama.cpp RPC",
+            "what": "ggml-rpc-server on the GPU host, llama-server with --rpc host:port; documented as insecure proof of concept, private LAN only.",
+            "sourceIds": [
+              "ex-s12"
+            ]
+          },
+          {
+            "method": "Moonlight/Sunshine",
+            "what": "Sunshine hosts a low-latency stream; NVENC on NVIDIA; runs as a Windows service; attach a display or HDMI dummy plug to capture on a discrete GPU.",
+            "sourceIds": [
+              "gn-s27",
+              "gn-s28"
+            ]
+          }
+        ],
+        "powerAndWakeNotes": "Tailscale and Wake-on-LAN pages did not return relevant content, so WoL specifics are a gap. Power: 5090 TGP 575W, 5080 360W, 5070 Ti 300W. VRAM contention with gaming, Windows update reboots and fan noise are inferred operational risks, not sourced.",
+        "sourceIds": [
+          "ex-s12",
+          "gn-s25",
+          "gn-s26",
+          "gn-s27",
+          "gn-s28"
+        ]
+      },
+      "cloudRental": [
+        {
+          "provider": "Runpod Community",
+          "gpu": "RTX 5090 32GB",
+          "pricePerHourUsd": 0.69,
+          "observedOn": "2026-10-05",
+          "sourceId": "stack-s11"
+        },
+        {
+          "provider": "Runpod Secure",
+          "gpu": "RTX 5090 32GB",
+          "pricePerHourUsd": 0.99,
+          "observedOn": "2026-10-05",
+          "sourceId": "stack-s11"
+        },
+        {
+          "provider": "Runpod Community",
+          "gpu": "RTX 4090 24GB",
+          "pricePerHourUsd": 0.34,
+          "observedOn": "2026-10-05",
+          "sourceId": "stack-s11"
+        },
+        {
+          "provider": "Runpod Secure",
+          "gpu": "RTX 4090 24GB",
+          "pricePerHourUsd": 0.74,
+          "observedOn": "2026-10-05",
+          "sourceId": "stack-s11"
+        },
+        {
+          "provider": "Runpod Community",
+          "gpu": "RTX PRO 6000 96GB",
+          "pricePerHourUsd": 1.69,
+          "observedOn": "2026-10-05",
+          "sourceId": "stack-s11"
+        },
+        {
+          "provider": "Runpod Secure",
+          "gpu": "RTX PRO 6000 96GB",
+          "pricePerHourUsd": 2.09,
+          "observedOn": "2026-10-05",
+          "sourceId": "stack-s11"
+        },
+        {
+          "provider": "Runpod",
+          "gpu": "H100 PCIe (range 1.99-2.89)",
+          "pricePerHourUsd": 1.99,
+          "observedOn": "2026-10-05",
+          "sourceId": "stack-s11"
+        },
+        {
+          "provider": "Runpod",
+          "gpu": "H100 SXM (range 2.69-3.49)",
+          "pricePerHourUsd": 2.69,
+          "observedOn": "2026-10-05",
+          "sourceId": "stack-s11"
+        },
+        {
+          "provider": "Lambda",
+          "gpu": "H100 SXM (range 3.99-4.29, ex VAT)",
+          "pricePerHourUsd": 3.99,
+          "observedOn": "2026-10-05",
+          "sourceId": "stack-s12"
+        },
+        {
+          "provider": "Modal",
+          "gpu": "H100 SXM5 (0.001097 USD/s, computed)",
+          "pricePerHourUsd": 3.95,
+          "observedOn": "2026-10-05",
+          "sourceId": "stack-s13"
+        },
+        {
+          "provider": "Vast.ai",
+          "gpu": "RTX 5090 / H100 SXM",
+          "pricePerHourUsd": null,
+          "observedOn": "2026-10-05",
+          "sourceId": "gn-s23"
+        }
+      ],
+      "gaps": [
+        "WebSearch quota exhausted mid-session; several merchant lookups not completed.",
+        "No verified EU price (EUR, VAT status known) for RTX 5080, 5070 Ti, RTX PRO 6000, PRO 5000, PRO 4500, R9700, Arc Pro B60. Geizhals de, Idealo and Tweakers returned 403 or blocked.",
+        "RTX 5090 EUR prices come from a summarized Geizhals page (partly inconsistent) and disagree with the UK tracker; recheck on a live Dutch merchant (Tweakers, Megekko, Azerty, Alternate.nl).",
+        "RTX 5090 recommended PSU not reliably extracted (850W vs 1000W conflict). RTX PRO 6000 bandwidth not captured; PRO 6000 EU price missing.",
+        "AMD Radeon AI PRO R9700 specs: page timed out, nothing verified.",
+        "DGX Spark Founders Edition current price: NVIDIA page has no price and marketplace page timed out; secondary snippets claiming USD 4,699-5,000 not opened. Launch EUR 3,689 is stale. ASUS GX10 EUR price, Lenovo, MSI, Gigabyte, HP, Acer prices not verified. Dell UK prices (GBP 11.9k vs 4.96k snippet) unreconciled.",
+        "No verified source on Strix Halo eGPU support (OCuLink/USB4 ports, driver coexistence, benchmark loss); strixhalo.wiki External GPU page 404.",
+        "Wake-on-LAN, Tailscale, ComfyUI remote-listen flag, and power/noise/Windows-update/VRAM-contention pitfalls are not backed by an opened source.",
+        "Vast.ai showed no offers at fetch time; no hourly price for 5090/4090/PRO 6000/H100. Lambda lists no consumer or PRO 6000 GPUs. Modal PRO 6000/5090 per-second price not extracted."
+      ]
+    }
+  }
+}

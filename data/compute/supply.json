@@ -1,0 +1,138 @@
+[
+  {
+    "fromType": "machine",
+    "fromId": "gmktec-evo-x2-128",
+    "supplierId": "sixunited",
+    "part": "board",
+    "evidence": "documented",
+    "note": "AXB35-02 board per community wiki hardware page",
+    "sourceIds": [
+      "supply-s02",
+      "supply-s01"
+    ]
+  },
+  {
+    "fromType": "machine",
+    "fromId": "gmktec-evo-x2-64",
+    "supplierId": "sixunited",
+    "part": "board",
+    "evidence": "documented",
+    "note": "AXB35-02 board per community wiki hardware page",
+    "sourceIds": [
+      "supply-s02",
+      "supply-s01"
+    ]
+  },
+  {
+    "fromType": "machine",
+    "fromId": "gmktec-evo-x2-128",
+    "supplierId": "huntkey",
+    "part": "psu",
+    "evidence": "documented",
+    "note": "Huntkey HKA230195A2-0A7",
+    "sourceIds": [
+      "supply-s02"
+    ]
+  },
+  {
+    "fromType": "brand",
+    "fromId": "bosgame",
+    "supplierId": "sixunited",
+    "part": "board",
+    "evidence": "documented",
+    "note": "Community wiki: about 90% of Chinese Strix Halo PCs share this platform (wiki, not primary)",
+    "sourceIds": [
+      "supply-s01"
+    ]
+  },
+  {
+    "fromType": "brand",
+    "fromId": "corsair",
+    "supplierId": "sixunited",
+    "part": "board",
+    "evidence": "documented",
+    "note": "Community wiki (not primary)",
+    "sourceIds": [
+      "supply-s01"
+    ]
+  },
+  {
+    "fromType": "machine",
+    "fromId": "minisforum-ms-s1-max-128",
+    "supplierId": "lite-on",
+    "part": "psu",
+    "evidence": "documented",
+    "note": "Internal 320 W PSU",
+    "sourceIds": [
+      "supply-s09"
+    ]
+  },
+  {
+    "fromType": "machine",
+    "fromId": "minisforum-ms-s1-max-128",
+    "supplierId": "kingston",
+    "part": "ssd",
+    "evidence": "documented",
+    "note": "2TB QLC SSD in the review sample only",
+    "sourceIds": [
+      "supply-s09"
+    ]
+  },
+  {
+    "fromType": "brand",
+    "fromId": "framework",
+    "supplierId": "fsp",
+    "part": "psu",
+    "evidence": "documented",
+    "note": "Semi-custom 400 W Flex ATX",
+    "sourceIds": [
+      "supply-s03"
+    ]
+  },
+  {
+    "fromType": "brand",
+    "fromId": "framework",
+    "supplierId": "cooler-master",
+    "part": "cooling",
+    "evidence": "documented",
+    "note": "Co-developed thermal system",
+    "sourceIds": [
+      "supply-s03"
+    ]
+  },
+  {
+    "fromType": "brand",
+    "fromId": "framework",
+    "supplierId": "noctua",
+    "part": "cooling",
+    "evidence": "documented",
+    "note": "Co-developed thermal system",
+    "sourceIds": [
+      "supply-s03"
+    ]
+  },
+  {
+    "fromType": "silicon",
+    "fromId": "amd-max-plus-395",
+    "supplierId": "tsmc",
+    "part": "soc-fab",
+    "evidence": "inferred",
+    "note": "General industry knowledge, not verified this session",
+    "sourceIds": [
+      "supply-s03"
+    ]
+  },
+  {
+    "fromType": "silicon",
+    "fromId": "amd-max-plus-395",
+    "supplierId": "dram-vendors",
+    "part": "memory",
+    "evidence": "rumor",
+    "note": "No opened source names the LPDDR5X vendor",
+    "sourceIds": [
+      "supply-s01",
+      "supply-s03",
+      "supply-s09"
+    ]
+  }
+]

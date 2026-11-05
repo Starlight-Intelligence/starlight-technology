@@ -1,0 +1,47 @@
+{
+  "asOf": "2026-10-05",
+  "note": "Every constant carries its basis. 'documented' constants cite an opened source. 'derived' and 'measured' come from one profile of a 31 GB Windows machine over 30 minutes (2026-10-04) and are not benchmarks of the nodes. 'estimate' constants are assumptions to replace with the node's own heartbeat data after one week.",
+  "ram": {
+    "agentSession": { "low": 1.0, "high": 1.5, "basis": "estimate", "note": "One coding-agent CLI plus its MCP children. The top Claude processes held 0.31-0.37 GB each in the profile; children and tools are not separated." },
+    "headlessBrowser": { "low": 0.7, "high": 0.7, "basis": "derived", "note": "About 4 browser processes at 0.175 GB each (regression of RAM used on browser process count in the profile)." },
+    "linuxDesktopContainer": { "low": 1.5, "high": 2.0, "basis": "estimate", "note": "A container with a virtual display, a remote-desktop server and a browser profile." },
+    "windowsVm": { "low": 4, "high": 8, "basis": "estimate", "note": "Guest memory for a Windows virtual machine with a browser; requires Windows Pro for Hyper-V." },
+    "buildBurst": { "low": 4, "high": 4, "basis": "estimate", "note": "Per concurrent Next.js build." },
+    "osAndServices": { "low": 8, "high": 8, "basis": "measured", "note": "Services, Defender and memory compression on the profiled laptop." },
+    "langfuseStack": { "low": 16, "high": 16, "basis": "documented", "sourceIds": ["ob-s02"], "note": "Langfuse's Docker Compose page recommends 4+ cores, 16 GiB RAM and 100+ GiB storage on one VM, without high availability." },
+    "litellmProxy": { "low": 1, "high": 1, "basis": "estimate", "note": "Gateway process; budgets need Postgres (documented)." },
+    "monitoring": { "low": 1, "high": 1, "basis": "estimate", "note": "windows_exporter or Beszel agent, Uptime Kuma." },
+    "ragPerMillionChunks": { "low": 4, "high": 6, "basis": "documented", "sourceIds": ["ex-s22", "ex-s24"], "note": "About 4 bytes per dimension per vector at full precision; a vendor formula, not a co-run measurement." }
+  },
+  "freeFloorGb": { "value": 4, "basis": "policy", "note": "Free-RAM floor used by the machine admission policy and the Windows safety margin." },
+  "odoo": {
+    "usersPerWorker": 6,
+    "ramPerLightWorkerGb": 0.15,
+    "ramPerHeavyWorkerGb": 1.0,
+    "heavyShare": 0.2,
+    "postgresRamGb": { "low": 2, "high": 4, "basis": "estimate" },
+    "basis": "documented",
+    "sourceIds": ["bs-s01"],
+    "note": "Odoo's deployment documentation: workers = (CPU x 2) + 1, one worker serves about 6 concurrent users, about 150 MB per light worker and 1 GB per heavy worker, assuming 20% heavy requests. Postgres memory is an estimate because the documentation gives none."
+  },
+  "vramJobs": {
+    "qwen-image-fp8": { "name": "Qwen-Image fp8 (ComfyUI)", "gb": 24, "basis": "documented", "sourceIds": ["mp-s04"], "note": "Measured by the ComfyUI docs on a 24 GB card at 34-94 seconds per image." },
+    "wan22-ti2v-5b": { "name": "Wan 2.2 TI2V-5B video", "gb": 24, "basis": "documented", "sourceIds": ["gaps-s34"], "note": "README states at least 24 GB; ComfyUI offloading fits 8 GB at lower speed." },
+    "wan22-a14b": { "name": "Wan 2.2 A14B video", "gb": 80, "basis": "documented", "sourceIds": ["gaps-s34"], "note": "README states at least 80 GB on a single GPU." },
+    "hunyuanvideo-720p": { "name": "HunyuanVideo 720p", "gb": 60, "basis": "documented", "sourceIds": ["gaps-s35"], "note": "45 GB at 540p, 60 GB at 720p." },
+    "qlora-7b": { "name": "QLoRA fine-tune, 7B", "gb": 5, "basis": "documented", "sourceIds": ["ft-s01"] },
+    "qlora-14b": { "name": "QLoRA fine-tune, 14B", "gb": 8.5, "basis": "documented", "sourceIds": ["ft-s01"] },
+    "qlora-32b": { "name": "QLoRA fine-tune, 32B", "gb": 26, "basis": "documented", "sourceIds": ["ft-s01"] },
+    "qlora-70b": { "name": "QLoRA fine-tune, 70B", "gb": 41, "basis": "documented", "sourceIds": ["ft-s01"] },
+    "lora16-32b": { "name": "16-bit LoRA fine-tune, 32B", "gb": 76, "basis": "documented", "sourceIds": ["ft-s01"] },
+    "qlora-gpt-oss-120b": { "name": "4-bit QLoRA, gpt-oss-120b", "gb": 68, "basis": "documented", "sourceIds": ["ft-s04"], "note": "Unsloth's DGX Spark post." }
+  },
+  "gpuTiers": [
+    { "uptoGb": 16, "class": "16 GB card (RTX 5080 or 5070 Ti)" },
+    { "uptoGb": 24, "class": "24 GB card (Arc Pro B60, or a used 24 GB card)" },
+    { "uptoGb": 32, "class": "32 GB card (RTX 5090)" },
+    { "uptoGb": 48, "class": "48 GB workstation card (RTX PRO 5000)" },
+    { "uptoGb": 96, "class": "96 GB workstation card (RTX PRO 6000) or 128 GB unified memory (GB10, slower bandwidth)" },
+    { "uptoGb": 128, "class": "128 GB unified memory (GB10) or rented cloud GPU" }
+  ]
+}
