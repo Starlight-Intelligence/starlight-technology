@@ -14,6 +14,7 @@ Every analysis declares whether evidence is owned-and-tested, hands-on, source-b
 ## Main collections
 
 - /shop — curated hardware, category filters, planning shortlists and constraints comparison
+- /gaming-galaxy — Starlight Technology pilot collection for gaming, streaming and creator setups; not a separate store or reseller claim
 - /shop/[slug] — product identity, buying fit, complete-system checks and labelled merchant destination
 - /partners — prospective supply and vendor relationships; no authorisation claimed
 

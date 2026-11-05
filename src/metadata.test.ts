@@ -13,6 +13,7 @@ import { metadata as methodologyMeta } from "./app/methodology/page";
 import { metadata as privacyMeta } from "./app/privacy/page";
 import { metadata as disclosureMeta } from "./app/disclosure/page";
 import { metadata as shopMeta } from "./app/shop/page";
+import { metadata as gamingGalaxyMeta } from "./app/gaming-galaxy/page";
 import { metadata as partnersMeta } from "./app/partners/page";
 import { metadata as pricingMeta } from "./app/pricing/page";
 import { metadata as infraMeta } from "./app/infrastructure/page";
@@ -80,6 +81,7 @@ test("all public routes have unique metadata", async () => {
     { meta: privacyMeta, route: "/privacy", expectedUrl: "/privacy" },
     { meta: disclosureMeta, route: "/disclosure", expectedUrl: "/disclosure" },
     { meta: shopMeta, route: "/shop", expectedUrl: "/shop" },
+    { meta: gamingGalaxyMeta, route: "/gaming-galaxy", expectedUrl: "/gaming-galaxy" },
     { meta: partnersMeta, route: "/partners", expectedUrl: "/partners" },
     { meta: pricingMeta, route: "/pricing", expectedUrl: "/pricing" },
     { meta: infraMeta, route: "/infrastructure", expectedUrl: "/infrastructure" },

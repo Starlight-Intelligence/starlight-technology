@@ -4,12 +4,13 @@ import { builds, comparisons, guides } from "@/lib/content";
 import { shopProducts } from "@/lib/shop";
 
 const base = "https://starlight.technology";
-const updated = new Date("2026-10-07");
+const updated = new Date("2026-10-29");
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const staticRoutes = [
     { path: "", priority: 1 },
     { path: "/shop", priority: 0.95 },
+    { path: "/gaming-galaxy", priority: 0.9 },
     { path: "/partners", priority: 0.7 },
     { path: "/builds", priority: 0.8 },
     { path: "/compare", priority: 0.8 },
