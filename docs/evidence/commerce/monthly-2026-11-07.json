@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "observedAt": "2026-11-07T00:00:00Z",
+  "decision": "change",
+  "scope": "shop affiliate activation boundary",
+  "catalogEvidence": {
+    "productCount": 8,
+    "verifiedOn": "2026-10-07",
+    "ageDays": 31,
+    "maximumAgeDays": 30,
+    "freshProductCount": 0
+  },
+  "affiliateApprovals": {
+    "recordCount": 0,
+    "source": "data/commerce/approved-offers.json"
+  },
+  "boundedImprovement": {
+    "behavior": "Affiliate activation falls back to the official product source unless both the product record and programme verification are no more than 30 UTC calendar days old.",
+    "productionChanged": false
+  },
+  "unknowns": [
+    "traffic",
+    "activation",
+    "revenue",
+    "cost",
+    "repeat use",
+    "customer outcomes",
+    "model benchmark results"
+  ]
+}

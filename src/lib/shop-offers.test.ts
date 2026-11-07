@@ -1,6 +1,6 @@
 import { describe, expect, it } from "vitest";
 import { shopProducts } from "./shop";
-import { resolveShopOffer, type ApprovedAffiliateOffer } from "./shop-offers";
+import { isFreshCommerceEvidence, resolveShopOffer, type ApprovedAffiliateOffer } from "./shop-offers";
 
 const product = shopProducts[2];
 const now = new Date("2026-10-07T20:00:00Z");
@@ -25,5 +25,19 @@ describe("hardware affiliate activation boundary", () => {
   });
   it("falls back when an approved destination has no configured URL", () => {
     expect(resolveShopOffer(product, [approval], {}, now).relationship).toBe("official");
+  });
+  it("accepts evidence on day 30 and rejects it on day 31", () => {
+    expect(isFreshCommerceEvidence("2026-09-07", now)).toBe(true);
+    expect(isFreshCommerceEvidence("2026-09-06", now)).toBe(false);
+  });
+  it("rejects future and invalid evidence dates", () => {
+    expect(isFreshCommerceEvidence("2026-10-08", now)).toBe(false);
+    expect(isFreshCommerceEvidence("not-a-date", now)).toBe(false);
+  });
+  it("keeps an approved offer official when the product source is stale", () => {
+    expect(resolveShopOffer({ ...product, verifiedOn: "2026-09-06" }, [approval], { [product.affiliateEnvKey]: url }, now).relationship).toBe("official");
+  });
+  it("keeps an approved offer official when the programme verification is stale", () => {
+    expect(resolveShopOffer(product, [{ ...approval, verifiedAt: "2026-09-06" }], { [product.affiliateEnvKey]: url }, now).relationship).toBe("official");
   });
 });
