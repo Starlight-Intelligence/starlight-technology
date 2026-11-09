@@ -50,7 +50,7 @@ describe("checkoutHref", () => {
     expect(checkoutHref(sku)).toBe("/free-path");
   });
 
-  it("should use checkoutEnvKey from process.env if present and valid (starts with http)", () => {
+  it("should use checkoutEnvKey only after the release gate passes", () => {
     process.env.NEXT_PUBLIC_POLAR_TECH_STUDIO_URL = "https://example.com/checkout";
 
     const sku: ProductSku = {
@@ -68,6 +68,26 @@ describe("checkoutHref", () => {
     };
 
     expect(checkoutHref(sku)).toBe("https://example.com/checkout");
+  });
+
+  it("should ignore a configured payment URL while the release gate is closed", () => {
+    process.env.NEXT_PUBLIC_POLAR_TECH_STUDIO_URL = "https://example.com/checkout";
+
+    const sku: ProductSku = {
+      id: "tech-studio",
+      name: "Tech Studio",
+      kind: "saas",
+      billing: "month",
+      priceLabel: "29",
+      summary: "summary",
+      includes: [],
+      cta: "cta",
+      checkoutEnvKey: "NEXT_PUBLIC_POLAR_TECH_STUDIO_URL",
+      gatePassed: false,
+      productPath: "/app"
+    };
+
+    expect(checkoutHref(sku)).toBe(`/checkout/${sku.id}`);
   });
 
   it("should fallback to default path if checkoutEnvKey url does not start with http", () => {
