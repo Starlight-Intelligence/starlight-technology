@@ -1,0 +1,436 @@
+{
+  "schemaVersion": 1,
+  "status": "HOLD",
+  "publishable": false,
+  "contentId": "st-hw-apple-ipad-mini-a20-pro-nl-decision",
+  "productId": "apple-ipad-mini-a20-pro",
+  "jobId": "hw-2dd79215bd933080d1b9",
+  "variantId": "apple-ipad-mini-a20-pro-a3595-a3596-nl-202610",
+  "region": "Netherlands",
+  "canonicalOwner": "starlight.technology",
+  "readerJob": "Decide whether a Netherlands-based creator should buy the compact iPad mini A20 Pro for field review, notes, sketching and light edits, or choose a phone, larger iPad or laptop because of screen size, iPadOS application limits, storage-tier chip differences and accessory cost.",
+  "decision": "Do not issue a buying recommendation yet. Apple establishes exact Dutch Wi-Fi and cellular models, meaningful storage-tier chip differences and a November 6 availability date, but official specifications do not establish application fit, sustained editing performance, field endurance, display accuracy or whether the compact form replaces any device in a real creator workflow.",
+  "wrongPurchaseConditions": [
+    "The buyer needs a desktop-only application, plug-in, file workflow or peripheral that is unavailable or materially constrained on iPadOS.",
+    "The buyer expects the 128 GB or 256 GB configuration to have the same CPU and Neural Engine configuration as the 512 GB model.",
+    "The buyer needs a laptop-class keyboard, multi-port connectivity or more than one external display without adding accessories and carrying cost.",
+    "The buyer expects the 12 MP rear camera to replace a current high-end phone or dedicated camera without exact-device comparison evidence.",
+    "The buyer needs independently verified colour accuracy, sustained performance, battery endurance or outdoor visibility rather than manufacturer specifications.",
+    "The buyer can already complete the named capture, review and annotation workflow on a phone, larger iPad or existing laptop.",
+    "The buyer treats IP67 as permission for intentional underwater use or ignores that resistance can diminish over time."
+  ],
+  "evidenceLevel": "official Apple Netherlands launch, specification and legal evidence; no hands-on testing",
+  "configuration": {
+    "product": "iPad mini with A20 Pro",
+    "models": {
+      "wifi": "A3595",
+      "wifiCellular": "A3596"
+    },
+    "colours": [
+      "Midnight",
+      "Starlight"
+    ],
+    "capacitiesGb": [
+      128,
+      256,
+      512
+    ],
+    "storageTierChipBoundary": "128 GB and 256 GB: 5-core CPU and 16-core Neural Engine; 512 GB: 6-core CPU and Dual 16-core Neural Engine",
+    "display": "8.5-inch 2316 x 1512 OLED Super Retina XDR, 326 ppi",
+    "brightness": "up to 600 nits SDR and full-screen XDR; up to 1200 nits peak for HDR content",
+    "glass": "standard; nano-texture optional only on 256 GB or 512 GB",
+    "dimensionsMm": "195.3 x 132.6 x 5.4",
+    "weightGrams": {
+      "wifi": 255,
+      "wifiCellular": 263
+    },
+    "ports": [
+      "USB-C with USB 3 up to 10 Gb/s",
+      "DisplayPort"
+    ],
+    "externalDisplay": "one display up to 4K at 60 Hz",
+    "wireless": [
+      "Wi-Fi 7",
+      "Bluetooth 6",
+      "Thread"
+    ],
+    "cellular": "A3596: 5G sub-6 GHz, eSIM only, data only",
+    "camera": "12 MP wide rear camera; landscape 12 MP Center Stage front camera",
+    "pencil": [
+      "Apple Pencil Pro",
+      "Apple Pencil USB-C"
+    ],
+    "manufacturerBatteryClaims": "up to 10 hours Wi-Fi web or video; up to 9 hours cellular web",
+    "durability": "IP67 under IEC 60529",
+    "availability": "pre-order stated from 2026-10-28; Apple states availability from 2026-11-06"
+  },
+  "sources": [
+    {
+      "id": "apple-nl-newsroom-ipad-mini-20261026",
+      "url": "https://www.apple.com/nl/newsroom/2026/10/apple-gives-ipad-mini-its-biggest-update-ever/",
+      "publisher": "Apple Nederland Newsroom",
+      "publishedAt": "2026-10-26",
+      "retrievedAt": "2026-11-02T08:21:00Z",
+      "sourceType": "official-regional-launch",
+      "claimIds": [
+        "i1",
+        "i2",
+        "i3",
+        "i4",
+        "i10"
+      ],
+      "freshnessTrigger": "Availability, price, configuration, operating-system or support change."
+    },
+    {
+      "id": "apple-nl-ipad-mini-specs-20261102",
+      "url": "https://www.apple.com/nl/ipad-mini/specs/",
+      "publisher": "Apple Nederland",
+      "publishedAt": null,
+      "retrievedAt": "2026-11-02T08:21:00Z",
+      "sourceType": "official-regional-technical-specification",
+      "claimIds": [
+        "i3",
+        "i4",
+        "i5",
+        "i6",
+        "i7",
+        "i8",
+        "i9"
+      ],
+      "freshnessTrigger": "Exact model, storage tier, technical specification, support or footnote change."
+    },
+    {
+      "id": "apple-nl-site-terms-20261102",
+      "url": "https://www.apple.com/nl/legal/internet-services/terms/site.html",
+      "publisher": "Apple Nederland",
+      "publishedAt": null,
+      "retrievedAt": "2026-11-02T08:21:00Z",
+      "sourceType": "official-site-terms",
+      "claimIds": [
+        "i11"
+      ],
+      "freshnessTrigger": "Terms change or written permission receipt for a proposed asset."
+    },
+    {
+      "id": "apple-nl-ip-guidelines-20261102",
+      "url": "https://www.apple.com/nl/legal/intellectual-property/guidelinesfor3rdparties.html",
+      "publisher": "Apple Nederland",
+      "publishedAt": null,
+      "retrievedAt": "2026-11-02T08:21:00Z",
+      "sourceType": "official-intellectual-property-guidelines",
+      "claimIds": [
+        "i11"
+      ],
+      "freshnessTrigger": "Guideline change or express written image permission."
+    }
+  ],
+  "claims": [
+    {
+      "id": "i1",
+      "text": "Apple Netherlands dates the launch October 26, 2026, says pre-orders opened October 28 and states availability begins November 6.",
+      "type": "manufacturer-statement",
+      "sourceIds": [
+        "apple-nl-newsroom-ipad-mini-20261026"
+      ],
+      "asOf": "2026-11-02T08:21:00Z",
+      "expiresAt": "2026-11-06T23:59:59Z",
+      "allowedWording": "Attribute the dates to Apple and recheck availability before publication.",
+      "reviewerVerdict": "pending-independent-review"
+    },
+    {
+      "id": "i2",
+      "text": "Apple Netherlands lists 128 GB, 256 GB and 512 GB capacities in midnight and starlight, starting at EUR 759 for Wi-Fi and EUR 929 for Wi-Fi plus Cellular.",
+      "type": "dated-manufacturer-price",
+      "sourceIds": [
+        "apple-nl-newsroom-ipad-mini-20261026"
+      ],
+      "asOf": "2026-11-02T08:21:00Z",
+      "expiresAt": "2026-11-03T08:21:00Z",
+      "allowedWording": "Use only with date, region and family starting-price context; otherwise omit.",
+      "reviewerVerdict": "pending-independent-review"
+    },
+    {
+      "id": "i3",
+      "text": "Apple specifies an 8.5-inch OLED display with 2316-by-1512 resolution, 326 ppi, up to 600 nits SDR and full-screen XDR brightness, and up to 1200 nits peak for HDR content.",
+      "type": "manufacturer-specification",
+      "sourceIds": [
+        "apple-nl-newsroom-ipad-mini-20261026",
+        "apple-nl-ipad-mini-specs-20261102"
+      ],
+      "asOf": "2026-11-02T08:21:00Z",
+      "expiresAt": null,
+      "allowedWording": "Preserve Apple attribution and brightness conditions; do not call display accuracy independently verified.",
+      "reviewerVerdict": "pending-independent-review"
+    },
+    {
+      "id": "i4",
+      "text": "Apple specifies 5.4 mm thickness, 255 g for Wi-Fi and 263 g for Wi-Fi plus Cellular, and an IP67 rating under IEC 60529.",
+      "type": "manufacturer-specification",
+      "sourceIds": [
+        "apple-nl-newsroom-ipad-mini-20261026",
+        "apple-nl-ipad-mini-specs-20261102"
+      ],
+      "asOf": "2026-11-02T08:21:00Z",
+      "expiresAt": null,
+      "allowedWording": "Treat carry comfort and field durability as untested; do not recommend intentional water exposure.",
+      "reviewerVerdict": "pending-independent-review"
+    },
+    {
+      "id": "i5",
+      "text": "Apple identifies A3595 as the Wi-Fi model and A3596 as the Wi-Fi plus Cellular model on the Dutch specification page.",
+      "type": "manufacturer-specification",
+      "sourceIds": [
+        "apple-nl-ipad-mini-specs-20261102"
+      ],
+      "asOf": "2026-11-02T08:21:00Z",
+      "expiresAt": null,
+      "allowedWording": "Name connectivity and model number together; do not apply these identifiers to another region.",
+      "reviewerVerdict": "pending-independent-review"
+    },
+    {
+      "id": "i6",
+      "text": "Apple lists a 5-core CPU and 16-core Neural Engine for 128 GB and 256 GB, but a 6-core CPU and Dual 16-core Neural Engine for 512 GB; all list a 7-core GPU.",
+      "type": "manufacturer-specification",
+      "sourceIds": [
+        "apple-nl-ipad-mini-specs-20261102"
+      ],
+      "asOf": "2026-11-02T08:21:00Z",
+      "expiresAt": null,
+      "allowedWording": "Keep the storage-tier boundary explicit; do not infer a measured performance delta.",
+      "reviewerVerdict": "pending-independent-review"
+    },
+    {
+      "id": "i7",
+      "text": "Apple specifies USB 3 up to 10 Gb/s and support for one external display up to 4K at 60 Hz.",
+      "type": "manufacturer-specification",
+      "sourceIds": [
+        "apple-nl-ipad-mini-specs-20261102"
+      ],
+      "asOf": "2026-11-02T08:21:00Z",
+      "expiresAt": null,
+      "allowedWording": "Do not infer compatibility with an untested drive, dock, capture device or display.",
+      "reviewerVerdict": "pending-independent-review"
+    },
+    {
+      "id": "i8",
+      "text": "Apple specifies up to 10 hours of Wi-Fi web or video use and up to 9 hours of cellular web use.",
+      "type": "manufacturer-specification",
+      "sourceIds": [
+        "apple-nl-ipad-mini-specs-20261102"
+      ],
+      "asOf": "2026-11-02T08:21:00Z",
+      "expiresAt": null,
+      "allowedWording": "Use Apple's exact test categories; do not convert them into creator-workflow endurance.",
+      "reviewerVerdict": "pending-independent-review"
+    },
+    {
+      "id": "i9",
+      "text": "Apple specifies a 12 MP wide rear camera with 4K recording up to 60 fps, a landscape 12 MP Center Stage front camera, Wi-Fi 7, Bluetooth 6 and Apple Pencil Pro support.",
+      "type": "manufacturer-specification",
+      "sourceIds": [
+        "apple-nl-ipad-mini-specs-20261102"
+      ],
+      "asOf": "2026-11-02T08:21:00Z",
+      "expiresAt": null,
+      "allowedWording": "Use as specification fit only; do not claim camera, radio or Pencil workflow quality without testing.",
+      "reviewerVerdict": "pending-independent-review"
+    },
+    {
+      "id": "i10",
+      "text": "Apple positions the device for creative users and claims A20 Pro performance benefits, but no independent creator benchmark or workflow test was collected.",
+      "type": "manufacturer-statement",
+      "sourceIds": [
+        "apple-nl-newsroom-ipad-mini-20261026"
+      ],
+      "asOf": "2026-11-02T08:21:00Z",
+      "expiresAt": null,
+      "allowedWording": "Keep Apple attribution and do not convert positioning into an independent recommendation.",
+      "reviewerVerdict": "pending-independent-review"
+    },
+    {
+      "id": "i11",
+      "text": "Apple's Dutch site terms and intellectual-property guidance do not grant commercial republication of Apple-owned product images without express permission.",
+      "type": "rights-observation",
+      "sourceIds": [
+        "apple-nl-site-terms-20261102",
+        "apple-nl-ip-guidelines-20261102"
+      ],
+      "asOf": "2026-11-02T08:21:00Z",
+      "expiresAt": null,
+      "allowedWording": "Keep Apple imagery quarantined unless a per-asset permission receipt is recorded; credit is not permission.",
+      "reviewerVerdict": "pending-independent-review"
+    }
+  ],
+  "comparisons": [
+    {
+      "alternative": "Current high-end phone",
+      "status": "requires-first-party-workflow-comparison",
+      "evidence": "No exact-device field capture, review, annotation or transfer comparison was supplied.",
+      "decisionBoundary": "Do not add a second mobile device when the phone already completes the named workflow at acceptable size and speed."
+    },
+    {
+      "alternative": "Larger iPad with keyboard",
+      "status": "requires-exact-regional-configuration-comparison",
+      "evidence": "No like-for-like Dutch price, weight, application or accessory-cost comparison was completed.",
+      "decisionBoundary": "Prefer a larger iPad when canvas size, typing, multitasking or desk use matters more than one-hand portability."
+    },
+    {
+      "alternative": "Keep the current laptop",
+      "status": "requires-first-party-inventory",
+      "evidence": "No reader-specific current-system, application or mobility bottleneck was supplied.",
+      "decisionBoundary": "Do not replace or supplement a laptop that already meets the workload unless the compact field role is demonstrated."
+    }
+  ],
+  "originalContribution": {
+    "status": "research-synthesis-only",
+    "artifact": "Compact-device substitution matrix",
+    "rows": [
+      {
+        "job": "field review and annotation",
+        "evidenceNeeded": "Timed outdoor review, Pencil annotation and delivery test",
+        "currentVerdict": "form factor plausible; workflow value unproven"
+      },
+      {
+        "job": "light photo or video edit",
+        "evidenceNeeded": "Exact app, codec, storage and export test across all relevant tiers",
+        "currentVerdict": "specification fit incomplete; sustained performance unverified"
+      },
+      {
+        "job": "phone or laptop substitution",
+        "evidenceNeeded": "One-week carry inventory showing which existing device is left behind",
+        "currentVerdict": "no substitution evidence"
+      },
+      {
+        "job": "connected desk use",
+        "evidenceNeeded": "Drive, hub, display and keyboard compatibility test",
+        "currentVerdict": "one 4K display specified; end-to-end fit unverified"
+      }
+    ]
+  },
+  "uncertainty": [
+    "No exact-device field, Pencil, edit, export, battery, thermal or sustained-performance test.",
+    "No independent display accuracy, outdoor visibility, camera-quality or durability measurement.",
+    "No measured performance comparison between the 5-core and 6-core CPU storage tiers.",
+    "No complete Dutch phone-versus-tablet-versus-laptop and accessory-cost comparison.",
+    "Starting prices expire from editorial use after 24 hours without recheck; exact configured prices were not recorded.",
+    "No reusable product image permission, owned photograph or independent visual review.",
+    "No Content OS reconciliation beyond targeted repository and open-PR checks."
+  ],
+  "media": {
+    "tier": "FLAGSHIP",
+    "packetId": null,
+    "assets": [],
+    "productionReady": false,
+    "rightsStatus": "HOLD",
+    "assignments": [
+      {
+        "id": "ipad-mini-a20-exact-nl-hero",
+        "role": "product-evidence",
+        "method": "Own photograph of exact A3595 or A3596 hardware, or an individually permitted Apple asset with a recorded placement receipt.",
+        "status": "HOLD-permission-or-device"
+      },
+      {
+        "id": "ipad-mini-a20-substitution-matrix",
+        "role": "first-viewport-decision-object",
+        "method": "Original deterministic matrix comparing phone, iPad mini, larger iPad and laptop by the named reader job.",
+        "status": "brief-only"
+      },
+      {
+        "id": "ipad-mini-a20-storage-tier-map",
+        "role": "exact-architecture",
+        "method": "Original sourced diagram showing model, connectivity, capacity, CPU and Neural Engine boundaries.",
+        "status": "brief-only"
+      },
+      {
+        "id": "ipad-mini-a20-field-workflow",
+        "role": "workflow-evidence",
+        "method": "Own screen and overhead capture of an exact capture-to-review-to-delivery workflow with declared app versions.",
+        "status": "not-commissioned"
+      },
+      {
+        "id": "ipad-mini-a20-system-cost",
+        "role": "decision-comparison",
+        "method": "Original current Dutch system-cost table including required Pencil, case, keyboard, hub and connectivity choices.",
+        "status": "blocked-on-price-recheck"
+      },
+      {
+        "id": "ipad-mini-a20-og-mobile-renditions",
+        "role": "distribution",
+        "method": "Derive approved OG and mobile-native crops from the registered product master plus the original decision matrix.",
+        "status": "blocked-on-approved-master"
+      }
+    ],
+    "creditRequirements": "Register asset, version and rendition IDs; record source, creator, rights owner, written scope, territory, channels, expiry, credit, checksum, dimensions, alt text and approval actor. Apple site availability, a newsroom page or a credit line is not a commercial reuse licence.",
+    "placementRule": "Article content references semantic placements, not provider URLs. Keep image enlargement, source credit and shopping CTA separate; production resolves only approved immutable renditions."
+  },
+  "affiliate": {
+    "fitReason": "A high-intent Dutch tablet decision could justify a referral only after the verdict is independently supported and an exact approved regional destination exists.",
+    "status": "no-approved-offer",
+    "programId": null,
+    "issuedUrl": null,
+    "region": "NL",
+    "checkedAt": "2026-11-02T08:21:00Z",
+    "ledgerCheck": "data/commerce/approved-offers.json is empty. No Apple or retailer referral was invented or enrolled.",
+    "fallback": "https://www.apple.com/nl/ipad-mini/",
+    "disclosure": null
+  },
+  "price": {
+    "amount": 759,
+    "currency": "EUR",
+    "configuration": "iPad mini A20 Pro Wi-Fi family starting price; exact capacity, glass and accessory configuration not priced in this packet",
+    "merchant": "Apple Netherlands",
+    "verifiedAt": "2026-11-02T08:21:00Z",
+    "validUntil": "2026-11-03T08:21:00Z",
+    "note": "Dated manufacturer starting-price observation including VAT; recheck before publication and omit after expiry. This is not an affiliate offer."
+  },
+  "budget": {
+    "reservedInputTokens": 6000,
+    "reservedOutputTokens": 2000,
+    "additionalReservedTokens": 8000,
+    "reservedAt": "2026-11-02T08:21:00Z",
+    "actualInputTokens": null,
+    "actualOutputTokens": null,
+    "actualCost": null,
+    "paidApiCalls": 0,
+    "imageGenerationCalls": 0,
+    "note": "Planning reservation only; actual provider usage and monetary cost are unknown. Full article and flagship media require a separate budget."
+  },
+  "inventory": {
+    "starlightRepositoryMatches": 0,
+    "starlightOpenPrMatches": 0,
+    "frankxRepositoryMatches": 0,
+    "frankxOpenPrMatches": 0,
+    "checkedAt": "2026-11-02T08:21:00Z",
+    "note": "Targeted exact-product checks only; reconcile the canonical Content OS before authoring."
+  },
+  "reviews": {
+    "facts": "pending-independent-review",
+    "rights": "HOLD",
+    "readerValue": "pending-firsthand-evidence",
+    "visual": "pending-production",
+    "mobile": null,
+    "desktop": null
+  },
+  "publication": {
+    "pr": "https://github.com/frankxai/starlight-technology/pull/44",
+    "preview": null,
+    "liveUrl": null,
+    "publishedAt": null,
+    "authorization": null
+  },
+  "measurement": {
+    "day7": null,
+    "day28": null,
+    "day90": null,
+    "revenue": null,
+    "outboundClicks": null,
+    "corrections": null
+  },
+  "nextEvidence": "Exact A3595 or A3596 field-review and light-edit workflow testing, a storage-tier performance comparison, a current complete-system cost comparison, and an owned or individually permitted product visual.",
+  "frankxAdaptation": {
+    "needed": false,
+    "distinctReaderJob": null,
+    "firstPartyEvidence": null,
+    "reason": "No original Frank workflow on the exact device exists to justify separate FrankX prose."
+  }
+}

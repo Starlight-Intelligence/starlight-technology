@@ -61,7 +61,9 @@
         "s4",
         "s5",
         "s6",
-        "s7"
+        "s7",
+        "s8",
+        "s9"
       ],
       "freshnessTrigger": "Recheck exact SKU, stock and prices before any buying recommendation; specifications upon model change."
     },

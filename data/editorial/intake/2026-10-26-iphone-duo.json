@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "inventory": [],
+  "inventoryStatus": "Targeted Starlight and FrankX repository and open-PR checks found no iPhone Duo URL or exact-product proposal. Refresh the canonical Content OS before authoring; an empty inventory is not publication authority.",
+  "signals": [
+    {
+      "sourceId": "apple",
+      "productId": "apple-iphone-duo",
+      "intentId": "foldable-creator-phone-decision",
+      "category": "phones",
+      "kind": "launch",
+      "url": "https://www.apple.com/newsroom/2026/10/open-up-to-new-possibilities-with-iphone-duo/",
+      "checkedAt": "2026-10-26T07:45:28Z",
+      "summary": "Apple launched its first foldable iPhone and positions the larger inner display, Split View and flexible poses for multitasking and capture workflows. Research whether the exact Dutch model earns its premium for creators and when a conventional phone or tablet is the better purchase.",
+      "facts": [
+        "Apple dates the product announcement October 15, 2026 and opened pre-orders October 16.",
+        "Apple says iPhone Duo reached stores on October 23, 2026.",
+        "Apple identifies A20 Pro, a foldable inner display and iOS 27 Split View as family features."
+      ],
+      "readerDecision": "Should a Netherlands-based creator buy iPhone Duo for capture, review and two-app mobile work, or is its price, weight, camera set and unverified workflow value a reason to choose a conventional phone or tablet?"
+    },
+    {
+      "sourceId": "apple",
+      "productId": "apple-iphone-duo",
+      "intentId": "foldable-creator-phone-decision",
+      "category": "phones",
+      "kind": "refresh",
+      "url": "https://www.apple.com/nl/shop/buy-iphone/iphone-duo",
+      "checkedAt": "2026-10-26T07:45:28Z",
+      "summary": "Apple Netherlands lists orderable iPhone Duo configurations. Preserve the exact Dutch storage and model evidence, treat prices as short-lived observations, and require firsthand workflow and durability evidence before making a buying recommendation.",
+      "facts": [
+        "Apple Netherlands lists 256 GB, 512 GB, 1 TB and 2 TB configurations in two colours.",
+        "On October 26, 2026, the Apple Netherlands page showed the 256 GB configuration at EUR 2,339 including VAT.",
+        "Apple Netherlands identifies the regional hardware as model A3720 and specifies dual eSIM without a physical SIM slot."
+      ],
+      "readerDecision": "Should a Netherlands-based creator buy iPhone Duo for capture, review and two-app mobile work, or is its price, weight, camera set and unverified workflow value a reason to choose a conventional phone or tablet?"
+    }
+  ]
+}

@@ -1,13 +1,15 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { readFileSync } from 'node:fs';
+import { readFileSync, readdirSync } from 'node:fs';
 import { plan, sourceUrl } from './plan.mjs';
 
 const load = path => JSON.parse(readFileSync(new URL(path, import.meta.url), 'utf8'));
-const policy = load('../../data/editorial/policy.json');
+const currentPolicy = load('../../data/editorial/policy.json');
 const intake = load('../../data/editorial/pilot-intake.json');
 const initial = load('../../data/editorial/initial-state.json');
 const date = '2026-09-16T22:00:00Z';
+const policy = structuredClone(currentPolicy);
+for (const source of policy.sources) source.checkedAt = date;
 
 test('pilot reserves three briefs without model calls or publication', () => {
   const result = plan(intake, policy, initial, date);
@@ -44,6 +46,30 @@ test('multiple source records for one reader job share a brief', () => {
   const result = plan({ inventory: [], signals: [signal, { ...signal, url: 'https://www.samsung.com/test-fixture', facts: ['A separate primary source observation.'] }] }, policy, initial, date);
   assert.equal(result.selected.length, 1);
   assert.equal(result.nextState.jobs[0].sources.length, 2);
+});
+
+test('product packet source indexes include every reciprocal claim reference', () => {
+  const packetDirectory = new URL('../../data/editorial/packets/', import.meta.url);
+  for (const name of readdirSync(packetDirectory).filter(value => value.endsWith('.json'))) {
+    const packet = JSON.parse(readFileSync(new URL(name, packetDirectory), 'utf8'));
+    if (!packet.sources.some(source => Array.isArray(source.claimIds))) continue;
+    const sources = new Map(packet.sources.map(source => [source.id, source]));
+    for (const claim of packet.claims) {
+      for (const sourceId of claim.sourceIds) {
+        const source = sources.get(sourceId);
+        assert.ok(source, `${name}: claim ${claim.id} references missing source ${sourceId}`);
+        assert.ok(Array.isArray(source.claimIds) && source.claimIds.includes(claim.id), `${name}: source ${sourceId} omits claim ${claim.id}`);
+      }
+    }
+  }
+});
+
+test('latest durable run replays without a duplicate brief or reservation', () => {
+  const latest = load('../../data/editorial/runs/2026-10-22-held-release-condition-recheck.json');
+  const replay = plan(latest.normalizedIntake, currentPolicy, latest.nextState, '2026-10-22T06:43:49Z');
+  assert.deepEqual(replay.selected, []);
+  assert.equal(replay.budget.reservedThisRun, 0);
+  assert.deepEqual(replay.nextState, latest.nextState);
 });
 
 test('unregistered hosts, unsafe URLs, missing/future/stale timestamps are rejected', () => {

@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "inventory": [],
+  "inventoryStatus": "Targeted Starlight and FrankX default-branch and open-PR searches found no iPad mini A20 Pro URL or exact-product proposal. Refresh the canonical Content OS before authoring; this empty inventory is not publication authority.",
+  "signals": [
+    {
+      "sourceId": "apple",
+      "productId": "apple-ipad-mini-a20-pro",
+      "intentId": "compact-creator-tablet-decision",
+      "category": "tablets",
+      "kind": "launch",
+      "url": "https://www.apple.com/nl/newsroom/2026/10/apple-gives-ipad-mini-its-biggest-update-ever/",
+      "checkedAt": "2026-11-02T08:21:00Z",
+      "summary": "Apple announced a Netherlands iPad mini family with an 8.5-inch OLED display, A20 Pro variants and November 6 availability. Research whether its compact size improves field capture, review and note workflows enough to justify it over a phone, larger iPad or laptop.",
+      "facts": [
+        "Apple Netherlands dates the announcement October 26, 2026, opened pre-orders October 28 and states November 6 availability.",
+        "Apple Netherlands lists 128 GB, 256 GB and 512 GB capacities in midnight and starlight, starting at EUR 759 for Wi-Fi and EUR 929 for Wi-Fi plus Cellular.",
+        "Apple identifies an 8.5-inch OLED display, IP67 rating, A20 Pro and Apple Pencil Pro support as family features."
+      ],
+      "readerDecision": "Should a Netherlands-based creator buy the compact iPad mini A20 Pro for field review, notes, sketching and light edits, or choose a phone, larger iPad or laptop because of screen size, iPadOS application limits, storage-tier chip differences and accessory cost?"
+    },
+    {
+      "sourceId": "apple",
+      "productId": "apple-ipad-mini-a20-pro",
+      "intentId": "compact-creator-tablet-decision",
+      "category": "tablets",
+      "kind": "update",
+      "url": "https://www.apple.com/nl/ipad-mini/specs/",
+      "checkedAt": "2026-11-02T08:21:00Z",
+      "summary": "Apple's Netherlands specification page identifies exact Wi-Fi and cellular model numbers and material configuration differences. Preserve model, capacity and connectivity boundaries before comparing performance or value.",
+      "facts": [
+        "Apple identifies model A3595 as Wi-Fi and model A3596 as Wi-Fi plus Cellular for the Netherlands specification page.",
+        "The 128 GB and 256 GB variants list a 5-core CPU and 16-core Neural Engine; the 512 GB variant lists a 6-core CPU and Dual 16-core Neural Engine.",
+        "Apple lists USB 3 up to 10 Gb/s, one external display up to 4K at 60 Hz, and up to 10 hours of claimed Wi-Fi web or video use."
+      ],
+      "readerDecision": "Should a Netherlands-based creator buy the compact iPad mini A20 Pro for field review, notes, sketching and light edits, or choose a phone, larger iPad or laptop because of screen size, iPadOS application limits, storage-tier chip differences and accessory cost?"
+    }
+  ]
+}

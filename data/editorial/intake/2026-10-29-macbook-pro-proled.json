@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "inventory": [],
+  "inventoryStatus": "Targeted Starlight and FrankX repository and open-PR checks found no MacBook Pro or PROLED XDR URL or exact-product proposal. Refresh the canonical Content OS before authoring; an empty inventory is not publication authority.",
+  "signals": [
+    {
+      "sourceId": "apple",
+      "productId": "apple-macbook-pro-proled-xdr",
+      "intentId": "premium-creator-laptop-display-decision",
+      "category": "laptops",
+      "kind": "launch",
+      "url": "https://www.apple.com/nl/newsroom/2026/10/apple-unveils-groundbreaking-macbook-pro-with-proled-xdr-display/",
+      "checkedAt": "2026-10-29T07:47:00Z",
+      "summary": "Apple announced 14-inch and 16-inch MacBook Pro models with PROLED XDR touch displays and M5 Pro or M5 Max. Research whether a Netherlands-based creator should pay the substantial premium for the display, ports and pro-chip configuration instead of choosing the newly announced 14-inch M6 model or retaining an existing system.",
+      "facts": [
+        "Apple Netherlands dates the announcement October 28, 2026 and says orders opened that day for November 6 availability.",
+        "Apple Netherlands lists the 14-inch M5 Pro family from EUR 3,349 including VAT.",
+        "Apple identifies tandem OLED, Touch, M5 Pro or M5 Max, Thunderbolt 5 and up to 24 hours of claimed battery life as family features."
+      ],
+      "readerDecision": "Should a Netherlands-based creator buy the 14-inch MacBook Pro with PROLED XDR and M5 Pro for its touch tandem-OLED display, ports and pro workflow ceiling, or choose the lower-priced 14-inch M6 model or keep an existing laptop?"
+    },
+    {
+      "sourceId": "apple",
+      "productId": "apple-macbook-pro-proled-xdr",
+      "intentId": "premium-creator-laptop-display-decision",
+      "category": "laptops",
+      "kind": "refresh",
+      "url": "https://www.apple.com/nl/shop/buy-mac/macbook-pro",
+      "checkedAt": "2026-10-29T07:47:00Z",
+      "summary": "Apple Netherlands exposes an exact 14-inch M5 Pro order configuration alongside multiple M6 alternatives. Preserve the exact region and configuration while treating price and orderability as short-lived observations.",
+      "facts": [
+        "The Dutch store lists a 14-inch M5 Pro configuration with 15-core CPU, 16-core GPU, 24 GB unified memory, 1 TB storage and standard glass.",
+        "The same Dutch store lists 14-inch M6 configurations with 16 GB, 24 GB or 32 GB memory and 1 TB storage.",
+        "Apple says the new models become available November 6, 2026."
+      ],
+      "readerDecision": "Should a Netherlands-based creator buy the 14-inch MacBook Pro with PROLED XDR and M5 Pro for its touch tandem-OLED display, ports and pro workflow ceiling, or choose the lower-priced 14-inch M6 model or keep an existing laptop?"
+    }
+  ]
+}
