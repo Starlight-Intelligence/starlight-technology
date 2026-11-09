@@ -63,6 +63,7 @@ describe("checkoutHref", () => {
       includes: [],
       cta: "cta",
       checkoutEnvKey: "NEXT_PUBLIC_POLAR_TECH_STUDIO_URL",
+      gatePassed: true,
       productPath: "/app"
     };
 
