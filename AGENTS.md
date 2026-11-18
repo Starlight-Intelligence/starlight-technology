@@ -50,3 +50,7 @@ Important visual changes require `design-loop-evidence.json`, desktop/mobile ins
 - Verify locally before triggering Vercel.
 - One deploy path: Vercel native Git integration after project connection.
 - Do not merge or promote production without verified gates.
+
+## Portfolio experience review
+
+For interface, editorial and media changes, load the [Frontier Experience Constitution](https://github.com/Starlight-Intelligence/starlight-design-intelligence/blob/e25fab4c5a0dac2ea8c7b91e9397972f5af4b454/portfolio/frontier-experience-constitution.md) and the [starlight-technology pack](https://github.com/Starlight-Intelligence/starlight-design-intelligence/blob/e25fab4c5a0dac2ea8c7b91e9397972f5af4b454/brand-packs/starlight-technology/DESIGN.md). Change a comparison assumption and verify the source, date and limitations of the recommendation. Attach the tested route, candidate revision and responsive evidence to the owning review. Keep scoped asset and release decisions with their existing owners.
