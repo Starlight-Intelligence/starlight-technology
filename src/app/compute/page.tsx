@@ -2,31 +2,30 @@ import type { Metadata } from "next";
 import styles from "@/components/compute/compute.module.css";
 import { BrandCards, CapacityTable, CompanyTable, EvidencePanel, ExpansionNotes, PriceLadder } from "@/components/compute/compute-sections";
 import { StackPlanner } from "@/components/compute/stack-planner";
+import { ComputeAdvisor } from "@/components/compute/compute-advisor";
 import { researchDate } from "@/lib/compute";
 
 export const metadata: Metadata = {
-  title: "Local AI compute atlas",
-  description: "Mini PCs and unified-memory machines for local AI and agent fleets: dated prices, who builds each one, and what each can run.",
+  title: "Compute Intelligence | Starlight Technology",
+  description: "Compare local workstations and cloud GPUs against your workload and budget, with source-linked pricing and fit checks.",
   alternates: { canonical: "/compute" },
   robots: { index: false, follow: false }
 };
+
+export const revalidate = 3600;
 
 export default function ComputePage() {
   return (
     <div className={`shell ${styles.page}`}>
       <header className={styles.hero}>
-        <p className="eyebrow">Compute atlas</p>
-        <h1 className={styles.title}>What a 128 GB local AI machine costs today, and who builds it.</h1>
-        <p className={styles.lede}>
-          Dated prices for 64 GB and larger mini PCs, the memory each workload needs, and the parts and platforms behind GMKtec, Minisforum, Framework and others. Prices link to the page they were read from; every claim and edge in the data lists its sources and evidence level.
-        </p>
-        <ul className={styles.status}>
-          <li><span className={styles.dot} /> Research only, {researchDate}</li>
-          <li>Buyer region assumed NL/EU</li>
-          <li>Not yet linked from the site</li>
-        </ul>
+        <p className="eyebrow">Compute Intelligence</p>
+        <h1 className={styles.title}>Where should your AI workload run?</h1>
+        <p className={styles.lede}>Compare workstations and rented GPUs against your workload, cash ceiling and expected use.</p>
       </header>
+      <ComputeAdvisor asOf={new Date().toISOString().slice(0, 10)} />
 
+      <details className={styles.block}>
+        <summary>Open the historical compute atlas · research dated {researchDate}</summary>
       <section className={styles.block} aria-labelledby="ladder">
         <div className={styles.blockHead}>
           <h2 id="ladder">Memory price ladder</h2>
@@ -82,6 +81,7 @@ export default function ComputePage() {
         </div>
         <EvidencePanel />
       </section>
+      </details>
     </div>
   );
 }
