@@ -1,0 +1,15 @@
+{
+  "id": "coding-assistant-nl-v1",
+  "status": "protocol-unmeasured",
+  "modelRepository": "ggml-org/Qwen3-Coder-30B-A3B-Instruct-GGUF",
+  "quantization": "Q4_K_M",
+  "requiredPins": ["model-file-sha256", "llama.cpp-git-sha", "prompt-pack-sha256", "test-suite-git-sha"],
+  "backends": ["nvidia-x86-cuda", "amd-x86-hip-or-vulkan", "apple-arm64-metal", "cloud-x86-cuda"],
+  "contextTokens": 4096,
+  "maxCompletionTokens": 1024,
+  "parallelRequests": 1,
+  "workingSetGbAssumption": 20,
+  "dataClass": "public-or-consented-test-repositories",
+  "acceptance": "Run 12 held-out tasks with a blinded patch reviewer and scoped automated tests. Repeat each run three times with recorded seeds. Count timeout, OOM and failed tests in denominator.",
+  "record": ["variant", "backend", "driver", "os", "power-profile", "pricing-snapshot", "peak-device-memory", "prompt-tokens-per-second", "completion-tokens-per-second", "time-to-first-token", "wall-time", "wall-power-when-measurable", "accepted-artifacts", "all-attempt-cost"]
+}

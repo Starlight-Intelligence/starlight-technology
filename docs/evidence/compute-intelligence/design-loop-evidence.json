@@ -1,0 +1,15 @@
+{
+  "surface": "/compute",
+  "state": "draft",
+  "evidenceRevision": "nl-2026-11-21.1",
+  "renderedViewports": [[1440, 1050], [390, 900]],
+  "browserCheck": "Chromium. On both sizes the default cloud result rendered, the 24-month estimate recalculated, private inference changed the recommendation to Hold, source details opened, the page had no horizontal overflow, and API success and invalid-input responses matched.",
+  "authorVisualReview": {
+    "score": 27,
+    "outOf": 30,
+    "basis": {"hierarchy":5,"brandConsistency":5,"responsiveComposition":4,"controlClarity":5,"evidenceLegibility":4,"interactionFeedback":4},
+    "limitations": "Mobile requires scrolling to compare rows. Secondary evidence and scenario controls expand inline. The layout was visually inspected at the two recorded sizes. This score is an author assessment."
+  },
+  "independentReview": "Code, procurement evidence and release plan independently reviewed. Private staging supported. Public release held until quotes, data rights and matched benchmark evidence are present.",
+  "rollback": "Revert the advisor on the existing atlas branch. Deployment and snapshot promotion remain approval-gated."
+}
