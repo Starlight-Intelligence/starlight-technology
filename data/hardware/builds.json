@@ -1,0 +1,31 @@
+[
+  {
+    "id": "framework-desktop-diy-395-64gb-990pro",
+    "components": [
+      {
+        "id": "framework-desktop-diy-base-395-64gb",
+        "slot": "platform",
+        "quantity": 1,
+        "dimension": "kit",
+        "url": "https://guides.frame.work/Guide/Framework%2BDesktop%2BDIY%2BEdition%2BQuick%2BStart%2BGuide/464",
+        "rationale": "The DIY base contains the chassis, power supply, mainboard and heatsink. Included parts are priced once."
+      },
+      {
+        "id": "framework-desktop-noctua-fan-kit",
+        "slot": "cooling",
+        "quantity": 1,
+        "dimension": "mounting",
+        "url": "https://frame.work/products/desktop-noctua-cpu-fan",
+        "rationale": "Framework sells the fan with the matching mounting kit and screws."
+      },
+      {
+        "id": "samsung-990-pro-mz-v9p2t0bw",
+        "slot": "storage",
+        "quantity": 1,
+        "dimension": "interface-and-clearance",
+        "url": "https://frame.work/desktop?slug=desktop-diy-amd-aimax300&tab=specs",
+        "rationale": "The host accepts PCIe 4.0 x4 M.2 2280 NVMe. The selected 2 TB Samsung drive uses that interface and ships without an attached heatsink."
+      }
+    ]
+  }
+]

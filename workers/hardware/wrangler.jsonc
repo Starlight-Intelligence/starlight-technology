@@ -1,0 +1,15 @@
+{
+  "$schema": "../../node_modules/wrangler/config-schema.json",
+  "name": "starlight-hardware-intake-dev",
+  "main": "index.mjs",
+  "compatibility_date": "2026-11-21",
+  "workers_dev": false,
+  "preview_urls": false,
+  "vars": { "HARDWARE_SOURCES": "{}" },
+  "queues": {
+    "producers": [{ "binding": "HARDWARE_QUEUE", "queue": "starlight-hardware-intake-dev" }],
+    "consumers": [{ "queue": "starlight-hardware-intake-dev", "max_batch_size": 5, "max_retries": 3, "dead_letter_queue": "starlight-hardware-intake-dev-dlq" }]
+  },
+  "workflows": [{ "binding": "HARDWARE_REFRESH", "name": "starlight-hardware-refresh-dev", "class_name": "HardwareRefresh" }],
+  "r2_buckets": [{ "binding": "HARDWARE_EVIDENCE", "bucket_name": "starlight-hardware-evidence-dev" }]
+}

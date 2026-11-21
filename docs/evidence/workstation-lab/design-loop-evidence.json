@@ -1,0 +1,25 @@
+{
+  "feature": "FrankX Workstation Lab comparison",
+  "route": "/workstation-lab",
+  "base": "1770687ff8cb242928dd693870463c045a95f63f",
+  "verifiedOn": "2026-11-21",
+  "environment": "Local Next.js production build, Playwright and headless Chromium",
+  "screenshots": ["1440.webp", "390.webp"],
+  "checks": {
+    "layout": "One main landmark and no horizontal overflow at 1440×900 and 390×844",
+    "controls": "Both exact configuration selectors mount 67 entries. VAT toggle, Germany navigation, the default parts build and source evidence expanders work.",
+    "agent": "A WebMCP registration stub returned the configuration selected in the visible interface.",
+    "scope": "The screenshot uses the research preview. A live provider feed or native browser WebMCP registration was outside this run."
+  },
+  "designReview": {
+    "reviewer": "Maker review after desktop and mobile screenshot inspection",
+    "decisionObject": 5,
+    "hierarchy": 5,
+    "craft": 4,
+    "responsive": 4,
+    "accessibility": 4,
+    "restraint": 5,
+    "total": 27,
+    "scale": 30
+  }
+}
