@@ -1,0 +1,1071 @@
+[
+  {
+    "id": "apple-mac-mini-m5-pro-15-cpu-16-gpu-24-gb-512-gb",
+    "brand": "Apple",
+    "product": "Mac mini",
+    "category": "mini",
+    "label": "M5 Pro (15 CPU / 16 GPU) · 24 GB · 512 GB",
+    "specs": {
+      "processor": "M5 Pro · 15 cores",
+      "ramGb": 24,
+      "storageGb": 512,
+      "gpu": "16-core Apple GPU",
+      "memory": "unified",
+      "os": "macOS"
+    },
+    "sourceUrl": "https://www.apple.com/nl/shop/buy-mac/mac-mini",
+    "observedAt": "2026-11-21"
+  },
+  {
+    "id": "apple-mac-mini-m6-12-cpu-12-gpu-16-gb-256-gb",
+    "brand": "Apple",
+    "product": "Mac mini",
+    "category": "mini",
+    "label": "M6 (12 CPU / 12 GPU) · 16 GB · 256 GB",
+    "specs": {
+      "processor": "M6 · 12 cores",
+      "ramGb": 16,
+      "storageGb": 256,
+      "gpu": "12-core Apple GPU",
+      "memory": "unified",
+      "os": "macOS"
+    },
+    "sourceUrl": "https://www.apple.com/nl/shop/buy-mac/mac-mini",
+    "observedAt": "2026-11-21"
+  },
+  {
+    "id": "apple-mac-mini-m6-12-cpu-12-gpu-32-gb-1-tb",
+    "brand": "Apple",
+    "product": "Mac mini",
+    "category": "mini",
+    "label": "M6 (12 CPU / 12 GPU) · 32 GB · 1 TB",
+    "specs": {
+      "processor": "M6 · 12 cores",
+      "ramGb": 32,
+      "storageGb": 1000,
+      "gpu": "12-core Apple GPU",
+      "memory": "unified",
+      "os": "macOS"
+    },
+    "sourceUrl": "https://www.apple.com/nl/shop/buy-mac/mac-mini",
+    "observedAt": "2026-11-21"
+  },
+  {
+    "id": "apple-mac-mini-m6-12-cpu-12-gpu-24-gb-512-gb",
+    "brand": "Apple",
+    "product": "Mac mini",
+    "category": "mini",
+    "label": "M6 (12 CPU / 12 GPU) · 24 GB · 512 GB",
+    "specs": {
+      "processor": "M6 · 12 cores",
+      "ramGb": 24,
+      "storageGb": 512,
+      "gpu": "12-core Apple GPU",
+      "memory": "unified",
+      "os": "macOS"
+    },
+    "sourceUrl": "https://www.apple.com/nl/shop/buy-mac/mac-mini",
+    "observedAt": "2026-11-21"
+  },
+  {
+    "id": "apple-mac-mini-m5-pro-18-cpu-20-gpu-64-gb-1-tb",
+    "brand": "Apple",
+    "product": "Mac mini",
+    "category": "mini",
+    "label": "M5 Pro (18 CPU / 20 GPU) · 64 GB · 1 TB",
+    "specs": {
+      "processor": "M5 Pro · 18 cores",
+      "ramGb": 64,
+      "storageGb": 1000,
+      "gpu": "20-core Apple GPU",
+      "memory": "unified",
+      "os": "macOS"
+    },
+    "sourceUrl": "https://www.apple.com/nl/shop/buy-mac/mac-mini",
+    "observedAt": "2026-11-21"
+  },
+  {
+    "id": "apple-mac-mini-m6-12-cpu-12-gpu-16-gb-512-gb",
+    "brand": "Apple",
+    "product": "Mac mini",
+    "category": "mini",
+    "label": "M6 (12 CPU / 12 GPU) · 16 GB · 512 GB",
+    "specs": {
+      "processor": "M6 · 12 cores",
+      "ramGb": 16,
+      "storageGb": 512,
+      "gpu": "12-core Apple GPU",
+      "memory": "unified",
+      "os": "macOS"
+    },
+    "sourceUrl": "https://www.apple.com/nl/shop/buy-mac/mac-mini",
+    "observedAt": "2026-11-21"
+  },
+  {
+    "id": "apple-mac-studio-m5-max-18-cpu-40-gpu-64-gb-1-tb",
+    "brand": "Apple",
+    "product": "Mac Studio",
+    "category": "desktop",
+    "label": "M5 Max (18 CPU / 40 GPU) · 64 GB · 1 TB",
+    "specs": {
+      "processor": "M5 Max · 18 cores",
+      "ramGb": 64,
+      "storageGb": 1000,
+      "gpu": "40-core Apple GPU",
+      "memory": "unified",
+      "os": "macOS"
+    },
+    "sourceUrl": "https://www.apple.com/nl/shop/buy-mac/mac-studio",
+    "observedAt": "2026-11-21"
+  },
+  {
+    "id": "apple-mac-studio-m5-max-18-cpu-32-gpu-36-gb-512-gb",
+    "brand": "Apple",
+    "product": "Mac Studio",
+    "category": "desktop",
+    "label": "M5 Max (18 CPU / 32 GPU) · 36 GB · 512 GB",
+    "specs": {
+      "processor": "M5 Max · 18 cores",
+      "ramGb": 36,
+      "storageGb": 512,
+      "gpu": "32-core Apple GPU",
+      "memory": "unified",
+      "os": "macOS"
+    },
+    "sourceUrl": "https://www.apple.com/nl/shop/buy-mac/mac-studio",
+    "observedAt": "2026-11-21"
+  },
+  {
+    "id": "apple-mac-studio-m5-ultra-30-cpu-64-gpu-96-gb-1-tb",
+    "brand": "Apple",
+    "product": "Mac Studio",
+    "category": "desktop",
+    "label": "M5 Ultra (30 CPU / 64 GPU) · 96 GB · 1 TB",
+    "specs": {
+      "processor": "M5 Ultra · 30 cores",
+      "ramGb": 96,
+      "storageGb": 1000,
+      "gpu": "64-core Apple GPU",
+      "memory": "unified",
+      "os": "macOS"
+    },
+    "sourceUrl": "https://www.apple.com/nl/shop/buy-mac/mac-studio",
+    "observedAt": "2026-11-21"
+  },
+  {
+    "id": "apple-macbook-pro-14-inch-m6-12-cpu-12-gpu-32-gb-1-tb-standard-glass",
+    "brand": "Apple",
+    "product": "MacBook Pro",
+    "category": "laptop",
+    "label": "14-inch · M6 (12 CPU / 12 GPU) · 32 GB · 1 TB / standard glass",
+    "specs": {
+      "processor": "M6 · 12 cores",
+      "ramGb": 32,
+      "storageGb": 1000,
+      "gpu": "12-core Apple GPU",
+      "memory": "unified",
+      "os": "macOS"
+    },
+    "sourceUrl": "https://www.apple.com/nl/shop/buy-mac/macbook-pro",
+    "observedAt": "2026-11-21"
+  },
+  {
+    "id": "apple-macbook-pro-14-inch-m6-12-cpu-12-gpu-24-gb-1-tb-standard-glass",
+    "brand": "Apple",
+    "product": "MacBook Pro",
+    "category": "laptop",
+    "label": "14-inch · M6 (12 CPU / 12 GPU) · 24 GB · 1 TB / standard glass",
+    "specs": {
+      "processor": "M6 · 12 cores",
+      "ramGb": 24,
+      "storageGb": 1000,
+      "gpu": "12-core Apple GPU",
+      "memory": "unified",
+      "os": "macOS"
+    },
+    "sourceUrl": "https://www.apple.com/nl/shop/buy-mac/macbook-pro",
+    "observedAt": "2026-11-21"
+  },
+  {
+    "id": "apple-macbook-pro-14-inch-m6-12-cpu-12-gpu-16-gb-1-tb-standard-glass",
+    "brand": "Apple",
+    "product": "MacBook Pro",
+    "category": "laptop",
+    "label": "14-inch · M6 (12 CPU / 12 GPU) · 16 GB · 1 TB / standard glass",
+    "specs": {
+      "processor": "M6 · 12 cores",
+      "ramGb": 16,
+      "storageGb": 1000,
+      "gpu": "12-core Apple GPU",
+      "memory": "unified",
+      "os": "macOS"
+    },
+    "sourceUrl": "https://www.apple.com/nl/shop/buy-mac/macbook-pro",
+    "observedAt": "2026-11-21"
+  },
+  {
+    "id": "apple-macbook-pro-14-inch-m5-max-18-cpu-32-gpu-36-gb-2-tb-standard-glass",
+    "brand": "Apple",
+    "product": "MacBook Pro",
+    "category": "laptop",
+    "label": "14-inch · M5 Max (18 CPU / 32 GPU) · 36 GB · 2 TB / standard glass",
+    "specs": {
+      "processor": "M5 Max · 18 cores",
+      "ramGb": 36,
+      "storageGb": 2000,
+      "gpu": "32-core Apple GPU",
+      "memory": "unified",
+      "os": "macOS"
+    },
+    "sourceUrl": "https://www.apple.com/nl/shop/buy-mac/macbook-pro",
+    "observedAt": "2026-11-21"
+  },
+  {
+    "id": "apple-macbook-pro-14-inch-m5-pro-15-cpu-16-gpu-24-gb-1-tb-standard-glass",
+    "brand": "Apple",
+    "product": "MacBook Pro",
+    "category": "laptop",
+    "label": "14-inch · M5 Pro (15 CPU / 16 GPU) · 24 GB · 1 TB / standard glass",
+    "specs": {
+      "processor": "M5 Pro · 15 cores",
+      "ramGb": 24,
+      "storageGb": 1000,
+      "gpu": "16-core Apple GPU",
+      "memory": "unified",
+      "os": "macOS"
+    },
+    "sourceUrl": "https://www.apple.com/nl/shop/buy-mac/macbook-pro",
+    "observedAt": "2026-11-21"
+  },
+  {
+    "id": "apple-macbook-pro-14-inch-m6-12-cpu-12-gpu-16-gb-1-tb-nano-texture",
+    "brand": "Apple",
+    "product": "MacBook Pro",
+    "category": "laptop",
+    "label": "14-inch · M6 (12 CPU / 12 GPU) · 16 GB · 1 TB / nano-texture",
+    "specs": {
+      "processor": "M6 · 12 cores",
+      "ramGb": 16,
+      "storageGb": 1000,
+      "gpu": "12-core Apple GPU",
+      "memory": "unified",
+      "os": "macOS"
+    },
+    "sourceUrl": "https://www.apple.com/nl/shop/buy-mac/macbook-pro",
+    "observedAt": "2026-11-21"
+  },
+  {
+    "id": "apple-macbook-pro-16-inch-m5-max-18-cpu-32-gpu-36-gb-2-tb-standard-glass",
+    "brand": "Apple",
+    "product": "MacBook Pro",
+    "category": "laptop",
+    "label": "16-inch · M5 Max (18 CPU / 32 GPU) · 36 GB · 2 TB / standard glass",
+    "specs": {
+      "processor": "M5 Max · 18 cores",
+      "ramGb": 36,
+      "storageGb": 2000,
+      "gpu": "32-core Apple GPU",
+      "memory": "unified",
+      "os": "macOS"
+    },
+    "sourceUrl": "https://www.apple.com/nl/shop/buy-mac/macbook-pro",
+    "observedAt": "2026-11-21"
+  },
+  {
+    "id": "apple-macbook-pro-16-inch-m5-pro-18-cpu-20-gpu-24-gb-1-tb-standard-glass",
+    "brand": "Apple",
+    "product": "MacBook Pro",
+    "category": "laptop",
+    "label": "16-inch · M5 Pro (18 CPU / 20 GPU) · 24 GB · 1 TB / standard glass",
+    "specs": {
+      "processor": "M5 Pro · 18 cores",
+      "ramGb": 24,
+      "storageGb": 1000,
+      "gpu": "20-core Apple GPU",
+      "memory": "unified",
+      "os": "macOS"
+    },
+    "sourceUrl": "https://www.apple.com/nl/shop/buy-mac/macbook-pro",
+    "observedAt": "2026-11-21"
+  },
+  {
+    "id": "apple-macbook-air-13-inch-m5-10-cpu-10-gpu-24-gb-512-gb",
+    "brand": "Apple",
+    "product": "MacBook Air",
+    "category": "laptop",
+    "label": "13-inch · M5 (10 CPU / 10 GPU) · 24 GB · 512 GB",
+    "specs": {
+      "processor": "M5 · 10 cores",
+      "ramGb": 24,
+      "storageGb": 512,
+      "gpu": "10-core Apple GPU",
+      "memory": "unified",
+      "os": "macOS"
+    },
+    "sourceUrl": "https://www.apple.com/nl/shop/buy-mac/macbook-air",
+    "observedAt": "2026-11-21"
+  },
+  {
+    "id": "apple-macbook-air-13-inch-m5-10-cpu-10-gpu-24-gb-1-tb",
+    "brand": "Apple",
+    "product": "MacBook Air",
+    "category": "laptop",
+    "label": "13-inch · M5 (10 CPU / 10 GPU) · 24 GB · 1 TB",
+    "specs": {
+      "processor": "M5 · 10 cores",
+      "ramGb": 24,
+      "storageGb": 1000,
+      "gpu": "10-core Apple GPU",
+      "memory": "unified",
+      "os": "macOS"
+    },
+    "sourceUrl": "https://www.apple.com/nl/shop/buy-mac/macbook-air",
+    "observedAt": "2026-11-21"
+  },
+  {
+    "id": "apple-macbook-air-13-inch-m5-10-cpu-10-gpu-16-gb-1-tb",
+    "brand": "Apple",
+    "product": "MacBook Air",
+    "category": "laptop",
+    "label": "13-inch · M5 (10 CPU / 10 GPU) · 16 GB · 1 TB",
+    "specs": {
+      "processor": "M5 · 10 cores",
+      "ramGb": 16,
+      "storageGb": 1000,
+      "gpu": "10-core Apple GPU",
+      "memory": "unified",
+      "os": "macOS"
+    },
+    "sourceUrl": "https://www.apple.com/nl/shop/buy-mac/macbook-air",
+    "observedAt": "2026-11-21"
+  },
+  {
+    "id": "apple-macbook-air-15-inch-m5-10-cpu-10-gpu-24-gb-512-gb",
+    "brand": "Apple",
+    "product": "MacBook Air",
+    "category": "laptop",
+    "label": "15-inch · M5 (10 CPU / 10 GPU) · 24 GB · 512 GB",
+    "specs": {
+      "processor": "M5 · 10 cores",
+      "ramGb": 24,
+      "storageGb": 512,
+      "gpu": "10-core Apple GPU",
+      "memory": "unified",
+      "os": "macOS"
+    },
+    "sourceUrl": "https://www.apple.com/nl/shop/buy-mac/macbook-air",
+    "observedAt": "2026-11-21"
+  },
+  {
+    "id": "apple-macbook-air-15-inch-m5-10-cpu-10-gpu-24-gb-1-tb",
+    "brand": "Apple",
+    "product": "MacBook Air",
+    "category": "laptop",
+    "label": "15-inch · M5 (10 CPU / 10 GPU) · 24 GB · 1 TB",
+    "specs": {
+      "processor": "M5 · 10 cores",
+      "ramGb": 24,
+      "storageGb": 1000,
+      "gpu": "10-core Apple GPU",
+      "memory": "unified",
+      "os": "macOS"
+    },
+    "sourceUrl": "https://www.apple.com/nl/shop/buy-mac/macbook-air",
+    "observedAt": "2026-11-21"
+  },
+  {
+    "id": "apple-macbook-air-15-inch-m5-10-cpu-10-gpu-16-gb-1-tb",
+    "brand": "Apple",
+    "product": "MacBook Air",
+    "category": "laptop",
+    "label": "15-inch · M5 (10 CPU / 10 GPU) · 16 GB · 1 TB",
+    "specs": {
+      "processor": "M5 · 10 cores",
+      "ramGb": 16,
+      "storageGb": 1000,
+      "gpu": "10-core Apple GPU",
+      "memory": "unified",
+      "os": "macOS"
+    },
+    "sourceUrl": "https://www.apple.com/nl/shop/buy-mac/macbook-air",
+    "observedAt": "2026-11-21"
+  },
+  {
+    "id": "apple-macbook-air-13-inch-m5-10-cpu-8-gpu-16-gb-512-gb",
+    "brand": "Apple",
+    "product": "MacBook Air",
+    "category": "laptop",
+    "label": "13-inch · M5 (10 CPU / 8 GPU) · 16 GB · 512 GB",
+    "specs": {
+      "processor": "M5 · 10 cores",
+      "ramGb": 16,
+      "storageGb": 512,
+      "gpu": "8-core Apple GPU",
+      "memory": "unified",
+      "os": "macOS"
+    },
+    "sourceUrl": "https://www.apple.com/nl/shop/buy-mac/macbook-air",
+    "observedAt": "2026-11-21"
+  },
+  {
+    "id": "apple-macbook-air-15-inch-m5-10-cpu-10-gpu-16-gb-512-gb",
+    "brand": "Apple",
+    "product": "MacBook Air",
+    "category": "laptop",
+    "label": "15-inch · M5 (10 CPU / 10 GPU) · 16 GB · 512 GB",
+    "specs": {
+      "processor": "M5 · 10 cores",
+      "ramGb": 16,
+      "storageGb": 512,
+      "gpu": "10-core Apple GPU",
+      "memory": "unified",
+      "os": "macOS"
+    },
+    "sourceUrl": "https://www.apple.com/nl/shop/buy-mac/macbook-air",
+    "observedAt": "2026-11-21"
+  },
+  {
+    "id": "apple-imac-24-inch-m6-12-cpu-12-gpu-16-gb-256-gb-standard-glass",
+    "brand": "Apple",
+    "product": "iMac",
+    "category": "desktop",
+    "label": "24-inch · M6 (12 CPU / 12 GPU) · 16 GB · 256 GB / standard glass",
+    "specs": {
+      "processor": "M6 · 12 cores",
+      "ramGb": 16,
+      "storageGb": 256,
+      "gpu": "12-core Apple GPU",
+      "memory": "unified",
+      "os": "macOS"
+    },
+    "sourceUrl": "https://www.apple.com/nl/shop/buy-mac/imac",
+    "observedAt": "2026-11-21"
+  },
+  {
+    "id": "apple-imac-24-inch-m6-12-cpu-12-gpu-16-gb-256-gb-nano-texture",
+    "brand": "Apple",
+    "product": "iMac",
+    "category": "desktop",
+    "label": "24-inch · M6 (12 CPU / 12 GPU) · 16 GB · 256 GB / nano-texture",
+    "specs": {
+      "processor": "M6 · 12 cores",
+      "ramGb": 16,
+      "storageGb": 256,
+      "gpu": "12-core Apple GPU",
+      "memory": "unified",
+      "os": "macOS"
+    },
+    "sourceUrl": "https://www.apple.com/nl/shop/buy-mac/imac",
+    "observedAt": "2026-11-21"
+  },
+  {
+    "id": "apple-imac-24-inch-m6-12-cpu-12-gpu-24-gb-512-gb-standard-glass",
+    "brand": "Apple",
+    "product": "iMac",
+    "category": "desktop",
+    "label": "24-inch · M6 (12 CPU / 12 GPU) · 24 GB · 512 GB / standard glass",
+    "specs": {
+      "processor": "M6 · 12 cores",
+      "ramGb": 24,
+      "storageGb": 512,
+      "gpu": "12-core Apple GPU",
+      "memory": "unified",
+      "os": "macOS"
+    },
+    "sourceUrl": "https://www.apple.com/nl/shop/buy-mac/imac",
+    "observedAt": "2026-11-21"
+  },
+  {
+    "id": "apple-imac-24-inch-m6-12-cpu-12-gpu-16-gb-512-gb-standard-glass",
+    "brand": "Apple",
+    "product": "iMac",
+    "category": "desktop",
+    "label": "24-inch · M6 (12 CPU / 12 GPU) · 16 GB · 512 GB / standard glass",
+    "specs": {
+      "processor": "M6 · 12 cores",
+      "ramGb": 16,
+      "storageGb": 512,
+      "gpu": "12-core Apple GPU",
+      "memory": "unified",
+      "os": "macOS"
+    },
+    "sourceUrl": "https://www.apple.com/nl/shop/buy-mac/imac",
+    "observedAt": "2026-11-21"
+  },
+  {
+    "id": "apple-imac-24-inch-m6-10-cpu-10-gpu-16-gb-256-gb",
+    "brand": "Apple",
+    "product": "iMac",
+    "category": "desktop",
+    "label": "24-inch · M6 (10 CPU / 10 GPU) · 16 GB · 256 GB",
+    "specs": {
+      "processor": "M6 · 10 cores",
+      "ramGb": 16,
+      "storageGb": 256,
+      "gpu": "10-core Apple GPU",
+      "memory": "unified",
+      "os": "macOS"
+    },
+    "sourceUrl": "https://www.apple.com/nl/shop/buy-mac/imac",
+    "observedAt": "2026-11-21"
+  },
+  {
+    "id": "apple-mac-studio-m5-ultra-30-cpu-64-gpu-256-gb-8-tb",
+    "brand": "Apple",
+    "product": "Mac Studio",
+    "category": "desktop",
+    "label": "M5 Ultra (30 CPU / 64 GPU) · 256 GB · 8 TB",
+    "specs": {
+      "processor": "M5 Ultra · 30 cores",
+      "ramGb": 256,
+      "storageGb": 8000,
+      "gpu": "64-core Apple GPU",
+      "memory": "unified",
+      "os": "macOS"
+    },
+    "sourceUrl": "https://www.apple.com/nl/shop/buy-mac/mac-studio/m5-ultra-chip-30%E2%80%91core-cpu-64-core-gpu-256-gb-geheugen-8tb-opslag",
+    "observedAt": "2026-11-21"
+  },
+  {
+    "id": "apple-mac-studio-m5-ultra-36-cpu-80-gpu-512-gb-8-tb",
+    "brand": "Apple",
+    "product": "Mac Studio",
+    "category": "desktop",
+    "label": "M5 Ultra (36 CPU / 80 GPU) · 512 GB · 8 TB",
+    "specs": {
+      "processor": "M5 Ultra · 36 cores",
+      "ramGb": 512,
+      "storageGb": 8000,
+      "gpu": "80-core Apple GPU",
+      "memory": "unified",
+      "os": "macOS"
+    },
+    "sourceUrl": "https://www.apple.com/nl/shop/buy-mac/mac-studio/m5-ultra-chip-36%E2%80%91core-cpu-80-core-gpu-512-gb-geheugen-8tb-opslag",
+    "observedAt": "2026-11-21"
+  },
+  {
+    "id": "apple-mac-mini-m4-10-cpu-10-gpu-16-gb-256-gb",
+    "brand": "Apple",
+    "product": "Mac mini",
+    "category": "mini",
+    "label": "M4 (10 CPU / 10 GPU) · 16 GB · 256 GB",
+    "specs": {
+      "processor": "M4 · 10 cores",
+      "ramGb": 16,
+      "storageGb": 256,
+      "gpu": "10-core Apple GPU",
+      "memory": "unified",
+      "os": "macOS"
+    },
+    "sourceUrl": "https://www.apple.com/nl/shop/product/fu9d3fn/a/Refurbished-Mac-mini-Apple-M4-chip-met-10-core-CPU-en-10-core-GPU-Gigabit-Ethernet",
+    "observedAt": "2026-11-21"
+  },
+  {
+    "id": "gmktec-evo-x2-64-gb-1-tb",
+    "brand": "GMKtec",
+    "product": "EVO-X2",
+    "category": "mini",
+    "label": "64 GB · 1 TB",
+    "specs": {
+      "processor": "AMD Ryzen AI Max+ 395",
+      "ramGb": 64,
+      "storageGb": 1000,
+      "gpu": "Radeon 8060S",
+      "memory": "unified"
+    },
+    "sourceUrl": "https://de.gmktec.com/products/gmktec-evo-x2-amd-ryzen%E2%84%A2-ai-max-395-mini-pc-1",
+    "observedAt": "2026-11-21"
+  },
+  {
+    "id": "gmktec-evo-x2-128-gb-1-tb",
+    "brand": "GMKtec",
+    "product": "EVO-X2",
+    "category": "mini",
+    "label": "128 GB · 1 TB",
+    "specs": {
+      "processor": "AMD Ryzen AI Max+ 395",
+      "ramGb": 128,
+      "storageGb": 1000,
+      "gpu": "Radeon 8060S",
+      "memory": "unified"
+    },
+    "sourceUrl": "https://de.gmktec.com/products/gmktec-evo-x2-amd-ryzen%E2%84%A2-ai-max-395-mini-pc-1",
+    "observedAt": "2026-11-21"
+  },
+  {
+    "id": "gmktec-evo-x2-128-gb-2-tb",
+    "brand": "GMKtec",
+    "product": "EVO-X2",
+    "category": "mini",
+    "label": "128 GB · 2 TB",
+    "specs": {
+      "processor": "AMD Ryzen AI Max+ 395",
+      "ramGb": 128,
+      "storageGb": 2000,
+      "gpu": "Radeon 8060S",
+      "memory": "unified"
+    },
+    "sourceUrl": "https://de.gmktec.com/products/gmktec-evo-x2-amd-ryzen%E2%84%A2-ai-max-395-mini-pc-1",
+    "observedAt": "2026-11-21"
+  },
+  {
+    "id": "gmktec-nucbox-k12-32-gb-1-tb",
+    "brand": "GMKtec",
+    "product": "NucBox K12",
+    "category": "mini",
+    "label": "32 GB · 1 TB",
+    "specs": {
+      "processor": "AMD Ryzen 7 H 255",
+      "ramGb": 32,
+      "storageGb": 1000,
+      "gpu": "Radeon 780M"
+    },
+    "sourceUrl": "https://de.gmktec.com/en/products/gmktec-nucbox-k12-amd-ryzen%E2%84%A2-7-h-255-mini-pc?variant=51600138141880",
+    "observedAt": "2026-11-21"
+  },
+  {
+    "id": "gmktec-nucbox-k12-64-gb-1-tb",
+    "brand": "GMKtec",
+    "product": "NucBox K12",
+    "category": "mini",
+    "label": "64 GB · 1 TB",
+    "specs": {
+      "processor": "AMD Ryzen 7 H 255",
+      "ramGb": 64,
+      "storageGb": 1000,
+      "gpu": "Radeon 780M"
+    },
+    "sourceUrl": "https://de.gmktec.com/en/products/gmktec-nucbox-k12-amd-ryzen%E2%84%A2-7-h-255-mini-pc?variant=51600138141880",
+    "observedAt": "2026-11-21"
+  },
+  {
+    "id": "gmktec-nucbox-k11-32-gb-1-tb",
+    "brand": "GMKtec",
+    "product": "NucBox K11",
+    "category": "mini",
+    "label": "32 GB · 1 TB",
+    "specs": {
+      "processor": "AMD Ryzen 9 8945HS",
+      "ramGb": 32,
+      "storageGb": 1000,
+      "gpu": "Radeon 780M"
+    },
+    "sourceUrl": "https://www.gmktec.com/products/amd-ryzen%E2%84%A2-9-8945hs-nucbox-k11",
+    "observedAt": "2026-11-21"
+  },
+  {
+    "id": "gmktec-nucbox-k11-32-gb-2-tb",
+    "brand": "GMKtec",
+    "product": "NucBox K11",
+    "category": "mini",
+    "label": "32 GB · 2 TB",
+    "specs": {
+      "processor": "AMD Ryzen 9 8945HS",
+      "ramGb": 32,
+      "storageGb": 2000,
+      "gpu": "Radeon 780M"
+    },
+    "sourceUrl": "https://www.gmktec.com/products/amd-ryzen%E2%84%A2-9-8945hs-nucbox-k11",
+    "observedAt": "2026-11-21"
+  },
+  {
+    "id": "gmktec-nucbox-k11-64-gb-1-tb",
+    "brand": "GMKtec",
+    "product": "NucBox K11",
+    "category": "mini",
+    "label": "64 GB · 1 TB",
+    "specs": {
+      "processor": "AMD Ryzen 9 8945HS",
+      "ramGb": 64,
+      "storageGb": 1000,
+      "gpu": "Radeon 780M"
+    },
+    "sourceUrl": "https://www.gmktec.com/products/amd-ryzen%E2%84%A2-9-8945hs-nucbox-k11",
+    "observedAt": "2026-11-21"
+  },
+  {
+    "id": "gmktec-nucbox-k8-plus-32-gb-1-tb",
+    "brand": "GMKtec",
+    "product": "NucBox K8 Plus",
+    "category": "mini",
+    "label": "32 GB · 1 TB",
+    "specs": {
+      "processor": "AMD Ryzen 7 8845HS",
+      "ramGb": 32,
+      "storageGb": 1000
+    },
+    "sourceUrl": "https://de.gmktec.com/products/gmktec-nucbox-k8-plus-amd-ryzen%E2%84%A2-7-8845hs",
+    "observedAt": "2026-11-21"
+  },
+  {
+    "id": "gmktec-nucbox-k8-plus-32-gb-2-tb",
+    "brand": "GMKtec",
+    "product": "NucBox K8 Plus",
+    "category": "mini",
+    "label": "32 GB · 2 TB",
+    "specs": {
+      "processor": "AMD Ryzen 7 8845HS",
+      "ramGb": 32,
+      "storageGb": 2000
+    },
+    "sourceUrl": "https://de.gmktec.com/products/gmktec-nucbox-k8-plus-amd-ryzen%E2%84%A2-7-8845hs",
+    "observedAt": "2026-11-21"
+  },
+  {
+    "id": "gmktec-nucbox-k8-plus-64-gb-1-tb",
+    "brand": "GMKtec",
+    "product": "NucBox K8 Plus",
+    "category": "mini",
+    "label": "64 GB · 1 TB",
+    "specs": {
+      "processor": "AMD Ryzen 7 8845HS",
+      "ramGb": 64,
+      "storageGb": 1000
+    },
+    "sourceUrl": "https://de.gmktec.com/products/gmktec-nucbox-k8-plus-amd-ryzen%E2%84%A2-7-8845hs",
+    "observedAt": "2026-11-21"
+  },
+  {
+    "id": "gmktec-evo-x1-32-gb-1-tb",
+    "brand": "GMKtec",
+    "product": "EVO-X1",
+    "category": "mini",
+    "label": "32 GB · 1 TB",
+    "specs": {
+      "processor": "AMD Ryzen AI 9 HX 370",
+      "ramGb": 32,
+      "storageGb": 1000
+    },
+    "sourceUrl": "https://de.gmktec.com/products/gmktec-evo-x1-amd-ryzen%E2%84%A2-ai-9-hx-370",
+    "observedAt": "2026-11-21"
+  },
+  {
+    "id": "gmktec-evo-x1-pro-64-gb-1-tb",
+    "brand": "GMKtec",
+    "product": "EVO-X1 Pro",
+    "category": "mini",
+    "label": "64 GB · 1 TB",
+    "specs": {
+      "processor": "AMD Ryzen AI 9 HX 470",
+      "ramGb": 64,
+      "storageGb": 1000
+    },
+    "sourceUrl": "https://de.gmktec.com/products/gmktec-evo-x1-amd-ryzen%E2%84%A2-ai-9-hx-370",
+    "observedAt": "2026-11-21"
+  },
+  {
+    "id": "gmktec-evo-x1-pro-64-gb-2-tb",
+    "brand": "GMKtec",
+    "product": "EVO-X1 Pro",
+    "category": "mini",
+    "label": "64 GB · 2 TB",
+    "specs": {
+      "processor": "AMD Ryzen AI 9 HX 470",
+      "ramGb": 64,
+      "storageGb": 2000
+    },
+    "sourceUrl": "https://de.gmktec.com/products/gmktec-evo-x1-amd-ryzen%E2%84%A2-ai-9-hx-370",
+    "observedAt": "2026-11-21"
+  },
+  {
+    "id": "gmktec-evo-t1-32-gb-1-tb",
+    "brand": "GMKtec",
+    "product": "EVO-T1",
+    "category": "mini",
+    "label": "32 GB · 1 TB",
+    "specs": {
+      "processor": "Intel Core Ultra 9 285H",
+      "ramGb": 32,
+      "storageGb": 1000
+    },
+    "sourceUrl": "https://de.gmktec.com/products/gmktec-evo-t1-intel-core-ultra-9-285h-ai-mini-pc",
+    "observedAt": "2026-11-21"
+  },
+  {
+    "id": "gmktec-evo-t1-32-gb-2-tb",
+    "brand": "GMKtec",
+    "product": "EVO-T1",
+    "category": "mini",
+    "label": "32 GB · 2 TB",
+    "specs": {
+      "processor": "Intel Core Ultra 9 285H",
+      "ramGb": 32,
+      "storageGb": 2000
+    },
+    "sourceUrl": "https://de.gmktec.com/products/gmktec-evo-t1-intel-core-ultra-9-285h-ai-mini-pc",
+    "observedAt": "2026-11-21"
+  },
+  {
+    "id": "gmktec-nucbox-k17-16-gb-512-gb",
+    "brand": "GMKtec",
+    "product": "NucBox K17",
+    "category": "mini",
+    "label": "16 GB · 512 GB",
+    "specs": {
+      "processor": "Intel Core Ultra 5 226V",
+      "ramGb": 16,
+      "storageGb": 512
+    },
+    "sourceUrl": "https://de.gmktec.com/en/products/gmktec-nucbox-k17-intel%C2%AE-core%E2%84%A2-ultra-5-226v",
+    "observedAt": "2026-11-21"
+  },
+  {
+    "id": "gmktec-nucbox-k17-16-gb-1-tb",
+    "brand": "GMKtec",
+    "product": "NucBox K17",
+    "category": "mini",
+    "label": "16 GB · 1 TB",
+    "specs": {
+      "processor": "Intel Core Ultra 5 226V",
+      "ramGb": 16,
+      "storageGb": 1000
+    },
+    "sourceUrl": "https://de.gmktec.com/en/products/gmktec-nucbox-k17-intel%C2%AE-core%E2%84%A2-ultra-5-226v",
+    "observedAt": "2026-11-21"
+  },
+  {
+    "id": "gmktec-nucbox-k13-16-gb-512-gb",
+    "brand": "GMKtec",
+    "product": "NucBox K13",
+    "category": "mini",
+    "label": "16 GB · 512 GB",
+    "specs": {
+      "processor": "Intel Core Ultra 7 256V",
+      "ramGb": 16,
+      "storageGb": 512
+    },
+    "sourceUrl": "https://de.gmktec.com/products/gmktec-k13-intel%C2%AE-core%E2%84%A2-ultra-7-256v",
+    "observedAt": "2026-11-21"
+  },
+  {
+    "id": "gmktec-nucbox-k13-16-gb-1-tb",
+    "brand": "GMKtec",
+    "product": "NucBox K13",
+    "category": "mini",
+    "label": "16 GB · 1 TB",
+    "specs": {
+      "processor": "Intel Core Ultra 7 256V",
+      "ramGb": 16,
+      "storageGb": 1000
+    },
+    "sourceUrl": "https://de.gmktec.com/products/gmktec-k13-intel%C2%AE-core%E2%84%A2-ultra-7-256v",
+    "observedAt": "2026-11-21"
+  },
+  {
+    "id": "gmktec-nucbox-m7-ultra-16-gb-512-gb",
+    "brand": "GMKtec",
+    "product": "NucBox M7 Ultra",
+    "category": "mini",
+    "label": "16 GB · 512 GB",
+    "specs": {
+      "processor": "AMD Ryzen 7 PRO 6850U",
+      "ramGb": 16,
+      "storageGb": 512
+    },
+    "sourceUrl": "https://de.gmktec.com/products/gmktec-nucboxm7-ultra-amd-ryzen%E2%84%A2-7-pro-6850u",
+    "observedAt": "2026-11-21"
+  },
+  {
+    "id": "gmktec-nucbox-m7-ultra-32-gb-1-tb",
+    "brand": "GMKtec",
+    "product": "NucBox M7 Ultra",
+    "category": "mini",
+    "label": "32 GB · 1 TB",
+    "specs": {
+      "processor": "AMD Ryzen 7 PRO 6850U",
+      "ramGb": 32,
+      "storageGb": 1000
+    },
+    "sourceUrl": "https://de.gmktec.com/products/gmktec-nucboxm7-ultra-amd-ryzen%E2%84%A2-7-pro-6850u",
+    "observedAt": "2026-11-21"
+  },
+  {
+    "id": "gmktec-nucbox-m6-ultra-16-gb-512-gb",
+    "brand": "GMKtec",
+    "product": "NucBox M6 Ultra",
+    "category": "mini",
+    "label": "16 GB · 512 GB",
+    "specs": {
+      "processor": "AMD Ryzen 5 7640HS",
+      "ramGb": 16,
+      "storageGb": 512
+    },
+    "sourceUrl": "https://de.gmktec.com/products/gmktec-nucbox-m6-ultra-amd-ryzen-5-7640hs-mini-pc",
+    "observedAt": "2026-11-21"
+  },
+  {
+    "id": "gmktec-nucbox-m6-ultra-32-gb-1-tb",
+    "brand": "GMKtec",
+    "product": "NucBox M6 Ultra",
+    "category": "mini",
+    "label": "32 GB · 1 TB",
+    "specs": {
+      "processor": "AMD Ryzen 5 7640HS",
+      "ramGb": 32,
+      "storageGb": 1000
+    },
+    "sourceUrl": "https://de.gmktec.com/products/gmktec-nucbox-m6-ultra-amd-ryzen-5-7640hs-mini-pc",
+    "observedAt": "2026-11-21"
+  },
+  {
+    "id": "gmktec-nucbox-m6-ultra-48-gb-1-tb",
+    "brand": "GMKtec",
+    "product": "NucBox M6 Ultra",
+    "category": "mini",
+    "label": "48 GB · 1 TB",
+    "specs": {
+      "processor": "AMD Ryzen 5 7640HS",
+      "ramGb": 48,
+      "storageGb": 1000
+    },
+    "sourceUrl": "https://de.gmktec.com/products/gmktec-nucbox-m6-ultra-amd-ryzen-5-7640hs-mini-pc",
+    "observedAt": "2026-11-21"
+  },
+  {
+    "id": "gmktec-nucbox-k16-32-gb-512-gb",
+    "brand": "GMKtec",
+    "product": "NucBox K16",
+    "category": "mini",
+    "label": "32 GB · 512 GB",
+    "specs": {
+      "processor": "AMD Ryzen 7 7735HS",
+      "ramGb": 32,
+      "storageGb": 512
+    },
+    "sourceUrl": "https://de.gmktec.com/en/products/gmktec-nucbox-k16-amd-ryzen%E2%84%A2-7-7735hs",
+    "observedAt": "2026-11-21"
+  },
+  {
+    "id": "gmktec-nucbox-k16-32-gb-1-tb",
+    "brand": "GMKtec",
+    "product": "NucBox K16",
+    "category": "mini",
+    "label": "32 GB · 1 TB",
+    "specs": {
+      "processor": "AMD Ryzen 7 7735HS",
+      "ramGb": 32,
+      "storageGb": 1000
+    },
+    "sourceUrl": "https://de.gmktec.com/products/gmktec-nucbox-k16-amd-ryzen%E2%84%A2-7-7735hs?variant=52489914974392",
+    "observedAt": "2026-11-21"
+  },
+  {
+    "id": "apple-macbook-pro-16-inch-m4-pro-14-cpu-20-gpu-24-gb-512-gb",
+    "brand": "Apple",
+    "product": "MacBook Pro",
+    "category": "laptop",
+    "label": "16-inch · M4 Pro (14 CPU / 20 GPU) · 24 GB · 512 GB",
+    "specs": {
+      "processor": "M4 Pro · 14 cores",
+      "ramGb": 24,
+      "storageGb": 512,
+      "gpu": "20-core Apple GPU",
+      "memory": "unified",
+      "os": "macOS"
+    },
+    "sourceUrl": "https://www.apple.com/nl/shop/product/fx2t3n/a/Refurbished-16%E2%80%91inch-MacBook-Pro-Apple-M4-Pro-chip-met-14%E2%80%91core-CPU-en-20%E2%80%91core-GPU-Zilver",
+    "observedAt": "2026-11-21"
+  },
+  {
+    "id": "apple-macbook-pro-16-inch-m4-pro-14-cpu-20-gpu-48-gb-512-gb-nano-texture",
+    "brand": "Apple",
+    "product": "MacBook Pro",
+    "category": "laptop",
+    "label": "16-inch · M4 Pro (14 CPU / 20 GPU) · 48 GB · 512 GB / nano-texture",
+    "specs": {
+      "processor": "M4 Pro · 14 cores",
+      "ramGb": 48,
+      "storageGb": 512,
+      "gpu": "20-core Apple GPU",
+      "memory": "unified",
+      "os": "macOS"
+    },
+    "sourceUrl": "https://www.apple.com/nl/shop/product/g1fq7n/a/Refurbished-16%E2%80%91inch-MacBook-Pro-Apple-M4-Pro-chip-met-14%E2%80%91core-CPU-en-20%E2%80%91core-GPU-display-met-nanotextuur-Zilver",
+    "observedAt": "2026-11-21"
+  },
+  {
+    "id": "apple-macbook-pro-16-inch-m5-max-18-cpu-40-gpu-48-gb-2-tb-standard-glass",
+    "brand": "Apple",
+    "product": "MacBook Pro",
+    "category": "laptop",
+    "label": "16-inch · M5 Max (18 CPU / 40 GPU) · 48 GB · 2 TB / standard glass",
+    "specs": {
+      "processor": "M5 Max · 18 cores",
+      "ramGb": 48,
+      "storageGb": 2000,
+      "gpu": "40-core Apple GPU",
+      "memory": "unified",
+      "os": "macOS"
+    },
+    "sourceUrl": "https://www.apple.com/nl/shop/product/fgee4n/a/Refurbished-16%E2%80%91inch-MacBook-Pro-Apple-M5-Max-chip-met-18%E2%80%91core-CPU-en-40%E2%80%91core-GPU-Spacezwart",
+    "observedAt": "2026-11-21"
+  },
+  {
+    "id": "framework-desktop-diy-395-64gb-990pro",
+    "brand": "Framework",
+    "product": "Desktop DIY",
+    "category": "build",
+    "label": "64 GB · 2 TB Samsung build",
+    "specs": {
+      "processor": "AMD Ryzen AI Max+ 395",
+      "ramGb": 64,
+      "storageGb": 2000,
+      "memory": "unified",
+      "requiredSlots": [
+        "platform",
+        "cooling",
+        "storage"
+      ],
+      "requiredChecks": {
+        "platform": [
+          "kit"
+        ],
+        "cooling": [
+          "mounting"
+        ],
+        "storage": [
+          "interface-and-clearance"
+        ]
+      }
+    },
+    "sourceUrl": "https://frame.work/desktop?slug=desktop-diy-amd-aimax300&tab=specs",
+    "observedAt": "2026-11-21"
+  },
+  {
+    "id": "framework-desktop-diy-base-395-64gb",
+    "brand": "Framework",
+    "product": "Desktop DIY base",
+    "category": "component",
+    "label": "Ryzen AI Max+ 395 · 64 GB",
+    "specs": {
+      "processor": "AMD Ryzen AI Max+ 395",
+      "ramGb": 64,
+      "memory": "unified"
+    },
+    "sourceUrl": "https://frame.work/desktop?slug=desktop-diy-amd-aimax300&tab=specs",
+    "observedAt": "2026-11-21"
+  },
+  {
+    "id": "framework-desktop-noctua-fan-kit",
+    "brand": "Framework",
+    "product": "Desktop CPU Fan Kit",
+    "category": "component",
+    "label": "Noctua NF-A12x25 HS-PWM with mounting kit",
+    "specs": {},
+    "sourceUrl": "https://frame.work/products/desktop-noctua-cpu-fan",
+    "observedAt": "2026-11-21"
+  },
+  {
+    "id": "samsung-990-pro-mz-v9p2t0bw",
+    "brand": "Samsung",
+    "product": "990 PRO",
+    "category": "component",
+    "label": "2 TB · M.2 2280 · no heatsink",
+    "specs": {
+      "storageGb": 2000
+    },
+    "sourceUrl": "https://www.samsung.com/nl/memory-storage/nvme-ssd/990-pro-2tb-nvme-pcie-gen-4-mz-v9p2t0bw/",
+    "observedAt": "2026-11-21",
+    "mpn": "MZ-V9P2T0BW"
+  }
+]

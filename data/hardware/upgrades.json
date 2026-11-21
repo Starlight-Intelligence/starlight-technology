@@ -1,0 +1,12 @@
+[
+  {
+    "hostId": "gmktec-evo-x2-64-gb-1-tb",
+    "targetId": "gmktec-evo-x2-128-gb-1-tb",
+    "action": "Choose the 128 GB configuration for more unified memory. The 64 GB system uses onboard memory and requires a board or system replacement."
+  },
+  {
+    "hostId": "gmktec-nucbox-k12-32-gb-1-tb",
+    "targetId": "gmktec-nucbox-k12-64-gb-1-tb",
+    "action": "The vendor lists a 64 GB configuration. Confirm the exact supported DIMM kit and firmware before changing the installed memory."
+  }
+]

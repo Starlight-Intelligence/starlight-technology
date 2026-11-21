@@ -1,0 +1,29 @@
+.lab { max-width: 1140px; margin: 0 auto; padding: clamp(2.5rem, 6vw, 6rem) 1.5rem 4rem; }
+.intro { max-width: 680px; margin-bottom: 2rem; }
+.intro h1 { font-size: clamp(2.5rem, 7vw, 5rem); line-height: .98; margin: .5rem 0 1.3rem; letter-spacing: -.065em; }
+.intro > p:last-child { font-size: 1.15rem; max-width: 56ch; }
+.kicker { text-transform: uppercase; letter-spacing: .12em; font-size: .72rem; font-weight: 700; }
+.markets { display: flex; gap: 1rem; flex-wrap: wrap; margin-bottom: 1rem; }
+.markets a { padding: .45rem 0; border-bottom: 2px solid transparent; }
+.markets a[aria-current] { border-color: currentColor; font-weight: 700; }
+.notice { margin: 1rem 0; padding: .8rem 1rem; border-left: 2px solid; }
+.controls, .comparison { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; }
+.controls { margin: 1.5rem 0; }
+.controls label { display: grid; gap: .5rem; font-size: .88rem; }
+.controls select { width: 100%; min-width: 0; padding: .65rem; font: inherit; color: inherit; background: var(--bg, #111); border: 1px solid currentColor; border-radius: .4rem; text-overflow: ellipsis; color-scheme: dark; }
+.controls .check { display: flex; align-items: center; grid-column: 1 / -1; }
+.card { padding: clamp(1rem, 3vw, 1.75rem); border: 1px solid color-mix(in srgb, currentColor 26%, transparent); border-radius: .7rem; overflow-wrap: anywhere; }
+.card h2 { margin: .35rem 0; font-size: clamp(1.3rem, 3vw, 2rem); }
+.variant { min-height: 2.75em; }
+.specs { display: grid; grid-template-columns: minmax(6.3rem, .85fr) minmax(0, 1fr); column-gap: .75rem; margin: 1rem 0; }
+.specs dt, .specs dd { margin: 0; padding: .45rem 0; border-bottom: 1px solid color-mix(in srgb, currentColor 20%, transparent); }
+.specs dd { font-weight: 600; }
+.muted { font-size: .9rem; }
+.card details { border-top: 1px solid color-mix(in srgb, currentColor 20%, transparent); padding: .65rem 0; }
+.card summary { cursor: pointer; }
+.card ul { padding-inline-start: 1.15rem; }
+.card li { margin-block: .4rem; }
+.card a, .disclosure a { text-decoration: underline; text-underline-offset: .2em; }
+.disclosure { margin-top: 1.7rem; font-size: .88rem; }
+.lab :focus-visible { outline: 2px solid currentColor; outline-offset: 4px; }
+@media (max-width: 650px) { .comparison { grid-template-columns: 1fr; } .variant { min-height: 0; } }
