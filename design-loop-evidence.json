@@ -148,5 +148,28 @@
     }
   },
   "pullRequest": "https://github.com/frankxai/starlight-technology/pull/50",
-  "previewDeployment": "https://starlight-technology-etqt7v3et-starlight-intelligence.vercel.app"
+  "previewDeployment": "https://starlight-technology-etqt7v3et-starlight-intelligence.vercel.app",
+  "mobileCreatorKit": {
+    "date": "2026-11-22",
+    "routes": [
+      "/shop#mobile-kit",
+      "/shop/mobile-creator-kit"
+    ],
+    "widths": [
+      390,
+      1440
+    ],
+    "inspection": "Inspected the production build in Chromium at both widths. No horizontal overflow. Verified direct merchant disclosures on the US/iPhone basket, Lightning receiver destination, existing-equipment path and shop embed.",
+    "score": {
+      "decisionObject": 5,
+      "hierarchy": 5,
+      "craft": 4,
+      "responsive": 5,
+      "accessibility": 4,
+      "restraint": 5,
+      "total": 28,
+      "scale": 30
+    },
+    "limitation": "Visual and interaction review used Chromium. No physical iPhone or carrier activation test."
+  }
 }
