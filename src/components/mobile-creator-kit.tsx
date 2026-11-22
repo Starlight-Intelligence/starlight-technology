@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useId, useState } from "react";
 import Link from "next/link";
 import type { mobileKitOffers } from "@/lib/mobile-kit";
 import type { ShopOffer } from "@/lib/shop-offers";
@@ -15,19 +15,20 @@ function MerchantLink({ offer, label }: { offer: ShopOffer; label: string }) {
 }
 
 export function MobileCreatorKit({ offers }: { offers: ReturnType<typeof mobileKitOffers> }) {
+  const id = useId();
   const [phone, setPhone] = useState("usb");
   const [trip, setTrip] = useState("eu");
   const [sound, setSound] = useState("interview");
   return <div className={styles.planner}>
     <div className={styles.controls}>
-      <label>Phone<select value={phone} onChange={e => setPhone(e.target.value)}>
+      <div><label htmlFor={id + "-phone"}>Phone</label><select id={id + "-phone"} value={phone} onChange={e => setPhone(e.target.value)}>
         <option value="usb">I have a USB-C iPhone</option><option value="lightning">I have a Lightning iPhone</option>
-        <option value="buy">I need an iPhone</option></select></label>
-      <label>Audio<select value={sound} onChange={e => setSound(e.target.value)}>
-        <option value="interview">Two-person interview</option><option value="own">I have my audio covered</option></select></label>
-      <label>Mobile data<select value={trip} onChange={e => setTrip(e.target.value)}>
+        <option value="buy">I need an iPhone</option></select></div>
+      <div><label htmlFor={id + "-audio"}>Audio</label><select id={id + "-audio"} value={sound} onChange={e => setSound(e.target.value)}>
+        <option value="interview">Two-person interview</option><option value="own">I have my audio covered</option></select></div>
+      <div><label htmlFor={id + "-trip"}>Mobile data</label><select id={id + "-trip"} value={trip} onChange={e => setTrip(e.target.value)}>
         <option value="eu">EU trip with a Dutch plan</option><option value="us">Travelling to the US</option>
-        <option value="own">I have data covered</option></select></label>
+        <option value="own">I have data covered</option></select></div>
     </div>
     <div aria-live="polite" aria-atomic="false" className={styles.results}>
       <article><p className="eyebrow">Camera</p><h3>{phone === "buy" ? "iPhone 17 · 256 GB" : "Keep your iPhone"}</h3>

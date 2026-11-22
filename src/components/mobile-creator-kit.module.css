@@ -3,7 +3,7 @@
 .intro { color: var(--muted); max-width: 60ch; margin-bottom: 1.7rem; }
 .controls, .results { display: grid; grid-template-columns: repeat(3, minmax(0,1fr)); gap: 1.2rem; }
 .controls { padding: 1.25rem; background: #141b16; border-block: 1px solid #485345; }
-.controls label { display: grid; gap: .45rem; font-size: .85rem; color: var(--paper); }
+.controls > div { display: grid; gap: .45rem; font-size: .85rem; color: var(--paper); }
 .controls select { font: inherit; min-height: 44px; width: 100%; padding: .55rem; background: #101610; color: var(--paper); border: 1px solid #697760; }
 .planner :is(select,a):focus-visible { outline: 2px solid var(--signal); outline-offset: 3px; }
 .results { margin-top: 1.5rem; }
