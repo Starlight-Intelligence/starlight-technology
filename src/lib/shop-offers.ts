@@ -39,7 +39,7 @@ export function isFreshCommerceEvidence(
 }
 
 export function resolveShopOffer(
-  product: ShopProduct,
+  product: Pick<ShopProduct, "slug" | "sourceUrl" | "brand" | "region" | "verifiedOn" | "affiliateEnvKey">,
   approvals: ApprovedAffiliateOffer[] = approvedOfferRecords,
   env: Record<string, string | undefined> = process.env,
   now: Date = new Date()

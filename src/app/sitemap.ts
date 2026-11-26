@@ -38,6 +38,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "weekly" as const,
       priority
     })),
+    { url: `${base}/shop/mobile-creator-kit`, lastModified: new Date("2026-11-22"), changeFrequency: "weekly", priority: 0.85 },
     ...shopProducts.map(({ slug }) => ({
       url: `${base}/shop/${slug}`,
       lastModified: updated,
