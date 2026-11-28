@@ -1,0 +1,31 @@
+{
+  "feature": "Homepage collection cards: evidence ladder replaces the evidence-state sentence",
+  "branch": "agent/opencode/evidence-meters",
+  "author": "OpenCode (DeepSeek V4.1 Flash)",
+  "verifiedAt": "2026-11-28T16:36:00Z",
+  "routes": ["/"],
+  "note": "The repo-root design-loop-evidence.json documents the earlier shop liquid-surface pass by Claude Code and is left intact. This file is the record for this pass.",
+  "verification": {
+    "lint": "eslint . exit 0",
+    "typecheck": "tsc --noEmit exit 0",
+    "tests": "vitest 14 files / 82 tests passed; node --test webmcp + hardware-adapters 14 passed",
+    "build": "not run locally: machine PP hold (RAM reserve under 8 GiB floor). Vercel build is the build.",
+    "screenshots": "docs/design/wave1/before (production) and after (local build) at 1440x900 and 390x844; after/card-desktop.png is one card at 2x.",
+    "measurement": "served HTML, tags stripped, sr-only text excluded: words 615 -> 613, visual elements 3 -> 12, words per visual 205 -> 51.",
+    "overflow": "one fetch per viewport reports scrollWidth equals viewport width at 390 and 1440.",
+    "semantics": "Meter is aria-hidden; the full evidence label stays in the DOM as sr-only text; the rung count is derived from EvidenceStatus, not authored."
+  },
+  "crossProviderReview": "not run: every subagent provider is out of balance or spend in this session. Recorded as missing, not done.",
+  "designReview": {
+    "reviewer": "maker self-check, no independent verdict",
+    "decisionObject": 5,
+    "hierarchy": 4,
+    "craft": 4,
+    "responsive": 4,
+    "accessibility": 5,
+    "restraint": 5,
+    "total": 27,
+    "of": 30,
+    "caveat": "A self-score is not the gate. The 26/30 threshold requires an independent reviewer."
+  }
+}
